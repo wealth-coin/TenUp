@@ -269,6 +269,6 @@
     <name>ZPivControlDialog</name>
     </context>
 <context>
-    <name>pivx-core</name>
+    <name>tenup-core</name>
     </context>
 </TS>

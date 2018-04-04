@@ -237,10 +237,10 @@ Value stop(const Array& params, bool fHelp)
     if (fHelp || params.size() > 1)
         throw runtime_error(
             "stop\n"
-            "\nStop PIVX server.");
+            "\nStop TENUP server.");
     // Shutdown will take long enough that the response should get back
     StartShutdown();
-    return "PIVX server stopping";
+    return "TENUP server stopping";
 }
 
 
@@ -319,35 +319,35 @@ static const CRPCCommand vRPCCommands[] =
         {"hidden", "setmocktime", &setmocktime, true, false, false},
 
         /* Pivx features */
-        {"pivx", "masternode", &masternode, true, true, false},
-        {"pivx", "listmasternodes", &listmasternodes, true, true, false},
-        {"pivx", "getmasternodecount", &getmasternodecount, true, true, false},
-        {"pivx", "masternodeconnect", &masternodeconnect, true, true, false},
-        {"pivx", "masternodecurrent", &masternodecurrent, true, true, false},
-        {"pivx", "masternodedebug", &masternodedebug, true, true, false},
-        {"pivx", "startmasternode", &startmasternode, true, true, false},
-        {"pivx", "createmasternodekey", &createmasternodekey, true, true, false},
-        {"pivx", "getmasternodeoutputs", &getmasternodeoutputs, true, true, false},
-        {"pivx", "listmasternodeconf", &listmasternodeconf, true, true, false},
-        {"pivx", "getmasternodestatus", &getmasternodestatus, true, true, false},
-        {"pivx", "getmasternodewinners", &getmasternodewinners, true, true, false},
-        {"pivx", "getmasternodescores", &getmasternodescores, true, true, false},
-        {"pivx", "mnbudget", &mnbudget, true, true, false},
-        {"pivx", "preparebudget", &preparebudget, true, true, false},
-        {"pivx", "submitbudget", &submitbudget, true, true, false},
-        {"pivx", "mnbudgetvote", &mnbudgetvote, true, true, false},
-        {"pivx", "getbudgetvotes", &getbudgetvotes, true, true, false},
-        {"pivx", "getnextsuperblock", &getnextsuperblock, true, true, false},
-        {"pivx", "getbudgetprojection", &getbudgetprojection, true, true, false},
-        {"pivx", "getbudgetinfo", &getbudgetinfo, true, true, false},
-        {"pivx", "mnbudgetrawvote", &mnbudgetrawvote, true, true, false},
-        {"pivx", "mnfinalbudget", &mnfinalbudget, true, true, false},
-        {"pivx", "checkbudgets", &checkbudgets, true, true, false},
-        {"pivx", "mnsync", &mnsync, true, true, false},
-        {"pivx", "spork", &spork, true, true, false},
-        {"pivx", "getpoolinfo", &getpoolinfo, true, true, false},
+        {"tenup", "masternode", &masternode, true, true, false},
+        {"tenup", "listmasternodes", &listmasternodes, true, true, false},
+        {"tenup", "getmasternodecount", &getmasternodecount, true, true, false},
+        {"tenup", "masternodeconnect", &masternodeconnect, true, true, false},
+        {"tenup", "masternodecurrent", &masternodecurrent, true, true, false},
+        {"tenup", "masternodedebug", &masternodedebug, true, true, false},
+        {"tenup", "startmasternode", &startmasternode, true, true, false},
+        {"tenup", "createmasternodekey", &createmasternodekey, true, true, false},
+        {"tenup", "getmasternodeoutputs", &getmasternodeoutputs, true, true, false},
+        {"tenup", "listmasternodeconf", &listmasternodeconf, true, true, false},
+        {"tenup", "getmasternodestatus", &getmasternodestatus, true, true, false},
+        {"tenup", "getmasternodewinners", &getmasternodewinners, true, true, false},
+        {"tenup", "getmasternodescores", &getmasternodescores, true, true, false},
+        {"tenup", "mnbudget", &mnbudget, true, true, false},
+        {"tenup", "preparebudget", &preparebudget, true, true, false},
+        {"tenup", "submitbudget", &submitbudget, true, true, false},
+        {"tenup", "mnbudgetvote", &mnbudgetvote, true, true, false},
+        {"tenup", "getbudgetvotes", &getbudgetvotes, true, true, false},
+        {"tenup", "getnextsuperblock", &getnextsuperblock, true, true, false},
+        {"tenup", "getbudgetprojection", &getbudgetprojection, true, true, false},
+        {"tenup", "getbudgetinfo", &getbudgetinfo, true, true, false},
+        {"tenup", "mnbudgetrawvote", &mnbudgetrawvote, true, true, false},
+        {"tenup", "mnfinalbudget", &mnfinalbudget, true, true, false},
+        {"tenup", "checkbudgets", &checkbudgets, true, true, false},
+        {"tenup", "mnsync", &mnsync, true, true, false},
+        {"tenup", "spork", &spork, true, true, false},
+        {"tenup", "getpoolinfo", &getpoolinfo, true, true, false},
 #ifdef ENABLE_WALLET
-        {"pivx", "obfuscation", &obfuscation, false, false, true}, /* not threadSafe because of SendMoney */
+        {"tenup", "obfuscation", &obfuscation, false, false, true}, /* not threadSafe because of SendMoney */
 
         /* Wallet */
         {"wallet", "addmultisigaddress", &addmultisigaddress, true, false, true},
@@ -627,7 +627,7 @@ void StartRPCThreads()
         unsigned char rand_pwd[32];
         GetRandBytes(rand_pwd, 32);
         uiInterface.ThreadSafeMessageBox(strprintf(
-                                             _("To use pivxd, or the -server option to pivx-qt, you must set an rpcpassword in the configuration file:\n"
+                                             _("To use pivxd, or the -server option to tenup-qt, you must set an rpcpassword in the configuration file:\n"
                                                "%s\n"
                                                "It is recommended you use the following random password:\n"
                                                "rpcuser=pivxrpc\n"
@@ -636,7 +636,7 @@ void StartRPCThreads()
                                                "The username and password MUST NOT be the same.\n"
                                                "If the file does not exist, create it with owner-readable-only file permissions.\n"
                                                "It is also recommended to set alertnotify so you are notified of problems;\n"
-                                               "for example: alertnotify=echo %%s | mail -s \"PIVX Alert\" admin@foo.com\n"),
+                                               "for example: alertnotify=echo %%s | mail -s \"TENUP Alert\" admin@foo.com\n"),
                                              GetConfigFile().string(),
                                              EncodeBase58(&rand_pwd[0], &rand_pwd[0] + 32)),
             "", CClientUIInterface::MSG_ERROR | CClientUIInterface::SECURE);
@@ -1087,7 +1087,7 @@ std::vector<std::string> CRPCTable::listCommands() const
 
 std::string HelpExampleCli(string methodname, string args)
 {
-    return "> pivx-cli " + methodname + " " + args + "\n";
+    return "> tenup-cli " + methodname + " " + args + "\n";
 }
 
 std::string HelpExampleRpc(string methodname, string args)

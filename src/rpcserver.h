@@ -96,7 +96,7 @@ public:
 };
 
 /**
- * PIVX RPC command dispatcher.
+ * TENUP RPC command dispatcher.
  */
 class CRPCTable
 {
