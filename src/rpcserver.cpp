@@ -627,7 +627,7 @@ void StartRPCThreads()
         unsigned char rand_pwd[32];
         GetRandBytes(rand_pwd, 32);
         uiInterface.ThreadSafeMessageBox(strprintf(
-                                             _("To use pivxd, or the -server option to tenup-qt, you must set an rpcpassword in the configuration file:\n"
+                                             _("To use tenupd, or the -server option to tenup-qt, you must set an rpcpassword in the configuration file:\n"
                                                "%s\n"
                                                "It is recommended you use the following random password:\n"
                                                "rpcuser=pivxrpc\n"

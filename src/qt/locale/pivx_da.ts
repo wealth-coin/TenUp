@@ -3914,7 +3914,7 @@ https://www.transifex.com/tenup-project/tenup-project-translations</translation>
         <translation>Dette produkt anvender software udviklet i OpenSSL projektet til brug i OpenSSL værktøjssættet &lt;https://www.openssl.org/&gt; og kryptosoftware skrevet afEric Young og UPnP software skrevet af Thomas Bernard.</translation>
     </message>
     <message>
-        <source>To use pivxd, or the -server option to tenup-qt, you must set an rpcpassword in the configuration file:
+        <source>To use tenupd, or the -server option to tenup-qt, you must set an rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
 rpcuser=pivxrpc
@@ -3925,7 +3925,7 @@ If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
 for example: alertnotify=echo %%s | mail -s "TENUP Alert" admin@foo.com
 </source>
-        <translation>For at bruge pivxd eller -server muligheden sammen med tenup-qt skal der angives et rpc kodeord i konfigurationsfilen:
+        <translation>For at bruge tenupd eller -server muligheden sammen med tenup-qt skal der angives et rpc kodeord i konfigurationsfilen:
 %s
 De anbefales at benytte følgende tilfældige kodeord
 Rpcuser=pivxrpc

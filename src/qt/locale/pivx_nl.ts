@@ -4423,7 +4423,7 @@ Wees alsjeblieft geduldig...</translation>
         <translation>Dit product bevat software ontwikkeld door het OpenSSL Project voor gebruik in de OpenSSL Toolkit &lt;https://www.openssl.org/&gt; en cryptografische software geschreven door Eric Young en UPnP software geschreven door Thomas Bernard.</translation>
     </message>
     <message>
-        <source>To use pivxd, or the -server option to tenup-qt, you must set an rpcpassword in the configuration file:
+        <source>To use tenupd, or the -server option to tenup-qt, you must set an rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
 rpcuser=pivxrpc
@@ -4434,7 +4434,7 @@ If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
 for example: alertnotify=echo %%s | mail -s "TENUP Alert" admin@foo.com
 </source>
-        <translation>Om pivxd of de -server optie om tenup-qt te gebruiken, moet je een rpcpassword instellen in het configuratiebestand:
+        <translation>Om tenupd of de -server optie om tenup-qt te gebruiken, moet je een rpcpassword instellen in het configuratiebestand:
 %s
 Het is aan te raden het volgende willekeurige wachtwoord te gebruiken:
 rpcuser=pivxrpc

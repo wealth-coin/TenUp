@@ -1,8 +1,8 @@
 
 Debian
 ====================
-This directory contains files used to package pivxd/tenup-qt
-for Debian-based Linux systems. If you compile pivxd/tenup-qt yourself, there are some useful files here.
+This directory contains files used to package tenupd/tenup-qt
+for Debian-based Linux systems. If you compile tenupd/tenup-qt yourself, there are some useful files here.
 
 ## tenup: URI support ##
 
