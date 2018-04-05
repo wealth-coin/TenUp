@@ -8,7 +8,7 @@
 #else
 #define UNUSED
 #endif
-static const char UNUSED *pivx_strings[] = {
+static const char UNUSED *tenup_strings[] = {
 QT_TRANSLATE_NOOP("tenup-core", " mints deleted\n"),
 QT_TRANSLATE_NOOP("tenup-core", " mints updated, "),
 QT_TRANSLATE_NOOP("tenup-core", " unconfirmed transactions removed\n"),
@@ -173,7 +173,7 @@ QT_TRANSLATE_NOOP("tenup-core", ""
 "in the configuration file:\n"
 "%s\n"
 "It is recommended you use the following random password:\n"
-"rpcuser=pivxrpc\n"
+"rpcuser=tenuprpc\n"
 "rpcpassword=%s\n"
 "(you do not need to remember this password)\n"
 "The username and password MUST NOT be the same.\n"

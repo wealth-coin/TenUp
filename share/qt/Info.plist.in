@@ -65,7 +65,7 @@
         <string>application/x-tenup-payment-request</string>
         <key>public.filename-extension</key>
         <array>
-          <string>pivxpaymentrequest</string>
+          <string>tenuppaymentrequest</string>
         </array>
       </dict>
     </dict>

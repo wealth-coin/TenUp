@@ -4409,7 +4409,7 @@ Bitte haben Sie Geduld...</translation>
         <source>To use tenupd, or the -server option to tenup-qt, you must set an rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=pivxrpc
+rpcuser=tenuprpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
@@ -4420,7 +4420,7 @@ for example: alertnotify=echo %%s | mail -s "TENUP Alert" admin@foo.com
         <translation>Um tenupd oder die -server option in tenup-qt zu nutzen, muss ein RPC-Passwort mittels rpcpassword in der Konfigurationsdatei gestzt werden:
 %s
 Es wird empfohlen das folgende zufällige Passwort zu nutzen:
-rpcuser=pivxrpc
+rpcuser=tenuprpc
 rpcpassword=%s
 (Sie müssen sich das Passwort nicht merken)
 User-Name und Passwort MÜSSEN NICHT die oben genannten sein.

@@ -429,7 +429,7 @@ Value gettxout(const Array& params, bool fHelp)
             "     \"reqSigs\" : n,          (numeric) Number of required signatures\n"
             "     \"type\" : \"pubkeyhash\", (string) The type, eg pubkeyhash\n"
             "     \"addresses\" : [          (array of string) array of tenup addresses\n"
-            "     \"pivxaddress\"   	 	(string) tenup address\n"
+            "     \"tenupaddress\"   	 	(string) tenup address\n"
             "        ,...\n"
             "     ]\n"
             "  },\n"

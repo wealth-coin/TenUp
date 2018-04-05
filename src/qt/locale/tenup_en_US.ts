@@ -4085,7 +4085,7 @@ https://www.transifex.com/tenup-project/tenup-project-translations</translation>
         <source>To use tenupd, or the -server option to tenup-qt, you must set an rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=pivxrpc
+rpcuser=tenuprpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
@@ -4096,7 +4096,7 @@ for example: alertnotify=echo %%s | mail -s "TENUP Alert" admin@foo.com
         <translation>To use tenupd, or the -server option to tenup-qt, you must set an rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=pivxrpc
+rpcuser=tenuprpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.

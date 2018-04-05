@@ -5963,7 +5963,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
 <context>
     <name>tenup-core</name>
     <message>
-        <location filename="../pivxstrings.cpp" line="+15"/>
+        <location filename="../tenupstrings.cpp" line="+15"/>
         <source>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</source>
         <translation type="unfinished">(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</translation>
     </message>
@@ -6197,7 +6197,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <source>To use tenupd, or the -server option to tenup-qt, you must set an rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=pivxrpc
+rpcuser=tenuprpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.

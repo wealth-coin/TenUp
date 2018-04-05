@@ -83,10 +83,10 @@ Value importprivkey(const Array& params, bool fHelp)
 {
     if (fHelp || params.size() < 1 || params.size() > 3)
         throw runtime_error(
-            "importprivkey \"pivxprivkey\" ( \"label\" rescan )\n"
+            "importprivkey \"tenupprivkey\" ( \"label\" rescan )\n"
             "\nAdds a private key (as returned by dumpprivkey) to your wallet.\n"
             "\nArguments:\n"
-            "1. \"pivxprivkey\"   (string, required) The private key (see dumpprivkey)\n"
+            "1. \"tenupprivkey\"   (string, required) The private key (see dumpprivkey)\n"
             "2. \"label\"            (string, optional, default=\"\") An optional label\n"
             "3. rescan               (boolean, optional, default=true) Rescan the wallet for transactions\n"
             "\nNote: This call can take minutes to complete if rescan is true.\n"
@@ -308,11 +308,11 @@ Value dumpprivkey(const Array& params, bool fHelp)
 {
     if (fHelp || params.size() != 1)
         throw runtime_error(
-            "dumpprivkey \"pivxaddress\"\n"
-            "\nReveals the private key corresponding to 'pivxaddress'.\n"
+            "dumpprivkey \"tenupaddress\"\n"
+            "\nReveals the private key corresponding to 'tenupaddress'.\n"
             "Then the importprivkey can be used with this output\n"
             "\nArguments:\n"
-            "1. \"pivxaddress\"   (string, required) The tenup address for the private key\n"
+            "1. \"tenupaddress\"   (string, required) The tenup address for the private key\n"
             "\nResult:\n"
             "\"key\"                (string) The private key\n"
             "\nExamples:\n" +
@@ -396,10 +396,10 @@ Value bip38encrypt(const Array& params, bool fHelp)
 {
     if (fHelp || params.size() != 2)
         throw runtime_error(
-            "bip38encrypt \"pivxaddress\"\n"
-            "\nEncrypts a private key corresponding to 'pivxaddress'.\n"
+            "bip38encrypt \"tenupaddress\"\n"
+            "\nEncrypts a private key corresponding to 'tenupaddress'.\n"
             "\nArguments:\n"
-            "1. \"pivxaddress\"   (string, required) The tenup address for the private key (you must hold the key already)\n"
+            "1. \"tenupaddress\"   (string, required) The tenup address for the private key (you must hold the key already)\n"
             "2. \"passphrase\"   (string, required) The passphrase you want the private key to be encrypted with - Valid special chars: !#$%&'()*+,-./:;<=>?`{|}~ \n"
             "\nResult:\n"
             "\"key\"                (string) The encrypted private key\n"
@@ -434,7 +434,7 @@ Value bip38decrypt(const Array& params, bool fHelp)
 {
     if (fHelp || params.size() != 2)
         throw runtime_error(
-            "bip38decrypt \"pivxaddress\"\n"
+            "bip38decrypt \"tenupaddress\"\n"
             "\nDecrypts and then imports password protected private key.\n"
             "\nArguments:\n"
             "1. \"encryptedkey\"   (string, required) The encrypted private key\n"
