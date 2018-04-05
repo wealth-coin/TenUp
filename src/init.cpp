@@ -1707,7 +1707,7 @@ bool AppInit2(boost::thread_group& threadGroup)
     }
 
 // XX42 Remove/refactor code below. Until then provide safe defaults
-    nAnonymizePivxAmount = 2;
+    nAnonymizeTenupAmount = 2;
 
 //    nLiquidityProvider = GetArg("-liquidityprovider", 0); //0-100
 //    if (nLiquidityProvider != 0) {
@@ -1716,9 +1716,9 @@ bool AppInit2(boost::thread_group& threadGroup)
 //        nZeromintPercentage = 99999;
 //    }
 //
-//    nAnonymizePivxAmount = GetArg("-anonymizepivxamount", 0);
-//    if (nAnonymizePivxAmount > 999999) nAnonymizePivxAmount = 999999;
-//    if (nAnonymizePivxAmount < 2) nAnonymizePivxAmount = 2;
+//    nAnonymizeTenupAmount = GetArg("-anonymizepivxamount", 0);
+//    if (nAnonymizeTenupAmount > 999999) nAnonymizeTenupAmount = 999999;
+//    if (nAnonymizeTenupAmount < 2) nAnonymizeTenupAmount = 2;
 
     fEnableSwiftTX = GetBoolArg("-enableswifttx", fEnableSwiftTX);
     nSwiftTXDepth = GetArg("-swifttxdepth", nSwiftTXDepth);
@@ -1732,7 +1732,7 @@ bool AppInit2(boost::thread_group& threadGroup)
 
     LogPrintf("fLiteMode %d\n", fLiteMode);
     LogPrintf("nSwiftTXDepth %d\n", nSwiftTXDepth);
-    LogPrintf("Anonymize TENUP Amount %d\n", nAnonymizePivxAmount);
+    LogPrintf("Anonymize TENUP Amount %d\n", nAnonymizeTenupAmount);
     LogPrintf("Budget Mode %s\n", strBudgetMode.c_str());
 
     /* Denominations

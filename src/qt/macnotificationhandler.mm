@@ -14,7 +14,7 @@
 - (NSString *)__bundleIdentifier
 {
     if (self == [NSBundle mainBundle]) {
-        return @"io.tenup.Pivx-Qt";
+        return @"io.tenup.Tenup-Qt";
     } else {
         return [self __bundleIdentifier];
     }

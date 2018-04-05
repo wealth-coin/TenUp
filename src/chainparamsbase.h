@@ -10,7 +10,7 @@
 
 /**
  * CBaseChainParams defines the base parameters (shared between tenup-cli and tenupd)
- * of a given instance of the Pivx system.
+ * of a given instance of the Tenup system.
  */
 class CBaseChainParams
 {

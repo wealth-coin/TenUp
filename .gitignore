@@ -128,3 +128,6 @@ qa/pull-tester/test.*/*
 .idea
 CMakeLists.txt
 cmake-build-debug
+.vscode/c_cpp_properties.json
+.vscode/launch.json
+.vscode/tasks.json

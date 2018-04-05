@@ -65,9 +65,9 @@ Value mnbudget(const Array& params, bool fHelp)
             "\nAvailable commands:\n"
             "  prepare            - Prepare proposal for network by signing and creating tx\n"
             "  submit             - Submit proposal for network\n"
-            "  vote-many          - Vote on a Pivx initiative\n"
-            "  vote-alias         - Vote on a Pivx initiative\n"
-            "  vote               - Vote on a Pivx initiative/budget\n"
+            "  vote-many          - Vote on a Tenup initiative\n"
+            "  vote-alias         - Vote on a Tenup initiative\n"
+            "  vote               - Vote on a Tenup initiative/budget\n"
             "  getvotes           - Show current masternode budgets\n"
             "  getinfo            - Show current masternode budgets\n"
             "  show               - Show all budgets\n"
@@ -187,9 +187,9 @@ Value preparebudget(const Array& params, bool fHelp)
 
     CBitcoinAddress address(params[4].get_str());
     if (!address.IsValid())
-        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid Pivx address");
+        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid Tenup address");
 
-    // Parse Pivx address
+    // Parse Tenup address
     CScript scriptPubKey = GetScriptForDestination(address.Get());
     CAmount nAmount = AmountFromValue(params[5]);
 
@@ -281,9 +281,9 @@ Value submitbudget(const Array& params, bool fHelp)
 
     CBitcoinAddress address(params[4].get_str());
     if (!address.IsValid())
-        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid Pivx address");
+        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid Tenup address");
 
-    // Parse Pivx address
+    // Parse Tenup address
     CScript scriptPubKey = GetScriptForDestination(address.Get());
     CAmount nAmount = AmountFromValue(params[5]);
     uint256 hash = ParseHashV(params[6], "parameter 1");

@@ -17,7 +17,7 @@ BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
             VALUE "CompanyName",        "TENUP"
-            VALUE "FileDescription",    "tenupd (OSS daemon/client for Pivx)"
+            VALUE "FileDescription",    "tenupd (OSS daemon/client for Tenup)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
             VALUE "InternalName",       "tenupd"
             VALUE "LegalCopyright",     COPYRIGHT_STR

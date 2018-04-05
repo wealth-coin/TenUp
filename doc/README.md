@@ -41,7 +41,7 @@ The following are developer notes on how to build TENUP on your native platform.
 
 Development
 ---------------------
-The Pivx repo's [root README](https://github.com/TENUP-Project/TENUP/blob/master/README.md) contains relevant information on the development process and automated testing.
+The TenUp repo's [root README](https://github.com/TENUP-Project/TENUP/blob/master/README.md) contains relevant information on the development process and automated testing.
 
 - [Developer Notes](developer-notes.md)
 - [Multiwallet Qt Development](multiwallet-qt.md)
