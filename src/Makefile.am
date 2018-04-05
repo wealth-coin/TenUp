@@ -402,7 +402,7 @@ nodist_libbitcoin_util_a_SOURCES = $(srcdir)/obj/build.h
 #
 
 # bitcoind binary #
-pivxd_LDADD = \
+tenupd_LDADD = \
   $(LIBBITCOIN_SERVER) \
   $(LIBBITCOIN_COMMON) \
   $(LIBBITCOIN_UNIVALUE) \
@@ -414,26 +414,26 @@ pivxd_LDADD = \
   $(LIBSECP256K1)
 
 if ENABLE_ZMQ
-pivxd_LDADD += $(LIBBITCOIN_ZMQ) $(ZMQ_LIBS)
+tenupd_LDADD += $(LIBBITCOIN_ZMQ) $(ZMQ_LIBS)
 endif
 
 if ENABLE_WALLET
-pivxd_LDADD += libbitcoin_wallet.a
+tenupd_LDADD += libbitcoin_wallet.a
 endif
-pivxd_SOURCES = tenupd.cpp
+tenupd_SOURCES = tenupd.cpp
 #
 
 if TARGET_WINDOWS
-pivxd_SOURCES += tenupd-res.rc
+tenupd_SOURCES += tenupd-res.rc
 endif
 
-pivxd_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS)
-pivxd_CPPFLAGS = $(BITCOIN_INCLUDES)
-pivxd_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+tenupd_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS)
+tenupd_CPPFLAGS = $(BITCOIN_INCLUDES)
+tenupd_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 
 # tenup-cli binary #
-pivx_cli_LDADD = \
+tenup_cli_LDADD = \
   $(LIBBITCOIN_CLI) \
   $(LIBBITCOIN_UTIL) \
   $(BOOST_LIBS) \
@@ -441,14 +441,14 @@ pivx_cli_LDADD = \
   $(CRYPTO_LIBS) \
   $(EVENT_LIBS)
 
-pivx_cli_SOURCES = \
+tenup_cli_SOURCES = \
   tenup-cli.cpp
 
-pivx_cli_CPPFLAGS = $(BITCOIN_INCLUDES) $(EVENT_CFLAGS)
+tenup_cli_CPPFLAGS = $(BITCOIN_INCLUDES) $(EVENT_CFLAGS)
 #
 
 # tenup-tx binary #
-pivx_tx_LDADD = \
+tenup_tx_LDADD = \
   $(LIBBITCOIN_UNIVALUE) \
   $(LIBBITCOIN_COMMON) \
   $(LIBBITCOIN_ZEROCOIN) \
@@ -458,15 +458,15 @@ pivx_tx_LDADD = \
   $(BOOST_LIBS) \
   $(CRYPTO_LIBS)
 
-pivx_tx_SOURCES = tenup-tx.cpp
-pivx_tx_CPPFLAGS = $(BITCOIN_INCLUDES)
+tenup_tx_SOURCES = tenup-tx.cpp
+tenup_tx_CPPFLAGS = $(BITCOIN_INCLUDES)
 #
-pivx_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+tenup_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-pivx_cli_SOURCES += tenup-cli-res.rc
+tenup_cli_SOURCES += tenup-cli-res.rc
 endif
-pivx_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+tenup_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if BUILD_BITCOIN_LIBS
 include_HEADERS = script/bitcoinconsensus.h
