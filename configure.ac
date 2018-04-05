@@ -6,7 +6,7 @@ define(_CLIENT_VERSION_REVISION, 6)
 define(_CLIENT_VERSION_BUILD, 0)
 define(_CLIENT_VERSION_IS_RELEASE, true)
 define(_COPYRIGHT_YEAR, 2017)
-AC_INIT([Pivx Core],[_CLIENT_VERSION_MAJOR._CLIENT_VERSION_MINOR._CLIENT_VERSION_REVISION],[www.tenup.org],[tenup])
+AC_INIT([TenUp Core],[_CLIENT_VERSION_MAJOR._CLIENT_VERSION_MINOR._CLIENT_VERSION_REVISION],[www.tenup.org],[tenup])
 AC_CONFIG_SRCDIR([src/main.cpp])
 AC_CONFIG_HEADERS([src/config/tenup-config.h])
 AC_CONFIG_AUX_DIR([build-aux])
@@ -910,7 +910,7 @@ if test x$bitcoin_enable_qt != xno; then
     AC_MSG_WARN("xgettext is required to update qt translations")
   fi
 
-  AC_MSG_CHECKING([whether to build test_pivx-qt])
+  AC_MSG_CHECKING([whether to build test_tenup-qt])
   if test x$use_tests$bitcoin_enable_qt_test = xyesyes; then
     AC_MSG_RESULT([yes])
     BUILD_TEST_QT="test"
@@ -921,7 +921,7 @@ fi
 
 AM_CONDITIONAL([ENABLE_ZMQ], [test "x$use_zmq" = "xyes"])
 
-AC_MSG_CHECKING([whether to build test_pivx])
+AC_MSG_CHECKING([whether to build test_tenup])
 if test x$use_tests = xyes; then
   AC_MSG_RESULT([yes])
   BUILD_TEST="test"
