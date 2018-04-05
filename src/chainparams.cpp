@@ -167,11 +167,6 @@ public:
         genesis.nBits = 0x1e0ffff0;
         genesis.nNonce = 440868;
 
-        // while (hashGenesisBlock > bnProofOfWorkLimit.getuint256()){
-        // if (++genesis.nNonce==0) break;
-        // hashGenesisBlock = genesis.GetHash();
-        // }
-
         hashGenesisBlock = genesis.GetHash();
         assert(hashGenesisBlock == uint256("0x0000096ef7e9592b7940d8966d893360967f4c642578901efcca73dab0f02ddf"));
         assert(genesis.hashMerkleRoot == uint256("0xef79f574b9757c88806da27d6eecb51b5af3675a25cc9c952033097d5544e9a6"));
