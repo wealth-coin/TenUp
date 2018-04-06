@@ -25,6 +25,67 @@ struct SeedSpec6 {
 
 #include "chainparamsseeds.h"
 
+
+
+    //usama test checkpoints data
+   
+    bool CheckProofOfWork(uint256 hash, unsigned int nBits)
+    {
+        bool fNegative;
+        bool fOverflow;
+        uint256 bnTarget;
+
+        if (Params().SkipProofOfWorkCheck())
+            return true;
+
+        bnTarget.SetCompact(nBits, &fNegative, &fOverflow);
+
+        // Check range
+        if (fNegative || bnTarget == 0 || fOverflow || bnTarget > Params().ProofOfWorkLimit())
+            return error("CheckProofOfWork() : nBits below minimum work");
+
+        // Check proof of work matches claimed amount
+        if (hash > bnTarget)
+            return error("CheckProofOfWork() : hash doesn't match nBits");
+
+        return true;
+    }
+
+    void checkData(CBlock block, uint256 hash) {
+
+        if (block.GetHash() != hash)
+        {
+            printf("check blocks...\n");
+            uint256 thash;
+            block.nNonce = 0;
+
+            while(true)
+            {
+                thash = block.GetHash();
+                if (CheckProofOfWork(thash, block.nBits))
+                    break;
+                if ((block.nNonce & 0xFFF) == 0)
+                {
+                    printf("nonce %08X: hash = %s (target not matched)\n", block.nNonce, thash.ToString().c_str());
+                    //break;
+                }
+                ++block.nNonce;
+                if (block.nNonce == 0)
+                {
+                    printf("NONCE WRAPPED, incrementing time\n");
+                    ++block.nTime;
+                }
+            }
+            printf("nTime = %u \n", block.nTime);
+            printf("nNonce = %u \n", block.nNonce);
+            printf("GetHash = %s\n", block.GetHash().ToString().c_str());
+            printf("hashMerkleRoot = %s\n", block.hashMerkleRoot.ToString().c_str());
+
+         }
+    }
+
+    //test checkpoint data
+
 /**
  * Main network
  */
@@ -155,6 +216,9 @@ public:
         genesis.nBits = 0x1e0ffff0;
         genesis.nNonce = 440868;
 
+        uint256 required_hash = uint256("0x00000a2a24d20ff35d7c60bb8094dc8b96a2982caa415faa68496f815982509d");
+        checkData(genesis, required_hash);
+
         hashGenesisBlock = genesis.GetHash();
         assert(hashGenesisBlock == uint256("0x0000096ef7e9592b7940d8966d893360967f4c642578901efcca73dab0f02ddf"));
         assert(genesis.hashMerkleRoot == uint256("0xef79f574b9757c88806da27d6eecb51b5af3675a25cc9c952033097d5544e9a6"));
@@ -257,6 +321,9 @@ public:
         genesis.nTime = 1522921500;
         genesis.nNonce = 325848;
 
+        // uint256 required_hash = uint256("0x5b8e1cc64f49a65318e91363081305666c759e7f0fd17a3d2a20e4987b014456");
+        // checkData(genesis, required_hash);
+
         hashGenesisBlock = genesis.GetHash();
         assert(hashGenesisBlock == uint256("0x00000eaff998755bbe7a4108cc42860b96c16e192519e845d5ee9e5cdabc1973"));
 
@@ -298,65 +365,6 @@ public:
     {
         return dataTestnet;
     }
-
-    //usama test checkpoints data
-   
-    bool CheckProofOfWork(uint256 hash, unsigned int nBits)
-    {
-        bool fNegative;
-        bool fOverflow;
-        uint256 bnTarget;
-
-        if (Params().SkipProofOfWorkCheck())
-            return true;
-
-        bnTarget.SetCompact(nBits, &fNegative, &fOverflow);
-
-        // Check range
-        if (fNegative || bnTarget == 0 || fOverflow || bnTarget > Params().ProofOfWorkLimit())
-            return error("CheckProofOfWork() : nBits below minimum work");
-
-        // Check proof of work matches claimed amount
-        if (hash > bnTarget)
-            return error("CheckProofOfWork() : hash doesn't match nBits");
-
-        return true;
-    }
-
-    void checkData(CBlock block, uint256 hash) {
-
-        if (block.GetHash() != hash)
-        {
-            printf("check blocks...\n");
-            uint256 thash;
-            block.nNonce = 0;
-
-            while(true)
-            {
-                thash = block.GetHash();
-                if (CheckProofOfWork(thash, block.nBits))
-                    break;
-                if ((block.nNonce & 0xFFF) == 0)
-                {
-                    printf("nonce %08X: hash = %s (target not matched)\n", block.nNonce, thash.ToString().c_str());
-                    //break;
-                }
-                ++block.nNonce;
-                if (block.nNonce == 0)
-                {
-                    printf("NONCE WRAPPED, incrementing time\n");
-                    ++block.nTime;
-                }
-            }
-            printf("nTime = %u \n", block.nTime);
-            printf("nNonce = %u \n", block.nNonce);
-            printf("GetHash = %s\n", block.GetHash().ToString().c_str());
-            printf("hashMerkleRoot = %s\n", block.hashMerkleRoot.ToString().c_str());
-
-         }
-    }
-
-    //test checkpoint data
 };
 static CTestNetParams testNetParams;
 
@@ -386,6 +394,10 @@ public:
         genesis.nTime = 1522921900;
         genesis.nBits = 0x1e0ffff0;
         genesis.nNonce = 772883;
+
+        // uint256 required_hash = uint256("0x5b8e1cc64f49a65318e91363081305666c759e7f0fd17a3d2a20e4987b014456");
+        // checkData(genesis, required_hash);
+
 
         hashGenesisBlock = genesis.GetHash();
         nDefaultPort = 51486;
