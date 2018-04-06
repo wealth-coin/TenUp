@@ -151,7 +151,7 @@ public:
         genesis.hashPrevBlock = 0;
         genesis.hashMerkleRoot = genesis.BuildMerkleTree();
         genesis.nVersion = 1;
-        genesis.nTime = 1522921905;//1522920605;
+        genesis.nTime = 1522922005;//1522920605;
         genesis.nBits = 0x1e0ffff0;
         genesis.nNonce = 620706;
 
@@ -383,7 +383,7 @@ public:
         nTargetTimespan = 24 * 60 * 60; // Tenup: 1 day
         nTargetSpacing = 1 * 60;        // Tenup: 1 minutes
         bnProofOfWorkLimit = ~uint256(0) >> 1;
-        genesis.nTime = 1522921900;
+        genesis.nTime = 1522922005;
         genesis.nBits = 0x1e0ffff0;
         genesis.nNonce = 772883;
 
@@ -393,7 +393,7 @@ public:
 
         hashGenesisBlock = genesis.GetHash();
         nDefaultPort = 51486;
-        assert(hashGenesisBlock == uint256("0x0000030ae8b0bb7d10f0441cd385d121b6146c2a9930b4d4ac0b01b1d88dd4d0"));
+        assert(hashGenesisBlock == uint256("0x00000a982b7031ff64fdaa309c18551999feacae32cf1c3854dffc3fa0316223"));
 
         vFixedSeeds.clear(); //! Testnet mode doesn't have any fixed seeds.
         vSeeds.clear();      //! Testnet mode doesn't have any DNS seeds.
