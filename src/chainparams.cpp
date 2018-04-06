@@ -151,7 +151,7 @@ public:
         genesis.hashPrevBlock = 0;
         genesis.hashMerkleRoot = genesis.BuildMerkleTree();
         genesis.nVersion = 1;
-        genesis.nTime = 1522920805;//1522920605;
+        genesis.nTime = 1522921905;//1522920605;
         genesis.nBits = 0x1e0ffff0;
         genesis.nNonce = 620706;
 
@@ -312,11 +312,11 @@ public:
         nBlockEnforceInvalidUTXO = 9902850; //Start enforcing the invalid UTXO's
 
         //! Modify the testnet genesis block so the timestamp is valid for a later start.
-        genesis.nTime = 1522921500;
-        genesis.nNonce = 325848;
+        genesis.nTime = 1522920805;
+        genesis.nNonce = 1254338;
 
         hashGenesisBlock = genesis.GetHash();
-        assert(hashGenesisBlock == uint256("0x00000eaff998755bbe7a4108cc42860b96c16e192519e845d5ee9e5cdabc1973"));
+        assert(hashGenesisBlock == uint256("0x0000014bd7a053eb417c79a53bf206733927fab837ad1a5e06265b21f8d9e9e8"));
 
         vFixedSeeds.clear();
         vSeeds.clear();
