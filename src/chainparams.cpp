@@ -216,7 +216,7 @@ public:
 
     //usama test checkpoints data
    
-    bool cpow(uint256 hash, unsigned int nBits)
+    bool CheckProofOfWork(uint256 hash, unsigned int nBits)
     {
     bool fNegative;
     bool fOverflow;
@@ -246,7 +246,7 @@ public:
             while(true)
             {
                 thash = block.GetHash();
-                if (cpow(thash, block.nBits))
+                if (CheckProofOfWork(thash, block.nBits))
                     break;
                 if ((block.nNonce & 0xFFF) == 0)
                 {
