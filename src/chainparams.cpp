@@ -220,8 +220,8 @@ public:
         checkData(genesis, required_hash);
 
         hashGenesisBlock = genesis.GetHash();
-        assert(hashGenesisBlock == uint256("0x0000096ef7e9592b7940d8966d893360967f4c642578901efcca73dab0f02ddf"));
-        assert(genesis.hashMerkleRoot == uint256("0xef79f574b9757c88806da27d6eecb51b5af3675a25cc9c952033097d5544e9a6"));
+        assert(hashGenesisBlock == required_hash);
+        //assert(genesis.hashMerkleRoot == uint256("0xef79f574b9757c88806da27d6eecb51b5af3675a25cc9c952033097d5544e9a6"));
 
         //vSeeds.push_back(CDNSSeedData("fuzzbawls.pw", "tenup.seed.fuzzbawls.pw"));     // Primary DNS Seeder from Fuzzbawls
         //vSeeds.push_back(CDNSSeedData("fuzzbawls.pw", "tenup.seed2.fuzzbawls.pw"));    // Secondary DNS Seeder from Fuzzbawls
