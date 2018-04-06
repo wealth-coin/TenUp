@@ -62,8 +62,7 @@ struct SeedSpec6 {
             while(true)
             {
                 thash = block.GetHash();
-    bool cpow(uint256 hash, unsigned int nBits)
-                if (CheckProofOfWork(thash, block.nBits))
+                if (cpow(thash, block.nBits))
                     break;
                 if ((block.nNonce & 0xFFF) == 0)
                 {
