@@ -298,6 +298,65 @@ public:
     {
         return dataTestnet;
     }
+
+    //usama test checkpoints data
+   
+    bool CheckProofOfWork(uint256 hash, unsigned int nBits)
+    {
+        bool fNegative;
+        bool fOverflow;
+        uint256 bnTarget;
+
+        if (Params().SkipProofOfWorkCheck())
+            return true;
+
+        bnTarget.SetCompact(nBits, &fNegative, &fOverflow);
+
+        // Check range
+        if (fNegative || bnTarget == 0 || fOverflow || bnTarget > Params().ProofOfWorkLimit())
+            return error("CheckProofOfWork() : nBits below minimum work");
+
+        // Check proof of work matches claimed amount
+        if (hash > bnTarget)
+            return error("CheckProofOfWork() : hash doesn't match nBits");
+
+        return true;
+    }
+
+    void checkData(CBlock block, uint256 hash) {
+
+        if (block.GetHash() != hash)
+        {
+            printf("check blocks...\n");
+            uint256 thash;
+            block.nNonce = 0;
+
+            while(true)
+            {
+                thash = block.GetHash();
+                if (CheckProofOfWork(thash, block.nBits))
+                    break;
+                if ((block.nNonce & 0xFFF) == 0)
+                {
+                    printf("nonce %08X: hash = %s (target not matched)\n", block.nNonce, thash.ToString().c_str());
+                    //break;
+                }
+                ++block.nNonce;
+                if (block.nNonce == 0)
+                {
+                    printf("NONCE WRAPPED, incrementing time\n");
+                    ++block.nTime;
+                }
+            }
+            printf("nTime = %u \n", block.nTime);
+            printf("nNonce = %u \n", block.nNonce);
+            printf("GetHash = %s\n", block.GetHash().ToString().c_str());
+            printf("hashMerkleRoot = %s\n", block.hashMerkleRoot.ToString().c_str());
+
+         }
+    }
+
+    //test checkpoint data
 };
 static CTestNetParams testNetParams;
 
