@@ -151,16 +151,16 @@ public:
         genesis.hashPrevBlock = 0;
         genesis.hashMerkleRoot = genesis.BuildMerkleTree();
         genesis.nVersion = 1;
-        genesis.nTime = 1522920605;
+        genesis.nTime = 1522920805;//1522920605;
         genesis.nBits = 0x1e0ffff0;
-        genesis.nNonce = 440868;
+        genesis.nNonce = 620706;
 
-        uint256 required_hash = uint256("0x00000a2a24d20ff35d7c60bb8094dc8b96a2982caa415faa68496f815982509d");
+        uint256 required_hash = uint256("0x00000e0715d0c482da79aaf081724dbde8d350ce5de9db83230423be37a2e363");
         checkData(genesis, required_hash);
 
         hashGenesisBlock = genesis.GetHash();
-        assert(hashGenesisBlock == required_hash);
-        //assert(genesis.hashMerkleRoot == uint256("0xef79f574b9757c88806da27d6eecb51b5af3675a25cc9c952033097d5544e9a6"));
+        assert(hashGenesisBlock == uint256("0x00000a91661547d75e61d0f15fd97067c5d8763cf37ff2847d5a2dd55eba3fe9"));
+        assert(genesis.hashMerkleRoot == uint256("0x01cd2cec7147282c3b54233a218b0a68b49e8233318fd253578eea68d0e5bafd"));
 
         //vSeeds.push_back(CDNSSeedData("fuzzbawls.pw", "tenup.seed.fuzzbawls.pw"));     // Primary DNS Seeder from Fuzzbawls
         //vSeeds.push_back(CDNSSeedData("fuzzbawls.pw", "tenup.seed2.fuzzbawls.pw"));    // Secondary DNS Seeder from Fuzzbawls
@@ -315,9 +315,6 @@ public:
         genesis.nTime = 1522921500;
         genesis.nNonce = 325848;
 
-        // uint256 required_hash = uint256("0x5b8e1cc64f49a65318e91363081305666c759e7f0fd17a3d2a20e4987b014456");
-        // checkData(genesis, required_hash);
-
         hashGenesisBlock = genesis.GetHash();
         assert(hashGenesisBlock == uint256("0x00000eaff998755bbe7a4108cc42860b96c16e192519e845d5ee9e5cdabc1973"));
 
@@ -354,7 +351,8 @@ public:
         nStartMasternodePayments = 1420837558; //Fri, 09 Jan 2015 21:05:58 GMT
         nBudget_Fee_Confirmations = 3; // Number of confirmations for the finalization fee. We have to make this very short
                                        // here because we only have a 8 block finalization window on testnet
-    }
+    }   
+
     const Checkpoints::CCheckpointData& Checkpoints() const
     {
         return dataTestnet;
