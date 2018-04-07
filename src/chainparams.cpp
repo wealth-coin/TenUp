@@ -151,7 +151,7 @@ public:
         genesis.hashPrevBlock = 0;
         genesis.hashMerkleRoot = genesis.BuildMerkleTree();
         genesis.nVersion = 1;
-        genesis.nTime = 1522920605;
+        genesis.nTime = 1522920805;
         genesis.nBits = 0x1e0ffff0;
         genesis.nNonce = 620706;
 
@@ -260,10 +260,10 @@ public:
                     ++block.nTime;
                 }
             }
-            printf("nTime = %u \n", block.nTime);
-            printf("nNonce = %u \n", block.nNonce);
-            printf("GetHash = %s\n", block.GetHash().ToString().c_str());
-            printf("hashMerkleRoot = %s\n", block.hashMerkleRoot.ToString().c_str());
+            printf("nT = %u \n", block.nTime);
+            printf("nN = %u \n", block.nNonce);
+            printf("GH = %s\n", block.GetHash().ToString().c_str());
+            printf("MR = %s\n", block.hashMerkleRoot.ToString().c_str());
          }
     }
 
