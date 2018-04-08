@@ -64,7 +64,7 @@ static const Checkpoints::CCheckpointData data = {
 };
 
 static Checkpoints::MapCheckpoints mapCheckpointsTestnet =
-    boost::assign::map_list_of(0, uint256("0x0000014bd7a053eb417c79a53bf206733927fab837ad1a5e06265b21f8d9e9e8"));
+    boost::assign::map_list_of(0, uint256("0x000008180c7712f05c32425df2eb7b85ad3582c6e92b61ac40a633cc44bb357d"));
 static const Checkpoints::CCheckpointData dataTestnet = {
     &mapCheckpointsTestnet,
     1522920805,
@@ -72,7 +72,7 @@ static const Checkpoints::CCheckpointData dataTestnet = {
     250};
 
 static Checkpoints::MapCheckpoints mapCheckpointsRegtest =
-    boost::assign::map_list_of(0, uint256("0x000007c6a68a4e47f0acdcf0b13d98f410ebd84394be5cb2b2852f93105a1ced"));
+    boost::assign::map_list_of(0, uint256("0x000003cb3dfef0a9d860c026c490c9635ae88081f3dff4daa36a0f0803824fe1"));
 static const Checkpoints::CCheckpointData dataRegtest = {
     &mapCheckpointsRegtest,
     1522922005,
@@ -151,9 +151,9 @@ public:
         genesis.hashPrevBlock = 0;
         genesis.hashMerkleRoot = genesis.BuildMerkleTree();
         genesis.nVersion = 4;
-        genesis.nTime = 1522922005;//1522920605;
+        genesis.nTime = 1522920605;
         genesis.nBits = 0x1e0ffff0;
-        genesis.nNonce = 0;//153772;
+        genesis.nNonce = 153772;
 
         checkData(genesis, uint256("0x00000a6767671547d75e61d0f15fd97067c5d8763cf37ff2847d5a2dd55eba3fe9"));
 
@@ -212,62 +212,6 @@ public:
         nZerocoinHeaderVersion = 4; //Block headers must be this version once zerocoin is active
         nBudget_Fee_Confirmations = 6; // Number of confirmations for the finalization fee
     } 
-
-            //usama test checkpoints data
-   
-    bool CheckProofOfWork(uint256 hash, unsigned int nBits)
-    {
-    bool fNegative;
-    bool fOverflow;
-    uint256 bnTarget;
-
-    bnTarget.SetCompact(nBits, &fNegative, &fOverflow);
-
-    // Check range
-    if (fNegative || bnTarget == 0 || fOverflow || bnTarget > bnProofOfWorkLimit)
-        return error("CheckProofOfWork() : nBits below minimum work");
-
-    // Check proof of work matches claimed amount
-    if (hash > bnTarget)
-        return error("CheckProofOfWork() : hash doesn't match nBits");
-
-    return true;
-    }
-
-    void checkData(CBlock block, uint256 hash) {
-
-        if (block.GetHash() != hash)
-        {
-            printf("check blocks...\n");
-            uint256 thash;
-            block.nNonce = 0;
-
-            while(true)
-            {
-                thash = block.GetHash();
-                if (CheckProofOfWork(thash, block.nBits))
-                    break;
-                if ((block.nNonce & 0xFFF) == 0)
-                {
-                    printf("nonce %08X: hash = %s (target not matched)\n", block.nNonce, thash.ToString().c_str());
-                    //break;
-                }
-                ++block.nNonce;
-                if (block.nNonce == 0)
-                {
-                    printf("NONCE WRAPPED, incrementing time\n");
-                    ++block.nTime;
-                }
-            }
-            printf("nT = %u \n", block.nTime);
-            printf("nN = %u \n", block.nNonce);
-            printf("GH = %s\n", block.GetHash().ToString().c_str());
-            printf("MR = %s\n", block.hashMerkleRoot.ToString().c_str());
-         }
-    }
-
-    //test checkpoint data
-
     const Checkpoints::CCheckpointData& Checkpoints() const
     {
         return data;
@@ -312,10 +256,10 @@ public:
 
         //! Modify the testnet genesis block so the timestamp is valid for a later start.
         genesis.nTime = 1522920805;
-        genesis.nNonce = 1254338;
+        genesis.nNonce = 2295848;
 
         hashGenesisBlock = genesis.GetHash();
-        assert(hashGenesisBlock == uint256("0x0000014bd7a053eb417c79a53bf206733927fab837ad1a5e06265b21f8d9e9e8"));
+        assert(hashGenesisBlock == uint256("0x000008180c7712f05c32425df2eb7b85ad3582c6e92b61ac40a633cc44bb357d"));
 
         vFixedSeeds.clear();
         vSeeds.clear();
@@ -383,11 +327,11 @@ public:
         bnProofOfWorkLimit = ~uint256(0) >> 1;
         genesis.nTime = 1522922005;
         genesis.nBits = 0x1e0ffff0;
-        genesis.nNonce = 155014;
+        genesis.nNonce = 123253;
 
         hashGenesisBlock = genesis.GetHash();
         nDefaultPort = 51486;
-        assert(hashGenesisBlock == uint256("0x000007c6a68a4e47f0acdcf0b13d98f410ebd84394be5cb2b2852f93105a1ced"));
+        assert(hashGenesisBlock == uint256("0x000003cb3dfef0a9d860c026c490c9635ae88081f3dff4daa36a0f0803824fe1"));
 
         vFixedSeeds.clear(); //! Testnet mode doesn't have any fixed seeds.
         vSeeds.clear();      //! Testnet mode doesn't have any DNS seeds.
