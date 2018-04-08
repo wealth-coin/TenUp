@@ -123,7 +123,7 @@ public:
         nLastPOWBlock = 259200;
         nModifierUpdateBlock = 999999999;
         nZerocoinStartHeight = 2000;
-        nZerocoinStartTime = 1508214600; // October 17, 2017 4:30:00 AM
+        nZerocoinStartTime = 1523784600; // April 15, 2018 9:30:00 AM
         nBlockEnforceSerialRange = 1; //Enforce serial range starting this block
         nBlockRecalculateAccumulators = ~1; //Trigger a recalculation of accumulators
         nBlockFirstFraudulent = ~1; //First block that bad serials emerged
@@ -150,7 +150,7 @@ public:
         genesis.vtx.push_back(txNew);
         genesis.hashPrevBlock = 0;
         genesis.hashMerkleRoot = genesis.BuildMerkleTree();
-        genesis.nVersion = 1;
+        genesis.nVersion = 4;
         genesis.nTime = 1522920605;
         genesis.nBits = 0x1e0ffff0;
         genesis.nNonce = 620706;
