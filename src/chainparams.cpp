@@ -155,8 +155,6 @@ public:
         genesis.nBits = 0x1e0ffff0;
         genesis.nNonce = 153772;
 
-        checkData(genesis, uint256("0x00000a6767671547d75e61d0f15fd97067c5d8763cf37ff2847d5a2dd55eba3fe9"));
-
         hashGenesisBlock = genesis.GetHash();
         assert(hashGenesisBlock == uint256("0x00000e57e786b45f062aae803d3c6760638c15da423b50fd6cc8656c1a73302e"));
         assert(genesis.hashMerkleRoot == uint256("0x01cd2cec7147282c3b54233a218b0a68b49e8233318fd253578eea68d0e5bafd"));
