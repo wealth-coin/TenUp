@@ -151,11 +151,11 @@ public:
         genesis.hashPrevBlock = 0;
         genesis.hashMerkleRoot = genesis.BuildMerkleTree();
         genesis.nVersion = 4;
-        genesis.nTime = 1522920605;
+        genesis.nTime = 1522920805;//1522920605;
         genesis.nBits = 0x1e0ffff0;
-        genesis.nNonce = 153772;
+        genesis.nNonce = 0;//153772;
 
-        //checkData(genesis, uint256("0x00000a6767671547d75e61d0f15fd97067c5d8763cf37ff2847d5a2dd55eba3fe9"));
+        checkData(genesis, uint256("0x00000a6767671547d75e61d0f15fd97067c5d8763cf37ff2847d5a2dd55eba3fe9"));
 
         hashGenesisBlock = genesis.GetHash();
         assert(hashGenesisBlock == uint256("0x00000e57e786b45f062aae803d3c6760638c15da423b50fd6cc8656c1a73302e"));
