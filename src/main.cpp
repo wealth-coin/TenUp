@@ -3675,7 +3675,7 @@ void static UpdateTip(CBlockIndex* pindexNew)
 {
     chainActive.SetTip(pindexNew);
 
-    // If turned on AutoZeromint will automatically convert PIV to zPIV
+    // If turned on AutoZeromint will automatically convert TUP to zPIV
     if (pwalletMain->isZeromintEnabled ())
         pwalletMain->AutoZeromint ();
 

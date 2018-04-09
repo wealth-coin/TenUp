@@ -180,8 +180,8 @@
         <translation>Вы действительно хотите зашифровать свой кошелек?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR PIV&lt;/b&gt;!</source>
-        <translation>Внимание: если вы зашифруете свой кошелёк и потеряете от него пароль, то вы &lt;b&gt;ПОТЕРЯЕТЕ ВСЕ СВОИ PIV&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR TUP&lt;/b&gt;!</source>
+        <translation>Внимание: если вы зашифруете свой кошелёк и потеряете от него пароль, то вы &lt;b&gt;ПОТЕРЯЕТЕ ВСЕ СВОИ TUP&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -1527,32 +1527,32 @@ Please check the address and try again.</source>
         <translation>Выберите уровень конфиденциальности.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 10000 PIV</source>
-        <translation>Используйте 2 разные мастерноды для смешивания средств до 10000 PIV</translation>
+        <source>Use 2 separate masternodes to mix funds up to 10000 TUP</source>
+        <translation>Используйте 2 разные мастерноды для смешивания средств до 10000 TUP</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 10000 PIV</source>
-        <translation>Используйте 8 разных мастернод для смешивания средств до 10000 PIV</translation>
+        <source>Use 8 separate masternodes to mix funds up to 10000 TUP</source>
+        <translation>Используйте 8 разных мастернод для смешивания средств до 10000 TUP</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>Используйте 16 разных мастернод</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 PIV to anonymize 10000 PIV</source>
-        <translation>Этот вариант является самым быстрым и будет стоить порядка ~0.025 PIV для анонимизации 10000 PIV</translation>
+        <source>This option is the quickest and will cost about ~0.025 TUP to anonymize 10000 TUP</source>
+        <translation>Этот вариант является самым быстрым и будет стоить порядка ~0.025 TUP для анонимизации 10000 TUP</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 PIV to anonymize 10000 PIV</source>
-        <translation>Это средний по скорости вариант и он будет стоить около 0.05 PIV для анонимизации 10000 PIV</translation>
+        <source>This option is moderately fast and will cost about 0.05 TUP to anonymize 10000 TUP</source>
+        <translation>Это средний по скорости вариант и он будет стоить около 0.05 TUP для анонимизации 10000 TUP</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
         <translation>Это самый медленный и безопасный вариант. Максимальная анонимность стоит</translation>
     </message>
     <message>
-        <source>0.1 PIV per 10000 PIV you anonymize.</source>
-        <translation>0.1 PIV за 10000 PIV которые вы собираетесь анонимизировать.</translation>
+        <source>0.1 TUP per 10000 TUP you anonymize.</source>
+        <translation>0.1 TUP за 10000 TUP которые вы собираетесь анонимизировать.</translation>
     </message>
     <message>
         <source>Obfuscation Configuration</source>
@@ -1695,16 +1695,16 @@ https://www.transifex.com/tenup-project/tenup-project-translations</translation>
         <translation>Карта порта, использующего &amp;UPnP</translation>
     </message>
     <message>
-        <source>Percentage of incoming PIV which get automatically converted to zPIV via Zerocoin Protocol (min: 10%)</source>
-        <translation>Процент приходящих PIV, которые автоматически конвертируются в zPIV благодаря Zerocoin протоколу (min: 10%)</translation>
+        <source>Percentage of incoming TUP which get automatically converted to zTUP via Zerocoin Protocol (min: 10%)</source>
+        <translation>Процент приходящих TUP, которые автоматически конвертируются в zTUP благодаря Zerocoin протоколу (min: 10%)</translation>
     </message>
     <message>
-        <source>Percentage of autominted zPIV</source>
-        <translation>Процент  авточеканненых zPIV</translation>
+        <source>Percentage of autominted zTUP</source>
+        <translation>Процент  авточеканненых zTUP</translation>
     </message>
     <message>
-        <source>Preferred Automint zPIV Denomination</source>
-        <translation>Предпочитаемый номинал авточеканной  монеты  zPIV</translation>
+        <source>Preferred Automint zTUP Denomination</source>
+        <translation>Предпочитаемый номинал авточеканной  монеты  zTUP</translation>
     </message>
     <message>
         <source>Connect to the TENUP network through a SOCKS5 proxy.</source>
@@ -1838,8 +1838,8 @@ https://www.transifex.com/tenup-project/tenup-project-translations</translation>
         <translation>Вид</translation>
     </message>
     <message>
-        <source>PIV Balances</source>
-        <translation>Баланс PIV</translation>
+        <source>TUP Balances</source>
+        <translation>Баланс TUP</translation>
     </message>
     <message>
         <source>Available:</source>
@@ -1902,12 +1902,12 @@ https://www.transifex.com/tenup-project/tenup-project-translations</translation>
         <translation>Расходуемый:</translation>
     </message>
     <message>
-        <source>PIV:</source>
-        <translation>PIV:</translation>
+        <source>TUP:</source>
+        <translation>TUP:</translation>
     </message>
     <message>
-        <source>zPIV:</source>
-        <translation>zPIV:</translation>
+        <source>zTUP:</source>
+        <translation>zTUP:</translation>
     </message>
     <message>
         <source>0 %</source>
@@ -2031,8 +2031,8 @@ https://www.transifex.com/tenup-project/tenup-project-translations</translation>
 <context>
     <name>PrivacyDialog</name>
     <message>
-        <source>PIV which were anonymized via Zerocin Protocol</source>
-        <translation>PIV, который был анонимно использован через Zerocoin протокол</translation>
+        <source>TUP which were anonymized via Zerocin Protocol</source>
+        <translation>TUP, который был анонимно использован через Zerocoin протокол</translation>
     </message>
     <message>
         <source>Zerocoin Actions:</source>
@@ -2713,8 +2713,8 @@ https://www.transifex.com/tenup-project/tenup-project-translations</translation>
         <translation>Изменить:</translation>
     </message>
     <message>
-        <source>0 PIV</source>
-        <translation>0 PIV</translation>
+        <source>0 TUP</source>
+        <translation>0 TUP</translation>
     </message>
     <message>
         <source>Transaction Fee:</source>

@@ -180,8 +180,8 @@
         <translation>Você tem certeza que deseja criptografar sua carteira?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR PIV&lt;/b&gt;!</source>
-        <translation>Aviso: se você criptografar sua carteira e perder sua senha você &lt;b&gt;PERDERÁ TODAS AS SUAS PIV&lt;b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR TUP&lt;/b&gt;!</source>
+        <translation>Aviso: se você criptografar sua carteira e perder sua senha você &lt;b&gt;PERDERÁ TODAS AS SUAS TUP&lt;b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -418,8 +418,8 @@
         <translation>Olhar histórico de transação</translation>
     </message>
     <message>
-        <source>Privacy Actions for zPIV</source>
-        <translation>Ações privadas para zPIV</translation>
+        <source>Privacy Actions for zTUP</source>
+        <translation>Ações privadas para zTUP</translation>
     </message>
     <message>
         <source>E&amp;xit</source>
@@ -1559,32 +1559,32 @@ Favor verificar o endereço e tente novamente.</translation>
         <translation>Favor selecionar o nível de privacidade.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 10000 PIV</source>
-        <translation>Use 2 masternodes separados para embaralhar fundos até 10000 PIV</translation>
+        <source>Use 2 separate masternodes to mix funds up to 10000 TUP</source>
+        <translation>Use 2 masternodes separados para embaralhar fundos até 10000 TUP</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 10000 PIV</source>
-        <translation>Use 8 masternodes separados para embaralhar fundos até 10000 PIV</translation>
+        <source>Use 8 separate masternodes to mix funds up to 10000 TUP</source>
+        <translation>Use 8 masternodes separados para embaralhar fundos até 10000 TUP</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>Use 16 masternodes separados</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 PIV to anonymize 10000 PIV</source>
-        <translation>Está opção é a mais rápida e vai custar em torno de ~0.025 PIV para anonimizar 10000 PIV</translation>
+        <source>This option is the quickest and will cost about ~0.025 TUP to anonymize 10000 TUP</source>
+        <translation>Está opção é a mais rápida e vai custar em torno de ~0.025 TUP para anonimizar 10000 TUP</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 PIV to anonymize 10000 PIV</source>
-        <translation>Está opção moderamente rápida e vai custar em torno de ~0.05 PIV para anonimizar 10000 PIV</translation>
+        <source>This option is moderately fast and will cost about 0.05 TUP to anonymize 10000 TUP</source>
+        <translation>Está opção moderamente rápida e vai custar em torno de ~0.05 TUP para anonimizar 10000 TUP</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
         <translation>Esta é a opção mais lenta e mais segura. Usando a anonimização máxima vai custar</translation>
     </message>
     <message>
-        <source>0.1 PIV per 10000 PIV you anonymize.</source>
-        <translation>0.1 PIV por 10000 PIV que deixar anônima.</translation>
+        <source>0.1 TUP per 10000 TUP you anonymize.</source>
+        <translation>0.1 TUP por 10000 TUP que deixar anônima.</translation>
     </message>
     <message>
         <source>Obfuscation Configuration</source>
@@ -1822,8 +1822,8 @@ https://www.transifex.com/tenup-project/tenup-project-translations</translation>
         <translation>Formulário</translation>
     </message>
     <message>
-        <source>PIV Balances</source>
-        <translation>Balanços PIV</translation>
+        <source>TUP Balances</source>
+        <translation>Balanços TUP</translation>
     </message>
     <message>
         <source>Available:</source>
@@ -1874,20 +1874,20 @@ https://www.transifex.com/tenup-project/tenup-project-translations</translation>
         <translation>Disponível:</translation>
     </message>
     <message>
-        <source>PIV:</source>
-        <translation>PIV:</translation>
+        <source>TUP:</source>
+        <translation>TUP:</translation>
     </message>
     <message>
-        <source>zPIV:</source>
-        <translation>zPIV:</translation>
+        <source>zTUP:</source>
+        <translation>zTUP:</translation>
     </message>
     <message>
         <source>0 %</source>
         <translation>0 %</translation>
     </message>
     <message>
-        <source>0.000 000 00 PIV</source>
-        <translation>0.000 000 00 PIV</translation>
+        <source>0.000 000 00 TUP</source>
+        <translation>0.000 000 00 TUP</translation>
     </message>
     <message>
         <source>Locked:</source>
@@ -1967,12 +1967,12 @@ https://www.transifex.com/tenup-project/tenup-project-translations</translation>
 <context>
     <name>PrivacyDialog</name>
     <message>
-        <source>PIV which were anonymized via Zerocin Protocol</source>
-        <translation>PIV que foram anonimizadas via protocolo Zerocoin</translation>
+        <source>TUP which were anonymized via Zerocin Protocol</source>
+        <translation>TUP que foram anonimizadas via protocolo Zerocoin</translation>
     </message>
     <message>
-        <source>Zerocoin PIV (zPIV)</source>
-        <translation>Zerocoin PIV (zPIV)</translation>
+        <source>Zerocoin TUP (zTUP)</source>
+        <translation>Zerocoin TUP (zTUP)</translation>
     </message>
     <message>
         <source>Zerocoin Actions:</source>
@@ -1991,12 +1991,12 @@ https://www.transifex.com/tenup-project/tenup-project-translations</translation>
         <translation>0</translation>
     </message>
     <message>
-        <source>zPIV</source>
-        <translation>zPIV</translation>
+        <source>zTUP</source>
+        <translation>zTUP</translation>
     </message>
     <message>
-        <source>0.000 000 00 PIV</source>
-        <translation>0.000 000 00 PIV</translation>
+        <source>0.000 000 00 TUP</source>
+        <translation>0.000 000 00 TUP</translation>
     </message>
     <message>
         <source>Reset</source>
@@ -2059,8 +2059,8 @@ https://www.transifex.com/tenup-project/tenup-project-translations</translation>
         <translation>Estatísticas zerocoin:</translation>
     </message>
     <message>
-        <source>Total Balance including unconfirmed and immature zPIV</source>
-        <translation>Balanço Total incluindo não confirmadas e imaturas zPIV</translation>
+        <source>Total Balance including unconfirmed and immature zTUP</source>
+        <translation>Balanço Total incluindo não confirmadas e imaturas zTUP</translation>
     </message>
     <message>
         <source>Total Zerocoin  Balance:</source>
@@ -2696,8 +2696,8 @@ https://www.transifex.com/tenup-project/tenup-project-translations</translation>
         <translation>Tamanho UTXO:</translation>
     </message>
     <message>
-        <source>0 PIV</source>
-        <translation>0 PIV</translation>
+        <source>0 TUP</source>
+        <translation>0 TUP</translation>
     </message>
     <message>
         <source>Transaction Fee:</source>
@@ -2788,8 +2788,8 @@ https://www.transifex.com/tenup-project/tenup-project-translations</translation>
         <translation>Adicionar &amp;Recipiente</translation>
     </message>
     <message>
-        <source>Anonymized PIV</source>
-        <translation>PIV anonimizadas</translation>
+        <source>Anonymized TUP</source>
+        <translation>TUP anonimizadas</translation>
     </message>
     <message>
         <source>Balance:</source>
@@ -3749,12 +3749,12 @@ https://www.transifex.com/tenup-project/tenup-project-translations</translation>
         <translation>Executar o comando quando uma transação da carteira mudar (%s no cmd será substituído pela TxID)</translation>
     </message>
     <message>
-        <source>Fees (in PIV/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>Taxas (em PIV/Kb) menores que isso serão consideradas taxa zero para propagação (padrão: %s)</translation>
+        <source>Fees (in TUP/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>Taxas (em TUP/Kb) menores que isso serão consideradas taxa zero para propagação (padrão: %s)</translation>
     </message>
     <message>
-        <source>Fees (in PIV/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>Taxas (em PIV/Kb) menores que isso serão consideradas taxa zero para a criação da transação (padrão: %s)</translation>
+        <source>Fees (in TUP/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>Taxas (em TUP/Kb) menores que isso serão consideradas taxa zero para a criação da transação (padrão: %s)</translation>
     </message>
     <message>
         <source>In this mode -genproclimit controls how many blocks are generated immediately.</source>
@@ -3773,8 +3773,8 @@ https://www.transifex.com/tenup-project/tenup-project-translations</translation>
         <translation>Define o tamanho máximo de transações de alta prioridade/taxa baixa em bytes (padrão: %d)</translation>
     </message>
     <message>
-        <source>Unable to locate enough funds for this transaction that are not equal 10000 PIV.</source>
-        <translation>Incapaz de localizar fundos para esta transação que não são iguais a 10000 PIV.</translation>
+        <source>Unable to locate enough funds for this transaction that are not equal 10000 TUP.</source>
+        <translation>Incapaz de localizar fundos para esta transação que não são iguais a 10000 TUP.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
@@ -3969,8 +3969,8 @@ https://www.transifex.com/tenup-project/tenup-project-translations</translation>
         <translation>Falhou em ler o bloco</translation>
     </message>
     <message>
-        <source>Fee (in PIV/kB) to add to transactions you send (default: %s)</source>
-        <translation>Taxa (em PIV/kB) a adicionar em transações que você enviar (padrão: %s)</translation>
+        <source>Fee (in TUP/kB) to add to transactions you send (default: %s)</source>
+        <translation>Taxa (em TUP/kB) a adicionar em transações que você enviar (padrão: %s)</translation>
     </message>
     <message>
         <source>Finalizing transaction.</source>

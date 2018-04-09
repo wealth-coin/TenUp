@@ -184,7 +184,7 @@
         <translation>지갑을 암호화 하시겠습니까?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR PIV&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR TUP&lt;/b&gt;!</source>
         <translation>경고: 지갑 암호화 후 암호를 분실하게 되면 &lt;b&gt;모든 PIV를 잃게 됩니다&lt;/b&gt;!</translation>
     </message>
     <message>
@@ -1651,32 +1651,32 @@ Please check the address and try again.</source>
         <translation>익명화 레벨을 선택해주세요.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 10000 PIV</source>
-        <translation>2개의 개별 마스터노드를 이용하여 최대 10000 PIV 를 섞을 수 있습니다.</translation>
+        <source>Use 2 separate masternodes to mix funds up to 10000 TUP</source>
+        <translation>2개의 개별 마스터노드를 이용하여 최대 10000 TUP 를 섞을 수 있습니다.</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 10000 PIV</source>
-        <translation>8개의 개별 마스터노드를 이용하여 최대 10000 PIV 를 섞을 수 있습니다.</translation>
+        <source>Use 8 separate masternodes to mix funds up to 10000 TUP</source>
+        <translation>8개의 개별 마스터노드를 이용하여 최대 10000 TUP 를 섞을 수 있습니다.</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>16개의 개별 마스터노드를 사용</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 PIV to anonymize 10000 PIV</source>
-        <translation>이 옵션은 가장 빠르게 전송되며 10000 PIV 익명화에 약 ~0.025 PIV의 비용이 들어갑니다.</translation>
+        <source>This option is the quickest and will cost about ~0.025 TUP to anonymize 10000 TUP</source>
+        <translation>이 옵션은 가장 빠르게 전송되며 10000 TUP 익명화에 약 ~0.025 PIV의 비용이 들어갑니다.</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 PIV to anonymize 10000 PIV</source>
-        <translation>이 옵션은 중간 정도의 속도로 전송되며 10000 PIV 익명화에 약 0.05 PIV의 비용이 들어갑니다.</translation>
+        <source>This option is moderately fast and will cost about 0.05 TUP to anonymize 10000 TUP</source>
+        <translation>이 옵션은 중간 정도의 속도로 전송되며 10000 TUP 익명화에 약 0.05 PIV의 비용이 들어갑니다.</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
         <translation>이것은 가장 느리고 안전한 옵션입니다. 최고 익명성을 사용하면 비용이 발생합니다.</translation>
     </message>
     <message>
-        <source>0.1 PIV per 10000 PIV you anonymize.</source>
-        <translation>10000 PIV 익명화에 0.1 PIV 가 듭니다.</translation>
+        <source>0.1 TUP per 10000 TUP you anonymize.</source>
+        <translation>10000 TUP 익명화에 0.1 TUP 가 듭니다.</translation>
     </message>
     <message>
         <source>Obfuscation Configuration</source>
@@ -1819,20 +1819,20 @@ https://www.transifex.com/tenup-project/tenup-project-translations</translation>
         <translation>&amp;UPnp를 사용하여 포트 매핑</translation>
     </message>
     <message>
-        <source>Percentage of incoming PIV which get automatically converted to zPIV via Zerocoin Protocol (min: 10%)</source>
-        <translation>PIV수신시 자동변환 zPIV 퍼센트 (최소값:10%)</translation>
+        <source>Percentage of incoming TUP which get automatically converted to zTUP via Zerocoin Protocol (min: 10%)</source>
+        <translation>PIV수신시 자동변환 zTUP 퍼센트 (최소값:10%)</translation>
     </message>
     <message>
-        <source>Percentage of autominted zPIV</source>
-        <translation>자동 변환되는 zPIV 퍼센트</translation>
+        <source>Percentage of autominted zTUP</source>
+        <translation>자동 변환되는 zTUP 퍼센트</translation>
     </message>
     <message>
-        <source>Wait with automatic conversion to Zerocoin until enough PIV for this denomination is available</source>
+        <source>Wait with automatic conversion to Zerocoin until enough TUP for this denomination is available</source>
         <translation>이 디노미네이션의 PIV가 충분해질 때까지 Zerocoin으로 자동전환은 보류됩니다.</translation>
     </message>
     <message>
-        <source>Preferred Automint zPIV Denomination</source>
-        <translation>선호하는 자동생성 zPIV 디노미네이션 </translation>
+        <source>Preferred Automint zTUP Denomination</source>
+        <translation>선호하는 자동생성 zTUP 디노미네이션 </translation>
     </message>
     <message>
         <source>Connect to the TENUP network through a SOCKS5 proxy.</source>
@@ -1966,8 +1966,8 @@ https://www.transifex.com/tenup-project/tenup-project-translations</translation>
         <translation>Form</translation>
     </message>
     <message>
-        <source>PIV Balances</source>
-        <translation>PIV 잔액</translation>
+        <source>TUP Balances</source>
+        <translation>TUP 잔액</translation>
     </message>
     <message>
         <source>Available:</source>
@@ -2030,20 +2030,20 @@ https://www.transifex.com/tenup-project/tenup-project-translations</translation>
         <translation>출금 가능 액수:</translation>
     </message>
     <message>
-        <source>PIV:</source>
-        <translation>PIV:</translation>
+        <source>TUP:</source>
+        <translation>TUP:</translation>
     </message>
     <message>
-        <source>zPIV:</source>
-        <translation>zPIV:</translation>
+        <source>zTUP:</source>
+        <translation>zTUP:</translation>
     </message>
     <message>
         <source>0 %</source>
         <translation>0 %</translation>
     </message>
     <message>
-        <source>0.000 000 00 PIV</source>
-        <translation>0.000 000 00 PIV</translation>
+        <source>0.000 000 00 TUP</source>
+        <translation>0.000 000 00 TUP</translation>
     </message>
     <message>
         <source>Locked:</source>
@@ -2191,12 +2191,12 @@ https://www.transifex.com/tenup-project/tenup-project-translations</translation>
 <context>
     <name>PrivacyDialog</name>
     <message>
-        <source>PIV which were anonymized via Zerocin Protocol</source>
-        <translation>제로코인 프로토콜을 통해 익명화된 PIV</translation>
+        <source>TUP which were anonymized via Zerocin Protocol</source>
+        <translation>제로코인 프로토콜을 통해 익명화된 TUP</translation>
     </message>
     <message>
-        <source>Zerocoin PIV (zPIV)</source>
-        <translation>제로코인 PIV (zPIV)</translation>
+        <source>Zerocoin TUP (zTUP)</source>
+        <translation>제로코인 TUP (zTUP)</translation>
     </message>
     <message>
         <source>Zerocoin Actions:</source>
@@ -2208,7 +2208,7 @@ https://www.transifex.com/tenup-project/tenup-project-translations</translation>
     </message>
     <message>
         <source>Enter an amount of Piv to convert to zPiv</source>
-        <translation>zPIV로 변환할 PIV 수량을 입력하세요.</translation>
+        <translation>zPIV로 변환할 TUP 수량을 입력하세요.</translation>
     </message>
     <message>
         <source>Mint Zerocoin</source>
@@ -2219,16 +2219,16 @@ https://www.transifex.com/tenup-project/tenup-project-translations</translation>
         <translation>0</translation>
     </message>
     <message>
-        <source>zPIV</source>
-        <translation>zPIV</translation>
+        <source>zTUP</source>
+        <translation>zTUP</translation>
     </message>
     <message>
         <source>Available for Minting:</source>
         <translation>생성 가능한 수량 :</translation>
     </message>
     <message>
-        <source>0.000 000 00 PIV</source>
-        <translation>0.000 000 00 PIV</translation>
+        <source>0.000 000 00 TUP</source>
+        <translation>0.000 000 00 TUP</translation>
     </message>
     <message>
         <source>Reset Zerocoin Wallet DB. Deletes transactions that did not make it into the blockchain.</source>
@@ -2264,11 +2264,11 @@ https://www.transifex.com/tenup-project/tenup-project-translations</translation>
     </message>
     <message>
         <source>zPiv Control</source>
-        <translation>zPIV 설정</translation>
+        <translation>zTUP 설정</translation>
     </message>
     <message>
         <source>zPiv Selected:</source>
-        <translation>선택한 zPIV : </translation>
+        <translation>선택한 zTUP : </translation>
     </message>
     <message>
         <source>Quantity Selected:</source>
@@ -2283,16 +2283,16 @@ https://www.transifex.com/tenup-project/tenup-project-translations</translation>
         <translation>제로코인 보내기</translation>
     </message>
     <message>
-        <source>Available (mature and spendable) zPIV for spending</source>
-        <translation>전송 가능한 zPIV</translation>
+        <source>Available (mature and spendable) zTUP for spending</source>
+        <translation>전송 가능한 zTUP</translation>
     </message>
     <message>
         <source>Available Balance:</source>
         <translation>가능한 잔액:</translation>
     </message>
     <message>
-        <source>0 zPIV</source>
-        <translation>0 zPIV</translation>
+        <source>0 zTUP</source>
+        <translation>0 zTUP</translation>
     </message>
     <message>
         <source>Security Level for Zerocoin Transactions. More is better, but needs more time and resources.</source>
@@ -2363,7 +2363,7 @@ https://www.transifex.com/tenup-project/tenup-project-translations</translation>
         <translation>제로코인 상태 :</translation>
     </message>
     <message>
-        <source>Total Balance including unconfirmed and immature zPIV</source>
+        <source>Total Balance including unconfirmed and immature zTUP</source>
         <translation>승인중이거나, 생성중인 제로코인도 포함된 전체 잔액입니다.</translation>
     </message>
     <message>
@@ -2511,11 +2511,11 @@ https://www.transifex.com/tenup-project/tenup-project-translations</translation>
         <translation>금액 복사</translation>
     </message>
     <message>
-        <source>zPIV is currently disabled due to maintenance.</source>
+        <source>zTUP is currently disabled due to maintenance.</source>
         <translation>zPIV는 현재 점검중이라 사용하실수 없습니다.</translation>
     </message>
     <message>
-        <source>zPIV is currently undergoing maintenance.</source>
+        <source>zTUP is currently undergoing maintenance.</source>
         <translation>zPIV는 현재 점검중입니다.</translation>
     </message>
     <message>
@@ -2535,8 +2535,8 @@ https://www.transifex.com/tenup-project/tenup-project-translations</translation>
         <translation>성공적으로 발행됨</translation>
     </message>
     <message>
-        <source> zPIV in </source>
-        <translation> zPIV in </translation>
+        <source> zTUP in </source>
+        <translation> zTUP in </translation>
     </message>
     <message>
         <source> sec. Used denominations:
@@ -2649,7 +2649,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <source>zPiv Mint</source>
-        <translation>zPIV 생성</translation>
+        <translation>zTUP 생성</translation>
     </message>
     <message>
         <source>Sending successful, return code: </source>
@@ -3298,8 +3298,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>UTXO 크기:</translation>
     </message>
     <message>
-        <source>0 PIV</source>
-        <translation>0 PIV</translation>
+        <source>0 TUP</source>
+        <translation>0 TUP</translation>
     </message>
     <message>
         <source>Transaction Fee:</source>
@@ -3410,8 +3410,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>&amp;받는 사람 추가</translation>
     </message>
     <message>
-        <source>Anonymized PIV</source>
-        <translation>익명화 PIV</translation>
+        <source>Anonymized TUP</source>
+        <translation>익명화 TUP</translation>
     </message>
     <message>
         <source>Balance:</source>
@@ -4095,19 +4095,19 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <source>Converted Piv to zPiv</source>
-        <translation>zPIV로 변환된 PIV</translation>
+        <translation>zPIV로 변환된 TUP</translation>
     </message>
     <message>
         <source>Spent zPiv</source>
-        <translation>전송된 zPIV</translation>
+        <translation>전송된 zTUP</translation>
     </message>
     <message>
         <source>Received Piv from zPiv</source>
-        <translation>zPIV로 전송받은 PIV</translation>
+        <translation>zPIV로 전송받은 TUP</translation>
     </message>
     <message>
         <source>Minted Change as zPiv from zPiv Spend</source>
-        <translation>zPIV 전송후 남은 잔돈 zPIV 생성됨</translation>
+        <translation>zTUP 전송후 남은 잔돈 zTUP 생성됨</translation>
     </message>
     <message>
         <source>Converted zPiv to Piv</source>
@@ -4230,7 +4230,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <source>Received Piv from zPiv</source>
-        <translation>zPIV로 전송받은 PIV</translation>
+        <translation>zPIV로 전송받은 TUP</translation>
     </message>
     <message>
         <source>Zerocoin Mint</source>
@@ -4242,7 +4242,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <source>Zerocoin Spend, Change in zPiv</source>
-        <translation>제로코인 전송, 잔돈은 zPIV</translation>
+        <translation>제로코인 전송, 잔돈은 zTUP</translation>
     </message>
     <message>
         <source>Zerocoin Spend to Self</source>
@@ -4409,7 +4409,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     <name>ZPivControlDialog</name>
     <message>
         <source>Select zPiv to Spend</source>
-        <translation>전송할 zPIV 선택</translation>
+        <translation>전송할 zTUP 선택</translation>
     </message>
     <message>
         <source>Quantity</source>
@@ -4515,12 +4515,12 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>최고 블록이 변경될 경우 명령을 실행하십시오 (명령 내 %s 는 블록 해시로 대체 되었습니다)</translation>
     </message>
     <message>
-        <source>Fees (in PIV/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>이것보다 작은 수수료 (PIV/Kb)는 중계 수수료가 없는 것으로 간주됩니다 (기본값: %s)</translation>
+        <source>Fees (in TUP/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>이것보다 작은 수수료 (TUP/Kb)는 중계 수수료가 없는 것으로 간주됩니다 (기본값: %s)</translation>
     </message>
     <message>
-        <source>Fees (in PIV/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>이것보다 작은 수수료 (PIV/Kb)는 트랜잭션 생성 수수료가 없는 것으로 간주됩니다 (기본값: %s)</translation>
+        <source>Fees (in TUP/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>이것보다 작은 수수료 (TUP/Kb)는 트랜잭션 생성 수수료가 없는 것으로 간주됩니다 (기본값: %s)</translation>
     </message>
     <message>
         <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</source>
@@ -4643,11 +4643,11 @@ rpcpassword=%s
         <translation>이 트랜잭션를 위해 난독화 표기된 충분한 금액을 찾을 수 없습니다.</translation>
     </message>
     <message>
-        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 PIV.</source>
+        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 TUP.</source>
         <translation>이 트랜잭션를 위해 난독화 표기가 안된 충분한 금액을 찾을 수 없습니다. 10000 PIV과 일치하지 않음.</translation>
     </message>
     <message>
-        <source>Unable to locate enough funds for this transaction that are not equal 10000 PIV.</source>
+        <source>Unable to locate enough funds for this transaction that are not equal 10000 TUP.</source>
         <translation>트랜잭션에 대한 충분한 금액을 찾을 수 없습니다. 10000 PIV와 같지 않음</translation>
     </message>
     <message>
@@ -4951,8 +4951,8 @@ rpcpassword=%s
         <translation>블록을 받아오는데 실패했습니다.</translation>
     </message>
     <message>
-        <source>Fee (in PIV/kB) to add to transactions you send (default: %s)</source>
-        <translation>당신이 보내는 트랜잭션에 추가 할 수수료 (PIV/kB) (기본값: %s)</translation>
+        <source>Fee (in TUP/kB) to add to transactions you send (default: %s)</source>
+        <translation>당신이 보내는 트랜잭션에 추가 할 수수료 (TUP/kB) (기본값: %s)</translation>
     </message>
     <message>
         <source>Finalizing transaction.</source>

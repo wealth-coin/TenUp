@@ -180,7 +180,7 @@
         <translation>Oletko varma että tahdot salata lompakkosi?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR PIV&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR TUP&lt;/b&gt;!</source>
         <translation>Varoitus: Jos salaat lompakkosi ja unohdat salausavaimesi, &lt;b&gt;menetät kaikki PIVisi&lt;/b&gt;</translation>
     </message>
     <message>
@@ -1150,11 +1150,11 @@ Please check the address and try again.</source>
         <translation>Valitse yksityisyyden taso.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 10000 PIV</source>
+        <source>Use 2 separate masternodes to mix funds up to 10000 TUP</source>
         <translation>Käytä 2 erillistä masternodea sekoittaaksesi enintään 10000 TENUP</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 10000 PIV</source>
+        <source>Use 8 separate masternodes to mix funds up to 10000 TUP</source>
         <translation>Käytä 8 erillistä masternodea sekoittaaksesi enintään 10000 TENUP</translation>
     </message>
     <message>
@@ -1162,11 +1162,11 @@ Please check the address and try again.</source>
         <translation>Käytä 16 erillistä masternodea</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 PIV to anonymize 10000 PIV</source>
+        <source>This option is the quickest and will cost about ~0.025 TUP to anonymize 10000 TUP</source>
         <translation>Tämä vaihtoehto on nopein ja maksaa noin ~0.025 PIV anonymoidaksesi 10000 TENUP</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 PIV to anonymize 10000 PIV</source>
+        <source>This option is moderately fast and will cost about 0.05 TUP to anonymize 10000 TUP</source>
         <translation>Tämä vaihtoehto on suhteellisen nopea ja maksaa 0.05 TENUP anonymoidaksesi 10000 TENUP</translation>
     </message>
     <message>
@@ -1174,7 +1174,7 @@ Please check the address and try again.</source>
         <translation>Tämä on hitain ja turvallisin vaihtoehto. Täydesti anonymisoiminen ei maksa mitään.</translation>
     </message>
     <message>
-        <source>0.1 PIV per 10000 PIV you anonymize.</source>
+        <source>0.1 TUP per 10000 TUP you anonymize.</source>
         <translation>0.1 per 10000 TENUP, jotka anonymisoit.</translation>
     </message>
     <message>
@@ -1913,8 +1913,8 @@ Please check the address and try again.</source>
         <translation>Muutos:</translation>
     </message>
     <message>
-        <source>0 PIV</source>
-        <translation>0 PIV</translation>
+        <source>0 TUP</source>
+        <translation>0 TUP</translation>
     </message>
     <message>
         <source>Choose...</source>
