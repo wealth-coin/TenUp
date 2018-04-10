@@ -268,7 +268,7 @@
 #define LT_OBJDIR ".libs/"
 
 /* Define to the address where bug reports for this package should be sent. */
-#define PACKAGE_BUGREPORT "tenup.io"
+#define PACKAGE_BUGREPORT "www.tenup.org"
 
 /* Define to the full name of this package. */
 #define PACKAGE_NAME "TenUp Core"
@@ -283,7 +283,7 @@
 #define PACKAGE_URL ""
 
 /* Define to the version of this package. */
-#define PACKAGE_VERSION "1.0.0"
+#define PACKAGE_VERSION "3.0.6"
 
 /* Define to necessary symbol if this constant uses a non-standard name on
    your system. */
