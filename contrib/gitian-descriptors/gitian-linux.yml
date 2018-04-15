@@ -1,5 +1,5 @@
 ---
-name: "tenup-linux-3.0"
+name: "tenup-linux-1.0"
 enable_cache: true
 suites:
 - "trusty"
@@ -29,8 +29,8 @@ packages:
 - "python"
 reference_datetime: "2015-06-01 00:00:00"
 remotes:
-- "url": "https://github.com/tenup-project/tenup.git"
-  "dir": "tenup"
+- "url": "https://github.com/tenup-project/TenUp.git"
+  "dir": "TenUp"
 files: []
 script: |
 
