@@ -24,10 +24,10 @@ If you're using the automated script (found in [contrib/gitian-build.sh](/contri
 Check out the source code in the following directory hierarchy.
 
     cd /path/to/your/toplevel/build
-    git clone https://github.com/tenup-project/gitian.sigs.git
-    git clone https://github.com/tenup-project/tenup-detached-sigs.git
+    git clone https://github.com/tenup-coin/gitian.sigs.git
+    git clone https://github.com/tenup-coin/tenup-detached-sigs.git
     git clone https://github.com/devrandom/gitian-builder.git
-    git clone https://github.com/tenup-project/tenup.git
+    git clone https://github.com/tenup-coin/TenUp.git
 
 ### TENUP maintainers/release engineers, suggestion for writing release notes
 
