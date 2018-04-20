@@ -150,7 +150,7 @@ public:
         genesis.vtx.push_back(txNew);
         genesis.hashPrevBlock = 0;
         genesis.hashMerkleRoot = genesis.BuildMerkleTree();
-        genesis.nVersion = 4;
+        genesis.nVersion = 1;
         genesis.nTime = 1522920605;
         genesis.nBits = 0x1e0ffff0;
         genesis.nNonce = 620706;
@@ -324,8 +324,8 @@ public:
         nTargetSpacing = 1 * 60;        // Tenup: 1 minutes
         bnProofOfWorkLimit = ~uint256(0) >> 1;
         genesis.nTime = 1522922005;
-        genesis.nBits = 0x207fffff;
-        genesis.nNonce = 1550140;
+        genesis.nBits = 0x1e0ffff0;//0x207fffff;
+        genesis.nNonce = 155014;
 
         hashGenesisBlock = genesis.GetHash();
         nDefaultPort = 51486;
