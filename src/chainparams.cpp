@@ -123,7 +123,7 @@ public:
         nLastPOWBlock = 0;
         nModifierUpdateBlock = 999999999;
         nZerocoinStartHeight = 1;
-        nZerocoinStartTime = 1514721101; // Sunday, December 31, 2017 11:51:41 AM
+        nZerocoinStartTime = 1522920605; // Sunday, December 31, 2017 11:51:41 AM
         nBlockEnforceSerialRange = 1; //Enforce serial range starting this block
         nBlockRecalculateAccumulators = ~1; //Trigger a recalculation of accumulators
         nBlockFirstFraudulent = ~1; //First block that bad serials emerged
@@ -324,7 +324,7 @@ public:
         nTargetSpacing = 1 * 60;        // Tenup: 1 minutes
         bnProofOfWorkLimit = ~uint256(0) >> 1;
         genesis.nTime = 1522922005;
-        genesis.nBits = 0x1e0ffff0;//0x207fffff;
+        genesis.nBits = 0x1e0ffff0;
         genesis.nNonce = 155014;
 
         hashGenesisBlock = genesis.GetHash();
