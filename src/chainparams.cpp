@@ -150,13 +150,13 @@ public:
         genesis.vtx.push_back(txNew);
         genesis.hashPrevBlock = 0;
         genesis.hashMerkleRoot = genesis.BuildMerkleTree();
-        genesis.nVersion = 4;
+        genesis.nVersion = 1;
         genesis.nTime = 1522920605;
         genesis.nBits = 0x1e0ffff0;
         genesis.nNonce = 620706;
 
         hashGenesisBlock = genesis.GetHash();
-        assert(hashGenesisBlock == uint256("00000a91661547d75e61d0f15fd97067c5d8763cf37ff2847d5a2dd55eba3f"));
+        assert(hashGenesisBlock == uint256("0x00000a91661547d75e61d0f15fd97067c5d8763cf37ff2847d5a2dd55eba3f"));
         assert(genesis.hashMerkleRoot == uint256("0x01cd2cec7147282c3b54233a218b0a68b49e8233318fd253578eea68d0e5bafd"));
 
         //vSeeds.push_back(CDNSSeedData("fuzzbawls.pw", "tenup.seed.fuzzbawls.pw"));     // Primary DNS Seeder from Fuzzbawls
