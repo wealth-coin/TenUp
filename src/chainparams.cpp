@@ -125,7 +125,7 @@ public:
         nZerocoinStartHeight = 11;
         nZerocoinStartTime = 1522920605; // Sunday, December 31, 2017 11:51:41 AM
         nBlockEnforceSerialRange = 1; //Enforce serial range starting this block
-        nBlockRecalculateAccumulators = ~1; //Trigger a recalculation of accumulators
+        nBlockRecalculateAccumulators = ~5; //Trigger a recalculation of accumulators
         nBlockFirstFraudulent = ~1; //First block that bad serials emerged
         nBlockLastGoodCheckpoint = ~1; //Last valid accumulator checkpoint
         nBlockEnforceInvalidUTXO = 1; //Start enforcing the invalid UTXO's
@@ -182,11 +182,11 @@ public:
 
         fRequireRPCPassword = true;
         fMiningRequiresPeers = true;
-        fAllowMinDifficultyBlocks = false;
+        fAllowMinDifficultyBlocks = true; //false;
         fDefaultConsistencyChecks = false;
         fRequireStandard = true;
-        fMineBlocksOnDemand = false;
-        fSkipProofOfWorkCheck = false; //as coin switched to PoS
+        fMineBlocksOnDemand = true; //false;
+        fSkipProofOfWorkCheck = true; //false; //as coin switched to PoS
         fTestnetToBeDeprecatedFieldRPC = false;
         fHeadersFirstSyncingActive = false;
 
