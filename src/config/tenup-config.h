@@ -15,13 +15,13 @@
 #define CLIENT_VERSION_IS_RELEASE true
 
 /* Major version */
-#define CLIENT_VERSION_MAJOR 3
+#define CLIENT_VERSION_MAJOR 1
 
 /* Minor version */
 #define CLIENT_VERSION_MINOR 0
 
 /* Build revision */
-#define CLIENT_VERSION_REVISION 6
+#define CLIENT_VERSION_REVISION 0
 
 /* Version is release */
 #define COPYRIGHT_YEAR 2017
@@ -30,7 +30,7 @@
 #define ENABLE_WALLET 1
 
 /* Define to 1 to enable ZMQ functions */
-#define ENABLE_ZMQ 0
+#define ENABLE_ZMQ 1
 
 /* parameter and return value type for __fdelt_chk */
 /* #undef FDELT_TYPE */
@@ -274,7 +274,7 @@
 #define PACKAGE_NAME "TenUp Core"
 
 /* Define to the full name and version of this package. */
-#define PACKAGE_STRING "TenUp Core 3.0.6"
+#define PACKAGE_STRING "TenUp Core 1.0.0"
 
 /* Define to the one symbol short name of this package. */
 #define PACKAGE_TARNAME "tenup"
@@ -283,7 +283,7 @@
 #define PACKAGE_URL ""
 
 /* Define to the version of this package. */
-#define PACKAGE_VERSION "3.0.6"
+#define PACKAGE_VERSION "1.0.0"
 
 /* Define to necessary symbol if this constant uses a non-standard name on
    your system. */
