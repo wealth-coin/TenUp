@@ -120,15 +120,15 @@ public:
         nMaxMoneyOut = 21000000 * COIN;
 
         /** Height or Time Based Activations **/
-        nLastPOWBlock = 10;
+        nLastPOWBlock = 200;
         nModifierUpdateBlock = 999999999;
-        nZerocoinStartHeight = 11;
+        nZerocoinStartHeight = 201;
         nZerocoinStartTime = 1522920605; // Sunday, December 31, 2017 11:51:41 AM
         nBlockEnforceSerialRange = 1; //Enforce serial range starting this block
         nBlockRecalculateAccumulators = ~5; //Trigger a recalculation of accumulators
-        nBlockFirstFraudulent = ~1; //First block that bad serials emerged
+        nBlockFirstFraudulent = ~101; //by usama First block that bad serials emerged
         nBlockLastGoodCheckpoint = ~1; //Last valid accumulator checkpoint
-        nBlockEnforceInvalidUTXO = 1; //Start enforcing the invalid UTXO's
+        nBlockEnforceInvalidUTXO = 101; //by usama Start enforcing the invalid UTXO's
 
         /**
          * Build the genesis block. Note that the output of the genesis coinbase cannot
@@ -185,8 +185,8 @@ public:
         fAllowMinDifficultyBlocks = true; //false;
         fDefaultConsistencyChecks = false;
         fRequireStandard = true;
-        fMineBlocksOnDemand = true; //false;
-        fSkipProofOfWorkCheck = true; //false; //as coin switched to PoS
+        fMineBlocksOnDemand = true; //by usama false;
+        fSkipProofOfWorkCheck = true; //by usama false; //as coin switched to PoS
         fTestnetToBeDeprecatedFieldRPC = false;
         fHeadersFirstSyncingActive = false;
 
@@ -208,7 +208,7 @@ public:
         nRequiredAccumulation = 2;
         nDefaultSecurityLevel = 2; //by musamak 100; //full security level for accumulators
         nZerocoinHeaderVersion = 4; //Block headers must be this version once zerocoin is active
-        nBudget_Fee_Confirmations = 6; // Number of confirmations for the finalization fee
+        nBudget_Fee_Confirmations = 2; //by usama 6; // Number of confirmations for the finalization fee
     } 
     const Checkpoints::CCheckpointData& Checkpoints() const
     {
