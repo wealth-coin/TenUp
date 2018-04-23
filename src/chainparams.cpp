@@ -208,7 +208,7 @@ public:
         nRequiredAccumulation = 2;
         nDefaultSecurityLevel = 2; //by musamak 100; //full security level for accumulators
         nZerocoinHeaderVersion = 4; //Block headers must be this version once zerocoin is active
-        nBudget_Fee_Confirmations = 2; //by usama 6; // Number of confirmations for the finalization fee
+        nBudget_Fee_Confirmations = 1; //by usama 6; // Number of confirmations for the finalization fee
     } 
     const Checkpoints::CCheckpointData& Checkpoints() const
     {
