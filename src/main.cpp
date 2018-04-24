@@ -2184,9 +2184,9 @@ int64_t GetBlockValue(int nHeight)
         }
     }
 
-    if (nHeight == 0) {
+    if (nHeight == 1) {
         nSubsidy = 5000000 * COIN;
-    } else if (nHeight <= 200 && nHeight > 0) {
+    } else if (nHeight <= 200 && nHeight > 1) {
         nSubsidy = 1000 * COIN;
     /*} else if (nHeight < (Params().NetworkID() == CBaseChainParams::TESTNET ? 145000 : 151200) && nHeight >= 86400) {
         nSubsidy = 225 * COIN;
