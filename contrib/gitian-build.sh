@@ -31,7 +31,7 @@ commitFiles=true
 read -d '' usage <<- EOF
 Usage: $scriptName [-c|u|v|b|s|B|o|h|j|m|] signer version
 
-Run this script from the directory containing the tenup, gitian-builder, gitian.sigs, and tenup-detached-sigs.
+Run this script from the directory containing the TenUp, gitian-builder, gitian.sigs, and tenup-detached-sigs.
 
 Arguments:
 signer          GPG signer to sign each build assert file
@@ -252,7 +252,7 @@ then
 fi
 
 # Set up build
-pushd ./tenup
+pushd ./TenUp
 git fetch
 git checkout ${COMMIT}
 popd
@@ -271,7 +271,7 @@ then
 	mkdir -p inputs
 	wget -N -P inputs $osslPatchUrl
 	wget -N -P inputs $osslTarUrl
-	make -C ../tenup/depends download SOURCES_PATH=`pwd`/cache/common
+	make -C ../TenUp/depends download SOURCES_PATH=`pwd`/cache/common
 
 	# Linux
 	if [[ $linux = true ]]
@@ -279,7 +279,7 @@ then
             echo ""
 	    echo "Compiling ${VERSION} Linux"
 	    echo ""
-	    ./bin/gbuild -j ${proc} -m ${mem} --commit tenup=${COMMIT} --url tenup=${url} ../TenUp/contrib/gitian-descriptors/gitian-linux.yml
+	    ./bin/gbuild -j ${proc} -m ${mem} --commit TenUp=${COMMIT} --url TenUp=${url} ../TenUp/contrib/gitian-descriptors/gitian-linux.yml
 	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-linux --destination ../gitian.sigs/ ../TenUp/contrib/gitian-descriptors/gitian-linux.yml
 	    mv build/out/tenup-*.tar.gz build/out/src/tenup-*.tar.gz ../tenup-binaries/${VERSION}
 	fi
@@ -289,7 +289,7 @@ then
 	    echo ""
 	    echo "Compiling ${VERSION} Windows"
 	    echo ""
-	    ./bin/gbuild -j ${proc} -m ${mem} --commit tenup=${COMMIT} --url tenup=${url} ../TenUp/contrib/gitian-descriptors/gitian-win.yml
+	    ./bin/gbuild -j ${proc} -m ${mem} --commit TenUp=${COMMIT} --url TenUp=${url} ../TenUp/contrib/gitian-descriptors/gitian-win.yml
 	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-win-unsigned --destination ../gitian.sigs/ ../TenUp/contrib/gitian-descriptors/gitian-win.yml
 	    mv build/out/tenup-*-win-unsigned.tar.gz inputs/tenup-win-unsigned.tar.gz
 	    mv build/out/tenup-*.zip build/out/tenup-*.exe ../tenup-binaries/${VERSION}
@@ -300,7 +300,7 @@ then
 	    echo ""
 	    echo "Compiling ${VERSION} Mac OSX"
 	    echo ""
-	    ./bin/gbuild -j ${proc} -m ${mem} --commit tenup=${COMMIT} --url tenup=${url} ../TenUp/contrib/gitian-descriptors/gitian-osx.yml
+	    ./bin/gbuild -j ${proc} -m ${mem} --commit TenUp=${COMMIT} --url TenUp=${url} ../TenUp/contrib/gitian-descriptors/gitian-osx.yml
 	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-osx-unsigned --destination ../gitian.sigs/ ../TenUp/contrib/gitian-descriptors/gitian-osx.yml
 	    mv build/out/tenup-*-osx-unsigned.tar.gz inputs/tenup-osx-unsigned.tar.gz
 	    mv build/out/tenup-*.tar.gz build/out/tenup-*.dmg ../tenup-binaries/${VERSION}
@@ -311,9 +311,10 @@ then
 	    echo ""
 	    echo "Compiling ${VERSION} AArch64"
 	    echo ""
-	    ./bin/gbuild -j ${proc} -m ${mem} --commit tenup=${COMMIT} --url tenup=${url} ../TenUp/contrib/gitian-descriptors/gitian-aarch64.yml
+	    ./bin/gbuild -j ${proc} -m ${mem} --commit TenUp=${COMMIT} --url TenUp=${url} ../TenUp/contrib/gitian-descriptors/gitian-aarch64.yml
 	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-aarch64 --destination ../gitian.sigs/ ../TenUp/contrib/gitian-descriptors/gitian-aarch64.yml
 	    mv build/out/tenup-*.tar.gz build/out/src/tenup-*.tar.gz ../tenup-binaries/${VERSION}
+    fi
 	popd
 
         if [[ $commitFiles = true ]]
