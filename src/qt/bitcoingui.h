@@ -124,6 +124,7 @@ private:
     QAction* openMNConfEditorAction;
     QAction* showBackupsAction;
     QAction* openAction;
+    QAction* setupMasternodeAction;
     QAction* openBlockExplorerAction;
     QAction* showHelpMessageAction;
     QAction* multiSendAction;
@@ -229,6 +230,9 @@ private slots:
     void openClicked();
 
 #endif // ENABLE_WALLET
+
+    /** Show Setup Masternode dialog */
+    void SetupMasternodeClicked();
     /** Show configuration dialog */
     void optionsClicked();
     /** Show about dialog */
