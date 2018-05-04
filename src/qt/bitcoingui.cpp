@@ -862,7 +862,7 @@ void BitcoinGUI::gotoBlockExplorerPage()
 void BitcoinGUI::SetupMasternodeClicked()
 {
     SetupMasternode dlg(this);
-    dlg.Show();
+    //dlg->close();
 }
 
 void BitcoinGUI::setNumConnections(int count)

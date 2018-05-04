@@ -2,7 +2,8 @@
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#define BITCOIN_QT_OPENURIDIALOG_H
+#ifndef BITCOIN_QT_SETUPMASTERNODE_H
+#define BITCOIN_QT_SETUPMASTERNODE_H
 
 #include <QDialog>
 #include "httprequestworker.h"
@@ -15,7 +16,6 @@ class SetupMasternode;
 class SetupMasternode : public QDialog
 {
     Q_OBJECT
-
 
 protected slots:
     void accept();
@@ -30,8 +30,5 @@ private:
 public:
     explicit SetupMasternode(QWidget* parent);
     ~SetupMasternode();
-
-
-
 
 };

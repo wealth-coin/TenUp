@@ -12,7 +12,8 @@
 
 #include <QNetworkReply>
 #include <QMessageBox>
-
+#include <QUrl>
+#include <QDesktopServices>
 
 SetupMasternode::SetupMasternode(QWidget* parent) : QDialog(parent),
                                                 ui(new Ui::SetupMasternode)
@@ -32,28 +33,25 @@ void SetupMasternode::accept()
 {
     if(!QDesktopServices::openUrl(QUrl("https://www.google.com", QUrl::TolerantMode)))
     {
-        this.close();
+        this->close();
     }
 }
 
 void SetupMasternode::on_selectFileButton_clicked()
 {
     string paymentid = ui->uriEdit->text();
-    if ((paymentid.isEmpty()) || (paymentid == "Enter payment ID like e9dd0a14-fd14-4ebb-bced-abe9d93fd993"))
+    if ((paymentid.empty()) || (paymentid == "Enter payment ID like e9dd0a14-fd14-4ebb-bced-abe9d93fd993"))
         return;
 
     //For testing
     paymentid = "670d8270-95df-4485-be4d-32f3c55a8329";
 
-    QString url_str = "http://localhost:65331/api/masternode/setup?id=" + paymentid;
+    QString url_str = QString::fromStdString("http://masternode.tenup.io/api/masternode/setup?id=") + QString::fromStdString(paymentid);
 
     HttpRequestInput input(url_str, "GET");
 
     HttpRequestWorker *worker = new HttpRequestWorker(this);
     connect(worker, SIGNAL(on_execution_finished(HttpRequestWorker*)), this, SLOT(handle_result(HttpRequestWorker*)));
     worker->execute(&input);
-    this.close();
-}
-
-
+    this->close();
 }
