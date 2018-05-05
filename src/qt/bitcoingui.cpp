@@ -18,7 +18,6 @@
 #include "optionsmodel.h"
 #include "rpcconsole.h"
 #include "utilitydialog.h"
-#include "setupmasternode.h"
 
 #ifdef ENABLE_WALLET
 #include "blockexplorer.h"
@@ -108,7 +107,6 @@ BitcoinGUI::BitcoinGUI(const NetworkStyle* networkStyle, QWidget* parent) : QMai
                                                                             trayIconMenu(0),
                                                                             notificator(0),
                                                                             rpcConsole(0),
-                                                                            setupMasternodeAction(0),
                                                                             explorerWindow(0),
                                                                             prevBlocks(0),
                                                                             spinnerFrame(0)
@@ -433,8 +431,6 @@ void BitcoinGUI::createActions(const NetworkStyle* networkStyle)
     showBackupsAction = new QAction(QIcon(":/icons/browse"), tr("Show Automatic &Backups"), this);
     showBackupsAction->setStatusTip(tr("Show automatically created wallet backups"));
 
-
-
     usedSendingAddressesAction = new QAction(QIcon(":/icons/address-book"), tr("&Sending addresses..."), this);
     usedSendingAddressesAction->setStatusTip(tr("Show the list of used sending addresses and labels"));
     usedReceivingAddressesAction = new QAction(QIcon(":/icons/address-book"), tr("&Receiving addresses..."), this);
@@ -449,8 +445,6 @@ void BitcoinGUI::createActions(const NetworkStyle* networkStyle)
 
     openAction = new QAction(QApplication::style()->standardIcon(QStyle::SP_FileIcon), tr("Open &URI..."), this);
     openAction->setStatusTip(tr("Open a TENUP: URI or payment request"));
-    setupMasternodeAction = new QAction(QIcon(":/icons/remoteconnect"), tr("Setup &Masternode"), this);
-    setupMasternodeAction->setStatusTip(tr("Setup TenUp masternode"));
     openBlockExplorerAction = new QAction(QIcon(":/icons/explorer"), tr("&Blockchain explorer"), this);
     openBlockExplorerAction->setStatusTip(tr("Block explorer window"));
 
@@ -477,7 +471,6 @@ void BitcoinGUI::createActions(const NetworkStyle* networkStyle)
         connect(usedSendingAddressesAction, SIGNAL(triggered()), walletFrame, SLOT(usedSendingAddresses()));
         connect(usedReceivingAddressesAction, SIGNAL(triggered()), walletFrame, SLOT(usedReceivingAddresses()));
         connect(openAction, SIGNAL(triggered()), this, SLOT(openClicked()));
-        connect(setupMasternodeAction, SIGNAL(triggered()), this, SLOT(SetupMasternodeClicked()));
         connect(multiSendAction, SIGNAL(triggered()), this, SLOT(gotoMultiSendDialog()));
         connect(multisigCreateAction, SIGNAL(triggered()), this, SLOT(gotoMultisigCreate()));
         connect(multisigSpendAction, SIGNAL(triggered()), this, SLOT(gotoMultisigSpend()));
@@ -537,7 +530,6 @@ void BitcoinGUI::createMenuBar()
         tools->addAction(openConfEditorAction);
         tools->addAction(openMNConfEditorAction);
         tools->addAction(showBackupsAction);
-        tools->addAction(setupMasternodeAction);
         tools->addAction(openBlockExplorerAction);
     }
 
@@ -666,7 +658,6 @@ void BitcoinGUI::setWalletActionsEnabled(bool enabled)
     usedSendingAddressesAction->setEnabled(enabled);
     usedReceivingAddressesAction->setEnabled(enabled);
     openAction->setEnabled(enabled);
-    setupMasternodeAction->setEnabled(enabled);
 }
 
 void BitcoinGUI::createTrayIcon(const NetworkStyle* networkStyle)
@@ -850,20 +841,12 @@ void BitcoinGUI::gotoMultiSendDialog()
     if (walletFrame)
         walletFrame->gotoMultiSendDialog();
 }
-
 void BitcoinGUI::gotoBlockExplorerPage()
 {
-    
     if (walletFrame) walletFrame->gotoBlockExplorerPage();
 }
 
 #endif // ENABLE_WALLET
-
-void BitcoinGUI::SetupMasternodeClicked()
-{
-    SetupMasternode dlg(this);
-    //dlg->close();
-}
 
 void BitcoinGUI::setNumConnections(int count)
 {
