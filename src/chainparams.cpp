@@ -163,12 +163,12 @@ public:
         //vSeeds.push_back(CDNSSeedData("fuzzbawls.pw", "tenup.seed2.fuzzbawls.pw"));    // Secondary DNS Seeder from Fuzzbawls
         //vSeeds.push_back(CDNSSeedData("coin-server.com", "coin-server.com"));         // Single node address
         //vSeeds.push_back(CDNSSeedData("s3v3nh4cks.ddns.net", "s3v3nh4cks.ddns.net")); // Single node address
-        vSeeds.push_back(CDNSSeedData("81.4.102.75", "81.4.102.75"));           // Single node address
-        vSeeds.push_back(CDNSSeedData("81.4.102.106", "81.4.102.106"));           // Single node address
-        vSeeds.push_back(CDNSSeedData("168.235.88.199", "168.235.88.199"));           // Single node address
-        vSeeds.push_back(CDNSSeedData("168.235.88.2", "168.235.88.2"));           // Single node address
-        vSeeds.push_back(CDNSSeedData("168.235.82.24", "168.235.82.24"));           // Single node address
-        vSeeds.push_back(CDNSSeedData("168.235.108.207", "168.235.108.207"));           // Single node address
+        vSeeds.push_back(CDNSSeedData("168.235.109.113", "168.235.109.113"));           // Single node address
+        vSeeds.push_back(CDNSSeedData("168.235.78.242", "168.235.78.242"));           // Single node address
+        vSeeds.push_back(CDNSSeedData("176.56.236.202", "176.56.236.202"));           // Single node address
+        vSeeds.push_back(CDNSSeedData("107.161.18.110", "107.161.18.110"));           // Single node address
+        vSeeds.push_back(CDNSSeedData("168.235.71.241", "168.235.71.241"));           // Single node address
+        vSeeds.push_back(CDNSSeedData("168.235.94.180", "168.235.94.180"));           // Single node address
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 65);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 10);
