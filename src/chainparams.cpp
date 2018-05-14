@@ -187,7 +187,7 @@ public:
         fDefaultConsistencyChecks = false;
         fRequireStandard = true;
         fMineBlocksOnDemand = false;
-        fSkipProofOfWorkCheck = true; //by usama false; //as coin switched to PoS
+        fSkipProofOfWorkCheck = false; //as coin switched to PoS
         fTestnetToBeDeprecatedFieldRPC = false;
         fHeadersFirstSyncingActive = false;
 
