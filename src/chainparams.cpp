@@ -163,6 +163,7 @@ public:
         //vSeeds.push_back(CDNSSeedData("fuzzbawls.pw", "tenup.seed2.fuzzbawls.pw"));    // Secondary DNS Seeder from Fuzzbawls
         //vSeeds.push_back(CDNSSeedData("coin-server.com", "coin-server.com"));         // Single node address
         //vSeeds.push_back(CDNSSeedData("s3v3nh4cks.ddns.net", "s3v3nh4cks.ddns.net")); // Single node address
+        vSeeds.push_back(CDNSSeedData("seeder.tenup.io", "seeder.tenup.io"));
         vSeeds.push_back(CDNSSeedData("168.235.109.113", "168.235.109.113"));           // Single node address
         vSeeds.push_back(CDNSSeedData("168.235.78.242", "168.235.78.242"));           // Single node address
         vSeeds.push_back(CDNSSeedData("176.56.236.202", "176.56.236.202"));           // Single node address
