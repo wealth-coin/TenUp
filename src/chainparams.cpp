@@ -115,14 +115,14 @@ public:
         nMinerThreads = 0;
         nTargetTimespan = 1 * 60; // TENUP: 1 day
         nTargetSpacing = 1 * 60;  // TENUP: 1 minute
-        nMaturity = 100;
+        nMaturity = 10;
         nMasternodeCountDrift = 20;
         nMaxMoneyOut = 21000000 * COIN;
 
         /** Height or Time Based Activations **/
-        nLastPOWBlock = 800;
+        nLastPOWBlock = 2000;
         nModifierUpdateBlock = 999999999;
-        nZerocoinStartHeight = 801;
+        nZerocoinStartHeight = 2001;
         nZerocoinStartTime = 1522920605; // Sunday, December 31, 2017 11:51:41 AM
         nBlockEnforceSerialRange = 1; //Enforce serial range starting this block
         nBlockRecalculateAccumulators = ~1; //Trigger a recalculation of accumulators
@@ -187,7 +187,7 @@ public:
         fDefaultConsistencyChecks = false;
         fRequireStandard = true;
         fMineBlocksOnDemand = false;
-        fSkipProofOfWorkCheck = false; //as coin switched to PoS
+        fSkipProofOfWorkCheck = true; //as coin switched to PoS
         fTestnetToBeDeprecatedFieldRPC = false;
         fHeadersFirstSyncingActive = false;
 
@@ -206,10 +206,10 @@ public:
         nMaxZerocoinSpendsPerTransaction = 7; // Assume about 20kb each
         nMinZerocoinMintFee = 1 * CENT; //high fee required for zerocoin mints
         nMintRequiredConfirmations = 20; //the maximum amount of confirmations until accumulated in 19
-        nRequiredAccumulation = 2;
-        nDefaultSecurityLevel = 2; //by musamak 100; //full security level for accumulators
+        nRequiredAccumulation = 1;
+        nDefaultSecurityLevel = 100; //by musamak 100; //full security level for accumulators
         nZerocoinHeaderVersion = 4; //Block headers must be this version once zerocoin is active
-        nBudget_Fee_Confirmations = 1; //by usama 6; // Number of confirmations for the finalization fee
+        nBudget_Fee_Confirmations = 2; //by usama 6; // Number of confirmations for the finalization fee
     } 
     const Checkpoints::CCheckpointData& Checkpoints() const
     {

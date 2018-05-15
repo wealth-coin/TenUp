@@ -318,17 +318,17 @@ bool GenerateAccumulatorWitness(const PublicCoin &coin, Accumulator& accumulator
             witness.resetValue(accumulator, coin);
         }
     }
-
+    
     //security level: this is an important prevention of tracing the coins via timing. Security level represents how many checkpoints
     //of accumulated coins are added *beyond* the checkpoint that the mint being spent was added too. If each spend added the exact same
     //amounts of checkpoints after the mint was accumulated, then you could know the range of blocks that the mint originated from.
-    if (nSecurityLevel < 2) {  //by musamak if (nSecurityLevel < 100) {
+    if (nSecurityLevel < 100) {
         //add some randomness to the user's selection so that it is not always the same
         nSecurityLevel += CBigNum::randBignum(10).getint();
 
         //security level 100 represents adding all available coins that have been accumulated - user did not select this
-        if (nSecurityLevel >= 2) //by musamak (nSecurityLevel >= 100)
-            nSecurityLevel = 1; //by musamak nSecurityLevel = 99;
+        if (nSecurityLevel >= 100)
+            nSecurityLevel = 1;
     }
 
     //add the pubcoins (zerocoinmints that have been published to the chain) up to the next checksum starting from the block
