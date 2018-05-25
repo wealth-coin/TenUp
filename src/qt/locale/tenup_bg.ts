@@ -2087,7 +2087,7 @@ https://www.transifex.com/tenup-project/tenup-project-translations</translation>
         <translation>Информацията на вашия екран може би е стара. Вашия портфейла синхронизира автоматично с TENUP мрежата след като има успешна свръзка, но процеса отнема време и не е завършил все още.</translation>
     </message>
     <message>
-        <source>Enter an amount of Piv to convert to zPiv</source>
+        <source>Enter an amount of Piv to convert to zTup</source>
         <translation>Въведете колко TUP  да се конвертират в zTUP</translation>
     </message>
     <message>
@@ -2143,11 +2143,11 @@ https://www.transifex.com/tenup-project/tenup-project-translations</translation>
         <translation>Състояния и/или Съобщения от последните действия по сечене на монети.</translation>
     </message>
     <message>
-        <source>zPiv Control</source>
+        <source>zTup Control</source>
         <translation>zTUP Контрол</translation>
     </message>
     <message>
-        <source>zPiv Selected:</source>
+        <source>zTup Selected:</source>
         <translation>Избрани zTUP:</translation>
     </message>
     <message>
@@ -2469,7 +2469,7 @@ Please be patient...</source>
         <translation>Харченето на Zerocoin се провали със статус =</translation>
     </message>
     <message>
-        <source>zPiv Spend #: </source>
+        <source>zTup Spend #: </source>
         <translation>zTUP Похарчени #:</translation>
     </message>
     <message>
@@ -2493,7 +2493,7 @@ Please be patient...</source>
         <translation>адрес:</translation>
     </message>
     <message>
-        <source>zPiv Mint</source>
+        <source>zTup Mint</source>
         <translation>Сечене на zTUP</translation>
     </message>
     <message>
@@ -3910,23 +3910,23 @@ Please be patient...</source>
         <translation>Обфускирани</translation>
     </message>
     <message>
-        <source>Converted Piv to zPiv</source>
+        <source>Converted Piv to zTup</source>
         <translation>Конвертиран TUP във zTUP</translation>
     </message>
     <message>
-        <source>Spent zPiv</source>
+        <source>Spent zTup</source>
         <translation>Похарчени zTUP</translation>
     </message>
     <message>
-        <source>Received Piv from zPiv</source>
+        <source>Received Piv from zTup</source>
         <translation>Получен TUP от zTUP</translation>
     </message>
     <message>
-        <source>Minted Change as zPiv from zPiv Spend</source>
+        <source>Minted Change as zTup from zTup Spend</source>
         <translation>Исечено ресто като zTUP от похарчените zTUP</translation>
     </message>
     <message>
-        <source>Converted zPiv to Piv</source>
+        <source>Converted zTup to Piv</source>
         <translation>Конвертирани zTUP в TUP</translation>
     </message>
     <message>
@@ -3934,7 +3934,7 @@ Please be patient...</source>
         <translation>наблюдение само</translation>
     </message>
     <message>
-        <source>zPiv Accumulator</source>
+        <source>zTup Accumulator</source>
         <translation>zTUP Акумулатор</translation>
     </message>
     <message>
@@ -4041,7 +4041,7 @@ Please be patient...</source>
         <translation>Мастърноуд възнаграждение</translation>
     </message>
     <message>
-        <source>Received Piv from zPiv</source>
+        <source>Received Piv from zTup</source>
         <translation>Получен TUP от zTUP</translation>
     </message>
     <message>
@@ -4053,7 +4053,7 @@ Please be patient...</source>
         <translation>Харчене на Zerocoin</translation>
     </message>
     <message>
-        <source>Zerocoin Spend, Change in zPiv</source>
+        <source>Zerocoin Spend, Change in zTup</source>
         <translation>Харчене на Zerocoin, Ресто в zTUP</translation>
     </message>
     <message>
@@ -4212,7 +4212,7 @@ Please be patient...</source>
 <context>
     <name>ZPivControlDialog</name>
     <message>
-        <source>Select zPiv to Spend</source>
+        <source>Select zTup to Spend</source>
         <translation>Изберете zTUP за Изпращане</translation>
     </message>
     <message>
@@ -4224,7 +4224,7 @@ Please be patient...</source>
         <translation>0</translation>
     </message>
     <message>
-        <source>zPiv</source>
+        <source>zTup</source>
         <translation>zTUP</translation>
     </message>
     <message>

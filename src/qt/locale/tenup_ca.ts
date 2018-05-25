@@ -2002,8 +2002,8 @@
         <translation>0</translation>
     </message>
     <message>
-        <source>zPiv</source>
-        <translation>zPiv</translation>
+        <source>zTup</source>
+        <translation>zTup</translation>
     </message>
     </context>
 <context>

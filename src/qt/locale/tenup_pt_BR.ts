@@ -1983,8 +1983,8 @@ https://www.transifex.com/tenup-project/tenup-project-translations</translation>
         <translation>A informação mostrada pode estar desatualizada. A sua carteira se sincroniza automaticamente com a rede TENUP após estabelecer uma conexão, mas esse processo ainda não foi concluído.</translation>
     </message>
     <message>
-        <source>Enter an amount of Piv to convert to zPiv</source>
-        <translation>Insira uma quantia de Piv para converter para zPiv</translation>
+        <source>Enter an amount of Piv to convert to zTup</source>
+        <translation>Insira uma quantia de Piv para converter para zTup</translation>
     </message>
     <message>
         <source>0</source>
@@ -3444,24 +3444,24 @@ https://www.transifex.com/tenup-project/tenup-project-translations</translation>
         <translation>Ofuscado</translation>
     </message>
     <message>
-        <source>Spent zPiv</source>
-        <translation>zPiv gasto</translation>
+        <source>Spent zTup</source>
+        <translation>zTup gasto</translation>
     </message>
     <message>
-        <source>Received Piv from zPiv</source>
-        <translation>Recebido Piv de zPiv</translation>
+        <source>Received Piv from zTup</source>
+        <translation>Recebido Piv de zTup</translation>
     </message>
     <message>
-        <source>Converted zPiv to Piv</source>
-        <translation>Convertido zPiv para Piv</translation>
+        <source>Converted zTup to Piv</source>
+        <translation>Convertido zTup para Piv</translation>
     </message>
     <message>
         <source>watch-only</source>
         <translation>somente visualização</translation>
     </message>
     <message>
-        <source>zPiv Accumulator</source>
-        <translation>zPiv Acumulador</translation>
+        <source>zTup Accumulator</source>
+        <translation>zTup Acumulador</translation>
     </message>
     <message>
         <source>(n/a)</source>
@@ -3555,8 +3555,8 @@ https://www.transifex.com/tenup-project/tenup-project-translations</translation>
         <translation>Recompensa de Masternode</translation>
     </message>
     <message>
-        <source>Received Piv from zPiv</source>
-        <translation>Recebido Piv de zPiv</translation>
+        <source>Received Piv from zTup</source>
+        <translation>Recebido Piv de zTup</translation>
     </message>
     <message>
         <source>Other</source>

@@ -2043,8 +2043,8 @@ https://www.transifex.com/tenup-project/tenup-project-translations</translation>
         <translation>Возможно отображаемая информация устарела. Ваш кошелек автоматически синхронизируется с сетью TENUP после установки соединения, но этот процесс еще не завершен. </translation>
     </message>
     <message>
-        <source>Enter an amount of Piv to convert to zPiv</source>
-        <translation>Введите сумму в Piv для  конвертации в zPiv</translation>
+        <source>Enter an amount of Piv to convert to zTup</source>
+        <translation>Введите сумму в Piv для  конвертации в zTup</translation>
     </message>
     <message>
         <source>Mint Zerocoin</source>

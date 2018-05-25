@@ -2078,8 +2078,8 @@ https://www.transifex.com/tenup-project/tenup-project-translations</translation>
         <translation>De weergegeven informatie kan verouderd zijn. Je portemonnee synchroniseert automatisch met het TENUP netwerk nadat een verbinding is opgezet, maar dit proces is nog niet afgerond.</translation>
     </message>
     <message>
-        <source>Enter an amount of Piv to convert to zPiv</source>
-        <translation>Vul de hoeveleheid in om Piv te converteren naar zPiv</translation>
+        <source>Enter an amount of Piv to convert to zTup</source>
+        <translation>Vul de hoeveleheid in om Piv te converteren naar zTup</translation>
     </message>
     <message>
         <source>Mint Zerocoin</source>
@@ -2134,12 +2134,12 @@ https://www.transifex.com/tenup-project/tenup-project-translations</translation>
         <translation>Status en/of Berichten van de laatste mint actie.</translation>
     </message>
     <message>
-        <source>zPiv Control</source>
-        <translation>zPiv controle</translation>
+        <source>zTup Control</source>
+        <translation>zTup controle</translation>
     </message>
     <message>
-        <source>zPiv Selected:</source>
-        <translation>zPiv geselecteerd:</translation>
+        <source>zTup Selected:</source>
+        <translation>zTup geselecteerd:</translation>
     </message>
     <message>
         <source>Quantity Selected:</source>
@@ -2461,8 +2461,8 @@ Wees alsjeblieft geduldig...</translation>
         <translation>Bestede Zerocoin mislukt met status =</translation>
     </message>
     <message>
-        <source>zPiv Spend #: </source>
-        <translation>zPiv besteed #: </translation>
+        <source>zTup Spend #: </source>
+        <translation>zTup besteed #: </translation>
     </message>
     <message>
         <source>denomination: </source>
@@ -2485,8 +2485,8 @@ Wees alsjeblieft geduldig...</translation>
         <translation>adres:</translation>
     </message>
     <message>
-        <source>zPiv Mint</source>
-        <translation>zPiv Mint</translation>
+        <source>zTup Mint</source>
+        <translation>zTup Mint</translation>
     </message>
     <message>
         <source>Sending successful, return code: </source>
@@ -3902,32 +3902,32 @@ Wees alsjeblieft geduldig...</translation>
         <translation>Verduisterd</translation>
     </message>
     <message>
-        <source>Converted Piv to zPiv</source>
-        <translation>Geconverteerde Piv naar zPiv</translation>
+        <source>Converted Piv to zTup</source>
+        <translation>Geconverteerde Piv naar zTup</translation>
     </message>
     <message>
-        <source>Spent zPiv</source>
-        <translation>Uitgegeven zPiv</translation>
+        <source>Spent zTup</source>
+        <translation>Uitgegeven zTup</translation>
     </message>
     <message>
-        <source>Received Piv from zPiv</source>
-        <translation>Verkregen Piv van zPiv</translation>
+        <source>Received Piv from zTup</source>
+        <translation>Verkregen Piv van zTup</translation>
     </message>
     <message>
-        <source>Minted Change as zPiv from zPiv Spend</source>
-        <translation>Minted wisselgeld als zPiv van uitgegeven zPiv</translation>
+        <source>Minted Change as zTup from zTup Spend</source>
+        <translation>Minted wisselgeld als zTup van uitgegeven zTup</translation>
     </message>
     <message>
-        <source>Converted zPiv to Piv</source>
-        <translation>Geconverteerde zPiv naar Piv</translation>
+        <source>Converted zTup to Piv</source>
+        <translation>Geconverteerde zTup naar Piv</translation>
     </message>
     <message>
         <source>watch-only</source>
         <translation>watch-only</translation>
     </message>
     <message>
-        <source>zPiv Accumulator</source>
-        <translation>zPiv Accumulator</translation>
+        <source>zTup Accumulator</source>
+        <translation>zTup Accumulator</translation>
     </message>
     <message>
         <source>(n/a)</source>
@@ -4037,8 +4037,8 @@ Wees alsjeblieft geduldig...</translation>
         <translation>Masternode beloning</translation>
     </message>
     <message>
-        <source>Received Piv from zPiv</source>
-        <translation>Verkregen Piv van zPiv</translation>
+        <source>Received Piv from zTup</source>
+        <translation>Verkregen Piv van zTup</translation>
     </message>
     <message>
         <source>Zerocoin Mint</source>
@@ -4049,8 +4049,8 @@ Wees alsjeblieft geduldig...</translation>
         <translation>Zerocoin uitgegeven</translation>
     </message>
     <message>
-        <source>Zerocoin Spend, Change in zPiv</source>
-        <translation>Zerocoin uitgegeven, wisselgeld in zPiv</translation>
+        <source>Zerocoin Spend, Change in zTup</source>
+        <translation>Zerocoin uitgegeven, wisselgeld in zTup</translation>
     </message>
     <message>
         <source>Zerocoin Spend to Self</source>
@@ -4216,8 +4216,8 @@ Wees alsjeblieft geduldig...</translation>
 <context>
     <name>ZPivControlDialog</name>
     <message>
-        <source>Select zPiv to Spend</source>
-        <translation>Selecteer zPiv om te spenderen</translation>
+        <source>Select zTup to Spend</source>
+        <translation>Selecteer zTup om te spenderen</translation>
     </message>
     <message>
         <source>Quantity</source>
@@ -4228,8 +4228,8 @@ Wees alsjeblieft geduldig...</translation>
         <translation>0</translation>
     </message>
     <message>
-        <source>zPiv</source>
-        <translation>zPiv</translation>
+        <source>zTup</source>
+        <translation>zTup</translation>
     </message>
     <message>
         <source>Select/Deselect All</source>
