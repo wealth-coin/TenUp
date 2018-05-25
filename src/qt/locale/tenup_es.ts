@@ -2095,8 +2095,8 @@ https://www.transifex.com/tenup-project/tenup-project-translations</translation>
         <translation>La información mostrada puede estar desactualizada. Su monedero se sincroniza automáticamente con la red TENUP después de establecer una conexión, pero este proceso aún no se ha completado.</translation>
     </message>
     <message>
-        <source>Enter an amount of Piv to convert to zPiv</source>
-        <translation>Introduzca la cantidad de Piv que desea convertir a zPiv</translation>
+        <source>Enter an amount of Piv to convert to zTup</source>
+        <translation>Introduzca la cantidad de Piv que desea convertir a zTup</translation>
     </message>
     <message>
         <source>Mint Zerocoin</source>
@@ -2151,12 +2151,12 @@ https://www.transifex.com/tenup-project/tenup-project-translations</translation>
         <translation>Estado y/o Mensajes de la última Acción de Creación de moneda.</translation>
     </message>
     <message>
-        <source>zPiv Control</source>
-        <translation>Control zPiv</translation>
+        <source>zTup Control</source>
+        <translation>Control zTup</translation>
     </message>
     <message>
-        <source>zPiv Selected:</source>
-        <translation>zPiv Seleccionados:</translation>
+        <source>zTup Selected:</source>
+        <translation>zTup Seleccionados:</translation>
     </message>
     <message>
         <source>Quantity Selected:</source>
@@ -2477,8 +2477,8 @@ Por favor tenga paciencia...</translation>
         <translation>Gastar Zerocoin falló con estado =</translation>
     </message>
     <message>
-        <source>zPiv Spend #: </source>
-        <translation>Gastar zPiv #:</translation>
+        <source>zTup Spend #: </source>
+        <translation>Gastar zTup #:</translation>
     </message>
     <message>
         <source>denomination: </source>
@@ -2501,8 +2501,8 @@ Por favor tenga paciencia...</translation>
         <translation>dirección:</translation>
     </message>
     <message>
-        <source>zPiv Mint</source>
-        <translation>Creación de zPiv</translation>
+        <source>zTup Mint</source>
+        <translation>Creación de zTup</translation>
     </message>
     <message>
         <source>Sending successful, return code: </source>
@@ -3918,32 +3918,32 @@ Por favor tenga paciencia...</translation>
         <translation>Ofuscado</translation>
     </message>
     <message>
-        <source>Converted Piv to zPiv</source>
-        <translation>Piv convertidos a zPiv</translation>
+        <source>Converted Piv to zTup</source>
+        <translation>Piv convertidos a zTup</translation>
     </message>
     <message>
-        <source>Spent zPiv</source>
-        <translation>zPiv Gastados</translation>
+        <source>Spent zTup</source>
+        <translation>zTup Gastados</translation>
     </message>
     <message>
-        <source>Received Piv from zPiv</source>
-        <translation>Piv recibidos desde zPiv</translation>
+        <source>Received Piv from zTup</source>
+        <translation>Piv recibidos desde zTup</translation>
     </message>
     <message>
-        <source>Minted Change as zPiv from zPiv Spend</source>
-        <translation>Cambio Creado en zPiv por un Gasto zPiv</translation>
+        <source>Minted Change as zTup from zTup Spend</source>
+        <translation>Cambio Creado en zTup por un Gasto zTup</translation>
     </message>
     <message>
-        <source>Converted zPiv to Piv</source>
-        <translation>zPiv convertidos en Piv</translation>
+        <source>Converted zTup to Piv</source>
+        <translation>zTup convertidos en Piv</translation>
     </message>
     <message>
         <source>watch-only</source>
         <translation>sólo-lectura</translation>
     </message>
     <message>
-        <source>zPiv Accumulator</source>
-        <translation>Acumulador zPiv</translation>
+        <source>zTup Accumulator</source>
+        <translation>Acumulador zTup</translation>
     </message>
     <message>
         <source>(n/a)</source>
@@ -4053,8 +4053,8 @@ Por favor tenga paciencia...</translation>
         <translation>Recompensa de Nodo Maestro</translation>
     </message>
     <message>
-        <source>Received Piv from zPiv</source>
-        <translation>Piv recibidos desde zPiv</translation>
+        <source>Received Piv from zTup</source>
+        <translation>Piv recibidos desde zTup</translation>
     </message>
     <message>
         <source>Zerocoin Mint</source>
@@ -4065,8 +4065,8 @@ Por favor tenga paciencia...</translation>
         <translation>Gasto de Zerocoin</translation>
     </message>
     <message>
-        <source>Zerocoin Spend, Change in zPiv</source>
-        <translation>Gasto de Zerocoin, Cambio en zPiv</translation>
+        <source>Zerocoin Spend, Change in zTup</source>
+        <translation>Gasto de Zerocoin, Cambio en zTup</translation>
     </message>
     <message>
         <source>Zerocoin Spend to Self</source>
@@ -4232,8 +4232,8 @@ Por favor tenga paciencia...</translation>
 <context>
     <name>ZPivControlDialog</name>
     <message>
-        <source>Select zPiv to Spend</source>
-        <translation>Seleccione zPiv a Gastar</translation>
+        <source>Select zTup to Spend</source>
+        <translation>Seleccione zTup a Gastar</translation>
     </message>
     <message>
         <source>Quantity</source>
@@ -4244,8 +4244,8 @@ Por favor tenga paciencia...</translation>
         <translation>0</translation>
     </message>
     <message>
-        <source>zPiv</source>
-        <translation>zPiv</translation>
+        <source>zTup</source>
+        <translation>zTup</translation>
     </message>
     <message>
         <source>Select/Deselect All</source>

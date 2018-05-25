@@ -2207,8 +2207,8 @@ https://www.transifex.com/tenup-project/tenup-project-translations</translation>
         <translation>표시된 정보가 오래되었을 수 있습니다. 연결이 완료되면 지갑이 TENUP 네트워크와 자동으로 동기화될 예정이지만, 아직 해당 프로세스가 완료되지 않았습니다.</translation>
     </message>
     <message>
-        <source>Enter an amount of Piv to convert to zPiv</source>
-        <translation>zPIV로 변환할 TUP 수량을 입력하세요.</translation>
+        <source>Enter an amount of Piv to convert to zTup</source>
+        <translation>zTup로 변환할 TUP 수량을 입력하세요.</translation>
     </message>
     <message>
         <source>Mint Zerocoin</source>
@@ -2263,11 +2263,11 @@ https://www.transifex.com/tenup-project/tenup-project-translations</translation>
         <translation>마지막 발행 이후 상태나 메세지</translation>
     </message>
     <message>
-        <source>zPiv Control</source>
+        <source>zTup Control</source>
         <translation>zTUP 설정</translation>
     </message>
     <message>
-        <source>zPiv Selected:</source>
+        <source>zTup Selected:</source>
         <translation>선택한 zTUP : </translation>
     </message>
     <message>
@@ -2512,11 +2512,11 @@ https://www.transifex.com/tenup-project/tenup-project-translations</translation>
     </message>
     <message>
         <source>zTUP is currently disabled due to maintenance.</source>
-        <translation>zPIV는 현재 점검중이라 사용하실수 없습니다.</translation>
+        <translation>zTup는 현재 점검중이라 사용하실수 없습니다.</translation>
     </message>
     <message>
         <source>zTUP is currently undergoing maintenance.</source>
-        <translation>zPIV는 현재 점검중입니다.</translation>
+        <translation>zTup는 현재 점검중입니다.</translation>
     </message>
     <message>
         <source>Error: Your wallet is locked. Please enter the wallet passphrase first.</source>
@@ -2624,8 +2624,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>제로코인 송금 실패 상태 =</translation>
     </message>
     <message>
-        <source>zPiv Spend #: </source>
-        <translation>zPiv 송금 #: </translation>
+        <source>zTup Spend #: </source>
+        <translation>zTup 송금 #: </translation>
     </message>
     <message>
         <source>denomination: </source>
@@ -2648,7 +2648,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>주소:</translation>
     </message>
     <message>
-        <source>zPiv Mint</source>
+        <source>zTup Mint</source>
         <translation>zTUP 생성</translation>
     </message>
     <message>
@@ -4094,32 +4094,32 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>난독화</translation>
     </message>
     <message>
-        <source>Converted Piv to zPiv</source>
-        <translation>zPIV로 변환된 TUP</translation>
+        <source>Converted Piv to zTup</source>
+        <translation>zTup로 변환된 TUP</translation>
     </message>
     <message>
-        <source>Spent zPiv</source>
+        <source>Spent zTup</source>
         <translation>전송된 zTUP</translation>
     </message>
     <message>
-        <source>Received Piv from zPiv</source>
-        <translation>zPIV로 전송받은 TUP</translation>
+        <source>Received Piv from zTup</source>
+        <translation>zTup로 전송받은 TUP</translation>
     </message>
     <message>
-        <source>Minted Change as zPiv from zPiv Spend</source>
+        <source>Minted Change as zTup from zTup Spend</source>
         <translation>zTUP 전송후 남은 잔돈 zTUP 생성됨</translation>
     </message>
     <message>
-        <source>Converted zPiv to Piv</source>
-        <translation>zPiv에서 Piv로 변환됨</translation>
+        <source>Converted zTup to Piv</source>
+        <translation>zTup에서 Piv로 변환됨</translation>
     </message>
     <message>
         <source>watch-only</source>
         <translation>읽기 전용</translation>
     </message>
     <message>
-        <source>zPiv Accumulator</source>
-        <translation>zPiv 누산기</translation>
+        <source>zTup Accumulator</source>
+        <translation>zTup 누산기</translation>
     </message>
     <message>
         <source>(n/a)</source>
@@ -4229,8 +4229,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>마스터노드 보상 </translation>
     </message>
     <message>
-        <source>Received Piv from zPiv</source>
-        <translation>zPIV로 전송받은 TUP</translation>
+        <source>Received Piv from zTup</source>
+        <translation>zTup로 전송받은 TUP</translation>
     </message>
     <message>
         <source>Zerocoin Mint</source>
@@ -4241,7 +4241,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>제로코인 전송</translation>
     </message>
     <message>
-        <source>Zerocoin Spend, Change in zPiv</source>
+        <source>Zerocoin Spend, Change in zTup</source>
         <translation>제로코인 전송, 잔돈은 zTUP</translation>
     </message>
     <message>
@@ -4408,7 +4408,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
 <context>
     <name>ZPivControlDialog</name>
     <message>
-        <source>Select zPiv to Spend</source>
+        <source>Select zTup to Spend</source>
         <translation>전송할 zTUP 선택</translation>
     </message>
     <message>
@@ -4420,8 +4420,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>0</translation>
     </message>
     <message>
-        <source>zPiv</source>
-        <translation>zPiv</translation>
+        <source>zTup</source>
+        <translation>zTup</translation>
     </message>
     <message>
         <source>Select/Deselect All</source>

@@ -2086,8 +2086,8 @@ https://www.transifex.com/tenup-project/tenup-project-translations</translation>
         <translation>Die angezeigte Information ist möglicherweise nicht mehr aktuell. Ihre Wallet synchronisiert sich automatisch mit dem TENUP-Netzwerk, nachdem eine Verbindung hergestellt wurde. Aber dieser Vorgang ist noch nicht abgeschlossen.</translation>
     </message>
     <message>
-        <source>Enter an amount of Piv to convert to zPiv</source>
-        <translation>Eingabe des Piv-Betrags, um in zPiv umzuwandeln</translation>
+        <source>Enter an amount of Piv to convert to zTup</source>
+        <translation>Eingabe des Piv-Betrags, um in zTup umzuwandeln</translation>
     </message>
     <message>
         <source>Mint Zerocoin</source>
@@ -2142,12 +2142,12 @@ https://www.transifex.com/tenup-project/tenup-project-translations</translation>
         <translation>Status und/oder Mitteilungen aus der letzten Prägung</translation>
     </message>
     <message>
-        <source>zPiv Control</source>
-        <translation>zPiv Kontrolle</translation>
+        <source>zTup Control</source>
+        <translation>zTup Kontrolle</translation>
     </message>
     <message>
-        <source>zPiv Selected:</source>
-        <translation>zPiv Ausgewählt:</translation>
+        <source>zTup Selected:</source>
+        <translation>zTup Ausgewählt:</translation>
     </message>
     <message>
         <source>Quantity Selected:</source>
@@ -2468,7 +2468,7 @@ Bitte haben Sie Geduld...</translation>
         <translation>Ausgeben Zerocoin fehlgeschlagen mit Status =</translation>
     </message>
     <message>
-        <source>zPiv Spend #: </source>
+        <source>zTup Spend #: </source>
         <translation>zTUP Ausgeben #:</translation>
     </message>
     <message>
@@ -2492,8 +2492,8 @@ Bitte haben Sie Geduld...</translation>
         <translation>Adresse:</translation>
     </message>
     <message>
-        <source>zPiv Mint</source>
-        <translation>zPiv Prägen</translation>
+        <source>zTup Mint</source>
+        <translation>zTup Prägen</translation>
     </message>
     <message>
         <source>Sending successful, return code: </source>
@@ -3909,23 +3909,23 @@ Bitte haben Sie Geduld...</translation>
         <translation>Verschleiert</translation>
     </message>
     <message>
-        <source>Converted Piv to zPiv</source>
+        <source>Converted Piv to zTup</source>
         <translation>Umgewandeltes TUP zu zTUP</translation>
     </message>
     <message>
-        <source>Spent zPiv</source>
+        <source>Spent zTup</source>
         <translation>Ausgeben zTUP</translation>
     </message>
     <message>
-        <source>Received Piv from zPiv</source>
+        <source>Received Piv from zTup</source>
         <translation>Empfangene TUP von zTUP</translation>
     </message>
     <message>
-        <source>Minted Change as zPiv from zPiv Spend</source>
+        <source>Minted Change as zTup from zTup Spend</source>
         <translation>Geprägtes Wechselgeld als zTUP von zTUP Ausgabe</translation>
     </message>
     <message>
-        <source>Converted zPiv to Piv</source>
+        <source>Converted zTup to Piv</source>
         <translation>Umgewandeltes zTUP zu TUP</translation>
     </message>
     <message>
@@ -3933,7 +3933,7 @@ Bitte haben Sie Geduld...</translation>
         <translation>nur beobachtet</translation>
     </message>
     <message>
-        <source>zPiv Accumulator</source>
+        <source>zTup Accumulator</source>
         <translation>zTUP Speicher</translation>
     </message>
     <message>
@@ -4044,7 +4044,7 @@ Bitte haben Sie Geduld...</translation>
         <translation>Masternode Vergütung</translation>
     </message>
     <message>
-        <source>Received Piv from zPiv</source>
+        <source>Received Piv from zTup</source>
         <translation>Empfangene TUP von zTUP</translation>
     </message>
     <message>
@@ -4056,7 +4056,7 @@ Bitte haben Sie Geduld...</translation>
         <translation>Zerocoin Ausgabe</translation>
     </message>
     <message>
-        <source>Zerocoin Spend, Change in zPiv</source>
+        <source>Zerocoin Spend, Change in zTup</source>
         <translation>Zerocoin Ausgabe, Wechselgeld in zTUP</translation>
     </message>
     <message>
@@ -4223,7 +4223,7 @@ Bitte haben Sie Geduld...</translation>
 <context>
     <name>ZPivControlDialog</name>
     <message>
-        <source>Select zPiv to Spend</source>
+        <source>Select zTup to Spend</source>
         <translation>Auswahl zTUP als Ausgabe</translation>
     </message>
     <message>
@@ -4235,7 +4235,7 @@ Bitte haben Sie Geduld...</translation>
         <translation>0</translation>
     </message>
     <message>
-        <source>zPiv</source>
+        <source>zTup</source>
         <translation>zTUP</translation>
     </message>
     <message>

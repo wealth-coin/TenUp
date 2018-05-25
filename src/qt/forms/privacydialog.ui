@@ -145,7 +145,7 @@
                   </size>
                  </property>
                  <property name="toolTip">
-                  <string>Enter an amount of Piv to convert to zPiv</string>
+                  <string>Enter an amount of Piv to convert to zTup</string>
                  </property>
                  <property name="text">
                   <string>Mint Zerocoin</string>
@@ -191,7 +191,7 @@
                <item>
                 <widget class="QLabel" name="labelzPIVAmountValue">
                  <property name="toolTip">
-                  <string>Enter an amount of Piv to convert to zPiv</string>
+                  <string>Enter an amount of Piv to convert to zTup</string>
                  </property>
                  <property name="text">
                   <string>0.000 000 00 TUP</string>
@@ -476,14 +476,14 @@
                <item>
                 <widget class="QPushButton" name="pushButtonZPivControl">
                  <property name="text">
-                  <string>zPiv Control</string>
+                  <string>zTup Control</string>
                  </property>
                 </widget>
                </item>
                <item>
                 <widget class="QLabel" name="labelzPivSelected">
                  <property name="text">
-                  <string>zPiv Selected:</string>
+                  <string>zTup Selected:</string>
                  </property>
                 </widget>
                </item>

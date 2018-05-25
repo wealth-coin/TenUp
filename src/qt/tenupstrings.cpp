@@ -58,7 +58,7 @@ QT_TRANSLATE_NOOP("tenup-core", ""
 QT_TRANSLATE_NOOP("tenup-core", ""
 "Enable SwiftX, show confirmations for locked transactions (bool, default: %s)"),
 QT_TRANSLATE_NOOP("tenup-core", ""
-"Enable automatic wallet backups triggered after each zPiv minting (0-1, "
+"Enable automatic wallet backups triggered after each zTup minting (0-1, "
 "default: %u)"),
 QT_TRANSLATE_NOOP("tenup-core", ""
 "Enable spork administration functionality with the appropriate private key."),
