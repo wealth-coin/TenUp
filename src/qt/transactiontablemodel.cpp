@@ -360,11 +360,11 @@ QString TransactionTableModel::formatTxType(const TransactionRecord* wtx) const
     case TransactionRecord::ZerocoinSpend:
         return tr("Spent zTup");
     case TransactionRecord::RecvFromZerocoinSpend:
-        return tr("Received Piv from zTup");
+        return tr("Received Tup from zTup");
     case TransactionRecord::ZerocoinSpend_Change_zPiv:
         return tr("Minted Change as zTup from zTup Spend");
     case TransactionRecord::ZerocoinSpend_FromMe:
-        return tr("Converted zTup to Piv");
+        return tr("Converted zTup to Tup");
 
     default:
         return QString();

@@ -2400,7 +2400,7 @@ Value mintzerocoin(const Array& params, bool fHelp)
     if (fHelp || params.size() != 1)
         throw runtime_error(
             "mintzerocoin <amount>\n"
-            "Usage: Enter an amount of Piv to convert to zTup"
+            "Usage: Enter an amount of Tup to convert to zTup"
             + HelpRequiringPassphrase());
 
     int64_t nTime = GetTimeMillis();
@@ -2459,7 +2459,7 @@ Value spendzerocoin(const Array& params, bool fHelp)
         throw JSONRPCError(RPC_WALLET_UNLOCK_NEEDED, "Error: Please enter the wallet passphrase with walletpassphrase first.");
 
     CAmount nAmount = AmountFromValue(params[0]);   // Spending amount
-    bool fMintChange = params[1].get_bool();        // Mint change to zPIV
+    bool fMintChange = params[1].get_bool();        // Mint change to zTUP
     bool fMinimizeChange = params[2].get_bool();    // Minimize change
     int nSecurityLevel = params[3].get_int();       // Security level
 
@@ -2718,7 +2718,7 @@ Value importzerocoins(const Array& params, bool fHelp)
 
                 "\nResult:\n"
                 "\"added\"            (int) the quantity of zerocoin mints that were added\n"
-                "\"value\"            (string) the total zPiv value of zerocoin mints that were added\n"
+                "\"value\"            (string) the total zTup value of zerocoin mints that were added\n"
 
                 "\nExamples\n" +
             HelpExampleCli("importzerocoins", "\'[{\"d\":100,\"p\":\"mypubcoin\",\"s\":\"myserial\",\"r\":\"randomness_hex\",\"t\":\"mytxid\",\"h\":104923, \"u\":false},{\"d\":5,...}]\'") +

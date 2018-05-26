@@ -2994,7 +2994,7 @@ To enable AutoMint change &apos;enablezeromint=0&apos; to &apos;enablezeromint=1
     <message>
         <location line="+52"/>
         <location line="+46"/>
-        <source>Enter an amount of Piv to convert to zTup</source>
+        <source>Enter an amount of Tup to convert to zTup</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5533,7 +5533,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+2"/>
-        <source>Converted Piv to zTup</source>
+        <source>Converted Tup to zTup</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5543,7 +5543,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+2"/>
-        <source>Received Piv from zTup</source>
+        <source>Received Tup from zTup</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5553,7 +5553,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+2"/>
-        <source>Converted zTup to Piv</source>
+        <source>Converted zTup to Tup</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5702,7 +5702,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+1"/>
-        <source>Received Piv from zTup</source>
+        <source>Received Tup from zTup</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

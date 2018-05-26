@@ -2078,8 +2078,8 @@ https://www.transifex.com/tenup-project/tenup-project-translations</translation>
         <translation>De weergegeven informatie kan verouderd zijn. Je portemonnee synchroniseert automatisch met het TENUP netwerk nadat een verbinding is opgezet, maar dit proces is nog niet afgerond.</translation>
     </message>
     <message>
-        <source>Enter an amount of Piv to convert to zTup</source>
-        <translation>Vul de hoeveleheid in om Piv te converteren naar zTup</translation>
+        <source>Enter an amount of Tup to convert to zTup</source>
+        <translation>Vul de hoeveleheid in om Tup te converteren naar zTup</translation>
     </message>
     <message>
         <source>Mint Zerocoin</source>
@@ -3902,24 +3902,24 @@ Wees alsjeblieft geduldig...</translation>
         <translation>Verduisterd</translation>
     </message>
     <message>
-        <source>Converted Piv to zTup</source>
-        <translation>Geconverteerde Piv naar zTup</translation>
+        <source>Converted Tup to zTup</source>
+        <translation>Geconverteerde Tup naar zTup</translation>
     </message>
     <message>
         <source>Spent zTup</source>
         <translation>Uitgegeven zTup</translation>
     </message>
     <message>
-        <source>Received Piv from zTup</source>
-        <translation>Verkregen Piv van zTup</translation>
+        <source>Received Tup from zTup</source>
+        <translation>Verkregen Tup van zTup</translation>
     </message>
     <message>
         <source>Minted Change as zTup from zTup Spend</source>
         <translation>Minted wisselgeld als zTup van uitgegeven zTup</translation>
     </message>
     <message>
-        <source>Converted zTup to Piv</source>
-        <translation>Geconverteerde zTup naar Piv</translation>
+        <source>Converted zTup to Tup</source>
+        <translation>Geconverteerde zTup naar Tup</translation>
     </message>
     <message>
         <source>watch-only</source>
@@ -4037,8 +4037,8 @@ Wees alsjeblieft geduldig...</translation>
         <translation>Masternode beloning</translation>
     </message>
     <message>
-        <source>Received Piv from zTup</source>
-        <translation>Verkregen Piv van zTup</translation>
+        <source>Received Tup from zTup</source>
+        <translation>Verkregen Tup van zTup</translation>
     </message>
     <message>
         <source>Zerocoin Mint</source>

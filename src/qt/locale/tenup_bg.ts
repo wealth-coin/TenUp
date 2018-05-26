@@ -2087,7 +2087,7 @@ https://www.transifex.com/tenup-project/tenup-project-translations</translation>
         <translation>Информацията на вашия екран може би е стара. Вашия портфейла синхронизира автоматично с TENUP мрежата след като има успешна свръзка, но процеса отнема време и не е завършил все още.</translation>
     </message>
     <message>
-        <source>Enter an amount of Piv to convert to zTup</source>
+        <source>Enter an amount of Tup to convert to zTup</source>
         <translation>Въведете колко TUP  да се конвертират в zTUP</translation>
     </message>
     <message>
@@ -3910,7 +3910,7 @@ Please be patient...</source>
         <translation>Обфускирани</translation>
     </message>
     <message>
-        <source>Converted Piv to zTup</source>
+        <source>Converted Tup to zTup</source>
         <translation>Конвертиран TUP във zTUP</translation>
     </message>
     <message>
@@ -3918,7 +3918,7 @@ Please be patient...</source>
         <translation>Похарчени zTUP</translation>
     </message>
     <message>
-        <source>Received Piv from zTup</source>
+        <source>Received Tup from zTup</source>
         <translation>Получен TUP от zTUP</translation>
     </message>
     <message>
@@ -3926,7 +3926,7 @@ Please be patient...</source>
         <translation>Исечено ресто като zTUP от похарчените zTUP</translation>
     </message>
     <message>
-        <source>Converted zTup to Piv</source>
+        <source>Converted zTup to Tup</source>
         <translation>Конвертирани zTUP в TUP</translation>
     </message>
     <message>
@@ -4041,7 +4041,7 @@ Please be patient...</source>
         <translation>Мастърноуд възнаграждение</translation>
     </message>
     <message>
-        <source>Received Piv from zTup</source>
+        <source>Received Tup from zTup</source>
         <translation>Получен TUP от zTUP</translation>
     </message>
     <message>

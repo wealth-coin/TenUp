@@ -2095,8 +2095,8 @@ https://www.transifex.com/tenup-project/tenup-project-translations</translation>
         <translation>La información mostrada puede estar desactualizada. Su monedero se sincroniza automáticamente con la red TENUP después de establecer una conexión, pero este proceso aún no se ha completado.</translation>
     </message>
     <message>
-        <source>Enter an amount of Piv to convert to zTup</source>
-        <translation>Introduzca la cantidad de Piv que desea convertir a zTup</translation>
+        <source>Enter an amount of Tup to convert to zTup</source>
+        <translation>Introduzca la cantidad de Tup que desea convertir a zTup</translation>
     </message>
     <message>
         <source>Mint Zerocoin</source>
@@ -3918,24 +3918,24 @@ Por favor tenga paciencia...</translation>
         <translation>Ofuscado</translation>
     </message>
     <message>
-        <source>Converted Piv to zTup</source>
-        <translation>Piv convertidos a zTup</translation>
+        <source>Converted Tup to zTup</source>
+        <translation>Tup convertidos a zTup</translation>
     </message>
     <message>
         <source>Spent zTup</source>
         <translation>zTup Gastados</translation>
     </message>
     <message>
-        <source>Received Piv from zTup</source>
-        <translation>Piv recibidos desde zTup</translation>
+        <source>Received Tup from zTup</source>
+        <translation>Tup recibidos desde zTup</translation>
     </message>
     <message>
         <source>Minted Change as zTup from zTup Spend</source>
         <translation>Cambio Creado en zTup por un Gasto zTup</translation>
     </message>
     <message>
-        <source>Converted zTup to Piv</source>
-        <translation>zTup convertidos en Piv</translation>
+        <source>Converted zTup to Tup</source>
+        <translation>zTup convertidos en Tup</translation>
     </message>
     <message>
         <source>watch-only</source>
@@ -4053,8 +4053,8 @@ Por favor tenga paciencia...</translation>
         <translation>Recompensa de Nodo Maestro</translation>
     </message>
     <message>
-        <source>Received Piv from zTup</source>
-        <translation>Piv recibidos desde zTup</translation>
+        <source>Received Tup from zTup</source>
+        <translation>Tup recibidos desde zTup</translation>
     </message>
     <message>
         <source>Zerocoin Mint</source>

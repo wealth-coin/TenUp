@@ -2207,7 +2207,7 @@ https://www.transifex.com/tenup-project/tenup-project-translations</translation>
         <translation>표시된 정보가 오래되었을 수 있습니다. 연결이 완료되면 지갑이 TENUP 네트워크와 자동으로 동기화될 예정이지만, 아직 해당 프로세스가 완료되지 않았습니다.</translation>
     </message>
     <message>
-        <source>Enter an amount of Piv to convert to zTup</source>
+        <source>Enter an amount of Tup to convert to zTup</source>
         <translation>zTup로 변환할 TUP 수량을 입력하세요.</translation>
     </message>
     <message>
@@ -4094,7 +4094,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>난독화</translation>
     </message>
     <message>
-        <source>Converted Piv to zTup</source>
+        <source>Converted Tup to zTup</source>
         <translation>zTup로 변환된 TUP</translation>
     </message>
     <message>
@@ -4102,7 +4102,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>전송된 zTUP</translation>
     </message>
     <message>
-        <source>Received Piv from zTup</source>
+        <source>Received Tup from zTup</source>
         <translation>zTup로 전송받은 TUP</translation>
     </message>
     <message>
@@ -4110,8 +4110,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>zTUP 전송후 남은 잔돈 zTUP 생성됨</translation>
     </message>
     <message>
-        <source>Converted zTup to Piv</source>
-        <translation>zTup에서 Piv로 변환됨</translation>
+        <source>Converted zTup to Tup</source>
+        <translation>zTup에서 Tup로 변환됨</translation>
     </message>
     <message>
         <source>watch-only</source>
@@ -4229,7 +4229,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>마스터노드 보상 </translation>
     </message>
     <message>
-        <source>Received Piv from zTup</source>
+        <source>Received Tup from zTup</source>
         <translation>zTup로 전송받은 TUP</translation>
     </message>
     <message>

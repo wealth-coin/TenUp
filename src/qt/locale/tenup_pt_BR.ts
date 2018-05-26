@@ -1983,8 +1983,8 @@ https://www.transifex.com/tenup-project/tenup-project-translations</translation>
         <translation>A informação mostrada pode estar desatualizada. A sua carteira se sincroniza automaticamente com a rede TENUP após estabelecer uma conexão, mas esse processo ainda não foi concluído.</translation>
     </message>
     <message>
-        <source>Enter an amount of Piv to convert to zTup</source>
-        <translation>Insira uma quantia de Piv para converter para zTup</translation>
+        <source>Enter an amount of Tup to convert to zTup</source>
+        <translation>Insira uma quantia de Tup para converter para zTup</translation>
     </message>
     <message>
         <source>0</source>
@@ -3448,12 +3448,12 @@ https://www.transifex.com/tenup-project/tenup-project-translations</translation>
         <translation>zTup gasto</translation>
     </message>
     <message>
-        <source>Received Piv from zTup</source>
-        <translation>Recebido Piv de zTup</translation>
+        <source>Received Tup from zTup</source>
+        <translation>Recebido Tup de zTup</translation>
     </message>
     <message>
-        <source>Converted zTup to Piv</source>
-        <translation>Convertido zTup para Piv</translation>
+        <source>Converted zTup to Tup</source>
+        <translation>Convertido zTup para Tup</translation>
     </message>
     <message>
         <source>watch-only</source>
@@ -3555,8 +3555,8 @@ https://www.transifex.com/tenup-project/tenup-project-translations</translation>
         <translation>Recompensa de Masternode</translation>
     </message>
     <message>
-        <source>Received Piv from zTup</source>
-        <translation>Recebido Piv de zTup</translation>
+        <source>Received Tup from zTup</source>
+        <translation>Recebido Tup de zTup</translation>
     </message>
     <message>
         <source>Other</source>

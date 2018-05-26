@@ -2086,8 +2086,8 @@ https://www.transifex.com/tenup-project/tenup-project-translations</translation>
         <translation>Die angezeigte Information ist möglicherweise nicht mehr aktuell. Ihre Wallet synchronisiert sich automatisch mit dem TENUP-Netzwerk, nachdem eine Verbindung hergestellt wurde. Aber dieser Vorgang ist noch nicht abgeschlossen.</translation>
     </message>
     <message>
-        <source>Enter an amount of Piv to convert to zTup</source>
-        <translation>Eingabe des Piv-Betrags, um in zTup umzuwandeln</translation>
+        <source>Enter an amount of Tup to convert to zTup</source>
+        <translation>Eingabe des Tup-Betrags, um in zTup umzuwandeln</translation>
     </message>
     <message>
         <source>Mint Zerocoin</source>
@@ -3909,7 +3909,7 @@ Bitte haben Sie Geduld...</translation>
         <translation>Verschleiert</translation>
     </message>
     <message>
-        <source>Converted Piv to zTup</source>
+        <source>Converted Tup to zTup</source>
         <translation>Umgewandeltes TUP zu zTUP</translation>
     </message>
     <message>
@@ -3917,7 +3917,7 @@ Bitte haben Sie Geduld...</translation>
         <translation>Ausgeben zTUP</translation>
     </message>
     <message>
-        <source>Received Piv from zTup</source>
+        <source>Received Tup from zTup</source>
         <translation>Empfangene TUP von zTUP</translation>
     </message>
     <message>
@@ -3925,7 +3925,7 @@ Bitte haben Sie Geduld...</translation>
         <translation>Geprägtes Wechselgeld als zTUP von zTUP Ausgabe</translation>
     </message>
     <message>
-        <source>Converted zTup to Piv</source>
+        <source>Converted zTup to Tup</source>
         <translation>Umgewandeltes zTUP zu TUP</translation>
     </message>
     <message>
@@ -4044,7 +4044,7 @@ Bitte haben Sie Geduld...</translation>
         <translation>Masternode Vergütung</translation>
     </message>
     <message>
-        <source>Received Piv from zTup</source>
+        <source>Received Tup from zTup</source>
         <translation>Empfangene TUP von zTUP</translation>
     </message>
     <message>

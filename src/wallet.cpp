@@ -3552,29 +3552,29 @@ void CWallet::AutoZeromint()
     CAmount nMintAmount = 0;
     CAmount nToMintAmount = 0;
 
-    // zPIV are integers > 0, so we can't mint 10% of 9 TUP
+    // zTUP are integers > 0, so we can't mint 10% of 9 TUP
     if (nBalance < 10){
-        LogPrint("zero", "CWallet::AutoZeromint(): available balance (%ld) too small for minting zPIV\n", nBalance);
+        LogPrint("zero", "CWallet::AutoZeromint(): available balance (%ld) too small for minting zTUP\n", nBalance);
         return;
     }
 
-    // Percentage of zPIV we already have
+    // Percentage of zTUP we already have
     double dPercentage = 100 * (double)nZerocoinBalance / (double)(nZerocoinBalance + nBalance);
 
     // Check if minting is actually needed
     if(dPercentage >= nZeromintPercentage){
-        LogPrint("zero", "CWallet::AutoZeromint() @block %ld: percentage of existing zPIV (%lf%%) already >= configured percentage (%d%%). No minting needed...\n",
+        LogPrint("zero", "CWallet::AutoZeromint() @block %ld: percentage of existing zTUP (%lf%%) already >= configured percentage (%d%%). No minting needed...\n",
                   chainActive.Tip()->nHeight, dPercentage, nZeromintPercentage);
         return;
     }
 
-    // zPIV amount needed for the target percentage
+    // zTUP amount needed for the target percentage
     nToMintAmount = ((nZerocoinBalance + nBalance) * nZeromintPercentage / 100);
 
-    // zPIV amount missing from target (must be minted)
+    // zTUP amount missing from target (must be minted)
     nToMintAmount = (nToMintAmount - nZerocoinBalance) / COIN;
 
-    // Use the biggest denomination smaller than the needed zPIV We'll only mint exact denomination to make minting faster.
+    // Use the biggest denomination smaller than the needed zTUP We'll only mint exact denomination to make minting faster.
     // Exception: for big amounts use 6666 (6666 = 1*5000 + 1*1000 + 1*500 + 1*100 + 1*50 + 1*10 + 1*5 + 1) to create all
     // possible denominations to avoid having 5000 denominations only.
     // If a preferred denomination is used (means nPreferredDenom != 0) do nothing until we have enough TUP to mint this denomination
@@ -3621,7 +3621,7 @@ void CWallet::AutoZeromint()
         nZerocoinBalance = GetZerocoinBalance(false);
         nBalance = GetUnlockedCoins();
         dPercentage = 100 * (double)nZerocoinBalance / (double)(nZerocoinBalance + nBalance);
-        LogPrintf("CWallet::AutoZeromint() @ block %ld: successfully minted %ld zPIV. Current percentage of zPIV: %lf%%\n",
+        LogPrintf("CWallet::AutoZeromint() @ block %ld: successfully minted %ld zTUP. Current percentage of zTUP: %lf%%\n",
                   chainActive.Tip()->nHeight, nMintAmount, dPercentage);
         // Re-adjust startup time to delay next Automint for 5 minutes
         nStartupTime = GetAdjustedTime();
@@ -4024,7 +4024,7 @@ bool CWallet::CreateZerocoinMintTransaction(const CAmount nValue, CMutableTransa
     }
 
     //any change that is less than 0.0100000 will be ignored and given as an extra fee
-    //also assume that a zerocoinspend that is minting the change will not have any change that goes to Piv
+    //also assume that a zerocoinspend that is minting the change will not have any change that goes to Tup
     CAmount nChange = nValueIn - nTotalValue; // Fee already accounted for in nTotalValue
     if (nChange > 1 * CENT && !isZCSpendChange) {
         // Fill a vout to ourself
@@ -4184,7 +4184,7 @@ bool CWallet::CreateZerocoinSpendTransaction(CAmount nValue, int nSecurityLevel,
     CAmount nValueSelected = 0;
     int nCoinsReturned = 0; // Number of coins returned in change from function below (for debug)
     int nNeededSpends = 0;  // Number of spends which would be needed if selection failed
-    const int nMaxSpends = Params().Zerocoin_MaxSpendsPerTransaction(); // Maximum possible spends for one zPIV transaction
+    const int nMaxSpends = Params().Zerocoin_MaxSpendsPerTransaction(); // Maximum possible spends for one zTUP transaction
     if (vSelectedMints.empty()) {
         listMints = walletdb.ListMintedCoins(true, true, true); // need to find mints to spend
         if(listMints.empty()) {
@@ -4629,7 +4629,7 @@ bool CWallet::SpendZerocoin(CAmount nAmount, int nSecurityLevel, CWalletTx& wtxN
         walletdb.WriteZerocoinMint(mint);
     }
 
-    receipt.SetStatus("Spend Successful", ZPIV_SPEND_OKAY);  // When we reach this point spending zPIV was successful
+    receipt.SetStatus("Spend Successful", ZPIV_SPEND_OKAY);  // When we reach this point spending zTUP was successful
 
     return true;
 }
