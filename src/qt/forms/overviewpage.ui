@@ -1110,7 +1110,7 @@ If AutoMint is enabled this percentage will settle around the configured AutoMin
              <item row="3" column="0">
               <widget class="QLabel" name="labelUnLockedBalanceText">
                <property name="toolTip">
-                <string>Unlocked PIVs. These can be used for zTUP minting.</string>
+                <string>Unlocked TUPs. These can be used for zTUP minting.</string>
                </property>
                <property name="text">
                 <string>Unlocked:</string>
@@ -1120,7 +1120,7 @@ If AutoMint is enabled this percentage will settle around the configured AutoMin
              <item row="3" column="1">
               <widget class="QLabel" name="labelUnLockedBalance">
                <property name="toolTip">
-                <string>Unlocked PIVs. These can be used for zTUP minting.</string>
+                <string>Unlocked TUPs. These can be used for zTUP minting.</string>
                </property>
                <property name="text">
                 <string>0.000 000 00 TUP</string>

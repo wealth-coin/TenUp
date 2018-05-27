@@ -221,7 +221,7 @@
     </message>
     <message>
         <location line="+9"/>
-        <source>TENUP will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your PIVs from being stolen by malware infecting your computer.</source>
+        <source>TENUP will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your TUPs from being stolen by malware infecting your computer.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2749,7 +2749,7 @@ If AutoMint is enabled this percentage will settle around the configured AutoMin
     <message>
         <location line="+7"/>
         <location line="+10"/>
-        <source>Unlocked PIVs. These can be used for zTUP minting.</source>
+        <source>Unlocked TUPs. These can be used for zTUP minting.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
