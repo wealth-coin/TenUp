@@ -8,7 +8,7 @@ TENUP is a cutting edge cryptocurrency, with many features not available in most
 - Fast transactions featuring guaranteed zero confirmation transactions, we call it _SwiftTX_.
 - Decentralized blockchain voting providing for consensus based advancement of the current Masternode
   technology used to secure the network and provide the above features, each Masternode is secured
-  with a collateral of 10K TUP.
+  with a collateral of 25K TUP.
 
 More information at [tenup.org](http://www.tenup.io) Visit our ANN thread at [BitcoinTalk](http://www.bitcointalk.org/index.php?topic=1262920)
 
@@ -39,8 +39,8 @@ More information at [tenup.org](http://www.tenup.io) Visit our ANN thread at [Bi
 
 <table>
 <th>Block Height</th><th>Masternodes</th><th>Miner</th><th>Budget</th>
-<tr><td>2-200</td><td>20% (50 TUP)</td><td>80% (200 TUP)</td><td>N/A</td></tr>
-<tr><td>201-1340</td><td>20% (50 TUP)</td><td>70% (200 TUP)</td><td>10% (25 TUP)</td></tr>
+<tr><td>2-200</td><td>20% (200 TUP)</td><td>80% (800 TUP)</td><td>N/A</td></tr>
+<tr><td>201-1340</td><td>20% (45 TUP)</td><td>70% (157.5 TUP)</td><td>10% (22.5 TUP)</td></tr>
 </table>
 
 ### PoS Rewards Breakdown
