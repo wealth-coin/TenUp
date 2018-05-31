@@ -50,7 +50,7 @@ static const int MAX_URI_LENGTH = 255;
 
 #define QAPP_ORG_NAME "TENUP"
 #define QAPP_ORG_DOMAIN "tenup.org"
-#define QAPP_APP_NAME_DEFAULT "TENUP-Qt"
-#define QAPP_APP_NAME_TESTNET "TENUP-Qt-testnet"
+#define QAPP_APP_NAME_DEFAULT "TenUp-Qt"
+#define QAPP_APP_NAME_TESTNET "TenUp-Qt-testnet"
 
 #endif // BITCOIN_QT_GUICONSTANTS_H
