@@ -31,6 +31,9 @@
   <key>CFBundleExecutable</key>
   <string>TenUp-Qt</string>
 
+  <key>CFBundleName</key>
+  <string>TenUp-Qt</string>
+
   <key>CFBundleIdentifier</key>
   <string>io.tenup.TenUp-Qt</string>
 

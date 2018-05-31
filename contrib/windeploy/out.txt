@@ -1,0 +1,3 @@
+Signing tenup-1.0.0-win32-setup-unsigned.exe
+Signing tenup-1.0.0-win64-setup-unsigned.exe
+Created signature-win.tar.gz
