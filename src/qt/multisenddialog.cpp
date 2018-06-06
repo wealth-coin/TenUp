@@ -10,6 +10,7 @@
 #include "ui_multisenddialog.h"
 #include "walletmodel.h"
 #include <QLineEdit>
+#include <QStyle>
 #include <QMessageBox>
 #include <boost/lexical_cast.hpp>
 

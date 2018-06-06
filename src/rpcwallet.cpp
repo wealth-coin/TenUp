@@ -1753,10 +1753,6 @@ UniValue walletpassphrase(const UniValue& params, bool fHelp)
             "walletpassphrase \"passphrase\" timeout ( anonymizeonly )\n"
             "\nStores the wallet decryption key in memory for 'timeout' seconds.\n"
             "This is needed prior to performing transactions related to private keys such as sending TUPs\n"
-<<<<<<< HEAD
-
-=======
->>>>>>> master
             "\nArguments:\n"
             "1. \"passphrase\"     (string, required) The wallet passphrase\n"
             "2. timeout            (numeric, required) The time to keep the decryption key in seconds.\n"
@@ -2086,10 +2082,6 @@ UniValue settxfee(const UniValue& params, bool fHelp)
 
             "\nArguments:\n"
             "1. amount         (numeric, required) The transaction fee in TUP/kB rounded to the nearest 0.00000001\n"
-<<<<<<< HEAD
-
-=======
->>>>>>> master
             "\nResult\n"
             "true|false        (boolean) Returns true if successful\n"
             "\nExamples:\n" +
