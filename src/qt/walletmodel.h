@@ -282,7 +282,6 @@ signals:
 
     // MultiSig address added
     void notifyMultiSigChanged(bool fHaveMultiSig);
-
 public slots:
     /* Wallet status might have changed */
     void updateStatus();

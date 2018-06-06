@@ -83,9 +83,9 @@ enum WalletFeature {
 enum AvailableCoinsType {
     ALL_COINS = 1,
     ONLY_DENOMINATED = 2,
-    ONLY_NOT10000IFMN = 3,
-    ONLY_NONDENOMINATED_NOT10000IFMN = 4, // ONLY_NONDENOMINATED and not 10000 TUP at the same time
-    ONLY_10000 = 5,                        // find masternode outputs including locked ones (use with caution)
+    ONLY_NOT25000IFMN = 3,
+    ONLY_NONDENOMINATED_NOT25000IFMN = 4, // ONLY_NONDENOMINATED and not 25000 TUP at the same time
+    ONLY_25000 = 5,                        // find masternode outputs including locked ones (use with caution)
     STAKABLE_COINS = 6                          // UTXO's that are valid for staking
 };
 
@@ -305,7 +305,7 @@ public:
 
         // Stake Settings
         nHashDrift = 45;
-        nStakeSplitThreshold = 2000;
+        nStakeSplitThreshold = 200;
         nHashInterval = 22;
         nStakeSetUpdateTime = 300; // 5 minutes
 

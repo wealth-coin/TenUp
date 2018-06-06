@@ -22,9 +22,9 @@ Build-Depends: debhelper,
  libqrencode-dev,
  libprotobuf-dev, protobuf-compiler
 Standards-Version: 3.9.2
-Homepage: http://www.tenup.org
-Vcs-Git: git://github.com/TenUp-Project/TenUp.git
-Vcs-Browser: http://github.com/TenUp-Project/TenUp
+Homepage: http://www.tenup.io
+Vcs-Git: git://github.com/tenup-coin/TenUp.git
+Vcs-Browser: https://github.com/tenup-coin/TenUp
 
 Package: tenupd
 Architecture: any
@@ -55,4 +55,4 @@ Description: peer-to-peer network based digital currency - Qt GUI
  Full transaction history is stored locally at each client.  This
  requires 1+ GB of space, slowly growing.
  .
- This package provides TenUp-Qt, a GUI for TenUp based on Qt.
+ This package provides tenup-Qt, a GUI for TenUp based on Qt.

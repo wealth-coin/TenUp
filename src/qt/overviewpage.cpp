@@ -31,6 +31,8 @@
 
 extern CWallet* pwalletMain;
 
+extern CWallet* pwalletMain;
+
 class TxViewDelegate : public QAbstractItemDelegate
 {
     Q_OBJECT

@@ -1,5 +1,5 @@
 ---
-name: "tenup-linux-3.2"
+name: "tenup-linux-1.1"
 enable_cache: true
 suites:
 - "trusty"
@@ -29,8 +29,8 @@ packages:
 - "python"
 reference_datetime: "2015-06-01 00:00:00"
 remotes:
-- "url": "https://github.com/tenup-project/tenup.git"
-  "dir": "tenup"
+- "url": "https://github.com/tenup-coin/TenUp.git"
+  "dir": "TenUp"
 files: []
 script: |
 
@@ -114,7 +114,7 @@ script: |
   chmod +x ${WRAP_DIR}/${prog}
   done
 
-  cd tenup
+  cd TenUp
   BASEPREFIX=`pwd`/depends
   # Build dependencies for each host
   for i in $HOSTS; do

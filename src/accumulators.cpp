@@ -142,7 +142,6 @@ bool LoadAccumulatorValuesFromDB(const uint256 nCheckpoint)
         }
         mapAccumulatorValues.insert(make_pair(nChecksum, bnValue));
     }
-    return true;
 }
 
 //Erase accumulator checkpoints for a certain block range
@@ -251,6 +250,9 @@ bool CalculateAccumulatorCheckpoint(int nHeight, uint256& nCheckpoint, Accumulat
     //Whether this should filter out invalid/fraudulent outpoints
     bool fFilterInvalid = nHeight >= Params().Zerocoin_Block_RecalculateAccumulators();
 
+    //Whether this should filter out invalid/fraudulent outpoints
+    bool fFilterInvalid = nHeight >= Params().Zerocoin_Block_RecalculateAccumulators();
+
     //Accumulate all coins over the last ten blocks that havent been accumulated (height - 20 through height - 11)
     int nTotalMintsFound = 0;
     CBlockIndex *pindex = chainActive[nHeightCheckpoint - 20];
@@ -339,7 +341,7 @@ void RandomizeSecurityLevel(int& nSecurityLevel)
 
         //security level 100 represents adding all available coins that have been accumulated - user did not select this
         if (nSecurityLevel >= 100)
-            nSecurityLevel = 99;
+            nSecurityLevel = 1;
     }
 }
 

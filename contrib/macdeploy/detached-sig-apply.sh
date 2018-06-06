@@ -5,7 +5,7 @@ UNSIGNED=$1
 SIGNATURE=$2
 ARCH=x86_64
 ROOTDIR=dist
-BUNDLE=${ROOTDIR}/TenUp-Qt.app
+BUNDLE=${ROOTDIR}/Tenup-Qt.app
 TEMPDIR=signed.temp
 OUTDIR=signed-app
 
@@ -49,5 +49,5 @@ for i in `find ${TEMPDIR} -name "*.sign"`; do
   echo "Success."
 done
 mv ${TEMPDIR}/${ROOTDIR} ${OUTDIR}
-rm -rf ${TEMPDIR}
+#rm -rf ${TEMPDIR}
 echo "Signed: ${OUTDIR}"

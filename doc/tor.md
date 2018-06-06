@@ -1,7 +1,4 @@
 TOR SUPPORT IN TenUp
-=======================
-
-It is possible to run TenUp as a Tor hidden service, and connect to such services.
 
 The following directions assume you have a Tor proxy running on port 9050. Many
 distributions default to having a SOCKS proxy listening on port 9050, but others
@@ -59,7 +56,7 @@ SOCKSPolicy accept 127.0.0.1/8
 Log notice file /var/log/tor/notices.log
 ControlPort 9051
 HiddenServiceDir /var/lib/tor/dnet/
-HiddenServicePort 989 127.0.0.1:51472
+HiddenServicePort 989 127.0.0.1:51482
 HiddenServiceStatistics 0
 ORPort 9001
 LongLivedPorts 989
@@ -69,7 +66,7 @@ NumEntryGuards 8
 ```
 
 The directory can be different of course, but (both) port numbers should be equal to
-your tenupd's P2P listen port (51472 by default).
+your tenupd's P2P listen port (51482 by default).
 ```
 -externalip=X   You can tell tenup about its publicly reachable address using
                 this option, and this can be a .onion address. Given the above
@@ -102,7 +99,7 @@ specify:
 ./tenupd ... -discover
 ```
 
-and open port 51472 on your firewall (or use -upnp).
+and open port 51482 on your firewall (or use -upnp).
 
 If you only want to use Tor to reach onion addresses, but not use it as a proxy
 for normal IPv4/IPv6 communication, use:

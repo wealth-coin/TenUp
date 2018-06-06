@@ -3,7 +3,7 @@ Release Process
 
 Before every release candidate:
 
-* Update translations (ping Fuzzbawls on Slack) see [translation_process.md](https://github.com/TenUp-Project/TenUp/blob/master/doc/translation_process.md#synchronising-translations).
+* Update translations (ping Fuzzbawls on Slack) see [translation_process.md](https://github.com/tenup-coin/TenUp/blob/master/doc/translation_process.md#synchronising-translations).
 
 Before every minor and major release:
 
@@ -24,12 +24,12 @@ If you're using the automated script (found in [contrib/gitian-build.sh](/contri
 Check out the source code in the following directory hierarchy.
 
     cd /path/to/your/toplevel/build
-    git clone https://github.com/tenup-project/gitian.sigs.git
-    git clone https://github.com/tenup-project/tenup-detached-sigs.git
+    git clone https://github.com/tenup-coin/gitian.sigs.git
+    git clone https://github.com/tenup-coin/tenup-detached-sigs.git
     git clone https://github.com/devrandom/gitian-builder.git
-    git clone https://github.com/tenup-project/tenup.git
+    git clone https://github.com/tenup-coin/TenUp.git
 
-### TenUp maintainers/release engineers, suggestion for writing release notes
+### TENUP maintainers/release engineers, suggestion for writing release notes
 
 Write release notes. git shortlog helps a lot, for example:
 
@@ -190,7 +190,7 @@ Codesigner only: Commit the detached codesign payloads:
 Non-codesigners: wait for Windows/OS X detached signatures:
 
 - Once the Windows/OS X builds each have 3 matching signatures, they will be signed with their respective release keys.
-- Detached signatures will then be committed to the [tenup-detached-sigs](https://github.com/TenUp-Project/tenup-detached-sigs) repository, which can be combined with the unsigned apps to create signed binaries.
+- Detached signatures will then be committed to the [tenup-detached-sigs](https://github.com/tenup-coin/tenup-detached-sigs) repository, which can be combined with the unsigned apps to create signed binaries.
 
 Create (and optionally verify) the signed OS X binary:
 
@@ -262,10 +262,10 @@ Note: check that SHA256SUMS itself doesn't end up in SHA256SUMS, which is a spur
 
   - bitcointalk announcement thread
 
-  - Optionally twitter, reddit /r/tenup, ... but this will usually sort out itself
+  - Optionally twitter (@TenUpCoin), reddit /r/TenUpCoin, ... but this will usually sort out itself
 
   - Archive release notes for the new version to `doc/release-notes/` (branch `master` and branch of the release)
 
-  - Create a [new GitHub release](https://github.com/TenUp-Project/TenUp/releases/new) with a link to the archived release notes.
+  - Create a [new GitHub release](https://github.com/tenup-coin/TenUp/releases/new) with a link to the archived release notes.
 
   - Celebrate

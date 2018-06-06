@@ -1,14 +1,13 @@
-(note: this is a temporary file, to be added-to by anybody, and moved to release-notes at release time)
+TENUP Core version 3.0.6 is now available from:
 
-TenUp Core version *version* is now available from:  <https://github.com/tenup-project/tenup/releases>
+TenUp Core version *version* is now available from:  <https://github.com/tenup-coin/TenUp/releases>
 
 This is a new major version release, including various bug fixes and performance improvements, as well as updated translations.
 
-Please report bugs using the issue tracker at github: <https://github.com/tenup-project/tenup/issues>
+Please report bugs using the issue tracker at github: <https://github.com/tenup-coin/TenUp/issues>
 
 
 Mandatory Update
-==============
 
 
 How to Upgrade
@@ -32,11 +31,6 @@ TenUp Core should also work on most other Unix-like systems but is not frequentl
 
  
 Notable Changes
-==============
-
-
-*version* Change log
-==============
 
 Detailed release notes follow. This overview includes changes that affect behavior, not code moves, refactors and string updates. For convenience in locating the code changes and accompanying discussion, both the pull request and git merge commit are mentioned.
 
