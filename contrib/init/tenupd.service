@@ -1,0 +1,26 @@
+[Unit]
+Description=TenUp's distributed currency daemon
+After=network.target
+
+[Service]
+User=tenup
+Group=tenup
+
+Type=forking
+PIDFile=/var/lib/tenupd/tenupd.pid
+
+ExecStart=/usr/bin/tenupd -daemon -pid=/var/lib/tenupd/tenupd.pid \
+          -conf=/etc/tenup/tenup.conf -datadir=/var/lib/tenupd
+
+ExecStop=-/usr/bin/tenup-cli -conf=/etc/tenup/tenup.conf \
+         -datadir=/var/lib/tenupd stop
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target
