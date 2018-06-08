@@ -1,6 +1,7 @@
 // Copyright (c) 2010 Satoshi Nakamoto
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
+// Copyright (c) 2015-2018 The PIVX developers
 // Copyright (c) 2015-2018 The TenUp developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
@@ -17,7 +18,6 @@
 #include "utilmoneystr.h"
 #include "wallet.h"
 #include "walletdb.h"
-#include "ztupchain.h"
 
 #include <stdint.h>
 
@@ -94,6 +94,7 @@ UniValue getnewaddress(const UniValue& params, bool fHelp)
 
             "\nResult:\n"
             "\"tenupaddress\"    (string) The new tenup address\n"
+
             "\nExamples:\n" +
             HelpExampleCli("getnewaddress", "") + HelpExampleCli("getnewaddress", "\"\"") +
             HelpExampleCli("getnewaddress", "\"myaccount\"") + HelpExampleRpc("getnewaddress", "\"myaccount\""));
@@ -166,6 +167,7 @@ UniValue getaccountaddress(const UniValue& params, bool fHelp)
 
             "\nResult:\n"
             "\"tenupaddress\"   (string) The account tenup address\n"
+
             "\nExamples:\n" +
             HelpExampleCli("getaccountaddress", "") + HelpExampleCli("getaccountaddress", "\"\"") +
             HelpExampleCli("getaccountaddress", "\"myaccount\"") + HelpExampleRpc("getaccountaddress", "\"myaccount\""));
@@ -264,6 +266,7 @@ UniValue getaccount(const UniValue& params, bool fHelp)
 
             "\nArguments:\n"
             "1. \"tenupaddress\"  (string, required) The tenup address for account lookup.\n"
+
             "\nResult:\n"
             "\"accountname\"        (string) the account address\n"
 
@@ -553,6 +556,7 @@ UniValue getreceivedbyaddress(const UniValue& params, bool fHelp)
         throw runtime_error(
             "getreceivedbyaddress \"tenupaddress\" ( minconf )\n"
             "\nReturns the total amount received by the given tenupaddress in transactions with at least minconf confirmations.\n"
+
             "\nArguments:\n"
             "1. \"tenupaddress\"  (string, required) The tenup address for transactions.\n"
             "2. minconf             (numeric, optional, default=1) Only include transactions confirmed at least this many times.\n"
@@ -1753,6 +1757,7 @@ UniValue walletpassphrase(const UniValue& params, bool fHelp)
             "walletpassphrase \"passphrase\" timeout ( anonymizeonly )\n"
             "\nStores the wallet decryption key in memory for 'timeout' seconds.\n"
             "This is needed prior to performing transactions related to private keys such as sending TUPs\n"
+
             "\nArguments:\n"
             "1. \"passphrase\"     (string, required) The wallet passphrase\n"
             "2. timeout            (numeric, required) The time to keep the decryption key in seconds.\n"
@@ -2082,6 +2087,7 @@ UniValue settxfee(const UniValue& params, bool fHelp)
 
             "\nArguments:\n"
             "1. amount         (numeric, required) The transaction fee in TUP/kB rounded to the nearest 0.00000001\n"
+
             "\nResult\n"
             "true|false        (boolean) Returns true if successful\n"
             "\nExamples:\n" +
@@ -2661,7 +2667,7 @@ UniValue mintzerocoin(const UniValue& params, bool fHelp)
             HelpRequiringPassphrase() + "\n"
 
             "\nArguments:\n"
-            "1. amount      (numeric, required) Enter an amount of Tup to convert to zTUP\n"
+            "1. amount      (numeric, required) Enter an amount of TUP to convert to zTUP\n"
             "2. utxos       (string, optional) A json array of objects.\n"
             "                   Each object needs the txid (string) and vout (numeric)\n"
             "  [\n"

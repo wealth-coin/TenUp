@@ -36,7 +36,7 @@ couldn't mess with the sources.
 
 Setup
 ---------
-Configuring the github-merge tool for the TENUP repository is done in the following way:
+Configuring the github-merge tool for the TenUp repository is done in the following way:
 
     git config githubmerge.repository tenup-coin/TenUp
     git config githubmerge.testcmd "make -j4 check" (adapt to whatever you want to use for testing)

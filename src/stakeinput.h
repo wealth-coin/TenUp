@@ -1,9 +1,10 @@
+// Copyright (c) 2017-2018 The PIVX developers
 // Copyright (c) 2017-2018 The TenUp developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef TUPX_STAKEINPUT_H
-#define TUPX_STAKEINPUT_H
+#ifndef TENUP_STAKEINPUT_H
+#define TENUP_STAKEINPUT_H
 
 class CKeyStore;
 class CWallet;
@@ -87,4 +88,4 @@ public:
 };
 
 
-#endif //TUPX_STAKEINPUT_H
+#endif //TENUP_STAKEINPUT_H

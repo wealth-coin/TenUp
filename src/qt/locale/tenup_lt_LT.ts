@@ -255,7 +255,7 @@
     </message>
     <message>
         <source>Enter a TenUp Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Įveskite TenUp adresą, kurį norėtumėte užšifruoti naudojant BIP 38. Vidiniame laukelyje įrašykite slaptą frazę. Paspauskite užšifruoti, jei norite gauti užšifruotą privatųjį raktą.</translation>
+        <translation>Įveskite Tenup adresą, kurį norėtumėte užšifruoti naudojant BIP 38. Vidiniame laukelyje įrašykite slaptą frazę. Paspauskite užšifruoti, jei norite gauti užšifruotą privatųjį raktą.</translation>
     </message>
     <message>
         <source>The TenUp address to encrypt</source>
@@ -1734,11 +1734,11 @@ Patikrinkite adresą ir bandykite dar kartą.</translation>
         <translation>Pasirinkite privatumo lygmenį.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 10000 TUP</source>
+        <source>Use 2 separate masternodes to mix funds up to 25000 TUP</source>
         <translation>Naudokite 2 atskirus masternod'us, kad sumaišytumėte lėšas iki 10 000 TUP</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 10000 TUP</source>
+        <source>Use 8 separate masternodes to mix funds up to 25000 TUP</source>
         <translation>Naudokite 8 atskirus masternod'us, kad sumaišytumėte lėšas iki 10 000 TUP</translation>
     </message>
     <message>
@@ -1746,19 +1746,19 @@ Patikrinkite adresą ir bandykite dar kartą.</translation>
         <translation>Naudokite 16 atskirų masternod'ų</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 TUP to anonymize 10000 TUP</source>
-        <translation>Ši parinktis yra greičiausia ir kainuos apie ~0.025 TUP, kad anonimizuotų 10000 TUP</translation>
+        <source>This option is the quickest and will cost about ~0.025 TUP to anonymize 25000 TUP</source>
+        <translation>Ši parinktis yra greičiausia ir kainuos apie ~0.025 TUP, kad anonimizuotų 25000 TUP</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 TUP to anonymize 10000 TUP</source>
-        <translation>Ši parinktis yra vidutiniškai greita ir kainuoja apie 0,05 TUP, kad anonimizuotų 10000 TUP</translation>
+        <source>This option is moderately fast and will cost about 0.05 TUP to anonymize 25000 TUP</source>
+        <translation>Ši parinktis yra vidutiniškai greita ir kainuoja apie 0,05 TUP, kad anonimizuotų 25000 TUP</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
         <translation>Tai yra lėčiausias ir saugiausias variantas. Maksimalus anonimiškumas kainuos.</translation>
     </message>
     <message>
-        <source>0.1 TUP per 10000 TUP you anonymize.</source>
+        <source>0.1 TUP per  10000 TUP you anonymize.</source>
         <translation>0.1 TUP kas 1000 TUP kuriuos anonimizuosite.</translation>
     </message>
     </context>

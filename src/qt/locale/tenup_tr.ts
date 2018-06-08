@@ -1743,32 +1743,32 @@ Unutmayın, cüzdan, yeni adresi içeren işlemleri bulmak için blok zinciri ye
         <translation>Lütfen bir gizlilik düzeyi seçin.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 10000 TUP</source>
-        <translation>10000 TUP'e kadar fonları karıştırmak için 2 ayrı matternod kullanın</translation>
+        <source>Use 2 separate masternodes to mix funds up to 25000 TUP</source>
+        <translation>25000 TUP'e kadar fonları karıştırmak için 2 ayrı matternod kullanın</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 10000 TUP</source>
-        <translation>10000 TUP'ye kadar olan fonları karıştırmak için 8 ayrı matternod kullanın</translation>
+        <source>Use 8 separate masternodes to mix funds up to 25000 TUP</source>
+        <translation>25000 TUP'ye kadar olan fonları karıştırmak için 8 ayrı matternod kullanın</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>16 ayrı matternod kullan</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 TUP to anonymize 10000 TUP</source>
-        <translation>Bu seçenek en hızlıdır ve 10000 TUP'yi anonimleştirmek için ~ 0.025 TUP'lik bir maliyeti olacaktır</translation>
+        <source>This option is the quickest and will cost about ~0.025 TUP to anonymize 25000 TUP</source>
+        <translation>Bu seçenek en hızlıdır ve 25000 TUP'yi anonimleştirmek için ~ 0.025 TUP'lik bir maliyeti olacaktır</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 TUP to anonymize 10000 TUP</source>
-        <translation>Bu seçenek orta derecede hızlıdır ve 10000 TUP'yi anonimleştirmek için yaklaşık 0.05 TUP'e mal olur</translation>
+        <source>This option is moderately fast and will cost about 0.05 TUP to anonymize 25000 TUP</source>
+        <translation>Bu seçenek orta derecede hızlıdır ve 25000 TUP'yi anonimleştirmek için yaklaşık 0.05 TUP'e mal olur</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
         <translation>Bu en yavaş ve en güvenli seçenektir. Maksimum anonimlik kullanmak maliyete gelecek</translation>
     </message>
     <message>
-        <source>0.1 TUP per 10000 TUP you anonymize.</source>
-        <translation>0.1 TUP her 10000 TUP anonimleştirmeye.</translation>
+        <source>0.1 TUP per  10000 TUP you anonymize.</source>
+        <translation>0.1 TUP her  10000 TUP anonimleştirmeye.</translation>
     </message>
     <message>
         <source>Obfuscation Configuration</source>
@@ -2220,7 +2220,7 @@ To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in tenup.conf
     </message>
     <message>
         <source>Cannot start tenup: click-to-pay handler</source>
-        <translation>TenUp başlatılamıyor: tıkla ve ödeme işleyicisi</translation>
+        <translation>Tenup başlatılamıyor: tıkla ve ödeme işleyicisi</translation>
     </message>
     <message>
         <source>URI cannot be parsed! This can be caused by an invalid TenUp address or malformed URI parameters.</source>
@@ -2691,8 +2691,8 @@ Lütfen sabırlı olun...</translation>
         <translation>Sağlanan 'Ödeme Yapmak İçin' adresi yok, yerel ödeme oluşturun</translation>
     </message>
     <message>
-        <source>Invalid TenUp Address</source>
-        <translation>Geçersiz TenUp Adresi</translation>
+        <source>Invalid Tenup Address</source>
+        <translation>Geçersiz Tenup Adresi</translation>
     </message>
     <message>
         <source>Invalid Send Amount</source>

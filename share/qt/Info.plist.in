@@ -38,7 +38,7 @@
   <true/>
 
   <key>CFBundleIdentifier</key>
-  <string>io.tenup.TenUp-Qt</string>
+  <string>io.tenup.Tenup-Qt</string>
 
   <key>CFBundleURLTypes</key>
   <array>
@@ -46,7 +46,7 @@
       <key>CFBundleTypeRole</key>
       <string>Editor</string>
       <key>CFBundleURLName</key>
-      <string>io.tenup.TupxPayment</string>
+      <string>io.tenup.TenupPayment</string>
       <key>CFBundleURLSchemes</key>
       <array>
         <string>tenup</string>
@@ -60,7 +60,7 @@
       <key>UTTypeIdentifier</key>
       <string>io.tenup.paymentrequest</string>
       <key>UTTypeDescription</key>
-      <string>TenUp payment request</string>
+      <string>Tenup payment request</string>
       <key>UTTypeConformsTo</key>
       <array>
         <string>public.data</string>

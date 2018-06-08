@@ -1,10 +1,10 @@
+// Copyright (c) 2017-2018 The PIVX developers
 // Copyright (c) 2017-2018 The TenUp developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #include "blocksignature.h"
 #include "main.h"
-#include "ztupchain.h"
 
 bool SignBlockWithKey(CBlock& block, const CKey& key)
 {

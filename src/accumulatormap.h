@@ -1,9 +1,10 @@
+// Copyright (c) 2017-2018 The PIVX developers
 // Copyright (c) 2017-2018 The TenUp developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef TUPX_ACCUMULATORMAP_H
-#define TUPX_ACCUMULATORMAP_H
+#ifndef TENUP_ACCUMULATORMAP_H
+#define TENUP_ACCUMULATORMAP_H
 
 #include "libzerocoin/Accumulator.h"
 #include "libzerocoin/Coin.h"
@@ -25,4 +26,4 @@ public:
     void Reset();
     void Reset(libzerocoin::ZerocoinParams* params2);
 };
-#endif //TUPX_ACCUMULATORMAP_H
+#endif //TENUP_ACCUMULATORMAP_H

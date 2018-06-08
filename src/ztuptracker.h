@@ -1,9 +1,10 @@
+// Copyright (c) 2018 The PIVX developers
 // Copyright (c) 2018 The TenUp developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef TUPX_ZTUPTRACKER_H
-#define TUPX_ZTUPTRACKER_H
+#ifndef TENUP_ZTUPTRACKER_H
+#define TENUP_ZTUPTRACKER_H
 
 #include "primitives/zerocoin.h"
 #include <list>
@@ -48,4 +49,4 @@ public:
     void Clear();
 };
 
-#endif //TUPX_ZTUPTRACKER_H
+#endif //TENUP_ZTUPTRACKER_H

@@ -1,3 +1,4 @@
+// Copyright (c) 2017-2018 The PIVX developers
 // Copyright (c) 2017-2018 The TenUp developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
@@ -10,7 +11,6 @@
 #include "init.h"
 #include "spork.h"
 #include "accumulatorcheckpoints.h"
-#include "ztupchain.h"
 
 using namespace libzerocoin;
 
@@ -142,6 +142,7 @@ bool LoadAccumulatorValuesFromDB(const uint256 nCheckpoint)
         }
         mapAccumulatorValues.insert(make_pair(nChecksum, bnValue));
     }
+    return true;
 }
 
 //Erase accumulator checkpoints for a certain block range
@@ -338,7 +339,7 @@ void RandomizeSecurityLevel(int& nSecurityLevel)
 
         //security level 100 represents adding all available coins that have been accumulated - user did not select this
         if (nSecurityLevel >= 100)
-            nSecurityLevel = 1;
+            nSecurityLevel = 99;
     }
 }
 
@@ -402,7 +403,7 @@ bool GetAccumulatorValue(int& nHeight, const libzerocoin::CoinDenomination denom
         //Start at the first zerocoin
         libzerocoin::Accumulator accumulator(Params().Zerocoin_Params(false), denom);
         bnAccValue = accumulator.getValue();
-        nHeight = Params().Zerocoin_StartHeight() + 10;
+        nHeight = Params().Zerocoin_Block_V2_Start() + 10;
         return true;
     }
 
@@ -437,10 +438,6 @@ bool GenerateAccumulatorWitness(const PublicCoin &coin, Accumulator& accumulator
     if (!GetTransaction(txid, txMinted, hashBlock))
         return error("%s failed to read tx", __func__);
 
-    int nHeightTest;
-    if (!IsTransactionInChain(txid, nHeightTest))
-        return error("%s: mint tx %s is not in chain", __func__, txid.GetHex());
-
     int nHeightMintAdded = mapBlockIndex[hashBlock]->nHeight;
 
     //get the checkpoint added at the next multiple of 10
@@ -471,8 +468,6 @@ bool GenerateAccumulatorWitness(const PublicCoin &coin, Accumulator& accumulator
     nMintsAdded = 0;
     RandomizeSecurityLevel(nSecurityLevel); //make security level not always the same and predictable
     libzerocoin::Accumulator witnessAccumulator = accumulator;
-
-    bool fDoubleCounted = false;
     while (pindex) {
         if (pindex->nHeight != nAccStartHeight && pindex->pprev->nAccumulatorCheckpoint != pindex->nAccumulatorCheckpoint)
             ++nCheckpointsAdded;
@@ -494,17 +489,8 @@ bool GenerateAccumulatorWitness(const PublicCoin &coin, Accumulator& accumulator
         }
 
         nMintsAdded += AddBlockMintsToAccumulator(coin, nHeightMintAdded, pindex, &witnessAccumulator, true);
-
-        // 10 blocks were accumulated twice when zTUP v2 was activated
-        if (pindex->nHeight == 1050010 && !fDoubleCounted) {
-            pindex = chainActive[1050000];
-            fDoubleCounted = true;
-            continue;
-        }
-
         pindex = chainActive.Next(pindex);
     }
-
     witness.resetValue(witnessAccumulator, coin);
     if (!witness.VerifyWitness(accumulator, coin))
         return error("%s: failed to verify witness", __func__);

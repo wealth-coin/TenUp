@@ -2243,12 +2243,12 @@ Please be patient after clicking import.</source>
     </message>
     <message>
         <location line="+13"/>
-        <source>Use 2 separate masternodes to mix funds up to 10000 TUP</source>
+        <source>Use 2 separate masternodes to mix funds up to 25000 TUP</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+13"/>
-        <source>Use 8 separate masternodes to mix funds up to 10000 TUP</source>
+        <source>Use 8 separate masternodes to mix funds up to 25000 TUP</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2258,12 +2258,12 @@ Please be patient after clicking import.</source>
     </message>
     <message>
         <location line="+13"/>
-        <source>This option is the quickest and will cost about ~0.025 TUP to anonymize 10000 TUP</source>
+        <source>This option is the quickest and will cost about ~0.025 TUP to anonymize 25000 TUP</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+13"/>
-        <source>This option is moderately fast and will cost about 0.05 TUP to anonymize 10000 TUP</source>
+        <source>This option is moderately fast and will cost about 0.05 TUP to anonymize 25000 TUP</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2273,7 +2273,7 @@ Please be patient after clicking import.</source>
     </message>
     <message>
         <location line="+13"/>
-        <source>0.1 TUP per 10000 TUP you anonymize.</source>
+        <source>0.1 TUP per  10000 TUP you anonymize.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3093,7 +3093,7 @@ To enable AutoMint change &apos;enablezeromint=0&apos; to &apos;enablezeromint=1
     <message>
         <location line="+182"/>
         <location line="+52"/>
-        <source>Enter an amount of Tup to convert to zTUP</source>
+        <source>Enter an amount of TUP to convert to zTUP</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3708,7 +3708,7 @@ Please be patient...</source>
     </message>
     <message>
         <location line="+4"/>
-        <source>Invalid TenUp Address</source>
+        <source>Invalid Tenup Address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6516,12 +6516,12 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+2"/>
-        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 TUP.</source>
+        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 25000 TUP.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Unable to locate enough funds for this transaction that are not equal 10000 TUP.</source>
+        <source>Unable to locate enough funds for this transaction that are not equal 25000 TUP.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

@@ -1,9 +1,10 @@
+// Copyright (c) 2017-2018 The PIVX developers
 // Copyright (c) 2017-2018 The TenUp developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef TUPX_ZEROCOIN_H
-#define TUPX_ZEROCOIN_H
+#ifndef TENUP_ZEROCOIN_H
+#define TENUP_ZEROCOIN_H
 
 #include <amount.h>
 #include <limits.h>
@@ -247,4 +248,4 @@ public:
     int GetNeededSpends();
 };
 
-#endif //TUPX_ZEROCOIN_H
+#endif //TENUP_ZEROCOIN_H

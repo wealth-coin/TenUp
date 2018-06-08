@@ -1780,32 +1780,32 @@ Waas alsjeblieft geduldig nadat u op importeren hebt geklikt.</translation>
         <translation>Selecteer de privacy level.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 10000 TUP</source>
-        <translation>Gebruik 2 aparte masternodes om fondsen te mixen tot 10000 TUP</translation>
+        <source>Use 2 separate masternodes to mix funds up to 25000 TUP</source>
+        <translation>Gebruik 2 aparte masternodes om fondsen te mixen tot 25000 TUP</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 10000 TUP</source>
-        <translation>Gebruik 8 aparte masternodes om fondsen te mixen tot 10000 TUP</translation>
+        <source>Use 8 separate masternodes to mix funds up to 25000 TUP</source>
+        <translation>Gebruik 8 aparte masternodes om fondsen te mixen tot 25000 TUP</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>Gebruik 16 aparte masternodes</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 TUP to anonymize 10000 TUP</source>
-        <translation>Deze optie is het snelst en kost ongeveer ~0,025 TUP om 10000 TUP te anonimiseren</translation>
+        <source>This option is the quickest and will cost about ~0.025 TUP to anonymize 25000 TUP</source>
+        <translation>Deze optie is het snelst en kost ongeveer ~0,025 TUP om 25000 TUP te anonimiseren</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 TUP to anonymize 10000 TUP</source>
-        <translation>Deze optie is gematigd snel en kost ongeveer 0,05 TUP om 10000 TUP te anonimiseren</translation>
+        <source>This option is moderately fast and will cost about 0.05 TUP to anonymize 25000 TUP</source>
+        <translation>Deze optie is gematigd snel en kost ongeveer 0,05 TUP om 25000 TUP te anonimiseren</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
         <translation>Dit is de langzaamste en veiligste optie. Het gebruik van maximale anonimiteit kost</translation>
     </message>
     <message>
-        <source>0.1 TUP per 10000 TUP you anonymize.</source>
-        <translation>je anonimiseert 0,1 TUP per 10000 TUP.</translation>
+        <source>0.1 TUP per  10000 TUP you anonymize.</source>
+        <translation>je anonimiseert 0.1 TUP per  10000 TUP.</translation>
     </message>
     <message>
         <source>Obfuscation Configuration</source>
@@ -2442,7 +2442,7 @@ Om AutoMint in te schakelend verander je 'enablezeromint=0' naar 'enablezeromint
         <translation>PRIVACY</translation>
     </message>
     <message>
-        <source>Enter an amount of Tup to convert to zTUP</source>
+        <source>Enter an amount of TUP to convert to zTUP</source>
         <translation>Vul het aantal TUP in om te converteren naar zTUP</translation>
     </message>
     <message>
@@ -2915,8 +2915,8 @@ Wees alsjeblieft geduldig...</translation>
         <translation>Geen 'Betaal aan' adres verstrekt, lokale betaling wordt gemaakt</translation>
     </message>
     <message>
-        <source>Invalid TenUp Address</source>
-        <translation>Ongeldig TenUp addres</translation>
+        <source>Invalid Tenup Address</source>
+        <translation>Ongeldig Tenup addres</translation>
     </message>
     <message>
         <source>Invalid Send Amount</source>
@@ -5095,12 +5095,12 @@ Ofwel het munten van hogere denominaties (dus minder invoer nodig) of het te bes
         <translation>Kan niet genoeg verduistering gedenomineerde fondsen voor deze transactie vinden.</translation>
     </message>
     <message>
-        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 TUP.</source>
-        <translation>Kan niet genoeg verduistering niet gedenomineerde fondsen voor deze transactie vinden die niet gelijk zijn aan 10000 TUP.</translation>
+        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 25000 TUP.</source>
+        <translation>Kan niet genoeg verduistering niet gedenomineerde fondsen voor deze transactie vinden die niet gelijk zijn aan 25000 TUP.</translation>
     </message>
     <message>
-        <source>Unable to locate enough funds for this transaction that are not equal 10000 TUP.</source>
-        <translation>Kan niet genoeg fondsen voor deze transactie vinden die niet gelijk zijn aan 10000 TUP.</translation>
+        <source>Unable to locate enough funds for this transaction that are not equal 25000 TUP.</source>
+        <translation>Kan niet genoeg fondsen voor deze transactie vinden die niet gelijk zijn aan 25000 TUP.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>

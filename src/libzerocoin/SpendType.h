@@ -1,9 +1,10 @@
+// Copyright (c) 2018 The PIVX developers
 // Copyright (c) 2018 The TenUp developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef TUPX_SPENDTYPE_H
-#define TUPX_SPENDTYPE_H
+#ifndef TENUP_SPENDTYPE_H
+#define TENUP_SPENDTYPE_H
 
 #include <cstdint>
 
@@ -16,4 +17,4 @@ namespace libzerocoin {
     };
 }
 
-#endif //TUPX_SPENDTYPE_H
+#endif //TENUP_SPENDTYPE_H

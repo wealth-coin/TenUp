@@ -1,4 +1,5 @@
 // Copyright (c) 2014-2016 The Dash Developers
+// Copyright (c) 2016-2017 The PIVX developers
 // Copyright (c) 2016-2017 The TenUp developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
@@ -85,8 +86,8 @@ void ObfuscationConfig::configure(bool enabled, int coins, int rounds)
     QSettings settings;
 
     settings.setValue("nObfuscationRounds", rounds);
-    settings.setValue("nAnonymizeTupxAmount", coins);
+    settings.setValue("nAnonymizeTenupAmount", coins);
 
     nZeromintPercentage = rounds;
-    nAnonymizeTupxAmount = coins;
+    nAnonymizeTenupAmount = coins;
 }

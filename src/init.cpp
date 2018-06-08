@@ -1,6 +1,7 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
+// Copyright (c) 2015-2018 The PIVX developers
 // Copyright (c) 2015-2018 The TenUp developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
@@ -11,7 +12,6 @@
 
 #include "init.h"
 
-#include "accumulatorcheckpoints.h"
 #include "accumulators.h"
 #include "activemasternode.h"
 #include "addrman.h"
@@ -40,7 +40,7 @@
 #include "util.h"
 #include "utilmoneystr.h"
 #include "validationinterface.h"
-#include "ztupchain.h"
+#include "accumulatorcheckpoints.h"
 
 #ifdef ENABLE_WALLET
 #include "db.h"
@@ -1438,10 +1438,56 @@ bool AppInit2(boost::thread_group& threadGroup, CScheduler& scheduler)
                 // Drop all information from the zerocoinDB and repopulate
                 if (GetBoolArg("-reindexzerocoin", false)) {
                     uiInterface.InitMessage(_("Reindexing zerocoin database..."));
-                    std::string strError = ReindexZerocoinDB();
-                    if (strError != "") {
-                        strLoadError = strError;
+                    if (!zerocoinDB->WipeCoins("spends") || !zerocoinDB->WipeCoins("mints")) {
+                        strLoadError = _("Failed to wipe zerocoinDB");
                         break;
+                    }
+
+                    CBlockIndex* pindex = chainActive[Params().Zerocoin_StartHeight()];
+                    while (pindex) {
+                        if (pindex->nHeight % 1000 == 0)
+                            LogPrintf("Reindexing zerocoin : block %d...\n", pindex->nHeight);
+
+                        CBlock block;
+                        if (!ReadBlockFromDisk(block, pindex)) {
+                            strLoadError = _("Reindexing zerocoin failed");
+                            break;
+                        }
+
+                        for (const CTransaction& tx : block.vtx) {
+                            for (unsigned int i = 0; i < tx.vin.size(); i++) {
+                                if (tx.IsCoinBase())
+                                    break;
+
+                                if (tx.ContainsZerocoins()) {
+                                    uint256 txid = tx.GetHash();
+                                    //Record Serials
+                                    if (tx.IsZerocoinSpend()) {
+                                        for (auto& in : tx.vin) {
+                                            if (!in.scriptSig.IsZerocoinSpend())
+                                                continue;
+
+                                            libzerocoin::CoinSpend spend = TxInToZerocoinSpend(in);
+                                            zerocoinDB->WriteCoinSpend(spend.getCoinSerialNumber(), txid);
+                                        }
+                                    }
+
+                                    //Record mints
+                                    if (tx.IsZerocoinMint()) {
+                                        for (auto& out : tx.vout) {
+                                            if (!out.IsZerocoinMint())
+                                                continue;
+
+                                            CValidationState state;
+                                            libzerocoin::PublicCoin coin(Params().Zerocoin_Params(pindex->nHeight < Params().Zerocoin_Block_V2_Start()));
+                                            TxOutToPublicCoin(out, coin, state);
+                                            zerocoinDB->WriteCoinMint(coin, txid);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        pindex = chainActive.Next(pindex);
                     }
                 }
 
@@ -1813,7 +1859,7 @@ bool AppInit2(boost::thread_group& threadGroup, CScheduler& scheduler)
     }
 
 // XX42 Remove/refactor code below. Until then provide safe defaults
-    nAnonymizeTupxAmount = 2;
+    nAnonymizeTenupAmount = 2;
 
 //    nLiquidityProvider = GetArg("-liquidityprovider", 0); //0-100
 //    if (nLiquidityProvider != 0) {
@@ -1822,9 +1868,9 @@ bool AppInit2(boost::thread_group& threadGroup, CScheduler& scheduler)
 //        nZeromintPercentage = 99999;
 //    }
 //
-//    nAnonymizeTupxAmount = GetArg("-anonymizetenupamount", 0);
-//    if (nAnonymizeTupxAmount > 999999) nAnonymizeTupxAmount = 999999;
-//    if (nAnonymizeTupxAmount < 2) nAnonymizeTupxAmount = 2;
+//    nAnonymizeTenupAmount = GetArg("-anonymizetenupamount", 0);
+//    if (nAnonymizeTenupAmount > 999999) nAnonymizeTenupAmount = 999999;
+//    if (nAnonymizeTenupAmount < 2) nAnonymizeTenupAmount = 2;
 
     fEnableSwiftTX = GetBoolArg("-enableswifttx", fEnableSwiftTX);
     nSwiftTXDepth = GetArg("-swifttxdepth", nSwiftTXDepth);
@@ -1838,7 +1884,7 @@ bool AppInit2(boost::thread_group& threadGroup, CScheduler& scheduler)
 
     LogPrintf("fLiteMode %d\n", fLiteMode);
     LogPrintf("nSwiftTXDepth %d\n", nSwiftTXDepth);
-    LogPrintf("Anonymize TenUp Amount %d\n", nAnonymizeTupxAmount);
+    LogPrintf("Anonymize TenUp Amount %d\n", nAnonymizeTenupAmount);
     LogPrintf("Budget Mode %s\n", strBudgetMode.c_str());
 
     /* Denominations

@@ -1,11 +1,12 @@
+// Copyright (c) 2018 The PIVX developers
 // Copyright (c) 2018 The TenUp developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef TUPX_INVALID_H
-#define TUPX_INVALID_H
+#ifndef TENUP_INVALID_H
+#define TENUP_INVALID_H
 
-#endif //TUPX_INVALID_H
+#endif //TENUP_INVALID_H
 
 #include <libzerocoin/bignum.h>
 #include <univalue/include/univalue.h>

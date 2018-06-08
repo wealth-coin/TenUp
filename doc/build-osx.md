@@ -86,7 +86,7 @@ Creating a release build
 ------------------------
 You can ignore this section if you are building `tenupd` for your own use.
 
-tenupd/tenup-cli binaries are not included in the tenup-qt.app bundle.
+tenupd/tenup-cli binaries are not included in the tenup-Qt.app bundle.
 
 If you are building `tenupd` or `tenup-qt` for others, your build machine should be set up
 as follows for maximum compatibility:

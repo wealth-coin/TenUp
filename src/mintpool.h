@@ -1,9 +1,10 @@
+// Copyright (c) 2017-2018 The PIVX developers
 // Copyright (c) 2017-2018 The TenUp developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef TUPX_MINTPOOL_H
-#define TUPX_MINTPOOL_H
+#ifndef TENUP_MINTPOOL_H
+#define TENUP_MINTPOOL_H
 
 #include <map>
 #include <list>
@@ -50,4 +51,4 @@ public:
 };
 
 
-#endif //TUPX_MINTPOOL_H
+#endif //TENUP_MINTPOOL_H

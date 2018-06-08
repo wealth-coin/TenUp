@@ -49,5 +49,5 @@ for i in `find ${TEMPDIR} -name "*.sign"`; do
   echo "Success."
 done
 mv ${TEMPDIR}/${ROOTDIR} ${OUTDIR}
-#rm -rf ${TEMPDIR}
+rm -rf ${TEMPDIR}
 echo "Signed: ${OUTDIR}"

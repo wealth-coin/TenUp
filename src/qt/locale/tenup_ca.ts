@@ -1148,24 +1148,24 @@
         <translation>Si us plau, selecciona un nivell de privacitat.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 10000 TUP</source>
-        <translation>Utilitza 2 masternodes diferents per mesclar fons de fins a 10000 TUP</translation>
+        <source>Use 2 separate masternodes to mix funds up to 25000 TUP</source>
+        <translation>Utilitza 2 masternodes diferents per mesclar fons de fins a 25000 TUP</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 10000 TUP</source>
-        <translation>Utilitza 8 masternodes diferents per mesclar fons de fins a 10000 TUP</translation>
+        <source>Use 8 separate masternodes to mix funds up to 25000 TUP</source>
+        <translation>Utilitza 8 masternodes diferents per mesclar fons de fins a 25000 TUP</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>Utilitza 16 masternodes diferents</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 TUP to anonymize 10000 TUP</source>
-        <translation>Aquesta opció és la més ràpida i té un cost d'uns ~0.025 TUP per anonimitzar 10000 TUP</translation>
+        <source>This option is the quickest and will cost about ~0.025 TUP to anonymize 25000 TUP</source>
+        <translation>Aquesta opció és la més ràpida i té un cost d'uns ~0.025 TUP per anonimitzar 25000 TUP</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 TUP to anonymize 10000 TUP</source>
-        <translation>Aquesta opció és moderadament ràpida i té un cost d'uns 0.05 TUP per anonimitzar 10000 TUP</translation>
+        <source>This option is moderately fast and will cost about 0.05 TUP to anonymize 25000 TUP</source>
+        <translation>Aquesta opció és moderadament ràpida i té un cost d'uns 0.05 TUP per anonimitzar 25000 TUP</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>

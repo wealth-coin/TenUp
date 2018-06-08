@@ -1,4 +1,7 @@
 TOR SUPPORT IN TenUp
+=======================
+
+It is possible to run TenUp as a Tor hidden service, and connect to such services.
 
 The following directions assume you have a Tor proxy running on port 9050. Many
 distributions default to having a SOCKS proxy listening on port 9050, but others

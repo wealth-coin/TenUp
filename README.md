@@ -1,16 +1,14 @@
-TENUP Core integration/staging repository
+TenUp Core integration/staging repository
 =====================================
 
 [![Build Status](https://travis-ci.org/tenup-coin/TenUp.svg?branch=master)](https://travis-ci.org/tenup-coin/TenUp) [![GitHub version](https://badge.fury.io/gh/tenup-coin%2FTenUp.svg)](https://badge.fury.io/gh/tenup-coin%2FTenUp)
 
-TENUP is a cutting edge cryptocurrency, with many features not available in most other cryptocurrencies.
-- Anonymized transactions using coin mixing technology, we call it _Obfuscation_.
-- Fast transactions featuring guaranteed zero confirmation transactions, we call it _SwiftTX_.
-- Decentralized blockchain voting providing for consensus based advancement of the current Masternode
-  technology used to secure the network and provide the above features, each Masternode is secured
-  with a collateral of 25K TUP.
+TenUp is an open source crypto-currency focused on fast private transactions with low transaction fees & environmental footprint.  It utilizes a custom Proof of Stake protocol for securing its network and uses an innovative variable seesaw reward mechanism that dynamically balances 90% of its block reward size between masternodes and staking nodes and 10% dedicated for budget proposals. The goal of TenUp is to achieve a decentralized sustainable crypto currency with near instant full-time private transactions, fair governance and community intelligence.
+- Anonymized transactions using the [_Zerocoin Protocol_](http://www.tenup.io/ztup).
+- Fast transactions featuring guaranteed zero confirmation transactions, we call it _SwiftX_.
+- Decentralized blockchain voting utilizing Masternode technology to form a DAO. The blockchain will distribute monthly treasury funds based on successful proposals submitted by the community and voted on by the DAO.
 
-More information at [tenup.org](http://www.tenup.io) Visit our ANN thread at [BitcoinTalk](http://www.bitcointalk.org/index.php?topic=1262920)
+More information at [tenup.io](http://www.tenup.io) Visit our ANN thread at [BitcoinTalk](http://www.bitcointalk.org/index.php?topic=1262920)
 
 ### Coin Specs
 <table>

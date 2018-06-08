@@ -3,8 +3,8 @@
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef TUPX_CSPORKDB_H
-#define TUPX_CSPORKDB_H
+#ifndef TENUP_CSPORKDB_H
+#define TENUP_CSPORKDB_H
 
 #include <boost/filesystem/path.hpp>
 #include "leveldbwrapper.h"
@@ -26,4 +26,4 @@ public:
 };
 
 
-#endif //TUPX_CSPORKDB_H
+#endif //TENUP_CSPORKDB_H

@@ -1,9 +1,10 @@
+// Copyright (c) 2018 The PIVX developers
 // Copyright (c) 2018 The TenUp developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef TUPX_ACCUMULATORCHECKPOINTS_H
-#define TUPX_ACCUMULATORCHECKPOINTS_H
+#ifndef TENUP_ACCUMULATORCHECKPOINTS_H
+#define TENUP_ACCUMULATORCHECKPOINTS_H
 
 #include <libzerocoin/bignum.h>
 #include <univalue/include/univalue.h>
@@ -18,4 +19,4 @@ namespace AccumulatorCheckpoints
     Checkpoint GetClosestCheckpoint(const int& nHeight, int& nHeightCheckpoint);
 }
 
-#endif //TUPX_ACCUMULATORCHECKPOINTS_H
+#endif //TENUP_ACCUMULATORCHECKPOINTS_H

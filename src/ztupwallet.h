@@ -1,9 +1,10 @@
+// Copyright (c) 2017-2018 The PIVX developers
 // Copyright (c) 2017-2018 The TenUp developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef TUPX_ZTUPWALLET_H
-#define TUPX_ZTUPWALLET_H
+#ifndef TENUP_ZTUPWALLET_H
+#define TENUP_ZTUPWALLET_H
 
 #include <map>
 #include "libzerocoin/Coin.h"
@@ -45,4 +46,4 @@ private:
     uint512 GetZerocoinSeed(uint32_t n);
 };
 
-#endif //TUPX_ZTUPWALLET_H
+#endif //TENUP_ZTUPWALLET_H

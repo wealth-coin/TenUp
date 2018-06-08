@@ -4,7 +4,7 @@
 There are many ways to setup a wallet to support start-many. This guide will walk through two of them.
 
 1. [Importing an existing wallet (recommended if you are consolidating wallets).](#option1)
-2. [Sending 10,000 TenUp to new wallet addresses.](#option2)
+2. [Sending 25,000 TenUp to new wallet addresses.](#option2)
 
 ## <a name="option1"></a>Option 1. Importing an existing wallet
 
@@ -58,7 +58,7 @@ Close your QT Wallet.
 
 ### Send 25,000 TenUp to New Addresses
 
-Just like setting up a standard MN. Send exactly 10,000 TenUp to each new address created above.
+Just like setting up a standard MN. Send exactly 25,000 TenUp to each new address created above.
 
 ### Create New Masternode Private Keys
 
@@ -95,7 +95,7 @@ Issue the following:
 Make note of the hash (which is your collaterla_output) and index.
 
 ### Enter your MasterNode details into your masternode.conf file
-[From the tenup github repo](https://github.com/tenup-crypto/tenup/blob/master/doc/masternode_conf.md)
+[From the tenup github repo](https://github.com/tenup-coin/tenup/blob/master/doc/masternode_conf.md)
 
 The new masternode.conf format consists of a space seperated text file. Each line consisting of an alias, IP address followed by port, masternode private key, collateral output transaction id and collateral output index, donation address and donation percentage (the latter two are optional and should be in format "address:percentage").
 

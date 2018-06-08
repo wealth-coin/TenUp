@@ -1,3 +1,4 @@
+// Copyright (c) 2017-2018 The PIVX developers
 // Copyright (c) 2017-2018 The TenUp developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
@@ -324,7 +325,7 @@ void PrivacyDialog::sendzTUP()
     }
     else{
         if (!address.IsValid()) {
-            QMessageBox::warning(this, tr("Spend Zerocoin"), tr("Invalid TenUp Address"), QMessageBox::Ok, QMessageBox::Ok);
+            QMessageBox::warning(this, tr("Spend Zerocoin"), tr("Invalid Tenup Address"), QMessageBox::Ok, QMessageBox::Ok);
             ui->payTo->setFocus();
             return;
         }
@@ -505,7 +506,7 @@ void PrivacyDialog::sendzTUP()
 
     CAmount nValueOut = 0;
     for (const CTxOut& txout: wtxNew.vout) {
-        strStats += tr("value out: ") + FormatMoney(txout.nValue).c_str() + " Tup, ";
+        strStats += tr("value out: ") + FormatMoney(txout.nValue).c_str() + " TUP, ";
         nValueOut += txout.nValue;
 
         strStats += tr("address: ");
@@ -599,7 +600,6 @@ void PrivacyDialog::setBalance(const CAmount& balance, const CAmount& unconfirme
                                const CAmount& zerocoinBalance, const CAmount& unconfirmedZerocoinBalance, const CAmount& immatureZerocoinBalance,
                                const CAmount& watchOnlyBalance, const CAmount& watchUnconfBalance, const CAmount& watchImmatureBalance)
 {
-
     currentBalance = balance;
     currentUnconfirmedBalance = unconfirmedBalance;
     currentImmatureBalance = immatureBalance;
@@ -792,9 +792,7 @@ void PrivacyDialog::updateAutomintStatus()
 void PrivacyDialog::updateSPORK16Status()
 {
     // Update/enable labels, buttons and tooltips depending on the current SPORK_16 status
-    bool fButtonsEnabled =  ui->pushButtonMintzTUP->isEnabled();
-    bool fMaintenanceMode = GetAdjustedTime() > GetSporkValue(SPORK_16_ZEROCOIN_MAINTENANCE_MODE);
-    if (fMaintenanceMode && fButtonsEnabled) {
+    if(GetAdjustedTime() > GetSporkValue(SPORK_16_ZEROCOIN_MAINTENANCE_MODE)) {
         // Mint zTUP
         ui->pushButtonMintzTUP->setEnabled(false);
         ui->pushButtonMintzTUP->setToolTip(tr("zTUP is currently disabled due to maintenance."));
@@ -802,7 +800,8 @@ void PrivacyDialog::updateSPORK16Status()
         // Spend zTUP
         ui->pushButtonSpendzTUP->setEnabled(false);
         ui->pushButtonSpendzTUP->setToolTip(tr("zTUP is currently disabled due to maintenance."));
-    } else if (!fMaintenanceMode && !fButtonsEnabled) {
+    }
+    else {
         // Mint zTUP
         ui->pushButtonMintzTUP->setEnabled(true);
         ui->pushButtonMintzTUP->setToolTip(tr("PrivacyDialog", "Enter an amount of TUP to convert to zTUP", 0));
