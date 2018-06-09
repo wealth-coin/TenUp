@@ -125,7 +125,7 @@ public:
         nMinerThreads = 0;
         nTargetTimespan = 1 * 60; // TenUp: 1 day
         nTargetSpacing = 1 * 60;  // TenUp: 1 minute
-        nMaturity = 100;
+        nMaturity = 10;
         nMasternodeCountDrift = 20;
         nMaxMoneyOut = 70000000 * COIN;
 
@@ -191,7 +191,7 @@ public:
 
         convertSeed6(vFixedSeeds, pnSeed6_main, ARRAYLEN(pnSeed6_main));
 
-        fMiningRequiresPeers = true;
+        fMiningRequiresPeers = false;
         fAllowMinDifficultyBlocks = false;
         fDefaultConsistencyChecks = false;
         fRequireStandard = true;
