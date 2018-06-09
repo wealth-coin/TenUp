@@ -453,7 +453,17 @@ CBlockTemplate* CreateNewBlock(const CScript& scriptPubKeyIn, CWallet* pwallet, 
 
         //Calculate the accumulator checkpoint only if the previous cached checkpoint need to be updated
         uint256 nCheckpoint;
-        uint256 hashBlockLastAccumulated = chainActive[nHeight - (nHeight % 10) - 10]->GetBlockHash();
+        int tempHeight = nHeight - (nHeight % 10) - 10;
+        if(tempHeight <= 0){
+            //pCheckpointCache.first = nHeight + (10 - (nHeight % 10));
+
+            // the block hash of the last block used in the accumulator checkpoint calc. This will handle reorg situations.
+            //pCheckpointCache.second.first = hashBlockLastAccumulated;
+            //pCheckpointCache.second.second = nCheckpoint;
+            tempHeight = 0;
+        }else
+        {
+        uint256 hashBlockLastAccumulated = chainActive[tempHeight]->GetBlockHash();
         if (nHeight >= pCheckpointCache.first || pCheckpointCache.second.first != hashBlockLastAccumulated) {
             //For the period before v2 activation, zTUP will be disabled and previous block's checkpoint is all that will be needed
             pCheckpointCache.second.second = pindexPrev->nAccumulatorCheckpoint;
@@ -470,6 +480,7 @@ CBlockTemplate* CreateNewBlock(const CScript& scriptPubKeyIn, CWallet* pwallet, 
                     pCheckpointCache.second.second = nCheckpoint;
                 }
             }
+        }
         }
 
         pblock->nAccumulatorCheckpoint = pCheckpointCache.second.second;
