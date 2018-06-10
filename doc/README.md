@@ -22,7 +22,7 @@ Unpack the files into a directory, and then run tenup-qt.exe.
 
 ### OSX
 
-Drag TenUp-Qt to your applications folder, and then run TenUp-Qt.
+Drag Tenup-Qt to your applications folder, and then run Tenup-Qt.
 
 ### Need Help?
 
