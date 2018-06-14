@@ -80,7 +80,7 @@ void OptionsModel::Init()
 
     if (!settings.contains("fZeromintEnable"))
         settings.setValue("fZeromintEnable", true);
-    fEnableZeromint = settings.value("fZeromintEnable").toBool();
+    fEnableZeromint = false;//settings.value("fZeromintEnable").toBool();
 
     if (!settings.contains("nZeromintPercentage"))
         settings.setValue("nZeromintPercentage", 10);
@@ -162,13 +162,15 @@ void OptionsModel::Init()
         addOverriddenOption("-lang");
 
     if (settings.contains("fZeromintEnable"))
-        SoftSetBoolArg("-enablezeromint", settings.value("fZeromintEnable").toBool());
+        SoftSetBoolArg("-enablezeromint", false); //settings.value("fZeromintEnable").toBool());
     if (settings.contains("nZeromintPercentage"))
         SoftSetArg("-zeromintpercentage", settings.value("nZeromintPercentage").toString().toStdString());
     if (settings.contains("nPreferredDenom"))
         SoftSetArg("-preferredDenom", settings.value("nPreferredDenom").toString().toStdString());
     if (settings.contains("nAnonymizeTenupAmount"))
         SoftSetArg("-anonymizetenupamount", settings.value("nAnonymizeTenupAmount").toString().toStdString());
+
+
 
     language = settings.value("language").toString();
 }
