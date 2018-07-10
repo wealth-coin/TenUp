@@ -4,33 +4,19 @@ TenUp Core integration/staging repository
 [![Build Status](https://travis-ci.org/tenup-coin/TenUp.svg?branch=master)](https://travis-ci.org/tenup-coin/TenUp) [![GitHub version](https://badge.fury.io/gh/tenup-coin%2FTenUp.svg)](https://badge.fury.io/gh/tenup-coin%2FTenUp)
 
 TenUp is an open source crypto-currency focused on fast private transactions with low transaction fees & environmental footprint.  It utilizes a custom Proof of Stake protocol for securing its network and uses an innovative variable seesaw reward mechanism that dynamically balances 90% of its block reward size between masternodes and staking nodes and 10% dedicated for budget proposals. The goal of TenUp is to achieve a decentralized sustainable crypto currency with near instant full-time private transactions, fair governance and community intelligence.
-- Anonymized transactions using the [_Zerocoin Protocol_](http://www.tenup.io/ztup).
+
 - Fast transactions featuring guaranteed zero confirmation transactions, we call it _SwiftX_.
 - Decentralized blockchain voting utilizing Masternode technology to form a DAO. The blockchain will distribute monthly treasury funds based on successful proposals submitted by the community and voted on by the DAO.
 
-More information at [tenup.io](http://www.tenup.io) Visit our ANN thread at [BitcoinTalk](http://www.bitcointalk.org/index.php?topic=1262920)
 
 ### Coin Specs
 <table>
 <tr><td>Algo</td><td>Quark</td></tr>
 <tr><td>Block Time</td><td>60 Seconds</td></tr>
 <tr><td>Difficulty Retargeting</td><td>Every Block</td></tr>
-<tr><td>Max Coin Supply (PoW Phase)</td><td>5,499,275 TUP</td></tr>
+<tr><td>Max Coin Supply (PoW Phase)</td><td>57,010,000 TUP</td></tr>
 <tr><td>Max Coin Supply (PoS Phase)</td><td>Infinite</td></tr>
-<tr><td>Premine</td><td>5,000,000 TUP*</td></tr>
-</table>
-
-### Reward Distribution
-
-<table>
-<th colspan=4>PoW Phase</th>
-<tr><th>Block Height</th><th>Reward Amount</th><th>Notes</th></tr>
-<tr><td>1</td><td>5,000,000 TUP</td><td>Initial Premine</td></tr>
-<tr><td>2-200</td><td>1000 TUP</td><td>Open Mining</td></tr>
-<tr><td>201-1340</td><td>225 TUP</td><td>Till End of PoW</td></tr>
-<tr><th colspan=4>PoS Phase</th></tr>
-<tr><th>Block Height</th><th colspan=3>Reward Amount</th></tr>
-<tr><td>1340-Infinite</td><td colspan=3>Variable based on SeeSaw Reward Mechanism</td></tr>
+<tr><td>Premine</td><td>57,000,000 TUP*</td></tr>
 </table>
 
 ### PoW Rewards Breakdown
