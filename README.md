@@ -32,8 +32,8 @@ TenUp is an open source crypto-currency focused on fast private transactions wit
 <th>Phase</th><th>Block Height</th><th>Reward</th><th>Masternodes & Stakers</th><th>Budget</th>
 <tr><td>Phase 1</td><td>201-14400</td><td>45 TUP</td><td>90% (40.5 TUP)</td><td>10% (4.5 TUP)</td></tr>
 <tr><td>Phase 2</td><td>14401-36000</td><td>40 TUP</td><td>90% (36 TUP)</td><td>10% (4 TUP)</td></tr>
-<tr><td>Phase 3</td><td>36001-46000</td><td>35 TUP</td><td>90% (31.5 TUP)</td><td>10% (3.5 TUP)</td></tr>
-<tr><td>Phase 4</td><td>46001-79200</td><td>30 TUP</td><td>90% (27 TUP)</td><td>10% (3 TUP)</td></tr>
+<tr><td>Phase 3</td><td>36001-51120</td><td>35 TUP</td><td>90% (31.5 TUP)</td><td>10% (3.5 TUP)</td></tr>
+<tr><td>Phase 4</td><td>51120-79200</td><td>30 TUP</td><td>90% (27 TUP)</td><td>10% (3 TUP)</td></tr>
 <tr><td>Phase 5</td><td>79201-136800</td><td>25 TUP</td><td>90% (22.5 TUP)</td><td>10% (2.5 TUP)</td></tr>
 <tr><td>Phase 6</td><td>136801-201600</td><td>20 TUP</td><td>90% (18 TUP)</td><td>10% (2 TUP)</td></tr>
 <tr><td>Phase 7</td><td>201601-273600</td><td>15 TUP</td><td>90% (13.5 TUP)</td><td>10% (1.5 TUP)</td></tr>
