@@ -1,13 +1,13 @@
-TenUp Core
+WealthSilo Core
 =====================
 
 Setup
 ---------------------
-[TenUp Core](http://tenup.io/wallet) is the original TenUp client and it builds the backbone of the network. However, it downloads and stores the entire history of TenUp transactions; depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more. Thankfully you only have to do this once.
+[WealthSilo Core](http://tenup.io/wallet) is the original WealthSilo client and it builds the backbone of the network. However, it downloads and stores the entire history of WealthSilo transactions; depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more. Thankfully you only have to do this once.
 
 Running
 ---------------------
-The following are some helpful notes on how to run TenUp on your native platform.
+The following are some helpful notes on how to run WealthSilo on your native platform.
 
 ### Unix
 
@@ -26,15 +26,15 @@ Drag Tenup-Qt to your applications folder, and then run Tenup-Qt.
 
 ### Need Help?
 
-* See the documentation at the [TenUp Wiki](https://en.bitcoin.it/wiki/Main_Page) ***TODO***
+* See the documentation at the [WealthSilo Wiki](https://en.bitcoin.it/wiki/Main_Page) ***TODO***
 for help and more information.
-* Ask for help on [BitcoinTalk](https://bitcointalk.org/index.php?topic=1262920.0) or on the [TenUp Forum](http://forum.tenup.io/).
+* Ask for help on [BitcoinTalk](https://bitcointalk.org/index.php?topic=1262920.0) or on the [WealthSilo Forum](http://forum.tenup.io/).
 * Join our Discord server [Discord Server](https://discord.tenup.io)
-* Join one of our Slack groups [TenUp Slack Groups](https://tenup.io/slack-logins/) (Main community is replaced by Discord).
+* Join one of our Slack groups [WealthSilo Slack Groups](https://tenup.io/slack-logins/) (Main community is replaced by Discord).
 
 Building
 ---------------------
-The following are developer notes on how to build TenUp on your native platform. They are not complete guides, but include notes on the necessary libraries, compile flags, etc.
+The following are developer notes on how to build WealthSilo on your native platform. They are not complete guides, but include notes on the necessary libraries, compile flags, etc.
 
 - [OSX Build Notes](build-osx.md)
 - [Unix Build Notes](build-unix.md)
@@ -42,7 +42,7 @@ The following are developer notes on how to build TenUp on your native platform.
 
 Development
 ---------------------
-The Tenup repo's [root README](https://github.com/tenup-coin/TenUp/blob/master/README.md) contains relevant information on the development process and automated testing.
+The Tenup repo's [root README](https://github.com/tenup-coin/WealthSilo/blob/master/README.md) contains relevant information on the development process and automated testing.
 
 - [Developer Notes](developer-notes.md)
 - [Multiwallet Qt Development](multiwallet-qt.md)
@@ -56,8 +56,8 @@ The Tenup repo's [root README](https://github.com/tenup-coin/TenUp/blob/master/R
 
 ### Resources
 
-* Discuss on the [BitcoinTalk](https://bitcointalk.org/index.php?topic=1262920.0) or the [TenUp](http://forum.tenup.io/) forum.
-* Join the [TenUp-Dev](https://tenup-dev.slack.com/) Slack group ([Sign-Up](https://tenup-dev.herokuapp.com/)).
+* Discuss on the [BitcoinTalk](https://bitcointalk.org/index.php?topic=1262920.0) or the [WealthSilo](http://forum.tenup.io/) forum.
+* Join the [WealthSilo-Dev](https://tenup-dev.slack.com/) Slack group ([Sign-Up](https://tenup-dev.herokuapp.com/)).
 
 ### Miscellaneous
 - [Assets Attribution](assets-attribution.md)

@@ -62,12 +62,12 @@
         <translation>Adreces de recepció</translation>
     </message>
     <message>
-        <source>These are your TenUp addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Aquestes són les teves adreces TenUp per fer enviar pagaments. Sempre comprova l'import i l'adreça de recepció abans d'enviar les monedes.</translation>
+        <source>These are your WealthSilo addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Aquestes són les teves adreces WealthSilo per fer enviar pagaments. Sempre comprova l'import i l'adreça de recepció abans d'enviar les monedes.</translation>
     </message>
     <message>
-        <source>These are your TenUp addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Aquestes són les teves adreces TenUp per rebre pagaments. Es recomana utilitzar noves adreces de recepció per cada transacció.</translation>
+        <source>These are your WealthSilo addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Aquestes són les teves adreces WealthSilo per rebre pagaments. Es recomana utilitzar noves adreces de recepció per cada transacció.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -168,8 +168,8 @@
         <translation>Confirma l'encriptació del moneder</translation>
     </message>
     <message>
-        <source>TenUp will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your TUPs from being stolen by malware infecting your computer.</source>
-        <translation>TenUp es tancarà per finalitzar el procés d'encriptació. Recorda que encriptant el teu moneder no protegeix els teus TUP de ser robats si el teu ordinador està infectat amb programari maliciós.</translation>
+        <source>WealthSilo will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your TUPs from being stolen by malware infecting your computer.</source>
+        <translation>WealthSilo es tancarà per finalitzar el procés d'encriptació. Recorda que encriptant el teu moneder no protegeix els teus TUP de ser robats si el teu ordinador està infectat amb programari maliciós.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -421,12 +421,12 @@
         <translation>A&amp;juda</translation>
     </message>
     <message>
-        <source>TenUp Core</source>
-        <translation>TenUp Core</translation>
+        <source>WealthSilo Core</source>
+        <translation>WealthSilo Core</translation>
     </message>
     <message>
-        <source>Send coins to a TenUp address</source>
-        <translation>Envia monedes a una adreça TenUp</translation>
+        <source>Send coins to a WealthSilo address</source>
+        <translation>Envia monedes a una adreça WealthSilo</translation>
     </message>
     <message>
         <source>&amp;Privacy</source>
@@ -437,8 +437,8 @@
         <translation>&amp;Masternodes</translation>
     </message>
     <message>
-        <source>&amp;About TenUp Core</source>
-        <translation>&amp;Sobre TenUp Core</translation>
+        <source>&amp;About WealthSilo Core</source>
+        <translation>&amp;Sobre WealthSilo Core</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -461,8 +461,8 @@
         <translation>Obre el fitxer de configuració del Masternode</translation>
     </message>
     <message>
-        <source>TenUp Core client</source>
-        <translation>Client TenUp core</translation>
+        <source>WealthSilo Core client</source>
+        <translation>Client WealthSilo core</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -805,8 +805,8 @@
         <translation>Edita l'adreça d'enviament</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid TenUp address.</source>
-        <translation>L'adreça introduïda "%1" no és una adreça TenUp vàlida.</translation>
+        <source>The entered address "%1" is not a valid WealthSilo address.</source>
+        <translation>L'adreça introduïda "%1" no és una adreça WealthSilo vàlida.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -851,16 +851,16 @@
         <translation>versió</translation>
     </message>
     <message>
-        <source>TenUp Core</source>
-        <translation>TenUp Core</translation>
+        <source>WealthSilo Core</source>
+        <translation>WealthSilo Core</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About TenUp Core</source>
-        <translation>Sobre TenUp Core</translation>
+        <source>About WealthSilo Core</source>
+        <translation>Sobre WealthSilo Core</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -906,12 +906,12 @@
         <translation>Benvingut</translation>
     </message>
     <message>
-        <source>Welcome to TenUp Core.</source>
-        <translation>Benvingut a TenUp Core.</translation>
+        <source>Welcome to WealthSilo Core.</source>
+        <translation>Benvingut a WealthSilo Core.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where TenUp Core will store its data.</source>
-        <translation>Al ser el primer cop que s'inicia el programa, pots escollir on es desaran les dades del TenUp Core.</translation>
+        <source>As this is the first time the program is launched, you can choose where WealthSilo Core will store its data.</source>
+        <translation>Al ser el primer cop que s'inicia el programa, pots escollir on es desaran les dades del WealthSilo Core.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -922,8 +922,8 @@
         <translation>Usar una carpeta de dades personalitzada:</translation>
     </message>
     <message>
-        <source>TenUp Core</source>
-        <translation>TenUp Core</translation>
+        <source>WealthSilo Core</source>
+        <translation>WealthSilo Core</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1214,8 +1214,8 @@
         <translation>Expert</translation>
     </message>
     <message>
-        <source>Automatically start TenUp after logging in to the system.</source>
-        <translation>Inicia TenUp automàticament després d'identificar-te en el sistema.</translation>
+        <source>Automatically start WealthSilo after logging in to the system.</source>
+        <translation>Inicia WealthSilo automàticament després d'identificar-te en el sistema.</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1713,8 +1713,8 @@
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>TenUp Core is shutting down...</source>
-        <translation>TenUp Core s'està tancant...</translation>
+        <source>WealthSilo Core is shutting down...</source>
+        <translation>WealthSilo Core s'està tancant...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -1779,8 +1779,8 @@
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>TenUp Core</source>
-        <translation>TenUp Core</translation>
+        <source>WealthSilo Core</source>
+        <translation>WealthSilo Core</translation>
     </message>
     <message>
         <source>Version %1</source>

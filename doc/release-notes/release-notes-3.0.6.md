@@ -1,4 +1,4 @@
-TenUp Core version 3.0.6 is now available from:
+WealthSilo Core version 3.0.6 is now available from:
 
   <https://github.com/tenup-project/tenup/releases>
 
@@ -19,7 +19,7 @@ If you are running an older version, shut it down. Wait until it has completely 
 Compatibility
 ==============
 
-TenUp Core is extensively tested on multiple operating systems using
+WealthSilo Core is extensively tested on multiple operating systems using
 the Linux kernel, macOS 10.8+, and Windows Vista and later.
 
 Microsoft ended support for Windows XP on [April 8th, 2014](https://www.microsoft.com/en-us/WindowsForBusiness/end-of-xp-support),
@@ -27,7 +27,7 @@ No attempt is made to prevent installing or running the software on Windows XP, 
 can still do so at your own risk but be aware that there are known instabilities and issues.
 Please do not report issues about Windows XP to the issue tracker.
 
-TenUp Core should also work on most other Unix-like systems but is not
+WealthSilo Core should also work on most other Unix-like systems but is not
 frequently tested on them.
 
 ### :exclamation::exclamation::exclamation: MacOS 10.13 High Sierra :exclamation::exclamation::exclamation:
@@ -40,7 +40,7 @@ Notable Changes
 
 Automated Database Corruption Repair
 ---------------------
-There have been cases of blockchain database corruption that can occur when TenUp client is not closed gracefully. The most common cases of corruption have been identified and the wallet will now automatically fix most of these corruptions. Certain corruption states are still unable to be fixed, but now provide more detailed error messages to the user as well as prompting the user to reindex their database.
+There have been cases of blockchain database corruption that can occur when WealthSilo client is not closed gracefully. The most common cases of corruption have been identified and the wallet will now automatically fix most of these corruptions. Certain corruption states are still unable to be fixed, but now provide more detailed error messages to the user as well as prompting the user to reindex their database.
 
 More Accurate Error Messages
 ---------------------
@@ -52,7 +52,7 @@ Many 3rd party services have reported that their debug logs have been overloaded
 
 Removal of Heavy Running Transaction Search Code
 ---------------------
-Many areas of the block validation code use a "slow" transaction search, which searches redundantly for transactions. This "slow" search has been removed upstream in Bitcoin and is now removed in TenUp. This provides a more efficient syncing process and generally better performing wallet.
+Many areas of the block validation code use a "slow" transaction search, which searches redundantly for transactions. This "slow" search has been removed upstream in Bitcoin and is now removed in WealthSilo. This provides a more efficient syncing process and generally better performing wallet.
 
 Sync Fix for Block 908000
 ---------------------

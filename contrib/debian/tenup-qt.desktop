@@ -1,9 +1,9 @@
 [Desktop Entry]
 Encoding=UTF-8
-Name=TenUp
-Comment=TenUp P2P Cryptocurrency
-Comment[fr]=TenUp, monnaie virtuelle cryptographique pair à pair
-Comment[tr]=TenUp, eşten eşe kriptografik sanal para birimi
+Name=WealthSilo
+Comment=WealthSilo P2P Cryptocurrency
+Comment[fr]=WealthSilo, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=WealthSilo, eşten eşe kriptografik sanal para birimi
 Exec=tenup-qt %u
 Terminal=false
 Type=Application

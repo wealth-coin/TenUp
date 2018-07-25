@@ -32,7 +32,7 @@ QT_TRANSLATE_NOOP("tenup-core", ""
 QT_TRANSLATE_NOOP("tenup-core", ""
 "Calculated accumulator checkpoint is not what is recorded by block index"),
 QT_TRANSLATE_NOOP("tenup-core", ""
-"Cannot obtain a lock on data directory %s. TenUp Core is probably already "
+"Cannot obtain a lock on data directory %s. WealthSilo Core is probably already "
 "running."),
 QT_TRANSLATE_NOOP("tenup-core", ""
 "Change automatic finalized budget voting behavior. mode=auto: Vote for only "
@@ -50,7 +50,7 @@ QT_TRANSLATE_NOOP("tenup-core", ""
 "Delete all zerocoin spends and mints that have been recorded to the "
 "blockchain database and reindex them (0-1, default: %u)"),
 QT_TRANSLATE_NOOP("tenup-core", ""
-"Disable all TenUp specific functionality (Masternodes, Zerocoin, SwiftX, "
+"Disable all WealthSilo specific functionality (Masternodes, Zerocoin, SwiftX, "
 "Budgeting) (0-1, default: %u)"),
 QT_TRANSLATE_NOOP("tenup-core", ""
 "Distributed under the MIT software license, see the accompanying file "
@@ -192,7 +192,7 @@ QT_TRANSLATE_NOOP("tenup-core", ""
 "the OpenSSL Toolkit <https://www.openssl.org/> and cryptographic software "
 "written by Eric Young and UPnP software written by Thomas Bernard."),
 QT_TRANSLATE_NOOP("tenup-core", ""
-"Unable to bind to %s on this computer. TenUp Core is probably already running."),
+"Unable to bind to %s on this computer. WealthSilo Core is probably already running."),
 QT_TRANSLATE_NOOP("tenup-core", ""
 "Unable to locate enough Obfuscation denominated funds for this transaction."),
 QT_TRANSLATE_NOOP("tenup-core", ""
@@ -212,7 +212,7 @@ QT_TRANSLATE_NOOP("tenup-core", ""
 "pay if you send a transaction."),
 QT_TRANSLATE_NOOP("tenup-core", ""
 "Warning: Please check that your computer's date and time are correct! If "
-"your clock is wrong TenUp Core will not work properly."),
+"your clock is wrong WealthSilo Core will not work properly."),
 QT_TRANSLATE_NOOP("tenup-core", ""
 "Warning: The network does not appear to fully agree! Some miners appear to "
 "be experiencing issues."),
@@ -268,7 +268,7 @@ QT_TRANSLATE_NOOP("tenup-core", "Connect to a node to retrieve peer addresses, a
 QT_TRANSLATE_NOOP("tenup-core", "Connection options:"),
 QT_TRANSLATE_NOOP("tenup-core", "Copyright (C) 2009-%i The Bitcoin Core Developers"),
 QT_TRANSLATE_NOOP("tenup-core", "Copyright (C) 2014-%i The Dash Core Developers"),
-QT_TRANSLATE_NOOP("tenup-core", "Copyright (C) 2015-%i The TenUp Core Developers"),
+QT_TRANSLATE_NOOP("tenup-core", "Copyright (C) 2015-%i The WealthSilo Core Developers"),
 QT_TRANSLATE_NOOP("tenup-core", "Corrupted block database detected"),
 QT_TRANSLATE_NOOP("tenup-core", "Could not parse masternode.conf"),
 QT_TRANSLATE_NOOP("tenup-core", "Debugging/Testing options:"),
@@ -297,7 +297,7 @@ QT_TRANSLATE_NOOP("tenup-core", "Error initializing wallet database environment 
 QT_TRANSLATE_NOOP("tenup-core", "Error loading block database"),
 QT_TRANSLATE_NOOP("tenup-core", "Error loading wallet.dat"),
 QT_TRANSLATE_NOOP("tenup-core", "Error loading wallet.dat: Wallet corrupted"),
-QT_TRANSLATE_NOOP("tenup-core", "Error loading wallet.dat: Wallet requires newer version of TenUp Core"),
+QT_TRANSLATE_NOOP("tenup-core", "Error loading wallet.dat: Wallet requires newer version of WealthSilo Core"),
 QT_TRANSLATE_NOOP("tenup-core", "Error opening block database"),
 QT_TRANSLATE_NOOP("tenup-core", "Error reading from database, shutting down."),
 QT_TRANSLATE_NOOP("tenup-core", "Error recovering public key."),
@@ -334,7 +334,7 @@ QT_TRANSLATE_NOOP("tenup-core", "Incompatible mode."),
 QT_TRANSLATE_NOOP("tenup-core", "Incompatible version."),
 QT_TRANSLATE_NOOP("tenup-core", "Incorrect or no genesis block found. Wrong datadir for network?"),
 QT_TRANSLATE_NOOP("tenup-core", "Information"),
-QT_TRANSLATE_NOOP("tenup-core", "Initialization sanity check failed. TenUp Core is shutting down."),
+QT_TRANSLATE_NOOP("tenup-core", "Initialization sanity check failed. WealthSilo Core is shutting down."),
 QT_TRANSLATE_NOOP("tenup-core", "Input is not valid."),
 QT_TRANSLATE_NOOP("tenup-core", "Insufficient funds"),
 QT_TRANSLATE_NOOP("tenup-core", "Insufficient funds."),
@@ -504,7 +504,7 @@ QT_TRANSLATE_NOOP("tenup-core", "Verifying wallet..."),
 QT_TRANSLATE_NOOP("tenup-core", "Version 1 zTUP require a security level of 100 to successfully spend."),
 QT_TRANSLATE_NOOP("tenup-core", "Wallet %s resides outside data directory %s"),
 QT_TRANSLATE_NOOP("tenup-core", "Wallet is locked."),
-QT_TRANSLATE_NOOP("tenup-core", "Wallet needed to be rewritten: restart TenUp Core to complete"),
+QT_TRANSLATE_NOOP("tenup-core", "Wallet needed to be rewritten: restart WealthSilo Core to complete"),
 QT_TRANSLATE_NOOP("tenup-core", "Wallet options:"),
 QT_TRANSLATE_NOOP("tenup-core", "Wallet window title"),
 QT_TRANSLATE_NOOP("tenup-core", "Warning"),

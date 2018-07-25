@@ -62,12 +62,12 @@
         <translation>Indirizzi di ricezione</translation>
     </message>
     <message>
-        <source>These are your TenUp addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Questi sono gli indirizzi TenUp per l'invio di pagamenti. Controlla sempre l'importo e l'indirizzo di ricezione prima di inviare valuta.</translation>
+        <source>These are your WealthSilo addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Questi sono gli indirizzi WealthSilo per l'invio di pagamenti. Controlla sempre l'importo e l'indirizzo di ricezione prima di inviare valuta.</translation>
     </message>
     <message>
-        <source>These are your TenUp addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Questi sono gli indirizzi TenUp per la ricezione di pagamenti. Si raccomanda di utilizzare un indirizzo diverso per ogni transazione.</translation>
+        <source>These are your WealthSilo addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Questi sono gli indirizzi WealthSilo per la ricezione di pagamenti. Si raccomanda di utilizzare un indirizzo diverso per ogni transazione.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -176,8 +176,8 @@
         <translation>Conferma cifratura portafoglio</translation>
     </message>
     <message>
-        <source>TenUp will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your TUPs from being stolen by malware infecting your computer.</source>
-        <translation>TenUp verrà ora chiuso per completare il processo di cifratura. Ricorda che crittografare il tuo portafoglio non protegge completamente i tuoi TUP dal furto da parte di software malevoli che potrebbero infettare il tuo computer.</translation>
+        <source>WealthSilo will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your TUPs from being stolen by malware infecting your computer.</source>
+        <translation>WealthSilo verrà ora chiuso per completare il processo di cifratura. Ricorda che crittografare il tuo portafoglio non protegge completamente i tuoi TUP dal furto da parte di software malevoli che potrebbero infettare il tuo computer.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -254,12 +254,12 @@
         <translation>Indirizzo:</translation>
     </message>
     <message>
-        <source>Enter a TenUp Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Inserire un indirizzo TenUp da crittografare utilizzando BIP 38. Inserire una password nel campo centrale. Cliccare su "cripta" per generare la chiave privata crittografata.</translation>
+        <source>Enter a WealthSilo Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>Inserire un indirizzo WealthSilo da crittografare utilizzando BIP 38. Inserire una password nel campo centrale. Cliccare su "cripta" per generare la chiave privata crittografata.</translation>
     </message>
     <message>
-        <source>The TenUp address to encrypt</source>
-        <translation>Indirizzo TenUp da crittografare</translation>
+        <source>The WealthSilo address to encrypt</source>
+        <translation>Indirizzo WealthSilo da crittografare</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -290,8 +290,8 @@
         <translation>Copiare la firma corrente negli Appunti di sistema</translation>
     </message>
     <message>
-        <source>Encrypt the private key for this TenUp address</source>
-        <translation>Crittografa la chiave privata per questo indirizzo TenUp</translation>
+        <source>Encrypt the private key for this WealthSilo address</source>
+        <translation>Crittografa la chiave privata per questo indirizzo WealthSilo</translation>
     </message>
     <message>
         <source>Reset all fields</source>
@@ -645,12 +645,12 @@
         <translation>Schede degli strumenti</translation>
     </message>
     <message>
-        <source>TenUp Core</source>
-        <translation>TenUp Core</translation>
+        <source>WealthSilo Core</source>
+        <translation>WealthSilo Core</translation>
     </message>
     <message>
-        <source>Send coins to a TenUp address</source>
-        <translation>Invia monete all' indirizzo TenUp</translation>
+        <source>Send coins to a WealthSilo address</source>
+        <translation>Invia monete all' indirizzo WealthSilo</translation>
     </message>
     <message>
         <source>Request payments (generates QR codes and tenup: URIs)</source>
@@ -669,24 +669,24 @@
         <translation>Esplora i masternodes</translation>
     </message>
     <message>
-        <source>&amp;About TenUp Core</source>
-        <translation>&amp;Informazioni TenUp Core</translation>
+        <source>&amp;About WealthSilo Core</source>
+        <translation>&amp;Informazioni WealthSilo Core</translation>
     </message>
     <message>
-        <source>Show information about TenUp Core</source>
-        <translation>Visualizza informazioni su TenUp Core</translation>
+        <source>Show information about WealthSilo Core</source>
+        <translation>Visualizza informazioni su WealthSilo Core</translation>
     </message>
     <message>
-        <source>Modify configuration options for TenUp</source>
-        <translation>Modifica le opzioni di configurazione per TenUp</translation>
+        <source>Modify configuration options for WealthSilo</source>
+        <translation>Modifica le opzioni di configurazione per WealthSilo</translation>
     </message>
     <message>
-        <source>Sign messages with your TenUp addresses to prove you own them</source>
-        <translation>Firma i messaggi con i tuoi indirizzi TenUp per dimostrare di essere il proprietario </translation>
+        <source>Sign messages with your WealthSilo addresses to prove you own them</source>
+        <translation>Firma i messaggi con i tuoi indirizzi WealthSilo per dimostrare di essere il proprietario </translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified TenUp addresses</source>
-        <translation>Verifica i messaggi per assicurarsi che siano stati firmati con indirizzi TenUp specifici</translation>
+        <source>Verify messages to ensure they were signed with specified WealthSilo addresses</source>
+        <translation>Verifica i messaggi per assicurarsi che siano stati firmati con indirizzi WealthSilo specifici</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -717,8 +717,8 @@
         <translation>Apri file di configurazione del Masternodo</translation>
     </message>
     <message>
-        <source>Open a TenUp: URI or payment request</source>
-        <translation>Apri un TenUp: URI o richiesta di pagamento</translation>
+        <source>Open a WealthSilo: URI or payment request</source>
+        <translation>Apri un WealthSilo: URI o richiesta di pagamento</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -729,15 +729,15 @@
         <translation>Finestra Block Explorer</translation>
     </message>
     <message>
-        <source>Show the TenUp Core help message to get a list with possible TenUp command-line options</source>
-        <translation>Mostra il messaggio di aiuto TenUp Core per ottenere un elenco con le possibili opzioni di riga di comando TenUp</translation>
+        <source>Show the WealthSilo Core help message to get a list with possible WealthSilo command-line options</source>
+        <translation>Mostra il messaggio di aiuto WealthSilo Core per ottenere un elenco con le possibili opzioni di riga di comando WealthSilo</translation>
     </message>
     <message>
-        <source>TenUp Core client</source>
-        <translation>TenUp Core</translation>
+        <source>WealthSilo Core client</source>
+        <translation>WealthSilo Core</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to TenUp network</source>
+        <source>%n active connection(s) to WealthSilo network</source>
         <translation><numerusform>%n connessione attiva alla rete TUPIX</numerusform><numerusform>%n connessioni attive alla rete TUPIX</numerusform></translation>
     </message>
     <message>
@@ -1165,8 +1165,8 @@ MultiSend: %1</translation>
         <translation>Modifica indirizzo di invio</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid TenUp address.</source>
-        <translation>L'indirizzo inserito "%1" non è un indirizzo TenUp valido.</translation>
+        <source>The entered address "%1" is not a valid WealthSilo address.</source>
+        <translation>L'indirizzo inserito "%1" non è un indirizzo WealthSilo valido.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1211,16 +1211,16 @@ MultiSend: %1</translation>
         <translation>versione</translation>
     </message>
     <message>
-        <source>TenUp Core</source>
-        <translation>TenUp Core</translation>
+        <source>WealthSilo Core</source>
+        <translation>WealthSilo Core</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About TenUp Core</source>
-        <translation>Informazioni su TenUp Core</translation>
+        <source>About WealthSilo Core</source>
+        <translation>Informazioni su WealthSilo Core</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1266,16 +1266,16 @@ MultiSend: %1</translation>
         <translation>Benvenuto</translation>
     </message>
     <message>
-        <source>Welcome to TenUp Core.</source>
+        <source>Welcome to WealthSilo Core.</source>
         <translation>Benvenuto in TUPIX Core.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where TenUp Core will store its data.</source>
-        <translation>Essendo il primo avvio dell'applicazione, puoi scegliere dove TenUp Core salverà i propri dati.</translation>
+        <source>As this is the first time the program is launched, you can choose where WealthSilo Core will store its data.</source>
+        <translation>Essendo il primo avvio dell'applicazione, puoi scegliere dove WealthSilo Core salverà i propri dati.</translation>
     </message>
     <message>
-        <source>TenUp Core will download and store a copy of the TenUp block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>TenUp Core scaricherà e salverà una copia della blockchain TenUp. Verranno salvati almeno %1GB di dati in questa cartella, che cresceranno nel tempo. In questa cartella verrà salvato anche il portafoglio.</translation>
+        <source>WealthSilo Core will download and store a copy of the WealthSilo block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>WealthSilo Core scaricherà e salverà una copia della blockchain WealthSilo. Verranno salvati almeno %1GB di dati in questa cartella, che cresceranno nel tempo. In questa cartella verrà salvato anche il portafoglio.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1286,8 +1286,8 @@ MultiSend: %1</translation>
         <translation>Utilizza una cartella dati personalizzata:</translation>
     </message>
     <message>
-        <source>TenUp Core</source>
-        <translation>TenUp Core</translation>
+        <source>WealthSilo Core</source>
+        <translation>WealthSilo Core</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -2186,8 +2186,8 @@ MultiSend: %1</translation>
 <context>
     <name>SignVerifyMessageDialog</name>
     <message>
-        <source>The TenUp address to sign the message with</source>
-        <translation>L'indirizzo TenUp per firmare il messaggio con</translation>
+        <source>The WealthSilo address to sign the message with</source>
+        <translation>L'indirizzo WealthSilo per firmare il messaggio con</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2210,16 +2210,16 @@ MultiSend: %1</translation>
         <translation>Copiare la firma corrente negli Appunti di sistema</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this TenUp address</source>
-        <translation>Firmare il messaggio per dimostrare di possedere questo indirizzo TenUp</translation>
+        <source>Sign the message to prove you own this WealthSilo address</source>
+        <translation>Firmare il messaggio per dimostrare di possedere questo indirizzo WealthSilo</translation>
     </message>
     <message>
-        <source>The TenUp address the message was signed with</source>
-        <translation>L'indirizzo TenUp con cui è stato firmato il messaggio</translation>
+        <source>The WealthSilo address the message was signed with</source>
+        <translation>L'indirizzo WealthSilo con cui è stato firmato il messaggio</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified TenUp address</source>
-        <translation>Verificare il messaggio per assicurarsi che sia stato firmato con l'indirizzo TenUp specificato </translation>
+        <source>Verify the message to ensure it was signed with the specified WealthSilo address</source>
+        <translation>Verificare il messaggio per assicurarsi che sia stato firmato con l'indirizzo WealthSilo specificato </translation>
     </message>
     <message>
         <source>Reset all sign message fields</source>
@@ -2257,8 +2257,8 @@ MultiSend: %1</translation>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>TenUp Core</source>
-        <translation>TenUp Core</translation>
+        <source>WealthSilo Core</source>
+        <translation>WealthSilo Core</translation>
     </message>
     </context>
 <context>

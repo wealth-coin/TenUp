@@ -1,4 +1,4 @@
-TenUp Core version *3.1.0* is now available from:  <https://github.com/tenup-project/tenup/releases>
+WealthSilo Core version *3.1.0* is now available from:  <https://github.com/tenup-project/tenup/releases>
 
 This is a new major version release, including various bug fixes and performance improvements, as well as updated translations.
 
@@ -8,7 +8,7 @@ Please report bugs using the issue tracker at github: <https://github.com/tenup-
 Mandatory Update
 ==============
 
-TenUp Core v3.1.0 is a mandatory update for all users. This release contains new consensus rules and improvements that are not backwards compatible with older versions. Users will have a grace period of one week to update their clients before enforcement of this update is enabled.
+WealthSilo Core v3.1.0 is a mandatory update for all users. This release contains new consensus rules and improvements that are not backwards compatible with older versions. Users will have a grace period of one week to update their clients before enforcement of this update is enabled.
 
 Users updating from a previous version after Tuesday, May 8, 2018 12:00:00 AM GMT will require a full resync of their local blockchain from either the P2P network or by way of the bootstrap.
 
@@ -21,7 +21,7 @@ If you are running an older version, shut it down. Wait until it has completely 
 Compatibility
 ==============
 
-TenUp Core is extensively tested on multiple operating systems using
+WealthSilo Core is extensively tested on multiple operating systems using
 the Linux kernel, macOS 10.8+, and Windows Vista and later.
 
 Microsoft ended support for Windows XP on [April 8th, 2014](https://www.microsoft.com/en-us/WindowsForBusiness/end-of-xp-support),
@@ -29,7 +29,7 @@ No attempt is made to prevent installing or running the software on Windows XP, 
 can still do so at your own risk but be aware that there are known instabilities and issues.
 Please do not report issues about Windows XP to the issue tracker.
 
-TenUp Core should also work on most other Unix-like systems but is not
+WealthSilo Core should also work on most other Unix-like systems but is not
 frequently tested on them.
 
 ### :exclamation::exclamation::exclamation: MacOS 10.13 High Sierra :exclamation::exclamation::exclamation:
@@ -45,7 +45,7 @@ zTUP Updates
 
 ### zTUP Staking
 
-zTUP Staking is here! zTUP staking will be activated on the morning of the 8th of May 2018. With the release of zTUP staking, there are effectively 2 versions of zTUP, zTUP minted on the 3.0.6 TenUp wallet or lower, and zTUP minted on TenUp wallet version or higher. New features in this release will require the use of zTUP v2, zTUP minted on this wallet release 3.1.0 or later. If you currently hold zTUP v1 and wish to take advantage of zTUP staking and deterministic zTUP, you will need to spend the zTUP v1 to yourself and remint zTUP v2.
+zTUP Staking is here! zTUP staking will be activated on the morning of the 8th of May 2018. With the release of zTUP staking, there are effectively 2 versions of zTUP, zTUP minted on the 3.0.6 WealthSilo wallet or lower, and zTUP minted on WealthSilo wallet version or higher. New features in this release will require the use of zTUP v2, zTUP minted on this wallet release 3.1.0 or later. If you currently hold zTUP v1 and wish to take advantage of zTUP staking and deterministic zTUP, you will need to spend the zTUP v1 to yourself and remint zTUP v2.
 Note: To find your zTUP version, click the privacy tab, then the zTUP Control button then expand the arrows next to the desired denomination.
 
 
@@ -70,7 +70,7 @@ TUP/zTUP Staking and Masternode Rewards
 
 ### TUP, zTUP and Masternode Payment Schedule
 
-To encourage the use of zTUP and increase the TenUp zerocoin anonymity set, the TenUp payment schedule has been changed to the following:
+To encourage the use of zTUP and increase the WealthSilo zerocoin anonymity set, the WealthSilo payment schedule has been changed to the following:
 
 If a user staking zTUP wins the reward for their block, the following zTUP reward will be: 
 - 3 zTUP (3 x 1 denominations) rewarded to the staker, 2 TUP rewarded to the masternode owner and 1 TUP available for the budget. This is a total block reward of 6 TUP, up from 5.
@@ -89,7 +89,7 @@ User Experience
 
 ### Graphical User Interface
 
-The visual layout of the TenUp Qt wallet has undergone a near-complete overhaul.
+The visual layout of the WealthSilo Qt wallet has undergone a near-complete overhaul.
 A new 'vertical tab' layout is now being used instead of the prior 'horizontal tab' layout, as well as a completely new icon set.
 The overview tab has been simplified greatly to display only balances that are active or relevant, zero-balance line items are hidden by default to avoid clutter.
 
@@ -113,7 +113,7 @@ Backup to external devices / locations
 
 ### Summary
 
- The TenUp wallet can now have user selected directories for automatic backups of the wallet data file (wallet.dat). This can be set by adding the following lines to the tenup.conf file, found in the TenUp data directory.
+ The WealthSilo wallet can now have user selected directories for automatic backups of the wallet data file (wallet.dat). This can be set by adding the following lines to the tenup.conf file, found in the WealthSilo data directory.
 - backuppath = <directory / full path>
 - ztupbackuppath = <directory / full path>
 - custombackupthreshold = <backup limit>
@@ -164,12 +164,12 @@ Backing up 4 times will result as shown below
             
 
 
-TenUp Daemon & Client (RPC Changes)
+WealthSilo Daemon & Client (RPC Changes)
 --------------
 
 ### RPC Ban Management
 
-The TenUp client peer bans now have additional RPC commands to manage peers. Peers can be banned and unbanned at will without the need to restart the wallet client. No changes have been made to the conditions resulting in automatic peer bans. New RPC commands: `setban`, `listbanned`, `clearbanned`, and `disconnectnode`
+The WealthSilo client peer bans now have additional RPC commands to manage peers. Peers can be banned and unbanned at will without the need to restart the wallet client. No changes have been made to the conditions resulting in automatic peer bans. New RPC commands: `setban`, `listbanned`, `clearbanned`, and `disconnectnode`
 
 
 ### Random-cookie RPC authentication
@@ -188,7 +188,7 @@ This allows for a user (such as a third party integration) to query the blockcha
 ### New RPC command 
 `findserial`
 
-Search the zerocoin database for a zerocoinspend transaction that contains the given serial. This will be a helpful tool for the TenUp support group, which often times sees users say "I didn't spend that zTUP". This RPC call allows for support to grab the serial, and then find the spend tx on the chain.
+Search the zerocoin database for a zerocoinspend transaction that contains the given serial. This will be a helpful tool for the WealthSilo support group, which often times sees users say "I didn't spend that zTUP". This RPC call allows for support to grab the serial, and then find the spend tx on the chain.
 
 
 ### New RPC commands 
@@ -206,11 +206,11 @@ Network Layer 2 Changes (Proposals / Budgets / SwiftX)
 
 ### Monthly Budget Increase
 
-As voted on by the TenUp masternodes, the monthly budget available to be utilised has been increased to 42,000 TUP / month. This TUP only has the opportunity to be raised once per month (paid to winning proposals) with any unused TUP not created by the blockchain.
+As voted on by the WealthSilo masternodes, the monthly budget available to be utilised has been increased to 42,000 TUP / month. This TUP only has the opportunity to be raised once per month (paid to winning proposals) with any unused TUP not created by the blockchain.
 
 ### Budget Finalization Fee
 
-The TenUp finalization fee for successful proposals has now been reduced, this fee is now 5 TUP down from 50 TUP. The total fee outlay for a successful proposal is now a total of 55 TUP.
+The WealthSilo finalization fee for successful proposals has now been reduced, this fee is now 5 TUP down from 50 TUP. The total fee outlay for a successful proposal is now a total of 55 TUP.
 
 
 ### SwiftX Raw Transactions
@@ -263,7 +263,7 @@ Minor Enhancements
 Further Reading: Version 2 Zerocoins
 ==============
 
-Several critical security flaws in the zerocoin protocol and TenUp's zerocoin implementation have been patched. Enough has changed that new zerocoins are distinct from old zerocoins, and have been labelled as *version 2*. When using the zTUP Control dialog in the QT wallet, a user is able to see zTUP marked as version 1 or 2.
+Several critical security flaws in the zerocoin protocol and WealthSilo's zerocoin implementation have been patched. Enough has changed that new zerocoins are distinct from old zerocoins, and have been labelled as *version 2*. When using the zTUP Control dialog in the QT wallet, a user is able to see zTUP marked as version 1 or 2.
 
 zPoS (zTUP staking)
 --------------
@@ -273,7 +273,7 @@ Once a zTUP has over 200 confirmations it becomes available to stake. Staking zT
 Secure Spending
 --------------
 
-Version 1 zerocoins, as implemented by [Miers et. al](http://zerocoin.org/media/pdf/ZerocoinOakland.pdf), allow for something we describe as *serial trolling*. Spending zerocoins requires that the spender reveal their serial number associated with the zerocoin, and in turn that serial number is used to check for double spending. There is a fringe situation (which is very unlikely to happen within TenUp's zerocoin implementation due to delayed coin accumulation) where the spender sends the spending transaction, but the transaction does not immediately make it into the blockchain and remains in the mempool for a long enough duration that a *troll* has enough time to see the spender's serial number, mint a new zerocoin with the same serial number, and spend the new zerocoin before the original spender's transaction becomes confirmed. If the timing of this fringe situation worked, then the original spender's coin would be seen as invalid because the troll was able to have the serial recorded into the blockchain first, thus making the original spender's serial appear as a double spend.
+Version 1 zerocoins, as implemented by [Miers et. al](http://zerocoin.org/media/pdf/ZerocoinOakland.pdf), allow for something we describe as *serial trolling*. Spending zerocoins requires that the spender reveal their serial number associated with the zerocoin, and in turn that serial number is used to check for double spending. There is a fringe situation (which is very unlikely to happen within WealthSilo's zerocoin implementation due to delayed coin accumulation) where the spender sends the spending transaction, but the transaction does not immediately make it into the blockchain and remains in the mempool for a long enough duration that a *troll* has enough time to see the spender's serial number, mint a new zerocoin with the same serial number, and spend the new zerocoin before the original spender's transaction becomes confirmed. If the timing of this fringe situation worked, then the original spender's coin would be seen as invalid because the troll was able to have the serial recorded into the blockchain first, thus making the original spender's serial appear as a double spend.
 
 The serial troll situation is mitigated in version 2 by requiring that the serial number be a hash of a public key. The spend requires an additional signature signed by the private key associated with the public key hash matching the serial number. This work around was conceived by Tim Ruffing, a cryptographer that has studied the zerocoin protocol and done consulting work for the ZCoin project.
 
@@ -285,7 +285,7 @@ Zerocoins, or zTUP, are now deterministically generated using a unique 256 bit s
 Zerocoin Modulus
 --------------
 
-TenUp's zerocoin implementation used the same code from the ZCoin project to import the modulus use for the zerocoin protocol. The chosen modulus is the 2048 bit RSA number created for the RSA factoring challenge. The ZCoin project's implementation (which TenUp used) improperly imported the modulus into the code. This flaw was discovered by user GOAT from the [Civitas Project](https://github.com/eastcoastcrypto/Civitas/), and reported to TenUp using the bug bounty program. The modulus is now correctly imported and TenUp's accumulators have been changed to use the new proper modulus.
+WealthSilo's zerocoin implementation used the same code from the ZCoin project to import the modulus use for the zerocoin protocol. The chosen modulus is the 2048 bit RSA number created for the RSA factoring challenge. The ZCoin project's implementation (which WealthSilo used) improperly imported the modulus into the code. This flaw was discovered by user GOAT from the [Civitas Project](https://github.com/eastcoastcrypto/Civitas/), and reported to WealthSilo using the bug bounty program. The modulus is now correctly imported and WealthSilo's accumulators have been changed to use the new proper modulus.
 
 
 *3.1.0* Change log

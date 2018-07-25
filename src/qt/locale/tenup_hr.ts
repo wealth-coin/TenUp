@@ -62,12 +62,12 @@
         <translation>Adrese za primanje</translation>
     </message>
     <message>
-        <source>These are your TenUp addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>To su vaše TenUp adrese za slanje plaćanja. Uvijek provjerite iznos i adresu primatelja prije slanja novca.</translation>
+        <source>These are your WealthSilo addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>To su vaše WealthSilo adrese za slanje plaćanja. Uvijek provjerite iznos i adresu primatelja prije slanja novca.</translation>
     </message>
     <message>
-        <source>These are your TenUp addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>To su vaše TenUp adrese za primanje uplata. Preporuča se upotreba nove adrese primanja za svaku transakciju.</translation>
+        <source>These are your WealthSilo addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>To su vaše WealthSilo adrese za primanje uplata. Preporuča se upotreba nove adrese primanja za svaku transakciju.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -172,8 +172,8 @@
         <translation>Potvrdite šifriranje novčanika</translation>
     </message>
     <message>
-        <source>TenUp will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your TUPs from being stolen by malware infecting your computer.</source>
-        <translation>TenUp se sada zatvara kako bi dovršio proces šifriranja. Ne zaboravite da šifriranje vašeg novčanika ne može u potpunosti zaštititi vaše TUP od krađe zlonamjernog softvera koji zarazi vaše računalo.</translation>
+        <source>WealthSilo will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your TUPs from being stolen by malware infecting your computer.</source>
+        <translation>WealthSilo se sada zatvara kako bi dovršio proces šifriranja. Ne zaboravite da šifriranje vašeg novčanika ne može u potpunosti zaštititi vaše TUP od krađe zlonamjernog softvera koji zarazi vaše računalo.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -601,12 +601,12 @@
         <translation>Alatna traka kartica</translation>
     </message>
     <message>
-        <source>TenUp Core</source>
-        <translation>TenUp Core</translation>
+        <source>WealthSilo Core</source>
+        <translation>WealthSilo Core</translation>
     </message>
     <message>
-        <source>Send coins to a TenUp address</source>
-        <translation>Pošaljite kovanice na TenUp adresu</translation>
+        <source>Send coins to a WealthSilo address</source>
+        <translation>Pošaljite kovanice na WealthSilo adresu</translation>
     </message>
     <message>
         <source>Request payments (generates QR codes and tenup: URIs)</source>
@@ -625,24 +625,24 @@
         <translation>Pregledajte masternode</translation>
     </message>
     <message>
-        <source>&amp;About TenUp Core</source>
-        <translation>&amp; O TenUp Coreu</translation>
+        <source>&amp;About WealthSilo Core</source>
+        <translation>&amp; O WealthSilo Coreu</translation>
     </message>
     <message>
-        <source>Show information about TenUp Core</source>
-        <translation>Prikaz informacija o TenUp Coreu</translation>
+        <source>Show information about WealthSilo Core</source>
+        <translation>Prikaz informacija o WealthSilo Coreu</translation>
     </message>
     <message>
-        <source>Modify configuration options for TenUp</source>
-        <translation>Izmijenite opcije konfiguracije za TenUp</translation>
+        <source>Modify configuration options for WealthSilo</source>
+        <translation>Izmijenite opcije konfiguracije za WealthSilo</translation>
     </message>
     <message>
-        <source>Sign messages with your TenUp addresses to prove you own them</source>
-        <translation>Potpišite poruke s vašim TenUp adresama kako biste dokazali da ih posjedujete</translation>
+        <source>Sign messages with your WealthSilo addresses to prove you own them</source>
+        <translation>Potpišite poruke s vašim WealthSilo adresama kako biste dokazali da ih posjedujete</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified TenUp addresses</source>
-        <translation>Potvrdite poruke kako biste bili sigurni da su potpisani s određenim TenUp adresama</translation>
+        <source>Verify messages to ensure they were signed with specified WealthSilo addresses</source>
+        <translation>Potvrdite poruke kako biste bili sigurni da su potpisani s određenim WealthSilo adresama</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -653,8 +653,8 @@
         <translation>Šifriranje i dešifriranje privatnih ključeva pomoću zaporke</translation>
     </message>
     <message>
-        <source>TenUp Core client</source>
-        <translation>TenUp Core klijent</translation>
+        <source>WealthSilo Core client</source>
+        <translation>WealthSilo Core klijent</translation>
     </message>
     <message>
         <source>Error</source>
@@ -751,15 +751,15 @@
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>TenUp Core</source>
-        <translation>TenUp Core</translation>
+        <source>WealthSilo Core</source>
+        <translation>WealthSilo Core</translation>
     </message>
     </context>
 <context>
     <name>Intro</name>
     <message>
-        <source>TenUp Core</source>
-        <translation>TenUp Core</translation>
+        <source>WealthSilo Core</source>
+        <translation>WealthSilo Core</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1111,15 +1111,15 @@
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>TenUp Core is shutting down...</source>
-        <translation>TenUp Core se gasi...</translation>
+        <source>WealthSilo Core is shutting down...</source>
+        <translation>WealthSilo Core se gasi...</translation>
     </message>
     </context>
 <context>
     <name>SignVerifyMessageDialog</name>
     <message>
-        <source>The TenUp address to sign the message with</source>
-        <translation>TenUp adresa za potpisivanje poruke s</translation>
+        <source>The WealthSilo address to sign the message with</source>
+        <translation>WealthSilo adresa za potpisivanje poruke s</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -1142,16 +1142,16 @@
         <translation>Kopirajte trenutačni potpis u međuspremnik sustava</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this TenUp address</source>
-        <translation>Potpišite poruku da biste dokazali da ste vlasnik ove TenUp adrese</translation>
+        <source>Sign the message to prove you own this WealthSilo address</source>
+        <translation>Potpišite poruku da biste dokazali da ste vlasnik ove WealthSilo adrese</translation>
     </message>
     <message>
-        <source>The TenUp address the message was signed with</source>
-        <translation>TenUp adresa s kojom je potpisana poruka</translation>
+        <source>The WealthSilo address the message was signed with</source>
+        <translation>WealthSilo adresa s kojom je potpisana poruka</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified TenUp address</source>
-        <translation>Potvrdite poruku kako biste bili sigurni da je potpisan s navedenom TenUp adresom</translation>
+        <source>Verify the message to ensure it was signed with the specified WealthSilo address</source>
+        <translation>Potvrdite poruku kako biste bili sigurni da je potpisan s navedenom WealthSilo adresom</translation>
     </message>
     <message>
         <source>Reset all sign message fields</source>
@@ -1197,8 +1197,8 @@
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>TenUp Core</source>
-        <translation>TenUp Core</translation>
+        <source>WealthSilo Core</source>
+        <translation>WealthSilo Core</translation>
     </message>
     <message>
         <source>Version %1</source>

@@ -1,5 +1,5 @@
 [Unit]
-Description=TenUp's distributed currency daemon
+Description=WealthSilo's distributed currency daemon
 After=network.target
 
 [Service]

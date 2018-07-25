@@ -2,7 +2,7 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2018 The PIVX developers
-// Copyright (c) 2015-2018 The TenUp developers
+// Copyright (c) 2015-2018 The WealthSilo developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -106,7 +106,7 @@ std::string to_internal(const std::string&);
 
 using namespace std;
 
-// TenUp only features
+// WealthSilo only features
 // Masternode
 bool fMasterNode = false;
 string strMasterNodePrivKey = "";
@@ -238,7 +238,7 @@ bool LogAcceptCategory(const char* category)
             const vector<string>& categories = mapMultiArgs["-debug"];
             ptrCategory.reset(new set<string>(categories.begin(), categories.end()));
             // thread_specific_ptr automatically deletes the set when the thread ends.
-            // "tenup" is a composite category enabling all TenUp-related debug output
+            // "tenup" is a composite category enabling all WealthSilo-related debug output
             if (ptrCategory->count(string("tenup"))) {
                 ptrCategory->insert(string("obfuscation"));
                 ptrCategory->insert(string("swiftx"));
@@ -425,13 +425,13 @@ void PrintExceptionContinue(std::exception* pex, const char* pszThread)
 boost::filesystem::path GetDefaultDataDir()
 {
     namespace fs = boost::filesystem;
-// Windows < Vista: C:\Documents and Settings\Username\Application Data\TenUp
-// Windows >= Vista: C:\Users\Username\AppData\Roaming\TenUp
-// Mac: ~/Library/Application Support/TenUp
+// Windows < Vista: C:\Documents and Settings\Username\Application Data\WealthSilo
+// Windows >= Vista: C:\Users\Username\AppData\Roaming\WealthSilo
+// Mac: ~/Library/Application Support/WealthSilo
 // Unix: ~/.tenup
 #ifdef WIN32
     // Windows
-    return GetSpecialFolderPath(CSIDL_APPDATA) / "TenUp";
+    return GetSpecialFolderPath(CSIDL_APPDATA) / "WealthSilo";
 #else
     fs::path pathRet;
     char* pszHome = getenv("HOME");
@@ -443,7 +443,7 @@ boost::filesystem::path GetDefaultDataDir()
     // Mac
     pathRet /= "Library/Application Support";
     TryCreateDirectory(pathRet);
-    return pathRet / "TenUp";
+    return pathRet / "WealthSilo";
 #else
     // Unix
     return pathRet / ".tenup";

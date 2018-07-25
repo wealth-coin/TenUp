@@ -2,7 +2,7 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2018 The PIVX developers
-// Copyright (c) 2015-2018 The TenUp developers
+// Copyright (c) 2015-2018 The WealthSilo developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -264,11 +264,11 @@ UniValue stop(const UniValue& params, bool fHelp)
     if (fHelp || params.size() > 1)
         throw runtime_error(
             "stop\n"
-            "\nStop TenUp server.");
+            "\nStop WealthSilo server.");
     // Event loop will exit after current HTTP requests have been handled, so
     // this reply will get back to the client.
     StartShutdown();
-    return "TenUp server stopping";
+    return "WealthSilo server stopping";
 }
 
 
@@ -351,7 +351,7 @@ static const CRPCCommand vRPCCommands[] =
         {"hidden", "reconsiderblock", &reconsiderblock, true, true, false},
         {"hidden", "setmocktime", &setmocktime, true, false, false},
 
-        /* TenUp features */
+        /* WealthSilo features */
         {"tenup", "masternode", &masternode, true, true, false},
         {"tenup", "listmasternodes", &listmasternodes, true, true, false},
         {"tenup", "getmasternodecount", &getmasternodecount, true, true, false},

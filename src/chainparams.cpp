@@ -2,7 +2,7 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2018 The PIVX developers
-// Copyright (c) 2015-2018 The TenUp developers
+// Copyright (c) 2015-2018 The WealthSilo developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -116,15 +116,15 @@ public:
         pchMessageStart[3] = 0xd9;
         vAlertPubKey = ParseHex("0000098d3ba6ba6e7423fa5cbd6a89e0a9a5348f88d332b44a5cb1a8b7ed2c1eaa335fc8dc4f012cb8241cc0bdafd6ca70c5f5448916e4e6f511bcd746ed57dc50");
         nDefaultPort = 51482;
-        bnProofOfWorkLimit = ~uint256(0) >> 20; // TenUp starting difficulty is 1 / 2^12
+        bnProofOfWorkLimit = ~uint256(0) >> 20; // WealthSilo starting difficulty is 1 / 2^12
         nSubsidyHalvingInterval = 210000;
         nMaxReorganizationDepth = 100;
         nEnforceBlockUpgradeMajority = 750;
         nRejectBlockOutdatedMajority = 950;
         nToCheckBlockUpgradeMajority = 1000;
         nMinerThreads = 0;
-        nTargetTimespan = 1 * 60; // TenUp: 1 day
-        nTargetSpacing = 1 * 60;  // TenUp: 1 minute
+        nTargetTimespan = 1 * 60; // WealthSilo: 1 day
+        nTargetSpacing = 1 * 60;  // WealthSilo: 1 minute
         nMaturity = 10;
         nMasternodeCountDrift = 20;
         nMaxMoneyOut = 75000000 * COIN;
@@ -251,8 +251,8 @@ public:
         nRejectBlockOutdatedMajority = 75;
         nToCheckBlockUpgradeMajority = 100;
         nMinerThreads = 0;
-        nTargetTimespan = 1 * 60; // TenUp: 1 day
-        nTargetSpacing = 1 * 60;  // TenUp: 1 minute
+        nTargetTimespan = 1 * 60; // WealthSilo: 1 day
+        nTargetSpacing = 1 * 60;  // WealthSilo: 1 minute
         nLastPOWBlock = 200;
         nMaturity = 15;
         nMasternodeCountDrift = 4;
@@ -338,8 +338,8 @@ public:
         nRejectBlockOutdatedMajority = 950;
         nToCheckBlockUpgradeMajority = 1000;
         nMinerThreads = 1;
-        nTargetTimespan = 24 * 60 * 60; // TenUp: 1 day
-        nTargetSpacing = 1 * 60;        // TenUp: 1 minutes
+        nTargetTimespan = 24 * 60 * 60; // WealthSilo: 1 day
+        nTargetSpacing = 1 * 60;        // WealthSilo: 1 minutes
         bnProofOfWorkLimit = ~uint256(0) >> 1;
         genesis.nTime = 1522922005;
         genesis.nBits = 0x1e0ffff0;

@@ -1,4 +1,4 @@
-TenUp Core version 3.0.2 is now available from:
+WealthSilo Core version 3.0.2 is now available from:
 
   <https://github.com/tenup-project/tenup/releases>
 
@@ -12,7 +12,7 @@ Please report bugs using the issue tracker at github:
 Recommended Update
 ==============
 
-TenUp Core v3.0.2 is a recommended, semi-mandatory update for all users. This release contains transaction creation bug fixes for zTUP spends, automint calculation adjustments, and other various updates/fixes.
+WealthSilo Core v3.0.2 is a recommended, semi-mandatory update for all users. This release contains transaction creation bug fixes for zTUP spends, automint calculation adjustments, and other various updates/fixes.
 
 zTUP spending requires this update.
 
@@ -24,7 +24,7 @@ If you are running an older version, shut it down. Wait until it has completely 
 Compatibility
 ==============
 
-TenUp Core is extensively tested on multiple operating systems using
+WealthSilo Core is extensively tested on multiple operating systems using
 the Linux kernel, macOS 10.8+, and Windows Vista and later.
 
 Microsoft ended support for Windows XP on [April 8th, 2014](https://www.microsoft.com/en-us/WindowsForBusiness/end-of-xp-support),
@@ -32,7 +32,7 @@ No attempt is made to prevent installing or running the software on Windows XP, 
 can still do so at your own risk but be aware that there are known instabilities and issues.
 Please do not report issues about Windows XP to the issue tracker.
 
-TenUp Core should also work on most other Unix-like systems but is not
+WealthSilo Core should also work on most other Unix-like systems but is not
 frequently tested on them.
 
 ### :exclamation::exclamation::exclamation: MacOS 10.13 High Sierra :exclamation::exclamation::exclamation:
@@ -71,7 +71,7 @@ Due to the aforementioned issue with zTUP spending, users may find that their at
 
 RPC Changes
 ---------------------
-The `bip38decrypt` command has had it's parameter order changed to be more consistent with it's counterpart. The command now expects the TenUp address as it's first parameter and the passphrase as it's second parameter.
+The `bip38decrypt` command has had it's parameter order changed to be more consistent with it's counterpart. The command now expects the WealthSilo address as it's first parameter and the passphrase as it's second parameter.
 
 Bip38 Compatibility With 3rd Party Tools
 ---------------------

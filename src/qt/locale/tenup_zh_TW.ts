@@ -62,12 +62,12 @@
         <translation>接收的位址</translation>
     </message>
     <message>
-        <source>These are your TenUp addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>這是你用來付款的 TenUp 位址, 送出前, 請務必確認金額及接收位址是否正確.</translation>
+        <source>These are your WealthSilo addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>這是你用來付款的 WealthSilo 位址, 送出前, 請務必確認金額及接收位址是否正確.</translation>
     </message>
     <message>
-        <source>These are your TenUp addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>這是你用來接收款項的 TenUp 位址, 建議你每次付款都使用新的位址.</translation>
+        <source>These are your WealthSilo addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>這是你用來接收款項的 WealthSilo 位址, 建議你每次付款都使用新的位址.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -164,8 +164,8 @@
         <translation>錢包確認加密</translation>
     </message>
     <message>
-        <source>TenUp will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your TUPs from being stolen by malware infecting your computer.</source>
-        <translation>TenUp 現在會關閉程式來處理加密流程, 請注意, 僅僅是加密你的錢包並不能完全保護你的 TUP 幣被可疑軟體或病毒偷走的風險.</translation>
+        <source>WealthSilo will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your TUPs from being stolen by malware infecting your computer.</source>
+        <translation>WealthSilo 現在會關閉程式來處理加密流程, 請注意, 僅僅是加密你的錢包並不能完全保護你的 TUP 幣被可疑軟體或病毒偷走的風險.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -557,12 +557,12 @@
         <translation>Tabs 工具列</translation>
     </message>
     <message>
-        <source>TenUp Core</source>
-        <translation>TenUp Core</translation>
+        <source>WealthSilo Core</source>
+        <translation>WealthSilo Core</translation>
     </message>
     <message>
-        <source>Send coins to a TenUp address</source>
-        <translation>送出錢幣到 TenUp 地址</translation>
+        <source>Send coins to a WealthSilo address</source>
+        <translation>送出錢幣到 WealthSilo 地址</translation>
     </message>
     <message>
         <source>Request payments (generates QR codes and tenup: URIs)</source>
@@ -577,24 +577,24 @@
         <translation>瀏覽 Masternodes</translation>
     </message>
     <message>
-        <source>&amp;About TenUp Core</source>
-        <translation>&amp;關於 TenUp Core</translation>
+        <source>&amp;About WealthSilo Core</source>
+        <translation>&amp;關於 WealthSilo Core</translation>
     </message>
     <message>
-        <source>Show information about TenUp Core</source>
-        <translation>顯示 TenUp Core 相關資訊</translation>
+        <source>Show information about WealthSilo Core</source>
+        <translation>顯示 WealthSilo Core 相關資訊</translation>
     </message>
     <message>
-        <source>Modify configuration options for TenUp</source>
-        <translation>修改 TenUp 設定</translation>
+        <source>Modify configuration options for WealthSilo</source>
+        <translation>修改 WealthSilo 設定</translation>
     </message>
     <message>
-        <source>Sign messages with your TenUp addresses to prove you own them</source>
-        <translation>使用你的 TenUp 位址對訊息簽章, 來證明你是擁有者</translation>
+        <source>Sign messages with your WealthSilo addresses to prove you own them</source>
+        <translation>使用你的 WealthSilo 位址對訊息簽章, 來證明你是擁有者</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified TenUp addresses</source>
-        <translation>驗證訊息簽章與 TenUp 位址吻合</translation>
+        <source>Verify messages to ensure they were signed with specified WealthSilo addresses</source>
+        <translation>驗證訊息簽章與 WealthSilo 位址吻合</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -625,7 +625,7 @@
         <translation>打開Masternode設定檔</translation>
     </message>
     <message>
-        <source>Open a TenUp: URI or payment request</source>
+        <source>Open a WealthSilo: URI or payment request</source>
         <translation>打開TenUp: 位址或付款請求 </translation>
     </message>
     <message>
@@ -637,12 +637,12 @@
         <translation>區塊鏈瀏覽視窗</translation>
     </message>
     <message>
-        <source>Show the TenUp Core help message to get a list with possible TenUp command-line options</source>
-        <translation>顯示 TenUp Core 幫助訊息以取得 TenUp 命令列表選項</translation>
+        <source>Show the WealthSilo Core help message to get a list with possible WealthSilo command-line options</source>
+        <translation>顯示 WealthSilo Core 幫助訊息以取得 WealthSilo 命令列表選項</translation>
     </message>
     <message>
-        <source>TenUp Core client</source>
-        <translation>TenUp Core 客戶端</translation>
+        <source>WealthSilo Core client</source>
+        <translation>WealthSilo Core 客戶端</translation>
     </message>
     </context>
 <context>
@@ -671,15 +671,15 @@
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>TenUp Core</source>
-        <translation>TenUp Core</translation>
+        <source>WealthSilo Core</source>
+        <translation>WealthSilo Core</translation>
     </message>
     </context>
 <context>
     <name>Intro</name>
     <message>
-        <source>TenUp Core</source>
-        <translation>TenUp Core</translation>
+        <source>WealthSilo Core</source>
+        <translation>WealthSilo Core</translation>
     </message>
     </context>
 <context>
@@ -822,8 +822,8 @@
 <context>
     <name>SignVerifyMessageDialog</name>
     <message>
-        <source>The TenUp address to sign the message with</source>
-        <translation>對訊息簽名的 TenUp 位址</translation>
+        <source>The WealthSilo address to sign the message with</source>
+        <translation>對訊息簽名的 WealthSilo 位址</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -846,16 +846,16 @@
         <translation>拷貝目前的簽章到系統剪貼簿</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this TenUp address</source>
-        <translation>使用簽章來證明你是該  TenUp 位址的擁有者,</translation>
+        <source>Sign the message to prove you own this WealthSilo address</source>
+        <translation>使用簽章來證明你是該  WealthSilo 位址的擁有者,</translation>
     </message>
     <message>
-        <source>The TenUp address the message was signed with</source>
-        <translation>此訊息之 TenUp 位址已簽章於</translation>
+        <source>The WealthSilo address the message was signed with</source>
+        <translation>此訊息之 WealthSilo 位址已簽章於</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified TenUp address</source>
-        <translation>驗證訊息以確保該  TenUp 位址已被簽章</translation>
+        <source>Verify the message to ensure it was signed with the specified WealthSilo address</source>
+        <translation>驗證訊息以確保該  WealthSilo 位址已被簽章</translation>
     </message>
     <message>
         <source>Reset all sign message fields</source>
@@ -893,8 +893,8 @@
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>TenUp Core</source>
-        <translation>TenUp Core</translation>
+        <source>WealthSilo Core</source>
+        <translation>WealthSilo Core</translation>
     </message>
     </context>
 <context>

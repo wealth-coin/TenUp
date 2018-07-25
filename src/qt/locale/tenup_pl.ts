@@ -509,12 +509,12 @@
         <translation>&amp;Pomoc</translation>
     </message>
     <message>
-        <source>TenUp Core</source>
-        <translation>&amp;Rdzeń TenUp</translation>
+        <source>WealthSilo Core</source>
+        <translation>&amp;Rdzeń WealthSilo</translation>
     </message>
     <message>
-        <source>Send coins to a TenUp address</source>
-        <translation>Wyślij monety do adresu TenUp</translation>
+        <source>Send coins to a WealthSilo address</source>
+        <translation>Wyślij monety do adresu WealthSilo</translation>
     </message>
     <message>
         <source>Request payments (generates QR codes and tenup: URIs)</source>
@@ -529,24 +529,24 @@
         <translation>Przeglądaj masternodes</translation>
     </message>
     <message>
-        <source>&amp;About TenUp Core</source>
+        <source>&amp;About WealthSilo Core</source>
         <translation>&amp;O rdzeniu bitcoina</translation>
     </message>
     <message>
-        <source>Show information about TenUp Core</source>
+        <source>Show information about WealthSilo Core</source>
         <translation>Pokaż informacje o rdzeniu bitcoina</translation>
     </message>
     <message>
-        <source>Modify configuration options for TenUp</source>
-        <translation>Modyfikuj opcje konfiguracji TenUp</translation>
+        <source>Modify configuration options for WealthSilo</source>
+        <translation>Modyfikuj opcje konfiguracji WealthSilo</translation>
     </message>
     <message>
-        <source>Sign messages with your TenUp addresses to prove you own them</source>
-        <translation>Zatwierdź wiadomość z twoimi adresami TenUp, by udowodnić, że jesteś w ich posiadaniu</translation>
+        <source>Sign messages with your WealthSilo addresses to prove you own them</source>
+        <translation>Zatwierdź wiadomość z twoimi adresami WealthSilo, by udowodnić, że jesteś w ich posiadaniu</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified TenUp addresses</source>
-        <translation>Zweryfikuj wiadomości by upewnić się, że zostały zatwierdzone z podanego adresu TenUp</translation>
+        <source>Verify messages to ensure they were signed with specified WealthSilo addresses</source>
+        <translation>Zweryfikuj wiadomości by upewnić się, że zostały zatwierdzone z podanego adresu WealthSilo</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -573,8 +573,8 @@
         <translation>Otwórz &amp;Plik konfiguracji Masternode</translation>
     </message>
     <message>
-        <source>Open a TenUp: URI or payment request</source>
-        <translation>Otwórz TenUp: URI i żądanie zapłaty</translation>
+        <source>Open a WealthSilo: URI or payment request</source>
+        <translation>Otwórz WealthSilo: URI i żądanie zapłaty</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -585,12 +585,12 @@
         <translation>Okno eksplorera bloków</translation>
     </message>
     <message>
-        <source>Show the TenUp Core help message to get a list with possible TenUp command-line options</source>
-        <translation>Pokaż wiadomość pomocy rdzenia TenUp, aby dostać listę możliwych opcji TenUp command-line</translation>
+        <source>Show the WealthSilo Core help message to get a list with possible WealthSilo command-line options</source>
+        <translation>Pokaż wiadomość pomocy rdzenia WealthSilo, aby dostać listę możliwych opcji WealthSilo command-line</translation>
     </message>
     <message>
-        <source>TenUp Core client</source>
-        <translation>Rdzeń TenUp klient</translation>
+        <source>WealthSilo Core client</source>
+        <translation>Rdzeń WealthSilo klient</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -899,8 +899,8 @@ MultiWysyłlka: %1</translation>
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>TenUp Core</source>
-        <translation>&amp;Rdzeń TenUp</translation>
+        <source>WealthSilo Core</source>
+        <translation>&amp;Rdzeń WealthSilo</translation>
     </message>
     </context>
 <context>
@@ -914,8 +914,8 @@ MultiWysyłlka: %1</translation>
         <translation>Użyj niestandardowej ścieżki danych</translation>
     </message>
     <message>
-        <source>TenUp Core</source>
-        <translation>&amp;Rdzeń TenUp</translation>
+        <source>WealthSilo Core</source>
+        <translation>&amp;Rdzeń WealthSilo</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1190,12 +1190,12 @@ Proszę sprawdzić adres i spróbować ponownie</translation>
         <translation>Zezwól na przychodzące połączenia</translation>
     </message>
     <message>
-        <source>Automatically start TenUp after logging in to the system.</source>
-        <translation>Automatycznie uruchom TenUp po zalogowaniu do systemu</translation>
+        <source>Automatically start WealthSilo after logging in to the system.</source>
+        <translation>Automatycznie uruchom WealthSilo po zalogowaniu do systemu</translation>
     </message>
     <message>
-        <source>&amp;Start TenUp on system login</source>
-        <translation>&amp;Uruchom TenUp podczas logowania do systemu</translation>
+        <source>&amp;Start WealthSilo on system login</source>
+        <translation>&amp;Uruchom WealthSilo podczas logowania do systemu</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1214,8 +1214,8 @@ Proszę sprawdzić adres i spróbować ponownie</translation>
         <translation>&amp;Sieć</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting TenUp.</source>
-        <translation>Język interfejsu użytkownika może być wybrany tutaj. Ustawienia ulegną zmianie po restarcie TenUp</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting WealthSilo.</source>
+        <translation>Język interfejsu użytkownika może być wybrany tutaj. Ustawienia ulegną zmianie po restarcie WealthSilo</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
@@ -1224,8 +1224,8 @@ https://www.transifex.com/tenup-project/tenup-project-translations</source>
 https://www.transifex.com/tenup-project/tenup-project-translations </translation>
     </message>
     <message>
-        <source>Connect to the TenUp network through a SOCKS5 proxy.</source>
-        <translation>Połącz z siecią TenUp poprzez SOCKS5 proxy.</translation>
+        <source>Connect to the WealthSilo network through a SOCKS5 proxy.</source>
+        <translation>Połącz z siecią WealthSilo poprzez SOCKS5 proxy.</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -1463,8 +1463,8 @@ https://www.transifex.com/tenup-project/tenup-project-translations </translation
         <translation>Liczba</translation>
     </message>
     <message>
-        <source>Enter a TenUp address (e.g. %1)</source>
-        <translation>Wprowadź adres TenUp (np. %1)</translation>
+        <source>Enter a WealthSilo address (e.g. %1)</source>
+        <translation>Wprowadź adres WealthSilo (np. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -1894,8 +1894,8 @@ https://www.transifex.com/tenup-project/tenup-project-translations </translation
         <translation>Alt+P</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this TenUp address</source>
-        <translation>Zatwierdź wiadomość, aby udowodnić, że podany adres TenUp jest w twoim posiadaniu</translation>
+        <source>Sign the message to prove you own this WealthSilo address</source>
+        <translation>Zatwierdź wiadomość, aby udowodnić, że podany adres WealthSilo jest w twoim posiadaniu</translation>
     </message>
     <message>
         <source>Clear &amp;All</source>
@@ -1929,8 +1929,8 @@ https://www.transifex.com/tenup-project/tenup-project-translations </translation
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>TenUp Core</source>
-        <translation>&amp;Rdzeń TenUp</translation>
+        <source>WealthSilo Core</source>
+        <translation>&amp;Rdzeń WealthSilo</translation>
     </message>
     </context>
 <context>

@@ -1,6 +1,6 @@
 UNIX BUILD NOTES
 ====================
-Some notes on how to build TenUp in Unix.
+Some notes on how to build WealthSilo in Unix.
 
 Note
 ---------------------
@@ -52,7 +52,7 @@ System requirements
 --------------------
 
 C++ compilers are memory-hungry. It is recommended to have at least 1 GB of
-memory available when compiling TenUp Core. With 512MB of memory or less
+memory available when compiling WealthSilo Core. With 512MB of memory or less
 compilation will take much longer due to swap thrashing.
 
 Dependency Build Instructions: Ubuntu & Debian
@@ -150,7 +150,7 @@ cd db-4.8.30.NC/build_unix/
 ../dist/configure --enable-cxx --disable-shared --with-pic --prefix=$BDB_PREFIX
 make install
 
-# Configure TenUp Core to use our own-built instance of BDB
+# Configure WealthSilo Core to use our own-built instance of BDB
 cd $TENUP_ROOT
 ./configure (other args...) LDFLAGS="-L${BDB_PREFIX}/lib/" CPPFLAGS="-I${BDB_PREFIX}/include/"
 ```
@@ -168,7 +168,7 @@ If you need to build Boost yourself:
 
 Security
 --------
-To help make your TenUp installation more secure by making certain attacks impossible to
+To help make your WealthSilo installation more secure by making certain attacks impossible to
 exploit even if a vulnerability is found, binaries are hardened by default.
 This can be disabled with:
 

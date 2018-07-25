@@ -62,12 +62,12 @@
         <translation>Gavimo adresai</translation>
     </message>
     <message>
-        <source>These are your TenUp addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Tai jūsų TenUp adresai mokėjimų išsiuntimams. Visada patikrinkite sumą ir gavėjo adresą prieš siųsdami monetas.</translation>
+        <source>These are your WealthSilo addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Tai jūsų WealthSilo adresai mokėjimų išsiuntimams. Visada patikrinkite sumą ir gavėjo adresą prieš siųsdami monetas.</translation>
     </message>
     <message>
-        <source>These are your TenUp addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Tai jūsų TenUp adresai mokėjimų gavimams. Rekomenduojama naudoti naują adresą kiekvienam pavedimui.</translation>
+        <source>These are your WealthSilo addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Tai jūsų WealthSilo adresai mokėjimų gavimams. Rekomenduojama naudoti naują adresą kiekvienam pavedimui.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -176,8 +176,8 @@
         <translation>Patvirtinkite piniginės užšifravimą.</translation>
     </message>
     <message>
-        <source>TenUp will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your TUPs from being stolen by malware infecting your computer.</source>
-        <translation>Dabar TenUp išsijungs, kad būtų užbaigtas šifravimo procesas. Atminkite, kad jūsų piniginės užšifravimas negali visiškai apsaugoti jūsų TUP nuo kenkėjiškų programų, užkrėsto jūsų kompiuterio.</translation>
+        <source>WealthSilo will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your TUPs from being stolen by malware infecting your computer.</source>
+        <translation>Dabar WealthSilo išsijungs, kad būtų užbaigtas šifravimo procesas. Atminkite, kad jūsų piniginės užšifravimas negali visiškai apsaugoti jūsų TUP nuo kenkėjiškų programų, užkrėsto jūsų kompiuterio.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -254,12 +254,12 @@
         <translation>Adresas:</translation>
     </message>
     <message>
-        <source>Enter a TenUp Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <source>Enter a WealthSilo Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
         <translation>Įveskite Tenup adresą, kurį norėtumėte užšifruoti naudojant BIP 38. Vidiniame laukelyje įrašykite slaptą frazę. Paspauskite užšifruoti, jei norite gauti užšifruotą privatųjį raktą.</translation>
     </message>
     <message>
-        <source>The TenUp address to encrypt</source>
-        <translation>TenUp adresas, kurį norite užšifruoti</translation>
+        <source>The WealthSilo address to encrypt</source>
+        <translation>WealthSilo adresas, kurį norite užšifruoti</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -290,8 +290,8 @@
         <translation>Kopijuoti dabartinį parašą</translation>
     </message>
     <message>
-        <source>Encrypt the private key for this TenUp address</source>
-        <translation>Užšifruoti šio TenUp adreso privatų raktą</translation>
+        <source>Encrypt the private key for this WealthSilo address</source>
+        <translation>Užšifruoti šio WealthSilo adreso privatų raktą</translation>
     </message>
     <message>
         <source>Reset all fields</source>
@@ -645,12 +645,12 @@
         <translation>Skirtukų įrankių juosta</translation>
     </message>
     <message>
-        <source>TenUp Core</source>
-        <translation>TenUp Core</translation>
+        <source>WealthSilo Core</source>
+        <translation>WealthSilo Core</translation>
     </message>
     <message>
-        <source>Send coins to a TenUp address</source>
-        <translation>Siųsti monetas į TenUp adresą</translation>
+        <source>Send coins to a WealthSilo address</source>
+        <translation>Siųsti monetas į WealthSilo adresą</translation>
     </message>
     <message>
         <source>Request payments (generates QR codes and tenup: URIs)</source>
@@ -669,24 +669,24 @@
         <translation>Naršyti masternod'us</translation>
     </message>
     <message>
-        <source>&amp;About TenUp Core</source>
-        <translation>&amp;Apie TenUp Core</translation>
+        <source>&amp;About WealthSilo Core</source>
+        <translation>&amp;Apie WealthSilo Core</translation>
     </message>
     <message>
-        <source>Show information about TenUp Core</source>
-        <translation>Rodyti informaciją apie TenUp Core</translation>
+        <source>Show information about WealthSilo Core</source>
+        <translation>Rodyti informaciją apie WealthSilo Core</translation>
     </message>
     <message>
-        <source>Modify configuration options for TenUp</source>
-        <translation>Keisti TenUp konfigūravimo parinktis</translation>
+        <source>Modify configuration options for WealthSilo</source>
+        <translation>Keisti WealthSilo konfigūravimo parinktis</translation>
     </message>
     <message>
-        <source>Sign messages with your TenUp addresses to prove you own them</source>
-        <translation>Pasirašykite pranešimus naudodami savo TenUp adresus, kad įrodytumėte, kad juos turite</translation>
+        <source>Sign messages with your WealthSilo addresses to prove you own them</source>
+        <translation>Pasirašykite pranešimus naudodami savo WealthSilo adresus, kad įrodytumėte, kad juos turite</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified TenUp addresses</source>
-        <translation>Patvirtinkite pranešimus, kad jie būtų pasirašyti su nurodytais TenUp adresais</translation>
+        <source>Verify messages to ensure they were signed with specified WealthSilo addresses</source>
+        <translation>Patvirtinkite pranešimus, kad jie būtų pasirašyti su nurodytais WealthSilo adresais</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -717,8 +717,8 @@
         <translation>Atidaryti Masternod'o konfigūracijos failą</translation>
     </message>
     <message>
-        <source>Open a TenUp: URI or payment request</source>
-        <translation>Atidaryti TenUp: URI arba mokėjimo prašymą</translation>
+        <source>Open a WealthSilo: URI or payment request</source>
+        <translation>Atidaryti WealthSilo: URI arba mokėjimo prašymą</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -729,16 +729,16 @@
         <translation>Blokų naršyklės langas</translation>
     </message>
     <message>
-        <source>Show the TenUp Core help message to get a list with possible TenUp command-line options</source>
-        <translation>Rodyti TenUp Core žinyną, kad gautumėte sąrašą su galimomis TenUp komandinės eilutės parinktimis</translation>
+        <source>Show the WealthSilo Core help message to get a list with possible WealthSilo command-line options</source>
+        <translation>Rodyti WealthSilo Core žinyną, kad gautumėte sąrašą su galimomis WealthSilo komandinės eilutės parinktimis</translation>
     </message>
     <message>
-        <source>TenUp Core client</source>
-        <translation>TenUp Core piniginė</translation>
+        <source>WealthSilo Core client</source>
+        <translation>WealthSilo Core piniginė</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to TenUp network</source>
-        <translation><numerusform>%n aktyvių prisijungimų TenUp tinkle ()</numerusform><numerusform>%n aktyvių prisijungimų TenUp tinkle ()</numerusform><numerusform>%n aktyvių prisijungimų TenUp tinkle ()</numerusform></translation>
+        <source>%n active connection(s) to WealthSilo network</source>
+        <translation><numerusform>%n aktyvių prisijungimų WealthSilo tinkle ()</numerusform><numerusform>%n aktyvių prisijungimų WealthSilo tinkle ()</numerusform><numerusform>%n aktyvių prisijungimų WealthSilo tinkle ()</numerusform></translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -1177,8 +1177,8 @@ MultiSend: %1</translation>
         <translation>Keisti siuntimo adresą</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid TenUp address.</source>
-        <translation>Įvestas adresas "%1" nėra galiojantis TenUp adresas.</translation>
+        <source>The entered address "%1" is not a valid WealthSilo address.</source>
+        <translation>Įvestas adresas "%1" nėra galiojantis WealthSilo adresas.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1223,16 +1223,16 @@ MultiSend: %1</translation>
         <translation>versija</translation>
     </message>
     <message>
-        <source>TenUp Core</source>
-        <translation>TenUp Core</translation>
+        <source>WealthSilo Core</source>
+        <translation>WealthSilo Core</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
         <translation>(%1-bitai)</translation>
     </message>
     <message>
-        <source>About TenUp Core</source>
-        <translation>Apie TenUp Core</translation>
+        <source>About WealthSilo Core</source>
+        <translation>Apie WealthSilo Core</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1278,16 +1278,16 @@ MultiSend: %1</translation>
         <translation>Sveiki</translation>
     </message>
     <message>
-        <source>Welcome to TenUp Core.</source>
-        <translation>Sveiki atvykę į TenUp Core</translation>
+        <source>Welcome to WealthSilo Core.</source>
+        <translation>Sveiki atvykę į WealthSilo Core</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where TenUp Core will store its data.</source>
-        <translation>Kadangi programa paleista pirmą kartą, galite pasirinkti kur TenUp Core saugos savo duomenis.</translation>
+        <source>As this is the first time the program is launched, you can choose where WealthSilo Core will store its data.</source>
+        <translation>Kadangi programa paleista pirmą kartą, galite pasirinkti kur WealthSilo Core saugos savo duomenis.</translation>
     </message>
     <message>
-        <source>TenUp Core will download and store a copy of the TenUp block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>TenUp Core atsisiųs ir saugos TenUp blockchain'o kopiją. Šiame kataloge bus saugomas ne mažesnis kaip %1GB duomenų kiekis, kuris laikui bėgant augs. Piniginė taip pat bus saugoma šiame kataloge.</translation>
+        <source>WealthSilo Core will download and store a copy of the WealthSilo block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>WealthSilo Core atsisiųs ir saugos WealthSilo blockchain'o kopiją. Šiame kataloge bus saugomas ne mažesnis kaip %1GB duomenų kiekis, kuris laikui bėgant augs. Piniginė taip pat bus saugoma šiame kataloge.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1298,8 +1298,8 @@ MultiSend: %1</translation>
         <translation>Naudoti pasirinktą duomenų katalogą:</translation>
     </message>
     <message>
-        <source>TenUp Core</source>
-        <translation>TenUp Core</translation>
+        <source>WealthSilo Core</source>
+        <translation>WealthSilo Core</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1440,12 +1440,12 @@ MultiSend: %1</translation>
         <translation>Įveskite adresą kuriam norite siųsti</translation>
     </message>
     <message>
-        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other TenUp addresses after it matures.
-To Add: enter percentage to give and TenUp address to add to the MultiSend vector.
+        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other WealthSilo addresses after it matures.
+To Add: enter percentage to give and WealthSilo address to add to the MultiSend vector.
 To Delete: Enter address to delete and press delete.
 MultiSend will not be activated unless you have clicked Activate</source>
-        <translation>MultiSend leidžia automatiškai išsiųsti iki 100% jūsų stake'inimo ar masternod'ų atlygio į kitus TenUp adresus.
-Norėdami pridėti: įveskite pateiktą procentą ir TenUp adresą, kurį norite pridėti prie MultiSend sąrašo.
+        <translation>MultiSend leidžia automatiškai išsiųsti iki 100% jūsų stake'inimo ar masternod'ų atlygio į kitus WealthSilo adresus.
+Norėdami pridėti: įveskite pateiktą procentą ir WealthSilo adresą, kurį norite pridėti prie MultiSend sąrašo.
 Norėdami ištrinti: įveskite adresą, kurį norite ištrinti, ir paspauskite ištrinti
 MultiSend nebus aktyvuotas, nebent paspausite "Įjungti"</translation>
     </message>
@@ -1804,12 +1804,12 @@ Patikrinkite adresą ir bandykite dar kartą.</translation>
         <translation>Leisti įeinančius ryšius</translation>
     </message>
     <message>
-        <source>Automatically start TenUp after logging in to the system.</source>
-        <translation>Automatiškai paleisti TenUp prisijungus prie sistemos.</translation>
+        <source>Automatically start WealthSilo after logging in to the system.</source>
+        <translation>Automatiškai paleisti WealthSilo prisijungus prie sistemos.</translation>
     </message>
     <message>
-        <source>&amp;Start TenUp on system login</source>
-        <translation>&amp;Paleisti TenUp sistemai įsijungiant</translation>
+        <source>&amp;Start WealthSilo on system login</source>
+        <translation>&amp;Paleisti WealthSilo sistemai įsijungiant</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1828,8 +1828,8 @@ Patikrinkite adresą ir bandykite dar kartą.</translation>
         <translation>&amp;Tinklas</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting TenUp.</source>
-        <translation>Čia galite nustatyti vartotojo sąsajos kalbą. Šis nustatymas įsigalios iš naujo paleidus "TenUp".</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting WealthSilo.</source>
+        <translation>Čia galite nustatyti vartotojo sąsajos kalbą. Šis nustatymas įsigalios iš naujo paleidus "WealthSilo".</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
@@ -1858,8 +1858,8 @@ https://www.transifex.com/tenup-project/tenup-project-translations</translation>
         <translation>Pageidautinas zTUP Automatinio Nukaldinimo Nominalas</translation>
     </message>
     <message>
-        <source>Connect to the TenUp network through a SOCKS5 proxy.</source>
-        <translation>Jungtis prie TenUp tinklo naudojant SOCKS5 tarpinį serverį.</translation>
+        <source>Connect to the WealthSilo network through a SOCKS5 proxy.</source>
+        <translation>Jungtis prie WealthSilo tinklo naudojant SOCKS5 tarpinį serverį.</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -1989,16 +1989,16 @@ https://www.transifex.com/tenup-project/tenup-project-translations</translation>
         <translation>Dabartinis bendras užrakintas balansas tik žiūrėjimo adresuose</translation>
     </message>
     <message>
-        <source>Your current TenUp balance, unconfirmed and immature transactions included</source>
-        <translation>Jūsų dabartinis TenUp balansas, įskaitant nepatvirtintus ir nesubrendusius sandorius</translation>
+        <source>Your current WealthSilo balance, unconfirmed and immature transactions included</source>
+        <translation>Jūsų dabartinis WealthSilo balansas, įskaitant nepatvirtintus ir nesubrendusius sandorius</translation>
     </message>
     <message>
         <source>zTUP Balance</source>
         <translation>zTUP Balansas</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the TenUp network after a connection is established, but this process has not completed yet.</source>
-        <translation>Rodoma informacija gali būti pasenusi. Jūsų piniginė automatiškai sinchronizuojasi su TenUp tinklu po ryšio aktyvavimo, tačiau šis procesas dar nebaigtas.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the WealthSilo network after a connection is established, but this process has not completed yet.</source>
+        <translation>Rodoma informacija gali būti pasenusi. Jūsų piniginė automatiškai sinchronizuojasi su WealthSilo tinklu po ryšio aktyvavimo, tačiau šis procesas dar nebaigtas.</translation>
     </message>
     <message>
         <source>OVERVIEW</source>
@@ -2078,8 +2078,8 @@ https://www.transifex.com/tenup-project/tenup-project-translations</translation>
         <translation>Zerocoin Veiksmai:</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the TenUp network after a connection is established, but this process has not completed yet.</source>
-        <translation>Rodoma informacija gali būti pasenusi. Jūsų piniginė automatiškai sinchronizuojasi su TenUp tinklu po ryšio aktyvavimo, tačiau šis procesas dar nebaigtas.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the WealthSilo network after a connection is established, but this process has not completed yet.</source>
+        <translation>Rodoma informacija gali būti pasenusi. Jūsų piniginė automatiškai sinchronizuojasi su WealthSilo tinklu po ryšio aktyvavimo, tačiau šis procesas dar nebaigtas.</translation>
     </message>
     <message>
         <source>0</source>
@@ -2371,8 +2371,8 @@ https://www.transifex.com/tenup-project/tenup-project-translations</translation>
         <translation>Iš:</translation>
     </message>
     <message>
-        <source>Welcome to the TenUp RPC console.</source>
-        <translation>Sveiki atvykę į TenUp RPC konsolę.</translation>
+        <source>Welcome to the WealthSilo RPC console.</source>
+        <translation>Sveiki atvykę į WealthSilo RPC konsolę.</translation>
     </message>
     <message>
         <source>never</source>
@@ -2688,8 +2688,8 @@ https://www.transifex.com/tenup-project/tenup-project-translations</translation>
 <context>
     <name>SignVerifyMessageDialog</name>
     <message>
-        <source>The TenUp address to sign the message with</source>
-        <translation>TenUp adresas, kuriuo pasirašyti žinute</translation>
+        <source>The WealthSilo address to sign the message with</source>
+        <translation>WealthSilo adresas, kuriuo pasirašyti žinute</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2712,16 +2712,16 @@ https://www.transifex.com/tenup-project/tenup-project-translations</translation>
         <translation>Kopijuoti dabartinį parašą</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this TenUp address</source>
-        <translation>Pažymėkite žinutę, kad įrodytumėte, jog jūs šio TenUp adreso savininkas</translation>
+        <source>Sign the message to prove you own this WealthSilo address</source>
+        <translation>Pažymėkite žinutę, kad įrodytumėte, jog jūs šio WealthSilo adreso savininkas</translation>
     </message>
     <message>
-        <source>The TenUp address the message was signed with</source>
-        <translation>TenUp adresas, kurio buvo pasirašyta žinutė</translation>
+        <source>The WealthSilo address the message was signed with</source>
+        <translation>WealthSilo adresas, kurio buvo pasirašyta žinutė</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified TenUp address</source>
-        <translation>Patikrinkite pranešimą, kad jis būtų pasirašytas su nurodytu TenUp adresu</translation>
+        <source>Verify the message to ensure it was signed with the specified WealthSilo address</source>
+        <translation>Patikrinkite pranešimą, kad jis būtų pasirašytas su nurodytu WealthSilo adresu</translation>
     </message>
     <message>
         <source>Reset all sign message fields</source>
@@ -2759,8 +2759,8 @@ https://www.transifex.com/tenup-project/tenup-project-translations</translation>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>TenUp Core</source>
-        <translation>TenUp Core</translation>
+        <source>WealthSilo Core</source>
+        <translation>WealthSilo Core</translation>
     </message>
     </context>
 <context>
@@ -3024,8 +3024,8 @@ https://www.transifex.com/tenup-project/tenup-project-translations</translation>
         <translation>Klaida kraunant wallet.dat: Piniginė yra sugadinta</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of TenUp Core</source>
-        <translation>Klaida kraunant wallet.dat: Piniginė reikalauja naujesnės TenUp Core versijos</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of WealthSilo Core</source>
+        <translation>Klaida kraunant wallet.dat: Piniginė reikalauja naujesnės WealthSilo Core versijos</translation>
     </message>
     <message>
         <source>Error opening block database</source>
@@ -3256,8 +3256,8 @@ https://www.transifex.com/tenup-project/tenup-project-translations</translation>
         <translation>Piniginė užrakinta.</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart TenUp Core to complete</source>
-        <translation>Piniginę reikia perrašyti: paleiskite TenUp Core iš naujo</translation>
+        <source>Wallet needed to be rewritten: restart WealthSilo Core to complete</source>
+        <translation>Piniginę reikia perrašyti: paleiskite WealthSilo Core iš naujo</translation>
     </message>
     <message>
         <source>Wallet options:</source>

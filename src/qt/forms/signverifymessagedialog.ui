@@ -45,7 +45,7 @@
          <item>
           <widget class="QValidatedLineEdit" name="addressIn_SM">
            <property name="toolTip">
-            <string>The TenUp address to sign the message with</string>
+            <string>The WealthSilo address to sign the message with</string>
            </property>
           </widget>
          </item>
@@ -137,7 +137,7 @@
          <item>
           <widget class="QPushButton" name="signMessageButton_SM">
            <property name="toolTip">
-            <string>Sign the message to prove you own this TenUp address</string>
+            <string>Sign the message to prove you own this WealthSilo address</string>
            </property>
            <property name="text">
             <string>Sign &amp;Message</string>
@@ -240,7 +240,7 @@
          <item>
           <widget class="QValidatedLineEdit" name="addressIn_VM">
            <property name="toolTip">
-            <string>The TenUp address the message was signed with</string>
+            <string>The WealthSilo address the message was signed with</string>
            </property>
           </widget>
          </item>
@@ -274,7 +274,7 @@
          <item>
           <widget class="QPushButton" name="verifyMessageButton_VM">
            <property name="toolTip">
-            <string>Verify the message to ensure it was signed with the specified TenUp address</string>
+            <string>Verify the message to ensure it was signed with the specified WealthSilo address</string>
            </property>
            <property name="text">
             <string>Verify &amp;Message</string>

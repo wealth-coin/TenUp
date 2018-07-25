@@ -16,8 +16,8 @@ BEGIN
     BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
-            VALUE "CompanyName",        "TenUp"
-            VALUE "FileDescription",    "tenup-tx (CLI TenUp transaction editor utility)"
+            VALUE "CompanyName",        "WealthSilo"
+            VALUE "FileDescription",    "tenup-tx (CLI WealthSilo transaction editor utility)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
             VALUE "InternalName",       "tenup-tx"
             VALUE "LegalCopyright",     COPYRIGHT_STR
