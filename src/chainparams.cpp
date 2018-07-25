@@ -110,9 +110,9 @@ public:
          * The characters are rarely used upper ASCII, not valid as UTF-8, and produce
          * a large 4-byte int at any alignment.
          */
-        pchMessageStart[0] = 0x99;
-        pchMessageStart[1] = 0xb4;
-        pchMessageStart[2] = 0xfc;
+        pchMessageStart[0] = 0x90;
+        pchMessageStart[1] = 0xa4;
+        pchMessageStart[2] = 0xed;
         pchMessageStart[3] = 0xd9;
         vAlertPubKey = ParseHex("0000098d3ba6ba6e7423fa5cbd6a89e0a9a5348f88d332b44a5cb1a8b7ed2c1eaa335fc8dc4f012cb8241cc0bdafd6ca70c5f5448916e4e6f511bcd746ed57dc50");
         nDefaultPort = 45595;
@@ -124,10 +124,10 @@ public:
         nToCheckBlockUpgradeMajority = 1000;
         nMinerThreads = 0;
         nTargetTimespan = 1 * 60; // WealthSilo: 1 day
-        nTargetSpacing = 1 * 60;  // WealthSilo: 1 minute
+        nTargetSpacing = 2 * 60;  // WealthSilo: 2 minute
         nMaturity = 10;
         nMasternodeCountDrift = 20;
-        nMaxMoneyOut = 75000000 * COIN;
+        nMaxMoneyOut = 600000 * COIN;
 
         /** Height or Time Based Activations **/
         nLastPOWBlock = 200;
@@ -180,9 +180,9 @@ public:
         vSeeds.push_back(CDNSSeedData("81.4.101.224", "81.4.101.224"));           // Single node address
         vSeeds.push_back(CDNSSeedData("81.4.101.56", "81.4.101.56"));           // Single node address
         
-        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 65);
-        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 10);
-        base58Prefixes[SECRET_KEY] = std::vector<unsigned char>(1, 137);
+        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 73);
+        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 135);
+        base58Prefixes[SECRET_KEY] = std::vector<unsigned char>(1, 142);
         base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x04)(0x4D)(0x50)(0x66).convert_to_container<std::vector<unsigned char> >();
         base58Prefixes[EXT_SECRET_KEY] = boost::assign::list_of(0x04)(0x41)(0x51)(0x4B).convert_to_container<std::vector<unsigned char> >();
         // 	BIP44 coin type is from https://github.com/satoshilabs/slips/blob/master/slip-0044.md
@@ -241,8 +241,8 @@ public:
         networkID = CBaseChainParams::TESTNET;
         strNetworkID = "test";
         pchMessageStart[0] = 0x50;
-        pchMessageStart[1] = 0x79;
-        pchMessageStart[2] = 0x55;
+        pchMessageStart[1] = 0x46;
+        pchMessageStart[2] = 0xa5;
         pchMessageStart[3] = 0xcd;
         vAlertPubKey = ParseHex("000010e83b2703ccf322f7dbd62dd5855ac7c10bd055814ce121ba32607d573b8810c02c0582aed05b4deb9c4b77b26d92428c61256cd42774babea0a073b2ed0c9");
         nDefaultPort = 45585;

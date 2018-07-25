@@ -1128,24 +1128,24 @@ Please check the address and try again.</source>
         <translation>Valitse yksityisyyden taso.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 25000 WEALTH</source>
-        <translation>Käytä 2 erillistä masternodea sekoittaaksesi enintään 25000 WealthSilo</translation>
+        <source>Use 2 separate masternodes to mix funds up to 1000 WEALTH</source>
+        <translation>Käytä 2 erillistä masternodea sekoittaaksesi enintään 1000 WealthSilo</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 25000 WEALTH</source>
-        <translation>Käytä 8 erillistä masternodea sekoittaaksesi enintään 25000 WealthSilo</translation>
+        <source>Use 8 separate masternodes to mix funds up to 1000 WEALTH</source>
+        <translation>Käytä 8 erillistä masternodea sekoittaaksesi enintään 1000 WealthSilo</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>Käytä 16 erillistä masternodea</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 WEALTH to anonymize 25000 WEALTH</source>
-        <translation>Tämä vaihtoehto on nopein ja maksaa noin ~0.025 WEALTH anonymoidaksesi 25000 WealthSilo</translation>
+        <source>This option is the quickest and will cost about ~0.025 WEALTH to anonymize 1000 WEALTH</source>
+        <translation>Tämä vaihtoehto on nopein ja maksaa noin ~0.025 WEALTH anonymoidaksesi 1000 WealthSilo</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 WEALTH to anonymize 25000 WEALTH</source>
-        <translation>Tämä vaihtoehto on suhteellisen nopea ja maksaa 0.05 WealthSilo anonymoidaksesi 25000 WealthSilo</translation>
+        <source>This option is moderately fast and will cost about 0.05 WEALTH to anonymize 1000 WEALTH</source>
+        <translation>Tämä vaihtoehto on suhteellisen nopea ja maksaa 0.05 WealthSilo anonymoidaksesi 1000 WealthSilo</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>

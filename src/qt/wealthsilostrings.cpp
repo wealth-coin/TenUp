@@ -197,9 +197,9 @@ QT_TRANSLATE_NOOP("wealthsilo-core", ""
 "Unable to locate enough Obfuscation denominated funds for this transaction."),
 QT_TRANSLATE_NOOP("wealthsilo-core", ""
 "Unable to locate enough Obfuscation non-denominated funds for this "
-"transaction that are not equal 25000 WEALTH."),
+"transaction that are not equal 1000 WEALTH."),
 QT_TRANSLATE_NOOP("wealthsilo-core", ""
-"Unable to locate enough funds for this transaction that are not equal 25000 "
+"Unable to locate enough funds for this transaction that are not equal 1000 "
 "WEALTH."),
 QT_TRANSLATE_NOOP("wealthsilo-core", ""
 "Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: "

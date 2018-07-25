@@ -1570,12 +1570,12 @@ MultiSend: %1</translation>
         <translation>Configura Offuscamento</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 25000 WEALTH</source>
-        <translation>Usa 2 masternodi diversi per mescolare fino a 25000 WEALTH</translation>
+        <source>Use 2 separate masternodes to mix funds up to 1000 WEALTH</source>
+        <translation>Usa 2 masternodi diversi per mescolare fino a 1000 WEALTH</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 25000 WEALTH</source>
-        <translation>Usa 8 masternodi diversi per mixare fino a 25000 WEALTH</translation>
+        <source>Use 8 separate masternodes to mix funds up to 1000 WEALTH</source>
+        <translation>Usa 8 masternodi diversi per mixare fino a 1000 WEALTH</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>

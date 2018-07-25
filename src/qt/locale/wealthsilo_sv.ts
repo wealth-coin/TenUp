@@ -1763,24 +1763,24 @@ Var god vänta efter att du trycker på importera.</translation>
         <translation>Var vänlig och välj en sekretess nivå.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 25000 WEALTH</source>
-        <translation>Använd 2 separata huvudnoder för att blanda tillgångar upp till 25000 WEALTH</translation>
+        <source>Use 2 separate masternodes to mix funds up to 1000 WEALTH</source>
+        <translation>Använd 2 separata huvudnoder för att blanda tillgångar upp till 1000 WEALTH</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 25000 WEALTH</source>
-        <translation>Använd 8 separata huvudnoderför att blanda tillgångar upp till 25000 WEALTH</translation>
+        <source>Use 8 separate masternodes to mix funds up to 1000 WEALTH</source>
+        <translation>Använd 8 separata huvudnoderför att blanda tillgångar upp till 1000 WEALTH</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>Använd 16 separata huvudnoder</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 WEALTH to anonymize 25000 WEALTH</source>
-        <translation>Det här alternativet är det snabbaste och kommer kostar ungefär ~0.025 WEALTH för att anonymisera 25000 WEALTH</translation>
+        <source>This option is the quickest and will cost about ~0.025 WEALTH to anonymize 1000 WEALTH</source>
+        <translation>Det här alternativet är det snabbaste och kommer kostar ungefär ~0.025 WEALTH för att anonymisera 1000 WEALTH</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 WEALTH to anonymize 25000 WEALTH</source>
-        <translation>Det här alternativet är måttligt snabb och kommer kostar ungefär 0.05 WEALTH för att anonymisera 25000 WEALTH</translation>
+        <source>This option is moderately fast and will cost about 0.05 WEALTH to anonymize 1000 WEALTH</source>
+        <translation>Det här alternativet är måttligt snabb och kommer kostar ungefär 0.05 WEALTH för att anonymisera 1000 WEALTH</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
@@ -4854,8 +4854,8 @@ Minta antingen högre valörer (så att färre inputs behövs) eller spendera mi
         <translation>Kan inte binda till %s på denna dator. WealthSilo Kärna körs förmodligen redan.</translation>
     </message>
     <message>
-        <source>Unable to locate enough funds for this transaction that are not equal 25000 WEALTH.</source>
-        <translation>Kan inte hitta tillräckliga pengar för denna transaktion som inte är 25000 WEALTH.</translation>
+        <source>Unable to locate enough funds for this transaction that are not equal 1000 WEALTH.</source>
+        <translation>Kan inte hitta tillräckliga pengar för denna transaktion som inte är 1000 WEALTH.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>

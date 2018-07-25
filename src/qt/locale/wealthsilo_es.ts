@@ -1780,24 +1780,24 @@ Por favor, tenga paciencia después de hacer clic en importar.</translation>
         <translation>Por favor selecciones un nivel de privacidad.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 25000 WEALTH</source>
-        <translation>Use 2 nodos maestros diferentes para mezclar los fondos hasta los 25000 WEALTH</translation>
+        <source>Use 2 separate masternodes to mix funds up to 1000 WEALTH</source>
+        <translation>Use 2 nodos maestros diferentes para mezclar los fondos hasta los 1000 WEALTH</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 25000 WEALTH</source>
-        <translation>Use 8 nodos maestros diferentes para mezclar fondos hasta los 25000 WEALTH</translation>
+        <source>Use 8 separate masternodes to mix funds up to 1000 WEALTH</source>
+        <translation>Use 8 nodos maestros diferentes para mezclar fondos hasta los 1000 WEALTH</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>Use 16 nodos maestros diferentes</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 WEALTH to anonymize 25000 WEALTH</source>
-        <translation>Esta opción es la más rápida y costará alrededor de ~0.025 WEALTH para anonimizar 25000 WEALTH</translation>
+        <source>This option is the quickest and will cost about ~0.025 WEALTH to anonymize 1000 WEALTH</source>
+        <translation>Esta opción es la más rápida y costará alrededor de ~0.025 WEALTH para anonimizar 1000 WEALTH</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 WEALTH to anonymize 25000 WEALTH</source>
-        <translation>Esta opción es moderadamente rápida y costará cerca de 0.05 WEALTH para anonimizar 25000 WEALTH.</translation>
+        <source>This option is moderately fast and will cost about 0.05 WEALTH to anonymize 1000 WEALTH</source>
+        <translation>Esta opción es moderadamente rápida y costará cerca de 0.05 WEALTH para anonimizar 1000 WEALTH.</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
@@ -4963,12 +4963,12 @@ También mint las denominaciones más altas (por lo tanto, se necesitan menos da
         <translation>Imposible localizar suficientes fondos denominados de Ofuscación para esta transacción.</translation>
     </message>
     <message>
-        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 25000 WEALTH.</source>
-        <translation>Imposible localizar suficientes fondos no-denominados de Ofuscación para esta transacción que no es igual a 25000 WEALTH.</translation>
+        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 1000 WEALTH.</source>
+        <translation>Imposible localizar suficientes fondos no-denominados de Ofuscación para esta transacción que no es igual a 1000 WEALTH.</translation>
     </message>
     <message>
-        <source>Unable to locate enough funds for this transaction that are not equal 25000 WEALTH.</source>
-        <translation>Imposible localizar fondos suficientes para esta transacción que no es igual a 25000 WEALTH.</translation>
+        <source>Unable to locate enough funds for this transaction that are not equal 1000 WEALTH.</source>
+        <translation>Imposible localizar fondos suficientes para esta transacción que no es igual a 1000 WEALTH.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>

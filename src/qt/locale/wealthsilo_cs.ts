@@ -1468,16 +1468,16 @@ Prosím zkontrolujte adresu a zkuste to znovu.</translation>
         <translation>Vyberte úrpvěň ochrany soukromí</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 25000 WEALTH</source>
-        <translation>Použí 2 oddělené masternody k promíchání prostředků až do 25000 WEALTH</translation>
+        <source>Use 2 separate masternodes to mix funds up to 1000 WEALTH</source>
+        <translation>Použí 2 oddělené masternody k promíchání prostředků až do 1000 WEALTH</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>Použít 16 oddělených masternodů</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 WEALTH to anonymize 25000 WEALTH</source>
-        <translation>Tato možnost je nejrychleší a bude stát zhruba ~0.025 WEALTH pro anonymizaci 25000 WEALTH</translation>
+        <source>This option is the quickest and will cost about ~0.025 WEALTH to anonymize 1000 WEALTH</source>
+        <translation>Tato možnost je nejrychleší a bude stát zhruba ~0.025 WEALTH pro anonymizaci 1000 WEALTH</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>

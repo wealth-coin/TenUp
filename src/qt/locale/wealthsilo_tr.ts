@@ -1743,24 +1743,24 @@ Unutmayın, cüzdan, yeni adresi içeren işlemleri bulmak için blok zinciri ye
         <translation>Lütfen bir gizlilik düzeyi seçin.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 25000 WEALTH</source>
-        <translation>25000 WEALTH'e kadar fonları karıştırmak için 2 ayrı matternod kullanın</translation>
+        <source>Use 2 separate masternodes to mix funds up to 1000 WEALTH</source>
+        <translation>1000 WEALTH'e kadar fonları karıştırmak için 2 ayrı matternod kullanın</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 25000 WEALTH</source>
-        <translation>25000 WEALTH'ye kadar olan fonları karıştırmak için 8 ayrı matternod kullanın</translation>
+        <source>Use 8 separate masternodes to mix funds up to 1000 WEALTH</source>
+        <translation>1000 WEALTH'ye kadar olan fonları karıştırmak için 8 ayrı matternod kullanın</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>16 ayrı matternod kullan</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 WEALTH to anonymize 25000 WEALTH</source>
-        <translation>Bu seçenek en hızlıdır ve 25000 WEALTH'yi anonimleştirmek için ~ 0.025 WEALTH'lik bir maliyeti olacaktır</translation>
+        <source>This option is the quickest and will cost about ~0.025 WEALTH to anonymize 1000 WEALTH</source>
+        <translation>Bu seçenek en hızlıdır ve 1000 WEALTH'yi anonimleştirmek için ~ 0.025 WEALTH'lik bir maliyeti olacaktır</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 WEALTH to anonymize 25000 WEALTH</source>
-        <translation>Bu seçenek orta derecede hızlıdır ve 25000 WEALTH'yi anonimleştirmek için yaklaşık 0.05 WEALTH'e mal olur</translation>
+        <source>This option is moderately fast and will cost about 0.05 WEALTH to anonymize 1000 WEALTH</source>
+        <translation>Bu seçenek orta derecede hızlıdır ve 1000 WEALTH'yi anonimleştirmek için yaklaşık 0.05 WEALTH'e mal olur</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
