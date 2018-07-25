@@ -2,7 +2,7 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2018 The PIVX developers
-// Copyright (c) 2015-2018 The WealthSilo developers
+// Copyright (c) 2018 The WealthSilo developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -173,7 +173,7 @@ public:
         assert(hashGenesisBlock == uint256("0x00000a91661547d75e61d0f15fd97067c5d8763cf37ff2847d5a2dd55eba3fe9"));
         assert(genesis.hashMerkleRoot == uint256("0x01cd2cec7147282c3b54233a218b0a68b49e8233318fd253578eea68d0e5bafd"));
 
-        vSeeds.push_back(CDNSSeedData("seeder.tenup.io", "seeder.tenup.io"));
+        vSeeds.push_back(CDNSSeedData("seeder.wealthsilo.io", "seeder.wealthsilo.io"));
         vSeeds.push_back(CDNSSeedData("168.235.109.113", "168.235.109.113"));           // Single node address
         vSeeds.push_back(CDNSSeedData("168.235.78.242", "168.235.78.242"));           // Single node address
         vSeeds.push_back(CDNSSeedData("176.56.236.202", "176.56.236.202"));           // Single node address
@@ -219,7 +219,7 @@ public:
         nRequiredAccumulation = 1;
         nDefaultSecurityLevel = 100; //full security level for accumulators
         nZerocoinHeaderVersion = 4; //Block headers must be this version once zerocoin is active
-        nZerocoinRequiredStakeDepth = 200; //The required confirmations for a ztup to be stakable
+        nZerocoinRequiredStakeDepth = 200; //The required confirmations for a zwealth to be stakable
 
         nBudget_Fee_Confirmations = 6; // Number of confirmations for the finalization fee
     }
@@ -279,19 +279,19 @@ public:
 
         vFixedSeeds.clear();
         vSeeds.clear();
-        //vSeeds.push_back(CDNSSeedData("fuzzbawls.pw", "tenup-testnet.seed.fuzzbawls.pw"));
-        //vSeeds.push_back(CDNSSeedData("fuzzbawls.pw", "tenup-testnet.seed2.fuzzbawls.pw"));
+        //vSeeds.push_back(CDNSSeedData("fuzzbawls.pw", "wealthsilo-testnet.seed.fuzzbawls.pw"));
+        //vSeeds.push_back(CDNSSeedData("fuzzbawls.pw", "wealthsilo-testnet.seed2.fuzzbawls.pw"));
         //vSeeds.push_back(CDNSSeedData("s3v3nh4cks.ddns.net", "s3v3nh4cks.ddns.net"));
         vSeeds.push_back(CDNSSeedData("192.168.100.2", "192.168.100.2"));
 
-        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 129); // Testnet tenup addresses start with 't' or 'u'
-        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 14);  // Testnet tenup script addresses start with '6' or '7'
+        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 129); // Testnet wealthsilo addresses start with 't' or 'u'
+        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 14);  // Testnet wealthsilo script addresses start with '6' or '7'
         base58Prefixes[SECRET_KEY] = std::vector<unsigned char>(1, 239);     // Testnet private keys start with '9' or 'c' (Bitcoin defaults)
-        // Testnet tenup BIP32 pubkeys start with 'DRKV'
+        // Testnet wealthsilo BIP32 pubkeys start with 'DRKV'
         base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x2a)(0x40)(0x71)(0xb0).convert_to_container<std::vector<unsigned char> >();
-        // Testnet tenup BIP32 prvkeys start with 'DRKP'
+        // Testnet wealthsilo BIP32 prvkeys start with 'DRKP'
         base58Prefixes[EXT_SECRET_KEY] = boost::assign::list_of(0x2a)(0x40)(0x78)(0x47).convert_to_container<std::vector<unsigned char> >();
-        // Testnet tenup BIP44 coin type is '1' (All coin's testnet default)
+        // Testnet wealthsilo BIP44 coin type is '1' (All coin's testnet default)
         base58Prefixes[EXT_COIN_TYPE] = boost::assign::list_of(0x80)(0x00)(0x00)(0x01).convert_to_container<std::vector<unsigned char> >();
 
         convertSeed6(vFixedSeeds, pnSeed6_test, ARRAYLEN(pnSeed6_test));

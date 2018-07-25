@@ -28,7 +28,7 @@
       </sizepolicy>
      </property>
      <property name="pixmap">
-      <pixmap resource="../tenup.qrc">:/images/about</pixmap>
+      <pixmap resource="../wealthsilo.qrc">:/images/about</pixmap>
      </property>
     </widget>
    </item>
@@ -97,7 +97,7 @@
   </layout>
  </widget>
  <resources>
-  <include location="../tenup.qrc"/>
+  <include location="../wealthsilo.qrc"/>
  </resources>
  <connections>
   <connection>

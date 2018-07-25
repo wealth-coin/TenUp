@@ -172,16 +172,16 @@
         <translation>Potvrďte šifrovanie peňaženky</translation>
     </message>
     <message>
-        <source>WealthSilo will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your TUPs from being stolen by malware infecting your computer.</source>
-        <translation>WealthSilo sa teraz ukončí, aby dokončil proces šifrovania. Nezabudnite, že šifrovanie peňaženky nemôže úplne ochrániť vaše TUP pred odcudzením škodlivým softvérom, ktorý infikuje váš počítač.</translation>
+        <source>WealthSilo will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your WEALTHs from being stolen by malware infecting your computer.</source>
+        <translation>WealthSilo sa teraz ukončí, aby dokončil proces šifrovania. Nezabudnite, že šifrovanie peňaženky nemôže úplne ochrániť vaše WEALTH pred odcudzením škodlivým softvérom, ktorý infikuje váš počítač.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Naozaj chcete zašifrovať svoju peňaženku?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR TUP&lt;/b&gt;!</source>
-        <translation>Upozornenie: Ak zašifrujete svoju peňaženku a stratíte svoju prístupovú frázu, &lt;b&gt; PRÍDETE O VŠETKY TUP &lt;/ b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR WEALTH&lt;/b&gt;!</source>
+        <translation>Upozornenie: Ak zašifrujete svoju peňaženku a stratíte svoju prístupovú frázu, &lt;b&gt; PRÍDETE O VŠETKY WEALTH &lt;/ b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -577,8 +577,8 @@
         <translation>Odoslať mince na adresu WealthSilo</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and tenup: URIs)</source>
-        <translation>Vyžiadať platby (generuje QR kódy a tenup: identifikátory URI)</translation>
+        <source>Request payments (generates QR codes and wealthsilo: URIs)</source>
+        <translation>Vyžiadať platby (generuje QR kódy a wealthsilo: identifikátory URI)</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -776,8 +776,8 @@ MultiSend: %1</translation>
         <translation>TextLabel</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (tenup.conf).</source>
-        <translation>Nie všetky transakcie sa zobrazia. Ak chcete zobraziť všetky transakcie, musíte v konfiguračnom súbore (tenup.conf) nastaviť txindex = 1.</translation>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (wealthsilo.conf).</source>
+        <translation>Nie všetky transakcie sa zobrazia. Ak chcete zobraziť všetky transakcie, musíte v konfiguračnom súbore (wealthsilo.conf) nastaviť txindex = 1.</translation>
     </message>
 </context>
 <context>
@@ -1281,10 +1281,10 @@ MultiSend: %1</translation>
     </message>
     </context>
 <context>
-    <name>ZTupControlDialog</name>
+    <name>ZWealthControlDialog</name>
     </context>
 <context>
-    <name>tenup-core</name>
+    <name>wealthsilo-core</name>
     <message>
         <source>Error</source>
         <translation>Chyba</translation>

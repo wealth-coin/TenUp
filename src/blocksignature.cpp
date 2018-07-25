@@ -62,13 +62,13 @@ bool CheckBlockSignature(const CBlock& block)
     if (block.vchBlockSig.empty())
         return error("%s: vchBlockSig is empty!", __func__);
 
-    /** Each block is signed by the private key of the input that is staked. This can be either zTUP or normal UTXO
-     *  zTUP: Each zTUP has a keypair associated with it. The serial number is a hash of the public key.
+    /** Each block is signed by the private key of the input that is staked. This can be either zWEALTH or normal UTXO
+     *  zWEALTH: Each zWEALTH has a keypair associated with it. The serial number is a hash of the public key.
      *  UTXO: The public key that signs must match the public key associated with the first utxo of the coinstake tx.
      */
     CPubKey pubkey;
-    bool fzTUPStake = block.vtx[1].IsZerocoinSpend();
-    if (fzTUPStake) {
+    bool fzWEALTHStake = block.vtx[1].IsZerocoinSpend();
+    if (fzWEALTHStake) {
         libzerocoin::CoinSpend spend = TxInToZerocoinSpend(block.vtx[1].vin[0]);
         pubkey = spend.getPubKey();
     } else {

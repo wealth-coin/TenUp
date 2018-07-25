@@ -1,7 +1,7 @@
 // Copyright (c) 2011-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2018 The PIVX developers
-// Copyright (c) 2015-2018 The WealthSilo developers
+// Copyright (c) 2018 The WealthSilo developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -291,7 +291,7 @@ WalletModel::SendCoinsReturn WalletModel::prepareTransaction(WalletModelTransact
                 return InvalidAmount;
             }
             total += subtotal;
-        } else { // User-entered tenup address / amount:
+        } else { // User-entered wealthsilo address / amount:
             if (!validateAddress(rcp.address)) {
                 return InvalidAddress;
             }
@@ -329,7 +329,7 @@ WalletModel::SendCoinsReturn WalletModel::prepareTransaction(WalletModelTransact
 
 
         if (recipients[0].useSwiftTX && total > GetSporkValue(SPORK_5_MAX_VALUE) * COIN) {
-            emit message(tr("Send Coins"), tr("SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 TUP.").arg(GetSporkValue(SPORK_5_MAX_VALUE)),
+            emit message(tr("Send Coins"), tr("SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 WEALTH.").arg(GetSporkValue(SPORK_5_MAX_VALUE)),
                 CClientUIInterface::MSG_ERROR);
             return TransactionCreationFailed;
         }
@@ -338,7 +338,7 @@ WalletModel::SendCoinsReturn WalletModel::prepareTransaction(WalletModelTransact
         transaction.setTransactionFee(nFeeRequired);
 
         if (recipients[0].useSwiftTX && newTx->GetValueOut() > GetSporkValue(SPORK_5_MAX_VALUE) * COIN) {
-            emit message(tr("Send Coins"), tr("SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 TUP.").arg(GetSporkValue(SPORK_5_MAX_VALUE)),
+            emit message(tr("Send Coins"), tr("SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 WEALTH.").arg(GetSporkValue(SPORK_5_MAX_VALUE)),
                 CClientUIInterface::MSG_ERROR);
             return TransactionCreationFailed;
         }
@@ -380,7 +380,7 @@ WalletModel::SendCoinsReturn WalletModel::sendCoins(WalletModelTransaction& tran
                 std::string value;
                 rcp.paymentRequest.SerializeToString(&value);
                 newTx->vOrderForm.push_back(make_pair(key, value));
-            } else if (!rcp.message.isEmpty()) // Message from normal tenup:URI (tenup:XyZ...?message=example)
+            } else if (!rcp.message.isEmpty()) // Message from normal wealthsilo:URI (wealthsilo:XyZ...?message=example)
             {
                 newTx->vOrderForm.push_back(make_pair("Message", rcp.message.toStdString()));
             }
@@ -574,9 +574,9 @@ static void NotifyZerocoinChanged(WalletModel* walletmodel, CWallet* wallet, con
                               Q_ARG(int, status));
 }
 
-static void NotifyzTUPReset(WalletModel* walletmodel)
+static void NotifyzWEALTHReset(WalletModel* walletmodel)
 {
-    qDebug() << "NotifyzTUPReset";
+    qDebug() << "NotifyzWEALTHReset";
     QMetaObject::invokeMethod(walletmodel, "checkBalanceChanged", Qt::QueuedConnection);
 }
 
@@ -614,7 +614,7 @@ void WalletModel::subscribeToCoreSignals()
     wallet->NotifyWatchonlyChanged.connect(boost::bind(NotifyWatchonlyChanged, this, _1));
     wallet->NotifyMultiSigChanged.connect(boost::bind(NotifyMultiSigChanged, this, _1));
     wallet->NotifyZerocoinChanged.connect(boost::bind(NotifyZerocoinChanged, this, _1, _2, _3, _4));
-    wallet->NotifyzTUPReset.connect(boost::bind(NotifyzTUPReset, this));
+    wallet->NotifyzWEALTHReset.connect(boost::bind(NotifyzWEALTHReset, this));
     wallet->NotifyWalletBacked.connect(boost::bind(NotifyWalletBacked, this, _1, _2));
 }
 
@@ -628,7 +628,7 @@ void WalletModel::unsubscribeFromCoreSignals()
     wallet->NotifyWatchonlyChanged.disconnect(boost::bind(NotifyWatchonlyChanged, this, _1));
     wallet->NotifyMultiSigChanged.disconnect(boost::bind(NotifyMultiSigChanged, this, _1));
     wallet->NotifyZerocoinChanged.disconnect(boost::bind(NotifyZerocoinChanged, this, _1, _2, _3, _4));
-    wallet->NotifyzTUPReset.disconnect(boost::bind(NotifyzTUPReset, this));
+    wallet->NotifyzWEALTHReset.disconnect(boost::bind(NotifyzWEALTHReset, this));
     wallet->NotifyWalletBacked.disconnect(boost::bind(NotifyWalletBacked, this, _1, _2));
 }
 
@@ -761,7 +761,7 @@ void WalletModel::listLockedCoins(std::vector<COutPoint>& vOutpts)
 void WalletModel::listZerocoinMints(std::set<CMintMeta>& setMints, bool fUnusedOnly, bool fMaturedOnly, bool fUpdateStatus)
 {
     setMints.clear();
-    setMints = pwalletMain->ztupTracker->ListMints(fUnusedOnly, fMaturedOnly, fUpdateStatus);
+    setMints = pwalletMain->zwealthTracker->ListMints(fUnusedOnly, fMaturedOnly, fUpdateStatus);
 }
 
 void WalletModel::loadReceiveRequests(std::vector<std::string>& vReceiveRequests)

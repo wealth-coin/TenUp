@@ -1,7 +1,7 @@
 // Copyright (c) 2011-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2018 The PIVX developers
-// Copyright (c) 2015-2018 The WealthSilo developers
+// Copyright (c) 2018 The WealthSilo developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -294,7 +294,7 @@ RPCConsole::RPCConsole(QWidget* parent) : QDialog(parent),
     ui->openSSLVersion->setText(SSLeay_version(SSLEAY_VERSION));
 #ifdef ENABLE_WALLET
     std::string strPathCustom = GetArg("-backuppath", "");
-    std::string strzTUPPathCustom = GetArg("-ztupbackuppath", "");
+    std::string strzWEALTHPathCustom = GetArg("-zwealthbackuppath", "");
     int nCustomBackupThreshold = GetArg("-custombackupthreshold", DEFAULT_CUSTOMBACKUPTHRESHOLD);
 
     if(!strPathCustom.empty()) {
@@ -303,13 +303,13 @@ RPCConsole::RPCConsole(QWidget* parent) : QDialog(parent),
         ui->wallet_custombackuppath->show();
     }
 
-    if(!strzTUPPathCustom.empty()) {
-        ui->wallet_customztupbackuppath->setText(QString::fromStdString(strzTUPPathCustom));
-        ui->wallet_customztupbackuppath_label->setVisible(true);
-        ui->wallet_customztupbackuppath->setVisible(true);
+    if(!strzWEALTHPathCustom.empty()) {
+        ui->wallet_customzwealthbackuppath->setText(QString::fromStdString(strzWEALTHPathCustom));
+        ui->wallet_customzwealthbackuppath_label->setVisible(true);
+        ui->wallet_customzwealthbackuppath->setVisible(true);
     }
 
-    if((!strPathCustom.empty() || !strzTUPPathCustom.empty()) && nCustomBackupThreshold > 0) {
+    if((!strPathCustom.empty() || !strzWEALTHPathCustom.empty()) && nCustomBackupThreshold > 0) {
         ui->wallet_custombackupthreshold->setText(QString::fromStdString(std::to_string(nCustomBackupThreshold)));
         ui->wallet_custombackupthreshold_label->setVisible(true);
         ui->wallet_custombackupthreshold->setVisible(true);

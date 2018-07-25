@@ -1,7 +1,7 @@
 // Copyright (c) 2011-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2018 The PIVX developers
-// Copyright (c) 2015-2018 The WealthSilo developers
+// Copyright (c) 2018 The WealthSilo developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -328,7 +328,7 @@ void BitcoinGUI::createActions(const NetworkStyle* networkStyle)
     tabGroup->addAction(sendCoinsAction);
 
     receiveCoinsAction = new QAction(QIcon(":/icons/receiving_addresses"), tr("&Receive"), this);
-    receiveCoinsAction->setStatusTip(tr("Request payments (generates QR codes and tenup: URIs)"));
+    receiveCoinsAction->setStatusTip(tr("Request payments (generates QR codes and wealthsilo: URIs)"));
     receiveCoinsAction->setToolTip(receiveCoinsAction->statusTip());
     receiveCoinsAction->setCheckable(true);
 #ifdef Q_OS_MAC
@@ -350,7 +350,7 @@ void BitcoinGUI::createActions(const NetworkStyle* networkStyle)
     tabGroup->addAction(historyAction);
 
     privacyAction = new QAction(QIcon(":/icons/privacy"), tr("&Privacy"), this);
-    privacyAction->setStatusTip(tr("Privacy Actions for zTUP"));
+    privacyAction->setStatusTip(tr("Privacy Actions for zWEALTH"));
     privacyAction->setToolTip(privacyAction->statusTip());
     privacyAction->setCheckable(true);
 #ifdef Q_OS_MAC

@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef TENUP_ZEROCOIN_H
-#define TENUP_ZEROCOIN_H
+#ifndef WEALTHSILO_ZEROCOIN_H
+#define WEALTHSILO_ZEROCOIN_H
 
 #include <amount.h>
 #include <limits.h>
@@ -248,4 +248,4 @@ public:
     int GetNeededSpends();
 };
 
-#endif //TENUP_ZEROCOIN_H
+#endif //WEALTHSILO_ZEROCOIN_H

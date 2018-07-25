@@ -176,7 +176,7 @@
         <translation>Потвърдете шифрирането на портфейла</translation>
     </message>
     <message>
-        <source>WealthSilo will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your TUPs from being stolen by malware infecting your computer.</source>
+        <source>WealthSilo will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your WEALTHs from being stolen by malware infecting your computer.</source>
         <translation>WealthSilo сега ще се затвори, за да довърши процеса по шифриране. Запомнете, че шифрирането на вашия портфейл не може напълно да защити вашия WealthSilo от това, да бъде откраднат чрез злонамерен софутуер, инфектирал вашия компютър.</translation>
     </message>
     <message>
@@ -184,8 +184,8 @@
         <translation>Сигурни ли сте, че искате да шифрирате вашия портфейл?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR TUP&lt;/b&gt;!</source>
-        <translation>&lt;b&gt;Внимание: Ако шифрирате вашия портфейл и загубите вашата парола, вие ще ЗАГУБИТЕ ВСИЧКИТЕ ВИ TUP&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR WEALTH&lt;/b&gt;!</source>
+        <translation>&lt;b&gt;Внимание: Ако шифрирате вашия портфейл и загубите вашата парола, вие ще ЗАГУБИТЕ ВСИЧКИТЕ ВИ WEALTH&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -433,8 +433,8 @@
         <translation>История на транзакциите</translation>
     </message>
     <message>
-        <source>Privacy Actions for zTUP</source>
-        <translation>Поверителни Действия за ZTUP</translation>
+        <source>Privacy Actions for zWEALTH</source>
+        <translation>Поверителни Действия за ZWEALTH</translation>
     </message>
     <message>
         <source>E&amp;xit</source>
@@ -653,7 +653,7 @@
         <translation>Изпратете монети до WealthSilo адрес</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and tenup: URIs)</source>
+        <source>Request payments (generates QR codes and wealthsilo: URIs)</source>
         <translation>Поискай плащане (генерира QR кодове и  WealthSilo:URI)</translation>
     </message>
     <message>
@@ -888,8 +888,8 @@ Address: %4
         <translation>ТекстовЕтикет</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (tenup.conf).</source>
-        <translation>Не всички преводи ще бъдат показани. За да разгледате всички преводи, трябва да зададете txindex=1 в конфигурационния файл (tenup.conf).</translation>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (wealthsilo.conf).</source>
+        <translation>Не всички преводи ще бъдат показани. За да разгледате всички преводи, трябва да зададете txindex=1 в конфигурационния файл (wealthsilo.conf).</translation>
     </message>
 </context>
 <context>
@@ -1126,8 +1126,8 @@ Address: %4
         <translation>Етикета става червен, когато получателя ще получи сума по-малка от %1.</translation>
     </message>
     <message>
-        <source>Can vary +/- %1 utup per input.</source>
-        <translation>Може да има разлика от +/- %1 utup на вх.</translation>
+        <source>Can vary +/- %1 uwealth per input.</source>
+        <translation>Може да има разлика от +/- %1 uwealth на вх.</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -1677,8 +1677,8 @@ Please be patient after clicking import.</source>
         <translation>Адрес / Сума:</translation>
     </message>
     <message>
-        <source>Add destinations to send TUP to</source>
-        <translation>Добави получател на TUP</translation>
+        <source>Add destinations to send WEALTH to</source>
+        <translation>Добави получател на WEALTH</translation>
     </message>
     <message>
         <source>Add &amp;Destination</source>
@@ -1776,32 +1776,32 @@ Please be patient after clicking import.</source>
         <translation>Изберете ниво на поверителност.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 25000 TUP</source>
-        <translation>Използвай 2 различни мастърноуда за смесване на средства над 25000 TUP</translation>
+        <source>Use 2 separate masternodes to mix funds up to 25000 WEALTH</source>
+        <translation>Използвай 2 различни мастърноуда за смесване на средства над 25000 WEALTH</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 25000 TUP</source>
-        <translation>Използвай 8 различни мастърноуда за да смесите средства до 25000 TUP</translation>
+        <source>Use 8 separate masternodes to mix funds up to 25000 WEALTH</source>
+        <translation>Използвай 8 различни мастърноуда за да смесите средства до 25000 WEALTH</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>Използвай 16 различни мастърноуда</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 TUP to anonymize 25000 TUP</source>
-        <translation>Това е най-бързия метод и ще струва около 0.025 TUP за да скриете 25000 TUP</translation>
+        <source>This option is the quickest and will cost about ~0.025 WEALTH to anonymize 25000 WEALTH</source>
+        <translation>Това е най-бързия метод и ще струва около 0.025 WEALTH за да скриете 25000 WEALTH</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 TUP to anonymize 25000 TUP</source>
-        <translation>Тази опция е сравнително бърза и ще струва около 0.05 TUP за да скриете 25000 TUP</translation>
+        <source>This option is moderately fast and will cost about 0.05 WEALTH to anonymize 25000 WEALTH</source>
+        <translation>Тази опция е сравнително бърза и ще струва около 0.05 WEALTH за да скриете 25000 WEALTH</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
-        <translation>Това е най-бавния и най-сигурен вариант за скриване на TUP. Използването й ще струва</translation>
+        <translation>Това е най-бавния и най-сигурен вариант за скриване на WEALTH. Използването й ще струва</translation>
     </message>
     <message>
-        <source>0.1 TUP per  10000 TUP you anonymize.</source>
-        <translation>0.1 TUP за  10000 скрити TUP</translation>
+        <source>0.1 WEALTH per  10000 WEALTH you anonymize.</source>
+        <translation>0.1 WEALTH за  10000 скрити WEALTH</translation>
     </message>
     <message>
         <source>Obfuscation Configuration</source>
@@ -1935,37 +1935,37 @@ Please be patient after clicking import.</source>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/tenup-project/tenup-project-translations</source>
+https://www.transifex.com/wealthsilo-project/wealthsilo-project-translations</source>
         <translation>Липсващ език или непълен превод? Помогнете с преводите тук:
-https://www.transifex.com/tenup-project/tenup-project-translations</translation>
+https://www.transifex.com/wealthsilo-project/wealthsilo-project-translations</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
         <translation>Картографирай портовете използвайки &amp;UPnP</translation>
     </message>
     <message>
-        <source>Enable automatic minting of TUP units to zTUP</source>
-        <translation>Включи автоматичното емитиране на TUP единици в zTUP</translation>
+        <source>Enable automatic minting of WEALTH units to zWEALTH</source>
+        <translation>Включи автоматичното емитиране на WEALTH единици в zWEALTH</translation>
     </message>
     <message>
-        <source>Enable zTUP Automint</source>
-        <translation>Включи Автоматично емитиране на zTUP</translation>
+        <source>Enable zWEALTH Automint</source>
+        <translation>Включи Автоматично емитиране на zWEALTH</translation>
     </message>
     <message>
-        <source>Percentage of incoming TUP which get automatically converted to zTUP via Zerocoin Protocol (min: 10%)</source>
-        <translation>Процент от входящите TUP, който автоматично да се конвертира в zTUP посредтвом Zerocoin Протокола (мин: 10%)</translation>
+        <source>Percentage of incoming WEALTH which get automatically converted to zWEALTH via Zerocoin Protocol (min: 10%)</source>
+        <translation>Процент от входящите WEALTH, който автоматично да се конвертира в zWEALTH посредтвом Zerocoin Протокола (мин: 10%)</translation>
     </message>
     <message>
-        <source>Percentage of autominted zTUP</source>
-        <translation>Процент автоматично сечени zTUP</translation>
+        <source>Percentage of autominted zWEALTH</source>
+        <translation>Процент автоматично сечени zWEALTH</translation>
     </message>
     <message>
-        <source>Wait with automatic conversion to Zerocoin until enough TUP for this denomination is available</source>
-        <translation>Не бързай с автоматичното конвертиране в zTUP докато не се съберат достатъчно TUP за тази деноминация</translation>
+        <source>Wait with automatic conversion to Zerocoin until enough WEALTH for this denomination is available</source>
+        <translation>Не бързай с автоматичното конвертиране в zWEALTH докато не се съберат достатъчно WEALTH за тази деноминация</translation>
     </message>
     <message>
-        <source>Preferred Automint zTUP Denomination</source>
-        <translation>Предпочитани деноминации, в които да се сече автоматичен zTUP</translation>
+        <source>Preferred Automint zWEALTH Denomination</source>
+        <translation>Предпочитани деноминации, в които да се сече автоматичен zWEALTH</translation>
     </message>
     <message>
         <source>Stake split threshold:</source>
@@ -2127,8 +2127,8 @@ https://www.transifex.com/tenup-project/tenup-project-translations</translation>
         <translation>Обща Наличност, включително и неналичните монети.</translation>
     </message>
     <message>
-        <source>TUP Balance</source>
-        <translation>TUP Наличности</translation>
+        <source>WEALTH Balance</source>
+        <translation>WEALTH Наличности</translation>
     </message>
     <message>
         <source>Pending:</source>
@@ -2155,8 +2155,8 @@ https://www.transifex.com/tenup-project/tenup-project-translations</translation>
         <translation>Вашите WealthSilo наличности, включително непотвърдените и неузрели преводи</translation>
     </message>
     <message>
-        <source>zTUP Balance</source>
-        <translation>zTUP Наличности</translation>
+        <source>zWEALTH Balance</source>
+        <translation>zWEALTH Наличности</translation>
     </message>
     <message>
         <source>The displayed information may be out of date. Your wallet automatically synchronizes with the WealthSilo network after a connection is established, but this process has not completed yet.</source>
@@ -2203,8 +2203,8 @@ https://www.transifex.com/tenup-project/tenup-project-translations</translation>
         <translation>Налични за харчене:</translation>
     </message>
     <message>
-        <source>Locked TUP or Masternode collaterals. These are excluded from zTUP minting.</source>
-        <translation>Заключен TUP или допълнителни гаранции в Главни Възли. Тези не са включени в zTUP емитирането.</translation>
+        <source>Locked WEALTH or Masternode collaterals. These are excluded from zWEALTH minting.</source>
+        <translation>Заключен WEALTH или допълнителни гаранции в Главни Възли. Тези не са включени в zWEALTH емитирането.</translation>
     </message>
     <message>
         <source>Locked:</source>
@@ -2215,8 +2215,8 @@ https://www.transifex.com/tenup-project/tenup-project-translations</translation>
         <translation>Непотвърден</translation>
     </message>
     <message>
-        <source>Your current zTUP balance, unconfirmed and immature zTUP included.</source>
-        <translation>Вашите zTUP наличности, включеително непотвърдените и неузрелите zTUP.</translation>
+        <source>Your current zWEALTH balance, unconfirmed and immature zWEALTH included.</source>
+        <translation>Вашите zWEALTH наличности, включеително непотвърдените и неузрелите zWEALTH.</translation>
     </message>
     <message>
         <source>Recent transactions</source>
@@ -2231,14 +2231,14 @@ https://www.transifex.com/tenup-project/tenup-project-translations</translation>
         <translation>АвтоЕмисията е включена и настроена на</translation>
     </message>
     <message>
-        <source>To disable AutoMint add 'enablezeromint=0' in tenup.conf.</source>
-        <translation>Да изключите АвтоЕмисия добавете  'enablezeromint=0' в tenup.conf файла.</translation>
+        <source>To disable AutoMint add 'enablezeromint=0' in wealthsilo.conf.</source>
+        <translation>Да изключите АвтоЕмисия добавете  'enablezeromint=0' в wealthsilo.conf файла.</translation>
     </message>
     <message>
         <source>AutoMint is currently disabled.
-To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in tenup.conf</source>
+To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in wealthsilo.conf</source>
         <translation>АвтоЕмисия е изключено.
-За да включите АвтоЕмисия сменете 'enablezeromint=0' на 'enablezeromint=1' в tenup.conf файла.</translation>
+За да включите АвтоЕмисия сменете 'enablezeromint=0' на 'enablezeromint=1' в wealthsilo.conf файла.</translation>
     </message>
 </context>
 <context>
@@ -2264,8 +2264,8 @@ To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in tenup.conf
         <translation>Грешен адрес за плащане %1</translation>
     </message>
     <message>
-        <source>Cannot start tenup: click-to-pay handler</source>
-        <translation>Провал при стартирането на tenup: click-to-pay обработвател</translation>
+        <source>Cannot start wealthsilo: click-to-pay handler</source>
+        <translation>Провал при стартирането на wealthsilo: click-to-pay обработвател</translation>
     </message>
     <message>
         <source>URI cannot be parsed! This can be caused by an invalid WealthSilo address or malformed URI parameters.</source>
@@ -2366,8 +2366,8 @@ To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in tenup.conf
         <translation>0</translation>
     </message>
     <message>
-        <source>zTUP</source>
-        <translation>zTUP</translation>
+        <source>zWEALTH</source>
+        <translation>zWEALTH</translation>
     </message>
     <message>
         <source>Available for minting are coins which are confirmed and not locked or Masternode collaterals.</source>
@@ -2378,8 +2378,8 @@ To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in tenup.conf
         <translation>Налични за сечене:</translation>
     </message>
     <message>
-        <source>0.000 000 00 TUP</source>
-        <translation>0.000 000 00 TUP</translation>
+        <source>0.000 000 00 WEALTH</source>
+        <translation>0.000 000 00 WEALTH</translation>
     </message>
     <message>
         <source>Reset Zerocoin Wallet DB. Deletes transactions that did not make it into the blockchain.</source>
@@ -2430,24 +2430,24 @@ To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in tenup.conf
         <translation>Похарчи Zerocoin</translation>
     </message>
     <message>
-        <source>Available (mature and spendable) zTUP for spending</source>
-        <translation>Налични (узрели и готови за харчене) zTUP за употреба</translation>
+        <source>Available (mature and spendable) zWEALTH for spending</source>
+        <translation>Налични (узрели и готови за харчене) zWEALTH за употреба</translation>
     </message>
     <message>
         <source>Available Balance:</source>
         <translation>Налични:</translation>
     </message>
     <message>
-        <source>Available (mature and spendable) zTUP for spending
+        <source>Available (mature and spendable) zWEALTH for spending
 
-zTUP are mature when they have more than 20 confirmations AND more than 2 mints of the same denomination after them were minted</source>
-        <translation>Налични (узрели и готови за харчене) zTUP за употреба
+zWEALTH are mature when they have more than 20 confirmations AND more than 2 mints of the same denomination after them were minted</source>
+        <translation>Налични (узрели и готови за харчене) zWEALTH за употреба
 
-zTUP са узрели, тогава когато имат повече от 20 потвърждения И повече от 2 емисии от същата деноминация след като са биле емитирани</translation>
+zWEALTH са узрели, тогава когато имат повече от 20 потвърждения И повече от 2 емисии от същата деноминация след като са биле емитирани</translation>
     </message>
     <message>
-        <source>0 zTUP</source>
-        <translation>0 zTUP</translation>
+        <source>0 zWEALTH</source>
+        <translation>0 zWEALTH</translation>
     </message>
     <message>
         <source>Security Level for Zerocoin Transactions. More is better, but needs more time and resources.</source>
@@ -2499,7 +2499,7 @@ zTUP са узрели, тогава когато имат повече от 20 
     </message>
     <message>
         <source>Convert Change to Zerocoin (might cost additional fees)</source>
-        <translation>Изсечи zTUP от рестото (ще струва допълнително заради таксите)</translation>
+        <translation>Изсечи zWEALTH от рестото (ще струва допълнително заради таксите)</translation>
     </message>
     <message>
         <source>If checked, the wallet tries to minimize the returning change instead of minimizing the number of spent denominations.</source>
@@ -2518,8 +2518,8 @@ zTUP са узрели, тогава когато имат повече от 20 
         <translation>Zerocoin статистика:</translation>
     </message>
     <message>
-        <source>Total Balance including unconfirmed and immature zTUP</source>
-        <translation>Обща Наличност включеително непотвърдените и неузрели zTUP</translation>
+        <source>Total Balance including unconfirmed and immature zWEALTH</source>
+        <translation>Обща Наличност включеително непотвърдените и неузрели zWEALTH</translation>
     </message>
     <message>
         <source>Total Zerocoin  Balance:</source>
@@ -2534,24 +2534,24 @@ zTUP са узрели, тогава когато имат повече от 20 
         <translation>Деном. със стойност 1:</translation>
     </message>
     <message>
-        <source>Show the current status of automatic zTUP minting.
+        <source>Show the current status of automatic zWEALTH minting.
 
 To change the status (restart required):
-- enable: add 'enablezeromint=1' to tenup.conf
-- disable: add 'enablezeromint=0' to tenup.conf
+- enable: add 'enablezeromint=1' to wealthsilo.conf
+- disable: add 'enablezeromint=0' to wealthsilo.conf
 
 To change the percentage (no restart required):
-- menu Settings-&gt;Options-&gt;Percentage of autominted zTUP
+- menu Settings-&gt;Options-&gt;Percentage of autominted zWEALTH
 
 </source>
-        <translation>Покажи състоянието на автоматичното zTUP емитиране.
+        <translation>Покажи състоянието на автоматичното zWEALTH емитиране.
 
 За да пормените състоянието (изисква рестарт):
-- вклчване: добавете 'enablezeromint=1' в tenup.conf
-- изключване: добавете 'enablezeromint=0' в tenup.conf
+- вклчване: добавете 'enablezeromint=1' в wealthsilo.conf
+- изключване: добавете 'enablezeromint=0' в wealthsilo.conf
 
 За промяна в процентите (не изисква рестарт):
-- меню Настройки -&gt; Опции -&gt; Процент на автоемитиран zTUP
+- меню Настройки -&gt; Опции -&gt; Процент на автоемитиран zWEALTH
 </translation>
     </message>
     <message>
@@ -2739,12 +2739,12 @@ To change the percentage (no restart required):
         <translation>Конфигуриран целеви процент: &lt;b&gt;</translation>
     </message>
     <message>
-        <source>zTUP is currently disabled due to maintenance.</source>
-        <translation>В момента zTUP не работи поради ремонт.</translation>
+        <source>zWEALTH is currently disabled due to maintenance.</source>
+        <translation>В момента zWEALTH не работи поради ремонт.</translation>
     </message>
     <message>
-        <source>zTUP is currently undergoing maintenance.</source>
-        <translation>В момента zTUP е в ремонт.</translation>
+        <source>zWEALTH is currently undergoing maintenance.</source>
+        <translation>В момента zWEALTH е в ремонт.</translation>
     </message>
     <message>
         <source>Denom. with value &lt;b&gt;1&lt;/b&gt;:</source>
@@ -2831,8 +2831,8 @@ To change the percentage (no restart required):
         <translation>Успешно изсечени</translation>
     </message>
     <message>
-        <source> zTUP in </source>
-        <translation>zTUP в</translation>
+        <source> zWEALTH in </source>
+        <translation>zWEALTH в</translation>
     </message>
     <message>
         <source> sec. Used denominations:
@@ -3670,8 +3670,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Размер на UTXO:</translation>
     </message>
     <message>
-        <source>0 TUP</source>
-        <translation>0 TUP</translation>
+        <source>0 WEALTH</source>
+        <translation>0 WEALTH</translation>
     </message>
     <message>
         <source>Transaction Fee:</source>
@@ -3726,12 +3726,12 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Автоматично избрани монети</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uTUPs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uTUPs in fee,&lt;br /&gt;while "at least" pays 1000 uTUPs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Ако собствената такса е настроена на 1000 uTUP и превода е само 250 байта, то тогава "за килобайт" само плаща 250 uTUP входяща такса, &lt;br /&gt;докато "минимална сума" плаща 1000 uTUP. За транзакции по-големи от килобайт, и двете плащат за килобайт.</translation>
+        <source>If the custom fee is set to 1000 uWEALTHs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uWEALTHs in fee,&lt;br /&gt;while "at least" pays 1000 uWEALTHs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Ако собствената такса е настроена на 1000 uWEALTH и превода е само 250 байта, то тогава "за килобайт" само плаща 250 uWEALTH входяща такса, &lt;br /&gt;докато "минимална сума" плаща 1000 uWEALTH. За транзакции по-големи от килобайт, и двете плащат за килобайт.</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uTUPs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uTUPs in fee,&lt;br /&gt;while "total at least" pays 1000 uTUPs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Ако собствената такса е настроена на 1000 uTUP и превода е само 250 байта, то тогава "за килобайт" само плаща 250 uTUP входяща такса,&lt;br /&gt; докато "минимална сума" плаща 1000 uTUP. За транзакции по-големи от килобайт, и двете плащат за килобайт.</translation>
+        <source>If the custom fee is set to 1000 uWEALTHs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uWEALTHs in fee,&lt;br /&gt;while "total at least" pays 1000 uWEALTHs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Ако собствената такса е настроена на 1000 uWEALTH и превода е само 250 байта, то тогава "за килобайт" само плаща 250 uWEALTH входяща такса,&lt;br /&gt; докато "минимална сума" плаща 1000 uWEALTH. За транзакции по-големи от килобайт, и двете плащат за килобайт.</translation>
     </message>
     <message>
         <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for WealthSilo transactions than the network can process.</source>
@@ -3782,8 +3782,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Добави Получател</translation>
     </message>
     <message>
-        <source>Anonymized TUP</source>
-        <translation>Анонимизиран TUP</translation>
+        <source>Anonymized WEALTH</source>
+        <translation>Анонимизиран WEALTH</translation>
     </message>
     <message>
         <source>Balance:</source>
@@ -3831,7 +3831,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <source>Warning: Invalid WealthSilo address</source>
-        <translation>Предупреждение: Невалиден TUP адрес</translation>
+        <translation>Предупреждение: Невалиден WEALTH адрес</translation>
     </message>
     <message>
         <source>%1 to %2</source>
@@ -4702,8 +4702,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Изпрати Монети</translation>
     </message>
     <message>
-        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 TUP.</source>
-        <translation>SwiftTX не подържа изпращането на толкова големи суми. Превода е ограничен до %1 TUP.</translation>
+        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 WEALTH.</source>
+        <translation>SwiftTX не подържа изпращането на толкова големи суми. Превода е ограничен до %1 WEALTH.</translation>
     </message>
 </context>
 <context>
@@ -4734,7 +4734,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
 </context>
 <context>
-    <name>ZTupControlDialog</name>
+    <name>ZWealthControlDialog</name>
     <message>
         <source>Quantity</source>
         <translation>Количество</translation>
@@ -4744,8 +4744,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>0</translation>
     </message>
     <message>
-        <source>zTUP</source>
-        <translation>zTUP</translation>
+        <source>zWEALTH</source>
+        <translation>zWEALTH</translation>
     </message>
     <message>
         <source>Select/Deselect All</source>
@@ -4757,7 +4757,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
 </context>
 <context>
-    <name>tenup-core</name>
+    <name>wealthsilo-core</name>
     <message>
         <source>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</source>
         <translation>(1 = пази мета данните от преводи, например собственик на акаунта и ифнормация за изисквани плащания, 2 = изхръвли мета данните от преводи)</translation>
@@ -4839,12 +4839,12 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Командата влиза в сила, когато най-добрия блок се промени (%s в cmd се замества от хаш на блока)</translation>
     </message>
     <message>
-        <source>Fees (in TUP/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>Такси (в TUP/Кб) по-малки от това се считат за нулеви при препращане (default: %s)</translation>
+        <source>Fees (in WEALTH/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>Такси (в WEALTH/Кб) по-малки от това се считат за нулеви при препращане (default: %s)</translation>
     </message>
     <message>
-        <source>Fees (in TUP/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>Такси (в TUP/Кб) по-малки от това се считат за нулеви при създаване на предовда (default: %s)</translation>
+        <source>Fees (in WEALTH/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>Такси (в WEALTH/Кб) по-малки от това се считат за нулеви при създаване на предовда (default: %s)</translation>
     </message>
     <message>
         <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</source>
@@ -4951,12 +4951,12 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Не намираме достатъчно Обфускационно деноминирани средства за този превод.</translation>
     </message>
     <message>
-        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 25000 TUP.</source>
-        <translation>Не можем да намерим достатъчно Обфускационно не-деноминирани средства за този превод, които да не са равни на 25000 TUP.</translation>
+        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 25000 WEALTH.</source>
+        <translation>Не можем да намерим достатъчно Обфускационно не-деноминирани средства за този превод, които да не са равни на 25000 WEALTH.</translation>
     </message>
     <message>
-        <source>Unable to locate enough funds for this transaction that are not equal 25000 TUP.</source>
-        <translation>Не намираме достатъчно средства за този превод, които да не са равни на 25000 TUP.</translation>
+        <source>Unable to locate enough funds for this transaction that are not equal 25000 WEALTH.</source>
+        <translation>Не намираме достатъчно средства за този превод, които да не са равни на 25000 WEALTH.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
@@ -5267,8 +5267,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Неуспешно четене на блок</translation>
     </message>
     <message>
-        <source>Fee (in TUP/kB) to add to transactions you send (default: %s)</source>
-        <translation>Такса (в TUP/kB), която да се добави към изходящи преводи (по подразбиране: %s)</translation>
+        <source>Fee (in WEALTH/kB) to add to transactions you send (default: %s)</source>
+        <translation>Такса (в WEALTH/kB), която да се добави към изходящи преводи (по подразбиране: %s)</translation>
     </message>
     <message>
         <source>Finalizing transaction.</source>
@@ -5399,8 +5399,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Процент автоматично емитирани Zerocoin (1-100, по подразбиране: %u)</translation>
     </message>
     <message>
-        <source>Reindex the TUP and zTUP money supply statistics</source>
-        <translation>Индексирай наново TUP и zTUP данните по наличности</translation>
+        <source>Reindex the WEALTH and zWEALTH money supply statistics</source>
+        <translation>Индексирай наново WEALTH и zWEALTH данните по наличности</translation>
     </message>
     <message>
         <source>SwiftX options:</source>

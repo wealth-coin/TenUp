@@ -3,7 +3,7 @@ WealthSilo Core
 
 Setup
 ---------------------
-[WealthSilo Core](http://tenup.io/wallet) is the original WealthSilo client and it builds the backbone of the network. However, it downloads and stores the entire history of WealthSilo transactions; depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more. Thankfully you only have to do this once.
+[WealthSilo Core](http://wealthsilo.io/wallet) is the original WealthSilo client and it builds the backbone of the network. However, it downloads and stores the entire history of WealthSilo transactions; depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more. Thankfully you only have to do this once.
 
 Running
 ---------------------
@@ -13,12 +13,12 @@ The following are some helpful notes on how to run WealthSilo on your native pla
 
 Unpack the files into a directory and run:
 
-- bin/32/tenup-qt (GUI, 32-bit) or bin/32/tenupd (headless, 32-bit)
-- bin/64/tenup-qt (GUI, 64-bit) or bin/64/tenupd (headless, 64-bit)
+- bin/32/wealthsilo-qt (GUI, 32-bit) or bin/32/wealthsilod (headless, 32-bit)
+- bin/64/wealthsilo-qt (GUI, 64-bit) or bin/64/wealthsilod (headless, 64-bit)
 
 ### Windows
 
-Unpack the files into a directory, and then run tenup-qt.exe.
+Unpack the files into a directory, and then run wealthsilo-qt.exe.
 
 ### OSX
 
@@ -28,9 +28,9 @@ Drag Tenup-Qt to your applications folder, and then run Tenup-Qt.
 
 * See the documentation at the [WealthSilo Wiki](https://en.bitcoin.it/wiki/Main_Page) ***TODO***
 for help and more information.
-* Ask for help on [BitcoinTalk](https://bitcointalk.org/index.php?topic=1262920.0) or on the [WealthSilo Forum](http://forum.tenup.io/).
-* Join our Discord server [Discord Server](https://discord.tenup.io)
-* Join one of our Slack groups [WealthSilo Slack Groups](https://tenup.io/slack-logins/) (Main community is replaced by Discord).
+* Ask for help on [BitcoinTalk](https://bitcointalk.org/index.php?topic=1262920.0) or on the [WealthSilo Forum](http://forum.wealthsilo.io/).
+* Join our Discord server [Discord Server](https://discord.wealthsilo.io)
+* Join one of our Slack groups [WealthSilo Slack Groups](https://wealthsilo.io/slack-logins/) (Main community is replaced by Discord).
 
 Building
 ---------------------
@@ -42,7 +42,7 @@ The following are developer notes on how to build WealthSilo on your native plat
 
 Development
 ---------------------
-The Tenup repo's [root README](https://github.com/tenup-coin/WealthSilo/blob/master/README.md) contains relevant information on the development process and automated testing.
+The Tenup repo's [root README](https://github.com/wealthsilo-coin/WealthSilo/blob/master/README.md) contains relevant information on the development process and automated testing.
 
 - [Developer Notes](developer-notes.md)
 - [Multiwallet Qt Development](multiwallet-qt.md)
@@ -56,8 +56,8 @@ The Tenup repo's [root README](https://github.com/tenup-coin/WealthSilo/blob/mas
 
 ### Resources
 
-* Discuss on the [BitcoinTalk](https://bitcointalk.org/index.php?topic=1262920.0) or the [WealthSilo](http://forum.tenup.io/) forum.
-* Join the [WealthSilo-Dev](https://tenup-dev.slack.com/) Slack group ([Sign-Up](https://tenup-dev.herokuapp.com/)).
+* Discuss on the [BitcoinTalk](https://bitcointalk.org/index.php?topic=1262920.0) or the [WealthSilo](http://forum.wealthsilo.io/) forum.
+* Join the [WealthSilo-Dev](https://wealthsilo-dev.slack.com/) Slack group ([Sign-Up](https://wealthsilo-dev.herokuapp.com/)).
 
 ### Miscellaneous
 - [Assets Attribution](assets-attribution.md)

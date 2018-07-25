@@ -43,11 +43,11 @@
     </message>
     <message>
         <source>Choose the address to send coins to</source>
-        <translation>選擇要匯出TenUp幣的位址</translation>
+        <translation>選擇要匯出WealthSilo幣的位址</translation>
     </message>
     <message>
         <source>Choose the address to receive coins with</source>
-        <translation>選擇要接收TenUp幣的位址</translation>
+        <translation>選擇要接收WealthSilo幣的位址</translation>
     </message>
     <message>
         <source>C&amp;hoose</source>
@@ -164,16 +164,16 @@
         <translation>錢包確認加密</translation>
     </message>
     <message>
-        <source>WealthSilo will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your TUPs from being stolen by malware infecting your computer.</source>
-        <translation>WealthSilo 現在會關閉程式來處理加密流程, 請注意, 僅僅是加密你的錢包並不能完全保護你的 TUP 幣被可疑軟體或病毒偷走的風險.</translation>
+        <source>WealthSilo will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your WEALTHs from being stolen by malware infecting your computer.</source>
+        <translation>WealthSilo 現在會關閉程式來處理加密流程, 請注意, 僅僅是加密你的錢包並不能完全保護你的 WEALTH 幣被可疑軟體或病毒偷走的風險.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>確定要加密你的錢包?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR TUP&lt;/b&gt;!</source>
-        <translation>請注意: 如果你加密了你的錢包但是卻忘記你設定的密碼, &lt;b&gt;你將會失去錢包裡的錢(TUP)&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR WEALTH&lt;/b&gt;!</source>
+        <translation>請注意: 如果你加密了你的錢包但是卻忘記你設定的密碼, &lt;b&gt;你將會失去錢包裡的錢(WEALTH)&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -565,8 +565,8 @@
         <translation>送出錢幣到 WealthSilo 地址</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and tenup: URIs)</source>
-        <translation>請求付款 (會產生 QR Code跟 tenup 位址)</translation>
+        <source>Request payments (generates QR codes and wealthsilo: URIs)</source>
+        <translation>請求付款 (會產生 QR Code跟 wealthsilo 位址)</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -626,7 +626,7 @@
     </message>
     <message>
         <source>Open a WealthSilo: URI or payment request</source>
-        <translation>打開TenUp: 位址或付款請求 </translation>
+        <translation>打開WealthSilo: 位址或付款請求 </translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -957,9 +957,9 @@
     </message>
     </context>
 <context>
-    <name>ZTupControlDialog</name>
+    <name>ZWealthControlDialog</name>
     </context>
 <context>
-    <name>tenup-core</name>
+    <name>wealthsilo-core</name>
     </context>
 </TS>

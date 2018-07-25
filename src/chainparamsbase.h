@@ -11,7 +11,7 @@
 #include <vector>
 
 /**
- * CBaseChainParams defines the base parameters (shared between tenup-cli and tenupd)
+ * CBaseChainParams defines the base parameters (shared between wealthsilo-cli and wealthsilod)
  * of a given instance of the Tenup system.
  */
 class CBaseChainParams

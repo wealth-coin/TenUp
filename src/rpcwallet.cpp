@@ -2,7 +2,7 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2018 The PIVX developers
-// Copyright (c) 2015-2018 The WealthSilo developers
+// Copyright (c) 2018 The WealthSilo developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -93,7 +93,7 @@ UniValue getnewaddress(const UniValue& params, bool fHelp)
             "1. \"account\"        (string, optional) The account name for the address to be linked to. if not provided, the default account \"\" is used. It can also be set to the empty string \"\" to represent the default account. The account does not need to exist, it will be created if there is no account by the given name.\n"
 
             "\nResult:\n"
-            "\"tenupaddress\"    (string) The new tenup address\n"
+            "\"wealthsiloaddress\"    (string) The new wealthsilo address\n"
 
             "\nExamples:\n" +
             HelpExampleCli("getnewaddress", "") + HelpExampleCli("getnewaddress", "\"\"") +
@@ -166,7 +166,7 @@ UniValue getaccountaddress(const UniValue& params, bool fHelp)
             "1. \"account\"       (string, required) The account name for the address. It can also be set to the empty string \"\" to represent the default account. The account does not need to exist, it will be created and a new address created  if there is no account by the given name.\n"
 
             "\nResult:\n"
-            "\"tenupaddress\"   (string) The account tenup address\n"
+            "\"wealthsiloaddress\"   (string) The account wealthsilo address\n"
 
             "\nExamples:\n" +
             HelpExampleCli("getaccountaddress", "") + HelpExampleCli("getaccountaddress", "\"\"") +
@@ -220,11 +220,11 @@ UniValue setaccount(const UniValue& params, bool fHelp)
 {
     if (fHelp || params.size() < 1 || params.size() > 2)
         throw runtime_error(
-            "setaccount \"tenupaddress\" \"account\"\n"
+            "setaccount \"wealthsiloaddress\" \"account\"\n"
             "\nSets the account associated with the given address.\n"
 
             "\nArguments:\n"
-            "1. \"tenupaddress\"  (string, required) The tenup address to be associated with an account.\n"
+            "1. \"wealthsiloaddress\"  (string, required) The wealthsilo address to be associated with an account.\n"
             "2. \"account\"         (string, required) The account to assign the address to.\n"
 
             "\nExamples:\n" +
@@ -261,11 +261,11 @@ UniValue getaccount(const UniValue& params, bool fHelp)
 {
     if (fHelp || params.size() != 1)
         throw runtime_error(
-            "getaccount \"tenupaddress\"\n"
+            "getaccount \"wealthsiloaddress\"\n"
             "\nReturns the account associated with the given address.\n"
 
             "\nArguments:\n"
-            "1. \"tenupaddress\"  (string, required) The tenup address for account lookup.\n"
+            "1. \"wealthsiloaddress\"  (string, required) The wealthsilo address for account lookup.\n"
 
             "\nResult:\n"
             "\"accountname\"        (string) the account address\n"
@@ -299,7 +299,7 @@ UniValue getaddressesbyaccount(const UniValue& params, bool fHelp)
 
             "\nResult:\n"
             "[                     (json array of string)\n"
-            "  \"tenupaddress\"  (string) a tenup address associated with the given account\n"
+            "  \"wealthsiloaddress\"  (string) a wealthsilo address associated with the given account\n"
             "  ,...\n"
             "]\n"
 
@@ -357,13 +357,13 @@ UniValue sendtoaddress(const UniValue& params, bool fHelp)
 {
     if (fHelp || params.size() < 2 || params.size() > 4)
         throw runtime_error(
-            "sendtoaddress \"tenupaddress\" amount ( \"comment\" \"comment-to\" )\n"
+            "sendtoaddress \"wealthsiloaddress\" amount ( \"comment\" \"comment-to\" )\n"
             "\nSend an amount to a given address. The amount is a real and is rounded to the nearest 0.00000001\n" +
             HelpRequiringPassphrase() + "\n"
 
             "\nArguments:\n"
-            "1. \"tenupaddress\"  (string, required) The tenup address to send to.\n"
-            "2. \"amount\"      (numeric, required) The amount in TUP to send. eg 0.1\n"
+            "1. \"wealthsiloaddress\"  (string, required) The wealthsilo address to send to.\n"
+            "2. \"amount\"      (numeric, required) The amount in WEALTH to send. eg 0.1\n"
             "3. \"comment\"     (string, optional) A comment used to store what the transaction is for. \n"
             "                             This is not part of the transaction, just kept in your wallet.\n"
             "4. \"comment-to\"  (string, optional) A comment to store the name of the person or organization \n"
@@ -405,13 +405,13 @@ UniValue sendtoaddressix(const UniValue& params, bool fHelp)
 {
     if (fHelp || params.size() < 2 || params.size() > 4)
         throw runtime_error(
-            "sendtoaddressix \"tenupaddress\" amount ( \"comment\" \"comment-to\" )\n"
+            "sendtoaddressix \"wealthsiloaddress\" amount ( \"comment\" \"comment-to\" )\n"
             "\nSend an amount to a given address. The amount is a real and is rounded to the nearest 0.00000001\n" +
             HelpRequiringPassphrase() + "\n"
 
             "\nArguments:\n"
-            "1. \"tenupaddress\"  (string, required) The tenup address to send to.\n"
-            "2. \"amount\"      (numeric, required) The amount in TUP to send. eg 0.1\n"
+            "1. \"wealthsiloaddress\"  (string, required) The wealthsilo address to send to.\n"
+            "2. \"amount\"      (numeric, required) The amount in WEALTH to send. eg 0.1\n"
             "3. \"comment\"     (string, optional) A comment used to store what the transaction is for. \n"
             "                             This is not part of the transaction, just kept in your wallet.\n"
             "4. \"comment-to\"  (string, optional) A comment to store the name of the person or organization \n"
@@ -462,8 +462,8 @@ UniValue listaddressgroupings(const UniValue& params, bool fHelp)
             "[\n"
             "  [\n"
             "    [\n"
-            "      \"tenupaddress\",     (string) The tenup address\n"
-            "      amount,                 (numeric) The amount in TUP\n"
+            "      \"wealthsiloaddress\",     (string) The wealthsilo address\n"
+            "      amount,                 (numeric) The amount in WEALTH\n"
             "      \"account\"             (string, optional) The account\n"
             "    ]\n"
             "    ,...\n"
@@ -499,12 +499,12 @@ UniValue signmessage(const UniValue& params, bool fHelp)
 {
     if (fHelp || params.size() != 2)
         throw runtime_error(
-            "signmessage \"tenupaddress\" \"message\"\n"
+            "signmessage \"wealthsiloaddress\" \"message\"\n"
             "\nSign a message with the private key of an address" +
             HelpRequiringPassphrase() + "\n"
 
             "\nArguments:\n"
-            "1. \"tenupaddress\"  (string, required) The tenup address to use for the private key.\n"
+            "1. \"wealthsiloaddress\"  (string, required) The wealthsilo address to use for the private key.\n"
             "2. \"message\"         (string, required) The message to create a signature of.\n"
 
             "\nResult:\n"
@@ -554,15 +554,15 @@ UniValue getreceivedbyaddress(const UniValue& params, bool fHelp)
 {
     if (fHelp || params.size() < 1 || params.size() > 2)
         throw runtime_error(
-            "getreceivedbyaddress \"tenupaddress\" ( minconf )\n"
-            "\nReturns the total amount received by the given tenupaddress in transactions with at least minconf confirmations.\n"
+            "getreceivedbyaddress \"wealthsiloaddress\" ( minconf )\n"
+            "\nReturns the total amount received by the given wealthsiloaddress in transactions with at least minconf confirmations.\n"
 
             "\nArguments:\n"
-            "1. \"tenupaddress\"  (string, required) The tenup address for transactions.\n"
+            "1. \"wealthsiloaddress\"  (string, required) The wealthsilo address for transactions.\n"
             "2. minconf             (numeric, optional, default=1) Only include transactions confirmed at least this many times.\n"
 
             "\nResult:\n"
-            "amount   (numeric) The total amount in TUP received at this address.\n"
+            "amount   (numeric) The total amount in WEALTH received at this address.\n"
 
             "\nExamples:\n"
             "\nThe amount from transactions with at least 1 confirmation\n" +
@@ -576,7 +576,7 @@ UniValue getreceivedbyaddress(const UniValue& params, bool fHelp)
 
     LOCK2(cs_main, pwalletMain->cs_wallet);
 
-    // tenup address
+    // wealthsilo address
     CBitcoinAddress address = CBitcoinAddress(params[0].get_str());
     if (!address.IsValid())
         throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid WealthSilo address");
@@ -618,7 +618,7 @@ UniValue getreceivedbyaccount(const UniValue& params, bool fHelp)
             "2. minconf          (numeric, optional, default=1) Only include transactions confirmed at least this many times.\n"
 
             "\nResult:\n"
-            "amount              (numeric) The total amount in TUP received for this account.\n"
+            "amount              (numeric) The total amount in WEALTH received for this account.\n"
 
             "\nExamples:\n"
             "\nAmount received by the default account with at least 1 confirmation\n" +
@@ -707,7 +707,7 @@ UniValue getbalance(const UniValue& params, bool fHelp)
             "3. includeWatchonly (bool, optional, default=false) Also include balance in watchonly addresses (see 'importaddress')\n"
 
             "\nResult:\n"
-            "amount              (numeric) The total amount in TUP received for this account.\n"
+            "amount              (numeric) The total amount in WEALTH received for this account.\n"
 
             "\nExamples:\n"
             "\nThe total amount in the server across all accounts\n" +
@@ -797,9 +797,9 @@ UniValue movecmd(const UniValue& params, bool fHelp)
             "true|false           (boolean) true if successfull.\n"
 
             "\nExamples:\n"
-            "\nMove 0.01 TUP from the default account to the account named tabby\n" +
+            "\nMove 0.01 WEALTH from the default account to the account named tabby\n" +
             HelpExampleCli("move", "\"\" \"tabby\" 0.01") +
-            "\nMove 0.01 TUP from timotei to akiko with a comment and funds have 6 confirmations\n" +
+            "\nMove 0.01 WEALTH from timotei to akiko with a comment and funds have 6 confirmations\n" +
             HelpExampleCli("move", "\"timotei\" \"akiko\" 0.01 6 \"happy birthday!\"") +
             "\nAs a json rpc call\n" +
             HelpExampleRpc("move", "\"timotei\", \"akiko\", 0.01, 6, \"happy birthday!\""));
@@ -853,15 +853,15 @@ UniValue sendfrom(const UniValue& params, bool fHelp)
 {
     if (fHelp || params.size() < 3 || params.size() > 6)
         throw runtime_error(
-            "sendfrom \"fromaccount\" \"totenupaddress\" amount ( minconf \"comment\" \"comment-to\" )\n"
-            "\nSent an amount from an account to a tenup address.\n"
+            "sendfrom \"fromaccount\" \"towealthsiloaddress\" amount ( minconf \"comment\" \"comment-to\" )\n"
+            "\nSent an amount from an account to a wealthsilo address.\n"
             "The amount is a real and is rounded to the nearest 0.00000001." +
             HelpRequiringPassphrase() + "\n"
 
             "\nArguments:\n"
             "1. \"fromaccount\"       (string, required) The name of the account to send funds from. May be the default account using \"\".\n"
-            "2. \"totenupaddress\"  (string, required) The tenup address to send funds to.\n"
-            "3. amount                (numeric, required) The amount in TUP. (transaction fee is added on top).\n"
+            "2. \"towealthsiloaddress\"  (string, required) The wealthsilo address to send funds to.\n"
+            "3. amount                (numeric, required) The amount in WEALTH. (transaction fee is added on top).\n"
             "4. minconf               (numeric, optional, default=1) Only use funds with at least this many confirmations.\n"
             "5. \"comment\"           (string, optional) A comment used to store what the transaction is for. \n"
             "                                     This is not part of the transaction, just kept in your wallet.\n"
@@ -873,7 +873,7 @@ UniValue sendfrom(const UniValue& params, bool fHelp)
             "\"transactionid\"        (string) The transaction id.\n"
 
             "\nExamples:\n"
-            "\nSend 0.01 TUP from the default account to the address, must have at least 1 confirmation\n" +
+            "\nSend 0.01 WEALTH from the default account to the address, must have at least 1 confirmation\n" +
             HelpExampleCli("sendfrom", "\"\" \"TKsuLoLmRt9PYWg9MAaRK1M8KcmST1jNnu\" 0.01") +
             "\nSend 0.01 from the tabby account to the given address, funds must have at least 6 confirmations\n" +
             HelpExampleCli("sendfrom", "\"tabby\" \"TKsuLoLmRt9PYWg9MAaRK1M8KcmST1jNnu\" 0.01 6 \"donation\" \"seans outpost\"") +
@@ -923,7 +923,7 @@ UniValue sendmany(const UniValue& params, bool fHelp)
             "1. \"fromaccount\"         (string, required) The account to send the funds from, can be \"\" for the default account\n"
             "2. \"amounts\"             (string, required) A json object with addresses and amounts\n"
             "    {\n"
-            "      \"address\":amount   (numeric) The tenup address is the key, the numeric amount in TUP is the value\n"
+            "      \"address\":amount   (numeric) The wealthsilo address is the key, the numeric amount in WEALTH is the value\n"
             "      ,...\n"
             "    }\n"
             "3. minconf                 (numeric, optional, default=1) Only use the balance confirmed at least this many times.\n"
@@ -1009,15 +1009,15 @@ UniValue addmultisigaddress(const UniValue& params, bool fHelp)
 
             "\nArguments:\n"
             "1. nrequired        (numeric, required) The number of required signatures out of the n keys or addresses.\n"
-            "2. \"keysobject\"   (string, required) A json array of tenup addresses or hex-encoded public keys\n"
+            "2. \"keysobject\"   (string, required) A json array of wealthsilo addresses or hex-encoded public keys\n"
             "     [\n"
-            "       \"address\"  (string) tenup address or hex-encoded public key\n"
+            "       \"address\"  (string) wealthsilo address or hex-encoded public key\n"
             "       ...,\n"
             "     ]\n"
             "3. \"account\"      (string, optional) An account to assign the addresses to.\n"
 
             "\nResult:\n"
-            "\"tenupaddress\"  (string) A tenup address associated with the keys.\n"
+            "\"wealthsiloaddress\"  (string) A wealthsilo address associated with the keys.\n"
 
             "\nExamples:\n"
             "\nAdd a multisig address from 2 addresses\n" +
@@ -1189,7 +1189,7 @@ UniValue listreceivedbyaddress(const UniValue& params, bool fHelp)
             "    \"involvesWatchonly\" : \"true\",    (bool) Only returned if imported addresses were involved in transaction\n"
             "    \"address\" : \"receivingaddress\",  (string) The receiving address\n"
             "    \"account\" : \"accountname\",       (string) The account of the receiving address. The default account is \"\".\n"
-            "    \"amount\" : x.xxx,                  (numeric) The total amount in TUP received by the address\n"
+            "    \"amount\" : x.xxx,                  (numeric) The total amount in WEALTH received by the address\n"
             "    \"confirmations\" : n                (numeric) The number of confirmations of the most recent transaction included\n"
             "    \"bcconfirmations\" : n              (numeric) The number of blockchain confirmations of the most recent transaction included\n"
             "  }\n"
@@ -1341,17 +1341,17 @@ UniValue listtransactions(const UniValue& params, bool fHelp)
             "  {\n"
             "    \"account\":\"accountname\",       (string) The account name associated with the transaction. \n"
             "                                                It will be \"\" for the default account.\n"
-            "    \"address\":\"tenupaddress\",    (string) The tenup address of the transaction. Not present for \n"
+            "    \"address\":\"wealthsiloaddress\",    (string) The wealthsilo address of the transaction. Not present for \n"
             "                                                move transactions (category = move).\n"
             "    \"category\":\"send|receive|move\", (string) The transaction category. 'move' is a local (off blockchain)\n"
             "                                                transaction between accounts, and not associated with an address,\n"
             "                                                transaction id or block. 'send' and 'receive' transactions are \n"
             "                                                associated with an address, transaction id and block details\n"
-            "    \"amount\": x.xxx,          (numeric) The amount in TUP. This is negative for the 'send' category, and for the\n"
+            "    \"amount\": x.xxx,          (numeric) The amount in WEALTH. This is negative for the 'send' category, and for the\n"
             "                                         'move' category for moves outbound. It is positive for the 'receive' category,\n"
             "                                         and for the 'move' category for inbound funds.\n"
             "    \"vout\" : n,               (numeric) the vout value\n"
-            "    \"fee\": x.xxx,             (numeric) The amount of the fee in TUP. This is negative and only available for the \n"
+            "    \"fee\": x.xxx,             (numeric) The amount of the fee in WEALTH. This is negative and only available for the \n"
             "                                         'send' category of transactions.\n"
             "    \"confirmations\": n,       (numeric) The number of confirmations for the transaction. Available for 'send' and \n"
             "                                         'receive' category of transactions.\n"
@@ -1536,12 +1536,12 @@ UniValue listsinceblock(const UniValue& params, bool fHelp)
             "{\n"
             "  \"transactions\": [\n"
             "    \"account\":\"accountname\",       (string) The account name associated with the transaction. Will be \"\" for the default account.\n"
-            "    \"address\":\"tenupaddress\",    (string) The tenup address of the transaction. Not present for move transactions (category = move).\n"
+            "    \"address\":\"wealthsiloaddress\",    (string) The wealthsilo address of the transaction. Not present for move transactions (category = move).\n"
             "    \"category\":\"send|receive\",     (string) The transaction category. 'send' has negative amounts, 'receive' has positive amounts.\n"
-            "    \"amount\": x.xxx,          (numeric) The amount in TUP. This is negative for the 'send' category, and for the 'move' category for moves \n"
+            "    \"amount\": x.xxx,          (numeric) The amount in WEALTH. This is negative for the 'send' category, and for the 'move' category for moves \n"
             "                                          outbound. It is positive for the 'receive' category, and for the 'move' category for inbound funds.\n"
             "    \"vout\" : n,               (numeric) the vout value\n"
-            "    \"fee\": x.xxx,             (numeric) The amount of the fee in TUP. This is negative and only available for the 'send' category of transactions.\n"
+            "    \"fee\": x.xxx,             (numeric) The amount of the fee in WEALTH. This is negative and only available for the 'send' category of transactions.\n"
             "    \"confirmations\": n,       (numeric) The number of confirmations for the transaction. Available for 'send' and 'receive' category of transactions.\n"
             "    \"bcconfirmations\" : n,    (numeric) The number of blockchain confirmations for the transaction. Available for 'send' and 'receive' category of transactions.\n"
             "    \"blockhash\": \"hashvalue\",     (string) The block hash containing the transaction. Available for 'send' and 'receive' category of transactions.\n"
@@ -1621,7 +1621,7 @@ UniValue gettransaction(const UniValue& params, bool fHelp)
 
             "\nResult:\n"
             "{\n"
-            "  \"amount\" : x.xxx,        (numeric) The transaction amount in TUP\n"
+            "  \"amount\" : x.xxx,        (numeric) The transaction amount in WEALTH\n"
             "  \"confirmations\" : n,     (numeric) The number of confirmations\n"
             "  \"bcconfirmations\" : n,   (numeric) The number of blockchain confirmations\n"
             "  \"blockhash\" : \"hash\",  (string) The block hash\n"
@@ -1633,9 +1633,9 @@ UniValue gettransaction(const UniValue& params, bool fHelp)
             "  \"details\" : [\n"
             "    {\n"
             "      \"account\" : \"accountname\",  (string) The account name involved in the transaction, can be \"\" for the default account.\n"
-            "      \"address\" : \"tenupaddress\",   (string) The tenup address involved in the transaction\n"
+            "      \"address\" : \"wealthsiloaddress\",   (string) The wealthsilo address involved in the transaction\n"
             "      \"category\" : \"send|receive\",    (string) The category, either 'send' or 'receive'\n"
-            "      \"amount\" : x.xxx                  (numeric) The amount in TUP\n"
+            "      \"amount\" : x.xxx                  (numeric) The amount in WEALTH\n"
             "      \"vout\" : n,                       (numeric) the vout value\n"
             "    }\n"
             "    ,...\n"
@@ -1756,7 +1756,7 @@ UniValue walletpassphrase(const UniValue& params, bool fHelp)
         throw runtime_error(
             "walletpassphrase \"passphrase\" timeout ( anonymizeonly )\n"
             "\nStores the wallet decryption key in memory for 'timeout' seconds.\n"
-            "This is needed prior to performing transactions related to private keys such as sending TUPs\n"
+            "This is needed prior to performing transactions related to private keys such as sending WEALTHs\n"
 
             "\nArguments:\n"
             "1. \"passphrase\"     (string, required) The wallet passphrase\n"
@@ -1913,10 +1913,10 @@ UniValue encryptwallet(const UniValue& params, bool fHelp)
             "\nExamples:\n"
             "\nEncrypt you wallet\n" +
             HelpExampleCli("encryptwallet", "\"my pass phrase\"") +
-            "\nNow set the passphrase to use the wallet, such as for signing or sending TUPs\n" +
+            "\nNow set the passphrase to use the wallet, such as for signing or sending WEALTHs\n" +
             HelpExampleCli("walletpassphrase", "\"my pass phrase\"") +
             "\nNow we can so something like sign\n" +
-            HelpExampleCli("signmessage", "\"tenupaddress\" \"test message\"") +
+            HelpExampleCli("signmessage", "\"wealthsiloaddress\" \"test message\"") +
             "\nNow lock the wallet again by removing the passphrase\n" +
             HelpExampleCli("walletlock", "") +
             "\nAs a json rpc call\n" +
@@ -1947,7 +1947,7 @@ UniValue encryptwallet(const UniValue& params, bool fHelp)
     // slack space in .dat files; that is bad if the old data is
     // unencrypted private keys. So:
     StartShutdown();
-    return "wallet encrypted; tenup server stopping, restart to run with encrypted wallet. The keypool has been flushed, you need to make a new backup.";
+    return "wallet encrypted; wealthsilo server stopping, restart to run with encrypted wallet. The keypool has been flushed, you need to make a new backup.";
 }
 
 UniValue lockunspent(const UniValue& params, bool fHelp)
@@ -1957,7 +1957,7 @@ UniValue lockunspent(const UniValue& params, bool fHelp)
             "lockunspent unlock [{\"txid\":\"txid\",\"vout\":n},...]\n"
             "\nUpdates list of temporarily unspendable outputs.\n"
             "Temporarily lock (unlock=false) or unlock (unlock=true) specified transaction outputs.\n"
-            "A locked transaction output will not be chosen by automatic coin selection, when spending TUPs.\n"
+            "A locked transaction output will not be chosen by automatic coin selection, when spending WEALTHs.\n"
             "Locks are stored in memory only. Nodes start with zero locked outputs, and the locked output list\n"
             "is always cleared (by virtue of process exit) when a node stops or fails.\n"
             "Also see the listunspent call\n"
@@ -2086,7 +2086,7 @@ UniValue settxfee(const UniValue& params, bool fHelp)
             "\nSet the transaction fee per kB.\n"
 
             "\nArguments:\n"
-            "1. amount         (numeric, required) The transaction fee in TUP/kB rounded to the nearest 0.00000001\n"
+            "1. amount         (numeric, required) The transaction fee in WEALTH/kB rounded to the nearest 0.00000001\n"
 
             "\nResult\n"
             "true|false        (boolean) Returns true if successful\n"
@@ -2114,7 +2114,7 @@ UniValue getwalletinfo(const UniValue& params, bool fHelp)
             "\nResult:\n"
             "{\n"
             "  \"walletversion\": xxxxx,     (numeric) the wallet version\n"
-            "  \"balance\": xxxxxxx,         (numeric) the total TUP balance of the wallet\n"
+            "  \"balance\": xxxxxxx,         (numeric) the total WEALTH balance of the wallet\n"
             "  \"txcount\": xxxxxxx,         (numeric) the total number of transactions in the wallet\n"
             "  \"keypoololdest\": xxxxxx,    (numeric) the timestamp (seconds since GMT epoch) of the oldest pre-generated key in the key pool\n"
             "  \"keypoolsize\": xxxx,        (numeric) how many new keys are pre-generated\n"
@@ -2482,7 +2482,7 @@ UniValue multisend(const UniValue& params, bool fHelp)
     string strAddress = params[0].get_str();
     CBitcoinAddress address(strAddress);
     if (!address.IsValid())
-        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid TUP address");
+        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid WEALTH address");
     if (boost::lexical_cast<int>(params[1].get_str()) < 0)
         throw JSONRPCError(RPC_INVALID_PARAMETER, "Invalid parameter, expected valid percentage");
     if (pwalletMain->IsLocked())
@@ -2527,11 +2527,11 @@ UniValue getzerocoinbalance(const UniValue& params, bool fHelp)
     if (fHelp || params.size() != 0)
         throw runtime_error(
             "getzerocoinbalance\n"
-            "\nReturn the wallet's total zTUP balance.\n" +
+            "\nReturn the wallet's total zWEALTH balance.\n" +
             HelpRequiringPassphrase() + "\n"
 
             "\nResult:\n"
-            "amount         (numeric) Total zTUP balance.\n"
+            "amount         (numeric) Total zWEALTH balance.\n"
 
             "\nExamples:\n" +
             HelpExampleCli("getzerocoinbalance", "") + HelpExampleRpc("getzerocoinbalance", ""));
@@ -2555,7 +2555,7 @@ UniValue listmintedzerocoins(const UniValue& params, bool fHelp)
     if (fHelp || params.size() != 0)
         throw runtime_error(
             "listmintedzerocoins\n"
-            "\nList all zTUP mints in the wallet.\n" +
+            "\nList all zWEALTH mints in the wallet.\n" +
             HelpRequiringPassphrase() + "\n"
 
             "\nResult:\n"
@@ -2572,7 +2572,7 @@ UniValue listmintedzerocoins(const UniValue& params, bool fHelp)
     EnsureWalletIsUnlocked(true);
 
     CWalletDB walletdb(pwalletMain->strWalletFile);
-    set<CMintMeta> setMints = pwalletMain->ztupTracker->ListMints(true, false, true);
+    set<CMintMeta> setMints = pwalletMain->zwealthTracker->ListMints(true, false, true);
 
     UniValue jsonList(UniValue::VARR);
     for (const CMintMeta& meta : setMints)
@@ -2607,7 +2607,7 @@ UniValue listzerocoinamounts(const UniValue& params, bool fHelp)
     EnsureWalletIsUnlocked(true);
 
     CWalletDB walletdb(pwalletMain->strWalletFile);
-    set<CMintMeta> setMints = pwalletMain->ztupTracker->ListMints(true, true, true);
+    set<CMintMeta> setMints = pwalletMain->zwealthTracker->ListMints(true, true, true);
 
     std::map<libzerocoin::CoinDenomination, CAmount> spread;
     for (const auto& denom : libzerocoin::zerocoinDenomList)
@@ -2631,7 +2631,7 @@ UniValue listspentzerocoins(const UniValue& params, bool fHelp)
     if (fHelp || params.size() != 0)
         throw runtime_error(
             "listspentzerocoins\n"
-            "\nList all the spent zTUP mints in the wallet.\n" +
+            "\nList all the spent zWEALTH mints in the wallet.\n" +
             HelpRequiringPassphrase() + "\n"
 
             "\nResult:\n"
@@ -2663,11 +2663,11 @@ UniValue mintzerocoin(const UniValue& params, bool fHelp)
     if (fHelp || params.size() < 1 || params.size() > 2)
         throw runtime_error(
             "mintzerocoin amount ( utxos )\n"
-            "\nMint the specified zTUP amount\n" +
+            "\nMint the specified zWEALTH amount\n" +
             HelpRequiringPassphrase() + "\n"
 
             "\nArguments:\n"
-            "1. amount      (numeric, required) Enter an amount of TUP to convert to zTUP\n"
+            "1. amount      (numeric, required) Enter an amount of WEALTH to convert to zWEALTH\n"
             "2. utxos       (string, optional) A json array of objects.\n"
             "                   Each object needs the txid (string) and vout (numeric)\n"
             "  [\n"
@@ -2711,7 +2711,7 @@ UniValue mintzerocoin(const UniValue& params, bool fHelp)
 
     int64_t nTime = GetTimeMillis();
     if(GetAdjustedTime() > GetSporkValue(SPORK_16_ZEROCOIN_MAINTENANCE_MODE))
-        throw JSONRPCError(RPC_WALLET_ERROR, "zTUP is currently disabled due to maintenance.");
+        throw JSONRPCError(RPC_WALLET_ERROR, "zWEALTH is currently disabled due to maintenance.");
 
     EnsureWalletIsUnlocked(true);
 
@@ -2774,7 +2774,7 @@ UniValue spendzerocoin(const UniValue& params, bool fHelp)
     if (fHelp || params.size() > 5 || params.size() < 4)
         throw runtime_error(
             "spendzerocoin amount mintchange minimizechange securitylevel ( \"address\" )\n"
-            "\nSpend zTUP to a TUP address.\n" +
+            "\nSpend zWEALTH to a WEALTH address.\n" +
             HelpRequiringPassphrase() + "\n"
 
             "\nArguments:\n"
@@ -2805,8 +2805,8 @@ UniValue spendzerocoin(const UniValue& params, bool fHelp)
             "  ],\n"
             "  \"outputs\": [                 (array) JSON array of output objects.\n"
             "    {\n"
-            "      \"value\": amount,         (numeric) Value in TUP.\n"
-            "      \"address\": \"xxx\"         (string) TUP address or \"zerocoinmint\" for reminted change.\n"
+            "      \"value\": amount,         (numeric) Value in WEALTH.\n"
+            "      \"address\": \"xxx\"         (string) WEALTH address or \"zerocoinmint\" for reminted change.\n"
             "    }\n"
             "    ,...\n"
             "  ]\n"
@@ -2819,13 +2819,13 @@ UniValue spendzerocoin(const UniValue& params, bool fHelp)
     LOCK2(cs_main, pwalletMain->cs_wallet);
 
     if(GetAdjustedTime() > GetSporkValue(SPORK_16_ZEROCOIN_MAINTENANCE_MODE))
-        throw JSONRPCError(RPC_WALLET_ERROR, "zTUP is currently disabled due to maintenance.");
+        throw JSONRPCError(RPC_WALLET_ERROR, "zWEALTH is currently disabled due to maintenance.");
 
     EnsureWalletIsUnlocked();
 
     int64_t nTimeStart = GetTimeMillis();
     CAmount nAmount = AmountFromValue(params[0]);   // Spending amount
-    bool fMintChange = params[1].get_bool();        // Mint change to zTUP
+    bool fMintChange = params[1].get_bool();        // Mint change to zWEALTH
     bool fMinimizeChange = params[2].get_bool();    // Minimize change
     int nSecurityLevel = params[3].get_int();       // Security level
 
@@ -2923,8 +2923,8 @@ UniValue resetmintzerocoin(const UniValue& params, bool fHelp)
     LOCK2(cs_main, pwalletMain->cs_wallet);
 
     CWalletDB walletdb(pwalletMain->strWalletFile);
-    CzTUPTracker* ztupTracker = pwalletMain->ztupTracker.get();
-    set<CMintMeta> setMints = ztupTracker->ListMints(false, false, true);
+    CzWEALTHTracker* zwealthTracker = pwalletMain->zwealthTracker.get();
+    set<CMintMeta> setMints = zwealthTracker->ListMints(false, false, true);
     vector<CMintMeta> vMintsToFind(setMints.begin(), setMints.end());
     vector<CMintMeta> vMintsMissing;
     vector<CMintMeta> vMintsToUpdate;
@@ -2935,14 +2935,14 @@ UniValue resetmintzerocoin(const UniValue& params, bool fHelp)
     // update the meta data of mints that were marked for updating
     UniValue arrUpdated(UniValue::VARR);
     for (CMintMeta meta : vMintsToUpdate) {
-        ztupTracker->UpdateState(meta);
+        zwealthTracker->UpdateState(meta);
         arrUpdated.push_back(meta.hashPubcoin.GetHex());
     }
 
     // delete any mints that were unable to be located on the blockchain
     UniValue arrDeleted(UniValue::VARR);
     for (CMintMeta mint : vMintsMissing) {
-        ztupTracker->Archive(mint);
+        zwealthTracker->Archive(mint);
         arrDeleted.push_back(mint.hashPubcoin.GetHex());
     }
 
@@ -2976,8 +2976,8 @@ UniValue resetspentzerocoin(const UniValue& params, bool fHelp)
     LOCK2(cs_main, pwalletMain->cs_wallet);
 
     CWalletDB walletdb(pwalletMain->strWalletFile);
-    CzTUPTracker* ztupTracker = pwalletMain->ztupTracker.get();
-    set<CMintMeta> setMints = ztupTracker->ListMints(false, false, false);
+    CzWEALTHTracker* zwealthTracker = pwalletMain->zwealthTracker.get();
+    set<CMintMeta> setMints = zwealthTracker->ListMints(false, false, false);
     list<CZerocoinSpend> listSpends = walletdb.ListSpentCoins();
     list<CZerocoinSpend> listUnconfirmedSpends;
 
@@ -2999,7 +2999,7 @@ UniValue resetspentzerocoin(const UniValue& params, bool fHelp)
     for (CZerocoinSpend spend : listUnconfirmedSpends) {
         for (auto& meta : setMints) {
             if (meta.hashSerial == GetSerialHash(spend.GetSerial())) {
-                ztupTracker->SetPubcoinNotUsed(meta.hashPubcoin);
+                zwealthTracker->SetPubcoinNotUsed(meta.hashPubcoin);
                 walletdb.EraseZerocoinSpendSerialEntry(spend.GetSerial());
                 RemoveSerialFromDB(spend.GetSerial());
                 UniValue obj(UniValue::VOBJ);
@@ -3081,7 +3081,7 @@ UniValue exportzerocoins(const UniValue& params, bool fHelp)
 
             "\nArguments:\n"
             "1. \"include_spent\"        (bool, required) Include mints that have already been spent\n"
-            "2. \"denomination\"         (integer, optional) Export a specific denomination of zTUP\n"
+            "2. \"denomination\"         (integer, optional) Export a specific denomination of zWEALTH\n"
 
             "\nResult:\n"
             "[                   (array of json object)\n"
@@ -3093,8 +3093,8 @@ UniValue exportzerocoins(const UniValue& params, bool fHelp)
             "    \"t\": \"txid\",    (string) The txid that the coin was minted in\n"
             "    \"h\": n,         (numeric) The height the tx was added to the blockchain\n"
             "    \"u\": used,      (boolean) Whether the mint has been spent\n"
-            "    \"v\": version,   (numeric) The version of the zTUP\n"
-            "    \"k\": \"privkey\"  (string) The zTUP private key (V2+ zTUP only)\n"
+            "    \"v\": version,   (numeric) The version of the zWEALTH\n"
+            "    \"k\": \"privkey\"  (string) The zWEALTH private key (V2+ zWEALTH only)\n"
             "  }\n"
             "  ,...\n"
             "]\n"
@@ -3113,8 +3113,8 @@ UniValue exportzerocoins(const UniValue& params, bool fHelp)
     if (params.size() == 2)
         denomination = libzerocoin::IntToZerocoinDenomination(params[1].get_int());
 
-    CzTUPTracker* ztupTracker = pwalletMain->ztupTracker.get();
-    set<CMintMeta> setMints = ztupTracker->ListMints(!fIncludeSpent, false, false);
+    CzWEALTHTracker* zwealthTracker = pwalletMain->zwealthTracker.get();
+    set<CMintMeta> setMints = zwealthTracker->ListMints(!fIncludeSpent, false, false);
 
     UniValue jsonList(UniValue::VARR);
     for (const CMintMeta& meta : setMints) {
@@ -3160,7 +3160,7 @@ UniValue importzerocoins(const UniValue& params, bool fHelp)
             "\nResult:\n"
             "{\n"
             "  \"added\": n,        (numeric) The quantity of zerocoin mints that were added\n"
-            "  \"value\": amount    (numeric) The total zTUP value of zerocoin mints that were added\n"
+            "  \"value\": amount    (numeric) The total zWEALTH value of zerocoin mints that were added\n"
             "}\n"
 
             "\nExamples\n" +
@@ -3224,7 +3224,7 @@ UniValue importzerocoins(const UniValue& params, bool fHelp)
         CZerocoinMint mint(denom, bnValue, bnRandom, bnSerial, fUsed, nVersion, &privkey);
         mint.SetTxHash(txid);
         mint.SetHeight(nHeight);
-        pwalletMain->ztupTracker->Add(mint, true);
+        pwalletMain->zwealthTracker->Add(mint, true);
         count++;
         nValue += libzerocoin::ZerocoinDenominationToAmount(denom);
     }
@@ -3240,7 +3240,7 @@ UniValue reconsiderzerocoins(const UniValue& params, bool fHelp)
     if(fHelp || !params.empty())
         throw runtime_error(
             "reconsiderzerocoins\n"
-            "\nCheck archived zTUP list to see if any mints were added to the blockchain.\n" +
+            "\nCheck archived zWEALTH list to see if any mints were added to the blockchain.\n" +
             HelpRequiringPassphrase() + "\n"
 
             "\nResult:\n"
@@ -3286,30 +3286,30 @@ UniValue reconsiderzerocoins(const UniValue& params, bool fHelp)
     return arrRet;
 }
 
-UniValue setztupseed(const UniValue& params, bool fHelp)
+UniValue setzwealthseed(const UniValue& params, bool fHelp)
 {
     if(fHelp || params.size() != 1)
         throw runtime_error(
-            "setztupseed \"seed\"\n"
-            "\nSet the wallet's deterministic ztup seed to a specific value.\n" +
+            "setzwealthseed \"seed\"\n"
+            "\nSet the wallet's deterministic zwealth seed to a specific value.\n" +
             HelpRequiringPassphrase() + "\n"
 
             "\nArguments:\n"
-            "1. \"seed\"        (string, required) The deterministic ztup seed.\n"
+            "1. \"seed\"        (string, required) The deterministic zwealth seed.\n"
 
             "\nResult\n"
             "\"success\" : b,  (boolean) Whether the seed was successfully set.\n"
 
             "\nExamples\n" +
-            HelpExampleCli("setztupseed", "63f793e7895dd30d99187b35fbfb314a5f91af0add9e0a4e5877036d1e392dd5") +
-            HelpExampleRpc("setztupseed", "63f793e7895dd30d99187b35fbfb314a5f91af0add9e0a4e5877036d1e392dd5"));
+            HelpExampleCli("setzwealthseed", "63f793e7895dd30d99187b35fbfb314a5f91af0add9e0a4e5877036d1e392dd5") +
+            HelpExampleRpc("setzwealthseed", "63f793e7895dd30d99187b35fbfb314a5f91af0add9e0a4e5877036d1e392dd5"));
 
     EnsureWalletIsUnlocked();
 
     uint256 seed;
     seed.SetHex(params[0].get_str());
 
-    CzTUPWallet* zwallet = pwalletMain->getZWallet();
+    CzWEALTHWallet* zwallet = pwalletMain->getZWallet();
     bool fSuccess = zwallet->SetMasterSeed(seed, true);
     if (fSuccess)
         zwallet->SyncWithChain();
@@ -3320,23 +3320,23 @@ UniValue setztupseed(const UniValue& params, bool fHelp)
     return ret;
 }
 
-UniValue getztupseed(const UniValue& params, bool fHelp)
+UniValue getzwealthseed(const UniValue& params, bool fHelp)
 {
     if(fHelp || !params.empty())
         throw runtime_error(
-            "getztupseed\n"
-            "\nCheck archived zTUP list to see if any mints were added to the blockchain.\n" +
+            "getzwealthseed\n"
+            "\nCheck archived zWEALTH list to see if any mints were added to the blockchain.\n" +
             HelpRequiringPassphrase() + "\n"
 
             "\nResult\n"
-            "\"seed\" : s,  (string) The deterministic zTUP seed.\n"
+            "\"seed\" : s,  (string) The deterministic zWEALTH seed.\n"
 
             "\nExamples\n" +
-            HelpExampleCli("getztupseed", "") + HelpExampleRpc("getztupseed", ""));
+            HelpExampleCli("getzwealthseed", "") + HelpExampleRpc("getzwealthseed", ""));
 
     EnsureWalletIsUnlocked();
 
-    CzTUPWallet* zwallet = pwalletMain->getZWallet();
+    CzWEALTHWallet* zwallet = pwalletMain->getZWallet();
     uint256 seed = zwallet->GetMasterSeed();
 
     UniValue ret(UniValue::VOBJ);
@@ -3350,12 +3350,12 @@ UniValue generatemintlist(const UniValue& params, bool fHelp)
     if(fHelp || params.size() != 2)
         throw runtime_error(
             "generatemintlist\n"
-            "\nShow mints that are derived from the deterministic zTUP seed.\n" +
+            "\nShow mints that are derived from the deterministic zWEALTH seed.\n" +
             HelpRequiringPassphrase() + "\n"
 
             "\nArguments\n"
-            "1. \"count\"  : n,  (numeric) Which sequential zTUP to start with.\n"
-            "2. \"range\"  : n,  (numeric) How many zTUP to generate.\n"
+            "1. \"count\"  : n,  (numeric) Which sequential zWEALTH to start with.\n"
+            "2. \"range\"  : n,  (numeric) How many zWEALTH to generate.\n"
 
             "\nResult:\n"
             "[\n"
@@ -3375,7 +3375,7 @@ UniValue generatemintlist(const UniValue& params, bool fHelp)
 
     int nCount = params[0].get_int();
     int nRange = params[1].get_int();
-    CzTUPWallet* zwallet = pwalletMain->zwalletMain;
+    CzWEALTHWallet* zwallet = pwalletMain->zwalletMain;
 
     UniValue arrRet(UniValue::VARR);
     for (int i = nCount; i < nCount + nRange; i++) {
@@ -3394,28 +3394,28 @@ UniValue generatemintlist(const UniValue& params, bool fHelp)
     return arrRet;
 }
 
-UniValue dztupstate(const UniValue& params, bool fHelp) {
+UniValue dzwealthstate(const UniValue& params, bool fHelp) {
     if (fHelp || params.size() != 0)
         throw runtime_error(
-                "dztupstate\n"
-                        "\nThe current state of the mintpool of the deterministic zTUP wallet.\n" +
+                "dzwealthstate\n"
+                        "\nThe current state of the mintpool of the deterministic zWEALTH wallet.\n" +
                 HelpRequiringPassphrase() + "\n"
 
                         "\nExamples\n" +
                 HelpExampleCli("mintpoolstatus", "") + HelpExampleRpc("mintpoolstatus", ""));
 
-    CzTUPWallet* zwallet = pwalletMain->zwalletMain;
+    CzWEALTHWallet* zwallet = pwalletMain->zwalletMain;
     UniValue obj(UniValue::VOBJ);
     int nCount, nCountLastUsed;
     zwallet->GetState(nCount, nCountLastUsed);
-    obj.push_back(Pair("dztup_count", nCount));
+    obj.push_back(Pair("dzwealth_count", nCount));
     obj.push_back(Pair("mintpool_count", nCountLastUsed));
 
     return obj;
 }
 
 
-void static SearchThread(CzTUPWallet* zwallet, int nCountStart, int nCountEnd)
+void static SearchThread(CzWEALTHWallet* zwallet, int nCountStart, int nCountEnd)
 {
     LogPrintf("%s: start=%d end=%d\n", __func__, nCountStart, nCountEnd);
     CWalletDB walletDB(pwalletMain->strWalletFile);
@@ -3432,7 +3432,7 @@ void static SearchThread(CzTUPWallet* zwallet, int nCountStart, int nCountEnd)
             CBigNum bnSerial;
             CBigNum bnRandomness;
             CKey key;
-            zwallet->SeedToZTUP(zerocoinSeed, bnValue, bnSerial, bnRandomness, key);
+            zwallet->SeedToZWEALTH(zerocoinSeed, bnValue, bnSerial, bnRandomness, key);
 
             uint256 hashPubcoin = GetPubCoinHash(bnValue);
             zwallet->AddToMintPool(make_pair(hashPubcoin, i), true);
@@ -3445,21 +3445,21 @@ void static SearchThread(CzTUPWallet* zwallet, int nCountStart, int nCountEnd)
     }
 }
 
-UniValue searchdztup(const UniValue& params, bool fHelp)
+UniValue searchdzwealth(const UniValue& params, bool fHelp)
 {
     if(fHelp || params.size() != 3)
         throw runtime_error(
-            "searchdztup\n"
-            "\nMake an extended search for deterministically generated zTUP that have not yet been recognized by the wallet.\n" +
+            "searchdzwealth\n"
+            "\nMake an extended search for deterministically generated zWEALTH that have not yet been recognized by the wallet.\n" +
             HelpRequiringPassphrase() + "\n"
 
             "\nArguments\n"
-            "1. \"count\"       (numeric) Which sequential zTUP to start with.\n"
-            "2. \"range\"       (numeric) How many zTUP to generate.\n"
+            "1. \"count\"       (numeric) Which sequential zWEALTH to start with.\n"
+            "2. \"range\"       (numeric) How many zWEALTH to generate.\n"
             "3. \"threads\"     (numeric) How many threads should this operation consume.\n"
 
             "\nExamples\n" +
-            HelpExampleCli("searchdztup", "1, 100, 2") + HelpExampleRpc("searchdztup", "1, 100, 2"));
+            HelpExampleCli("searchdzwealth", "1, 100, 2") + HelpExampleRpc("searchdzwealth", "1, 100, 2"));
 
     EnsureWalletIsUnlocked();
 
@@ -3473,9 +3473,9 @@ UniValue searchdztup(const UniValue& params, bool fHelp)
 
     int nThreads = params[2].get_int();
 
-    CzTUPWallet* zwallet = pwalletMain->zwalletMain;
+    CzWEALTHWallet* zwallet = pwalletMain->zwalletMain;
 
-    boost::thread_group* dztupThreads = new boost::thread_group();
+    boost::thread_group* dzwealthThreads = new boost::thread_group();
     int nRangePerThread = nRange / nThreads;
 
     int nPrevThreadEnd = nCount - 1;
@@ -3483,12 +3483,12 @@ UniValue searchdztup(const UniValue& params, bool fHelp)
         int nStart = nPrevThreadEnd + 1;;
         int nEnd = nStart + nRangePerThread;
         nPrevThreadEnd = nEnd;
-        dztupThreads->create_thread(boost::bind(&SearchThread, zwallet, nStart, nEnd));
+        dzwealthThreads->create_thread(boost::bind(&SearchThread, zwallet, nStart, nEnd));
     }
 
-    dztupThreads->join_all();
+    dzwealthThreads->join_all();
 
-    zwallet->RemoveMintsFromPool(pwalletMain->ztupTracker->GetSerialHashes());
+    zwallet->RemoveMintsFromPool(pwalletMain->zwealthTracker->GetSerialHashes());
     zwallet->SyncWithChain(false);
 
     //todo: better response

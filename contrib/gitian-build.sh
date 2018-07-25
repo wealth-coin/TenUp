@@ -17,7 +17,7 @@ osx=true
 SIGNER=
 VERSION=
 commit=false
-url=https://github.com/tenup-coin/WealthSilo
+url=https://github.com/wealthsilo-coin/WealthSilo
 proc=2
 mem=2000
 lxc=true
@@ -31,7 +31,7 @@ commitFiles=true
 read -d '' usage <<- EOF
 Usage: $scriptName [-c|u|v|b|s|B|o|h|j|m|] signer version
 
-Run this script from the directory containing the WealthSilo, gitian-builder, gitian.sigs, and tenup-detached-sigs.
+Run this script from the directory containing the WealthSilo, gitian-builder, gitian.sigs, and wealthsilo-detached-sigs.
 
 Arguments:
 signer          GPG signer to sign each build assert file
@@ -39,7 +39,7 @@ version		Version number, commit, or branch to build. If building a commit or bra
 
 Options:
 -c|--commit	Indicate that the version argument is for a commit or branch
--u|--url	Specify the URL of the repository. Default is https://github.com/tenup-coin/WealthSilo
+-u|--url	Specify the URL of the repository. Default is https://github.com/wealthsilo-coin/WealthSilo
 -v|--verify 	Verify the gitian build
 -b|--build	Do a gitian build
 -s|--sign	Make signed binaries for Windows and Mac OSX
@@ -237,8 +237,8 @@ echo ${COMMIT}
 if [[ $setup = true ]]
 then
     sudo apt-get install ruby apache2 git apt-cacher-ng python-vm-builder qemu-kvm qemu-utils
-    git clone https://github.com/tenup-coin/gitian.sigs.git
-    git clone https://github.com/tenup-coin/tenup-detached-sigs.git
+    git clone https://github.com/wealthsilo-coin/gitian.sigs.git
+    git clone https://github.com/wealthsilo-coin/wealthsilo-detached-sigs.git
     git clone https://github.com/devrandom/gitian-builder.git
     pushd ./gitian-builder
     if [[ -n "$USE_LXC" ]]
@@ -261,7 +261,7 @@ popd
 if [[ $build = true ]]
 then
 	# Make output folder
-	mkdir -p ./tenup-binaries/${VERSION}
+	mkdir -p ./wealthsilo-binaries/${VERSION}
 
 	# Build Dependencies
 	echo ""
@@ -281,7 +281,7 @@ then
 	    echo ""
 	    ./bin/gbuild -j ${proc} -m ${mem} --commit WealthSilo=${COMMIT} --url WealthSilo=${url} ../WealthSilo/contrib/gitian-descriptors/gitian-linux.yml
 	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-linux --destination ../gitian.sigs/ ../WealthSilo/contrib/gitian-descriptors/gitian-linux.yml
-	    mv build/out/tenup-*.tar.gz build/out/src/tenup-*.tar.gz ../tenup-binaries/${VERSION}
+	    mv build/out/wealthsilo-*.tar.gz build/out/src/wealthsilo-*.tar.gz ../wealthsilo-binaries/${VERSION}
 	fi
 	# Windows
 	if [[ $windows = true ]]
@@ -291,8 +291,8 @@ then
 	    echo ""
 	    ./bin/gbuild -j ${proc} -m ${mem} --commit WealthSilo=${COMMIT} --url WealthSilo=${url} ../WealthSilo/contrib/gitian-descriptors/gitian-win.yml
 	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-win-unsigned --destination ../gitian.sigs/ ../WealthSilo/contrib/gitian-descriptors/gitian-win.yml
-	    mv build/out/tenup-*-win-unsigned.tar.gz inputs/tenup-win-unsigned.tar.gz
-	    mv build/out/tenup-*.zip build/out/tenup-*.exe ../tenup-binaries/${VERSION}
+	    mv build/out/wealthsilo-*-win-unsigned.tar.gz inputs/wealthsilo-win-unsigned.tar.gz
+	    mv build/out/wealthsilo-*.zip build/out/wealthsilo-*.exe ../wealthsilo-binaries/${VERSION}
 	fi
 	# Mac OSX
 	if [[ $osx = true ]]
@@ -302,8 +302,8 @@ then
 	    echo ""
 	    ./bin/gbuild -j ${proc} -m ${mem} --commit WealthSilo=${COMMIT} --url WealthSilo=${url} ../WealthSilo/contrib/gitian-descriptors/gitian-osx.yml
 	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-osx-unsigned --destination ../gitian.sigs/ ../WealthSilo/contrib/gitian-descriptors/gitian-osx.yml
-	    mv build/out/tenup-*-osx-unsigned.tar.gz inputs/tenup-osx-unsigned.tar.gz
-	    mv build/out/tenup-*.tar.gz build/out/tenup-*.dmg ../tenup-binaries/${VERSION}
+	    mv build/out/wealthsilo-*-osx-unsigned.tar.gz inputs/wealthsilo-osx-unsigned.tar.gz
+	    mv build/out/wealthsilo-*.tar.gz build/out/wealthsilo-*.dmg ../wealthsilo-binaries/${VERSION}
 	fi
 	# AArch64
 	if [[ $aarch64 = true ]]
@@ -313,7 +313,7 @@ then
 	    echo ""
 	    ./bin/gbuild -j ${proc} -m ${mem} --commit WealthSilo=${COMMIT} --url WealthSilo=${url} ../WealthSilo/contrib/gitian-descriptors/gitian-aarch64.yml
 	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-aarch64 --destination ../gitian.sigs/ ../WealthSilo/contrib/gitian-descriptors/gitian-aarch64.yml
-	    mv build/out/tenup-*.tar.gz build/out/src/tenup-*.tar.gz ../tenup-binaries/${VERSION}
+	    mv build/out/wealthsilo-*.tar.gz build/out/src/wealthsilo-*.tar.gz ../wealthsilo-binaries/${VERSION}
     fi
 	popd
 
@@ -383,8 +383,8 @@ then
 	    echo ""
 	    ./bin/gbuild -i --commit signature=${COMMIT} ../WealthSilo/contrib/gitian-descriptors/gitian-win-signer.yml
 	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-win-signed --destination ../gitian.sigs/ ../WealthSilo/contrib/gitian-descriptors/gitian-win-signer.yml
-	    mv build/out/tenup-*win64-setup.exe ../tenup-binaries/${VERSION}
-	    mv build/out/tenup-*win32-setup.exe ../tenup-binaries/${VERSION}
+	    mv build/out/wealthsilo-*win64-setup.exe ../wealthsilo-binaries/${VERSION}
+	    mv build/out/wealthsilo-*win32-setup.exe ../wealthsilo-binaries/${VERSION}
 	fi
 	# Sign Mac OSX
 	if [[ $osx = true ]]
@@ -394,7 +394,7 @@ then
 	    echo ""
 	    ./bin/gbuild -i --commit signature=${COMMIT} ../WealthSilo/contrib/gitian-descriptors/gitian-osx-signer.yml
 	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-osx-signed --destination ../gitian.sigs/ ../WealthSilo/contrib/gitian-descriptors/gitian-osx-signer.yml
-	    mv build/out/tenup-osx-signed.dmg ../tenup-binaries/${VERSION}/tenup-${VERSION}-osx.dmg
+	    mv build/out/wealthsilo-osx-signed.dmg ../wealthsilo-binaries/${VERSION}/wealthsilo-${VERSION}-osx.dmg
 	fi
 	popd
 

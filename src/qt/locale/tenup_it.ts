@@ -176,16 +176,16 @@
         <translation>Conferma cifratura portafoglio</translation>
     </message>
     <message>
-        <source>WealthSilo will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your TUPs from being stolen by malware infecting your computer.</source>
-        <translation>WealthSilo verrà ora chiuso per completare il processo di cifratura. Ricorda che crittografare il tuo portafoglio non protegge completamente i tuoi TUP dal furto da parte di software malevoli che potrebbero infettare il tuo computer.</translation>
+        <source>WealthSilo will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your WEALTHs from being stolen by malware infecting your computer.</source>
+        <translation>WealthSilo verrà ora chiuso per completare il processo di cifratura. Ricorda che crittografare il tuo portafoglio non protegge completamente i tuoi WEALTH dal furto da parte di software malevoli che potrebbero infettare il tuo computer.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Confermi di voler crittografare il portafoglio?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR TUP&lt;/b&gt;!</source>
-        <translation>Attenzione: Se crittografi il portafoglio e poi perdi la parola d'ordine, &lt;b&gt;PERDERAI TUTTI I TUOI TUP&lt;7b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR WEALTH&lt;/b&gt;!</source>
+        <translation>Attenzione: Se crittografi il portafoglio e poi perdi la parola d'ordine, &lt;b&gt;PERDERAI TUTTI I TUOI WEALTH&lt;7b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -433,8 +433,8 @@
         <translation>Espora la cronologia delle transazioni</translation>
     </message>
     <message>
-        <source>Privacy Actions for zTUP</source>
-        <translation>Operazioni di privacy per zTUP</translation>
+        <source>Privacy Actions for zWEALTH</source>
+        <translation>Operazioni di privacy per zWEALTH</translation>
     </message>
     <message>
         <source>E&amp;xit</source>
@@ -653,8 +653,8 @@
         <translation>Invia monete all' indirizzo WealthSilo</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and tenup: URIs)</source>
-        <translation>Richiedi pagamenti (genera codici QR e tenup: URIs)</translation>
+        <source>Request payments (generates QR codes and wealthsilo: URIs)</source>
+        <translation>Richiedi pagamenti (genera codici QR e wealthsilo: URIs)</translation>
     </message>
     <message>
         <source>&amp;Privacy</source>
@@ -738,7 +738,7 @@
     </message>
     <message numerus="yes">
         <source>%n active connection(s) to WealthSilo network</source>
-        <translation><numerusform>%n connessione attiva alla rete TUPIX</numerusform><numerusform>%n connessioni attive alla rete TUPIX</numerusform></translation>
+        <translation><numerusform>%n connessione attiva alla rete WEALTHIX</numerusform><numerusform>%n connessioni attive alla rete WEALTHIX</numerusform></translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -888,8 +888,8 @@ MultiSend: %1</translation>
         <translation>Etichetta</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (tenup.conf).</source>
-        <translation>Non tutte le transazioni verranno visualizzate. Per vedere tutte le transazioni è necessario aggiungere txindex=1 nel file di configurazione (tenup.conf)</translation>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (wealthsilo.conf).</source>
+        <translation>Non tutte le transazioni verranno visualizzate. Per vedere tutte le transazioni è necessario aggiungere txindex=1 nel file di configurazione (wealthsilo.conf)</translation>
     </message>
 </context>
 <context>
@@ -1118,8 +1118,8 @@ MultiSend: %1</translation>
         <translation>Questa etichetta diventa rossa se uno dei destinatari riceve un importo inferiore a %1.</translation>
     </message>
     <message>
-        <source>Can vary +/- %1 utup per input.</source>
-        <translation>Può variare di +/- %1 uTUP per input.</translation>
+        <source>Can vary +/- %1 uwealth per input.</source>
+        <translation>Può variare di +/- %1 uWEALTH per input.</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -1267,7 +1267,7 @@ MultiSend: %1</translation>
     </message>
     <message>
         <source>Welcome to WealthSilo Core.</source>
-        <translation>Benvenuto in TUPIX Core.</translation>
+        <translation>Benvenuto in WEALTHIX Core.</translation>
     </message>
     <message>
         <source>As this is the first time the program is launched, you can choose where WealthSilo Core will store its data.</source>
@@ -1570,12 +1570,12 @@ MultiSend: %1</translation>
         <translation>Configura Offuscamento</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 25000 TUP</source>
-        <translation>Usa 2 masternodi diversi per mescolare fino a 25000 TUP</translation>
+        <source>Use 2 separate masternodes to mix funds up to 25000 WEALTH</source>
+        <translation>Usa 2 masternodi diversi per mescolare fino a 25000 WEALTH</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 25000 TUP</source>
-        <translation>Usa 8 masternodi diversi per mixare fino a 25000 TUP</translation>
+        <source>Use 8 separate masternodes to mix funds up to 25000 WEALTH</source>
+        <translation>Usa 8 masternodi diversi per mixare fino a 25000 WEALTH</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
@@ -1612,8 +1612,8 @@ MultiSend: %1</translation>
         <translation>Mappa la porta utilizzando &amp;UPnP</translation>
     </message>
     <message>
-        <source>Enable zTUP Automint</source>
-        <translation>Attiva Autoconio zTUP</translation>
+        <source>Enable zWEALTH Automint</source>
+        <translation>Attiva Autoconio zWEALTH</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -1667,16 +1667,16 @@ MultiSend: %1</translation>
         <translation>Disponibile:</translation>
     </message>
     <message>
-        <source>TUP Balance</source>
-        <translation>Bilancio TUP</translation>
+        <source>WEALTH Balance</source>
+        <translation>Bilancio WEALTH</translation>
     </message>
     <message>
         <source>Immature:</source>
         <translation>Non maturi:</translation>
     </message>
     <message>
-        <source>zTUP Balance</source>
-        <translation>Bilancio zTUP</translation>
+        <source>zWEALTH Balance</source>
+        <translation>Bilancio zWEALTH</translation>
     </message>
     <message>
         <source>OVERVIEW</source>
@@ -1752,12 +1752,12 @@ MultiSend: %1</translation>
         <translation>0</translation>
     </message>
     <message>
-        <source>zTUP</source>
-        <translation>zTUP</translation>
+        <source>zWEALTH</source>
+        <translation>zWEALTH</translation>
     </message>
     <message>
-        <source>0.000 000 00 TUP</source>
-        <translation>0.000 000 00 TUP</translation>
+        <source>0.000 000 00 WEALTH</source>
+        <translation>0.000 000 00 WEALTH</translation>
     </message>
     <message>
         <source>Reset</source>
@@ -1780,8 +1780,8 @@ MultiSend: %1</translation>
         <translation>PRIVACY</translation>
     </message>
     <message>
-        <source>zTUP Control</source>
-        <translation>Controllo zTUP</translation>
+        <source>zWEALTH Control</source>
+        <translation>Controllo zWEALTH</translation>
     </message>
     <message>
         <source>Quantity Selected:</source>
@@ -1796,8 +1796,8 @@ MultiSend: %1</translation>
         <translation>Bilancio Disponibile:</translation>
     </message>
     <message>
-        <source>0 zTUP</source>
-        <translation>0 zTUP</translation>
+        <source>0 zWEALTH</source>
+        <translation>0 zWEALTH</translation>
     </message>
     <message>
         <source>Pay &amp;To:</source>
@@ -1976,8 +1976,8 @@ MultiSend: %1</translation>
         <translation>Copia ammontare</translation>
     </message>
     <message>
-        <source>zTUP Mint</source>
-        <translation>Conio zTUP</translation>
+        <source>zWEALTH Mint</source>
+        <translation>Conio zWEALTH</translation>
     </message>
     <message>
         <source>Confirm additional Fees</source>
@@ -2365,18 +2365,18 @@ MultiSend: %1</translation>
     </message>
     </context>
 <context>
-    <name>ZTupControlDialog</name>
+    <name>ZWealthControlDialog</name>
     <message>
         <source>0</source>
         <translation>0</translation>
     </message>
     <message>
-        <source>zTUP</source>
-        <translation>zTUP</translation>
+        <source>zWEALTH</source>
+        <translation>zWEALTH</translation>
     </message>
     </context>
 <context>
-    <name>tenup-core</name>
+    <name>wealthsilo-core</name>
     <message>
         <source>Error</source>
         <translation>Errore</translation>

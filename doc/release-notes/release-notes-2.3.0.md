@@ -1,13 +1,13 @@
 WealthSilo Core version 2.3.0 is now available from:
 
-  <https://github.com/tenup-project/tenup/releases>
+  <https://github.com/wealthsilo-project/wealthsilo/releases>
 
 This is a new major version release, including various bug fixes and
 performance improvements, as well as updated translations.
 
 Please report bugs using the issue tracker at github:
 
-  <https://github.com/tenup-project/tenup/issues>
+  <https://github.com/wealthsilo-project/wealthsilo/issues>
 
 Mandatory Update
 ==============
@@ -17,7 +17,7 @@ WealthSilo Core v2.3.0 is a mandatory update for all users. This release contain
 How to Upgrade
 --------------
 
-If you are running an older version, shut it down. Wait until it has completely shut down (which might take a few minutes for older versions), then run the installer (on Windows) or just copy over /Applications/Tenup-Qt (on Mac) or tenupd/tenup-qt (on Linux).
+If you are running an older version, shut it down. Wait until it has completely shut down (which might take a few minutes for older versions), then run the installer (on Windows) or just copy over /Applications/Tenup-Qt (on Mac) or wealthsilod/wealthsilo-qt (on Linux).
 
 
 Compatibility
@@ -120,7 +120,7 @@ The third parameter indicates if the wallet should be unlocked for staking and a
 ZeroMQ (ZMQ) Notifications
 --------------
 
-tenupd can now (optionally) asynchronously notify clients through a ZMQ-based PUB socket of the arrival of new transactions and blocks. This feature requires installation of the ZMQ C API library 4.x and configuring its use through the command line or configuration file. Please see [docs/zmq.md](/doc/zmq.md) for details of operation.
+wealthsilod can now (optionally) asynchronously notify clients through a ZMQ-based PUB socket of the arrival of new transactions and blocks. This feature requires installation of the ZMQ C API library 4.x and configuring its use through the command line or configuration file. Please see [docs/zmq.md](/doc/zmq.md) for details of operation.
 
 **All** Masternodes List GUI Removal
 --------------
@@ -195,4 +195,4 @@ Thanks to everyone who directly contributed to this release:
 - furszy
 - presstab
 
-As well as everyone that helped translating on [Transifex](https://www.transifex.com/projects/p/tenup-project-translations/).
+As well as everyone that helped translating on [Transifex](https://www.transifex.com/projects/p/wealthsilo-project-translations/).

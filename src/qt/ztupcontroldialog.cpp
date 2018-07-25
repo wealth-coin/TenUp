@@ -3,8 +3,8 @@
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "ztupcontroldialog.h"
-#include "ui_ztupcontroldialog.h"
+#include "zwealthcontroldialog.h"
+#include "ui_zwealthcontroldialog.h"
 
 #include "accumulators.h"
 #include "main.h"
@@ -13,12 +13,12 @@
 using namespace std;
 using namespace libzerocoin;
 
-std::set<std::string> ZTupControlDialog::setSelectedMints;
-std::set<CMintMeta> ZTupControlDialog::setMints;
+std::set<std::string> ZWealthControlDialog::setSelectedMints;
+std::set<CMintMeta> ZWealthControlDialog::setMints;
 
-ZTupControlDialog::ZTupControlDialog(QWidget *parent) :
+ZWealthControlDialog::ZWealthControlDialog(QWidget *parent) :
     QDialog(parent),
-    ui(new Ui::ZTupControlDialog),
+    ui(new Ui::ZWealthControlDialog),
     model(0)
 {
     ui->setupUi(this);
@@ -32,19 +32,19 @@ ZTupControlDialog::ZTupControlDialog(QWidget *parent) :
     connect(ui->pushButtonAll, SIGNAL(clicked()), this, SLOT(ButtonAllClicked()));
 }
 
-ZTupControlDialog::~ZTupControlDialog()
+ZWealthControlDialog::~ZWealthControlDialog()
 {
     delete ui;
 }
 
-void ZTupControlDialog::setModel(WalletModel *model)
+void ZWealthControlDialog::setModel(WalletModel *model)
 {
     this->model = model;
     updateList();
 }
 
 //Update the tree widget
-void ZTupControlDialog::updateList()
+void ZWealthControlDialog::updateList()
 {
     // need to prevent the slot from being called each time something is changed
     ui->treeWidget->blockSignals(true);
@@ -129,7 +129,7 @@ void ZTupControlDialog::updateList()
 }
 
 // Update the list when a checkbox is clicked
-void ZTupControlDialog::updateSelection(QTreeWidgetItem* item, int column)
+void ZWealthControlDialog::updateSelection(QTreeWidgetItem* item, int column)
 {
     // only want updates from non top level items that are available to spend
     if (item->parent() && column == COLUMN_CHECKBOX && !item->isDisabled()){
@@ -151,7 +151,7 @@ void ZTupControlDialog::updateSelection(QTreeWidgetItem* item, int column)
 }
 
 // Update the Quantity and Amount display
-void ZTupControlDialog::updateLabels()
+void ZWealthControlDialog::updateLabels()
 {
     int64_t nAmount = 0;
     for (const CMintMeta& mint : setMints) {
@@ -160,14 +160,14 @@ void ZTupControlDialog::updateLabels()
     }
 
     //update this dialog's labels
-    ui->labelZTup_int->setText(QString::number(nAmount));
+    ui->labelZWealth_int->setText(QString::number(nAmount));
     ui->labelQuantity_int->setText(QString::number(setSelectedMints.size()));
 
     //update PrivacyDialog labels
-    privacyDialog->setZTupControlLabels(nAmount, setSelectedMints.size());
+    privacyDialog->setZWealthControlLabels(nAmount, setSelectedMints.size());
 }
 
-std::vector<CMintMeta> ZTupControlDialog::GetSelectedMints()
+std::vector<CMintMeta> ZWealthControlDialog::GetSelectedMints()
 {
     std::vector<CMintMeta> listReturn;
     for (const CMintMeta& mint : setMints) {
@@ -179,7 +179,7 @@ std::vector<CMintMeta> ZTupControlDialog::GetSelectedMints()
 }
 
 // select or deselect all of the mints
-void ZTupControlDialog::ButtonAllClicked()
+void ZWealthControlDialog::ButtonAllClicked()
 {
     ui->treeWidget->blockSignals(true);
     Qt::CheckState state = Qt::Checked;

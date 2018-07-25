@@ -176,16 +176,16 @@
         <translation>Confirmar criptografia de carteira</translation>
     </message>
     <message>
-        <source>WealthSilo will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your TUPs from being stolen by malware infecting your computer.</source>
-        <translation>WealthSilo vai fechar agora para finalizar o processo de criptografia. Lembre-se que encriptar sua carteira não pode proteger totalmente suas TUPs de serem roubadas por malwares infectando seu computador.</translation>
+        <source>WealthSilo will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your WEALTHs from being stolen by malware infecting your computer.</source>
+        <translation>WealthSilo vai fechar agora para finalizar o processo de criptografia. Lembre-se que encriptar sua carteira não pode proteger totalmente suas WEALTHs de serem roubadas por malwares infectando seu computador.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Você tem certeza que deseja criptografar sua carteira?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR TUP&lt;/b&gt;!</source>
-        <translation>Aviso: se você criptografar sua carteira e perder sua senha você &lt;b&gt;PERDERÁ TODAS AS SUAS TUP&lt;b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR WEALTH&lt;/b&gt;!</source>
+        <translation>Aviso: se você criptografar sua carteira e perder sua senha você &lt;b&gt;PERDERÁ TODAS AS SUAS WEALTH&lt;b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -409,8 +409,8 @@
         <translation>Olhar histórico de transação</translation>
     </message>
     <message>
-        <source>Privacy Actions for zTUP</source>
-        <translation>Ações privadas para zTUP</translation>
+        <source>Privacy Actions for zWEALTH</source>
+        <translation>Ações privadas para zWEALTH</translation>
     </message>
     <message>
         <source>E&amp;xit</source>
@@ -621,8 +621,8 @@
         <translation>Enviar moedas para um endereço WealthSilo</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and tenup: URIs)</source>
-        <translation>Requisitar pagamentos (gera códigos QR e tenup: URIs)</translation>
+        <source>Request payments (generates QR codes and wealthsilo: URIs)</source>
+        <translation>Requisitar pagamentos (gera códigos QR e wealthsilo: URIs)</translation>
     </message>
     <message>
         <source>&amp;Privacy</source>
@@ -837,8 +837,8 @@ MultiSend: %1</translation>
         <translation>Rótulo</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (tenup.conf).</source>
-        <translation>Nem todas as transações serão exibidas. Para visualizar todas as transações você precisa definir txindex=1 no arquivo de configuração (tenup.conf). </translation>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (wealthsilo.conf).</source>
+        <translation>Nem todas as transações serão exibidas. Para visualizar todas as transações você precisa definir txindex=1 no arquivo de configuração (wealthsilo.conf). </translation>
     </message>
 </context>
 <context>
@@ -1574,32 +1574,32 @@ Favor verificar o endereço e tente novamente.</translation>
         <translation>Favor selecionar o nível de privacidade.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 25000 TUP</source>
-        <translation>Use 2 masternodes separados para embaralhar fundos até 25000 TUP</translation>
+        <source>Use 2 separate masternodes to mix funds up to 25000 WEALTH</source>
+        <translation>Use 2 masternodes separados para embaralhar fundos até 25000 WEALTH</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 25000 TUP</source>
-        <translation>Use 8 masternodes separados para embaralhar fundos até 25000 TUP</translation>
+        <source>Use 8 separate masternodes to mix funds up to 25000 WEALTH</source>
+        <translation>Use 8 masternodes separados para embaralhar fundos até 25000 WEALTH</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>Use 16 masternodes separados</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 TUP to anonymize 25000 TUP</source>
-        <translation>Está opção é a mais rápida e vai custar em torno de ~0.025 TUP para anonimizar 25000 TUP</translation>
+        <source>This option is the quickest and will cost about ~0.025 WEALTH to anonymize 25000 WEALTH</source>
+        <translation>Está opção é a mais rápida e vai custar em torno de ~0.025 WEALTH para anonimizar 25000 WEALTH</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 TUP to anonymize 25000 TUP</source>
-        <translation>Está opção moderamente rápida e vai custar em torno de ~0.05 TUP para anonimizar 25000 TUP</translation>
+        <source>This option is moderately fast and will cost about 0.05 WEALTH to anonymize 25000 WEALTH</source>
+        <translation>Está opção moderamente rápida e vai custar em torno de ~0.05 WEALTH para anonimizar 25000 WEALTH</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
         <translation>Esta é a opção mais lenta e mais segura. Usando a anonimização máxima vai custar</translation>
     </message>
     <message>
-        <source>0.1 TUP per  10000 TUP you anonymize.</source>
-        <translation>0.1 TUP por  10000 TUP que deixar anônima.</translation>
+        <source>0.1 WEALTH per  10000 WEALTH you anonymize.</source>
+        <translation>0.1 WEALTH por  10000 WEALTH que deixar anônima.</translation>
     </message>
     <message>
         <source>Obfuscation Configuration</source>
@@ -1713,9 +1713,9 @@ Favor verificar o endereço e tente novamente.</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/tenup-project/tenup-project-translations</source>
+https://www.transifex.com/wealthsilo-project/wealthsilo-project-translations</source>
         <translation>Linguagem não encontrada ou tradução incompleta? Ajude contribuido com traduções aqui:
-https://www.transifex.com/tenup-project/tenup-project-translations</translation>
+https://www.transifex.com/wealthsilo-project/wealthsilo-project-translations</translation>
     </message>
     <message>
         <source>Connect to the WealthSilo network through a SOCKS5 proxy.</source>
@@ -1958,12 +1958,12 @@ https://www.transifex.com/tenup-project/tenup-project-translations</translation>
         <translation>0</translation>
     </message>
     <message>
-        <source>zTUP</source>
-        <translation>zTUP</translation>
+        <source>zWEALTH</source>
+        <translation>zWEALTH</translation>
     </message>
     <message>
-        <source>0.000 000 00 TUP</source>
-        <translation>0.000 000 00 TUP</translation>
+        <source>0.000 000 00 WEALTH</source>
+        <translation>0.000 000 00 WEALTH</translation>
     </message>
     <message>
         <source>Reset</source>
@@ -2038,8 +2038,8 @@ https://www.transifex.com/tenup-project/tenup-project-translations</translation>
         <translation>Estatísticas zerocoin:</translation>
     </message>
     <message>
-        <source>Total Balance including unconfirmed and immature zTUP</source>
-        <translation>Balanço Total incluindo não confirmadas e imaturas zTUP</translation>
+        <source>Total Balance including unconfirmed and immature zWEALTH</source>
+        <translation>Balanço Total incluindo não confirmadas e imaturas zWEALTH</translation>
     </message>
     <message>
         <source>Total Zerocoin  Balance:</source>
@@ -2687,8 +2687,8 @@ https://www.transifex.com/tenup-project/tenup-project-translations</translation>
         <translation>Tamanho UTXO:</translation>
     </message>
     <message>
-        <source>0 TUP</source>
-        <translation>0 TUP</translation>
+        <source>0 WEALTH</source>
+        <translation>0 WEALTH</translation>
     </message>
     <message>
         <source>Transaction Fee:</source>
@@ -2731,8 +2731,8 @@ https://www.transifex.com/tenup-project/tenup-project-translations</translation>
         <translation>Tempo de confirmação:</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uTUPs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uTUPs in fee,&lt;br /&gt;while "at least" pays 1000 uTUPs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Se a taxa padrão estiver definida para 1000 uTUPs e a transação for somente de 250 bytes, então "por kilobyte" pagará somente 250 uTUPs em taxa,&lt;br /&gt; pagará pelo menos 1000 uTUPs. Para transações maiores que um kilobyte ambas pagam por kilobyte.</translation>
+        <source>If the custom fee is set to 1000 uWEALTHs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uWEALTHs in fee,&lt;br /&gt;while "at least" pays 1000 uWEALTHs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Se a taxa padrão estiver definida para 1000 uWEALTHs e a transação for somente de 250 bytes, então "por kilobyte" pagará somente 250 uWEALTHs em taxa,&lt;br /&gt; pagará pelo menos 1000 uWEALTHs. Para transações maiores que um kilobyte ambas pagam por kilobyte.</translation>
     </message>
     <message>
         <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for WealthSilo transactions than the network can process.</source>
@@ -2783,8 +2783,8 @@ https://www.transifex.com/tenup-project/tenup-project-translations</translation>
         <translation>Adicionar &amp;Recipiente</translation>
     </message>
     <message>
-        <source>Anonymized TUP</source>
-        <translation>TUP anonimizadas</translation>
+        <source>Anonymized WEALTH</source>
+        <translation>WEALTH anonimizadas</translation>
     </message>
     <message>
         <source>Balance:</source>
@@ -3635,7 +3635,7 @@ https://www.transifex.com/tenup-project/tenup-project-translations</translation>
     </message>
 </context>
 <context>
-    <name>ZTupControlDialog</name>
+    <name>ZWealthControlDialog</name>
     <message>
         <source>Quantity</source>
         <translation>Quantia</translation>
@@ -3645,8 +3645,8 @@ https://www.transifex.com/tenup-project/tenup-project-translations</translation>
         <translation>0</translation>
     </message>
     <message>
-        <source>zTUP</source>
-        <translation>zTUP</translation>
+        <source>zWEALTH</source>
+        <translation>zWEALTH</translation>
     </message>
     <message>
         <source>Select/Deselect All</source>
@@ -3654,7 +3654,7 @@ https://www.transifex.com/tenup-project/tenup-project-translations</translation>
     </message>
     </context>
 <context>
-    <name>tenup-core</name>
+    <name>wealthsilo-core</name>
     <message>
         <source>Delete all wallet transactions and only recover those parts of the blockchain through -rescan on startup</source>
         <translation>Deletar todas as transações da carteira e somente recuperar aquelas partes da blockchain através de -rescan na inicialização</translation>
@@ -3672,12 +3672,12 @@ https://www.transifex.com/tenup-project/tenup-project-translations</translation>
         <translation>Executar o comando quando uma transação da carteira mudar (%s no cmd será substituído pela TxID)</translation>
     </message>
     <message>
-        <source>Fees (in TUP/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>Taxas (em TUP/Kb) menores que isso serão consideradas taxa zero para propagação (padrão: %s)</translation>
+        <source>Fees (in WEALTH/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>Taxas (em WEALTH/Kb) menores que isso serão consideradas taxa zero para propagação (padrão: %s)</translation>
     </message>
     <message>
-        <source>Fees (in TUP/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>Taxas (em TUP/Kb) menores que isso serão consideradas taxa zero para a criação da transação (padrão: %s)</translation>
+        <source>Fees (in WEALTH/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>Taxas (em WEALTH/Kb) menores que isso serão consideradas taxa zero para a criação da transação (padrão: %s)</translation>
     </message>
     <message>
         <source>In this mode -genproclimit controls how many blocks are generated immediately.</source>
@@ -3696,8 +3696,8 @@ https://www.transifex.com/tenup-project/tenup-project-translations</translation>
         <translation>Define o tamanho máximo de transações de alta prioridade/taxa baixa em bytes (padrão: %d)</translation>
     </message>
     <message>
-        <source>Unable to locate enough funds for this transaction that are not equal 25000 TUP.</source>
-        <translation>Incapaz de localizar fundos para esta transação que não são iguais a 25000 TUP.</translation>
+        <source>Unable to locate enough funds for this transaction that are not equal 25000 WEALTH.</source>
+        <translation>Incapaz de localizar fundos para esta transação que não são iguais a 25000 WEALTH.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
@@ -3896,8 +3896,8 @@ https://www.transifex.com/tenup-project/tenup-project-translations</translation>
         <translation>Falhou em ler o bloco</translation>
     </message>
     <message>
-        <source>Fee (in TUP/kB) to add to transactions you send (default: %s)</source>
-        <translation>Taxa (em TUP/kB) a adicionar em transações que você enviar (padrão: %s)</translation>
+        <source>Fee (in WEALTH/kB) to add to transactions you send (default: %s)</source>
+        <translation>Taxa (em WEALTH/kB) a adicionar em transações que você enviar (padrão: %s)</translation>
     </message>
     <message>
         <source>Finalizing transaction.</source>

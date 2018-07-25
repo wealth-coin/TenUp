@@ -17,13 +17,13 @@ BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
             VALUE "CompanyName",        "WealthSilo"
-            VALUE "FileDescription",    "tenup-tx (CLI WealthSilo transaction editor utility)"
+            VALUE "FileDescription",    "wealthsilo-tx (CLI WealthSilo transaction editor utility)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
-            VALUE "InternalName",       "tenup-tx"
+            VALUE "InternalName",       "wealthsilo-tx"
             VALUE "LegalCopyright",     COPYRIGHT_STR
             VALUE "LegalTrademarks1",   "Distributed under the MIT software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php."
-            VALUE "OriginalFilename",   "tenup-tx.exe"
-            VALUE "ProductName",        "tenup-tx"
+            VALUE "OriginalFilename",   "wealthsilo-tx.exe"
+            VALUE "ProductName",        "wealthsilo-tx"
             VALUE "ProductVersion",     VER_PRODUCTVERSION_STR
         END
     END

@@ -2,12 +2,12 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2018 The PIVX developers
-// Copyright (c) 2015-2018 The WealthSilo developers
+// Copyright (c) 2018 The WealthSilo developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #if defined(HAVE_CONFIG_H)
-#include "config/tenup-config.h"
+#include "config/wealthsilo-config.h"
 #endif
 
 #include "init.h"
@@ -74,7 +74,7 @@ using namespace std;
 
 #ifdef ENABLE_WALLET
 CWallet* pwalletMain = NULL;
-CzTUPWallet* zwalletMain = NULL;
+CzWEALTHWallet* zwalletMain = NULL;
 int nWalletBackups = 10;
 #endif
 volatile bool fFeeEstimatesInitialized = false;
@@ -195,7 +195,7 @@ void PrepareShutdown()
     /// for example if the data directory was found to be locked.
     /// Be sure that anything that writes files or flushes caches only does this if the respective
     /// module was initialized.
-    RenameThread("tenup-shutoff");
+    RenameThread("wealthsilo-shutoff");
     mempool.AddTransactionsUpdated(1);
     StopHTTPRPC();
     StopREST();
@@ -362,7 +362,7 @@ std::string HelpMessage(HelpMessageMode mode)
     strUsage += HelpMessageOpt("-blocknotify=<cmd>", _("Execute command when the best block changes (%s in cmd is replaced by block hash)"));
     strUsage += HelpMessageOpt("-blocksizenotify=<cmd>", _("Execute command when the best block changes and its size is over (%s in cmd is replaced by block hash, %d with the block size)"));
     strUsage += HelpMessageOpt("-checkblocks=<n>", strprintf(_("How many blocks to check at startup (default: %u, 0 = all)"), 500));
-    strUsage += HelpMessageOpt("-conf=<file>", strprintf(_("Specify configuration file (default: %s)"), "tenup.conf"));
+    strUsage += HelpMessageOpt("-conf=<file>", strprintf(_("Specify configuration file (default: %s)"), "wealthsilo.conf"));
     if (mode == HMM_BITCOIND) {
 #if !defined(WIN32)
         strUsage += HelpMessageOpt("-daemon", _("Run in the background as a daemon and accept commands"));
@@ -375,11 +375,11 @@ std::string HelpMessage(HelpMessageMode mode)
     strUsage += HelpMessageOpt("-maxorphantx=<n>", strprintf(_("Keep at most <n> unconnectable transactions in memory (default: %u)"), DEFAULT_MAX_ORPHAN_TRANSACTIONS));
     strUsage += HelpMessageOpt("-par=<n>", strprintf(_("Set the number of script verification threads (%u to %d, 0 = auto, <0 = leave that many cores free, default: %d)"), -(int)boost::thread::hardware_concurrency(), MAX_SCRIPTCHECK_THREADS, DEFAULT_SCRIPTCHECK_THREADS));
 #ifndef WIN32
-    strUsage += HelpMessageOpt("-pid=<file>", strprintf(_("Specify pid file (default: %s)"), "tenupd.pid"));
+    strUsage += HelpMessageOpt("-pid=<file>", strprintf(_("Specify pid file (default: %s)"), "wealthsilod.pid"));
 #endif
     strUsage += HelpMessageOpt("-reindex", _("Rebuild block chain index from current blk000??.dat files") + " " + _("on startup"));
     strUsage += HelpMessageOpt("-reindexaccumulators", _("Reindex the accumulator database") + " " + _("on startup"));
-    strUsage += HelpMessageOpt("-reindexmoneysupply", _("Reindex the TUP and zTUP money supply statistics") + " " + _("on startup"));
+    strUsage += HelpMessageOpt("-reindexmoneysupply", _("Reindex the WEALTH and zWEALTH money supply statistics") + " " + _("on startup"));
     strUsage += HelpMessageOpt("-resync", _("Delete blockchain folders and resync from scratch") + " " + _("on startup"));
 #if !defined(WIN32)
     strUsage += HelpMessageOpt("-sysperms", _("Create new files with system default permissions, instead of umask 077 (only effective with disabled wallet functionality)"));
@@ -434,9 +434,9 @@ std::string HelpMessage(HelpMessageMode mode)
     strUsage += HelpMessageOpt("-disablewallet", _("Do not load the wallet and disable wallet RPC calls"));
     strUsage += HelpMessageOpt("-keypool=<n>", strprintf(_("Set key pool size to <n> (default: %u)"), 100));
     if (GetBoolArg("-help-debug", false))
-        strUsage += HelpMessageOpt("-mintxfee=<amt>", strprintf(_("Fees (in TUP/Kb) smaller than this are considered zero fee for transaction creation (default: %s)"),
+        strUsage += HelpMessageOpt("-mintxfee=<amt>", strprintf(_("Fees (in WEALTH/Kb) smaller than this are considered zero fee for transaction creation (default: %s)"),
             FormatMoney(CWallet::minTxFee.GetFeePerK())));
-    strUsage += HelpMessageOpt("-paytxfee=<amt>", strprintf(_("Fee (in TUP/kB) to add to transactions you send (default: %s)"), FormatMoney(payTxFee.GetFeePerK())));
+    strUsage += HelpMessageOpt("-paytxfee=<amt>", strprintf(_("Fee (in WEALTH/kB) to add to transactions you send (default: %s)"), FormatMoney(payTxFee.GetFeePerK())));
     strUsage += HelpMessageOpt("-rescan", _("Rescan the block chain for missing wallet transactions") + " " + _("on startup"));
     strUsage += HelpMessageOpt("-salvagewallet", _("Attempt to recover private keys from a corrupt wallet.dat") + " " + _("on startup"));
     strUsage += HelpMessageOpt("-sendfreetransactions", strprintf(_("Send transactions as zero-fee transactions if possible (default: %u)"), 0));
@@ -479,7 +479,7 @@ std::string HelpMessage(HelpMessageMode mode)
         strUsage += HelpMessageOpt("-stopafterblockimport", strprintf(_("Stop running after importing blocks from disk (default: %u)"), 0));
         strUsage += HelpMessageOpt("-sporkkey=<privkey>", _("Enable spork administration functionality with the appropriate private key."));
     }
-    string debugCategories = "addrman, alert, bench, coindb, db, lock, rand, rpc, selectcoins, tor, mempool, net, proxy, http, libevent, tenup, (obfuscation, swiftx, masternode, mnpayments, mnbudget, zero)"; // Don't translate these and qt below
+    string debugCategories = "addrman, alert, bench, coindb, db, lock, rand, rpc, selectcoins, tor, mempool, net, proxy, http, libevent, wealthsilo, (obfuscation, swiftx, masternode, mnpayments, mnbudget, zero)"; // Don't translate these and qt below
     if (mode == HMM_BITCOIN_QT)
         debugCategories += ", qt";
     strUsage += HelpMessageOpt("-debug=<category>", strprintf(_("Output debugging information (default: %u, supplying <category> is optional)"), 0) + ". " +
@@ -498,7 +498,7 @@ std::string HelpMessage(HelpMessageMode mode)
         strUsage += HelpMessageOpt("-relaypriority", strprintf(_("Require high priority for relaying free or low-fee transactions (default:%u)"), 1));
         strUsage += HelpMessageOpt("-maxsigcachesize=<n>", strprintf(_("Limit size of signature cache to <n> entries (default: %u)"), 50000));
     }
-    strUsage += HelpMessageOpt("-minrelaytxfee=<amt>", strprintf(_("Fees (in TUP/Kb) smaller than this are considered zero fee for relaying (default: %s)"), FormatMoney(::minRelayTxFee.GetFeePerK())));
+    strUsage += HelpMessageOpt("-minrelaytxfee=<amt>", strprintf(_("Fees (in WEALTH/Kb) smaller than this are considered zero fee for relaying (default: %s)"), FormatMoney(::minRelayTxFee.GetFeePerK())));
     strUsage += HelpMessageOpt("-printtoconsole", strprintf(_("Send trace/debug info to console instead of debug.log file (default: %u)"), 0));
     if (GetBoolArg("-help-debug", false)) {
         strUsage += HelpMessageOpt("-printpriority", strprintf(_("Log transaction priority and fee per kB when mining blocks (default: %u)"), 0));
@@ -514,8 +514,8 @@ std::string HelpMessage(HelpMessageMode mode)
 #ifdef ENABLE_WALLET
     strUsage += HelpMessageGroup(_("Staking options:"));
     strUsage += HelpMessageOpt("-staking=<n>", strprintf(_("Enable staking functionality (0-1, default: %u)"), 1));
-    strUsage += HelpMessageOpt("-tupstake=<n>", strprintf(_("Enable or disable staking functionality for TUP inputs (0-1, default: %u)"), 1));
-    strUsage += HelpMessageOpt("-ztupstake=<n>", strprintf(_("Enable or disable staking functionality for zTUP inputs (0-1, default: %u)"), 1));
+    strUsage += HelpMessageOpt("-tupstake=<n>", strprintf(_("Enable or disable staking functionality for WEALTH inputs (0-1, default: %u)"), 1));
+    strUsage += HelpMessageOpt("-zwealthstake=<n>", strprintf(_("Enable or disable staking functionality for zWEALTH inputs (0-1, default: %u)"), 1));
     strUsage += HelpMessageOpt("-reservebalance=<amt>", _("Keep the specified amount available for spending at all times (default: 0)"));
     if (GetBoolArg("-help-debug", false)) {
         strUsage += HelpMessageOpt("-printstakemodifier", _("Display the stake modifier calculations in the debug.log file."));
@@ -536,12 +536,12 @@ std::string HelpMessage(HelpMessageMode mode)
     strUsage += HelpMessageOpt("-enablezeromint=<n>", strprintf(_("Enable automatic Zerocoin minting (0-1, default: %u)"), 1));
     strUsage += HelpMessageOpt("-zeromintpercentage=<n>", strprintf(_("Percentage of automatically minted Zerocoin  (1-100, default: %u)"), 10));
     strUsage += HelpMessageOpt("-preferredDenom=<n>", strprintf(_("Preferred Denomination for automatically minted Zerocoin  (1/5/10/50/100/500/1000/5000), 0 for no preference. default: %u)"), 0));
-    strUsage += HelpMessageOpt("-backupztup=<n>", strprintf(_("Enable automatic wallet backups triggered after each zTUP minting (0-1, default: %u)"), 1));
-    strUsage += HelpMessageOpt("-ztupbackuppath=<dir|file>", _("Specify custom backup path to add a copy of any automatic zTUP backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen"));
+    strUsage += HelpMessageOpt("-backupzwealth=<n>", strprintf(_("Enable automatic wallet backups triggered after each zWEALTH minting (0-1, default: %u)"), 1));
+    strUsage += HelpMessageOpt("-zwealthbackuppath=<dir|file>", _("Specify custom backup path to add a copy of any automatic zWEALTH backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen"));
 #endif // ENABLE_WALLET
     strUsage += HelpMessageOpt("-reindexzerocoin=<n>", strprintf(_("Delete all zerocoin spends and mints that have been recorded to the blockchain database and reindex them (0-1, default: %u)"), 0));
 
-//    strUsage += "  -anonymizetenupamount=<n>     " + strprintf(_("Keep N TUP anonymized (default: %u)"), 0) + "\n";
+//    strUsage += "  -anonymizewealthsiloamount=<n>     " + strprintf(_("Keep N WEALTH anonymized (default: %u)"), 0) + "\n";
 //    strUsage += "  -liquidityprovider=<n>       " + strprintf(_("Provide liquidity to Obfuscation by infrequently mixing coins on a continual basis (0-100, default: %u, 1=very frequent, high fees, 100=very infrequent, low fees)"), 0) + "\n";
 
     strUsage += HelpMessageGroup(_("SwiftX options:"));
@@ -626,7 +626,7 @@ struct CImportingNow {
 
 void ThreadImport(std::vector<boost::filesystem::path> vImportFiles)
 {
-    RenameThread("tenup-loadblk");
+    RenameThread("wealthsilo-loadblk");
 
     // -reindex
     if (fReindex) {
@@ -717,7 +717,7 @@ bool AppInitServers(boost::thread_group& threadGroup)
     return true;
 }
 
-/** Initialize tenup.
+/** Initialize wealthsilo.
  *  @pre Parameters should be parsed and config file should be read.
  */
 bool AppInit2(boost::thread_group& threadGroup, CScheduler& scheduler)
@@ -1494,10 +1494,10 @@ bool AppInit2(boost::thread_group& threadGroup, CScheduler& scheduler)
                 // Recalculate money supply for blocks that are impacted by accounting issue after zerocoin activation
                 if (GetBoolArg("-reindexmoneysupply", false)) {
                     if (chainActive.Height() > Params().Zerocoin_StartHeight()) {
-                        RecalculateZTUPMinted();
-                        RecalculateZTUPSpent();
+                        RecalculateZWEALTHMinted();
+                        RecalculateZWEALTHSpent();
                     }
-                    RecalculateTUPSupply(1);
+                    RecalculateWEALTHSupply(1);
                 }
 
                 // Force recalculation of accumulators.
@@ -1655,7 +1655,7 @@ bool AppInit2(boost::thread_group& threadGroup, CScheduler& scheduler)
 
         LogPrintf("%s", strErrors.str());
         LogPrintf(" wallet      %15dms\n", GetTimeMillis() - nStart);
-        zwalletMain = new CzTUPWallet(pwalletMain->strWalletFile);
+        zwalletMain = new CzWEALTHWallet(pwalletMain->strWalletFile);
         pwalletMain->setZWallet(zwalletMain);
 
         RegisterValidationInterface(pwalletMain);
@@ -1702,14 +1702,14 @@ bool AppInit2(boost::thread_group& threadGroup, CScheduler& scheduler)
         }
         fVerifyingBlocks = false;
 
-        //Inititalize zTUPWallet
-        uiInterface.InitMessage(_("Syncing zTUP wallet..."));
+        //Inititalize zWEALTHWallet
+        uiInterface.InitMessage(_("Syncing zWEALTH wallet..."));
 
-        bool fEnableZTupBackups = GetBoolArg("-backupztup", true);
-        pwalletMain->setZTupAutoBackups(fEnableZTupBackups);
+        bool fEnableZWealthBackups = GetBoolArg("-backupzwealth", true);
+        pwalletMain->setZWealthAutoBackups(fEnableZWealthBackups);
 
         //Load zerocoin mint hashes to memory
-        pwalletMain->ztupTracker->Init();
+        pwalletMain->zwealthTracker->Init();
         zwalletMain->LoadMintPoolFromDB();
         zwalletMain->SyncWithChain();
     }  // (!fDisableWallet)
@@ -1868,7 +1868,7 @@ bool AppInit2(boost::thread_group& threadGroup, CScheduler& scheduler)
 //        nZeromintPercentage = 99999;
 //    }
 //
-//    nAnonymizeTenupAmount = GetArg("-anonymizetenupamount", 0);
+//    nAnonymizeTenupAmount = GetArg("-anonymizewealthsiloamount", 0);
 //    if (nAnonymizeTenupAmount > 999999) nAnonymizeTenupAmount = 999999;
 //    if (nAnonymizeTenupAmount < 2) nAnonymizeTenupAmount = 2;
 
@@ -1893,8 +1893,8 @@ bool AppInit2(boost::thread_group& threadGroup, CScheduler& scheduler)
        is convertable to another.
 
        For example:
-       1TUP+1000 == (.1TUP+100)*10
-       10TUP+10000 == (1TUP+1000)*10
+       1WEALTH+1000 == (.1WEALTH+100)*10
+       10WEALTH+10000 == (1WEALTH+1000)*10
     */
     obfuScationDenominations.push_back((10000 * COIN) + 10000000);
     obfuScationDenominations.push_back((1000 * COIN) + 1000000);

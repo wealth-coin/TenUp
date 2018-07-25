@@ -133,13 +133,13 @@
        <item>
         <widget class="QCheckBox" name="checkBoxZeromintEnable">
          <property name="toolTip">
-          <string>Enable automatic minting of TUP units to zTUP</string>
+          <string>Enable automatic minting of WEALTH units to zWEALTH</string>
          </property>
          <property name="layoutDirection">
           <enum>Qt::LeftToRight</enum>
          </property>
          <property name="text">
-          <string>Enable zTUP Automint</string>
+          <string>Enable zWEALTH Automint</string>
          </property>
         </widget>
        </item>
@@ -148,10 +148,10 @@
          <item>
           <widget class="QLabel" name="percentage_label">
            <property name="toolTip">
-            <string>Percentage of incoming TUP which get automatically converted to zTUP via Zerocoin Protocol (min: 10%)</string>
+            <string>Percentage of incoming WEALTH which get automatically converted to zWEALTH via Zerocoin Protocol (min: 10%)</string>
            </property>
            <property name="text">
-            <string>Percentage of autominted zTUP</string>
+            <string>Percentage of autominted zWEALTH</string>
            </property>
           </widget>
          </item>
@@ -181,10 +181,10 @@
             </size>
            </property>
            <property name="toolTip">
-            <string>Wait with automatic conversion to Zerocoin until enough TUP for this denomination is available</string>
+            <string>Wait with automatic conversion to Zerocoin until enough WEALTH for this denomination is available</string>
            </property>
            <property name="text">
-            <string>Preferred Automint zTUP Denomination</string>
+            <string>Preferred Automint zWEALTH Denomination</string>
            </property>
           </widget>
          </item>
@@ -197,7 +197,7 @@
             </size>
            </property>
            <property name="toolTip">
-            <string>Wait with automatic conversion to Zerocoin until enough TUP for this denomination is available</string>
+            <string>Wait with automatic conversion to Zerocoin until enough WEALTH for this denomination is available</string>
            </property>
            <property name="maxVisibleItems">
             <number>9</number>
@@ -507,7 +507,7 @@
          </property>
          <property name="text">
           <string>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/tenup-project/tenup-project-translations</string>
+https://www.transifex.com/wealthsilo-project/wealthsilo-project-translations</string>
          </property>
          <property name="wordWrap">
           <bool>true</bool>

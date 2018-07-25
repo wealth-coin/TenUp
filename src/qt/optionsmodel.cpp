@@ -1,12 +1,12 @@
 // Copyright (c) 2011-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2018 The PIVX developers
-// Copyright (c) 2015-2018 The WealthSilo developers
+// Copyright (c) 2018 The WealthSilo developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #if defined(HAVE_CONFIG_H)
-#include "config/tenup-config.h"
+#include "config/wealthsilo-config.h"
 #endif
 
 #include "optionsmodel.h"
@@ -63,7 +63,7 @@ void OptionsModel::Init()
 
     // Display
     if (!settings.contains("nDisplayUnit"))
-        settings.setValue("nDisplayUnit", BitcoinUnits::TUP);
+        settings.setValue("nDisplayUnit", BitcoinUnits::WEALTH);
     nDisplayUnit = settings.value("nDisplayUnit").toInt();
 
     if (!settings.contains("strThirdPartyTxUrls"))
@@ -168,7 +168,7 @@ void OptionsModel::Init()
     if (settings.contains("nPreferredDenom"))
         SoftSetArg("-preferredDenom", settings.value("nPreferredDenom").toString().toStdString());
     if (settings.contains("nAnonymizeTenupAmount"))
-        SoftSetArg("-anonymizetenupamount", settings.value("nAnonymizeTenupAmount").toString().toStdString());
+        SoftSetArg("-anonymizewealthsiloamount", settings.value("nAnonymizeTenupAmount").toString().toStdString());
 
 
 
@@ -181,7 +181,7 @@ void OptionsModel::Reset()
 
     // Remove all entries from our QSettings object
     settings.clear();
-    resetSettings = true; // Needed in tenup.cpp during shotdown to also remove the window positions
+    resetSettings = true; // Needed in wealthsilo.cpp during shotdown to also remove the window positions
 
     // default setting for OptionsModel::StartAtStartup - disabled
     if (GUIUtil::GetStartOnSystemStartup())

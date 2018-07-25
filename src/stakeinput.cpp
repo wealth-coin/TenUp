@@ -10,7 +10,7 @@
 #include "stakeinput.h"
 #include "wallet.h"
 
-CZTupStake::CZTupStake(const libzerocoin::CoinSpend& spend)
+CZWealthStake::CZWealthStake(const libzerocoin::CoinSpend& spend)
 {
     this->nChecksum = spend.getAccumulatorChecksum();
     this->denom = spend.getDenomination();
@@ -20,7 +20,7 @@ CZTupStake::CZTupStake(const libzerocoin::CoinSpend& spend)
     fMint = false;
 }
 
-int CZTupStake::GetChecksumHeightFromMint()
+int CZWealthStake::GetChecksumHeightFromMint()
 {
     int nHeightChecksum = chainActive.Height() - Params().Zerocoin_RequiredStakeDepth();
 
@@ -31,20 +31,20 @@ int CZTupStake::GetChecksumHeightFromMint()
     return GetChecksumHeight(nChecksum, denom);
 }
 
-int CZTupStake::GetChecksumHeightFromSpend()
+int CZWealthStake::GetChecksumHeightFromSpend()
 {
     return GetChecksumHeight(nChecksum, denom);
 }
 
-uint32_t CZTupStake::GetChecksum()
+uint32_t CZWealthStake::GetChecksum()
 {
     return nChecksum;
 }
 
-// The zTUP block index is the first appearance of the accumulator checksum that was used in the spend
+// The zWEALTH block index is the first appearance of the accumulator checksum that was used in the spend
 // note that this also means when staking that this checksum should be from a block that is beyond 60 minutes old and
 // 100 blocks deep.
-CBlockIndex* CZTupStake::GetIndexFrom()
+CBlockIndex* CZWealthStake::GetIndexFrom()
 {
     if (pindexFrom)
         return pindexFrom;
@@ -66,13 +66,13 @@ CBlockIndex* CZTupStake::GetIndexFrom()
     return pindexFrom;
 }
 
-CAmount CZTupStake::GetValue()
+CAmount CZWealthStake::GetValue()
 {
     return denom * COIN;
 }
 
 //Use the first accumulator checkpoint that occurs 60 minutes after the block being staked from
-bool CZTupStake::GetModifier(uint64_t& nStakeModifier)
+bool CZWealthStake::GetModifier(uint64_t& nStakeModifier)
 {
     CBlockIndex* pindex = GetIndexFrom();
     if (!pindex)
@@ -92,15 +92,15 @@ bool CZTupStake::GetModifier(uint64_t& nStakeModifier)
     }
 }
 
-CDataStream CZTupStake::GetUniqueness()
+CDataStream CZWealthStake::GetUniqueness()
 {
-    //The unique identifier for a zTUP is a hash of the serial
+    //The unique identifier for a zWEALTH is a hash of the serial
     CDataStream ss(SER_GETHASH, 0);
     ss << hashSerial;
     return ss;
 }
 
-bool CZTupStake::CreateTxIn(CWallet* pwallet, CTxIn& txIn, uint256 hashTxOut)
+bool CZWealthStake::CreateTxIn(CWallet* pwallet, CTxIn& txIn, uint256 hashTxOut)
 {
     CBlockIndex* pindexCheckpoint = GetIndexFrom();
     if (!pindexCheckpoint)
@@ -121,25 +121,25 @@ bool CZTupStake::CreateTxIn(CWallet* pwallet, CTxIn& txIn, uint256 hashTxOut)
     return true;
 }
 
-bool CZTupStake::CreateTxOuts(CWallet* pwallet, vector<CTxOut>& vout, CAmount nTotal)
+bool CZWealthStake::CreateTxOuts(CWallet* pwallet, vector<CTxOut>& vout, CAmount nTotal)
 {
-    //Create an output returning the zTUP that was staked
+    //Create an output returning the zWEALTH that was staked
     CTxOut outReward;
     libzerocoin::CoinDenomination denomStaked = libzerocoin::AmountToZerocoinDenomination(this->GetValue());
     CDeterministicMint dMint;
-    if (!pwallet->CreateZTUPOutPut(denomStaked, outReward, dMint))
-        return error("%s: failed to create zTUP output", __func__);
+    if (!pwallet->CreateZWEALTHOutPut(denomStaked, outReward, dMint))
+        return error("%s: failed to create zWEALTH output", __func__);
     vout.emplace_back(outReward);
 
     //Add new staked denom to our wallet
     if (!pwallet->DatabaseMint(dMint))
-        return error("%s: failed to database the staked zTUP", __func__);
+        return error("%s: failed to database the staked zWEALTH", __func__);
 
     for (unsigned int i = 0; i < 3; i++) {
         CTxOut out;
         CDeterministicMint dMintReward;
-        if (!pwallet->CreateZTUPOutPut(libzerocoin::CoinDenomination::ZQ_ONE, out, dMintReward))
-            return error("%s: failed to create zTUP output", __func__);
+        if (!pwallet->CreateZWEALTHOutPut(libzerocoin::CoinDenomination::ZQ_ONE, out, dMintReward))
+            return error("%s: failed to create zWEALTH output", __func__);
         vout.emplace_back(out);
 
         if (!pwallet->DatabaseMint(dMintReward))
@@ -149,48 +149,48 @@ bool CZTupStake::CreateTxOuts(CWallet* pwallet, vector<CTxOut>& vout, CAmount nT
     return true;
 }
 
-bool CZTupStake::GetTxFrom(CTransaction& tx)
+bool CZWealthStake::GetTxFrom(CTransaction& tx)
 {
     return false;
 }
 
-bool CZTupStake::MarkSpent(CWallet *pwallet, const uint256& txid)
+bool CZWealthStake::MarkSpent(CWallet *pwallet, const uint256& txid)
 {
-    CzTUPTracker* ztupTracker = pwallet->ztupTracker.get();
+    CzWEALTHTracker* zwealthTracker = pwallet->zwealthTracker.get();
     CMintMeta meta;
-    if (!ztupTracker->GetMetaFromStakeHash(hashSerial, meta))
+    if (!zwealthTracker->GetMetaFromStakeHash(hashSerial, meta))
         return error("%s: tracker does not have serialhash", __func__);
 
-    ztupTracker->SetPubcoinUsed(meta.hashPubcoin, txid);
+    zwealthTracker->SetPubcoinUsed(meta.hashPubcoin, txid);
     return true;
 }
 
-//!TUP Stake
-bool CTupStake::SetInput(CTransaction txPrev, unsigned int n)
+//!WEALTH Stake
+bool CWealthStake::SetInput(CTransaction txPrev, unsigned int n)
 {
     this->txFrom = txPrev;
     this->nPosition = n;
     return true;
 }
 
-bool CTupStake::GetTxFrom(CTransaction& tx)
+bool CWealthStake::GetTxFrom(CTransaction& tx)
 {
     tx = txFrom;
     return true;
 }
 
-bool CTupStake::CreateTxIn(CWallet* pwallet, CTxIn& txIn, uint256 hashTxOut)
+bool CWealthStake::CreateTxIn(CWallet* pwallet, CTxIn& txIn, uint256 hashTxOut)
 {
     txIn = CTxIn(txFrom.GetHash(), nPosition);
     return true;
 }
 
-CAmount CTupStake::GetValue()
+CAmount CWealthStake::GetValue()
 {
     return txFrom.vout[nPosition].nValue;
 }
 
-bool CTupStake::CreateTxOuts(CWallet* pwallet, vector<CTxOut>& vout, CAmount nTotal)
+bool CWealthStake::CreateTxOuts(CWallet* pwallet, vector<CTxOut>& vout, CAmount nTotal)
 {
     vector<valtype> vSolutions;
     txnouttype whichType;
@@ -224,7 +224,7 @@ bool CTupStake::CreateTxOuts(CWallet* pwallet, vector<CTxOut>& vout, CAmount nTo
     return true;
 }
 
-bool CTupStake::GetModifier(uint64_t& nStakeModifier)
+bool CWealthStake::GetModifier(uint64_t& nStakeModifier)
 {
     int nStakeModifierHeight = 0;
     int64_t nStakeModifierTime = 0;
@@ -238,16 +238,16 @@ bool CTupStake::GetModifier(uint64_t& nStakeModifier)
     return true;
 }
 
-CDataStream CTupStake::GetUniqueness()
+CDataStream CWealthStake::GetUniqueness()
 {
-    //The unique identifier for a TUP stake is the outpoint
+    //The unique identifier for a WEALTH stake is the outpoint
     CDataStream ss(SER_NETWORK, 0);
     ss << nPosition << txFrom.GetHash();
     return ss;
 }
 
 //The block that the UTXO was added to the chain
-CBlockIndex* CTupStake::GetIndexFrom()
+CBlockIndex* CWealthStake::GetIndexFrom()
 {
     uint256 hashBlock = 0;
     CTransaction tx;

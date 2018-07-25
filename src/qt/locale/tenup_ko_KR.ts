@@ -176,16 +176,16 @@
         <translation>지갑 암호화 확인</translation>
     </message>
     <message>
-        <source>WealthSilo will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your TUPs from being stolen by malware infecting your computer.</source>
-        <translation>TenUp는 이제 암호화 프로세스를 마치기 위해 닫힐것입니다. 지갑을 암호화하더라도 맬웨어로 인한 TUPs 의 도난당하는 것을 완벽하게 보호 할 수는 없습니다.</translation>
+        <source>WealthSilo will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your WEALTHs from being stolen by malware infecting your computer.</source>
+        <translation>WealthSilo는 이제 암호화 프로세스를 마치기 위해 닫힐것입니다. 지갑을 암호화하더라도 맬웨어로 인한 WEALTHs 의 도난당하는 것을 완벽하게 보호 할 수는 없습니다.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>지갑을 암호화 하시겠습니까?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR TUP&lt;/b&gt;!</source>
-        <translation>경고: 지갑 암호화 후 암호를 분실하게 되면 &lt;b&gt;모든 TUP를 잃게 됩니다&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR WEALTH&lt;/b&gt;!</source>
+        <translation>경고: 지갑 암호화 후 암호를 분실하게 되면 &lt;b&gt;모든 WEALTH를 잃게 됩니다&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -433,8 +433,8 @@
         <translation>트랜잭션 내역 보기</translation>
     </message>
     <message>
-        <source>Privacy Actions for zTUP</source>
-        <translation>zTUP와 난독화를 위한 프라이버스 작업</translation>
+        <source>Privacy Actions for zWEALTH</source>
+        <translation>zWEALTH와 난독화를 위한 프라이버스 작업</translation>
     </message>
     <message>
         <source>E&amp;xit</source>
@@ -653,8 +653,8 @@
         <translation>WealthSilo 주소로 전송하기</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and tenup: URIs)</source>
-        <translation>결제 요청 (QR 코드 및 tenup: URI 생성)</translation>
+        <source>Request payments (generates QR codes and wealthsilo: URIs)</source>
+        <translation>결제 요청 (QR 코드 및 wealthsilo: URI 생성)</translation>
     </message>
     <message>
         <source>&amp;Privacy</source>
@@ -678,7 +678,7 @@
     </message>
     <message>
         <source>Modify configuration options for WealthSilo</source>
-        <translation>TenUp에 대한 구성 옵션 수정</translation>
+        <translation>WealthSilo에 대한 구성 옵션 수정</translation>
     </message>
     <message>
         <source>Sign messages with your WealthSilo addresses to prove you own them</source>
@@ -892,8 +892,8 @@ Address: %4
         <translation>텍스트라벨</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (tenup.conf).</source>
-        <translation>모든 트랜잭션이 표시되지는 않습니다. 모든 트랜잭션을 보려면 구성 파일 (tenup.conf)에 txindex = 1을 설정해야합니다.</translation>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (wealthsilo.conf).</source>
+        <translation>모든 트랜잭션이 표시되지는 않습니다. 모든 트랜잭션을 보려면 구성 파일 (wealthsilo.conf)에 txindex = 1을 설정해야합니다.</translation>
     </message>
 </context>
 <context>
@@ -1130,8 +1130,8 @@ Address: %4
         <translation>받는 사람이 %1 보다 작은 금액을 받으면 라벨이 빨간색으로 변경됩니다.</translation>
     </message>
     <message>
-        <source>Can vary +/- %1 utup per input.</source>
-        <translation>Can vary +/- %1 utup per input.</translation>
+        <source>Can vary +/- %1 uwealth per input.</source>
+        <translation>Can vary +/- %1 uwealth per input.</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -1681,8 +1681,8 @@ Please be patient after clicking import.</source>
         <translation>주소 / 금액:</translation>
     </message>
     <message>
-        <source>Add destinations to send TUP to</source>
-        <translation>TUP를 보낼 목적지 추가</translation>
+        <source>Add destinations to send WEALTH to</source>
+        <translation>WEALTH를 보낼 목적지 추가</translation>
     </message>
     <message>
         <source>Add &amp;Destination</source>
@@ -1780,32 +1780,32 @@ Please be patient after clicking import.</source>
         <translation>익명화 레벨을 선택해주세요.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 25000 TUP</source>
-        <translation>2개의 개별 마스터노드를 이용하여 최대 25000 TUP 를 섞을 수 있습니다.</translation>
+        <source>Use 2 separate masternodes to mix funds up to 25000 WEALTH</source>
+        <translation>2개의 개별 마스터노드를 이용하여 최대 25000 WEALTH 를 섞을 수 있습니다.</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 25000 TUP</source>
-        <translation>8개의 개별 마스터노드를 이용하여 최대 25000 TUP 를 섞을 수 있습니다.</translation>
+        <source>Use 8 separate masternodes to mix funds up to 25000 WEALTH</source>
+        <translation>8개의 개별 마스터노드를 이용하여 최대 25000 WEALTH 를 섞을 수 있습니다.</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>16개의 개별 마스터노드를 사용</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 TUP to anonymize 25000 TUP</source>
-        <translation>이 옵션은 가장 빠르게 전송되며 25000 TUP 익명화에 약 ~0.025 TUP의 비용이 들어갑니다.</translation>
+        <source>This option is the quickest and will cost about ~0.025 WEALTH to anonymize 25000 WEALTH</source>
+        <translation>이 옵션은 가장 빠르게 전송되며 25000 WEALTH 익명화에 약 ~0.025 WEALTH의 비용이 들어갑니다.</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 TUP to anonymize 25000 TUP</source>
-        <translation>이 옵션은 중간 정도의 속도로 전송되며 25000 TUP 익명화에 약 0.05 TUP의 비용이 들어갑니다.</translation>
+        <source>This option is moderately fast and will cost about 0.05 WEALTH to anonymize 25000 WEALTH</source>
+        <translation>이 옵션은 중간 정도의 속도로 전송되며 25000 WEALTH 익명화에 약 0.05 WEALTH의 비용이 들어갑니다.</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
         <translation>이것은 가장 느리고 안전한 옵션입니다. 최고 익명성을 사용하면 비용이 발생합니다.</translation>
     </message>
     <message>
-        <source>0.1 TUP per  10000 TUP you anonymize.</source>
-        <translation>25000 TUP 익명화에 0.1 TUP 가 듭니다.</translation>
+        <source>0.1 WEALTH per  10000 WEALTH you anonymize.</source>
+        <translation>25000 WEALTH 익명화에 0.1 WEALTH 가 듭니다.</translation>
     </message>
     <message>
         <source>Obfuscation Configuration</source>
@@ -1813,15 +1813,15 @@ Please be patient after clicking import.</source>
     </message>
     <message>
         <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening WealthSilo's configuration screen.</source>
-        <translation>난독화가 성공적으로 높게 설정되었습니다.(%1 및 2 rounds) TenUp의 설정 화면을 열어 언제든지 다시 변경할 수 있습니다.</translation>
+        <translation>난독화가 성공적으로 높게 설정되었습니다.(%1 및 2 rounds) WealthSilo의 설정 화면을 열어 언제든지 다시 변경할 수 있습니다.</translation>
     </message>
     <message>
         <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening WealthSilo's configuration screen.</source>
-        <translation>난독화가 성공적으로 높게 설정되었습니다.(%1 및 8 rounds) TenUp의 설정 화면을 열어 언제든지 다시 변경할 수 있습니다.</translation>
+        <translation>난독화가 성공적으로 높게 설정되었습니다.(%1 및 8 rounds) WealthSilo의 설정 화면을 열어 언제든지 다시 변경할 수 있습니다.</translation>
     </message>
     <message>
         <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening WealthSilo's configuration screen.</source>
-        <translation>난독화가 성공적으로 높게 설정되었습니다.(%1 및 16 rounds) TenUp의 설정 화면을 열어 언제든지 다시 변경할 수 있습니다.</translation>
+        <translation>난독화가 성공적으로 높게 설정되었습니다.(%1 및 16 rounds) WealthSilo의 설정 화면을 열어 언제든지 다시 변경할 수 있습니다.</translation>
     </message>
 </context>
 <context>
@@ -1903,7 +1903,7 @@ Please be patient after clicking import.</source>
     </message>
     <message>
         <source>Automatically start WealthSilo after logging in to the system.</source>
-        <translation>시스템 로그인 후 TenUp을 자동으로 시작합니다.</translation>
+        <translation>시스템 로그인 후 WealthSilo을 자동으로 시작합니다.</translation>
     </message>
     <message>
         <source>&amp;Start WealthSilo on system login</source>
@@ -1935,41 +1935,41 @@ Please be patient after clicking import.</source>
     </message>
     <message>
         <source>The user interface language can be set here. This setting will take effect after restarting WealthSilo.</source>
-        <translation>사용자 인터페이스 언어를 설정할 수 있습니다. 이 설정은 TenUp을 다시 시작한 후에 적용됩니다.</translation>
+        <translation>사용자 인터페이스 언어를 설정할 수 있습니다. 이 설정은 WealthSilo을 다시 시작한 후에 적용됩니다.</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/tenup-project/tenup-project-translations</source>
+https://www.transifex.com/wealthsilo-project/wealthsilo-project-translations</source>
         <translation>지원 언어가 없거나 번역이 불완전한가요? 번역을 도와주세요 :
-https://www.transifex.com/tenup-project/tenup-project-translations</translation>
+https://www.transifex.com/wealthsilo-project/wealthsilo-project-translations</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
         <translation>&amp;UPnp를 사용하여 포트 매핑</translation>
     </message>
     <message>
-        <source>Enable automatic minting of TUP units to zTUP</source>
-        <translation>Enable automatic minting of TUP units to zTUP</translation>
+        <source>Enable automatic minting of WEALTH units to zWEALTH</source>
+        <translation>Enable automatic minting of WEALTH units to zWEALTH</translation>
     </message>
     <message>
-        <source>Enable zTUP Automint</source>
-        <translation>zTUP 자동생성 활성화</translation>
+        <source>Enable zWEALTH Automint</source>
+        <translation>zWEALTH 자동생성 활성화</translation>
     </message>
     <message>
-        <source>Percentage of incoming TUP which get automatically converted to zTUP via Zerocoin Protocol (min: 10%)</source>
-        <translation>TUP수신시 자동변환 zTUP 퍼센트 (최소값:10%)</translation>
+        <source>Percentage of incoming WEALTH which get automatically converted to zWEALTH via Zerocoin Protocol (min: 10%)</source>
+        <translation>WEALTH수신시 자동변환 zWEALTH 퍼센트 (최소값:10%)</translation>
     </message>
     <message>
-        <source>Percentage of autominted zTUP</source>
-        <translation>자동 변환되는 zTUP 퍼센트</translation>
+        <source>Percentage of autominted zWEALTH</source>
+        <translation>자동 변환되는 zWEALTH 퍼센트</translation>
     </message>
     <message>
-        <source>Wait with automatic conversion to Zerocoin until enough TUP for this denomination is available</source>
-        <translation>이 디노미네이션의 TUP가 충분해질 때까지 Zerocoin으로 자동전환은 보류됩니다.</translation>
+        <source>Wait with automatic conversion to Zerocoin until enough WEALTH for this denomination is available</source>
+        <translation>이 디노미네이션의 WEALTH가 충분해질 때까지 Zerocoin으로 자동전환은 보류됩니다.</translation>
     </message>
     <message>
-        <source>Preferred Automint zTUP Denomination</source>
-        <translation>선호하는 자동생성 zTUP 디노미네이션 </translation>
+        <source>Preferred Automint zWEALTH Denomination</source>
+        <translation>선호하는 자동생성 zWEALTH 디노미네이션 </translation>
     </message>
     <message>
         <source>Stake split threshold:</source>
@@ -2131,8 +2131,8 @@ https://www.transifex.com/tenup-project/tenup-project-translations</translation>
         <translation>전체 잔액, (현재 전송이 불가능한 코인 포함)</translation>
     </message>
     <message>
-        <source>TUP Balance</source>
-        <translation>TUP 잔액</translation>
+        <source>WEALTH Balance</source>
+        <translation>WEALTH 잔액</translation>
     </message>
     <message>
         <source>Pending:</source>
@@ -2159,14 +2159,14 @@ https://www.transifex.com/tenup-project/tenup-project-translations</translation>
         <translation>현재 WealthSilo 잔액, 미확정, 생성중인 코인 포함</translation>
     </message>
     <message>
-        <source>zTUP Balance</source>
-        <translation>zTUP 잔액</translation>
+        <source>zWEALTH Balance</source>
+        <translation>zWEALTH 잔액</translation>
     </message>
     <message>
         <source>Mature: more than 20 confirmation and more than 1 mint of the same denomination after it was minted.
-These zTUP are spendable.</source>
+These zWEALTH are spendable.</source>
         <translation>성숙한 : 그것이 발행 된 후 같은 명칭의 20 개 이상의 확인 및 1 개 민트.
-이 zTUP는 쓸만합니다.</translation>
+이 zWEALTH는 쓸만합니다.</translation>
     </message>
     <message>
         <source>Unconfirmed: less than 20 confirmations
@@ -2219,8 +2219,8 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
         <translation>출금 가능 액수:</translation>
     </message>
     <message>
-        <source>Locked TUP or Masternode collaterals. These are excluded from zTUP minting.</source>
-        <translation>잠금 TUP 또는 Masternode collaterals. 이들은 zTUP minting에서 제외됩니다.</translation>
+        <source>Locked WEALTH or Masternode collaterals. These are excluded from zWEALTH minting.</source>
+        <translation>잠금 WEALTH 또는 Masternode collaterals. 이들은 zWEALTH minting에서 제외됩니다.</translation>
     </message>
     <message>
         <source>Locked:</source>
@@ -2231,8 +2231,8 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
         <translation>미승인:</translation>
     </message>
     <message>
-        <source>Your current zTUP balance, unconfirmed and immature zTUP included.</source>
-        <translation>zTUP 잔액, 미확정, 생성중인 zTUP 포함.</translation>
+        <source>Your current zWEALTH balance, unconfirmed and immature zWEALTH included.</source>
+        <translation>zWEALTH 잔액, 미확정, 생성중인 zWEALTH 포함.</translation>
     </message>
     <message>
         <source>Recent transactions</source>
@@ -2243,10 +2243,10 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
         <translation>동기화되지 않음</translation>
     </message>
     <message>
-        <source>Current percentage of zTUP.
+        <source>Current percentage of zWEALTH.
 If AutoMint is enabled this percentage will settle around the configured AutoMint percentage (default = 10%).
 </source>
-        <translation>현재 zTUP의 백분율 .
+        <translation>현재 zWEALTH의 백분율 .
 자동 저장 기능이 활성화 된 경우이 비율은 구성된 자동 저장 비율 (기본값 = 10 %)을 기준으로 정해집니다.</translation>
     </message>
     <message>
@@ -2254,12 +2254,12 @@ If AutoMint is enabled this percentage will settle around the configured AutoMin
         <translation>자동 생성기능이 현재 작동중 그리고 </translation>
     </message>
     <message>
-        <source>To disable AutoMint add 'enablezeromint=0' in tenup.conf.</source>
-        <translation>자동생성 기능을 사용하지 않으시려면, tenup.conf 화일에 enablezeromint=0 를 추가하세요.</translation>
+        <source>To disable AutoMint add 'enablezeromint=0' in wealthsilo.conf.</source>
+        <translation>자동생성 기능을 사용하지 않으시려면, wealthsilo.conf 화일에 enablezeromint=0 를 추가하세요.</translation>
     </message>
     <message>
         <source>AutoMint is currently disabled.
-To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in tenup.conf</source>
+To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in wealthsilo.conf</source>
         <translation>자동 저장 기능이 현재 사용 중지되었습니다 .
 자동 변환을 사용하려면 tupotx.conf에서 'enablezeromint = 0'에서 'enablezeromint = 1'로 변경하십시오.</translation>
     </message>
@@ -2287,8 +2287,8 @@ To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in tenup.conf
         <translation>잘못된 결제 주소 %1</translation>
     </message>
     <message>
-        <source>Cannot start tenup: click-to-pay handler</source>
-        <translation>TenUp을 시작할 수 없습니다: 결제하기 위한 클릭 처리</translation>
+        <source>Cannot start wealthsilo: click-to-pay handler</source>
+        <translation>WealthSilo을 시작할 수 없습니다: 결제하기 위한 클릭 처리</translation>
     </message>
     <message>
         <source>URI cannot be parsed! This can be caused by an invalid WealthSilo address or malformed URI parameters.</source>
@@ -2389,8 +2389,8 @@ To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in tenup.conf
         <translation>0</translation>
     </message>
     <message>
-        <source>zTUP</source>
-        <translation>zTUP</translation>
+        <source>zWEALTH</source>
+        <translation>zWEALTH</translation>
     </message>
     <message>
         <source>Available for minting are coins which are confirmed and not locked or Masternode collaterals.</source>
@@ -2401,8 +2401,8 @@ To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in tenup.conf
         <translation>생성 가능한 수량:</translation>
     </message>
     <message>
-        <source>0.000 000 00 TUP</source>
-        <translation>0.000 000 00 TUP</translation>
+        <source>0.000 000 00 WEALTH</source>
+        <translation>0.000 000 00 WEALTH</translation>
     </message>
     <message>
         <source>Reset Zerocoin Wallet DB. Deletes transactions that did not make it into the blockchain.</source>
@@ -2441,8 +2441,8 @@ To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in tenup.conf
         <translation>프라이버시</translation>
     </message>
     <message>
-        <source>Enter an amount of TUP to convert to zTUP</source>
-        <translation>zTUP로 변환할 TUP 수량을 입력하세요.</translation>
+        <source>Enter an amount of WEALTH to convert to zWEALTH</source>
+        <translation>zWEALTH로 변환할 WEALTH 수량을 입력하세요.</translation>
     </message>
     <message>
         <source>Quantity Selected:</source>
@@ -2457,24 +2457,24 @@ To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in tenup.conf
         <translation>제로코인 보내기</translation>
     </message>
     <message>
-        <source>Available (mature and spendable) zTUP for spending</source>
-        <translation>전송 가능한 zTUP</translation>
+        <source>Available (mature and spendable) zWEALTH for spending</source>
+        <translation>전송 가능한 zWEALTH</translation>
     </message>
     <message>
         <source>Available Balance:</source>
         <translation>가능한 잔액:</translation>
     </message>
     <message>
-        <source>Available (mature and spendable) zTUP for spending
+        <source>Available (mature and spendable) zWEALTH for spending
 
-zTUP are mature when they have more than 20 confirmations AND more than 2 mints of the same denomination after them were minted</source>
-        <translation>지출에 사용할 수있는 성숙한 소비재 zTUP
+zWEALTH are mature when they have more than 20 confirmations AND more than 2 mints of the same denomination after them were minted</source>
+        <translation>지출에 사용할 수있는 성숙한 소비재 zWEALTH
 
-zTUP는 성명서가 20 개 이상 있고 명칭이 동일하지 않은 2 개 이상의 민트가 작성되었을 때 성숙합니다.</translation>
+zWEALTH는 성명서가 20 개 이상 있고 명칭이 동일하지 않은 2 개 이상의 민트가 작성되었을 때 성숙합니다.</translation>
     </message>
     <message>
-        <source>0 zTUP</source>
-        <translation>0 zTUP</translation>
+        <source>0 zWEALTH</source>
+        <translation>0 zWEALTH</translation>
     </message>
     <message>
         <source>Security Level for Zerocoin Transactions. More is better, but needs more time and resources.</source>
@@ -2494,7 +2494,7 @@ zTUP는 성명서가 20 개 이상 있고 명칭이 동일하지 않은 2 개 �
     </message>
     <message>
         <source>The WealthSilo address to send the payment to. Creates local payment to yourself when empty.</source>
-        <translation>TUP를 전송할 WealthSilo 주소입니다. 비어있을 때 자신에게 지불할 주소를 생성합니다.</translation>
+        <translation>WEALTH를 전송할 WealthSilo 주소입니다. 비어있을 때 자신에게 지불할 주소를 생성합니다.</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2545,7 +2545,7 @@ zTUP는 성명서가 20 개 이상 있고 명칭이 동일하지 않은 2 개 �
         <translation>제로코인 상태 :</translation>
     </message>
     <message>
-        <source>Total Balance including unconfirmed and immature zTUP</source>
+        <source>Total Balance including unconfirmed and immature zWEALTH</source>
         <translation>승인중이거나, 생성중인 제로코인도 포함된 전체 잔액입니다.</translation>
     </message>
     <message>
@@ -2567,24 +2567,24 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
 미성숙 : 확인되었지만 발행 된 후 같은 종파 1 개 미만</translation>
     </message>
     <message>
-        <source>Show the current status of automatic zTUP minting.
+        <source>Show the current status of automatic zWEALTH minting.
 
 To change the status (restart required):
-- enable: add 'enablezeromint=1' to tenup.conf
-- disable: add 'enablezeromint=0' to tenup.conf
+- enable: add 'enablezeromint=1' to wealthsilo.conf
+- disable: add 'enablezeromint=0' to wealthsilo.conf
 
 To change the percentage (no restart required):
-- menu Settings-&gt;Options-&gt;Percentage of autominted zTUP
+- menu Settings-&gt;Options-&gt;Percentage of autominted zWEALTH
 
 </source>
-        <translation>현재 zTUP 자동 생성 상태를 보여줍니다.
+        <translation>현재 zWEALTH 자동 생성 상태를 보여줍니다.
 
 자동생성 상태를 변경하시려면 (지갑 재시작 필요함):
-- 활성화: 'enablezeromint=1' 를 tenup.conf 파일에 추가
-- 비활성화: 'enablezeromint=0' 를 tenup.conf 파일에 추가
+- 활성화: 'enablezeromint=1' 를 wealthsilo.conf 파일에 추가
+- 비활성화: 'enablezeromint=0' 를 wealthsilo.conf 파일에 추가
 
 자동 생성 비율 변경하시려면 (지갑 재시작 필요없음):
-- 메뉴 설정-&gt;옵션-&gt;zTUP 자동생성 비율
+- 메뉴 설정-&gt;옵션-&gt;zWEALTH 자동생성 비율
 
 </translation>
     </message>
@@ -2773,12 +2773,12 @@ To change the percentage (no restart required):
         <translation> 구성된 목표 비율 : &lt;b&gt;</translation>
     </message>
     <message>
-        <source>zTUP is currently disabled due to maintenance.</source>
-        <translation>zTUP는 현재 점검중이라 사용하실수 없습니다.</translation>
+        <source>zWEALTH is currently disabled due to maintenance.</source>
+        <translation>zWEALTH는 현재 점검중이라 사용하실수 없습니다.</translation>
     </message>
     <message>
-        <source>zTUP is currently undergoing maintenance.</source>
-        <translation>zTUP는 현재 점검중입니다.</translation>
+        <source>zWEALTH is currently undergoing maintenance.</source>
+        <translation>zWEALTH는 현재 점검중입니다.</translation>
     </message>
     <message>
         <source>Denom. with value &lt;b&gt;1&lt;/b&gt;:</source>
@@ -2865,8 +2865,8 @@ To change the percentage (no restart required):
         <translation>성공적으로 발행됨</translation>
     </message>
     <message>
-        <source> zTUP in </source>
-        <translation> zTUP in </translation>
+        <source> zWEALTH in </source>
+        <translation> zWEALTH in </translation>
     </message>
     <message>
         <source> sec. Used denominations:
@@ -2959,7 +2959,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message numerus="yes">
         <source>PrivacyDialog</source>
-        <comment>Enter an amount of TUP to convert to zTUP</comment>
+        <comment>Enter an amount of WEALTH to convert to zWEALTH</comment>
         <translation><numerusform>PrivacyDialog</numerusform></translation>
     </message>
     <message>
@@ -3709,8 +3709,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>UTXO 크기:</translation>
     </message>
     <message>
-        <source>0 TUP</source>
-        <translation>0 TUP</translation>
+        <source>0 WEALTH</source>
+        <translation>0 WEALTH</translation>
     </message>
     <message>
         <source>Transaction Fee:</source>
@@ -3765,12 +3765,12 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>코인 자동으로 선택됨</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uTUPs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uTUPs in fee,&lt;br /&gt;while "at least" pays 1000 uTUPs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>트랜잭션이 250바이트 인 경우 사용자 지정 수수료가 1000 uTUPs로 설정되고,&lt;br /&gt;1000 uTUPs 안에는 최소 "킬로바이트당" 250 uTUPs 만 지불합니다. 1 킬로바이트보다 큰 트랜잭션의 경우 모두 킬로바이트 단위로 지불합니다.</translation>
+        <source>If the custom fee is set to 1000 uWEALTHs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uWEALTHs in fee,&lt;br /&gt;while "at least" pays 1000 uWEALTHs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>트랜잭션이 250바이트 인 경우 사용자 지정 수수료가 1000 uWEALTHs로 설정되고,&lt;br /&gt;1000 uWEALTHs 안에는 최소 "킬로바이트당" 250 uWEALTHs 만 지불합니다. 1 킬로바이트보다 큰 트랜잭션의 경우 모두 킬로바이트 단위로 지불합니다.</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uTUPs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uTUPs in fee,&lt;br /&gt;while "total at least" pays 1000 uTUPs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>트랜잭션이 250바이트 인 경우 사용자 지정 수수료가 1000 uTUPs로 설정되고,&lt;br /&gt;1000 uTUPs 안에는 전체에서 최소 "킬로바이트당" 250 uTUPs 만 지불합니다. 1 킬로바이트보다 큰 트랜잭션의 경우 모두 킬로바이트 단위로 지불합니다.</translation>
+        <source>If the custom fee is set to 1000 uWEALTHs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uWEALTHs in fee,&lt;br /&gt;while "total at least" pays 1000 uWEALTHs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>트랜잭션이 250바이트 인 경우 사용자 지정 수수료가 1000 uWEALTHs로 설정되고,&lt;br /&gt;1000 uWEALTHs 안에는 전체에서 최소 "킬로바이트당" 250 uWEALTHs 만 지불합니다. 1 킬로바이트보다 큰 트랜잭션의 경우 모두 킬로바이트 단위로 지불합니다.</translation>
     </message>
     <message>
         <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for WealthSilo transactions than the network can process.</source>
@@ -3821,8 +3821,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>&amp;받는 사람 추가</translation>
     </message>
     <message>
-        <source>Anonymized TUP</source>
-        <translation>익명화된 TUP</translation>
+        <source>Anonymized WEALTH</source>
+        <translation>익명화된 WEALTH</translation>
     </message>
     <message>
         <source>Balance:</source>
@@ -4742,8 +4742,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>코인 전송 </translation>
     </message>
     <message>
-        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 TUP.</source>
-        <translation>SwiftTX는 아직 높은 값을 전송하는 것을 지원하지 않습니다. 트랜잭션은 현재 %1 TUP로 제한됩니다.</translation>
+        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 WEALTH.</source>
+        <translation>SwiftTX는 아직 높은 값을 전송하는 것을 지원하지 않습니다. 트랜잭션은 현재 %1 WEALTH로 제한됩니다.</translation>
     </message>
 </context>
 <context>
@@ -4774,7 +4774,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
 </context>
 <context>
-    <name>ZTupControlDialog</name>
+    <name>ZWealthControlDialog</name>
     <message>
         <source>Quantity</source>
         <translation>수량</translation>
@@ -4784,8 +4784,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>0</translation>
     </message>
     <message>
-        <source>zTUP</source>
-        <translation>zTUP</translation>
+        <source>zWEALTH</source>
+        <translation>zWEALTH</translation>
     </message>
     <message>
         <source>Select/Deselect All</source>
@@ -4797,7 +4797,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
 </context>
 <context>
-    <name>tenup-core</name>
+    <name>wealthsilo-core</name>
     <message>
         <source>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</source>
         <translation>(1 = tx 메타 데이터 유지 예 : 계정 소유자 및 지불 요청 정보, 2 = tx 메타 데이터 삭제)</translation>
@@ -4879,12 +4879,12 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>최고 블록이 변경될 경우 명령을 실행하십시오 (명령 내 %s 는 블록 해시로 대체 되었습니다)</translation>
     </message>
     <message>
-        <source>Fees (in TUP/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>이것보다 작은 수수료 (TUP/Kb)는 중계 수수료가 없는 것으로 간주됩니다 (기본값: %s)</translation>
+        <source>Fees (in WEALTH/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>이것보다 작은 수수료 (WEALTH/Kb)는 중계 수수료가 없는 것으로 간주됩니다 (기본값: %s)</translation>
     </message>
     <message>
-        <source>Fees (in TUP/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>이것보다 작은 수수료 (TUP/Kb)는 트랜잭션 생성 수수료가 없는 것으로 간주됩니다 (기본값: %s)</translation>
+        <source>Fees (in WEALTH/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>이것보다 작은 수수료 (WEALTH/Kb)는 트랜잭션 생성 수수료가 없는 것으로 간주됩니다 (기본값: %s)</translation>
     </message>
     <message>
         <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</source>
@@ -4991,12 +4991,12 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>이 트랜잭션를 위해 난독화 표기된 충분한 금액을 찾을 수 없습니다.</translation>
     </message>
     <message>
-        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 25000 TUP.</source>
-        <translation>이 트랜잭션를 위해 난독화 표기가 안된 충분한 금액을 찾을 수 없습니다. 25000 TUP과 일치하지 않음.</translation>
+        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 25000 WEALTH.</source>
+        <translation>이 트랜잭션를 위해 난독화 표기가 안된 충분한 금액을 찾을 수 없습니다. 25000 WEALTH과 일치하지 않음.</translation>
     </message>
     <message>
-        <source>Unable to locate enough funds for this transaction that are not equal 25000 TUP.</source>
-        <translation>트랜잭션에 대한 충분한 금액을 찾을 수 없습니다. 25000 TUP와 같지 않음</translation>
+        <source>Unable to locate enough funds for this transaction that are not equal 25000 WEALTH.</source>
+        <translation>트랜잭션에 대한 충분한 금액을 찾을 수 없습니다. 25000 WEALTH와 같지 않음</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
@@ -5307,8 +5307,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>블록을 받아오는데 실패했습니다.</translation>
     </message>
     <message>
-        <source>Fee (in TUP/kB) to add to transactions you send (default: %s)</source>
-        <translation>당신이 보내는 트랜잭션에 추가 할 수수료 (TUP/kB) (기본값: %s)</translation>
+        <source>Fee (in WEALTH/kB) to add to transactions you send (default: %s)</source>
+        <translation>당신이 보내는 트랜잭션에 추가 할 수수료 (WEALTH/kB) (기본값: %s)</translation>
     </message>
     <message>
         <source>Finalizing transaction.</source>
@@ -5436,11 +5436,11 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <source>Percentage of automatically minted Zerocoin  (1-100, default: %u)</source>
-        <translation>자동생성 zTUP 비율  (1-100, default: %u)</translation>
+        <translation>자동생성 zWEALTH 비율  (1-100, default: %u)</translation>
     </message>
     <message>
-        <source>Reindex the TUP and zTUP money supply statistics</source>
-        <translation>TUP 및 zTUP 공급량 다시 색인</translation>
+        <source>Reindex the WEALTH and zWEALTH money supply statistics</source>
+        <translation>WEALTH 및 zWEALTH 공급량 다시 색인</translation>
     </message>
     <message>
         <source>SwiftX options:</source>
@@ -5468,7 +5468,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <source>Disable all WealthSilo specific functionality (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, default: %u)</source>
-        <translation>TenUp의 모든 특정 기능들을 비활성화합니다(마스터노드, 난독화, SwiftTX, Budgeting) (0-1, 기본값: %u)</translation>
+        <translation>WealthSilo의 모든 특정 기능들을 비활성화합니다(마스터노드, 난독화, SwiftTX, Budgeting) (0-1, 기본값: %u)</translation>
     </message>
     <message>
         <source>Enable SwiftX, show confirmations for locked transactions (bool, default: %s)</source>
@@ -6180,7 +6180,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <source>You don't have enough Zerocoins in your wallet</source>
-        <translation>지갑에 zTUP 가 부족합니다.</translation>
+        <translation>지갑에 zWEALTH 가 부족합니다.</translation>
     </message>
     <message>
         <source>You need to rebuild the database using -reindex to change -txindex</source>

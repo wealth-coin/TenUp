@@ -2,7 +2,7 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2018 The PIVX developers
-// Copyright (c) 2015-2018 The WealthSilo developers
+// Copyright (c) 2018 The WealthSilo developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -352,36 +352,36 @@ static const CRPCCommand vRPCCommands[] =
         {"hidden", "setmocktime", &setmocktime, true, false, false},
 
         /* WealthSilo features */
-        {"tenup", "masternode", &masternode, true, true, false},
-        {"tenup", "listmasternodes", &listmasternodes, true, true, false},
-        {"tenup", "getmasternodecount", &getmasternodecount, true, true, false},
-        {"tenup", "masternodeconnect", &masternodeconnect, true, true, false},
-        {"tenup", "createmasternodebroadcast", &createmasternodebroadcast, true, true, false},
-        {"tenup", "decodemasternodebroadcast", &decodemasternodebroadcast, true, true, false},
-        {"tenup", "relaymasternodebroadcast", &relaymasternodebroadcast, true, true, false},
-        {"tenup", "masternodecurrent", &masternodecurrent, true, true, false},
-        {"tenup", "masternodedebug", &masternodedebug, true, true, false},
-        {"tenup", "startmasternode", &startmasternode, true, true, false},
-        {"tenup", "createmasternodekey", &createmasternodekey, true, true, false},
-        {"tenup", "getmasternodeoutputs", &getmasternodeoutputs, true, true, false},
-        {"tenup", "listmasternodeconf", &listmasternodeconf, true, true, false},
-        {"tenup", "getmasternodestatus", &getmasternodestatus, true, true, false},
-        {"tenup", "getmasternodewinners", &getmasternodewinners, true, true, false},
-        {"tenup", "getmasternodescores", &getmasternodescores, true, true, false},
-        {"tenup", "mnbudget", &mnbudget, true, true, false},
-        {"tenup", "preparebudget", &preparebudget, true, true, false},
-        {"tenup", "submitbudget", &submitbudget, true, true, false},
-        {"tenup", "mnbudgetvote", &mnbudgetvote, true, true, false},
-        {"tenup", "getbudgetvotes", &getbudgetvotes, true, true, false},
-        {"tenup", "getnextsuperblock", &getnextsuperblock, true, true, false},
-        {"tenup", "getbudgetprojection", &getbudgetprojection, true, true, false},
-        {"tenup", "getbudgetinfo", &getbudgetinfo, true, true, false},
-        {"tenup", "mnbudgetrawvote", &mnbudgetrawvote, true, true, false},
-        {"tenup", "mnfinalbudget", &mnfinalbudget, true, true, false},
-        {"tenup", "checkbudgets", &checkbudgets, true, true, false},
-        {"tenup", "mnsync", &mnsync, true, true, false},
-        {"tenup", "spork", &spork, true, true, false},
-        {"tenup", "getpoolinfo", &getpoolinfo, true, true, false},
+        {"wealthsilo", "masternode", &masternode, true, true, false},
+        {"wealthsilo", "listmasternodes", &listmasternodes, true, true, false},
+        {"wealthsilo", "getmasternodecount", &getmasternodecount, true, true, false},
+        {"wealthsilo", "masternodeconnect", &masternodeconnect, true, true, false},
+        {"wealthsilo", "createmasternodebroadcast", &createmasternodebroadcast, true, true, false},
+        {"wealthsilo", "decodemasternodebroadcast", &decodemasternodebroadcast, true, true, false},
+        {"wealthsilo", "relaymasternodebroadcast", &relaymasternodebroadcast, true, true, false},
+        {"wealthsilo", "masternodecurrent", &masternodecurrent, true, true, false},
+        {"wealthsilo", "masternodedebug", &masternodedebug, true, true, false},
+        {"wealthsilo", "startmasternode", &startmasternode, true, true, false},
+        {"wealthsilo", "createmasternodekey", &createmasternodekey, true, true, false},
+        {"wealthsilo", "getmasternodeoutputs", &getmasternodeoutputs, true, true, false},
+        {"wealthsilo", "listmasternodeconf", &listmasternodeconf, true, true, false},
+        {"wealthsilo", "getmasternodestatus", &getmasternodestatus, true, true, false},
+        {"wealthsilo", "getmasternodewinners", &getmasternodewinners, true, true, false},
+        {"wealthsilo", "getmasternodescores", &getmasternodescores, true, true, false},
+        {"wealthsilo", "mnbudget", &mnbudget, true, true, false},
+        {"wealthsilo", "preparebudget", &preparebudget, true, true, false},
+        {"wealthsilo", "submitbudget", &submitbudget, true, true, false},
+        {"wealthsilo", "mnbudgetvote", &mnbudgetvote, true, true, false},
+        {"wealthsilo", "getbudgetvotes", &getbudgetvotes, true, true, false},
+        {"wealthsilo", "getnextsuperblock", &getnextsuperblock, true, true, false},
+        {"wealthsilo", "getbudgetprojection", &getbudgetprojection, true, true, false},
+        {"wealthsilo", "getbudgetinfo", &getbudgetinfo, true, true, false},
+        {"wealthsilo", "mnbudgetrawvote", &mnbudgetrawvote, true, true, false},
+        {"wealthsilo", "mnfinalbudget", &mnfinalbudget, true, true, false},
+        {"wealthsilo", "checkbudgets", &checkbudgets, true, true, false},
+        {"wealthsilo", "mnsync", &mnsync, true, true, false},
+        {"wealthsilo", "spork", &spork, true, true, false},
+        {"wealthsilo", "getpoolinfo", &getpoolinfo, true, true, false},
 
 #ifdef ENABLE_WALLET
         /* Wallet */
@@ -446,11 +446,11 @@ static const CRPCCommand vRPCCommands[] =
         {"zerocoin", "exportzerocoins", &exportzerocoins, false, false, true},
         {"zerocoin", "reconsiderzerocoins", &reconsiderzerocoins, false, false, true},
         {"zerocoin", "getspentzerocoinamount", &getspentzerocoinamount, false, false, false},
-        {"zerocoin", "getztupseed", &getztupseed, false, false, true},
-        {"zerocoin", "setztupseed", &setztupseed, false, false, true},
+        {"zerocoin", "getzwealthseed", &getzwealthseed, false, false, true},
+        {"zerocoin", "setzwealthseed", &setzwealthseed, false, false, true},
         {"zerocoin", "generatemintlist", &generatemintlist, false, false, true},
-        {"zerocoin", "searchdztup", &searchdztup, false, false, true},
-        {"zerocoin", "dztupstate", &dztupstate, false, false, true}
+        {"zerocoin", "searchdzwealth", &searchdzwealth, false, false, true},
+        {"zerocoin", "dzwealthstate", &dzwealthstate, false, false, true}
 
 #endif // ENABLE_WALLET
 };
@@ -614,7 +614,7 @@ std::vector<std::string> CRPCTable::listCommands() const
 
 std::string HelpExampleCli(string methodname, string args)
 {
-    return "> tenup-cli " + methodname + " " + args + "\n";
+    return "> wealthsilo-cli " + methodname + " " + args + "\n";
 }
 
 std::string HelpExampleRpc(string methodname, string args)

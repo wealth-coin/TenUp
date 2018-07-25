@@ -80,15 +80,15 @@ noinst_PROGRAMS =
 TESTS =
 
 if BUILD_BITCOIND
-  bin_PROGRAMS += tenupd
+  bin_PROGRAMS += wealthsilod
 endif
 
 if BUILD_BITCOIN_UTILS
-  bin_PROGRAMS += tenup-cli tenup-tx
+  bin_PROGRAMS += wealthsilo-cli wealthsilo-tx
 endif
 
 .PHONY: FORCE
-# tenup core #
+# wealthsilo core #
 BITCOIN_CORE_H = \
   activemasternode.h \
   accumulators.h \
@@ -194,8 +194,8 @@ BITCOIN_CORE_H = \
   wallet.h \
   wallet_ismine.h \
   walletdb.h \
-  ztuptracker.h \
-  ztupwallet.h \
+  zwealthtracker.h \
+  zwealthwallet.h \
   zmq/zmqabstractnotifier.h \
   zmq/zmqconfig.h \
   zmq/zmqnotificationinterface.h \
@@ -207,7 +207,7 @@ obj/build.h: FORCE
 	  "$(abs_top_srcdir)"
 libbitcoin_util_a-clientversion.$(OBJEXT): obj/build.h
 
-# server: shared between tenupd and tenup-qt
+# server: shared between wealthsilod and wealthsilo-qt
 libbitcoin_server_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(MINIUPNPC_CPPFLAGS) $(EVENT_CFLAGS) $(EVENT_PTHREADS_CFLAGS)
 libbitcoin_server_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 libbitcoin_server_a_SOURCES = \
@@ -254,7 +254,7 @@ libbitcoin_zmq_a_SOURCES = \
   zmq/zmqpublishnotifier.cpp
 endif
 
-# wallet: shared between tenupd and tenup-qt, but only linked
+# wallet: shared between wealthsilod and wealthsilo-qt, but only linked
 # when wallet enabled
 libbitcoin_wallet_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
 libbitcoin_wallet_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
@@ -282,8 +282,8 @@ libbitcoin_wallet_a_SOURCES = \
   wallet.cpp \
   wallet_ismine.cpp \
   walletdb.cpp \
-  ztupwallet.cpp \
-  ztuptracker.cpp \
+  zwealthwallet.cpp \
+  zwealthtracker.cpp \
   stakeinput.cpp \
   $(BITCOIN_CORE_H)
 
@@ -349,7 +349,7 @@ libzerocoin_libbitcoin_zerocoin_a_SOURCES = \
   libzerocoin/Params.cpp \
   libzerocoin/SerialNumberSignatureOfKnowledge.cpp
 
-# common: shared between tenupd, and tenup-qt and non-server tools
+# common: shared between wealthsilod, and wealthsilo-qt and non-server tools
 libbitcoin_common_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
 libbitcoin_common_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 libbitcoin_common_a_SOURCES = \
@@ -414,7 +414,7 @@ if GLIBC_BACK_COMPAT
 libbitcoin_util_a_SOURCES += compat/glibc_compat.cpp
 endif
 
-# cli: shared between tenup-cli and tenup-qt
+# cli: shared between wealthsilo-cli and wealthsilo-qt
 libbitcoin_cli_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
 libbitcoin_cli_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 libbitcoin_cli_a_SOURCES = \
@@ -424,16 +424,16 @@ libbitcoin_cli_a_SOURCES = \
 nodist_libbitcoin_util_a_SOURCES = $(srcdir)/obj/build.h
 #
 
-# tenupd binary #
-tenupd_SOURCES = tenupd.cpp
-tenupd_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
-tenupd_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-tenupd_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+# wealthsilod binary #
+wealthsilod_SOURCES = wealthsilod.cpp
+wealthsilod_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
+wealthsilod_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+wealthsilod_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-tenupd_SOURCES += tenupd-res.rc
+wealthsilod_SOURCES += wealthsilod-res.rc
 endif
-tenupd_LDADD = \
+wealthsilod_LDADD = \
   $(LIBBITCOIN_SERVER) \
   $(LIBBITCOIN_COMMON) \
   $(LIBUNIVALUE) \
@@ -446,38 +446,38 @@ tenupd_LDADD = \
   $(LIBMEMENV) \
   $(LIBSECP256K1)
 
-tenupd_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS) $(ZMQ_LIBS)
+wealthsilod_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS) $(ZMQ_LIBS)
 
-# tenup-cli binary #
-tenup_cli_SOURCES = tenup-cli.cpp
-tenup_cli_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(EVENT_CFLAGS)
-tenup_cli_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-tenup_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+# wealthsilo-cli binary #
+wealthsilo_cli_SOURCES = wealthsilo-cli.cpp
+wealthsilo_cli_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(EVENT_CFLAGS)
+wealthsilo_cli_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+wealthsilo_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-tenup_cli_SOURCES += tenup-cli-res.rc
+wealthsilo_cli_SOURCES += wealthsilo-cli-res.rc
 endif
 
-tenup_cli_LDADD = \
+wealthsilo_cli_LDADD = \
   $(LIBBITCOIN_CLI) \
   $(LIBUNIVALUE) \
   $(LIBBITCOIN_UTIL) \
   $(LIBBITCOIN_CRYPTO)
 
-tenup_cli_LDADD += $(BOOST_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(EVENT_LIBS)
+wealthsilo_cli_LDADD += $(BOOST_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(EVENT_LIBS)
 #
 
-# tenup-tx binary #
-tenup_tx_SOURCES = tenup-tx.cpp
-tenup_tx_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
-tenup_tx_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-tenup_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+# wealthsilo-tx binary #
+wealthsilo_tx_SOURCES = wealthsilo-tx.cpp
+wealthsilo_tx_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
+wealthsilo_tx_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+wealthsilo_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-tenup_tx_SOURCES += tenup-tx-res.rc
+wealthsilo_tx_SOURCES += wealthsilo-tx-res.rc
 endif
 
-tenup_tx_LDADD = \
+wealthsilo_tx_LDADD = \
   $(LIBUNIVALUE) \
   $(LIBBITCOIN_COMMON) \
   $(LIBBITCOIN_ZEROCOIN) \
@@ -485,7 +485,7 @@ tenup_tx_LDADD = \
   $(LIBBITCOIN_CRYPTO) \
   $(LIBSECP256K1)
 
-tenup_tx_LDADD += $(BOOST_LIBS) $(CRYPTO_LIBS)
+wealthsilo_tx_LDADD += $(BOOST_LIBS) $(CRYPTO_LIBS)
 #
 
 # bitcoinconsensus library #

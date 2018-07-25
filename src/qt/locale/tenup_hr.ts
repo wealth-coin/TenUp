@@ -172,16 +172,16 @@
         <translation>Potvrdite šifriranje novčanika</translation>
     </message>
     <message>
-        <source>WealthSilo will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your TUPs from being stolen by malware infecting your computer.</source>
-        <translation>WealthSilo se sada zatvara kako bi dovršio proces šifriranja. Ne zaboravite da šifriranje vašeg novčanika ne može u potpunosti zaštititi vaše TUP od krađe zlonamjernog softvera koji zarazi vaše računalo.</translation>
+        <source>WealthSilo will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your WEALTHs from being stolen by malware infecting your computer.</source>
+        <translation>WealthSilo se sada zatvara kako bi dovršio proces šifriranja. Ne zaboravite da šifriranje vašeg novčanika ne može u potpunosti zaštititi vaše WEALTH od krađe zlonamjernog softvera koji zarazi vaše računalo.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Jeste li sigurni da želite šifrirati svoj novčanik?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR TUP&lt;/b&gt;!</source>
-        <translation>Upozorenje: Ako šifrirate svoj novčanik i izgubite vašu zaporku, vi ćete1 IZGUBITI ĆE TE SAV VAŠ TUP1!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR WEALTH&lt;/b&gt;!</source>
+        <translation>Upozorenje: Ako šifrirate svoj novčanik i izgubite vašu zaporku, vi ćete1 IZGUBITI ĆE TE SAV VAŠ WEALTH1!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -397,8 +397,8 @@
         <translation>Pregledajte povijest transakcija</translation>
     </message>
     <message>
-        <source>Privacy Actions for zTUP</source>
-        <translation>Aktivnosti na privatnost za zTUP</translation>
+        <source>Privacy Actions for zWEALTH</source>
+        <translation>Aktivnosti na privatnost za zWEALTH</translation>
     </message>
     <message>
         <source>E&amp;xit</source>
@@ -609,8 +609,8 @@
         <translation>Pošaljite kovanice na WealthSilo adresu</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and tenup: URIs)</source>
-        <translation>Zahtjev za plaćanja (generira QR kodove i tenup: URI)</translation>
+        <source>Request payments (generates QR codes and wealthsilo: URIs)</source>
+        <translation>Zahtjev za plaćanja (generira QR kodove i wealthsilo: URI)</translation>
     </message>
     <message>
         <source>&amp;Privacy</source>
@@ -1045,8 +1045,8 @@
         <translation>ne</translation>
     </message>
     <message>
-        <source>0 TUP</source>
-        <translation>0 TUP</translation>
+        <source>0 WEALTH</source>
+        <translation>0 WEALTH</translation>
     </message>
     <message>
         <source>Confirmation time:</source>
@@ -1345,14 +1345,14 @@
     </message>
     </context>
 <context>
-    <name>ZTupControlDialog</name>
+    <name>ZWealthControlDialog</name>
     <message>
         <source>0</source>
         <translation>0</translation>
     </message>
     </context>
 <context>
-    <name>tenup-core</name>
+    <name>wealthsilo-core</name>
     <message>
         <source>Error</source>
         <translation>Greška</translation>

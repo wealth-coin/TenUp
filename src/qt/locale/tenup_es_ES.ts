@@ -176,16 +176,16 @@
         <translation>Confirmar encriptación del monedero</translation>
     </message>
     <message>
-        <source>WealthSilo will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your TUPs from being stolen by malware infecting your computer.</source>
-        <translation>WealthSilo se cerrará ahora para completar el proceso de encriptación. Recuerde que la encriptación no le protege completamente del robo de sus TUPs frente a malware que infecte su ordenador.</translation>
+        <source>WealthSilo will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your WEALTHs from being stolen by malware infecting your computer.</source>
+        <translation>WealthSilo se cerrará ahora para completar el proceso de encriptación. Recuerde que la encriptación no le protege completamente del robo de sus WEALTHs frente a malware que infecte su ordenador.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>¿Está seguro de que quiere encriptar su monedero?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR TUP&lt;/b&gt;!</source>
-        <translation>Advertencia: si encripta su monedero y pierde su clave de seguridad, ¡&lt;b&gt;PERDERÁ TODOS SUS TUP&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR WEALTH&lt;/b&gt;!</source>
+        <translation>Advertencia: si encripta su monedero y pierde su clave de seguridad, ¡&lt;b&gt;PERDERÁ TODOS SUS WEALTH&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -561,10 +561,10 @@
     </message>
     </context>
 <context>
-    <name>ZTupControlDialog</name>
+    <name>ZWealthControlDialog</name>
     </context>
 <context>
-    <name>tenup-core</name>
+    <name>wealthsilo-core</name>
     <message>
         <source>wallet.dat corrupt, salvage failed</source>
         <translation>wallet.dat corrupto, recuperación fallida</translation>

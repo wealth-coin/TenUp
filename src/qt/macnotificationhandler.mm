@@ -15,7 +15,7 @@
 - (NSString *)__bundleIdentifier
 {
     if (self == [NSBundle mainBundle]) {
-        return @"io.tenup.Tenup-Qt";
+        return @"io.wealthsilo.Tenup-Qt";
     } else {
         return [self __bundleIdentifier];
     }

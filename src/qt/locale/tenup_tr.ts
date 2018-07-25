@@ -176,15 +176,15 @@
         <translation>cüzdan şifrelemesini onayla</translation>
     </message>
     <message>
-        <source>WealthSilo will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your TUPs from being stolen by malware infecting your computer.</source>
-        <translation>WealthSilo şifreleme işlemini tamamlamak için şimdi kapanacaktır. Cüzdanınızı şifrelemenin, TUP'lerinizi bilgisayarınıza bulaşan kötücül yazılımlar tarafından çalınmasına tamamen engelleyemediğini unutmayın</translation>
+        <source>WealthSilo will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your WEALTHs from being stolen by malware infecting your computer.</source>
+        <translation>WealthSilo şifreleme işlemini tamamlamak için şimdi kapanacaktır. Cüzdanınızı şifrelemenin, WEALTH'lerinizi bilgisayarınıza bulaşan kötücül yazılımlar tarafından çalınmasına tamamen engelleyemediğini unutmayın</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Cüzdanınızı şifrelemek istediğinizden emin misiniz?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR TUP&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR WEALTH&lt;/b&gt;!</source>
         <translation>Dikkat! Eğer cüzdanınızı şifrelerseniz ve şifrenizi unutursanız &lt;b&gt;Tüm Pıvlerinizi kaybedersiniz&lt;/b&gt;!</translation>
     </message>
     <message>
@@ -433,8 +433,8 @@
         <translation>İşlem geçmişini ara</translation>
     </message>
     <message>
-        <source>Privacy Actions for zTUP</source>
-        <translation>Gizlilik Aksiyonları zTUP</translation>
+        <source>Privacy Actions for zWEALTH</source>
+        <translation>Gizlilik Aksiyonları zWEALTH</translation>
     </message>
     <message>
         <source>E&amp;xit</source>
@@ -645,8 +645,8 @@
         <translation>Koinleri WealthSilo adresine gönder</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and tenup: URIs)</source>
-        <translation>Ödeme talep etme (QR kodları ve tenup üretir: URI'ler)</translation>
+        <source>Request payments (generates QR codes and wealthsilo: URIs)</source>
+        <translation>Ödeme talep etme (QR kodları ve wealthsilo üretir: URI'ler)</translation>
     </message>
     <message>
         <source>&amp;Privacy</source>
@@ -864,8 +864,8 @@ Adres: %4
         <translation>TextLabel</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (tenup.conf).</source>
-        <translation>Tüm işlemler gösterilmez. Tüm işlemleri görmek için yapılandırma dosyasında txindex = 1 ayarlamanız gerekir (tenup.conf).
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (wealthsilo.conf).</source>
+        <translation>Tüm işlemler gösterilmez. Tüm işlemleri görmek için yapılandırma dosyasında txindex = 1 ayarlamanız gerekir (wealthsilo.conf).
 </translation>
     </message>
 </context>
@@ -1644,8 +1644,8 @@ Unutmayın, cüzdan, yeni adresi içeren işlemleri bulmak için blok zinciri ye
         <translation>Address /miktar:</translation>
     </message>
     <message>
-        <source>Add destinations to send TUP to</source>
-        <translation>TUP göndermek için varış yerleri ekleyin</translation>
+        <source>Add destinations to send WEALTH to</source>
+        <translation>WEALTH göndermek için varış yerleri ekleyin</translation>
     </message>
     <message>
         <source>Add &amp;Destination</source>
@@ -1743,32 +1743,32 @@ Unutmayın, cüzdan, yeni adresi içeren işlemleri bulmak için blok zinciri ye
         <translation>Lütfen bir gizlilik düzeyi seçin.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 25000 TUP</source>
-        <translation>25000 TUP'e kadar fonları karıştırmak için 2 ayrı matternod kullanın</translation>
+        <source>Use 2 separate masternodes to mix funds up to 25000 WEALTH</source>
+        <translation>25000 WEALTH'e kadar fonları karıştırmak için 2 ayrı matternod kullanın</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 25000 TUP</source>
-        <translation>25000 TUP'ye kadar olan fonları karıştırmak için 8 ayrı matternod kullanın</translation>
+        <source>Use 8 separate masternodes to mix funds up to 25000 WEALTH</source>
+        <translation>25000 WEALTH'ye kadar olan fonları karıştırmak için 8 ayrı matternod kullanın</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>16 ayrı matternod kullan</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 TUP to anonymize 25000 TUP</source>
-        <translation>Bu seçenek en hızlıdır ve 25000 TUP'yi anonimleştirmek için ~ 0.025 TUP'lik bir maliyeti olacaktır</translation>
+        <source>This option is the quickest and will cost about ~0.025 WEALTH to anonymize 25000 WEALTH</source>
+        <translation>Bu seçenek en hızlıdır ve 25000 WEALTH'yi anonimleştirmek için ~ 0.025 WEALTH'lik bir maliyeti olacaktır</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 TUP to anonymize 25000 TUP</source>
-        <translation>Bu seçenek orta derecede hızlıdır ve 25000 TUP'yi anonimleştirmek için yaklaşık 0.05 TUP'e mal olur</translation>
+        <source>This option is moderately fast and will cost about 0.05 WEALTH to anonymize 25000 WEALTH</source>
+        <translation>Bu seçenek orta derecede hızlıdır ve 25000 WEALTH'yi anonimleştirmek için yaklaşık 0.05 WEALTH'e mal olur</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
         <translation>Bu en yavaş ve en güvenli seçenektir. Maksimum anonimlik kullanmak maliyete gelecek</translation>
     </message>
     <message>
-        <source>0.1 TUP per  10000 TUP you anonymize.</source>
-        <translation>0.1 TUP her  10000 TUP anonimleştirmeye.</translation>
+        <source>0.1 WEALTH per  10000 WEALTH you anonymize.</source>
+        <translation>0.1 WEALTH her  10000 WEALTH anonimleştirmeye.</translation>
     </message>
     <message>
         <source>Obfuscation Configuration</source>
@@ -1902,33 +1902,33 @@ Unutmayın, cüzdan, yeni adresi içeren işlemleri bulmak için blok zinciri ye
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/tenup-project/tenup-project-translations</source>
+https://www.transifex.com/wealthsilo-project/wealthsilo-project-translations</source>
         <translation>Dil eksik veya çeviri tamamlanmamış mı? Katkıda bulunan çevirilere yardımcı olun:
-https://www.transifex.com/tenup-project/tenup-project-translations</translation>
+https://www.transifex.com/wealthsilo-project/wealthsilo-project-translations</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
         <translation>Map port using &amp;UPnP</translation>
     </message>
     <message>
-        <source>Enable zTUP Automint</source>
-        <translation>zTUP Otomatik basımı etkinleştir</translation>
+        <source>Enable zWEALTH Automint</source>
+        <translation>zWEALTH Otomatik basımı etkinleştir</translation>
     </message>
     <message>
-        <source>Percentage of incoming TUP which get automatically converted to zTUP via Zerocoin Protocol (min: 10%)</source>
-        <translation>Zerocoin Protokolü üzerinden otomatik olarak zTUP'ye dönüştürülen gelen TUP yüzdesi (dakika: 10%)</translation>
+        <source>Percentage of incoming WEALTH which get automatically converted to zWEALTH via Zerocoin Protocol (min: 10%)</source>
+        <translation>Zerocoin Protokolü üzerinden otomatik olarak zWEALTH'ye dönüştürülen gelen WEALTH yüzdesi (dakika: 10%)</translation>
     </message>
     <message>
-        <source>Percentage of autominted zTUP</source>
-        <translation>Otomatikleştirilmiş zTUP yüzdesi</translation>
+        <source>Percentage of autominted zWEALTH</source>
+        <translation>Otomatikleştirilmiş zWEALTH yüzdesi</translation>
     </message>
     <message>
-        <source>Wait with automatic conversion to Zerocoin until enough TUP for this denomination is available</source>
-        <translation>Bu mezhebi için yeterli TUP bulunana kadar Zerocoin'e otomatik dönüşümle birlikte bekleyin</translation>
+        <source>Wait with automatic conversion to Zerocoin until enough WEALTH for this denomination is available</source>
+        <translation>Bu mezhebi için yeterli WEALTH bulunana kadar Zerocoin'e otomatik dönüşümle birlikte bekleyin</translation>
     </message>
     <message>
-        <source>Preferred Automint zTUP Denomination</source>
-        <translation>Tercih edilen Automint zTUP Nominal değeri</translation>
+        <source>Preferred Automint zWEALTH Denomination</source>
+        <translation>Tercih edilen Automint zWEALTH Nominal değeri</translation>
     </message>
     <message>
         <source>Connect to the WealthSilo network through a SOCKS5 proxy.</source>
@@ -2078,8 +2078,8 @@ https://www.transifex.com/tenup-project/tenup-project-translations</translation>
         <translation>Toplam Bakiye, mevcut olmayan tüm paralar dahil.</translation>
     </message>
     <message>
-        <source>TUP Balance</source>
-        <translation>TUP Bakiyesi</translation>
+        <source>WEALTH Balance</source>
+        <translation>WEALTH Bakiyesi</translation>
     </message>
     <message>
         <source>Pending:</source>
@@ -2102,8 +2102,8 @@ https://www.transifex.com/tenup-project/tenup-project-translations</translation>
         <translation>Güncel WealthSilo bakiyeniz, onaylanmamış ve olgunlaşmamış işlemler dahil</translation>
     </message>
     <message>
-        <source>zTUP Balance</source>
-        <translation>zTUP Bakiyesi</translation>
+        <source>zWEALTH Balance</source>
+        <translation>zWEALTH Bakiyesi</translation>
     </message>
     <message>
         <source>The displayed information may be out of date. Your wallet automatically synchronizes with the WealthSilo network after a connection is established, but this process has not completed yet.</source>
@@ -2150,8 +2150,8 @@ https://www.transifex.com/tenup-project/tenup-project-translations</translation>
         <translation>Harcanabilir:</translation>
     </message>
     <message>
-        <source>Locked TUP or Masternode collaterals. These are excluded from zTUP minting.</source>
-        <translation>Kilitli TUP veya Masternode teminatları. Bunlar zTUP matlaştırmadan çıkarılır.</translation>
+        <source>Locked WEALTH or Masternode collaterals. These are excluded from zWEALTH minting.</source>
+        <translation>Kilitli WEALTH veya Masternode teminatları. Bunlar zWEALTH matlaştırmadan çıkarılır.</translation>
     </message>
     <message>
         <source>Locked:</source>
@@ -2162,8 +2162,8 @@ https://www.transifex.com/tenup-project/tenup-project-translations</translation>
         <translation>onaylanmamış:</translation>
     </message>
     <message>
-        <source>Your current zTUP balance, unconfirmed and immature zTUP included.</source>
-        <translation>Güncel zTUP bakiyeniz, onaylanmamış ve olgunlaşmamış zTUP'ler dahil.</translation>
+        <source>Your current zWEALTH balance, unconfirmed and immature zWEALTH included.</source>
+        <translation>Güncel zWEALTH bakiyeniz, onaylanmamış ve olgunlaşmamış zWEALTH'ler dahil.</translation>
     </message>
     <message>
         <source>Recent transactions</source>
@@ -2174,10 +2174,10 @@ https://www.transifex.com/tenup-project/tenup-project-translations</translation>
         <translation>senkronizasyon dışı</translation>
     </message>
     <message>
-        <source>Current percentage of zTUP.
+        <source>Current percentage of zWEALTH.
 If AutoMint is enabled this percentage will settle around the configured AutoMint percentage (default = 10%).
 </source>
-        <translation>Mevcut zTUP yüzdesi.
+        <translation>Mevcut zWEALTH yüzdesi.
 AutoMint etkinleştirilirse, bu yüzde, yapılandırılmış AutoMint yüzdesi etrafında düzelir (varsayılan = 10%).
 </translation>
     </message>
@@ -2186,14 +2186,14 @@ AutoMint etkinleştirilirse, bu yüzde, yapılandırılmış AutoMint yüzdesi e
         <translation>AutoMint şu anda etkinleştirilmiş ve</translation>
     </message>
     <message>
-        <source>To disable AutoMint add 'enablezeromint=0' in tenup.conf.</source>
-        <translation>AutoMint kapatmak için ekle  'enablezeromint=0'  tenup.conf. dosyasına</translation>
+        <source>To disable AutoMint add 'enablezeromint=0' in wealthsilo.conf.</source>
+        <translation>AutoMint kapatmak için ekle  'enablezeromint=0'  wealthsilo.conf. dosyasına</translation>
     </message>
     <message>
         <source>AutoMint is currently disabled.
-To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in tenup.conf</source>
+To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in wealthsilo.conf</source>
         <translation>AutoMint şu anda aktif değil.
- AutoMint aktive etmek için  değiştir 'enablezeromint=0' yazan kısmı 'enablezeromint=1' şeklinde tenup.conf dosyasında</translation>
+ AutoMint aktive etmek için  değiştir 'enablezeromint=0' yazan kısmı 'enablezeromint=1' şeklinde wealthsilo.conf dosyasında</translation>
     </message>
 </context>
 <context>
@@ -2219,7 +2219,7 @@ To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in tenup.conf
         <translation>Geçersiz ödeme adresi %1</translation>
     </message>
     <message>
-        <source>Cannot start tenup: click-to-pay handler</source>
+        <source>Cannot start wealthsilo: click-to-pay handler</source>
         <translation>Tenup başlatılamıyor: tıkla ve ödeme işleyicisi</translation>
     </message>
     <message>
@@ -2321,8 +2321,8 @@ To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in tenup.conf
         <translation>0</translation>
     </message>
     <message>
-        <source>zTUP</source>
-        <translation>zTUP</translation>
+        <source>zWEALTH</source>
+        <translation>zWEALTH</translation>
     </message>
     <message>
         <source>Available for minting are coins which are confirmed and not locked or Masternode collaterals.</source>
@@ -2333,8 +2333,8 @@ To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in tenup.conf
         <translation>Mintinge hazır</translation>
     </message>
     <message>
-        <source>0.000 000 00 TUP</source>
-        <translation>0.000 000 00 TUP</translation>
+        <source>0.000 000 00 WEALTH</source>
+        <translation>0.000 000 00 WEALTH</translation>
     </message>
     <message>
         <source>Reset Zerocoin Wallet DB. Deletes transactions that did not make it into the blockchain.</source>
@@ -2385,24 +2385,24 @@ To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in tenup.conf
         <translation>Harca Zerocoin</translation>
     </message>
     <message>
-        <source>Available (mature and spendable) zTUP for spending</source>
-        <translation>Mevcut (olgun ve harcanabilir) harcama için zTUP</translation>
+        <source>Available (mature and spendable) zWEALTH for spending</source>
+        <translation>Mevcut (olgun ve harcanabilir) harcama için zWEALTH</translation>
     </message>
     <message>
         <source>Available Balance:</source>
         <translation>Kullanılabilir Bakiye:</translation>
     </message>
     <message>
-        <source>Available (mature and spendable) zTUP for spending
+        <source>Available (mature and spendable) zWEALTH for spending
 
-zTUP are mature when they have more than 20 confirmations AND more than 2 mints of the same denomination after them were minted</source>
-        <translation>Mevcut (olgun ve harcanabilir) harcama için zTUP
+zWEALTH are mature when they have more than 20 confirmations AND more than 2 mints of the same denomination after them were minted</source>
+        <translation>Mevcut (olgun ve harcanabilir) harcama için zWEALTH
 
-zTUP, 20'den fazla teyit bulunduğunda olgunlaşır ve bundan sonra aynı mezhepten 2 kat fazla darphane çekilir.</translation>
+zWEALTH, 20'den fazla teyit bulunduğunda olgunlaşır ve bundan sonra aynı mezhepten 2 kat fazla darphane çekilir.</translation>
     </message>
     <message>
-        <source>0 zTUP</source>
-        <translation>0 zTUP</translation>
+        <source>0 zWEALTH</source>
+        <translation>0 zWEALTH</translation>
     </message>
     <message>
         <source>Security Level for Zerocoin Transactions. More is better, but needs more time and resources.</source>
@@ -2473,8 +2473,8 @@ zTUP, 20'den fazla teyit bulunduğunda olgunlaşır ve bundan sonra aynı mezhep
         <translation>Zerocoin durumu:</translation>
     </message>
     <message>
-        <source>Total Balance including unconfirmed and immature zTUP</source>
-        <translation>Doğrulanmamış ve olgunlaşmamış zTUP dahil toplam bakiye</translation>
+        <source>Total Balance including unconfirmed and immature zWEALTH</source>
+        <translation>Doğrulanmamış ve olgunlaşmamış zWEALTH dahil toplam bakiye</translation>
     </message>
     <message>
         <source>Total Zerocoin  Balance:</source>
@@ -2629,12 +2629,12 @@ zTUP, 20'den fazla teyit bulunduğunda olgunlaşır ve bundan sonra aynı mezhep
         <translation>Miktarı kopyala</translation>
     </message>
     <message>
-        <source>zTUP is currently disabled due to maintenance.</source>
-        <translation>zTUP bakım nedeniyle şu an kullanıma kapalı.</translation>
+        <source>zWEALTH is currently disabled due to maintenance.</source>
+        <translation>zWEALTH bakım nedeniyle şu an kullanıma kapalı.</translation>
     </message>
     <message>
-        <source>zTUP is currently undergoing maintenance.</source>
-        <translation>zTUP halen bakım alıyor.</translation>
+        <source>zWEALTH is currently undergoing maintenance.</source>
+        <translation>zWEALTH halen bakım alıyor.</translation>
     </message>
     <message>
         <source>AutoMint Status:</source>
@@ -2657,8 +2657,8 @@ zTUP, 20'den fazla teyit bulunduğunda olgunlaşır ve bundan sonra aynı mezhep
         <translation>Başarılı şekilde mint edildi</translation>
     </message>
     <message>
-        <source> zTUP in </source>
-        <translation> zTUP in </translation>
+        <source> zWEALTH in </source>
+        <translation> zWEALTH in </translation>
     </message>
     <message>
         <source> sec. Used denominations:
@@ -3428,8 +3428,8 @@ Ya daha yüksek mezhepleri daraltın (daha az girdi gereklidir) veya harcama mik
         <translation>UTXO Boyutu:</translation>
     </message>
     <message>
-        <source>0 TUP</source>
-        <translation>0 TUP</translation>
+        <source>0 WEALTH</source>
+        <translation>0 WEALTH</translation>
     </message>
     <message>
         <source>Transaction Fee:</source>
@@ -3484,12 +3484,12 @@ Ya daha yüksek mezhepleri daraltın (daha az girdi gereklidir) veya harcama mik
         <translation>Koinler otomatik seçildi</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uTUPs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uTUPs in fee,&lt;br /&gt;while "at least" pays 1000 uTUPs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Özel ücret 1000 uTUP olarak ayarlanmış ve işlem sadece 250 bayt ise, "kilobayt başına" ücret karşılığında yalnızca 250 uTUP öder,&lt;br /&gt;"en az" ise 1000 uTUP öder. Bir kilobayttan daha büyük işlemler için kilobayt ödersiniz.</translation>
+        <source>If the custom fee is set to 1000 uWEALTHs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uWEALTHs in fee,&lt;br /&gt;while "at least" pays 1000 uWEALTHs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Özel ücret 1000 uWEALTH olarak ayarlanmış ve işlem sadece 250 bayt ise, "kilobayt başına" ücret karşılığında yalnızca 250 uWEALTH öder,&lt;br /&gt;"en az" ise 1000 uWEALTH öder. Bir kilobayttan daha büyük işlemler için kilobayt ödersiniz.</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uTUPs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uTUPs in fee,&lt;br /&gt;while "total at least" pays 1000 uTUPs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Özel ücret 1000 uTUP olarak ayarlanırsa ve işlem sadece 250 bayt ise, "kilobayt başına" ücret karşılığında yalnızca 250 uTUP ücreti verilir,&lt;br /&gt;"toplam en az" ise 1000 uTUP ödüyor. Bir kilobayttan daha büyük işlemler için kilobayt ödersiniz.</translation>
+        <source>If the custom fee is set to 1000 uWEALTHs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uWEALTHs in fee,&lt;br /&gt;while "total at least" pays 1000 uWEALTHs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Özel ücret 1000 uWEALTH olarak ayarlanırsa ve işlem sadece 250 bayt ise, "kilobayt başına" ücret karşılığında yalnızca 250 uWEALTH ücreti verilir,&lt;br /&gt;"toplam en az" ise 1000 uWEALTH ödüyor. Bir kilobayttan daha büyük işlemler için kilobayt ödersiniz.</translation>
     </message>
     <message>
         <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for WealthSilo transactions than the network can process.</source>
@@ -3540,8 +3540,8 @@ Ya daha yüksek mezhepleri daraltın (daha az girdi gereklidir) veya harcama mik
         <translation>Alıcı ekle</translation>
     </message>
     <message>
-        <source>Anonymized TUP</source>
-        <translation>anonim edilmiş TUP</translation>
+        <source>Anonymized WEALTH</source>
+        <translation>anonim edilmiş WEALTH</translation>
     </message>
     <message>
         <source>Balance:</source>
@@ -4436,8 +4436,8 @@ Ya daha yüksek mezhepleri daraltın (daha az girdi gereklidir) veya harcama mik
         <translation>Koinleri göder</translation>
     </message>
     <message>
-        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 TUP.</source>
-        <translation>SwiftX yüksek değerler göndermeyi desteklemiyor. İşlemler şu anda %1 TUP ile sınırlıdır.</translation>
+        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 WEALTH.</source>
+        <translation>SwiftX yüksek değerler göndermeyi desteklemiyor. İşlemler şu anda %1 WEALTH ile sınırlıdır.</translation>
     </message>
 </context>
 <context>
@@ -4464,7 +4464,7 @@ Ya daha yüksek mezhepleri daraltın (daha az girdi gereklidir) veya harcama mik
     </message>
 </context>
 <context>
-    <name>ZTupControlDialog</name>
+    <name>ZWealthControlDialog</name>
     <message>
         <source>Quantity</source>
         <translation>Adet</translation>
@@ -4474,8 +4474,8 @@ Ya daha yüksek mezhepleri daraltın (daha az girdi gereklidir) veya harcama mik
         <translation>0</translation>
     </message>
     <message>
-        <source>zTUP</source>
-        <translation>zTUP</translation>
+        <source>zWEALTH</source>
+        <translation>zWEALTH</translation>
     </message>
     <message>
         <source>Select/Deselect All</source>
@@ -4487,7 +4487,7 @@ Ya daha yüksek mezhepleri daraltın (daha az girdi gereklidir) veya harcama mik
     </message>
 </context>
 <context>
-    <name>tenup-core</name>
+    <name>wealthsilo-core</name>
     <message>
         <source>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</source>
         <translation>(1 = tx meta verileri, örneğin hesap sahibi ve ödeme talebi bilgileri, 2 = tx meta verileri bırak)</translation>
@@ -4565,12 +4565,12 @@ Ya daha yüksek mezhepleri daraltın (daha az girdi gereklidir) veya harcama mik
         <translation>En iyi blok değiştirildiğinde komutu yürütün (cmd'deki %s yerine blok karması verilir)</translation>
     </message>
     <message>
-        <source>Fees (in TUP/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>Bundan daha küçük ücretler (TUP / Kb cinsinden), aktarma için sıfır ücret olarak kabul edilir (varsayılan: %s)</translation>
+        <source>Fees (in WEALTH/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>Bundan daha küçük ücretler (WEALTH / Kb cinsinden), aktarma için sıfır ücret olarak kabul edilir (varsayılan: %s)</translation>
     </message>
     <message>
-        <source>Fees (in TUP/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>Bundan daha küçük ücretler (TUP / Kb cinsinden), işlem yaratmada sıfır ücret olarak kabul edilir (varsayılan: %s)</translation>
+        <source>Fees (in WEALTH/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>Bundan daha küçük ücretler (WEALTH / Kb cinsinden), işlem yaratmada sıfır ücret olarak kabul edilir (varsayılan: %s)</translation>
     </message>
     <message>
         <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</source>

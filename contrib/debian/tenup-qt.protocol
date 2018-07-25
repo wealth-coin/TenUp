@@ -1,6 +1,6 @@
 [Protocol]
-exec=tenup-qt '%u'
-protocol=tenup
+exec=wealthsilo-qt '%u'
+protocol=wealthsilo
 input=none
 output=none
 helper=true

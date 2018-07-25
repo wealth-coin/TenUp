@@ -3,15 +3,15 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef TENUP_ZTUPTRACKER_H
-#define TENUP_ZTUPTRACKER_H
+#ifndef WEALTHSILO_ZWEALTHTRACKER_H
+#define WEALTHSILO_ZWEALTHTRACKER_H
 
 #include "primitives/zerocoin.h"
 #include <list>
 
 class CDeterministicMint;
 
-class CzTUPTracker
+class CzWEALTHTracker
 {
 private:
     bool fInitialized;
@@ -20,8 +20,8 @@ private:
     std::map<uint256, uint256> mapPendingSpends; //serialhash, txid of spend
     bool UpdateStatusInternal(const std::set<uint256>& setMempool, CMintMeta& mint);
 public:
-    CzTUPTracker(std::string strWalletFile);
-    ~CzTUPTracker();
+    CzWEALTHTracker(std::string strWalletFile);
+    ~CzWEALTHTracker();
     void Add(const CDeterministicMint& dMint, bool isNew = false, bool isArchived = false);
     void Add(const CZerocoinMint& mint, bool isNew = false, bool isArchived = false);
     bool Archive(CMintMeta& meta);
@@ -49,4 +49,4 @@ public:
     void Clear();
 };
 
-#endif //TENUP_ZTUPTRACKER_H
+#endif //WEALTHSILO_ZWEALTHTRACKER_H

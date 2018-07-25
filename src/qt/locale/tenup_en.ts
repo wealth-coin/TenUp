@@ -221,7 +221,7 @@
     </message>
     <message>
         <location line="+9"/>
-        <source>WealthSilo will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your TUPs from being stolen by malware infecting your computer.</source>
+        <source>WealthSilo will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your WEALTHs from being stolen by malware infecting your computer.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -231,7 +231,7 @@
     </message>
     <message>
         <location line="+0"/>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR TUP&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR WEALTH&lt;/b&gt;!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -557,7 +557,7 @@
     </message>
     <message>
         <location line="+11"/>
-        <source>Privacy Actions for zTUP</source>
+        <source>Privacy Actions for zWEALTH</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -837,7 +837,7 @@
     </message>
     <message>
         <location line="+11"/>
-        <source>Request payments (generates QR codes and tenup: URIs)</source>
+        <source>Request payments (generates QR codes and wealthsilo: URIs)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1148,7 +1148,7 @@ Address: %4
     </message>
     <message>
         <location filename="../blockexplorer.cpp" line="+480"/>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (tenup.conf).</source>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (wealthsilo.conf).</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -1448,7 +1448,7 @@ Address: %4
     </message>
     <message>
         <location line="+8"/>
-        <source>Can vary +/- %1 utup per input.</source>
+        <source>Can vary +/- %1 uwealth per input.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2120,7 +2120,7 @@ Please be patient after clicking import.</source>
     </message>
     <message>
         <location line="+13"/>
-        <source>Add destinations to send TUP to</source>
+        <source>Add destinations to send WEALTH to</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2243,12 +2243,12 @@ Please be patient after clicking import.</source>
     </message>
     <message>
         <location line="+13"/>
-        <source>Use 2 separate masternodes to mix funds up to 25000 TUP</source>
+        <source>Use 2 separate masternodes to mix funds up to 25000 WEALTH</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+13"/>
-        <source>Use 8 separate masternodes to mix funds up to 25000 TUP</source>
+        <source>Use 8 separate masternodes to mix funds up to 25000 WEALTH</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2258,12 +2258,12 @@ Please be patient after clicking import.</source>
     </message>
     <message>
         <location line="+13"/>
-        <source>This option is the quickest and will cost about ~0.025 TUP to anonymize 25000 TUP</source>
+        <source>This option is the quickest and will cost about ~0.025 WEALTH to anonymize 25000 WEALTH</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+13"/>
-        <source>This option is moderately fast and will cost about 0.05 TUP to anonymize 25000 TUP</source>
+        <source>This option is moderately fast and will cost about 0.05 WEALTH to anonymize 25000 WEALTH</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2273,7 +2273,7 @@ Please be patient after clicking import.</source>
     </message>
     <message>
         <location line="+13"/>
-        <source>0.1 TUP per  10000 TUP you anonymize.</source>
+        <source>0.1 WEALTH per  10000 WEALTH you anonymize.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2442,7 +2442,7 @@ Please be patient after clicking import.</source>
     <message>
         <location line="+21"/>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/tenup-project/tenup-project-translations</source>
+https://www.transifex.com/wealthsilo-project/wealthsilo-project-translations</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2452,33 +2452,33 @@ https://www.transifex.com/tenup-project/tenup-project-translations</source>
     </message>
     <message>
         <location line="-169"/>
-        <source>Enable automatic minting of TUP units to zTUP</source>
+        <source>Enable automatic minting of WEALTH units to zWEALTH</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+6"/>
-        <source>Enable zTUP Automint</source>
+        <source>Enable zWEALTH Automint</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+9"/>
-        <source>Percentage of incoming TUP which get automatically converted to zTUP via Zerocoin Protocol (min: 10%)</source>
+        <source>Percentage of incoming WEALTH which get automatically converted to zWEALTH via Zerocoin Protocol (min: 10%)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Percentage of autominted zTUP</source>
+        <source>Percentage of autominted zWEALTH</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+30"/>
         <location line="+16"/>
-        <source>Wait with automatic conversion to Zerocoin until enough TUP for this denomination is available</source>
+        <source>Wait with automatic conversion to Zerocoin until enough WEALTH for this denomination is available</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="-13"/>
-        <source>Preferred Automint zTUP Denomination</source>
+        <source>Preferred Automint zWEALTH Denomination</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2687,7 +2687,7 @@ https://www.transifex.com/tenup-project/tenup-project-translations</source>
     </message>
     <message>
         <location line="+71"/>
-        <source>TUP Balance</source>
+        <source>WEALTH Balance</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2724,14 +2724,14 @@ https://www.transifex.com/tenup-project/tenup-project-translations</source>
     </message>
     <message>
         <location line="+96"/>
-        <source>zTUP Balance</source>
+        <source>zWEALTH Balance</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+53"/>
         <location line="+17"/>
         <source>Mature: more than 20 confirmation and more than 1 mint of the same denomination after it was minted.
-These zTUP are spendable.</source>
+These zWEALTH are spendable.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2804,7 +2804,7 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
     <message>
         <location line="+191"/>
         <location line="+19"/>
-        <source>Locked TUP or Masternode collaterals. These are excluded from zTUP minting.</source>
+        <source>Locked WEALTH or Masternode collaterals. These are excluded from zWEALTH minting.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2820,7 +2820,7 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
     <message>
         <location line="+58"/>
         <location line="+19"/>
-        <source>Your current zTUP balance, unconfirmed and immature zTUP included.</source>
+        <source>Your current zWEALTH balance, unconfirmed and immature zWEALTH included.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2836,7 +2836,7 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
     </message>
     <message>
         <location line="+105"/>
-        <source>Current percentage of zTUP.
+        <source>Current percentage of zWEALTH.
 If AutoMint is enabled this percentage will settle around the configured AutoMint percentage (default = 10%).
 </source>
         <translation type="unfinished"></translation>
@@ -2848,13 +2848,13 @@ If AutoMint is enabled this percentage will settle around the configured AutoMin
     </message>
     <message>
         <location line="+1"/>
-        <source>To disable AutoMint add &apos;enablezeromint=0&apos; in tenup.conf.</source>
+        <source>To disable AutoMint add &apos;enablezeromint=0&apos; in wealthsilo.conf.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
         <source>AutoMint is currently disabled.
-To enable AutoMint change &apos;enablezeromint=0&apos; to &apos;enablezeromint=1&apos; in tenup.conf</source>
+To enable AutoMint change &apos;enablezeromint=0&apos; to &apos;enablezeromint=1&apos; in wealthsilo.conf</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -2894,7 +2894,7 @@ To enable AutoMint change &apos;enablezeromint=0&apos; to &apos;enablezeromint=1
     </message>
     <message>
         <location line="-108"/>
-        <source>Cannot start tenup: click-to-pay handler</source>
+        <source>Cannot start wealthsilo: click-to-pay handler</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3027,7 +3027,7 @@ To enable AutoMint change &apos;enablezeromint=0&apos; to &apos;enablezeromint=1
     <message>
         <location line="-371"/>
         <location line="+651"/>
-        <source>zTUP</source>
+        <source>zWEALTH</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3042,7 +3042,7 @@ To enable AutoMint change &apos;enablezeromint=0&apos; to &apos;enablezeromint=1
     </message>
     <message>
         <location line="+19"/>
-        <source>0.000 000 00 TUP</source>
+        <source>0.000 000 00 WEALTH</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3093,17 +3093,17 @@ To enable AutoMint change &apos;enablezeromint=0&apos; to &apos;enablezeromint=1
     <message>
         <location line="+182"/>
         <location line="+52"/>
-        <source>Enter an amount of TUP to convert to zTUP</source>
+        <source>Enter an amount of WEALTH to convert to zWEALTH</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+301"/>
-        <source>zTUP Control</source>
+        <source>zWEALTH Control</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>zTUP Selected:</source>
+        <source>zWEALTH Selected:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3131,7 +3131,7 @@ To enable AutoMint change &apos;enablezeromint=0&apos; to &apos;enablezeromint=1
     </message>
     <message>
         <location line="+7"/>
-        <source>Available (mature and spendable) zTUP for spending</source>
+        <source>Available (mature and spendable) zWEALTH for spending</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3141,9 +3141,9 @@ To enable AutoMint change &apos;enablezeromint=0&apos; to &apos;enablezeromint=1
     </message>
     <message>
         <location line="+16"/>
-        <source>Available (mature and spendable) zTUP for spending
+        <source>Available (mature and spendable) zWEALTH for spending
 
-zTUP are mature when they have more than 20 confirmations AND more than 2 mints of the same denomination after them were minted</source>
+zWEALTH are mature when they have more than 20 confirmations AND more than 2 mints of the same denomination after them were minted</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3158,7 +3158,7 @@ zTUP are mature when they have more than 20 confirmations AND more than 2 mints 
         <location line="+31"/>
         <location line="+31"/>
         <location line="+31"/>
-        <source>0 zTUP</source>
+        <source>0 zWEALTH</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3249,7 +3249,7 @@ zTUP are mature when they have more than 20 confirmations AND more than 2 mints 
     <message>
         <location line="+68"/>
         <location line="+38"/>
-        <source>Total Balance including unconfirmed and immature zTUP</source>
+        <source>Total Balance including unconfirmed and immature zWEALTH</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3282,14 +3282,14 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
     </message>
     <message>
         <location line="+40"/>
-        <source>Show the current status of automatic zTUP minting.
+        <source>Show the current status of automatic zWEALTH minting.
 
 To change the status (restart required):
-- enable: add &apos;enablezeromint=1&apos; to tenup.conf
-- disable: add &apos;enablezeromint=0&apos; to tenup.conf
+- enable: add &apos;enablezeromint=1&apos; to wealthsilo.conf
+- disable: add &apos;enablezeromint=0&apos; to wealthsilo.conf
 
 To change the percentage (no restart required):
-- menu Settings-&gt;Options-&gt;Percentage of autominted zTUP
+- menu Settings-&gt;Options-&gt;Percentage of autominted zWEALTH
 
 </source>
         <translation type="unfinished"></translation>
@@ -3523,12 +3523,12 @@ To change the percentage (no restart required):
     </message>
     <message>
         <location line="+442"/>
-        <source>zTUP Spend #: </source>
+        <source>zWEALTH Spend #: </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+16"/>
-        <source>zTUP Mint</source>
+        <source>zWEALTH Mint</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3549,13 +3549,13 @@ To change the percentage (no restart required):
     <message>
         <location line="+10"/>
         <location line="+4"/>
-        <source>zTUP is currently disabled due to maintenance.</source>
+        <source>zWEALTH is currently disabled due to maintenance.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="-637"/>
         <location line="+111"/>
-        <source>zTUP is currently undergoing maintenance.</source>
+        <source>zWEALTH is currently undergoing maintenance.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3666,7 +3666,7 @@ To change the percentage (no restart required):
     </message>
     <message>
         <location line="+0"/>
-        <source> zTUP in </source>
+        <source> zWEALTH in </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3756,13 +3756,13 @@ Please be patient...</source>
     <message>
         <location line="+13"/>
         <location line="+32"/>
-        <source>Version 1 zTUP require a security level of 100 to successfully spend.</source>
+        <source>Version 1 zWEALTH require a security level of 100 to successfully spend.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="-31"/>
         <location line="+32"/>
-        <source>Failed to spend zTUP</source>
+        <source>Failed to spend zWEALTH</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3796,7 +3796,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     <message numerus="yes">
         <location line="+335"/>
         <source>PrivacyDialog</source>
-        <comment>Enter an amount of TUP to convert to zTUP</comment>
+        <comment>Enter an amount of WEALTH to convert to zWEALTH</comment>
         <translation type="unfinished">
             <numerusform></numerusform>
             <numerusform></numerusform>
@@ -4227,7 +4227,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+29"/>
-        <source>Custom zTUP Backup Path:</source>
+        <source>Custom zWEALTH Backup Path:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4789,7 +4789,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+7"/>
-        <source>0 TUP</source>
+        <source>0 WEALTH</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4859,12 +4859,12 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+907"/>
-        <source>If the custom fee is set to 1000 uTUPs and the transaction is only 250 bytes, then &quot;per kilobyte&quot; only pays 250 uTUPs in fee,&lt;br /&gt;while &quot;at least&quot; pays 1000 uTUPs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <source>If the custom fee is set to 1000 uWEALTHs and the transaction is only 250 bytes, then &quot;per kilobyte&quot; only pays 250 uWEALTHs in fee,&lt;br /&gt;while &quot;at least&quot; pays 1000 uWEALTHs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+16"/>
-        <source>If the custom fee is set to 1000 uTUPs and the transaction is only 250 bytes, then &quot;per kilobyte&quot; only pays 250 uTUPs in fee,&lt;br /&gt;while &quot;total at least&quot; pays 1000 uTUPs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <source>If the custom fee is set to 1000 uWEALTHs and the transaction is only 250 bytes, then &quot;per kilobyte&quot; only pays 250 uWEALTHs in fee,&lt;br /&gt;while &quot;total at least&quot; pays 1000 uWEALTHs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4930,7 +4930,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+35"/>
-        <source>Anonymized TUP</source>
+        <source>Anonymized WEALTH</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5805,12 +5805,12 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+7"/>
-        <source>TUP Stake</source>
+        <source>WEALTH Stake</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>zTUP Stake</source>
+        <source>zWEALTH Stake</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5835,37 +5835,37 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+4"/>
-        <source>Converted TUP to zTUP</source>
+        <source>Converted WEALTH to zWEALTH</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Spent zTUP</source>
+        <source>Spent zWEALTH</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Received TUP from zTUP</source>
+        <source>Received WEALTH from zWEALTH</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Minted Change as zTUP from zTUP Spend</source>
+        <source>Minted Change as zWEALTH from zWEALTH Spend</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Converted zTUP to TUP</source>
+        <source>Converted zWEALTH to WEALTH</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+56"/>
-        <source>Anonymous (zTUP Transaction)</source>
+        <source>Anonymous (zWEALTH Transaction)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Anonymous (zTUP Stake)</source>
+        <source>Anonymous (zWEALTH Stake)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6129,12 +6129,12 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="-280"/>
-        <source>Received TUP from zTUP</source>
+        <source>Received WEALTH from zWEALTH</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Zerocoin Spend, Change in zTUP</source>
+        <source>Zerocoin Spend, Change in zWEALTH</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6181,7 +6181,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     <message>
         <location line="-18"/>
         <location line="+9"/>
-        <source>SwiftX doesn&apos;t support sending values that high yet. Transactions are currently limited to %1 TUP.</source>
+        <source>SwiftX doesn&apos;t support sending values that high yet. Transactions are currently limited to %1 WEALTH.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -6219,10 +6219,10 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
 </context>
 <context>
-    <name>ZTupControlDialog</name>
+    <name>ZWealthControlDialog</name>
     <message>
-        <location filename="../forms/ztupcontroldialog.ui" line="+20"/>
-        <source>Select zTUP to Spend</source>
+        <location filename="../forms/zwealthcontroldialog.ui" line="+20"/>
+        <source>Select zWEALTH to Spend</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6238,7 +6238,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="-7"/>
-        <source>zTUP</source>
+        <source>zWEALTH</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6253,9 +6253,9 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
 </context>
 <context>
-    <name>tenup-core</name>
+    <name>wealthsilo-core</name>
     <message>
-        <location filename="../tenupstrings.cpp" line="+15"/>
+        <location filename="../wealthsilostrings.cpp" line="+15"/>
         <source>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</source>
         <translation type="unfinished">(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</translation>
     </message>
@@ -6321,17 +6321,17 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+5"/>
-        <source>Enable automatic wallet backups triggered after each zTUP minting (0-1, default: %u)</source>
+        <source>Enable automatic wallet backups triggered after each zWEALTH minting (0-1, default: %u)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Enable or disable staking functionality for TUP inputs (0-1, default: %u)</source>
+        <source>Enable or disable staking functionality for WEALTH inputs (0-1, default: %u)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Enable or disable staking functionality for zTUP inputs (0-1, default: %u)</source>
+        <source>Enable or disable staking functionality for zWEALTH inputs (0-1, default: %u)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6376,12 +6376,12 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+8"/>
-        <source>Fees (in TUP/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <source>Fees (in WEALTH/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Fees (in TUP/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <source>Fees (in WEALTH/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6516,12 +6516,12 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+2"/>
-        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 25000 TUP.</source>
+        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 25000 WEALTH.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Unable to locate enough funds for this transaction that are not equal 25000 TUP.</source>
+        <source>Unable to locate enough funds for this transaction that are not equal 25000 WEALTH.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6911,7 +6911,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+4"/>
-        <source>Fee (in TUP/kB) to add to transactions you send (default: %s)</source>
+        <source>Fee (in WEALTH/kB) to add to transactions you send (default: %s)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7076,7 +7076,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+9"/>
-        <source>Reindex the TUP and zTUP money supply statistics</source>
+        <source>Reindex the WEALTH and zWEALTH money supply statistics</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7168,7 +7168,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+24"/>
-        <source>Specify custom backup path to add a copy of any automatic zTUP backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
+        <source>Specify custom backup path to add a copy of any automatic zWEALTH backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7793,7 +7793,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+1"/>
-        <source>Syncing zTUP wallet...</source>
+        <source>Syncing zWEALTH wallet...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7978,7 +7978,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+1"/>
-        <source>Value is below the smallest available denomination (= 1) of zTUP</source>
+        <source>Value is below the smallest available denomination (= 1) of zWEALTH</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7998,7 +7998,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+1"/>
-        <source>Version 1 zTUP require a security level of 100 to successfully spend.</source>
+        <source>Version 1 zWEALTH require a security level of 100 to successfully spend.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

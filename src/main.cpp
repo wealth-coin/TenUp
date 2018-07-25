@@ -2,7 +2,7 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2018 The PIVX developers
-// Copyright (c) 2015-2018 The WealthSilo developers
+// Copyright (c) 2018 The WealthSilo developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -87,7 +87,7 @@ bool fAlerts = DEFAULT_ALERTS;
 unsigned int nStakeMinAge = 60 * 60;
 int64_t nReserveBalance = 0;
 
-/** Fees smaller than this (in utup) are considered zero fee (for relaying and mining)
+/** Fees smaller than this (in uwealth) are considered zero fee (for relaying and mining)
  * We are ~100 times smaller then bitcoin now (2015-06-23), set minRelayTxFee only 10 times higher
  * so it's still 10 times lower comparing to bitcoin.
  */
@@ -1257,16 +1257,16 @@ bool ContextualCheckZerocoinMint(const CTransaction& tx, const PublicCoin& coin,
 
 bool ContextualCheckZerocoinSpend(const CTransaction& tx, const CoinSpend& spend, CBlockIndex* pindex, const uint256& hashBlock)
 {
-    //Check to see if the zTUP is properly signed
+    //Check to see if the zWEALTH is properly signed
     if (pindex->nHeight >= Params().Zerocoin_Block_V2_Start()) {
         if (!spend.HasValidSignature())
-            return error("%s: V2 zTUP spend does not have a valid signature", __func__);
+            return error("%s: V2 zWEALTH spend does not have a valid signature", __func__);
 
         libzerocoin::SpendType expectedType = libzerocoin::SpendType::SPEND;
         if (tx.IsCoinStake())
             expectedType = libzerocoin::SpendType::STAKE;
         if (spend.getSpendType() != expectedType) {
-            return error("%s: trying to spend zTUP without the correct spend type. txid=%s", __func__,
+            return error("%s: trying to spend zWEALTH without the correct spend type. txid=%s", __func__,
                          tx.GetHash().GetHex());
         }
     }
@@ -1274,14 +1274,14 @@ bool ContextualCheckZerocoinSpend(const CTransaction& tx, const CoinSpend& spend
     //Reject serial's that are already in the blockchain
     int nHeightTx = 0;
     if (IsSerialInBlockchain(spend.getCoinSerialNumber(), nHeightTx))
-        return error("%s : zTUP spend with serial %s is already in block %d\n", __func__,
+        return error("%s : zWEALTH spend with serial %s is already in block %d\n", __func__,
                      spend.getCoinSerialNumber().GetHex(), nHeightTx);
 
     //Reject serial's that are not in the acceptable value range
     bool fUseV1Params = spend.getVersion() < libzerocoin::PrivateCoin::PUBKEY_VERSION;
     if (pindex->nHeight > Params().Zerocoin_Block_EnforceSerialRange() &&
         !spend.HasValidSerial(Params().Zerocoin_Params(fUseV1Params)))
-        return error("%s : zTUP spend with serial %s from tx %s is not in valid range\n", __func__,
+        return error("%s : zWEALTH spend with serial %s from tx %s is not in valid range\n", __func__,
                      spend.getCoinSerialNumber().GetHex(), tx.GetHash().GetHex());
 
     return true;
@@ -1589,7 +1589,7 @@ bool AcceptToMemoryPool(CTxMemPool& pool, CValidationState& state, const CTransa
             //Check that txid is not already in the chain
             int nHeightTx = 0;
             if (IsTransactionInChain(tx.GetHash(), nHeightTx))
-                return state.Invalid(error("AcceptToMemoryPool : zTUP spend tx %s already in block %d",
+                return state.Invalid(error("AcceptToMemoryPool : zWEALTH spend tx %s already in block %d",
                                            tx.GetHash().GetHex(), nHeightTx), REJECT_DUPLICATE, "bad-txns-inputs-spent");
 
             //Check for double spending of serial #'s
@@ -1599,7 +1599,7 @@ bool AcceptToMemoryPool(CTxMemPool& pool, CValidationState& state, const CTransa
                 CoinSpend spend = TxInToZerocoinSpend(txIn);
                 if (!ContextualCheckZerocoinSpend(tx, spend, chainActive.Tip(), 0))
                     return state.Invalid(error("%s: ContextualCheckZerocoinSpend failed for tx %s", __func__,
-                                               tx.GetHash().GetHex()), REJECT_INVALID, "bad-txns-invalid-ztup");
+                                               tx.GetHash().GetHex()), REJECT_INVALID, "bad-txns-invalid-zwealth");
             }
         } else {
             LOCK(pool.cs);
@@ -1627,7 +1627,7 @@ bool AcceptToMemoryPool(CTxMemPool& pool, CValidationState& state, const CTransa
                 }
             }
 
-            // Check that zTUP mints are not already known
+            // Check that zWEALTH mints are not already known
             if (tx.IsZerocoinMint()) {
                 for (auto& out : tx.vout) {
                     if (!out.IsZerocoinMint())
@@ -2357,7 +2357,7 @@ CAmount GetSeeSaw(const CAmount& blockValue, int nMasternodeCount, int nHeight)
     return ret;
 }
 
-int64_t GetMasternodePayment(int nHeight, int64_t blockValue, int nMasternodeCount, bool isZTUPStake)
+int64_t GetMasternodePayment(int nHeight, int64_t blockValue, int nMasternodeCount, bool isZWEALTHStake)
 {
     int64_t ret = 0;
 
@@ -2373,9 +2373,9 @@ int64_t GetMasternodePayment(int nHeight, int64_t blockValue, int nMasternodeCou
     } else if (nHeight < Params().Zerocoin_Block_V2_Start()) {
         return GetSeeSaw(blockValue, nMasternodeCount, nHeight);
     } else {
-        //When zTUP is staked, masternode only gets 2 TUP
+        //When zWEALTH is staked, masternode only gets 2 WEALTH
         ret = 3 * COIN;
-        if (isZTUPStake)
+        if (isZWEALTHStake)
             ret = 2 * COIN;
     }
 
@@ -2891,11 +2891,11 @@ static CCheckQueue<CScriptCheck> scriptcheckqueue(128);
 
 void ThreadScriptCheck()
 {
-    RenameThread("tenup-scriptch");
+    RenameThread("wealthsilo-scriptch");
     scriptcheckqueue.Thread();
 }
 
-void RecalculateZTUPMinted()
+void RecalculateZWEALTHMinted()
 {
     CBlockIndex *pindex = chainActive[Params().Zerocoin_StartHeight()];
     int nHeightEnd = chainActive.Height();
@@ -2922,14 +2922,14 @@ void RecalculateZTUPMinted()
     }
 }
 
-void RecalculateZTUPSpent()
+void RecalculateZWEALTHSpent()
 {
     CBlockIndex* pindex = chainActive[Params().Zerocoin_StartHeight()];
     while (true) {
         if (pindex->nHeight % 1000 == 0)
             LogPrintf("%s : block %d...\n", __func__, pindex->nHeight);
 
-        //Rewrite zTUP supply
+        //Rewrite zWEALTH supply
         CBlock block;
         assert(ReadBlockFromDisk(block, pindex));
 
@@ -2938,13 +2938,13 @@ void RecalculateZTUPSpent()
         //Reset the supply to previous block
         pindex->mapZerocoinSupply = pindex->pprev->mapZerocoinSupply;
 
-        //Add mints to zTUP supply
+        //Add mints to zWEALTH supply
         for (auto denom : libzerocoin::zerocoinDenomList) {
             long nDenomAdded = count(pindex->vMintDenominationsInBlock.begin(), pindex->vMintDenominationsInBlock.end(), denom);
             pindex->mapZerocoinSupply.at(denom) += nDenomAdded;
         }
 
-        //Remove spends from zTUP supply
+        //Remove spends from zWEALTH supply
         for (auto denom : listDenomsSpent)
             pindex->mapZerocoinSupply.at(denom)--;
 
@@ -2958,7 +2958,7 @@ void RecalculateZTUPSpent()
     }
 }
 
-bool RecalculateTUPSupply(int nHeightStart)
+bool RecalculateWEALTHSupply(int nHeightStart)
 {
     if (nHeightStart > chainActive.Height())
         return false;
@@ -3074,7 +3074,7 @@ bool ReindexAccumulators(list<uint256>& listMissingCheckpoints, string& strError
     return true;
 }
 
-bool UpdateZTUPSupply(const CBlock& block, CBlockIndex* pindex)
+bool UpdateZWEALTHSupply(const CBlock& block, CBlockIndex* pindex)
 {
     std::list<CZerocoinMint> listMints;
     bool fFilterInvalid = pindex->nHeight >= Params().Zerocoin_Block_RecalculateAccumulators();
@@ -3253,7 +3253,7 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
                     return state.DoS(100, error("%s: failed to add block %s with invalid zerocoinspend", __func__, tx.GetHash().GetHex()), REJECT_INVALID);
             }
 
-            // Check that zTUP mints are not already known
+            // Check that zWEALTH mints are not already known
             if (tx.IsZerocoinMint()) {
                 for (auto& out : tx.vout) {
                     if (!out.IsZerocoinMint())
@@ -3282,7 +3282,7 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
                 }
             }
 
-            // Check that zTUP mints are not already known
+            // Check that zWEALTH mints are not already known
             if (tx.IsZerocoinMint()) {
                 for (auto& out : tx.vout) {
                     if (!out.IsZerocoinMint())
@@ -3330,14 +3330,14 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
 
     //A one-time event where money supply counts were off and recalculated on a certain block.
     if (pindex->nHeight == Params().Zerocoin_Block_RecalculateAccumulators() + 1) {
-        RecalculateZTUPMinted();
-        RecalculateZTUPSpent();
-        RecalculateTUPSupply(Params().Zerocoin_StartHeight());
+        RecalculateZWEALTHMinted();
+        RecalculateZWEALTHSpent();
+        RecalculateWEALTHSupply(Params().Zerocoin_StartHeight());
     }
 
-    //Track zTUP money supply in the block index
-    if (!UpdateZTUPSupply(block, pindex))
-        return state.DoS(100, error("%s: Failed to calculate new zTUP supply for block=%s height=%d", __func__,
+    //Track zWEALTH money supply in the block index
+    if (!UpdateZWEALTHSupply(block, pindex))
+        return state.DoS(100, error("%s: Failed to calculate new zWEALTH supply for block=%s height=%d", __func__,
                                     block.GetHash().GetHex(), pindex->nHeight), REJECT_INVALID);
 
     // track money supply and mint amount info
@@ -3345,7 +3345,7 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
     pindex->nMoneySupply = nMoneySupplyPrev + nValueOut - nValueIn;
     pindex->nMint = pindex->nMoneySupply - nMoneySupplyPrev + nFees;
 
-//    LogPrintf("XX69----------> ConnectBlock(): nValueOut: %s, nValueIn: %s, nFees: %s, nMint: %s zTupSpent: %s\n",
+//    LogPrintf("XX69----------> ConnectBlock(): nValueOut: %s, nValueIn: %s, nFees: %s, nMint: %s zWealthSpent: %s\n",
 //              FormatMoney(nValueOut), FormatMoney(nValueIn),
 //              FormatMoney(nFees), FormatMoney(pindex->nMint), FormatMoney(nAmountZerocoinSpent));
 
@@ -3399,7 +3399,7 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
         setDirtyBlockIndex.insert(pindex);
     }
 
-    //Record zTUP serials
+    //Record zWEALTH serials
     set<uint256> setAddedTx;
     for (pair<CoinSpend, uint256> pSpend : vSpends) {
         //record spend to database
@@ -3546,7 +3546,7 @@ void static UpdateTip(CBlockIndex* pindexNew)
 {
     chainActive.SetTip(pindexNew);
 
-    // If turned on AutoZeromint will automatically convert TUP to zTUP
+    // If turned on AutoZeromint will automatically convert WEALTH to zWEALTH
     if (pwalletMain->isZeromintEnabled ())
         pwalletMain->AutoZeromint ();
 
@@ -4412,13 +4412,13 @@ bool CheckBlock(const CBlock& block, CValidationState& state, bool fCheckPOW, bo
         if (!CheckTransaction(tx, fZerocoinActive, chainActive.Height() + 1 >= Params().Zerocoin_Block_EnforceSerialRange(), state))
             return error("CheckBlock() : CheckTransaction failed");
 
-        // double check that there are no double spent zTUP spends in this block
+        // double check that there are no double spent zWEALTH spends in this block
         if (tx.IsZerocoinSpend()) {
             for (const CTxIn txIn : tx.vin) {
                 if (txIn.scriptSig.IsZerocoinSpend()) {
                     libzerocoin::CoinSpend spend = TxInToZerocoinSpend(txIn);
                     if (count(vBlockSerials.begin(), vBlockSerials.end(), spend.getCoinSerialNumber()))
-                        return state.DoS(100, error("%s : Double spending of zTUP serial %s in block\n Block: %s",
+                        return state.DoS(100, error("%s : Double spending of zWEALTH serial %s in block\n Block: %s",
                                                     __func__, spend.getCoinSerialNumber().GetHex(), block.ToString()));
                     vBlockSerials.emplace_back(spend.getCoinSerialNumber());
                 }
@@ -4625,21 +4625,21 @@ bool AcceptBlockHeader(const CBlock& block, CValidationState& state, CBlockIndex
 bool ContextualCheckZerocoinStake(int nHeight, CStakeInput* stake)
 {
     if (nHeight < Params().Zerocoin_Block_V2_Start())
-        return error("%s: zTUP stake block is less than allowed start height", __func__);
+        return error("%s: zWEALTH stake block is less than allowed start height", __func__);
 
-    if (CZTupStake* zTUP = dynamic_cast<CZTupStake*>(stake)) {
-        CBlockIndex* pindexFrom = zTUP->GetIndexFrom();
+    if (CZWealthStake* zWEALTH = dynamic_cast<CZWealthStake*>(stake)) {
+        CBlockIndex* pindexFrom = zWEALTH->GetIndexFrom();
         if (!pindexFrom)
-            return error("%s: failed to get index associated with zTUP stake checksum", __func__);
+            return error("%s: failed to get index associated with zWEALTH stake checksum", __func__);
 
         if (chainActive.Height() - pindexFrom->nHeight < Params().Zerocoin_RequiredStakeDepth())
-            return error("%s: zTUP stake does not have required confirmation depth", __func__);
+            return error("%s: zWEALTH stake does not have required confirmation depth", __func__);
 
         //The checksum needs to be the exact checksum from 200 blocks ago
         uint256 nCheckpoint200 = chainActive[nHeight - Params().Zerocoin_RequiredStakeDepth()]->nAccumulatorCheckpoint;
-        uint32_t nChecksum200 = ParseChecksum(nCheckpoint200, libzerocoin::AmountToZerocoinDenomination(zTUP->GetValue()));
-        if (nChecksum200 != zTUP->GetChecksum())
-            return error("%s: accumulator checksum is different than the block 200 blocks previous. stake=%d block200=%d", __func__, zTUP->GetChecksum(), nChecksum200);
+        uint32_t nChecksum200 = ParseChecksum(nCheckpoint200, libzerocoin::AmountToZerocoinDenomination(zWEALTH->GetValue()));
+        if (nChecksum200 != zWEALTH->GetChecksum())
+            return error("%s: accumulator checksum is different than the block 200 blocks previous. stake=%d block200=%d", __func__, zWEALTH->GetChecksum(), nChecksum200);
     } else {
         return error("%s: dynamic_cast of stake ptr failed", __func__);
     }
@@ -4689,8 +4689,8 @@ bool AcceptBlock(CBlock& block, CValidationState& state, CBlockIndex** ppindex, 
         if (!stake)
             return error("%s: null stake ptr", __func__);
 
-        if (stake->IsZTUP() && !ContextualCheckZerocoinStake(pindexPrev->nHeight, stake.get()))
-            return state.DoS(100, error("%s: staked zTUP fails context checks", __func__));
+        if (stake->IsZWEALTH() && !ContextualCheckZerocoinStake(pindexPrev->nHeight, stake.get()))
+            return state.DoS(100, error("%s: staked zWEALTH fails context checks", __func__));
 
         uint256 hash = block.GetHash();
         if(!mapProofOfStake.count(hash)) // add to mapProofOfStake
@@ -4818,7 +4818,7 @@ bool ProcessNewBlock(CValidationState& state, CNode* pfrom, CBlock* pblock, CDis
         }
     }
     if (nMints || nSpends)
-        LogPrintf("%s : block contains %d zTUP mints and %d zTUP spends\n", __func__, nMints, nSpends);
+        LogPrintf("%s : block contains %d zWEALTH mints and %d zWEALTH spends\n", __func__, nMints, nSpends);
 
     if (!CheckBlockSignature(*pblock))
         return error("ProcessNewBlock() : bad proof-of-stake block signature");

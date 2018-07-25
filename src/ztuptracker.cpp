@@ -4,7 +4,7 @@
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #include <primitives/deterministicmint.h>
-#include "ztuptracker.h"
+#include "zwealthtracker.h"
 #include "util.h"
 #include "sync.h"
 #include "main.h"
@@ -14,7 +14,7 @@
 
 using namespace std;
 
-CzTUPTracker::CzTUPTracker(std::string strWalletFile)
+CzWEALTHTracker::CzWEALTHTracker(std::string strWalletFile)
 {
     this->strWalletFile = strWalletFile;
     mapSerialHashes.clear();
@@ -22,13 +22,13 @@ CzTUPTracker::CzTUPTracker(std::string strWalletFile)
     fInitialized = false;
 }
 
-CzTUPTracker::~CzTUPTracker()
+CzWEALTHTracker::~CzWEALTHTracker()
 {
     mapSerialHashes.clear();
     mapPendingSpends.clear();
 }
 
-void CzTUPTracker::Init()
+void CzWEALTHTracker::Init()
 {
     //Load all CZerocoinMints and CDeterministicMints from the database
     if (!fInitialized) {
@@ -37,7 +37,7 @@ void CzTUPTracker::Init()
     }
 }
 
-bool CzTUPTracker::Archive(CMintMeta& meta)
+bool CzWEALTHTracker::Archive(CMintMeta& meta)
 {
     if (mapSerialHashes.count(meta.hashSerial))
         mapSerialHashes.at(meta.hashSerial).isArchived = true;
@@ -60,7 +60,7 @@ bool CzTUPTracker::Archive(CMintMeta& meta)
     return true;
 }
 
-bool CzTUPTracker::UnArchive(const uint256& hashPubcoin, bool isDeterministic)
+bool CzWEALTHTracker::UnArchive(const uint256& hashPubcoin, bool isDeterministic)
 {
     CWalletDB walletdb(strWalletFile);
     if (isDeterministic) {
@@ -79,7 +79,7 @@ bool CzTUPTracker::UnArchive(const uint256& hashPubcoin, bool isDeterministic)
     return true;
 }
 
-CMintMeta CzTUPTracker::Get(const uint256 &hashSerial)
+CMintMeta CzWEALTHTracker::Get(const uint256 &hashSerial)
 {
     if (!mapSerialHashes.count(hashSerial))
         return CMintMeta();
@@ -87,7 +87,7 @@ CMintMeta CzTUPTracker::Get(const uint256 &hashSerial)
     return mapSerialHashes.at(hashSerial);
 }
 
-CMintMeta CzTUPTracker::GetMetaFromPubcoin(const uint256& hashPubcoin)
+CMintMeta CzWEALTHTracker::GetMetaFromPubcoin(const uint256& hashPubcoin)
 {
     for (auto it : mapSerialHashes) {
         CMintMeta meta = it.second;
@@ -98,7 +98,7 @@ CMintMeta CzTUPTracker::GetMetaFromPubcoin(const uint256& hashPubcoin)
     return CMintMeta();
 }
 
-bool CzTUPTracker::GetMetaFromStakeHash(const uint256& hashStake, CMintMeta& meta) const
+bool CzWEALTHTracker::GetMetaFromStakeHash(const uint256& hashStake, CMintMeta& meta) const
 {
     for (auto& it : mapSerialHashes) {
         if (it.second.hashStake == hashStake) {
@@ -110,7 +110,7 @@ bool CzTUPTracker::GetMetaFromStakeHash(const uint256& hashStake, CMintMeta& met
     return false;
 }
 
-std::vector<uint256> CzTUPTracker::GetSerialHashes()
+std::vector<uint256> CzWEALTHTracker::GetSerialHashes()
 {
     vector<uint256> vHashes;
     for (auto it : mapSerialHashes) {
@@ -124,7 +124,7 @@ std::vector<uint256> CzTUPTracker::GetSerialHashes()
     return vHashes;
 }
 
-CAmount CzTUPTracker::GetBalance(bool fConfirmedOnly, bool fUnconfirmedOnly) const
+CAmount CzWEALTHTracker::GetBalance(bool fConfirmedOnly, bool fUnconfirmedOnly) const
 {
     CAmount nTotal = 0;
     //! zerocoin specific fields
@@ -160,12 +160,12 @@ CAmount CzTUPTracker::GetBalance(bool fConfirmedOnly, bool fUnconfirmedOnly) con
     return nTotal;
 }
 
-CAmount CzTUPTracker::GetUnconfirmedBalance() const
+CAmount CzWEALTHTracker::GetUnconfirmedBalance() const
 {
     return GetBalance(false, true);
 }
 
-std::vector<CMintMeta> CzTUPTracker::GetMints(bool fConfirmedOnly) const
+std::vector<CMintMeta> CzWEALTHTracker::GetMints(bool fConfirmedOnly) const
 {
     vector<CMintMeta> vMints;
     for (auto& it : mapSerialHashes) {
@@ -181,7 +181,7 @@ std::vector<CMintMeta> CzTUPTracker::GetMints(bool fConfirmedOnly) const
 }
 
 //Does a mint in the tracker have this txid
-bool CzTUPTracker::HasMintTx(const uint256& txid)
+bool CzWEALTHTracker::HasMintTx(const uint256& txid)
 {
     for (auto it : mapSerialHashes) {
         if (it.second.txid == txid)
@@ -191,14 +191,14 @@ bool CzTUPTracker::HasMintTx(const uint256& txid)
     return false;
 }
 
-bool CzTUPTracker::HasPubcoin(const CBigNum &bnValue) const
+bool CzWEALTHTracker::HasPubcoin(const CBigNum &bnValue) const
 {
     // Check if this mint's pubcoin value belongs to our mapSerialHashes (which includes hashpubcoin values)
     uint256 hash = GetPubCoinHash(bnValue);
     return HasPubcoinHash(hash);
 }
 
-bool CzTUPTracker::HasPubcoinHash(const uint256& hashPubcoin) const
+bool CzWEALTHTracker::HasPubcoinHash(const uint256& hashPubcoin) const
 {
     for (auto it : mapSerialHashes) {
         CMintMeta meta = it.second;
@@ -208,19 +208,19 @@ bool CzTUPTracker::HasPubcoinHash(const uint256& hashPubcoin) const
     return false;
 }
 
-bool CzTUPTracker::HasSerial(const CBigNum& bnSerial) const
+bool CzWEALTHTracker::HasSerial(const CBigNum& bnSerial) const
 {
     uint256 hash = GetSerialHash(bnSerial);
     return HasSerialHash(hash);
 }
 
-bool CzTUPTracker::HasSerialHash(const uint256& hashSerial) const
+bool CzWEALTHTracker::HasSerialHash(const uint256& hashSerial) const
 {
     auto it = mapSerialHashes.find(hashSerial);
     return it != mapSerialHashes.end();
 }
 
-bool CzTUPTracker::UpdateZerocoinMint(const CZerocoinMint& mint)
+bool CzWEALTHTracker::UpdateZerocoinMint(const CZerocoinMint& mint)
 {
     if (!HasSerial(mint.GetSerialNumber()))
         return error("%s: mint %s is not known", __func__, mint.GetValue().GetHex());
@@ -238,7 +238,7 @@ bool CzTUPTracker::UpdateZerocoinMint(const CZerocoinMint& mint)
     return CWalletDB(strWalletFile).WriteZerocoinMint(mint);
 }
 
-bool CzTUPTracker::UpdateState(const CMintMeta& meta)
+bool CzWEALTHTracker::UpdateState(const CMintMeta& meta)
 {
     CWalletDB walletdb(strWalletFile);
 
@@ -281,7 +281,7 @@ bool CzTUPTracker::UpdateState(const CMintMeta& meta)
     return true;
 }
 
-void CzTUPTracker::Add(const CDeterministicMint& dMint, bool isNew, bool isArchived)
+void CzWEALTHTracker::Add(const CDeterministicMint& dMint, bool isNew, bool isArchived)
 {
     CMintMeta meta;
     meta.hashPubcoin = dMint.GetPubcoinHash();
@@ -300,7 +300,7 @@ void CzTUPTracker::Add(const CDeterministicMint& dMint, bool isNew, bool isArchi
         CWalletDB(strWalletFile).WriteDeterministicMint(dMint);
 }
 
-void CzTUPTracker::Add(const CZerocoinMint& mint, bool isNew, bool isArchived)
+void CzWEALTHTracker::Add(const CZerocoinMint& mint, bool isNew, bool isArchived)
 {
     CMintMeta meta;
     meta.hashPubcoin = GetPubCoinHash(mint.GetValue());
@@ -320,7 +320,7 @@ void CzTUPTracker::Add(const CZerocoinMint& mint, bool isNew, bool isArchived)
         CWalletDB(strWalletFile).WriteZerocoinMint(mint);
 }
 
-void CzTUPTracker::SetPubcoinUsed(const uint256& hashPubcoin, const uint256& txid)
+void CzWEALTHTracker::SetPubcoinUsed(const uint256& hashPubcoin, const uint256& txid)
 {
     if (!HasPubcoinHash(hashPubcoin))
         return;
@@ -330,7 +330,7 @@ void CzTUPTracker::SetPubcoinUsed(const uint256& hashPubcoin, const uint256& txi
     UpdateState(meta);
 }
 
-void CzTUPTracker::SetPubcoinNotUsed(const uint256& hashPubcoin)
+void CzWEALTHTracker::SetPubcoinNotUsed(const uint256& hashPubcoin)
 {
     if (!HasPubcoinHash(hashPubcoin))
         return;
@@ -343,7 +343,7 @@ void CzTUPTracker::SetPubcoinNotUsed(const uint256& hashPubcoin)
     UpdateState(meta);
 }
 
-void CzTUPTracker::RemovePending(const uint256& txid)
+void CzWEALTHTracker::RemovePending(const uint256& txid)
 {
     uint256 hashSerial;
     for (auto it : mapPendingSpends) {
@@ -357,7 +357,7 @@ void CzTUPTracker::RemovePending(const uint256& txid)
         mapPendingSpends.erase(hashSerial);
 }
 
-bool CzTUPTracker::UpdateStatusInternal(const std::set<uint256>& setMempool, CMintMeta& mint)
+bool CzWEALTHTracker::UpdateStatusInternal(const std::set<uint256>& setMempool, CMintMeta& mint)
 {
     //! Check whether this mint has been spent and is considered 'pending' or 'confirmed'
     // If there is not a record of the block height, then look it up and assign it
@@ -433,7 +433,7 @@ bool CzTUPTracker::UpdateStatusInternal(const std::set<uint256>& setMempool, CMi
     return false;
 }
 
-std::set<CMintMeta> CzTUPTracker::ListMints(bool fUnusedOnly, bool fMatureOnly, bool fUpdateStatus)
+std::set<CMintMeta> CzWEALTHTracker::ListMints(bool fUnusedOnly, bool fMatureOnly, bool fUpdateStatus)
 {
     CWalletDB walletdb(strWalletFile);
     if (fUpdateStatus) {
@@ -445,7 +445,7 @@ std::set<CMintMeta> CzTUPTracker::ListMints(bool fUnusedOnly, bool fMatureOnly, 
         std::list<CDeterministicMint> listDeterministicDB = walletdb.ListDeterministicMints();
         for (auto& dMint : listDeterministicDB)
             Add(dMint);
-        LogPrint("zero", "%s: added %d dztup from DB\n", __func__, listDeterministicDB.size());
+        LogPrint("zero", "%s: added %d dzwealth from DB\n", __func__, listDeterministicDB.size());
     }
 
     std::vector<CMintMeta> vOverWrite;
@@ -493,7 +493,7 @@ std::set<CMintMeta> CzTUPTracker::ListMints(bool fUnusedOnly, bool fMatureOnly, 
     return setMints;
 }
 
-void CzTUPTracker::Clear()
+void CzWEALTHTracker::Clear()
 {
     mapSerialHashes.clear();
 }

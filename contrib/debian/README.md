@@ -1,21 +1,21 @@
 
 Debian
 ====================
-This directory contains files used to package tenupd/tenup-qt
-for Debian-based Linux systems. If you compile tenupd/tenup-qt yourself, there are some useful files here.
+This directory contains files used to package wealthsilod/wealthsilo-qt
+for Debian-based Linux systems. If you compile wealthsilod/wealthsilo-qt yourself, there are some useful files here.
 
-## tenup: URI support ##
+## wealthsilo: URI support ##
 
 
-tenup-qt.desktop  (Gnome / Open Desktop)
+wealthsilo-qt.desktop  (Gnome / Open Desktop)
 To install:
 
-	sudo desktop-file-install tenup-qt.desktop
+	sudo desktop-file-install wealthsilo-qt.desktop
 	sudo update-desktop-database
 
 If you build yourself, you will either need to modify the paths in
-the .desktop file or copy or symlink your tenupqt binary to `/usr/bin`
-and the `../../share/pixmaps/tenup128.png` to `/usr/share/pixmaps`
+the .desktop file or copy or symlink your wealthsiloqt binary to `/usr/bin`
+and the `../../share/pixmaps/wealthsilo128.png` to `/usr/share/pixmaps`
 
-tenup-qt.protocol (KDE)
+wealthsilo-qt.protocol (KDE)
 

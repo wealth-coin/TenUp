@@ -423,7 +423,7 @@
             <string/>
            </property>
            <property name="icon">
-            <iconset resource="../tenup.qrc">
+            <iconset resource="../wealthsilo.qrc">
              <normaloff>:/icons/remove</normaloff>:/icons/remove</iconset>
            </property>
            <property name="shortcut">
@@ -1326,9 +1326,9 @@
         </widget>
        </item>
        <item row="4" column="0">
-        <widget class="QLabel" name="wallet_customztupbackuppath_label">
+        <widget class="QLabel" name="wallet_customzwealthbackuppath_label">
          <property name="text">
-          <string>Custom zTUP Backup Path:</string>
+          <string>Custom zWEALTH Backup Path:</string>
          </property>
          <property name="visible">
           <bool>false</bool>
@@ -1336,7 +1336,7 @@
         </widget>
        </item>
        <item row="4" column="1" colspan="3">
-        <widget class="QLabel" name="wallet_customztupbackuppath">
+        <widget class="QLabel" name="wallet_customzwealthbackuppath">
          <property name="cursor">
           <cursorShape>IBeamCursor</cursorShape>
          </property>
@@ -1637,7 +1637,7 @@
   </customwidget>
  </customwidgets>
  <resources>
-  <include location="../tenup.qrc"/>
+  <include location="../wealthsilo.qrc"/>
  </resources>
  <connections/>
 </ui>

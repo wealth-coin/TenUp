@@ -1,19 +1,19 @@
 WealthSilo Core version 3.0.5 is now available from:
 
-  <https://github.com/tenup-project/tenup/releases>
+  <https://github.com/wealthsilo-project/wealthsilo/releases>
 
 This is a new minor-revision version release, including various bug fixes and
 performance improvements, as well as updated translations.
 
 Please report bugs using the issue tracker at github:
 
-  <https://github.com/tenup-project/tenup/issues>
+  <https://github.com/wealthsilo-project/wealthsilo/issues>
 
 
 Mandatory Update
 ==============
 
-WealthSilo Core v3.0.5 is a mandatory update for all users. This release contains various updates/fixes pertaining to the zTUP protocol, supply tracking, block transmission and relaying, as well as usability and quality-of-life updates to the GUI. Users are required to update before block `908000` which is when the accumulators will be refactored. Shortly after that block, zTUP transactions will be enabled. **When zTUP is enabled, autominting will also be enabled.** If you would like to disable automatic conversion of 10% of your TUP balance to zTUP, then you will need to add `enablezeromint=0` to your `tenup.conf` file. For information about where to find your tenup.conf you can visit this link from [WealthSilo Support](https://tenup.freshdesk.com/support/solutions/articles/30000004664-where-are-my-wallet-dat-blockchain-and-configuration-conf-files-located-).
+WealthSilo Core v3.0.5 is a mandatory update for all users. This release contains various updates/fixes pertaining to the zWEALTH protocol, supply tracking, block transmission and relaying, as well as usability and quality-of-life updates to the GUI. Users are required to update before block `908000` which is when the accumulators will be refactored. Shortly after that block, zWEALTH transactions will be enabled. **When zWEALTH is enabled, autominting will also be enabled.** If you would like to disable automatic conversion of 10% of your WEALTH balance to zWEALTH, then you will need to add `enablezeromint=0` to your `wealthsilo.conf` file. For information about where to find your wealthsilo.conf you can visit this link from [WealthSilo Support](https://wealthsilo.freshdesk.com/support/solutions/articles/30000004664-where-are-my-wallet-dat-blockchain-and-configuration-conf-files-located-).
 
 Users will have a grace period to update their clients before versions prior to this release are no longer allowed to connect to this (and future) version(s).
 
@@ -21,7 +21,7 @@ Users will have a grace period to update their clients before versions prior to 
 How to Upgrade
 ==============
 
-If you are running an older version, shut it down. Wait until it has completely shut down (which might take a few minutes for older versions), then run the installer (on Windows) or just copy over /Applications/Tenup-Qt (on Mac) or tenupd/tenup-qt (on Linux).
+If you are running an older version, shut it down. Wait until it has completely shut down (which might take a few minutes for older versions), then run the installer (on Windows) or just copy over /Applications/Tenup-Qt (on Mac) or wealthsilod/wealthsilo-qt (on Linux).
 
 
 Compatibility
@@ -48,23 +48,23 @@ Notable Changes
 
 Accumulator Code Refactor
 ---------------------
-The zTUP accumulator code has undergone a major refactor. Accumulators are one of the most essential components of the zerocoin protocol, and also one of the most computationally expensive parts of the protocol. This refactoring speeds up syncing and spending of zTUP by over 5x. The new code also allows for spending of zTUP with only 2 required mints occurring on the network after your mint has been added, whereas before 3 were required. This refactor allows for lighter resource load and a smoother user experience.
+The zWEALTH accumulator code has undergone a major refactor. Accumulators are one of the most essential components of the zerocoin protocol, and also one of the most computationally expensive parts of the protocol. This refactoring speeds up syncing and spending of zWEALTH by over 5x. The new code also allows for spending of zWEALTH with only 2 required mints occurring on the network after your mint has been added, whereas before 3 were required. This refactor allows for lighter resource load and a smoother user experience.
 
 libzerocoin Exploit Fix
 ---------------------
-zTUP relies on a 3rd party library called libzerocoin. All currencies that utilize the zerocoin protocol use libzerocoin, and many of those currencies have been exposed to an exploit which allowed for the creation of multiple zero-knowledge spending proofs for one single zerocoin mint. The WealthSilo developers were able properly identify the exploit, track down any fraudulent spending proofs, link the fraudulent spending proofs with their one valid proof that they were mutated from, and remove any mints from the accumulators that were derived from the invalid spends. 
+zWEALTH relies on a 3rd party library called libzerocoin. All currencies that utilize the zerocoin protocol use libzerocoin, and many of those currencies have been exposed to an exploit which allowed for the creation of multiple zero-knowledge spending proofs for one single zerocoin mint. The WealthSilo developers were able properly identify the exploit, track down any fraudulent spending proofs, link the fraudulent spending proofs with their one valid proof that they were mutated from, and remove any mints from the accumulators that were derived from the invalid spends. 
 
-zTUP Maintenance Mode Spork
+zWEALTH Maintenance Mode Spork
 ---------------------
-Handling the above noted libzerocoin exploit required the WealthSilo team to immediately release a patched wallet to as many users as possible which rejected bad spends and also disabled all zTUP transactions in general. The process of releasing a patched wallet in such a small time frame is frustrating and difficult for all members of the WealthSilo team and especially users of WealthSilo. The WealthSilo developers have added a new spork which allows for zTUP transacting to be turned on/off without having to release a patched wallet. This will allow much smoother operation if any problems occur in the future, and should also allow exchanges and 3rd party services to continue to operate even if zTUP is in maintenance mode.
+Handling the above noted libzerocoin exploit required the WealthSilo team to immediately release a patched wallet to as many users as possible which rejected bad spends and also disabled all zWEALTH transactions in general. The process of releasing a patched wallet in such a small time frame is frustrating and difficult for all members of the WealthSilo team and especially users of WealthSilo. The WealthSilo developers have added a new spork which allows for zWEALTH transacting to be turned on/off without having to release a patched wallet. This will allow much smoother operation if any problems occur in the future, and should also allow exchanges and 3rd party services to continue to operate even if zWEALTH is in maintenance mode.
 
 Money Supply Indexing
 ---------------------
-The exploit in libzerocoin threw off some of the wallet's internal money supply calculations for both the zTUP supply and the TUP supply. User's wallet's will automatically recalculate the supply on block `908001`. User's also have the ability to recalculate supply using the startup flag `reindexmoneysupply`.
+The exploit in libzerocoin threw off some of the wallet's internal money supply calculations for both the zWEALTH supply and the WEALTH supply. User's wallet's will automatically recalculate the supply on block `908001`. User's also have the ability to recalculate supply using the startup flag `reindexmoneysupply`.
 
-More Extensive Tracking of zTUP Supply Through RPC
+More Extensive Tracking of zWEALTH Supply Through RPC
 ---------------------
-More information has been added to the `getinfo` and `getblock` RPC calls, which now display the total zTUP supply as well as the balance for each zTUP accumulator.
+More information has been added to the `getinfo` and `getblock` RPC calls, which now display the total zWEALTH supply as well as the balance for each zWEALTH accumulator.
 
 Multisig GUI
 ---------------------
@@ -85,7 +85,7 @@ git merge commit are mentioned.
 
 ### Wallet
 - #308 `bd8a982` [Minting] Clear mempool after invalid block from miner (presstab)
-- #316 `ed192cf` [Minting] Better filtering of zTup serials in miner. (presstab)
+- #316 `ed192cf` [Minting] Better filtering of zWealth serials in miner. (presstab)
 
 ### GUI
 - #278 `46f4960` [QT] Multisignature GUI (rejectedpromise)
@@ -108,4 +108,4 @@ Thanks to everyone who directly contributed to this release:
 - presstab
 - rejectedpromise
 
-As well as everyone that helped translating on [Transifex](https://www.transifex.com/projects/p/tenup-project-translations/).
+As well as everyone that helped translating on [Transifex](https://www.transifex.com/projects/p/wealthsilo-project-translations/).

@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef TENUP_MINTPOOL_H
-#define TENUP_MINTPOOL_H
+#ifndef WEALTHSILO_MINTPOOL_H
+#define WEALTHSILO_MINTPOOL_H
 
 #include <map>
 #include <list>
@@ -51,4 +51,4 @@ public:
 };
 
 
-#endif //TENUP_MINTPOOL_H
+#endif //WEALTHSILO_MINTPOOL_H

@@ -176,16 +176,16 @@
         <translation>Wallet-Verschlüsselung bestätigen</translation>
     </message>
     <message>
-        <source>WealthSilo will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your TUPs from being stolen by malware infecting your computer.</source>
-        <translation>Die Anwendungs wird nun geschlossen um die Verschlüsselung abzuschließen. Bitte beachten Sie, dass auch Verschlüsselung nicht nicht vollständig vor Diebstahl ihrer TUPs durch Schadsoftware schützt, die ihren Computer befällt.</translation>
+        <source>WealthSilo will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your WEALTHs from being stolen by malware infecting your computer.</source>
+        <translation>Die Anwendungs wird nun geschlossen um die Verschlüsselung abzuschließen. Bitte beachten Sie, dass auch Verschlüsselung nicht nicht vollständig vor Diebstahl ihrer WEALTHs durch Schadsoftware schützt, die ihren Computer befällt.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Sind Sie sich sicher, dass Sie ihre Wallet verschlüsseln möchten?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR TUP&lt;/b&gt;!</source>
-        <translation>Warnung: Wenn Sie ihre Wallet verschlüsseln und Ihre Passphrase verlieren werden Sie &lt;b&gt;alle ihre TUPs verlieren&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR WEALTH&lt;/b&gt;!</source>
+        <translation>Warnung: Wenn Sie ihre Wallet verschlüsseln und Ihre Passphrase verlieren werden Sie &lt;b&gt;alle ihre WEALTHs verlieren&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -433,8 +433,8 @@
         <translation>Transaktionsverlauf durchsehen</translation>
     </message>
     <message>
-        <source>Privacy Actions for zTUP</source>
-        <translation>Anonyme Aktionen für zTUP</translation>
+        <source>Privacy Actions for zWEALTH</source>
+        <translation>Anonyme Aktionen für zWEALTH</translation>
     </message>
     <message>
         <source>E&amp;xit</source>
@@ -653,8 +653,8 @@
         <translation>An eine WealthSilo-Adresse überweisen</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and tenup: URIs)</source>
-        <translation>Zahlung anfordern (QR-Code Generierung und tenup: URIs)</translation>
+        <source>Request payments (generates QR codes and wealthsilo: URIs)</source>
+        <translation>Zahlung anfordern (QR-Code Generierung und wealthsilo: URIs)</translation>
     </message>
     <message>
         <source>&amp;Privacy</source>
@@ -887,8 +887,8 @@ Adresse: %4</translation>
         <translation>TextEtikett</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (tenup.conf).</source>
-        <translation>Nicht alle Transaktionen können anzezeigt werden. Um alle Transaktionen zu sehen, müssen sie die Option  "txindex=1" in der "tenup.conf" Konfigurationsdatei hinzufügen.</translation>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (wealthsilo.conf).</source>
+        <translation>Nicht alle Transaktionen können anzezeigt werden. Um alle Transaktionen zu sehen, müssen sie die Option  "txindex=1" in der "wealthsilo.conf" Konfigurationsdatei hinzufügen.</translation>
     </message>
 </context>
 <context>
@@ -1125,8 +1125,8 @@ Adresse: %4</translation>
         <translation>Diese Bezeichnung wird rot, wenn ein Empfänger einen Betrag erhält, der kleiner ist als %1.</translation>
     </message>
     <message>
-        <source>Can vary +/- %1 utup per input.</source>
-        <translation>Kann um +/- %1 utup pro Eingang variieren.</translation>
+        <source>Can vary +/- %1 uwealth per input.</source>
+        <translation>Kann um +/- %1 uwealth pro Eingang variieren.</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -1672,8 +1672,8 @@ Bitte haben Sie etwas Geduld, nachdem Sie auf Importieren geklickt haben.</trans
         <translation>Adresse / Menge:</translation>
     </message>
     <message>
-        <source>Add destinations to send TUP to</source>
-        <translation>Füge Transaktionsziele für TUP-Überweisung hinzu</translation>
+        <source>Add destinations to send WEALTH to</source>
+        <translation>Füge Transaktionsziele für WEALTH-Überweisung hinzu</translation>
     </message>
     <message>
         <source>Add &amp;Destination</source>
@@ -1771,32 +1771,32 @@ Bitte haben Sie etwas Geduld, nachdem Sie auf Importieren geklickt haben.</trans
         <translation>Bitte den gewünschten Privatsphäre Level auswählen.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 25000 TUP</source>
-        <translation>2 separate Masternodes verwenden um bis zu 25000 TUP zu mixen</translation>
+        <source>Use 2 separate masternodes to mix funds up to 25000 WEALTH</source>
+        <translation>2 separate Masternodes verwenden um bis zu 25000 WEALTH zu mixen</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 25000 TUP</source>
-        <translation>8 separate Masternodes verwenden um bis zu 25000 TUP zu mixen</translation>
+        <source>Use 8 separate masternodes to mix funds up to 25000 WEALTH</source>
+        <translation>8 separate Masternodes verwenden um bis zu 25000 WEALTH zu mixen</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>16 separate Masternodes verwenden</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 TUP to anonymize 25000 TUP</source>
-        <translation>Diese Option ist die schnellst und kostet ungefähr ~0.025 TUP um 25000 TUP zu anonymisieren </translation>
+        <source>This option is the quickest and will cost about ~0.025 WEALTH to anonymize 25000 WEALTH</source>
+        <translation>Diese Option ist die schnellst und kostet ungefähr ~0.025 WEALTH um 25000 WEALTH zu anonymisieren </translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 TUP to anonymize 25000 TUP</source>
-        <translation>Diese Option ist angemessen schnell und kostet ungefähr  0.05 TUP um 25000 TUP zu anonymisieren</translation>
+        <source>This option is moderately fast and will cost about 0.05 WEALTH to anonymize 25000 WEALTH</source>
+        <translation>Diese Option ist angemessen schnell und kostet ungefähr  0.05 WEALTH um 25000 WEALTH zu anonymisieren</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
         <translation>Diese Option ist die langsamste und sicherste Option. Die Verwendung maximaler Anonymisierung kostet</translation>
     </message>
     <message>
-        <source>0.1 TUP per  10000 TUP you anonymize.</source>
-        <translation>0.1 TUP per  10000 TUP die anonymisiert werden.</translation>
+        <source>0.1 WEALTH per  10000 WEALTH you anonymize.</source>
+        <translation>0.1 WEALTH per  10000 WEALTH die anonymisiert werden.</translation>
     </message>
     <message>
         <source>Obfuscation Configuration</source>
@@ -1804,15 +1804,15 @@ Bitte haben Sie etwas Geduld, nachdem Sie auf Importieren geklickt haben.</trans
     </message>
     <message>
         <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening WealthSilo's configuration screen.</source>
-        <translation>Verschleierung erfolgreich auf normal gesetzt (%1 und 2 Runden). Sie können dies jederzeit in den TenUps Konfigurationen ändern.</translation>
+        <translation>Verschleierung erfolgreich auf normal gesetzt (%1 und 2 Runden). Sie können dies jederzeit in den WealthSilos Konfigurationen ändern.</translation>
     </message>
     <message>
         <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening WealthSilo's configuration screen.</source>
-        <translation>Verschleierung erfolgreich auf hohen gesetzt (%1 und 8 Runden). Sie können dies jederzeit in den TenUps Konfigurationen ändern.</translation>
+        <translation>Verschleierung erfolgreich auf hohen gesetzt (%1 und 8 Runden). Sie können dies jederzeit in den WealthSilos Konfigurationen ändern.</translation>
     </message>
     <message>
         <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening WealthSilo's configuration screen.</source>
-        <translation>Verschleierung erfolgreich auf maximal gesetzt (%1 und 16 Runden). Sie können dies jederzeit in den TenUps Konfigurationen ändern.</translation>
+        <translation>Verschleierung erfolgreich auf maximal gesetzt (%1 und 16 Runden). Sie können dies jederzeit in den WealthSilos Konfigurationen ändern.</translation>
     </message>
 </context>
 <context>
@@ -1930,37 +1930,37 @@ Bitte haben Sie etwas Geduld, nachdem Sie auf Importieren geklickt haben.</trans
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/tenup-project/tenup-project-translations</source>
+https://www.transifex.com/wealthsilo-project/wealthsilo-project-translations</source>
         <translation>Sprache fehlt oder ist unvollständig? Helfe mit und trage zur Übersetzung bei unter:
-https://www.transifex.com/tenup-project/tenup-project-translations</translation>
+https://www.transifex.com/wealthsilo-project/wealthsilo-project-translations</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
         <translation>Port mit &amp;UPnP mappen</translation>
     </message>
     <message>
-        <source>Enable automatic minting of TUP units to zTUP</source>
-        <translation>Aktivieren Sie die automatische Prägung von TUP-Einheiten zu zTUP</translation>
+        <source>Enable automatic minting of WEALTH units to zWEALTH</source>
+        <translation>Aktivieren Sie die automatische Prägung von WEALTH-Einheiten zu zWEALTH</translation>
     </message>
     <message>
-        <source>Enable zTUP Automint</source>
-        <translation>Aktivieren Sie zTUP Automint</translation>
+        <source>Enable zWEALTH Automint</source>
+        <translation>Aktivieren Sie zWEALTH Automint</translation>
     </message>
     <message>
-        <source>Percentage of incoming TUP which get automatically converted to zTUP via Zerocoin Protocol (min: 10%)</source>
-        <translation>Anteil des eingehenden TUP, welcher automatisch zu zTUP via Zerocoin Protokoll konvertiert wird (min: 10%)</translation>
+        <source>Percentage of incoming WEALTH which get automatically converted to zWEALTH via Zerocoin Protocol (min: 10%)</source>
+        <translation>Anteil des eingehenden WEALTH, welcher automatisch zu zWEALTH via Zerocoin Protokoll konvertiert wird (min: 10%)</translation>
     </message>
     <message>
-        <source>Percentage of autominted zTUP</source>
-        <translation>Prozentsatz der automatisierten zTUP</translation>
+        <source>Percentage of autominted zWEALTH</source>
+        <translation>Prozentsatz der automatisierten zWEALTH</translation>
     </message>
     <message>
-        <source>Wait with automatic conversion to Zerocoin until enough TUP for this denomination is available</source>
-        <translation>Warte mit automatischer Konvertierung zu Zerocoin, bis genügend TUP für diese Stückelung verfügbar ist</translation>
+        <source>Wait with automatic conversion to Zerocoin until enough WEALTH for this denomination is available</source>
+        <translation>Warte mit automatischer Konvertierung zu Zerocoin, bis genügend WEALTH für diese Stückelung verfügbar ist</translation>
     </message>
     <message>
-        <source>Preferred Automint zTUP Denomination</source>
-        <translation>Bevorzugte automatisierte zTUP Stückelung </translation>
+        <source>Preferred Automint zWEALTH Denomination</source>
+        <translation>Bevorzugte automatisierte zWEALTH Stückelung </translation>
     </message>
     <message>
         <source>Stake split threshold:</source>
@@ -2122,8 +2122,8 @@ https://www.transifex.com/tenup-project/tenup-project-translations</translation>
         <translation>Gesamtsaldo, einschließlich aller nicht verfügbaren Münzen.</translation>
     </message>
     <message>
-        <source>TUP Balance</source>
-        <translation>TUP Bilanzen</translation>
+        <source>WEALTH Balance</source>
+        <translation>WEALTH Bilanzen</translation>
     </message>
     <message>
         <source>Pending:</source>
@@ -2150,14 +2150,14 @@ https://www.transifex.com/tenup-project/tenup-project-translations</translation>
         <translation>Ihr aktueller WealthSilo-Saldo, unbestätigte und unreife Transaktionen sind enthalten</translation>
     </message>
     <message>
-        <source>zTUP Balance</source>
-        <translation>zTUP Bilanzen</translation>
+        <source>zWEALTH Balance</source>
+        <translation>zWEALTH Bilanzen</translation>
     </message>
     <message>
         <source>Mature: more than 20 confirmation and more than 1 mint of the same denomination after it was minted.
-These zTUP are spendable.</source>
+These zWEALTH are spendable.</source>
         <translation>Ausgereift: Mehr als 20 Bestätigungen und mehr als 1 Prägungen der selben Stückelung nach erfolgter Prägung.
-Diese zTUP sind Verwendbar.</translation>
+Diese zWEALTH sind Verwendbar.</translation>
     </message>
     <message>
         <source>Unconfirmed: less than 20 confirmations
@@ -2210,8 +2210,8 @@ Unreif: Bestätigt, aber keine Prägung in der selben Stückelung seit erfolgter
         <translation>Verfügbar:</translation>
     </message>
     <message>
-        <source>Locked TUP or Masternode collaterals. These are excluded from zTUP minting.</source>
-        <translation>Gesperrte TUP oder Masternode Pfand. Diese sind vom zTUP Prägen ausgeschlossen.</translation>
+        <source>Locked WEALTH or Masternode collaterals. These are excluded from zWEALTH minting.</source>
+        <translation>Gesperrte WEALTH oder Masternode Pfand. Diese sind vom zWEALTH Prägen ausgeschlossen.</translation>
     </message>
     <message>
         <source>Locked:</source>
@@ -2222,8 +2222,8 @@ Unreif: Bestätigt, aber keine Prägung in der selben Stückelung seit erfolgter
         <translation>Unbestätigt:</translation>
     </message>
     <message>
-        <source>Your current zTUP balance, unconfirmed and immature zTUP included.</source>
-        <translation>Ihre aktuelle zTUP-Bilanz, unbestätigte und unreife zTUP enthalten.</translation>
+        <source>Your current zWEALTH balance, unconfirmed and immature zWEALTH included.</source>
+        <translation>Ihre aktuelle zWEALTH-Bilanz, unbestätigte und unreife zWEALTH enthalten.</translation>
     </message>
     <message>
         <source>Recent transactions</source>
@@ -2234,10 +2234,10 @@ Unreif: Bestätigt, aber keine Prägung in der selben Stückelung seit erfolgter
         <translation>nicht synchron</translation>
     </message>
     <message>
-        <source>Current percentage of zTUP.
+        <source>Current percentage of zWEALTH.
 If AutoMint is enabled this percentage will settle around the configured AutoMint percentage (default = 10%).
 </source>
-        <translation>Aktueller Prozentsatz an zTUP.
+        <translation>Aktueller Prozentsatz an zWEALTH.
 Falls das automatische Prägen aktiviert ist, wird sich dieser Prozentsatz um den eingestellten Prozentsatz fürs automatisierte Prägen einpendeln (Standard = 10%).
 </translation>
     </message>
@@ -2246,14 +2246,14 @@ Falls das automatische Prägen aktiviert ist, wird sich dieser Prozentsatz um de
         <translation>Automatisches Prägen ist aktiv und eingestellt auf</translation>
     </message>
     <message>
-        <source>To disable AutoMint add 'enablezeromint=0' in tenup.conf.</source>
-        <translation>Um das automatische Prägen zu deaktivieren, füge 'enablezeromint=0' in tenup.conf ein.</translation>
+        <source>To disable AutoMint add 'enablezeromint=0' in wealthsilo.conf.</source>
+        <translation>Um das automatische Prägen zu deaktivieren, füge 'enablezeromint=0' in wealthsilo.conf ein.</translation>
     </message>
     <message>
         <source>AutoMint is currently disabled.
-To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in tenup.conf</source>
+To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in wealthsilo.conf</source>
         <translation>Das automatische Prägen ist deaktiviert.
-Um das automatische Prägen zu aktivieren ändere 'enablezeromint=0' zu 'enablezeromint=1' in tenup.conf</translation>
+Um das automatische Prägen zu aktivieren ändere 'enablezeromint=0' zu 'enablezeromint=1' in wealthsilo.conf</translation>
     </message>
 </context>
 <context>
@@ -2279,7 +2279,7 @@ Um das automatische Prägen zu aktivieren ändere 'enablezeromint=0' zu 'enablez
         <translation>Ungültige Zahlungsaufforderungsadresse %1</translation>
     </message>
     <message>
-        <source>Cannot start tenup: click-to-pay handler</source>
+        <source>Cannot start wealthsilo: click-to-pay handler</source>
         <translation>Kann WealthSilo nicht starten: click-to-pay Handler</translation>
     </message>
     <message>
@@ -2381,8 +2381,8 @@ Um das automatische Prägen zu aktivieren ändere 'enablezeromint=0' zu 'enablez
         <translation>0</translation>
     </message>
     <message>
-        <source>zTUP</source>
-        <translation>zTUP</translation>
+        <source>zWEALTH</source>
+        <translation>zWEALTH</translation>
     </message>
     <message>
         <source>Available for minting are coins which are confirmed and not locked or Masternode collaterals.</source>
@@ -2393,8 +2393,8 @@ Um das automatische Prägen zu aktivieren ändere 'enablezeromint=0' zu 'enablez
         <translation>Verfügbar für Prägung:</translation>
     </message>
     <message>
-        <source>0.000 000 00 TUP</source>
-        <translation>0.000 000 00 TUP</translation>
+        <source>0.000 000 00 WEALTH</source>
+        <translation>0.000 000 00 WEALTH</translation>
     </message>
     <message>
         <source>Reset Zerocoin Wallet DB. Deletes transactions that did not make it into the blockchain.</source>
@@ -2433,16 +2433,16 @@ Um das automatische Prägen zu aktivieren ändere 'enablezeromint=0' zu 'enablez
         <translation>PRIVATSPHÄRE</translation>
     </message>
     <message>
-        <source>Enter an amount of TUP to convert to zTUP</source>
-        <translation>Geben Sie den Betrag ein, den sie von TUP in zTUP umwandeln möchten</translation>
+        <source>Enter an amount of WEALTH to convert to zWEALTH</source>
+        <translation>Geben Sie den Betrag ein, den sie von WEALTH in zWEALTH umwandeln möchten</translation>
     </message>
     <message>
-        <source>zTUP Control</source>
-        <translation>zTUP Control</translation>
+        <source>zWEALTH Control</source>
+        <translation>zWEALTH Control</translation>
     </message>
     <message>
-        <source>zTUP Selected:</source>
-        <translation>zTUP ausgewählt:</translation>
+        <source>zWEALTH Selected:</source>
+        <translation>zWEALTH ausgewählt:</translation>
     </message>
     <message>
         <source>Quantity Selected:</source>
@@ -2457,24 +2457,24 @@ Um das automatische Prägen zu aktivieren ändere 'enablezeromint=0' zu 'enablez
         <translation>Überweise Zerocoin</translation>
     </message>
     <message>
-        <source>Available (mature and spendable) zTUP for spending</source>
-        <translation>Verfügbare (ausgereifte und aufwendbare) zTUP zum Überweisen</translation>
+        <source>Available (mature and spendable) zWEALTH for spending</source>
+        <translation>Verfügbare (ausgereifte und aufwendbare) zWEALTH zum Überweisen</translation>
     </message>
     <message>
         <source>Available Balance:</source>
         <translation>Verfügbare Bilanz:</translation>
     </message>
     <message>
-        <source>Available (mature and spendable) zTUP for spending
+        <source>Available (mature and spendable) zWEALTH for spending
 
-zTUP are mature when they have more than 20 confirmations AND more than 2 mints of the same denomination after them were minted</source>
-        <translation>Verfügbare (ausgereifte und aufwendbare) zTUP zum Überweisen
+zWEALTH are mature when they have more than 20 confirmations AND more than 2 mints of the same denomination after them were minted</source>
+        <translation>Verfügbare (ausgereifte und aufwendbare) zWEALTH zum Überweisen
 
-zTUP sind ausgereift wenn sie mehr als 20 Bestätigungen und mehr als 2 Prägungen in der selben Stückelung nach erfolgter Prägung halten.</translation>
+zWEALTH sind ausgereift wenn sie mehr als 20 Bestätigungen und mehr als 2 Prägungen in der selben Stückelung nach erfolgter Prägung halten.</translation>
     </message>
     <message>
-        <source>0 zTUP</source>
-        <translation>0 zTUP</translation>
+        <source>0 zWEALTH</source>
+        <translation>0 zWEALTH</translation>
     </message>
     <message>
         <source>Security Level for Zerocoin Transactions. More is better, but needs more time and resources.</source>
@@ -2545,8 +2545,8 @@ zTUP sind ausgereift wenn sie mehr als 20 Bestätigungen und mehr als 2 Prägung
         <translation>Zerocoin Statistiken:</translation>
     </message>
     <message>
-        <source>Total Balance including unconfirmed and immature zTUP</source>
-        <translation>Totales Guthaben, einschließlich unbestätigter und unreifer zTUP</translation>
+        <source>Total Balance including unconfirmed and immature zWEALTH</source>
+        <translation>Totales Guthaben, einschließlich unbestätigter und unreifer zWEALTH</translation>
     </message>
     <message>
         <source>Total Zerocoin  Balance:</source>
@@ -2567,24 +2567,24 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
 Unreif: Bestätigt, aber keine Prägung in der selben Stückelung seit erfolgter Prägung</translation>
     </message>
     <message>
-        <source>Show the current status of automatic zTUP minting.
+        <source>Show the current status of automatic zWEALTH minting.
 
 To change the status (restart required):
-- enable: add 'enablezeromint=1' to tenup.conf
-- disable: add 'enablezeromint=0' to tenup.conf
+- enable: add 'enablezeromint=1' to wealthsilo.conf
+- disable: add 'enablezeromint=0' to wealthsilo.conf
 
 To change the percentage (no restart required):
-- menu Settings-&gt;Options-&gt;Percentage of autominted zTUP
+- menu Settings-&gt;Options-&gt;Percentage of autominted zWEALTH
 
 </source>
-        <translation>Zeigt den aktuellen Status der automatischen zTUP-Prägung an
+        <translation>Zeigt den aktuellen Status der automatischen zWEALTH-Prägung an
 
 Um den Status zu ändern (Neustart erforderlich): 
-- enable: füge 'enablezeromint = 1' zu tenup.conf hinzu
-- disable: füge 'enablezeromint = 0' zu tenup.conf hinzu
+- enable: füge 'enablezeromint = 1' zu wealthsilo.conf hinzu
+- disable: füge 'enablezeromint = 0' zu wealthsilo.conf hinzu
 
 Um den Prozentsatz zu ändern (kein Neustart erforderlich): 
-- Menü Einstellungen-&gt; Optionen-&gt; Prozentsatz der autom. zTUP
+- Menü Einstellungen-&gt; Optionen-&gt; Prozentsatz der autom. zWEALTH
 </translation>
     </message>
     <message>
@@ -2760,12 +2760,12 @@ Um den Prozentsatz zu ändern (kein Neustart erforderlich):
         <translation>Betrag kopieren</translation>
     </message>
     <message>
-        <source>zTUP Spend #: </source>
-        <translation>zTUP Ausgeben #:</translation>
+        <source>zWEALTH Spend #: </source>
+        <translation>zWEALTH Ausgeben #:</translation>
     </message>
     <message>
-        <source>zTUP Mint</source>
-        <translation>zTUP Prägen</translation>
+        <source>zWEALTH Mint</source>
+        <translation>zWEALTH Prägen</translation>
     </message>
     <message>
         <source> &lt;b&gt;enabled&lt;/b&gt;.</source>
@@ -2780,12 +2780,12 @@ Um den Prozentsatz zu ändern (kein Neustart erforderlich):
         <translation>Konfigurierter Zielprozentsatz: &lt;b&gt;</translation>
     </message>
     <message>
-        <source>zTUP is currently disabled due to maintenance.</source>
-        <translation>zTUP ist aktuell deaktiviert aufgrund von Wartungsarbeiten.</translation>
+        <source>zWEALTH is currently disabled due to maintenance.</source>
+        <translation>zWEALTH ist aktuell deaktiviert aufgrund von Wartungsarbeiten.</translation>
     </message>
     <message>
-        <source>zTUP is currently undergoing maintenance.</source>
-        <translation>zTUP unterliegt momentan Wartungsarbeiten.</translation>
+        <source>zWEALTH is currently undergoing maintenance.</source>
+        <translation>zWEALTH unterliegt momentan Wartungsarbeiten.</translation>
     </message>
     <message>
         <source>Denom. with value &lt;b&gt;1&lt;/b&gt;:</source>
@@ -2872,8 +2872,8 @@ Um den Prozentsatz zu ändern (kein Neustart erforderlich):
         <translation>Erfolgreich geprägt</translation>
     </message>
     <message>
-        <source> zTUP in </source>
-        <translation> zTUP in </translation>
+        <source> zWEALTH in </source>
+        <translation> zWEALTH in </translation>
     </message>
     <message>
         <source> sec. Used denominations:
@@ -2946,12 +2946,12 @@ Rechnerisch aufwändig. Kann je nach ausgewähltem Sicherheitsstufe und Ihrer Ha
 Bitte haben Sie Geduld...</translation>
     </message>
     <message>
-        <source>Version 1 zTUP require a security level of 100 to successfully spend.</source>
-        <translation>Version 1 zTUP benötigen eine Sicherheitsstufe von 100 um erfolgreich ausgegeben werden zu können.</translation>
+        <source>Version 1 zWEALTH require a security level of 100 to successfully spend.</source>
+        <translation>Version 1 zWEALTH benötigen eine Sicherheitsstufe von 100 um erfolgreich ausgegeben werden zu können.</translation>
     </message>
     <message>
-        <source>Failed to spend zTUP</source>
-        <translation>zTUP Überweisung fehlgeschlagen</translation>
+        <source>Failed to spend zWEALTH</source>
+        <translation>zWEALTH Überweisung fehlgeschlagen</translation>
     </message>
     <message>
         <source>Failed to fetch mint associated with serial hash</source>
@@ -2979,7 +2979,7 @@ Präge entweder höhere Stückelungen (damit weniger Eingaben benötigt werdenn)
     </message>
     <message numerus="yes">
         <source>PrivacyDialog</source>
-        <comment>Enter an amount of TUP to convert to zTUP</comment>
+        <comment>Enter an amount of WEALTH to convert to zWEALTH</comment>
         <translation><numerusform>PrivacyDialog</numerusform><numerusform>PrivacyDialog</numerusform></translation>
     </message>
     <message>
@@ -3296,8 +3296,8 @@ Präge entweder höhere Stückelungen (damit weniger Eingaben benötigt werdenn)
         <translation>Benutzerdefinierter Sicherungspfad:</translation>
     </message>
     <message>
-        <source>Custom zTUP Backup Path:</source>
-        <translation>Benutzerdefinierter zTUP Sicherungspfad:</translation>
+        <source>Custom zWEALTH Backup Path:</source>
+        <translation>Benutzerdefinierter zWEALTH Sicherungspfad:</translation>
     </message>
     <message>
         <source>Custom Backups Threshold:</source>
@@ -3665,7 +3665,7 @@ Präge entweder höhere Stückelungen (damit weniger Eingaben benötigt werdenn)
     <name>SendCoinsDialog</name>
     <message>
         <source>Send Coins</source>
-        <translation>TUPs überweisen</translation>
+        <translation>WEALTHs überweisen</translation>
     </message>
     <message>
         <source>SEND</source>
@@ -3740,8 +3740,8 @@ Präge entweder höhere Stückelungen (damit weniger Eingaben benötigt werdenn)
         <translation>UTXO Größe:</translation>
     </message>
     <message>
-        <source>0 TUP</source>
-        <translation>0 TUP</translation>
+        <source>0 WEALTH</source>
+        <translation>0 WEALTH</translation>
     </message>
     <message>
         <source>Transaction Fee:</source>
@@ -3796,12 +3796,12 @@ Präge entweder höhere Stückelungen (damit weniger Eingaben benötigt werdenn)
         <translation>Coins automatisch ausgewählt</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uTUPs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uTUPs in fee,&lt;br /&gt;while "at least" pays 1000 uTUPs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Wenn die kundenspezifische Gebühr auf 1000 uTUPs eingestellt ist und die Transaktion nur 250 Bytes beträgt, dann zahlt man "pro Kilobyte" nur 250 uTUPs an Gebühren,&lt;br /&gt;während man "mindestens" 1000 uTUPs bezahlt. Für Transaktionen, die größer sind als ein Kilobyte, bezahlen sie per Kilobyte.</translation>
+        <source>If the custom fee is set to 1000 uWEALTHs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uWEALTHs in fee,&lt;br /&gt;while "at least" pays 1000 uWEALTHs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Wenn die kundenspezifische Gebühr auf 1000 uWEALTHs eingestellt ist und die Transaktion nur 250 Bytes beträgt, dann zahlt man "pro Kilobyte" nur 250 uWEALTHs an Gebühren,&lt;br /&gt;während man "mindestens" 1000 uWEALTHs bezahlt. Für Transaktionen, die größer sind als ein Kilobyte, bezahlen sie per Kilobyte.</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uTUPs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uTUPs in fee,&lt;br /&gt;while "total at least" pays 1000 uTUPs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Wenn die kundenspezifische Gebühr auf 1000 uTUPs eingestellt ist und die Transaktion nur 250 Bytes beträgt, dann zahlt man "pro Kilobyte" nur 250 uTUPs an Gebühren,&lt;br /&gt;während man "insgesamt mindestens" 1000 uTUPs bezahlt. Für Transaktionen, die größer sind als ein Kilobyte, bezahlen sie per Kilobyte.</translation>
+        <source>If the custom fee is set to 1000 uWEALTHs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uWEALTHs in fee,&lt;br /&gt;while "total at least" pays 1000 uWEALTHs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Wenn die kundenspezifische Gebühr auf 1000 uWEALTHs eingestellt ist und die Transaktion nur 250 Bytes beträgt, dann zahlt man "pro Kilobyte" nur 250 uWEALTHs an Gebühren,&lt;br /&gt;während man "insgesamt mindestens" 1000 uWEALTHs bezahlt. Für Transaktionen, die größer sind als ein Kilobyte, bezahlen sie per Kilobyte.</translation>
     </message>
     <message>
         <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for WealthSilo transactions than the network can process.</source>
@@ -3852,8 +3852,8 @@ Präge entweder höhere Stückelungen (damit weniger Eingaben benötigt werdenn)
         <translation>Empfänge&amp;r hinzufügen</translation>
     </message>
     <message>
-        <source>Anonymized TUP</source>
-        <translation>Anonymisierte TUP</translation>
+        <source>Anonymized WEALTH</source>
+        <translation>Anonymisierte WEALTH</translation>
     </message>
     <message>
         <source>Balance:</source>
@@ -4411,7 +4411,7 @@ Präge entweder höhere Stückelungen (damit weniger Eingaben benötigt werdenn)
     </message>
     <message>
         <source>Generated coins must mature %1 blocks before they can be spent. When you generated this block, it was broadcast to the network to be added to the block chain. If it fails to get into the chain, its state will change to "not accepted" and it won't be spendable. This may occasionally happen if another node generates a block within a few seconds of yours.</source>
-        <translation>Erzeugte TUPs müssen %1 Blöcke lang reifen, bevor sie ausgegeben werden können. Als Sie diesen Block erzeugten, wurde er an das Netzwerk übertragen, um ihn der Blockkette hinzuzufügen. Falls dies fehlschlägt wird der Status in "nicht angenommen" geändert und Sie werden keine TUPs gutgeschrieben bekommen. Das kann gelegentlich passieren, wenn ein anderer Knoten einen Block fast zeitgleich erzeugt.</translation>
+        <translation>Erzeugte WEALTHs müssen %1 Blöcke lang reifen, bevor sie ausgegeben werden können. Als Sie diesen Block erzeugten, wurde er an das Netzwerk übertragen, um ihn der Blockkette hinzuzufügen. Falls dies fehlschlägt wird der Status in "nicht angenommen" geändert und Sie werden keine WEALTHs gutgeschrieben bekommen. Das kann gelegentlich passieren, wenn ein anderer Knoten einen Block fast zeitgleich erzeugt.</translation>
     </message>
     <message>
         <source>Debug information</source>
@@ -4516,12 +4516,12 @@ Präge entweder höhere Stückelungen (damit weniger Eingaben benötigt werdenn)
         <translation>über/durch Verschleierung empfangen</translation>
     </message>
     <message>
-        <source>TUP Stake</source>
-        <translation>TUP Stake</translation>
+        <source>WEALTH Stake</source>
+        <translation>WEALTH Stake</translation>
     </message>
     <message>
-        <source>zTUP Stake</source>
-        <translation>zTUP Stake</translation>
+        <source>zWEALTH Stake</source>
+        <translation>zWEALTH Stake</translation>
     </message>
     <message>
         <source>Obfuscation Denominate</source>
@@ -4540,32 +4540,32 @@ Präge entweder höhere Stückelungen (damit weniger Eingaben benötigt werdenn)
         <translation>Verschleierung Erzeugung der Stückelung</translation>
     </message>
     <message>
-        <source>Converted TUP to zTUP</source>
-        <translation>Umgewandeltes TUP zu zTUP</translation>
+        <source>Converted WEALTH to zWEALTH</source>
+        <translation>Umgewandeltes WEALTH zu zWEALTH</translation>
     </message>
     <message>
-        <source>Spent zTUP</source>
-        <translation>Ausgegebene zTUP</translation>
+        <source>Spent zWEALTH</source>
+        <translation>Ausgegebene zWEALTH</translation>
     </message>
     <message>
-        <source>Received TUP from zTUP</source>
-        <translation>Empfangene TUP von zTUP</translation>
+        <source>Received WEALTH from zWEALTH</source>
+        <translation>Empfangene WEALTH von zWEALTH</translation>
     </message>
     <message>
-        <source>Minted Change as zTUP from zTUP Spend</source>
-        <translation>Geprägtes zTUP Wechselgeld aus zTUP Überweisung</translation>
+        <source>Minted Change as zWEALTH from zWEALTH Spend</source>
+        <translation>Geprägtes zWEALTH Wechselgeld aus zWEALTH Überweisung</translation>
     </message>
     <message>
-        <source>Converted zTUP to TUP</source>
-        <translation>Umgewandeltes zTUP zu TUP</translation>
+        <source>Converted zWEALTH to WEALTH</source>
+        <translation>Umgewandeltes zWEALTH zu WEALTH</translation>
     </message>
     <message>
-        <source>Anonymous (zTUP Transaction)</source>
-        <translation>Anonym (zTUP Transaktion)</translation>
+        <source>Anonymous (zWEALTH Transaction)</source>
+        <translation>Anonym (zWEALTH Transaktion)</translation>
     </message>
     <message>
-        <source>Anonymous (zTUP Stake)</source>
-        <translation>Anonym (zTUP Stake)</translation>
+        <source>Anonymous (zWEALTH Stake)</source>
+        <translation>Anonym (zWEALTH Stake)</translation>
     </message>
     <message>
         <source>Sent to</source>
@@ -4775,12 +4775,12 @@ Präge entweder höhere Stückelungen (damit weniger Eingaben benötigt werdenn)
         <translation>Exportieren erfolgreich</translation>
     </message>
     <message>
-        <source>Received TUP from zTUP</source>
-        <translation>Empfangene TUP von zTUP</translation>
+        <source>Received WEALTH from zWEALTH</source>
+        <translation>Empfangene WEALTH von zWEALTH</translation>
     </message>
     <message>
-        <source>Zerocoin Spend, Change in zTUP</source>
-        <translation>Zerocoin Überweisung, Wechselgeld in zTUP</translation>
+        <source>Zerocoin Spend, Change in zWEALTH</source>
+        <translation>Zerocoin Überweisung, Wechselgeld in zWEALTH</translation>
     </message>
     <message>
         <source>The transaction history was successfully saved to %1.</source>
@@ -4813,11 +4813,11 @@ Präge entweder höhere Stückelungen (damit weniger Eingaben benötigt werdenn)
     <name>WalletModel</name>
     <message>
         <source>Send Coins</source>
-        <translation>TUPs überweisen</translation>
+        <translation>WEALTHs überweisen</translation>
     </message>
     <message>
-        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 TUP.</source>
-        <translation>Swift Transaktionen unterstützen das senden solch hoher Beträge noch nicht. Transaktionen sind momentan auf %1 TUP begrenzt.</translation>
+        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 WEALTH.</source>
+        <translation>Swift Transaktionen unterstützen das senden solch hoher Beträge noch nicht. Transaktionen sind momentan auf %1 WEALTH begrenzt.</translation>
     </message>
 </context>
 <context>
@@ -4848,10 +4848,10 @@ Präge entweder höhere Stückelungen (damit weniger Eingaben benötigt werdenn)
     </message>
 </context>
 <context>
-    <name>ZTupControlDialog</name>
+    <name>ZWealthControlDialog</name>
     <message>
-        <source>Select zTUP to Spend</source>
-        <translation>Wählen Sie die zTUP aus, die Sie ausgeben möchten</translation>
+        <source>Select zWEALTH to Spend</source>
+        <translation>Wählen Sie die zWEALTH aus, die Sie ausgeben möchten</translation>
     </message>
     <message>
         <source>Quantity</source>
@@ -4862,8 +4862,8 @@ Präge entweder höhere Stückelungen (damit weniger Eingaben benötigt werdenn)
         <translation>0</translation>
     </message>
     <message>
-        <source>zTUP</source>
-        <translation>zTUP</translation>
+        <source>zWEALTH</source>
+        <translation>zWEALTH</translation>
     </message>
     <message>
         <source>Select/Deselect All</source>
@@ -4875,7 +4875,7 @@ Präge entweder höhere Stückelungen (damit weniger Eingaben benötigt werdenn)
     </message>
 </context>
 <context>
-    <name>tenup-core</name>
+    <name>wealthsilo-core</name>
     <message>
         <source>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</source>
         <translation>(1 = behalte Tx-Meta-Daten z.B. Betrag, Besitzer und Zahlungsanforderungsinformationen, 2 = verwerfe Tx-Meta-Daten)</translation>
@@ -4929,16 +4929,16 @@ Präge entweder höhere Stückelungen (damit weniger Eingaben benötigt werdenn)
         <translation>Veröffentlicht unter der MIT-Software-Lizenz, siehe die beigelegte Datei COPYING oder &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</translation>
     </message>
     <message>
-        <source>Enable automatic wallet backups triggered after each zTUP minting (0-1, default: %u)</source>
-        <translation>Aktiviere nach jeder zTUP-Prägung ausgelöste automatische Wallet-Backups (0-1, Standard: %u)</translation>
+        <source>Enable automatic wallet backups triggered after each zWEALTH minting (0-1, default: %u)</source>
+        <translation>Aktiviere nach jeder zWEALTH-Prägung ausgelöste automatische Wallet-Backups (0-1, Standard: %u)</translation>
     </message>
     <message>
-        <source>Enable or disable staking functionality for TUP inputs (0-1, default: %u)</source>
-        <translation>Aktiviere oder deaktiviere Staking-Funktionalität für TUP Eingänge (0-1, default: %u)</translation>
+        <source>Enable or disable staking functionality for WEALTH inputs (0-1, default: %u)</source>
+        <translation>Aktiviere oder deaktiviere Staking-Funktionalität für WEALTH Eingänge (0-1, default: %u)</translation>
     </message>
     <message>
-        <source>Enable or disable staking functionality for zTUP inputs (0-1, default: %u)</source>
-        <translation>Aktiviere oder deaktiviere Staking-Funktionalität für zTUP Eingänge (0-1, default: %u)</translation>
+        <source>Enable or disable staking functionality for zWEALTH inputs (0-1, default: %u)</source>
+        <translation>Aktiviere oder deaktiviere Staking-Funktionalität für zWEALTH Eingänge (0-1, default: %u)</translation>
     </message>
     <message>
         <source>Enable spork administration functionality with the appropriate private key.</source>
@@ -4973,12 +4973,12 @@ Präge entweder höhere Stückelungen (damit weniger Eingaben benötigt werdenn)
         <translation>Befehl ausführen, wenn sich der beste Block ändert (%s in cmd wird durch Blockhash ersetzt)</translation>
     </message>
     <message>
-        <source>Fees (in TUP/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>Gebühren (in TUP/kB) kleiner als diese gelten für die Weiterleitung als Null-Gebühr  (default: %s)</translation>
+        <source>Fees (in WEALTH/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>Gebühren (in WEALTH/kB) kleiner als diese gelten für die Weiterleitung als Null-Gebühr  (default: %s)</translation>
     </message>
     <message>
-        <source>Fees (in TUP/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>Gebühren (in TUP/kB) kleiner als diese werden als Null-Gebühr für die Transaktionserstellung betrachtet (default: %s)</translation>
+        <source>Fees (in WEALTH/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>Gebühren (in WEALTH/kB) kleiner als diese werden als Null-Gebühr für die Transaktionserstellung betrachtet (default: %s)</translation>
     </message>
     <message>
         <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</source>
@@ -5085,12 +5085,12 @@ Präge entweder höhere Stückelungen (damit weniger Eingaben benötigt werdenn)
         <translation>Nicht genügend gestückeltes, verschleiertes Guthaben für diese Transaktion gefunden.</translation>
     </message>
     <message>
-        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 25000 TUP.</source>
-        <translation>Nicht genügend verschleiertes, nicht gestückeltes Guthaben für diese Transaktion gefunden, die nicht gleich 25000 TUP entsprechen.</translation>
+        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 25000 WEALTH.</source>
+        <translation>Nicht genügend verschleiertes, nicht gestückeltes Guthaben für diese Transaktion gefunden, die nicht gleich 25000 WEALTH entsprechen.</translation>
     </message>
     <message>
-        <source>Unable to locate enough funds for this transaction that are not equal 25000 TUP.</source>
-        <translation>Nicht genügend Guthaben für diese Transaktion gefunden, die nicht gleich 25000 TUP entsprechen.</translation>
+        <source>Unable to locate enough funds for this transaction that are not equal 25000 WEALTH.</source>
+        <translation>Nicht genügend Guthaben für diese Transaktion gefunden, die nicht gleich 25000 WEALTH entsprechen.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
@@ -5401,8 +5401,8 @@ Präge entweder höhere Stückelungen (damit weniger Eingaben benötigt werdenn)
         <translation>Block konnte nicht gelesen werden</translation>
     </message>
     <message>
-        <source>Fee (in TUP/kB) to add to transactions you send (default: %s)</source>
-        <translation>Gebühr (in TUP/kB) die den Transaktionen, die Sie überweisen, hinzugefügt wird (Standard: %s)</translation>
+        <source>Fee (in WEALTH/kB) to add to transactions you send (default: %s)</source>
+        <translation>Gebühr (in WEALTH/kB) die den Transaktionen, die Sie überweisen, hinzugefügt wird (Standard: %s)</translation>
     </message>
     <message>
         <source>Finalizing transaction.</source>
@@ -5533,8 +5533,8 @@ Präge entweder höhere Stückelungen (damit weniger Eingaben benötigt werdenn)
         <translation>Prozent automatisch geprägter Zerocoins (1-100, Standard: %u)</translation>
     </message>
     <message>
-        <source>Reindex the TUP and zTUP money supply statistics</source>
-        <translation>Die Geldmengenstatistik TUP und zTUP neu indizieren</translation>
+        <source>Reindex the WEALTH and zWEALTH money supply statistics</source>
+        <translation>Die Geldmengenstatistik WEALTH und zWEALTH neu indizieren</translation>
     </message>
     <message>
         <source>Reindexing zerocoin database...</source>
@@ -5609,8 +5609,8 @@ Präge entweder höhere Stückelungen (damit weniger Eingaben benötigt werdenn)
         <translation>Bervorzugte Stückelung für automatisch geprägte Zerocoins (1/5/10/50/100/500/1000/5000), 0 falls keine bestimmte Stückelung präferiert wird. Standard: %u)</translation>
     </message>
     <message>
-        <source>Specify custom backup path to add a copy of any automatic zTUP backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
-        <translation>Benutzerdefinierten Sicherungspfad festlegen, in den Kopien von allen automatischen zTUP-Sicherungen abgelegt werden. Wenn ein Verzeichnis ausgewählt ist, wird jede Sicherung als Datei mit Zeitstempel erstellt. Wenn eine Datei ausgewählt ist, wird diese Datei bei jeder Sicherung überschrieben. Wenn der Sicherungspfad auch festgelegt ist, werden 4 Sicherungen erstellt.</translation>
+        <source>Specify custom backup path to add a copy of any automatic zWEALTH backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
+        <translation>Benutzerdefinierten Sicherungspfad festlegen, in den Kopien von allen automatischen zWEALTH-Sicherungen abgelegt werden. Wenn ein Verzeichnis ausgewählt ist, wird jede Sicherung als Datei mit Zeitstempel erstellt. Wenn eine Datei ausgewählt ist, wird diese Datei bei jeder Sicherung überschrieben. Wenn der Sicherungspfad auch festgelegt ist, werden 4 Sicherungen erstellt.</translation>
     </message>
     <message>
         <source>Specify custom backup path to add a copy of any wallet backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup.</source>
@@ -6109,8 +6109,8 @@ Präge entweder höhere Stückelungen (damit weniger Eingaben benötigt werdenn)
         <translation>Synchronisiere Sporks....</translation>
     </message>
     <message>
-        <source>Syncing zTUP wallet...</source>
-        <translation>Synchronisiere zTUP Wallet... </translation>
+        <source>Syncing zWEALTH wallet...</source>
+        <translation>Synchronisiere zWEALTH Wallet... </translation>
     </message>
     <message>
         <source>The coin spend has been used</source>
@@ -6257,8 +6257,8 @@ Präge entweder höhere Stückelungen (damit weniger Eingaben benötigt werdenn)
         <translation>Benutzername für JSON-RPC-Verbindungen</translation>
     </message>
     <message>
-        <source>Value is below the smallest available denomination (= 1) of zTUP</source>
-        <translation>Der Betrag ist unterhalb des kleinsten Wertes (=1) an zTUP</translation>
+        <source>Value is below the smallest available denomination (= 1) of zWEALTH</source>
+        <translation>Der Betrag ist unterhalb des kleinsten Wertes (=1) an zWEALTH</translation>
     </message>
     <message>
         <source>Value more than Obfuscation pool maximum allows.</source>
@@ -6273,8 +6273,8 @@ Präge entweder höhere Stückelungen (damit weniger Eingaben benötigt werdenn)
         <translation>Verifiziere Wallet...</translation>
     </message>
     <message>
-        <source>Version 1 zTUP require a security level of 100 to successfully spend.</source>
-        <translation>Version 1 zTUP benötigen eine Sicherheitsstufe von 100 um erfolgreich ausgegeben werden zu können.</translation>
+        <source>Version 1 zWEALTH require a security level of 100 to successfully spend.</source>
+        <translation>Version 1 zWEALTH benötigen eine Sicherheitsstufe von 100 um erfolgreich ausgegeben werden zu können.</translation>
     </message>
     <message>
         <source>Wallet %s resides outside data directory %s</source>

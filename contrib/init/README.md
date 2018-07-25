@@ -1,10 +1,10 @@
 Sample configuration files for:
 
-SystemD: tenupd.service
-Upstart: tenupd.conf
-OpenRC:  tenupd.openrc
-         tenupd.openrcconf
-CentOS:  tenupd.init
+SystemD: wealthsilod.service
+Upstart: wealthsilod.conf
+OpenRC:  wealthsilod.openrc
+         wealthsilod.openrcconf
+CentOS:  wealthsilod.init
 
 have been made available to assist packagers in creating node packages here.
 

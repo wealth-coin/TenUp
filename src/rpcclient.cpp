@@ -2,7 +2,7 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2018 The PIVX developers
-// Copyright (c) 2015-2018 The WealthSilo developers
+// Copyright (c) 2018 The WealthSilo developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -138,9 +138,9 @@ static const CRPCConvertParam vRPCConvertParams[] =
         {"getspentzerocoinamount", 1},
         {"generatemintlist", 0},
         {"generatemintlist", 1},
-        {"searchdztup", 0},
-        {"searchdztup", 1},
-        {"searchdztup", 2},
+        {"searchdzwealth", 0},
+        {"searchdzwealth", 1},
+        {"searchdzwealth", 2},
         {"getfeeinfo", 0}
     };
 

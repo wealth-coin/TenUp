@@ -1,7 +1,7 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2018 The PIVX developers
-// Copyright (c) 2015-2018 The WealthSilo developers
+// Copyright (c) 2018 The WealthSilo developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -83,12 +83,12 @@ UniValue importprivkey(const UniValue& params, bool fHelp)
 {
     if (fHelp || params.size() < 1 || params.size() > 3)
         throw runtime_error(
-            "importprivkey \"tenupprivkey\" ( \"label\" rescan )\n"
+            "importprivkey \"wealthsiloprivkey\" ( \"label\" rescan )\n"
             "\nAdds a private key (as returned by dumpprivkey) to your wallet.\n" +
             HelpRequiringPassphrase() + "\n"
 
             "\nArguments:\n"
-            "1. \"tenupprivkey\"   (string, required) The private key (see dumpprivkey)\n"
+            "1. \"wealthsiloprivkey\"   (string, required) The private key (see dumpprivkey)\n"
             "2. \"label\"            (string, optional, default=\"\") An optional label\n"
             "3. rescan               (boolean, optional, default=true) Rescan the wallet for transactions\n"
 
@@ -331,13 +331,13 @@ UniValue dumpprivkey(const UniValue& params, bool fHelp)
 {
     if (fHelp || params.size() != 1)
         throw runtime_error(
-            "dumpprivkey \"tenupaddress\"\n"
-            "\nReveals the private key corresponding to 'tenupaddress'.\n"
+            "dumpprivkey \"wealthsiloaddress\"\n"
+            "\nReveals the private key corresponding to 'wealthsiloaddress'.\n"
             "Then the importprivkey can be used with this output\n" +
             HelpRequiringPassphrase() + "\n"
 
             "\nArguments:\n"
-            "1. \"tenupaddress\"   (string, required) The tenup address for the private key\n"
+            "1. \"wealthsiloaddress\"   (string, required) The wealthsilo address for the private key\n"
 
             "\nResult:\n"
             "\"key\"                (string) The private key\n"
@@ -430,12 +430,12 @@ UniValue bip38encrypt(const UniValue& params, bool fHelp)
 {
     if (fHelp || params.size() != 2)
         throw runtime_error(
-            "bip38encrypt \"tenupaddress\" \"passphrase\"\n"
-            "\nEncrypts a private key corresponding to 'tenupaddress'.\n" +
+            "bip38encrypt \"wealthsiloaddress\" \"passphrase\"\n"
+            "\nEncrypts a private key corresponding to 'wealthsiloaddress'.\n" +
             HelpRequiringPassphrase() + "\n"
 
             "\nArguments:\n"
-            "1. \"tenupaddress\"   (string, required) The tenup address for the private key (you must hold the key already)\n"
+            "1. \"wealthsiloaddress\"   (string, required) The wealthsilo address for the private key (you must hold the key already)\n"
             "2. \"passphrase\"   (string, required) The passphrase you want the private key to be encrypted with - Valid special chars: !#$%&'()*+,-./:;<=>?`{|}~ \n"
 
             "\nResult:\n"
@@ -476,7 +476,7 @@ UniValue bip38decrypt(const UniValue& params, bool fHelp)
 {
     if (fHelp || params.size() != 2)
         throw runtime_error(
-            "bip38decrypt \"tenupaddress\" \"passphrase\"\n"
+            "bip38decrypt \"wealthsiloaddress\" \"passphrase\"\n"
             "\nDecrypts and then imports password protected private key.\n" +
             HelpRequiringPassphrase() + "\n"
 

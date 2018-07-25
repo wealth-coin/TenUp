@@ -345,9 +345,9 @@ QString TransactionTableModel::formatTxType(const TransactionRecord* wtx) const
     case TransactionRecord::SendToSelf:
         return tr("Payment to yourself");
     case TransactionRecord::StakeMint:
-        return tr("TUP Stake");
-    case TransactionRecord::StakeZTUP:
-        return tr("zTUP Stake");
+        return tr("WEALTH Stake");
+    case TransactionRecord::StakeZWEALTH:
+        return tr("zWEALTH Stake");
     case TransactionRecord::Generated:
         return tr("Mined");
     case TransactionRecord::ObfuscationDenominate:
@@ -361,15 +361,15 @@ QString TransactionTableModel::formatTxType(const TransactionRecord* wtx) const
     case TransactionRecord::Obfuscated:
         return tr("Obfuscated");
     case TransactionRecord::ZerocoinMint:
-        return tr("Converted TUP to zTUP");
+        return tr("Converted WEALTH to zWEALTH");
     case TransactionRecord::ZerocoinSpend:
-        return tr("Spent zTUP");
+        return tr("Spent zWEALTH");
     case TransactionRecord::RecvFromZerocoinSpend:
-        return tr("Received TUP from zTUP");
-    case TransactionRecord::ZerocoinSpend_Change_zTup:
-        return tr("Minted Change as zTUP from zTUP Spend");
+        return tr("Received WEALTH from zWEALTH");
+    case TransactionRecord::ZerocoinSpend_Change_zWealth:
+        return tr("Minted Change as zWEALTH from zWEALTH Spend");
     case TransactionRecord::ZerocoinSpend_FromMe:
-        return tr("Converted zTUP to TUP");
+        return tr("Converted zWEALTH to WEALTH");
 
     default:
         return QString();
@@ -381,7 +381,7 @@ QVariant TransactionTableModel::txAddressDecoration(const TransactionRecord* wtx
     switch (wtx->type) {
     case TransactionRecord::Generated:
     case TransactionRecord::StakeMint:
-    case TransactionRecord::StakeZTUP:
+    case TransactionRecord::StakeZWEALTH:
     case TransactionRecord::MNReward:
         return QIcon(":/icons/tx_mined");
     case TransactionRecord::RecvWithObfuscation:
@@ -424,10 +424,10 @@ QString TransactionTableModel::formatTxToAddress(const TransactionRecord* wtx, b
     case TransactionRecord::SendToOther:
         return QString::fromStdString(wtx->address) + watchAddress;
     case TransactionRecord::ZerocoinMint:
-    case TransactionRecord::ZerocoinSpend_Change_zTup:
-        return tr("Anonymous (zTUP Transaction)");
-    case TransactionRecord::StakeZTUP:
-        return tr("Anonymous (zTUP Stake)");
+    case TransactionRecord::ZerocoinSpend_Change_zWealth:
+        return tr("Anonymous (zWEALTH Transaction)");
+    case TransactionRecord::StakeZWEALTH:
+        return tr("Anonymous (zWEALTH Stake)");
     case TransactionRecord::SendToSelf:
     default:
         return tr("(n/a)") + watchAddress;

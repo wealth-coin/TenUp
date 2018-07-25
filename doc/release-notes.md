@@ -1,10 +1,10 @@
-TENUP Core version 3.0.6 is now available from:
+WEALTHSILO Core version 3.0.6 is now available from:
 
-WealthSilo Core version *version* is now available from:  <https://github.com/tenup-coin/WealthSilo/releases>
+WealthSilo Core version *version* is now available from:  <https://github.com/wealthsilo-coin/WealthSilo/releases>
 
 This is a new major version release, including various bug fixes and performance improvements, as well as updated translations.
 
-Please report bugs using the issue tracker at github: <https://github.com/tenup-coin/WealthSilo/issues>
+Please report bugs using the issue tracker at github: <https://github.com/wealthsilo-coin/WealthSilo/issues>
 
 
 Mandatory Update
@@ -13,7 +13,7 @@ Mandatory Update
 How to Upgrade
 ==============
 
-If you are running an older version, shut it down. Wait until it has completely shut down (which might take a few minutes for older versions), then run the installer (on Windows) or just copy over /Applications/Tenup-Qt (on Mac) or tenupd/tenup-qt (on Linux).
+If you are running an older version, shut it down. Wait until it has completely shut down (which might take a few minutes for older versions), then run the installer (on Windows) or just copy over /Applications/Tenup-Qt (on Mac) or wealthsilod/wealthsilo-qt (on Linux).
 
 
 Compatibility
@@ -54,4 +54,4 @@ Detailed release notes follow. This overview includes changes that affect behavi
 Thanks to everyone who directly contributed to this release:
 
 
-As well as everyone that helped translating on [Transifex](https://www.transifex.com/projects/p/tenup-project-translations/), the QA team during Testing and the Node hosts supporting our Testnet.
+As well as everyone that helped translating on [Transifex](https://www.transifex.com/projects/p/wealthsilo-project-translations/), the QA team during Testing and the Node hosts supporting our Testnet.

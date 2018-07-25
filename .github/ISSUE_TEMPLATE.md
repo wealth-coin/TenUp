@@ -1,7 +1,7 @@
 <!--- Remove this description and sections that do not apply -->
 
-This issue tracker is only for technical issues related to TENUP Core.
-General TENUP questions and/or support requests and are best directed to the [TENUP Slack](http://tenup-coin.slack.com).
+This issue tracker is only for technical issues related to WEALTHSILO Core.
+General WEALTHSILO questions and/or support requests and are best directed to the [WEALTHSILO Slack](http://wealthsilo-coin.slack.com).
 
 ### Describe the issue
 

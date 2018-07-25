@@ -1,6 +1,6 @@
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2018 The PIVX developers
-// Copyright (c) 2015-2018 The WealthSilo developers
+// Copyright (c) 2018 The WealthSilo developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -270,7 +270,7 @@ bool IsBlockPayeeValid(const CBlock& block, int nBlockHeight)
 }
 
 
-void FillBlockPayee(CMutableTransaction& txNew, CAmount nFees, bool fProofOfStake, bool fZTUPStake)
+void FillBlockPayee(CMutableTransaction& txNew, CAmount nFees, bool fProofOfStake, bool fZWEALTHStake)
 {
     CBlockIndex* pindexPrev = chainActive.Tip();
     if (!pindexPrev) return;
@@ -278,7 +278,7 @@ void FillBlockPayee(CMutableTransaction& txNew, CAmount nFees, bool fProofOfStak
     if (IsSporkActive(SPORK_13_ENABLE_SUPERBLOCKS) && budget.IsBudgetPaymentBlock(pindexPrev->nHeight + 1)) {
         budget.FillBlockPayee(txNew, nFees, fProofOfStake);
     } else {
-        masternodePayments.FillBlockPayee(txNew, nFees, fProofOfStake, fZTUPStake);
+        masternodePayments.FillBlockPayee(txNew, nFees, fProofOfStake, fZWEALTHStake);
     }
 }
 
@@ -291,7 +291,7 @@ std::string GetRequiredPaymentsString(int nBlockHeight)
     }
 }
 
-void CMasternodePayments::FillBlockPayee(CMutableTransaction& txNew, int64_t nFees, bool fProofOfStake, bool fZTUPStake)
+void CMasternodePayments::FillBlockPayee(CMutableTransaction& txNew, int64_t nFees, bool fProofOfStake, bool fZWEALTHStake)
 {
     CBlockIndex* pindexPrev = chainActive.Tip();
     if (!pindexPrev) return;
@@ -312,7 +312,7 @@ void CMasternodePayments::FillBlockPayee(CMutableTransaction& txNew, int64_t nFe
     }
 
     CAmount blockValue = GetBlockValue(pindexPrev->nHeight);
-    CAmount masternodePayment = GetMasternodePayment(pindexPrev->nHeight, blockValue, 0, fZTUPStake);
+    CAmount masternodePayment = GetMasternodePayment(pindexPrev->nHeight, blockValue, 0, fZWEALTHStake);
 
     if (hasPayment) {
         if (fProofOfStake) {

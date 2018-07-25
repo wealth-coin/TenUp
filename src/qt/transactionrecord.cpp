@@ -1,7 +1,7 @@
 // Copyright (c) 2011-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2018 The PIVX developers
-// Copyright (c) 2015-2018 The WealthSilo developers
+// Copyright (c) 2018 The WealthSilo developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -54,10 +54,10 @@ QList<TransactionRecord> TransactionRecord::decomposeTransaction(const CWallet* 
         if (!wtx.IsZerocoinSpend() && !ExtractDestination(wtx.vout[1].scriptPubKey, address))
             return parts;
 
-        if (wtx.IsZerocoinSpend() && (fZSpendFromMe || wallet->ztupTracker->HasMintTx(hash))) {
-            //zTUP stake reward
+        if (wtx.IsZerocoinSpend() && (fZSpendFromMe || wallet->zwealthTracker->HasMintTx(hash))) {
+            //zWEALTH stake reward
             sub.involvesWatchAddress = false;
-            sub.type = TransactionRecord::StakeZTUP;
+            sub.type = TransactionRecord::StakeZWEALTH;
             sub.address = mapValue["zerocoinmint"];
             sub.credit = 0;
             for (const CTxOut& out : wtx.vout) {
@@ -66,7 +66,7 @@ QList<TransactionRecord> TransactionRecord::decomposeTransaction(const CWallet* 
             }
             sub.debit -= wtx.vin[0].nSequence * COIN;
         } else if (isminetype mine = wallet->IsMine(wtx.vout[1])) {
-            // TUP stake reward
+            // WEALTH stake reward
             sub.involvesWatchAddress = mine & ISMINE_WATCH_ONLY;
             sub.type = TransactionRecord::StakeMint;
             sub.address = CBitcoinAddress(address).ToString();
@@ -98,7 +98,7 @@ QList<TransactionRecord> TransactionRecord::decomposeTransaction(const CWallet* 
                 isminetype mine = wallet->IsMine(txout);
                 TransactionRecord sub(hash, nTime);
                 sub.involvesWatchAddress = mine & ISMINE_WATCH_ONLY;
-                sub.type = TransactionRecord::ZerocoinSpend_Change_zTup;
+                sub.type = TransactionRecord::ZerocoinSpend_Change_zWealth;
                 sub.address = mapValue["zerocoinmint"];
                 if (!fFeeAssigned) {
                     sub.debit -= (wtx.GetZerocoinSpent() - wtx.GetValueOut());
@@ -308,14 +308,14 @@ QList<TransactionRecord> TransactionRecord::decomposeTransaction(const CWallet* 
     return parts;
 }
 
-bool IsZTUPType(TransactionRecord::Type type)
+bool IsZWEALTHType(TransactionRecord::Type type)
 {
     switch (type) {
-        case TransactionRecord::StakeZTUP:
+        case TransactionRecord::StakeZWEALTH:
         case TransactionRecord::ZerocoinMint:
         case TransactionRecord::ZerocoinSpend:
         case TransactionRecord::RecvFromZerocoinSpend:
-        case TransactionRecord::ZerocoinSpend_Change_zTup:
+        case TransactionRecord::ZerocoinSpend_Change_zWealth:
         case TransactionRecord::ZerocoinSpend_FromMe:
             return true;
         default:
@@ -360,7 +360,7 @@ void TransactionRecord::updateStatus(const CWalletTx& wtx)
         }
     }
     // For generated transactions, determine maturity
-    else if (type == TransactionRecord::Generated || type == TransactionRecord::StakeMint || type == TransactionRecord::StakeZTUP || type == TransactionRecord::MNReward) {
+    else if (type == TransactionRecord::Generated || type == TransactionRecord::StakeMint || type == TransactionRecord::StakeZWEALTH || type == TransactionRecord::MNReward) {
         if (nBlocksToMaturity > 0) {
             status.status = TransactionStatus::Immature;
             status.matures_in = nBlocksToMaturity;

@@ -172,16 +172,16 @@
         <translation>Підтвердження шифрування гаманця</translation>
     </message>
     <message>
-        <source>WealthSilo will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your TUPs from being stolen by malware infecting your computer.</source>
-        <translation>WealthSilo зараз закриється, щоб завершити процес шифрування. Пам'ятайте, що шифрування гаманця не може повністю захистити ваші TUP'и від крадіжки зловмисним програмним забезпеченням, що заражає ваш комп'ютер.</translation>
+        <source>WealthSilo will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your WEALTHs from being stolen by malware infecting your computer.</source>
+        <translation>WealthSilo зараз закриється, щоб завершити процес шифрування. Пам'ятайте, що шифрування гаманця не може повністю захистити ваші WEALTH'и від крадіжки зловмисним програмним забезпеченням, що заражає ваш комп'ютер.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Ви впевнені, що хочете зашифрувати Ваш гаманець?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR TUP&lt;/b&gt;!</source>
-        <translation>Попередження: Якщо після шифрування гаманця Ви &lt;b&gt;загубите кодове слово, то ви втратите всі Ваші TUP'и&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR WEALTH&lt;/b&gt;!</source>
+        <translation>Попередження: Якщо після шифрування гаманця Ви &lt;b&gt;загубите кодове слово, то ви втратите всі Ваші WEALTH'и&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -373,9 +373,9 @@
     </message>
     </context>
 <context>
-    <name>ZTupControlDialog</name>
+    <name>ZWealthControlDialog</name>
     </context>
 <context>
-    <name>tenup-core</name>
+    <name>wealthsilo-core</name>
     </context>
 </TS>

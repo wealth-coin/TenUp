@@ -2,42 +2,42 @@
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-bin_PROGRAMS += qt/tenup-qt
+bin_PROGRAMS += qt/wealthsilo-qt
 EXTRA_LIBRARIES += qt/libbitcoinqt.a
 
-# tenup qt core #
+# wealthsilo qt core #
 QT_TS = \
-  qt/locale/tenup_bg.ts \
-  qt/locale/tenup_ca.ts \
-  qt/locale/tenup_cs.ts \
-  qt/locale/tenup_da.ts \
-  qt/locale/tenup_de.ts \
-  qt/locale/tenup_en.ts \
-  qt/locale/tenup_en_US.ts \
-  qt/locale/tenup_es.ts \
-  qt/locale/tenup_es_ES.ts \
-  qt/locale/tenup_fi.ts \
-  qt/locale/tenup_fr_FR.ts \
-  qt/locale/tenup_hi_IN.ts \
-  qt/locale/tenup_hr.ts \
-  qt/locale/tenup_hr_HR.ts \
-  qt/locale/tenup_it.ts \
-  qt/locale/tenup_ja.ts \
-  qt/locale/tenup_ko_KR.ts \
-  qt/locale/tenup_lt_LT.ts \
-  qt/locale/tenup_nl.ts \
-  qt/locale/tenup_pl.ts \
-  qt/locale/tenup_pt.ts \
-  qt/locale/tenup_pt_BR.ts \
-  qt/locale/tenup_ro_RO.ts \
-  qt/locale/tenup_ru.ts \
-  qt/locale/tenup_sk.ts \
-  qt/locale/tenup_sv.ts \
-  qt/locale/tenup_tr.ts \
-  qt/locale/tenup_uk.ts \
-  qt/locale/tenup_vi.ts \
-  qt/locale/tenup_zh_CN.ts \
-  qt/locale/tenup_zh_TW.ts
+  qt/locale/wealthsilo_bg.ts \
+  qt/locale/wealthsilo_ca.ts \
+  qt/locale/wealthsilo_cs.ts \
+  qt/locale/wealthsilo_da.ts \
+  qt/locale/wealthsilo_de.ts \
+  qt/locale/wealthsilo_en.ts \
+  qt/locale/wealthsilo_en_US.ts \
+  qt/locale/wealthsilo_es.ts \
+  qt/locale/wealthsilo_es_ES.ts \
+  qt/locale/wealthsilo_fi.ts \
+  qt/locale/wealthsilo_fr_FR.ts \
+  qt/locale/wealthsilo_hi_IN.ts \
+  qt/locale/wealthsilo_hr.ts \
+  qt/locale/wealthsilo_hr_HR.ts \
+  qt/locale/wealthsilo_it.ts \
+  qt/locale/wealthsilo_ja.ts \
+  qt/locale/wealthsilo_ko_KR.ts \
+  qt/locale/wealthsilo_lt_LT.ts \
+  qt/locale/wealthsilo_nl.ts \
+  qt/locale/wealthsilo_pl.ts \
+  qt/locale/wealthsilo_pt.ts \
+  qt/locale/wealthsilo_pt_BR.ts \
+  qt/locale/wealthsilo_ro_RO.ts \
+  qt/locale/wealthsilo_ru.ts \
+  qt/locale/wealthsilo_sk.ts \
+  qt/locale/wealthsilo_sv.ts \
+  qt/locale/wealthsilo_tr.ts \
+  qt/locale/wealthsilo_uk.ts \
+  qt/locale/wealthsilo_vi.ts \
+  qt/locale/wealthsilo_zh_CN.ts \
+  qt/locale/wealthsilo_zh_TW.ts
 
 QT_FORMS_UI = \
   qt/forms/addressbookpage.ui \
@@ -63,7 +63,7 @@ QT_FORMS_UI = \
   qt/forms/sendcoinsentry.ui \
   qt/forms/signverifymessagedialog.ui \
   qt/forms/transactiondescdialog.ui \
-  qt/forms/ztupcontroldialog.ui
+  qt/forms/zwealthcontroldialog.ui
 
 QT_MOC_CPP = \
   qt/moc_addressbookpage.cpp \
@@ -117,23 +117,23 @@ QT_MOC_CPP = \
   qt/moc_walletframe.cpp \
   qt/moc_walletmodel.cpp \
   qt/moc_walletview.cpp \
-  qt/moc_ztupcontroldialog.cpp
+  qt/moc_zwealthcontroldialog.cpp
 
 BITCOIN_MM = \
   qt/macdockiconhandler.mm \
   qt/macnotificationhandler.mm
 
 QT_MOC = \
-  qt/tenup.moc \
+  qt/wealthsilo.moc \
   qt/bitcoinamountfield.moc \
   qt/intro.moc \
   qt/overviewpage.moc \
   qt/rpcconsole.moc
 
-QT_QRC_CPP = qt/qrc_tenup.cpp
-QT_QRC = qt/tenup.qrc
-QT_QRC_LOCALE_CPP = qt/qrc_tenup_locale.cpp
-QT_QRC_LOCALE = qt/tenup_locale.qrc
+QT_QRC_CPP = qt/qrc_wealthsilo.cpp
+QT_QRC = qt/wealthsilo.qrc
+QT_QRC_LOCALE_CPP = qt/qrc_wealthsilo_locale.cpp
+QT_QRC_LOCALE = qt/wealthsilo_locale.qrc
 
 PROTOBUF_CC = qt/paymentrequest.pb.cc
 PROTOBUF_H = qt/paymentrequest.pb.h
@@ -198,7 +198,7 @@ BITCOIN_QT_H = \
   qt/walletmodeltransaction.h \
   qt/walletview.h \
   qt/winshutdownmonitor.h \
-  qt/ztupcontroldialog.h
+  qt/zwealthcontroldialog.h
 
 RES_ICONS = \
   qt/res/icons/add.png \
@@ -256,12 +256,12 @@ RES_ICONS = \
   qt/res/icons/tx_input.png \
   qt/res/icons/tx_output.png \
   qt/res/icons/tx_mined.png \
-  qt/res/icons/unit_tenup.png \
-  qt/res/icons/unit_mtenup.png \
-  qt/res/icons/unit_utenup.png \
-  qt/res/icons/unit_ttenup.png \
-  qt/res/icons/unit_tmtenup.png \
-  qt/res/icons/unit_tutenup.png
+  qt/res/icons/unit_wealthsilo.png \
+  qt/res/icons/unit_mwealthsilo.png \
+  qt/res/icons/unit_uwealthsilo.png \
+  qt/res/icons/unit_twealthsilo.png \
+  qt/res/icons/unit_tmwealthsilo.png \
+  qt/res/icons/unit_tuwealthsilo.png
 
 BITCOIN_QT_CPP = \
   qt/bantablemodel.cpp \
@@ -327,7 +327,7 @@ BITCOIN_QT_CPP += \
   qt/walletmodel.cpp \
   qt/walletmodeltransaction.cpp \
   qt/walletview.cpp \
-  qt/ztupcontroldialog.cpp
+  qt/zwealthcontroldialog.cpp
 
 endif
 
@@ -335,7 +335,7 @@ RES_IMAGES = \
   qt/res/images/about.png \
   qt/res/images/splash.png \
   qt/res/images/splash_testnet.png \
-  qt/res/images/tenup_logo_horizontal.png \
+  qt/res/images/wealthsilo_logo_horizontal.png \
   qt/res/images/downArrow_dark.png \
   qt/res/images/downArrow_small_dark.png \
   qt/res/images/downArrow_small.png \
@@ -353,7 +353,7 @@ RES_CSS = \
 
 RES_MOVIES = $(wildcard $(srcdir)/qt/res/movies/spinner-*.png)
 
-BITCOIN_RC = qt/res/tenup-qt-res.rc
+BITCOIN_RC = qt/res/wealthsilo-qt-res.rc
 
 BITCOIN_QT_INCLUDES = -I$(builddir)/qt -I$(srcdir)/qt -I$(srcdir)/qt/forms \
   -I$(builddir)/qt/forms
@@ -375,72 +375,72 @@ QT_FORMS_H=$(join $(dir $(QT_FORMS_UI)),$(addprefix ui_, $(notdir $(QT_FORMS_UI:
 # Most files will depend on the forms and moc files as includes. Generate them
 # before anything else.
 $(QT_MOC): $(QT_FORMS_H)
-$(qt_libbitcoinqt_a_OBJECTS) $(qt_tenup_qt_OBJECTS) : | $(QT_MOC)
+$(qt_libbitcoinqt_a_OBJECTS) $(qt_wealthsilo_qt_OBJECTS) : | $(QT_MOC)
 
 #Generating these with a half-written protobuf header leads to wacky results.
 #This makes sure it's done.
 $(QT_MOC): $(PROTOBUF_H)
 $(QT_MOC_CPP): $(PROTOBUF_H)
 
-# tenup-qt binary #
-qt_tenup_qt_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(BITCOIN_QT_INCLUDES) \
+# wealthsilo-qt binary #
+qt_wealthsilo_qt_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(BITCOIN_QT_INCLUDES) \
   $(QT_INCLUDES) $(PROTOBUF_CFLAGS) $(QR_CFLAGS)
-qt_tenup_qt_CXXFLAGS = $(AM_CXXFLAGS) $(QT_PIE_FLAGS)
+qt_wealthsilo_qt_CXXFLAGS = $(AM_CXXFLAGS) $(QT_PIE_FLAGS)
 qt_bitcoin_qt_CXXFLAGS = $(AM_CXXFLAGS) $(QT_PIE_FLAGS)
 
-qt_tenup_qt_SOURCES = qt/tenup.cpp
+qt_wealthsilo_qt_SOURCES = qt/wealthsilo.cpp
 if TARGET_DARWIN
-  qt_tenup_qt_SOURCES += $(BITCOIN_MM)
+  qt_wealthsilo_qt_SOURCES += $(BITCOIN_MM)
 endif
 if TARGET_WINDOWS
-  qt_tenup_qt_SOURCES += $(BITCOIN_RC)
+  qt_wealthsilo_qt_SOURCES += $(BITCOIN_RC)
 endif
-qt_tenup_qt_LDADD = qt/libbitcoinqt.a $(LIBBITCOIN_SERVER)
+qt_wealthsilo_qt_LDADD = qt/libbitcoinqt.a $(LIBBITCOIN_SERVER)
 if ENABLE_WALLET
-qt_tenup_qt_LDADD += $(LIBBITCOIN_WALLET)
+qt_wealthsilo_qt_LDADD += $(LIBBITCOIN_WALLET)
 endif
 if ENABLE_ZMQ
-qt_tenup_qt_LDADD += $(LIBBITCOIN_ZMQ) $(ZMQ_LIBS)
+qt_wealthsilo_qt_LDADD += $(LIBBITCOIN_ZMQ) $(ZMQ_LIBS)
 endif
-qt_tenup_qt_LDADD += $(LIBBITCOIN_CLI) $(LIBBITCOIN_COMMON) $(LIBBITCOIN_UTIL) $(LIBBITCOIN_CRYPTO) $(LIBUNIVALUE) $(LIBBITCOIN_ZEROCOIN) $(LIBLEVELDB) $(LIBMEMENV) \
+qt_wealthsilo_qt_LDADD += $(LIBBITCOIN_CLI) $(LIBBITCOIN_COMMON) $(LIBBITCOIN_UTIL) $(LIBBITCOIN_CRYPTO) $(LIBUNIVALUE) $(LIBBITCOIN_ZEROCOIN) $(LIBLEVELDB) $(LIBMEMENV) \
   $(BOOST_LIBS) $(QT_LIBS) $(QT_DBUS_LIBS) $(QR_LIBS) $(PROTOBUF_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(LIBSECP256K1) \
   $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS)
-qt_tenup_qt_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(QT_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
-qt_tenup_qt_LIBTOOLFLAGS = --tag CXX
+qt_wealthsilo_qt_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(QT_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+qt_wealthsilo_qt_LIBTOOLFLAGS = --tag CXX
 
 #locale/foo.ts -> locale/foo.qm
 QT_QM=$(QT_TS:.ts=.qm)
 
 SECONDARY: $(QT_QM)
 
-$(srcdir)/qt/tenupstrings.cpp: $(libbitcoin_server_a_SOURCES) $(libbitcoin_wallet_a_SOURCES) $(libbitcoin_common_a_SOURCES) $(libbitcoin_zmq_a_SOURCES) $(libbitcoin_util_a_SOURCES)
+$(srcdir)/qt/wealthsilostrings.cpp: $(libbitcoin_server_a_SOURCES) $(libbitcoin_wallet_a_SOURCES) $(libbitcoin_common_a_SOURCES) $(libbitcoin_zmq_a_SOURCES) $(libbitcoin_util_a_SOURCES)
 	@test -n $(XGETTEXT) || echo "xgettext is required for updating translations"
 	$(AM_V_GEN) cd $(srcdir); XGETTEXT=$(XGETTEXT) PACKAGE_NAME="$(PACKAGE_NAME)" $(PYTHON) ../share/qt/extract_strings_qt.py $^
 
-translate: $(srcdir)/qt/tenupstrings.cpp $(QT_FORMS_UI) $(QT_FORMS_UI) $(BITCOIN_QT_CPP) $(BITCOIN_QT_H) $(BITCOIN_MM)
+translate: $(srcdir)/qt/wealthsilostrings.cpp $(QT_FORMS_UI) $(QT_FORMS_UI) $(BITCOIN_QT_CPP) $(BITCOIN_QT_H) $(BITCOIN_MM)
 	@test -n $(LUPDATE) || echo "lupdate is required for updating translations"
-	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(LUPDATE) $^ -locations relative -no-obsolete -ts $(srcdir)/qt/locale/tenup_en.ts
+	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(LUPDATE) $^ -locations relative -no-obsolete -ts $(srcdir)/qt/locale/wealthsilo_en.ts
 
 $(QT_QRC_LOCALE_CPP): $(QT_QRC_LOCALE) $(QT_QM)
 	@test -f $(RCC)
 	@cp -f $< $(@D)/temp_$(<F)
-	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(RCC) -name tenup_locale $(@D)/temp_$(<F) | \
+	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(RCC) -name wealthsilo_locale $(@D)/temp_$(<F) | \
 	  $(SED) -e '/^\*\*.*Created:/d' -e '/^\*\*.*by:/d' > $@
 	@rm $(@D)/temp_$(<F)
 
 $(QT_QRC_CPP): $(QT_QRC) $(QT_FORMS_H) $(RES_ICONS) $(RES_IMAGES) $(RES_CSS) $(RES_MOVIES) $(PROTOBUF_H)
 	@test -f $(RCC)
-	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(RCC) -name tenup $< | \
+	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(RCC) -name wealthsilo $< | \
 	  $(SED) -e '/^\*\*.*Created:/d' -e '/^\*\*.*by:/d' > $@
 
-CLEAN_QT = $(nodist_qt_libbitcoinqt_a_SOURCES) $(QT_QM) $(QT_FORMS_H) qt/*.gcda qt/*.gcno qt/temp_tenup_locale.qrc
+CLEAN_QT = $(nodist_qt_libbitcoinqt_a_SOURCES) $(QT_QM) $(QT_FORMS_H) qt/*.gcda qt/*.gcno qt/temp_wealthsilo_locale.qrc
 
 CLEANFILES += $(CLEAN_QT)
 
-tenup_qt_clean: FORCE
-	rm -f $(CLEAN_QT) $(qt_libbitcoinqt_a_OBJECTS) $(qt_tenup_qt_OBJECTS) qt/tenup-qt$(EXEEXT) $(LIBBITCOINQT)
+wealthsilo_qt_clean: FORCE
+	rm -f $(CLEAN_QT) $(qt_libbitcoinqt_a_OBJECTS) $(qt_wealthsilo_qt_OBJECTS) qt/wealthsilo-qt$(EXEEXT) $(LIBBITCOINQT)
 
-tenup_qt : qt/tenup-qt$(EXEEXT)
+wealthsilo_qt : qt/wealthsilo-qt$(EXEEXT)
 
 ui_%.h: %.ui
 	@test -f $(UIC)

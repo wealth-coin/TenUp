@@ -1,6 +1,6 @@
 // Copyright (c) 2009-2012 The Bitcoin developers
 // Copyright (c) 2015-2018 The PIVX developers
-// Copyright (c) 2015-2018 The WealthSilo developers
+// Copyright (c) 2018 The WealthSilo developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -73,7 +73,7 @@ UniValue masternode(const UniValue& params, bool fHelp)
             "  debug        - Print masternode status\n"
             "  genkey       - Generate new masternodeprivkey\n"
             "  outputs      - Print masternode compatible outputs\n"
-            "  start        - Start masternode configured in tenup.conf\n"
+            "  start        - Start masternode configured in wealthsilo.conf\n"
             "  start-alias  - Start single masternode by assigned alias configured in masternode.conf\n"
             "  start-<mode> - Start masternodes configured in masternode.conf (<mode>: 'all', 'missing', 'disabled')\n"
             "  status       - Print masternode status information\n"

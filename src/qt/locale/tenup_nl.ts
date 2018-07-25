@@ -176,16 +176,16 @@
         <translation>Bevestig versleuteling van de portemonnee</translation>
     </message>
     <message>
-        <source>WealthSilo will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your TUPs from being stolen by malware infecting your computer.</source>
-        <translation>WealthSilo zal nu afsluiten om het versleutelingsproces te voltooien. Onthoud dat het versleutelen van uw portemonnee u niet volledig kan beschermen tegen malware infecties op uw computer die uw TUP's kunnen stelen.</translation>
+        <source>WealthSilo will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your WEALTHs from being stolen by malware infecting your computer.</source>
+        <translation>WealthSilo zal nu afsluiten om het versleutelingsproces te voltooien. Onthoud dat het versleutelen van uw portemonnee u niet volledig kan beschermen tegen malware infecties op uw computer die uw WEALTH's kunnen stelen.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Weet u zeker dat u uw portemonnee wilt versleutelen?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR TUP&lt;/b&gt;!</source>
-        <translation>Waarschuwing: Als u uw portemonnee versleutelt en uw wachtwoord vergeet, zult u &lt;b&gt;AL UW TUP VERLIEZEN&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR WEALTH&lt;/b&gt;!</source>
+        <translation>Waarschuwing: Als u uw portemonnee versleutelt en uw wachtwoord vergeet, zult u &lt;b&gt;AL UW WEALTH VERLIEZEN&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -433,8 +433,8 @@
         <translation>Blader door transactiegescheidenis</translation>
     </message>
     <message>
-        <source>Privacy Actions for zTUP</source>
-        <translation>Privacy Acties voor zTUP</translation>
+        <source>Privacy Actions for zWEALTH</source>
+        <translation>Privacy Acties voor zWEALTH</translation>
     </message>
     <message>
         <source>E&amp;xit</source>
@@ -653,7 +653,7 @@
         <translation>Verstuur munten naar een WealthSilo adres</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and tenup: URIs)</source>
+        <source>Request payments (generates QR codes and wealthsilo: URIs)</source>
         <translation>Vraag betaling aan (genereert QR codes en WealthSilo: URI's)</translation>
     </message>
     <message>
@@ -892,8 +892,8 @@ MultiSend: %1</translation>
         <translation>TextLabel</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (tenup.conf).</source>
-        <translation>Niet alle transacties zullen worden getoond. Om alle transacties te bekijken moet u txindex=1 instellen in het configuratie bestand (tenup.conf).</translation>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (wealthsilo.conf).</source>
+        <translation>Niet alle transacties zullen worden getoond. Om alle transacties te bekijken moet u txindex=1 instellen in het configuratie bestand (wealthsilo.conf).</translation>
     </message>
 </context>
 <context>
@@ -1130,8 +1130,8 @@ MultiSend: %1</translation>
         <translation>Dit label wordt rood, als een ontvanger een hoeveelheid kleiner dan %1 ontvangt.</translation>
     </message>
     <message>
-        <source>Can vary +/- %1 utup per input.</source>
-        <translation>Kan +/-%1 utup per invoer variëren.</translation>
+        <source>Can vary +/- %1 uwealth per input.</source>
+        <translation>Kan +/-%1 uwealth per invoer variëren.</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -1681,8 +1681,8 @@ Waas alsjeblieft geduldig nadat u op importeren hebt geklikt.</translation>
         <translation>Adres / Bedrag:</translation>
     </message>
     <message>
-        <source>Add destinations to send TUP to</source>
-        <translation>Voeg bestemmingen toe om TUP naar te verzenden</translation>
+        <source>Add destinations to send WEALTH to</source>
+        <translation>Voeg bestemmingen toe om WEALTH naar te verzenden</translation>
     </message>
     <message>
         <source>Add &amp;Destination</source>
@@ -1780,32 +1780,32 @@ Waas alsjeblieft geduldig nadat u op importeren hebt geklikt.</translation>
         <translation>Selecteer de privacy level.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 25000 TUP</source>
-        <translation>Gebruik 2 aparte masternodes om fondsen te mixen tot 25000 TUP</translation>
+        <source>Use 2 separate masternodes to mix funds up to 25000 WEALTH</source>
+        <translation>Gebruik 2 aparte masternodes om fondsen te mixen tot 25000 WEALTH</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 25000 TUP</source>
-        <translation>Gebruik 8 aparte masternodes om fondsen te mixen tot 25000 TUP</translation>
+        <source>Use 8 separate masternodes to mix funds up to 25000 WEALTH</source>
+        <translation>Gebruik 8 aparte masternodes om fondsen te mixen tot 25000 WEALTH</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>Gebruik 16 aparte masternodes</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 TUP to anonymize 25000 TUP</source>
-        <translation>Deze optie is het snelst en kost ongeveer ~0,025 TUP om 25000 TUP te anonimiseren</translation>
+        <source>This option is the quickest and will cost about ~0.025 WEALTH to anonymize 25000 WEALTH</source>
+        <translation>Deze optie is het snelst en kost ongeveer ~0,025 WEALTH om 25000 WEALTH te anonimiseren</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 TUP to anonymize 25000 TUP</source>
-        <translation>Deze optie is gematigd snel en kost ongeveer 0,05 TUP om 25000 TUP te anonimiseren</translation>
+        <source>This option is moderately fast and will cost about 0.05 WEALTH to anonymize 25000 WEALTH</source>
+        <translation>Deze optie is gematigd snel en kost ongeveer 0,05 WEALTH om 25000 WEALTH te anonimiseren</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
         <translation>Dit is de langzaamste en veiligste optie. Het gebruik van maximale anonimiteit kost</translation>
     </message>
     <message>
-        <source>0.1 TUP per  10000 TUP you anonymize.</source>
-        <translation>je anonimiseert 0.1 TUP per  10000 TUP.</translation>
+        <source>0.1 WEALTH per  10000 WEALTH you anonymize.</source>
+        <translation>je anonimiseert 0.1 WEALTH per  10000 WEALTH.</translation>
     </message>
     <message>
         <source>Obfuscation Configuration</source>
@@ -1939,37 +1939,37 @@ Waas alsjeblieft geduldig nadat u op importeren hebt geklikt.</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/tenup-project/tenup-project-translations</source>
+https://www.transifex.com/wealthsilo-project/wealthsilo-project-translations</source>
         <translation>Taal ontbreekt of vertaling onvolledig? Help om bij te dragen aan vertalingen:
-https://www.transifex.com/tenup-project/tenup-project-translations</translation>
+https://www.transifex.com/wealthsilo-project/wealthsilo-project-translations</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
         <translation>Map poort gebruikt &amp;UPnP</translation>
     </message>
     <message>
-        <source>Enable automatic minting of TUP units to zTUP</source>
-        <translation>Schakel automatisch slaan van TUP-eenheden in op zTUP</translation>
+        <source>Enable automatic minting of WEALTH units to zWEALTH</source>
+        <translation>Schakel automatisch slaan van WEALTH-eenheden in op zWEALTH</translation>
     </message>
     <message>
-        <source>Enable zTUP Automint</source>
-        <translation>Schakel zTUP Automint in</translation>
+        <source>Enable zWEALTH Automint</source>
+        <translation>Schakel zWEALTH Automint in</translation>
     </message>
     <message>
-        <source>Percentage of incoming TUP which get automatically converted to zTUP via Zerocoin Protocol (min: 10%)</source>
-        <translation>Percentage inkomende TUP die automatisch wordt omgezet naar zTUP via Zerocoin Protocol (min: 10%)</translation>
+        <source>Percentage of incoming WEALTH which get automatically converted to zWEALTH via Zerocoin Protocol (min: 10%)</source>
+        <translation>Percentage inkomende WEALTH die automatisch wordt omgezet naar zWEALTH via Zerocoin Protocol (min: 10%)</translation>
     </message>
     <message>
-        <source>Percentage of autominted zTUP</source>
-        <translation>Percentage autominted zTUP</translation>
+        <source>Percentage of autominted zWEALTH</source>
+        <translation>Percentage autominted zWEALTH</translation>
     </message>
     <message>
-        <source>Wait with automatic conversion to Zerocoin until enough TUP for this denomination is available</source>
-        <translation>Wacht met automatische omzetting naar Zerocoin totdat er genoeg TUP voor deze denominatie beschikbaar is</translation>
+        <source>Wait with automatic conversion to Zerocoin until enough WEALTH for this denomination is available</source>
+        <translation>Wacht met automatische omzetting naar Zerocoin totdat er genoeg WEALTH voor deze denominatie beschikbaar is</translation>
     </message>
     <message>
-        <source>Preferred Automint zTUP Denomination</source>
-        <translation>Gewenste Automint zTUP denominatie</translation>
+        <source>Preferred Automint zWEALTH Denomination</source>
+        <translation>Gewenste Automint zWEALTH denominatie</translation>
     </message>
     <message>
         <source>Stake split threshold:</source>
@@ -2131,8 +2131,8 @@ https://www.transifex.com/tenup-project/tenup-project-translations</translation>
         <translation>Totaal saldo, inclusief alle niet-beschikbare munten.</translation>
     </message>
     <message>
-        <source>TUP Balance</source>
-        <translation>TUP Saldi</translation>
+        <source>WEALTH Balance</source>
+        <translation>WEALTH Saldi</translation>
     </message>
     <message>
         <source>Pending:</source>
@@ -2159,12 +2159,12 @@ https://www.transifex.com/tenup-project/tenup-project-translations</translation>
         <translation>Uw huidige WealthSilo-saldo, onbevestigde en onvolgroeide transacties inbegrepen</translation>
     </message>
     <message>
-        <source>zTUP Balance</source>
-        <translation>zTUP-saldo</translation>
+        <source>zWEALTH Balance</source>
+        <translation>zWEALTH-saldo</translation>
     </message>
     <message>
         <source>Mature: more than 20 confirmation and more than 1 mint of the same denomination after it was minted.
-These zTUP are spendable.</source>
+These zWEALTH are spendable.</source>
         <translation>Volwassen: meer dan 20 bevestigingen en meer dan 1 mint van dezelfde denominatie nadat het gemint was.
 Deze zPIB zijn besteedbaar.</translation>
     </message>
@@ -2219,8 +2219,8 @@ Onvolwassen: bevestigd, maar minder dan 1 mint van dezelfde denominatie nadat he
         <translation>Uitgeefbaar:</translation>
     </message>
     <message>
-        <source>Locked TUP or Masternode collaterals. These are excluded from zTUP minting.</source>
-        <translation>Vergrendelde TUP of Masternode onderpanden. Deze zijn uitgesloten van de zTUP muntage.</translation>
+        <source>Locked WEALTH or Masternode collaterals. These are excluded from zWEALTH minting.</source>
+        <translation>Vergrendelde WEALTH of Masternode onderpanden. Deze zijn uitgesloten van de zWEALTH muntage.</translation>
     </message>
     <message>
         <source>Locked:</source>
@@ -2231,8 +2231,8 @@ Onvolwassen: bevestigd, maar minder dan 1 mint van dezelfde denominatie nadat he
         <translation>Onbevestigd:</translation>
     </message>
     <message>
-        <source>Your current zTUP balance, unconfirmed and immature zTUP included.</source>
-        <translation>Uw huidige zTUP-saldo, onbevestigde en onvolgroeide zTUP inbegrepen.</translation>
+        <source>Your current zWEALTH balance, unconfirmed and immature zWEALTH included.</source>
+        <translation>Uw huidige zWEALTH-saldo, onbevestigde en onvolgroeide zWEALTH inbegrepen.</translation>
     </message>
     <message>
         <source>Recent transactions</source>
@@ -2243,10 +2243,10 @@ Onvolwassen: bevestigd, maar minder dan 1 mint van dezelfde denominatie nadat he
         <translation>niet gesynchroniseerd</translation>
     </message>
     <message>
-        <source>Current percentage of zTUP.
+        <source>Current percentage of zWEALTH.
 If AutoMint is enabled this percentage will settle around the configured AutoMint percentage (default = 10%).
 </source>
-        <translation>Huidige percentage van zTUP
+        <translation>Huidige percentage van zWEALTH
 Als AutoMint ingeschakeld is zal deze percentage afhangen van de geconfigureerde AutoMint percentage (standaard = 10%).
 </translation>
     </message>
@@ -2255,14 +2255,14 @@ Als AutoMint ingeschakeld is zal deze percentage afhangen van de geconfigureerde
         <translation>AutoMint is momenteel ingeschakeld en ingesteld op</translation>
     </message>
     <message>
-        <source>To disable AutoMint add 'enablezeromint=0' in tenup.conf.</source>
-        <translation>Om AutoMint uit te schakelen, voeg je 'enablezeromint=0' toe aan tenup.conf.</translation>
+        <source>To disable AutoMint add 'enablezeromint=0' in wealthsilo.conf.</source>
+        <translation>Om AutoMint uit te schakelen, voeg je 'enablezeromint=0' toe aan wealthsilo.conf.</translation>
     </message>
     <message>
         <source>AutoMint is currently disabled.
-To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in tenup.conf</source>
+To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in wealthsilo.conf</source>
         <translation>AutoMint is momenteel uitgeschakeld.
-Om AutoMint in te schakelend verander je 'enablezeromint=0' naar 'enablezeromint=1' in tenup.conf</translation>
+Om AutoMint in te schakelend verander je 'enablezeromint=0' naar 'enablezeromint=1' in wealthsilo.conf</translation>
     </message>
 </context>
 <context>
@@ -2288,8 +2288,8 @@ Om AutoMint in te schakelend verander je 'enablezeromint=0' naar 'enablezeromint
         <translation>Ongeldig betalingsadres %1</translation>
     </message>
     <message>
-        <source>Cannot start tenup: click-to-pay handler</source>
-        <translation>Kan tenup niet starten: click-to-pay handler</translation>
+        <source>Cannot start wealthsilo: click-to-pay handler</source>
+        <translation>Kan wealthsilo niet starten: click-to-pay handler</translation>
     </message>
     <message>
         <source>URI cannot be parsed! This can be caused by an invalid WealthSilo address or malformed URI parameters.</source>
@@ -2390,8 +2390,8 @@ Om AutoMint in te schakelend verander je 'enablezeromint=0' naar 'enablezeromint
         <translation>0</translation>
     </message>
     <message>
-        <source>zTUP</source>
-        <translation>zTUP</translation>
+        <source>zWEALTH</source>
+        <translation>zWEALTH</translation>
     </message>
     <message>
         <source>Available for minting are coins which are confirmed and not locked or Masternode collaterals.</source>
@@ -2402,8 +2402,8 @@ Om AutoMint in te schakelend verander je 'enablezeromint=0' naar 'enablezeromint
         <translation>Beschikbaar voor minting:</translation>
     </message>
     <message>
-        <source>0.000 000 00 TUP</source>
-        <translation>0.000 000 00 TUP</translation>
+        <source>0.000 000 00 WEALTH</source>
+        <translation>0.000 000 00 WEALTH</translation>
     </message>
     <message>
         <source>Reset Zerocoin Wallet DB. Deletes transactions that did not make it into the blockchain.</source>
@@ -2442,16 +2442,16 @@ Om AutoMint in te schakelend verander je 'enablezeromint=0' naar 'enablezeromint
         <translation>PRIVACY</translation>
     </message>
     <message>
-        <source>Enter an amount of TUP to convert to zTUP</source>
-        <translation>Vul het aantal TUP in om te converteren naar zTUP</translation>
+        <source>Enter an amount of WEALTH to convert to zWEALTH</source>
+        <translation>Vul het aantal WEALTH in om te converteren naar zWEALTH</translation>
     </message>
     <message>
-        <source>zTUP Control</source>
-        <translation>zTUP Control</translation>
+        <source>zWEALTH Control</source>
+        <translation>zWEALTH Control</translation>
     </message>
     <message>
-        <source>zTUP Selected:</source>
-        <translation>zTUP geselecteerd:</translation>
+        <source>zWEALTH Selected:</source>
+        <translation>zWEALTH geselecteerd:</translation>
     </message>
     <message>
         <source>Quantity Selected:</source>
@@ -2466,24 +2466,24 @@ Om AutoMint in te schakelend verander je 'enablezeromint=0' naar 'enablezeromint
         <translation>Besteed Zerocoin</translation>
     </message>
     <message>
-        <source>Available (mature and spendable) zTUP for spending</source>
-        <translation>Beschikbare (volwassen en uitgeefbaar) zTUP voor besteding</translation>
+        <source>Available (mature and spendable) zWEALTH for spending</source>
+        <translation>Beschikbare (volwassen en uitgeefbaar) zWEALTH voor besteding</translation>
     </message>
     <message>
         <source>Available Balance:</source>
         <translation>Beschikbaar saldo:</translation>
     </message>
     <message>
-        <source>Available (mature and spendable) zTUP for spending
+        <source>Available (mature and spendable) zWEALTH for spending
 
-zTUP are mature when they have more than 20 confirmations AND more than 2 mints of the same denomination after them were minted</source>
-        <translation>Beschikbare (volwwassen en uitgeefbaar) zTUP voor besteding
+zWEALTH are mature when they have more than 20 confirmations AND more than 2 mints of the same denomination after them were minted</source>
+        <translation>Beschikbare (volwwassen en uitgeefbaar) zWEALTH voor besteding
 
-zTup zijn volwassen wanneer zij meer dan 20 bevestigingen hebben EN meer dan 2 muntages van dezelfde denominaties nadat zij gemunt zijn.</translation>
+zWealth zijn volwassen wanneer zij meer dan 20 bevestigingen hebben EN meer dan 2 muntages van dezelfde denominaties nadat zij gemunt zijn.</translation>
     </message>
     <message>
-        <source>0 zTUP</source>
-        <translation>0 zTUP</translation>
+        <source>0 zWEALTH</source>
+        <translation>0 zWEALTH</translation>
     </message>
     <message>
         <source>Security Level for Zerocoin Transactions. More is better, but needs more time and resources.</source>
@@ -2554,8 +2554,8 @@ zTup zijn volwassen wanneer zij meer dan 20 bevestigingen hebben EN meer dan 2 m
         <translation>Zerocoin Statistieken:</translation>
     </message>
     <message>
-        <source>Total Balance including unconfirmed and immature zTUP</source>
-        <translation>Totale Saldi, inclusief onbevestigde en onvolwassen zTUP</translation>
+        <source>Total Balance including unconfirmed and immature zWEALTH</source>
+        <translation>Totale Saldi, inclusief onbevestigde en onvolwassen zWEALTH</translation>
     </message>
     <message>
         <source>Total Zerocoin  Balance:</source>
@@ -2576,24 +2576,24 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
 Onvolwassen: bevestigd, maar minder dan 1 mint van dezelfde denominatie nadat het gemint was.</translation>
     </message>
     <message>
-        <source>Show the current status of automatic zTUP minting.
+        <source>Show the current status of automatic zWEALTH minting.
 
 To change the status (restart required):
-- enable: add 'enablezeromint=1' to tenup.conf
-- disable: add 'enablezeromint=0' to tenup.conf
+- enable: add 'enablezeromint=1' to wealthsilo.conf
+- disable: add 'enablezeromint=0' to wealthsilo.conf
 
 To change the percentage (no restart required):
-- menu Settings-&gt;Options-&gt;Percentage of autominted zTUP
+- menu Settings-&gt;Options-&gt;Percentage of autominted zWEALTH
 
 </source>
-        <translation>Toon de huidige status van automatische zTUP-markering.
+        <translation>Toon de huidige status van automatische zWEALTH-markering.
 
 Om de status te wijzigen (opnieuw opstarten vereist): 
-- enable: voeg 'enablezeromint = 1' toe aan tenup.conf
-- uitschakelen: voeg 'enablezeromint = 0' toe aan tenup.conf
+- enable: voeg 'enablezeromint = 1' toe aan wealthsilo.conf
+- uitschakelen: voeg 'enablezeromint = 0' toe aan wealthsilo.conf
 
 Om het percentage te wijzigen (geen herstart vereist): 
-- menu Instellingen-&gt; Opties-&gt; Percentage van geautomatiseerde zTUP
+- menu Instellingen-&gt; Opties-&gt; Percentage van geautomatiseerde zWEALTH
 </translation>
     </message>
     <message>
@@ -2769,12 +2769,12 @@ Om het percentage te wijzigen (geen herstart vereist):
         <translation>Kopieer hoeveelheid</translation>
     </message>
     <message>
-        <source>zTUP Spend #: </source>
-        <translation>zTUP besteed #:</translation>
+        <source>zWEALTH Spend #: </source>
+        <translation>zWEALTH besteed #:</translation>
     </message>
     <message>
-        <source>zTUP Mint</source>
-        <translation>zTUP mint</translation>
+        <source>zWEALTH Mint</source>
+        <translation>zWEALTH mint</translation>
     </message>
     <message>
         <source> &lt;b&gt;enabled&lt;/b&gt;.</source>
@@ -2789,12 +2789,12 @@ Om het percentage te wijzigen (geen herstart vereist):
         <translation>Geconfigureerd doelpercentage:&lt;b&gt;</translation>
     </message>
     <message>
-        <source>zTUP is currently disabled due to maintenance.</source>
-        <translation>zTUP is momenteel uitgeschakeld vanwege onderhoud.</translation>
+        <source>zWEALTH is currently disabled due to maintenance.</source>
+        <translation>zWEALTH is momenteel uitgeschakeld vanwege onderhoud.</translation>
     </message>
     <message>
-        <source>zTUP is currently undergoing maintenance.</source>
-        <translation>zTUP wordt momenteel onderhouden.</translation>
+        <source>zWEALTH is currently undergoing maintenance.</source>
+        <translation>zWEALTH wordt momenteel onderhouden.</translation>
     </message>
     <message>
         <source>Denom. with value &lt;b&gt;1&lt;/b&gt;:</source>
@@ -2881,8 +2881,8 @@ Om het percentage te wijzigen (geen herstart vereist):
         <translation>Succesvol gemint</translation>
     </message>
     <message>
-        <source> zTUP in </source>
-        <translation> zTUP in </translation>
+        <source> zWEALTH in </source>
+        <translation> zWEALTH in </translation>
     </message>
     <message>
         <source> sec. Used denominations:
@@ -2956,12 +2956,12 @@ hardware.
 Wees alsjeblieft geduldig...</translation>
     </message>
     <message>
-        <source>Version 1 zTUP require a security level of 100 to successfully spend.</source>
-        <translation>Versie 1 zTUP vereist een beveiligingsniveau van 100 om succesvol te besteden.</translation>
+        <source>Version 1 zWEALTH require a security level of 100 to successfully spend.</source>
+        <translation>Versie 1 zWEALTH vereist een beveiligingsniveau van 100 om succesvol te besteden.</translation>
     </message>
     <message>
-        <source>Failed to spend zTUP</source>
-        <translation>Mislukt om zTUP te besteden.</translation>
+        <source>Failed to spend zWEALTH</source>
+        <translation>Mislukt om zWEALTH te besteden.</translation>
     </message>
     <message>
         <source>Failed to fetch mint associated with serial hash</source>
@@ -2989,7 +2989,7 @@ Ofwel het munten van hogere denominaties (dus minder invoer nodig) of het te bes
     </message>
     <message numerus="yes">
         <source>PrivacyDialog</source>
-        <comment>Enter an amount of TUP to convert to zTUP</comment>
+        <comment>Enter an amount of WEALTH to convert to zWEALTH</comment>
         <translation><numerusform>PrivacyDialoog</numerusform><numerusform>PrivacyDialog</numerusform></translation>
     </message>
     <message>
@@ -3306,8 +3306,8 @@ Ofwel het munten van hogere denominaties (dus minder invoer nodig) of het te bes
         <translation>Aangepast back-up pad:</translation>
     </message>
     <message>
-        <source>Custom zTUP Backup Path:</source>
-        <translation>Aangepast zTUP back-up pad:</translation>
+        <source>Custom zWEALTH Backup Path:</source>
+        <translation>Aangepast zWEALTH back-up pad:</translation>
     </message>
     <message>
         <source>Custom Backups Threshold:</source>
@@ -3750,8 +3750,8 @@ Ofwel het munten van hogere denominaties (dus minder invoer nodig) of het te bes
         <translation>UTXO grootte:</translation>
     </message>
     <message>
-        <source>0 TUP</source>
-        <translation>0 TUP</translation>
+        <source>0 WEALTH</source>
+        <translation>0 WEALTH</translation>
     </message>
     <message>
         <source>Transaction Fee:</source>
@@ -3806,12 +3806,12 @@ Ofwel het munten van hogere denominaties (dus minder invoer nodig) of het te bes
         <translation>Munten automatisch geselecteerd</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uTUPs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uTUPs in fee,&lt;br /&gt;while "at least" pays 1000 uTUPs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Als de aangepaste vergoeding is ingesteld op 1000 uTUPs en de transactie is slechts 250 bytes, dan betaalt per kilobyte alleen 250 uTUP's in vergoeding,&lt;br /&gt;terwijl "minstens" 1000 uTUP's betaalt. Voor transacties die groter zijn dan een kilobyte, betalen beiden per kilobyte.</translation>
+        <source>If the custom fee is set to 1000 uWEALTHs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uWEALTHs in fee,&lt;br /&gt;while "at least" pays 1000 uWEALTHs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Als de aangepaste vergoeding is ingesteld op 1000 uWEALTHs en de transactie is slechts 250 bytes, dan betaalt per kilobyte alleen 250 uWEALTH's in vergoeding,&lt;br /&gt;terwijl "minstens" 1000 uWEALTH's betaalt. Voor transacties die groter zijn dan een kilobyte, betalen beiden per kilobyte.</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uTUPs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uTUPs in fee,&lt;br /&gt;while "total at least" pays 1000 uTUPs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Als de aangepaste vergoeding is ingesteld op 1000 uTUPs en de transactie is slechts 250 bytes, dan betaalt per kilobyte alleen 250 uTUP's in vergoeding,&lt;br /&gt;terwijl "totaal minstens" 1000 uTUP's betaalt. Voor transacties die groter zijn dan een kilobyte, betalen beiden per kilobyte.</translation>
+        <source>If the custom fee is set to 1000 uWEALTHs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uWEALTHs in fee,&lt;br /&gt;while "total at least" pays 1000 uWEALTHs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Als de aangepaste vergoeding is ingesteld op 1000 uWEALTHs en de transactie is slechts 250 bytes, dan betaalt per kilobyte alleen 250 uWEALTH's in vergoeding,&lt;br /&gt;terwijl "totaal minstens" 1000 uWEALTH's betaalt. Voor transacties die groter zijn dan een kilobyte, betalen beiden per kilobyte.</translation>
     </message>
     <message>
         <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for WealthSilo transactions than the network can process.</source>
@@ -3862,8 +3862,8 @@ Ofwel het munten van hogere denominaties (dus minder invoer nodig) of het te bes
         <translation>Voeg &amp;ontvanger toe</translation>
     </message>
     <message>
-        <source>Anonymized TUP</source>
-        <translation>Geanonimiseerde TUP</translation>
+        <source>Anonymized WEALTH</source>
+        <translation>Geanonimiseerde WEALTH</translation>
     </message>
     <message>
         <source>Balance:</source>
@@ -4526,12 +4526,12 @@ Ofwel het munten van hogere denominaties (dus minder invoer nodig) of het te bes
         <translation>Verkregen via verduistering</translation>
     </message>
     <message>
-        <source>TUP Stake</source>
-        <translation>TUP Stake</translation>
+        <source>WEALTH Stake</source>
+        <translation>WEALTH Stake</translation>
     </message>
     <message>
-        <source>zTUP Stake</source>
-        <translation>zTUP Stake</translation>
+        <source>zWEALTH Stake</source>
+        <translation>zWEALTH Stake</translation>
     </message>
     <message>
         <source>Obfuscation Denominate</source>
@@ -4550,32 +4550,32 @@ Ofwel het munten van hogere denominaties (dus minder invoer nodig) of het te bes
         <translation>Verduistering creëert denominaties</translation>
     </message>
     <message>
-        <source>Converted TUP to zTUP</source>
-        <translation>Geconverteerde TUP naar zTUP</translation>
+        <source>Converted WEALTH to zWEALTH</source>
+        <translation>Geconverteerde WEALTH naar zWEALTH</translation>
     </message>
     <message>
-        <source>Spent zTUP</source>
-        <translation>Bestede zTUP</translation>
+        <source>Spent zWEALTH</source>
+        <translation>Bestede zWEALTH</translation>
     </message>
     <message>
-        <source>Received TUP from zTUP</source>
-        <translation>Ontvangen TUP van zTUP</translation>
+        <source>Received WEALTH from zWEALTH</source>
+        <translation>Ontvangen WEALTH van zWEALTH</translation>
     </message>
     <message>
-        <source>Minted Change as zTUP from zTUP Spend</source>
-        <translation>Gemint wisselgeld als zTUP van bestede zTUP</translation>
+        <source>Minted Change as zWEALTH from zWEALTH Spend</source>
+        <translation>Gemint wisselgeld als zWEALTH van bestede zWEALTH</translation>
     </message>
     <message>
-        <source>Converted zTUP to TUP</source>
-        <translation>Geconverteerde zTUP naar TUP</translation>
+        <source>Converted zWEALTH to WEALTH</source>
+        <translation>Geconverteerde zWEALTH naar WEALTH</translation>
     </message>
     <message>
-        <source>Anonymous (zTUP Transaction)</source>
-        <translation>Anonieme (zTUP transactie)</translation>
+        <source>Anonymous (zWEALTH Transaction)</source>
+        <translation>Anonieme (zWEALTH transactie)</translation>
     </message>
     <message>
-        <source>Anonymous (zTUP Stake)</source>
-        <translation>Anonieme (zTUP stake)</translation>
+        <source>Anonymous (zWEALTH Stake)</source>
+        <translation>Anonieme (zWEALTH stake)</translation>
     </message>
     <message>
         <source>Sent to</source>
@@ -4785,12 +4785,12 @@ Ofwel het munten van hogere denominaties (dus minder invoer nodig) of het te bes
         <translation>Exporteren succesvol</translation>
     </message>
     <message>
-        <source>Received TUP from zTUP</source>
-        <translation>Ontvangen TUP van zTUP</translation>
+        <source>Received WEALTH from zWEALTH</source>
+        <translation>Ontvangen WEALTH van zWEALTH</translation>
     </message>
     <message>
-        <source>Zerocoin Spend, Change in zTUP</source>
-        <translation>Zerocoin besteed, wisselgeld in zTUP</translation>
+        <source>Zerocoin Spend, Change in zWEALTH</source>
+        <translation>Zerocoin besteed, wisselgeld in zWEALTH</translation>
     </message>
     <message>
         <source>The transaction history was successfully saved to %1.</source>
@@ -4826,8 +4826,8 @@ Ofwel het munten van hogere denominaties (dus minder invoer nodig) of het te bes
         <translation>Verzend Munten</translation>
     </message>
     <message>
-        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 TUP.</source>
-        <translation>SwiftTX ondersteunt geen verzendwaarden die zo hoog zijn. Transacties zijn momenteel beperkt tot %1 TUP.</translation>
+        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 WEALTH.</source>
+        <translation>SwiftTX ondersteunt geen verzendwaarden die zo hoog zijn. Transacties zijn momenteel beperkt tot %1 WEALTH.</translation>
     </message>
 </context>
 <context>
@@ -4858,10 +4858,10 @@ Ofwel het munten van hogere denominaties (dus minder invoer nodig) of het te bes
     </message>
 </context>
 <context>
-    <name>ZTupControlDialog</name>
+    <name>ZWealthControlDialog</name>
     <message>
-        <source>Select zTUP to Spend</source>
-        <translation>Selecteer zTUP om te besteden</translation>
+        <source>Select zWEALTH to Spend</source>
+        <translation>Selecteer zWEALTH om te besteden</translation>
     </message>
     <message>
         <source>Quantity</source>
@@ -4872,8 +4872,8 @@ Ofwel het munten van hogere denominaties (dus minder invoer nodig) of het te bes
         <translation>0</translation>
     </message>
     <message>
-        <source>zTUP</source>
-        <translation>zTUP</translation>
+        <source>zWEALTH</source>
+        <translation>zWEALTH</translation>
     </message>
     <message>
         <source>Select/Deselect All</source>
@@ -4885,7 +4885,7 @@ Ofwel het munten van hogere denominaties (dus minder invoer nodig) of het te bes
     </message>
 </context>
 <context>
-    <name>tenup-core</name>
+    <name>wealthsilo-core</name>
     <message>
         <source>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</source>
         <translation>(1 = houd tx meta data, bijvoorbeeld account eigenaar en betalingsverzoek informatie, 2 = drop tx meta data)</translation>
@@ -4939,16 +4939,16 @@ Ofwel het munten van hogere denominaties (dus minder invoer nodig) of het te bes
         <translation>Gedistribueerd onder de MIT software licentie, zie het bijgevoegde bestand COPYING of &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</translation>
     </message>
     <message>
-        <source>Enable automatic wallet backups triggered after each zTUP minting (0-1, default: %u)</source>
-        <translation>Schakel automatische portemonnee back-ups in geactiveerd na elke geminte zTUP (0-1, standaard: %u)</translation>
+        <source>Enable automatic wallet backups triggered after each zWEALTH minting (0-1, default: %u)</source>
+        <translation>Schakel automatische portemonnee back-ups in geactiveerd na elke geminte zWEALTH (0-1, standaard: %u)</translation>
     </message>
     <message>
-        <source>Enable or disable staking functionality for TUP inputs (0-1, default: %u)</source>
-        <translation>In- of uitschakelen staking functionaliteit voor TUP inputs (0-1, standaard: %u)</translation>
+        <source>Enable or disable staking functionality for WEALTH inputs (0-1, default: %u)</source>
+        <translation>In- of uitschakelen staking functionaliteit voor WEALTH inputs (0-1, standaard: %u)</translation>
     </message>
     <message>
-        <source>Enable or disable staking functionality for zTUP inputs (0-1, default: %u)</source>
-        <translation>In- of uitschakelen staking functionaliteit voor zTUP inputs (0-1, standaard: %u)</translation>
+        <source>Enable or disable staking functionality for zWEALTH inputs (0-1, default: %u)</source>
+        <translation>In- of uitschakelen staking functionaliteit voor zWEALTH inputs (0-1, standaard: %u)</translation>
     </message>
     <message>
         <source>Enable spork administration functionality with the appropriate private key.</source>
@@ -4983,12 +4983,12 @@ Ofwel het munten van hogere denominaties (dus minder invoer nodig) of het te bes
         <translation>Uitvoeren commando wanneer het beste blok verandert (%s in cmd is vervangen door block hash)</translation>
     </message>
     <message>
-        <source>Fees (in TUP/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>Kosten (in TUP/Kb) kleiner dan dit worden beschouwd als zero fee voor heruitzending (standaard: %s)</translation>
+        <source>Fees (in WEALTH/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>Kosten (in WEALTH/Kb) kleiner dan dit worden beschouwd als zero fee voor heruitzending (standaard: %s)</translation>
     </message>
     <message>
-        <source>Fees (in TUP/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>Kosten (in TUP/Kb) kleiner dan dit worden beschouwd als zero fee voor transactie verrichting (standaard: %s)</translation>
+        <source>Fees (in WEALTH/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>Kosten (in WEALTH/Kb) kleiner dan dit worden beschouwd als zero fee voor transactie verrichting (standaard: %s)</translation>
     </message>
     <message>
         <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</source>
@@ -5095,12 +5095,12 @@ Ofwel het munten van hogere denominaties (dus minder invoer nodig) of het te bes
         <translation>Kan niet genoeg verduistering gedenomineerde fondsen voor deze transactie vinden.</translation>
     </message>
     <message>
-        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 25000 TUP.</source>
-        <translation>Kan niet genoeg verduistering niet gedenomineerde fondsen voor deze transactie vinden die niet gelijk zijn aan 25000 TUP.</translation>
+        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 25000 WEALTH.</source>
+        <translation>Kan niet genoeg verduistering niet gedenomineerde fondsen voor deze transactie vinden die niet gelijk zijn aan 25000 WEALTH.</translation>
     </message>
     <message>
-        <source>Unable to locate enough funds for this transaction that are not equal 25000 TUP.</source>
-        <translation>Kan niet genoeg fondsen voor deze transactie vinden die niet gelijk zijn aan 25000 TUP.</translation>
+        <source>Unable to locate enough funds for this transaction that are not equal 25000 WEALTH.</source>
+        <translation>Kan niet genoeg fondsen voor deze transactie vinden die niet gelijk zijn aan 25000 WEALTH.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
@@ -5411,8 +5411,8 @@ Ofwel het munten van hogere denominaties (dus minder invoer nodig) of het te bes
         <translation>Mislukt om block te lezen</translation>
     </message>
     <message>
-        <source>Fee (in TUP/kB) to add to transactions you send (default: %s)</source>
-        <translation>Fee (in TUP/kB) om toe te voegen aan transacties die je verzendt (standaard: %s)</translation>
+        <source>Fee (in WEALTH/kB) to add to transactions you send (default: %s)</source>
+        <translation>Fee (in WEALTH/kB) om toe te voegen aan transacties die je verzendt (standaard: %s)</translation>
     </message>
     <message>
         <source>Finalizing transaction.</source>
@@ -5543,8 +5543,8 @@ Ofwel het munten van hogere denominaties (dus minder invoer nodig) of het te bes
         <translation>Percentage automatisch geminte Zerocoin (10-100, standaard: %u)</translation>
     </message>
     <message>
-        <source>Reindex the TUP and zTUP money supply statistics</source>
-        <translation>Indexeer de TUP- en zTUP-geldvoorraadstatistieken opnieuw</translation>
+        <source>Reindex the WEALTH and zWEALTH money supply statistics</source>
+        <translation>Indexeer de WEALTH- en zWEALTH-geldvoorraadstatistieken opnieuw</translation>
     </message>
     <message>
         <source>Reindexing zerocoin database...</source>
@@ -5619,8 +5619,8 @@ Ofwel het munten van hogere denominaties (dus minder invoer nodig) of het te bes
         <translation>Voorkeur denominatie voor automatisch minted Zerocoin (1/5/10/50/100/500/1000/5000), 0 voor geen voorkeur. standaard: %u)</translation>
     </message>
     <message>
-        <source>Specify custom backup path to add a copy of any automatic zTUP backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
-        <translation>Specificeer aangepast back-up pad om een kopie van elke automatische zTUP back-up toe te voegen. Indien ingesteld als dir zal elke back-up een bestand genereren met een tijdstempel. Indien ingesteld als file zal elke back-up herschreven worden naar dat bestand. Indien backuppath ook is ingesteld zullen 4 back-ups gedaan worden.</translation>
+        <source>Specify custom backup path to add a copy of any automatic zWEALTH backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
+        <translation>Specificeer aangepast back-up pad om een kopie van elke automatische zWEALTH back-up toe te voegen. Indien ingesteld als dir zal elke back-up een bestand genereren met een tijdstempel. Indien ingesteld als file zal elke back-up herschreven worden naar dat bestand. Indien backuppath ook is ingesteld zullen 4 back-ups gedaan worden.</translation>
     </message>
     <message>
         <source>Specify custom backup path to add a copy of any wallet backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup.</source>
@@ -6119,8 +6119,8 @@ Ofwel het munten van hogere denominaties (dus minder invoer nodig) of het te bes
         <translation>Synchroniseren sporks...</translation>
     </message>
     <message>
-        <source>Syncing zTUP wallet...</source>
-        <translation>Synchroniseren zTUP portemonnee...</translation>
+        <source>Syncing zWEALTH wallet...</source>
+        <translation>Synchroniseren zWEALTH portemonnee...</translation>
     </message>
     <message>
         <source>The coin spend has been used</source>
@@ -6267,8 +6267,8 @@ Ofwel het munten van hogere denominaties (dus minder invoer nodig) of het te bes
         <translation>Gebruikersnaam voor JSON-RPC verbindingen</translation>
     </message>
     <message>
-        <source>Value is below the smallest available denomination (= 1) of zTUP</source>
-        <translation>Waarde is minder dan de kleinst beschikbare denominatie (=1) van zTUP</translation>
+        <source>Value is below the smallest available denomination (= 1) of zWEALTH</source>
+        <translation>Waarde is minder dan de kleinst beschikbare denominatie (=1) van zWEALTH</translation>
     </message>
     <message>
         <source>Value more than Obfuscation pool maximum allows.</source>
@@ -6283,8 +6283,8 @@ Ofwel het munten van hogere denominaties (dus minder invoer nodig) of het te bes
         <translation>Portemonnee verifiëren...</translation>
     </message>
     <message>
-        <source>Version 1 zTUP require a security level of 100 to successfully spend.</source>
-        <translation>Versie 1 zTUP vereist een beveiligingsniveau van 100 om succesvol uit te geven.</translation>
+        <source>Version 1 zWEALTH require a security level of 100 to successfully spend.</source>
+        <translation>Versie 1 zWEALTH vereist een beveiligingsniveau van 100 om succesvol uit te geven.</translation>
     </message>
     <message>
         <source>Wallet %s resides outside data directory %s</source>

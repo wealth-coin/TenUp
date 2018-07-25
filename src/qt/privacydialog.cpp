@@ -15,7 +15,7 @@
 #include "sendcoinsentry.h"
 #include "walletmodel.h"
 #include "coincontrol.h"
-#include "ztupcontroldialog.h"
+#include "zwealthcontroldialog.h"
 #include "spork.h"
 #include "askpassphrasedialog.h"
 
@@ -34,14 +34,14 @@ PrivacyDialog::PrivacyDialog(QWidget* parent) : QDialog(parent),
     nDisplayUnit = 0; // just make sure it's not unitialized
     ui->setupUi(this);
 
-    // "Spending 999999 zTUP ought to be enough for anybody." - Bill Gates, 2017
-    ui->zTUPpayAmount->setValidator( new QDoubleValidator(0.0, 21000000.0, 20, this) );
+    // "Spending 999999 zWEALTH ought to be enough for anybody." - Bill Gates, 2017
+    ui->zWEALTHpayAmount->setValidator( new QDoubleValidator(0.0, 21000000.0, 20, this) );
     ui->labelMintAmountValue->setValidator( new QIntValidator(0, 999999, this) );
 
     // Default texts for (mini-) coincontrol
     ui->labelCoinControlQuantity->setText (tr("Coins automatically selected"));
     ui->labelCoinControlAmount->setText (tr("Coins automatically selected"));
-    ui->labelzTUPSyncStatus->setText("(" + tr("out of sync") + ")");
+    ui->labelzWEALTHSyncStatus->setText("(" + tr("out of sync") + ")");
 
     // Sunken frame for minting messages
     ui->TEMintStatus->setFrameStyle(QFrame::StyledPanel | QFrame::Sunken);
@@ -151,18 +151,18 @@ void PrivacyDialog::on_addressBookButton_clicked()
     dlg.setModel(walletModel->getAddressTableModel());
     if (dlg.exec()) {
         ui->payTo->setText(dlg.getReturnValue());
-        ui->zTUPpayAmount->setFocus();
+        ui->zWEALTHpayAmount->setFocus();
     }
 }
 
-void PrivacyDialog::on_pushButtonMintzTUP_clicked()
+void PrivacyDialog::on_pushButtonMintzWEALTH_clicked()
 {
     if (!walletModel || !walletModel->getOptionsModel())
         return;
 
     if(GetAdjustedTime() > GetSporkValue(SPORK_16_ZEROCOIN_MAINTENANCE_MODE)) {
         QMessageBox::information(this, tr("Mint Zerocoin"),
-                                 tr("zTUP is currently undergoing maintenance."), QMessageBox::Ok,
+                                 tr("zWEALTH is currently undergoing maintenance."), QMessageBox::Ok,
                                  QMessageBox::Ok);
         return;
     }
@@ -173,7 +173,7 @@ void PrivacyDialog::on_pushButtonMintzTUP_clicked()
     // Request unlock if wallet was locked or unlocked for mixing:
     WalletModel::EncryptionStatus encStatus = walletModel->getEncryptionStatus();
     if (encStatus == walletModel->Locked) {
-        WalletModel::UnlockContext ctx(walletModel->requestUnlock(AskPassphraseDialog::Context::Mint_zTUP, true));
+        WalletModel::UnlockContext ctx(walletModel->requestUnlock(AskPassphraseDialog::Context::Mint_zWEALTH, true));
         if (!ctx.isValid()) {
             // Unlock wallet was cancelled
             ui->TEMintStatus->setPlainText(tr("Error: Your wallet is locked. Please enter the wallet passphrase first."));
@@ -190,7 +190,7 @@ void PrivacyDialog::on_pushButtonMintzTUP_clicked()
         return;
     }
 
-    ui->TEMintStatus->setPlainText(tr("Minting ") + ui->labelMintAmountValue->text() + " zTUP...");
+    ui->TEMintStatus->setPlainText(tr("Minting ") + ui->labelMintAmountValue->text() + " zWEALTH...");
     ui->TEMintStatus->repaint ();
 
     int64_t nTime = GetTimeMillis();
@@ -208,7 +208,7 @@ void PrivacyDialog::on_pushButtonMintzTUP_clicked()
     double fDuration = (double)(GetTimeMillis() - nTime)/1000.0;
 
     // Minting successfully finished. Show some stats for entertainment.
-    QString strStatsHeader = tr("Successfully minted ") + ui->labelMintAmountValue->text() + tr(" zTUP in ") +
+    QString strStatsHeader = tr("Successfully minted ") + ui->labelMintAmountValue->text() + tr(" zWEALTH in ") +
                              QString::number(fDuration) + tr(" sec. Used denominations:\n");
 
     // Clear amount to avoid double spending when accidentally clicking twice
@@ -265,7 +265,7 @@ void PrivacyDialog::on_pushButtonSpentReset_clicked()
     return;
 }
 
-void PrivacyDialog::on_pushButtonSpendzTUP_clicked()
+void PrivacyDialog::on_pushButtonSpendzWEALTH_clicked()
 {
 
     if (!walletModel || !walletModel->getOptionsModel() || !pwalletMain)
@@ -273,39 +273,39 @@ void PrivacyDialog::on_pushButtonSpendzTUP_clicked()
 
     if(GetAdjustedTime() > GetSporkValue(SPORK_16_ZEROCOIN_MAINTENANCE_MODE)) {
         QMessageBox::information(this, tr("Mint Zerocoin"),
-                                 tr("zTUP is currently undergoing maintenance."), QMessageBox::Ok, QMessageBox::Ok);
+                                 tr("zWEALTH is currently undergoing maintenance."), QMessageBox::Ok, QMessageBox::Ok);
         return;
     }
 
     // Request unlock if wallet was locked or unlocked for mixing:
     WalletModel::EncryptionStatus encStatus = walletModel->getEncryptionStatus();
     if (encStatus == walletModel->Locked || encStatus == walletModel->UnlockedForAnonymizationOnly) {
-        WalletModel::UnlockContext ctx(walletModel->requestUnlock(AskPassphraseDialog::Context::Send_zTUP, true));
+        WalletModel::UnlockContext ctx(walletModel->requestUnlock(AskPassphraseDialog::Context::Send_zWEALTH, true));
         if (!ctx.isValid()) {
             // Unlock wallet was cancelled
             return;
         }
-        // Wallet is unlocked now, sedn zTUP
-        sendzTUP();
+        // Wallet is unlocked now, sedn zWEALTH
+        sendzWEALTH();
         return;
     }
-    // Wallet already unlocked or not encrypted at all, send zTUP
-    sendzTUP();
+    // Wallet already unlocked or not encrypted at all, send zWEALTH
+    sendzWEALTH();
 }
 
-void PrivacyDialog::on_pushButtonZTupControl_clicked()
+void PrivacyDialog::on_pushButtonZWealthControl_clicked()
 {
     if (!walletModel || !walletModel->getOptionsModel())
         return;
 
-    ZTupControlDialog* zTupControl = new ZTupControlDialog(this);
-    zTupControl->setModel(walletModel);
-    zTupControl->exec();
+    ZWealthControlDialog* zWealthControl = new ZWealthControlDialog(this);
+    zWealthControl->setModel(walletModel);
+    zWealthControl->exec();
 }
 
-void PrivacyDialog::setZTupControlLabels(int64_t nAmount, int nQuantity)
+void PrivacyDialog::setZWealthControlLabels(int64_t nAmount, int nQuantity)
 {
-    ui->labelzTupSelected_int->setText(QString::number(nAmount));
+    ui->labelzWealthSelected_int->setText(QString::number(nAmount));
     ui->labelQuantitySelected_int->setText(QString::number(nQuantity));
 }
 
@@ -314,7 +314,7 @@ static inline int64_t roundint64(double d)
     return (int64_t)(d > 0 ? d + 0.5 : d - 0.5);
 }
 
-void PrivacyDialog::sendzTUP()
+void PrivacyDialog::sendzWEALTH()
 {
     QSettings settings;
 
@@ -332,24 +332,24 @@ void PrivacyDialog::sendzTUP()
     }
 
     // Double is allowed now
-    double dAmount = ui->zTUPpayAmount->text().toDouble();
+    double dAmount = ui->zWEALTHpayAmount->text().toDouble();
     CAmount nAmount = roundint64(dAmount* COIN);
 
     // Check amount validity
     if (!MoneyRange(nAmount) || nAmount <= 0.0) {
         QMessageBox::warning(this, tr("Spend Zerocoin"), tr("Invalid Send Amount"), QMessageBox::Ok, QMessageBox::Ok);
-        ui->zTUPpayAmount->setFocus();
+        ui->zWEALTHpayAmount->setFocus();
         return;
     }
 
-    // Convert change to zTUP
+    // Convert change to zWEALTH
     bool fMintChange = ui->checkBoxMintChange->isChecked();
 
     // Persist minimize change setting
     fMinimizeChange = ui->checkBoxMinimizeChange->isChecked();
     settings.setValue("fMinimizeChange", fMinimizeChange);
 
-    // Warn for additional fees if amount is not an integer and change as zTUP is requested
+    // Warn for additional fees if amount is not an integer and change as zWEALTH is requested
     bool fWholeNumber = floor(dAmount) == dAmount;
     double dzFee = 0.0;
 
@@ -358,7 +358,7 @@ void PrivacyDialog::sendzTUP()
 
     if(!fWholeNumber && fMintChange){
         QString strFeeWarning = "You've entered an amount with fractional digits and want the change to be converted to Zerocoin.<br /><br /><b>";
-        strFeeWarning += QString::number(dzFee, 'f', 8) + " TUP </b>will be added to the standard transaction fees!<br />";
+        strFeeWarning += QString::number(dzFee, 'f', 8) + " WEALTH </b>will be added to the standard transaction fees!<br />";
         QMessageBox::StandardButton retval = QMessageBox::question(this, tr("Confirm additional Fees"),
             strFeeWarning,
             QMessageBox::Yes | QMessageBox::Cancel,
@@ -366,7 +366,7 @@ void PrivacyDialog::sendzTUP()
 
         if (retval != QMessageBox::Yes) {
             // Sending canceled
-            ui->zTUPpayAmount->setFocus();
+            ui->zWEALTHpayAmount->setFocus();
             return;
         }
     }
@@ -385,7 +385,7 @@ void PrivacyDialog::sendzTUP()
 
     // General info
     QString strQuestionString = tr("Are you sure you want to send?<br /><br />");
-    QString strAmount = "<b>" + QString::number(dAmount, 'f', 8) + " zTUP</b>";
+    QString strAmount = "<b>" + QString::number(dAmount, 'f', 8) + " zWEALTH</b>";
     QString strAddress = tr(" to address ") + QString::fromStdString(address.ToString()) + strAddressLabel + " <br />";
 
     if(ui->payTo->text().isEmpty()){
@@ -411,18 +411,18 @@ void PrivacyDialog::sendzTUP()
     ui->TEMintStatus->setPlainText(tr("Spending Zerocoin.\nComputationally expensive, might need several minutes depending on the selected Security Level and your hardware. \nPlease be patient..."));
     ui->TEMintStatus->repaint();
 
-    // use mints from zTUP selector if applicable
+    // use mints from zWEALTH selector if applicable
     vector<CMintMeta> vMintsToFetch;
     vector<CZerocoinMint> vMintsSelected;
-    if (!ZTupControlDialog::setSelectedMints.empty()) {
-        vMintsToFetch = ZTupControlDialog::GetSelectedMints();
+    if (!ZWealthControlDialog::setSelectedMints.empty()) {
+        vMintsToFetch = ZWealthControlDialog::GetSelectedMints();
 
         for (auto& meta : vMintsToFetch) {
             if (meta.nVersion < libzerocoin::PrivateCoin::PUBKEY_VERSION) {
                 //version 1 coins have to use full security level to successfully spend.
                 if (nSecurityLevel < 100) {
-                    QMessageBox::warning(this, tr("Spend Zerocoin"), tr("Version 1 zTUP require a security level of 100 to successfully spend."), QMessageBox::Ok, QMessageBox::Ok);
-                    ui->TEMintStatus->setPlainText(tr("Failed to spend zTUP"));
+                    QMessageBox::warning(this, tr("Spend Zerocoin"), tr("Version 1 zWEALTH require a security level of 100 to successfully spend."), QMessageBox::Ok, QMessageBox::Ok);
+                    ui->TEMintStatus->setPlainText(tr("Failed to spend zWEALTH"));
                     ui->TEMintStatus->repaint();
                     return;
                 }
@@ -437,7 +437,7 @@ void PrivacyDialog::sendzTUP()
         }
     }
 
-    // Spend zTUP
+    // Spend zWEALTH
     CWalletTx wtxNew;
     CZerocoinSpendReceipt receipt;
     bool fSuccess = false;
@@ -452,15 +452,15 @@ void PrivacyDialog::sendzTUP()
 
     // Display errors during spend
     if (!fSuccess) {
-        if (receipt.GetStatus() == ZTUP_SPEND_V1_SEC_LEVEL) {
-            QMessageBox::warning(this, tr("Spend Zerocoin"), tr("Version 1 zTUP require a security level of 100 to successfully spend."), QMessageBox::Ok, QMessageBox::Ok);
-            ui->TEMintStatus->setPlainText(tr("Failed to spend zTUP"));
+        if (receipt.GetStatus() == ZWEALTH_SPEND_V1_SEC_LEVEL) {
+            QMessageBox::warning(this, tr("Spend Zerocoin"), tr("Version 1 zWEALTH require a security level of 100 to successfully spend."), QMessageBox::Ok, QMessageBox::Ok);
+            ui->TEMintStatus->setPlainText(tr("Failed to spend zWEALTH"));
             ui->TEMintStatus->repaint();
             return;
         }
 
         int nNeededSpends = receipt.GetNeededSpends(); // Number of spends we would need for this transaction
-        const int nMaxSpends = Params().Zerocoin_MaxSpendsPerTransaction(); // Maximum possible spends for one zTUP transaction
+        const int nMaxSpends = Params().Zerocoin_MaxSpendsPerTransaction(); // Maximum possible spends for one zWEALTH transaction
         if (nNeededSpends > nMaxSpends) {
             QString strStatusMessage = tr("Too much inputs (") + QString::number(nNeededSpends, 10) + tr(") needed. \nMaximum allowed: ") + QString::number(nMaxSpends, 10);
             strStatusMessage += tr("\nEither mint higher denominations (so fewer inputs are needed) or reduce the amount to spend.");
@@ -471,14 +471,14 @@ void PrivacyDialog::sendzTUP()
             QMessageBox::warning(this, tr("Spend Zerocoin"), receipt.GetStatusMessage().c_str(), QMessageBox::Ok, QMessageBox::Ok);
             ui->TEMintStatus->setPlainText(tr("Spend Zerocoin failed with status = ") +QString::number(receipt.GetStatus(), 10) + "\n" + "Message: " + QString::fromStdString(receipt.GetStatusMessage()));
         }
-        ui->zTUPpayAmount->setFocus();
+        ui->zWEALTHpayAmount->setFocus();
         ui->TEMintStatus->repaint();
         ui->TEMintStatus->verticalScrollBar()->setValue(ui->TEMintStatus->verticalScrollBar()->maximum()); // Automatically scroll to end of text
         return;
     }
 
     if (walletModel && walletModel->getAddressTableModel()) {
-        // If zTUP was spent successfully update the addressbook with the label
+        // If zWEALTH was spent successfully update the addressbook with the label
         std::string labelText = ui->addAsLabel->text().toStdString();
         if (!labelText.empty())
             walletModel->updateAddressBookLabels(address.Get(), labelText, "send");
@@ -486,9 +486,9 @@ void PrivacyDialog::sendzTUP()
             walletModel->updateAddressBookLabels(address.Get(), "(no label)", "send");
     }
 
-    // Clear ztup selector in case it was used
-    ZTupControlDialog::setSelectedMints.clear();
-    ui->labelzTupSelected_int->setText(QString("0"));
+    // Clear zwealth selector in case it was used
+    ZWealthControlDialog::setSelectedMints.clear();
+    ui->labelzWealthSelected_int->setText(QString("0"));
     ui->labelQuantitySelected_int->setText(QString("0"));
 
     // Some statistics for entertainment
@@ -496,7 +496,7 @@ void PrivacyDialog::sendzTUP()
     CAmount nValueIn = 0;
     int nCount = 0;
     for (CZerocoinSpend spend : receipt.GetSpends()) {
-        strStats += tr("zTUP Spend #: ") + QString::number(nCount) + ", ";
+        strStats += tr("zWEALTH Spend #: ") + QString::number(nCount) + ", ";
         strStats += tr("denomination: ") + QString::number(spend.GetDenomination()) + ", ";
         strStats += tr("serial: ") + spend.GetSerial().ToString().c_str() + "\n";
         strStats += tr("Spend is 1 of : ") + QString::number(spend.GetMintCount()) + " mints in the accumulator\n";
@@ -506,13 +506,13 @@ void PrivacyDialog::sendzTUP()
 
     CAmount nValueOut = 0;
     for (const CTxOut& txout: wtxNew.vout) {
-        strStats += tr("value out: ") + FormatMoney(txout.nValue).c_str() + " TUP, ";
+        strStats += tr("value out: ") + FormatMoney(txout.nValue).c_str() + " WEALTH, ";
         nValueOut += txout.nValue;
 
         strStats += tr("address: ");
         CTxDestination dest;
         if(txout.scriptPubKey.IsZerocoinMint())
-            strStats += tr("zTUP Mint");
+            strStats += tr("zWEALTH Mint");
         else if(ExtractDestination(txout.scriptPubKey, dest))
             strStats += tr(CBitcoinAddress(dest).ToString().c_str());
         strStats += "\n";
@@ -527,7 +527,7 @@ void PrivacyDialog::sendzTUP()
     strReturn += strStats;
 
     // Clear amount to avoid double spending when accidentally clicking twice
-    ui->zTUPpayAmount->setText ("0");
+    ui->zWEALTHpayAmount->setText ("0");
 
     ui->TEMintStatus->setPlainText(strReturn);
     ui->TEMintStatus->repaint();
@@ -619,7 +619,7 @@ void PrivacyDialog::setBalance(const CAmount& balance, const CAmount& unconfirme
         mapImmature.insert(make_pair(denom, 0));
     }
 
-    std::vector<CMintMeta> vMints = pwalletMain->ztupTracker->GetMints(false);
+    std::vector<CMintMeta> vMints = pwalletMain->zwealthTracker->GetMints(false);
     map<libzerocoin::CoinDenomination, int> mapMaturityHeights = GetMintMaturityHeight();
     for (auto& meta : vMints){
         // All denominations
@@ -662,7 +662,7 @@ void PrivacyDialog::setBalance(const CAmount& balance, const CAmount& unconfirme
 
         strDenomStats = strUnconfirmed + QString::number(mapDenomBalances.at(denom)) + " x " +
                         QString::number(nCoins) + " = <b>" +
-                        QString::number(nSumPerCoin) + " zTUP </b>";
+                        QString::number(nSumPerCoin) + " zWEALTH </b>";
 
         switch (nCoins) {
             case libzerocoin::CoinDenomination::ZQ_ONE:
@@ -700,9 +700,9 @@ void PrivacyDialog::setBalance(const CAmount& balance, const CAmount& unconfirme
         nLockedBalance = walletModel->getLockedBalance();
     }
 
-    ui->labelzAvailableAmount->setText(QString::number(zerocoinBalance/COIN) + QString(" zTUP "));
-    ui->labelzAvailableAmount_2->setText(QString::number(matureZerocoinBalance/COIN) + QString(" zTUP "));
-    ui->labelzTUPAmountValue->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, balance - immatureBalance - nLockedBalance, false, BitcoinUnits::separatorAlways));
+    ui->labelzAvailableAmount->setText(QString::number(zerocoinBalance/COIN) + QString(" zWEALTH "));
+    ui->labelzAvailableAmount_2->setText(QString::number(matureZerocoinBalance/COIN) + QString(" zWEALTH "));
+    ui->labelzWEALTHAmountValue->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, balance - immatureBalance - nLockedBalance, false, BitcoinUnits::separatorAlways));
 
     // Display AutoMint status
     updateAutomintStatus();
@@ -711,11 +711,11 @@ void PrivacyDialog::setBalance(const CAmount& balance, const CAmount& unconfirme
     updateSPORK16Status();
 
     // Display global supply
-    ui->labelZsupplyAmount->setText(QString::number(chainActive.Tip()->GetZerocoinSupply()/COIN) + QString(" <b>zTUP </b> "));
+    ui->labelZsupplyAmount->setText(QString::number(chainActive.Tip()->GetZerocoinSupply()/COIN) + QString(" <b>zWEALTH </b> "));
     for (auto denom : libzerocoin::zerocoinDenomList) {
         int64_t nSupply = chainActive.Tip()->mapZerocoinSupply.at(denom);
         QString strSupply = QString::number(nSupply) + " x " + QString::number(denom) + " = <b>" +
-                            QString::number(nSupply*denom) + " zTUP </b> ";
+                            QString::number(nSupply*denom) + " zWEALTH </b> ";
         switch (denom) {
             case libzerocoin::CoinDenomination::ZQ_ONE:
                 ui->labelZsupplyAmount1->setText(strSupply);
@@ -761,7 +761,7 @@ void PrivacyDialog::updateDisplayUnit()
 
 void PrivacyDialog::showOutOfSyncWarning(bool fShow)
 {
-    ui->labelzTUPSyncStatus->setVisible(fShow);
+    ui->labelzWEALTHSyncStatus->setVisible(fShow);
 }
 
 void PrivacyDialog::keyPressEvent(QKeyEvent* event)
@@ -793,21 +793,21 @@ void PrivacyDialog::updateSPORK16Status()
 {
     // Update/enable labels, buttons and tooltips depending on the current SPORK_16 status
     if(GetAdjustedTime() > GetSporkValue(SPORK_16_ZEROCOIN_MAINTENANCE_MODE)) {
-        // Mint zTUP
-        ui->pushButtonMintzTUP->setEnabled(false);
-        ui->pushButtonMintzTUP->setToolTip(tr("zTUP is currently disabled due to maintenance."));
+        // Mint zWEALTH
+        ui->pushButtonMintzWEALTH->setEnabled(false);
+        ui->pushButtonMintzWEALTH->setToolTip(tr("zWEALTH is currently disabled due to maintenance."));
 
-        // Spend zTUP
-        ui->pushButtonSpendzTUP->setEnabled(false);
-        ui->pushButtonSpendzTUP->setToolTip(tr("zTUP is currently disabled due to maintenance."));
+        // Spend zWEALTH
+        ui->pushButtonSpendzWEALTH->setEnabled(false);
+        ui->pushButtonSpendzWEALTH->setToolTip(tr("zWEALTH is currently disabled due to maintenance."));
     }
     else {
-        // Mint zTUP
-        ui->pushButtonMintzTUP->setEnabled(true);
-        ui->pushButtonMintzTUP->setToolTip(tr("PrivacyDialog", "Enter an amount of TUP to convert to zTUP", 0));
+        // Mint zWEALTH
+        ui->pushButtonMintzWEALTH->setEnabled(true);
+        ui->pushButtonMintzWEALTH->setToolTip(tr("PrivacyDialog", "Enter an amount of WEALTH to convert to zWEALTH", 0));
 
-        // Spend zTUP
-        ui->pushButtonSpendzTUP->setEnabled(true);
-        ui->pushButtonSpendzTUP->setToolTip(tr("Spend Zerocoin. Without 'Pay To:' address creates payments to yourself."));
+        // Spend zWEALTH
+        ui->pushButtonSpendzWEALTH->setEnabled(true);
+        ui->pushButtonSpendzWEALTH->setToolTip(tr("Spend Zerocoin. Without 'Pay To:' address creates payments to yourself."));
     }
 }

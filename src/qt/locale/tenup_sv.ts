@@ -176,16 +176,16 @@
         <translation>Bekräfta plånboks krypering</translation>
     </message>
     <message>
-        <source>WealthSilo will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your TUPs from being stolen by malware infecting your computer.</source>
-        <translation>WealthSilo kommer att stängas ner nu för att färdigställa kryperingsprocessen. Kom ihåg att kryptering av din plånbok inte kan säkerställa dina TUPs från att bli stulna av skadeprogram som infekterat din dator.</translation>
+        <source>WealthSilo will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your WEALTHs from being stolen by malware infecting your computer.</source>
+        <translation>WealthSilo kommer att stängas ner nu för att färdigställa kryperingsprocessen. Kom ihåg att kryptering av din plånbok inte kan säkerställa dina WEALTHs från att bli stulna av skadeprogram som infekterat din dator.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Är du säker på att du vill kryptera din plånbok?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR TUP&lt;/b&gt;!</source>
-        <translation>Varning: om du krypterar din plånbok och tappar bort din lösenfras kommer du &lt;b&gt; FÖRLORA ALLA DINA TUP&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR WEALTH&lt;/b&gt;!</source>
+        <translation>Varning: om du krypterar din plånbok och tappar bort din lösenfras kommer du &lt;b&gt; FÖRLORA ALLA DINA WEALTH&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -433,8 +433,8 @@
         <translation>Bläddra i transaktions historiken</translation>
     </message>
     <message>
-        <source>Privacy Actions for zTUP</source>
-        <translation>Integritets funktioner för zTUP</translation>
+        <source>Privacy Actions for zWEALTH</source>
+        <translation>Integritets funktioner för zWEALTH</translation>
     </message>
     <message>
         <source>E&amp;xit</source>
@@ -653,8 +653,8 @@
         <translation>Skicka mynt till en WealthSilo adress</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and tenup: URIs)</source>
-        <translation>Begär betalning (genererar QR kod och tenup: URls)</translation>
+        <source>Request payments (generates QR codes and wealthsilo: URIs)</source>
+        <translation>Begär betalning (genererar QR kod och wealthsilo: URls)</translation>
     </message>
     <message>
         <source>&amp;Privacy</source>
@@ -892,8 +892,8 @@ MultiSend: %1</translation>
         <translation>text etikett</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (tenup.conf).</source>
-        <translation>Alla transaktioner kommer inte visas. För att visa alla transaktioner behöver du sätta txindex=1 i konfigurationsfilen (tenup.conf).</translation>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (wealthsilo.conf).</source>
+        <translation>Alla transaktioner kommer inte visas. För att visa alla transaktioner behöver du sätta txindex=1 i konfigurationsfilen (wealthsilo.conf).</translation>
     </message>
 </context>
 <context>
@@ -1130,8 +1130,8 @@ MultiSend: %1</translation>
         <translation>Den här etiketten blir röd, ifall någon mottagare får en mängd som är mindre än %1.</translation>
     </message>
     <message>
-        <source>Can vary +/- %1 utup per input.</source>
-        <translation>Kan variera med +/- %1 utup per inmatning.</translation>
+        <source>Can vary +/- %1 uwealth per input.</source>
+        <translation>Kan variera med +/- %1 uwealth per inmatning.</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -1676,8 +1676,8 @@ Var god vänta efter att du trycker på importera.</translation>
         <translation>Adress / Mängd:</translation>
     </message>
     <message>
-        <source>Add destinations to send TUP to</source>
-        <translation>Lägg till destination att skicka TUP till</translation>
+        <source>Add destinations to send WEALTH to</source>
+        <translation>Lägg till destination att skicka WEALTH till</translation>
     </message>
     <message>
         <source>Add &amp;Destination</source>
@@ -1763,32 +1763,32 @@ Var god vänta efter att du trycker på importera.</translation>
         <translation>Var vänlig och välj en sekretess nivå.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 25000 TUP</source>
-        <translation>Använd 2 separata huvudnoder för att blanda tillgångar upp till 25000 TUP</translation>
+        <source>Use 2 separate masternodes to mix funds up to 25000 WEALTH</source>
+        <translation>Använd 2 separata huvudnoder för att blanda tillgångar upp till 25000 WEALTH</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 25000 TUP</source>
-        <translation>Använd 8 separata huvudnoderför att blanda tillgångar upp till 25000 TUP</translation>
+        <source>Use 8 separate masternodes to mix funds up to 25000 WEALTH</source>
+        <translation>Använd 8 separata huvudnoderför att blanda tillgångar upp till 25000 WEALTH</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>Använd 16 separata huvudnoder</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 TUP to anonymize 25000 TUP</source>
-        <translation>Det här alternativet är det snabbaste och kommer kostar ungefär ~0.025 TUP för att anonymisera 25000 TUP</translation>
+        <source>This option is the quickest and will cost about ~0.025 WEALTH to anonymize 25000 WEALTH</source>
+        <translation>Det här alternativet är det snabbaste och kommer kostar ungefär ~0.025 WEALTH för att anonymisera 25000 WEALTH</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 TUP to anonymize 25000 TUP</source>
-        <translation>Det här alternativet är måttligt snabb och kommer kostar ungefär 0.05 TUP för att anonymisera 25000 TUP</translation>
+        <source>This option is moderately fast and will cost about 0.05 WEALTH to anonymize 25000 WEALTH</source>
+        <translation>Det här alternativet är måttligt snabb och kommer kostar ungefär 0.05 WEALTH för att anonymisera 25000 WEALTH</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
         <translation>Det här är det långsammaste och säkraste alternativet. Använda maximal anonymitet kommer kosta</translation>
     </message>
     <message>
-        <source>0.1 TUP per  10000 TUP you anonymize.</source>
-        <translation>0.1 TUP per  10000 TUP du anonymiserar.</translation>
+        <source>0.1 WEALTH per  10000 WEALTH you anonymize.</source>
+        <translation>0.1 WEALTH per  10000 WEALTH du anonymiserar.</translation>
     </message>
     <message>
         <source>Obfuscation Configuration</source>
@@ -1886,33 +1886,33 @@ Var god vänta efter att du trycker på importera.</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/tenup-project/tenup-project-translations</source>
+https://www.transifex.com/wealthsilo-project/wealthsilo-project-translations</source>
         <translation>Fattas språk eller är översättningen ofullständig? Hjälp till att bidra med översättning här:
-https://www.transifex.com/tenup-project/tenup-project-translations</translation>
+https://www.transifex.com/wealthsilo-project/wealthsilo-project-translations</translation>
     </message>
     <message>
-        <source>Enable automatic minting of TUP units to zTUP</source>
-        <translation>Tillåt automatisk minting med TUP enheter till zTUP</translation>
+        <source>Enable automatic minting of WEALTH units to zWEALTH</source>
+        <translation>Tillåt automatisk minting med WEALTH enheter till zWEALTH</translation>
     </message>
     <message>
-        <source>Enable zTUP Automint</source>
-        <translation>Tillåt zTUP Automint</translation>
+        <source>Enable zWEALTH Automint</source>
+        <translation>Tillåt zWEALTH Automint</translation>
     </message>
     <message>
-        <source>Percentage of incoming TUP which get automatically converted to zTUP via Zerocoin Protocol (min: 10%)</source>
-        <translation>Procent av inkommande TUP som automatiskt konverteras till zTUP via Zerocoin Protokollet (min: 10%)</translation>
+        <source>Percentage of incoming WEALTH which get automatically converted to zWEALTH via Zerocoin Protocol (min: 10%)</source>
+        <translation>Procent av inkommande WEALTH som automatiskt konverteras till zWEALTH via Zerocoin Protokollet (min: 10%)</translation>
     </message>
     <message>
-        <source>Percentage of autominted zTUP</source>
-        <translation>Procent av automintade zTUP</translation>
+        <source>Percentage of autominted zWEALTH</source>
+        <translation>Procent av automintade zWEALTH</translation>
     </message>
     <message>
-        <source>Wait with automatic conversion to Zerocoin until enough TUP for this denomination is available</source>
-        <translation>Vänta med automatisk omvandling till Zerocoin tills tillräckligt många TUP för denna valör är tillgängliga</translation>
+        <source>Wait with automatic conversion to Zerocoin until enough WEALTH for this denomination is available</source>
+        <translation>Vänta med automatisk omvandling till Zerocoin tills tillräckligt många WEALTH för denna valör är tillgängliga</translation>
     </message>
     <message>
-        <source>Preferred Automint zTUP Denomination</source>
-        <translation>Automint zTUP valör som föredras</translation>
+        <source>Preferred Automint zWEALTH Denomination</source>
+        <translation>Automint zWEALTH valör som föredras</translation>
     </message>
     <message>
         <source>Stake split threshold:</source>
@@ -2030,8 +2030,8 @@ https://www.transifex.com/tenup-project/tenup-project-translations</translation>
         <translation>All saldo, inkluderat alla otillgängliga mynt.</translation>
     </message>
     <message>
-        <source>TUP Balance</source>
-        <translation>TUP Saldo</translation>
+        <source>WEALTH Balance</source>
+        <translation>WEALTH Saldo</translation>
     </message>
     <message>
         <source>Pending:</source>
@@ -2058,14 +2058,14 @@ https://www.transifex.com/tenup-project/tenup-project-translations</translation>
         <translation>Ditt nuvarande WealthSilo saldo, obekräftade och omogna transaktioner är inkluderade</translation>
     </message>
     <message>
-        <source>zTUP Balance</source>
-        <translation>zTUP Saldo</translation>
+        <source>zWEALTH Balance</source>
+        <translation>zWEALTH Saldo</translation>
     </message>
     <message>
         <source>Mature: more than 20 confirmation and more than 1 mint of the same denomination after it was minted.
-These zTUP are spendable.</source>
+These zWEALTH are spendable.</source>
         <translation>Mogna: över 20 bekräftelser och över 1 mint av samma valör efter den blev mintad
-Dessa zTUP kan spenderas.</translation>
+Dessa zWEALTH kan spenderas.</translation>
     </message>
     <message>
         <source>Unconfirmed: less than 20 confirmations
@@ -2118,8 +2118,8 @@ Omogna: bekräftade men under 1 mint av samma valör efter den blev mintad</tran
         <translation>Spenderbart:</translation>
     </message>
     <message>
-        <source>Locked TUP or Masternode collaterals. These are excluded from zTUP minting.</source>
-        <translation>Låsta TUP eller huvudnod säkerheter. Dessa är uteslutna från zTUP minting.</translation>
+        <source>Locked WEALTH or Masternode collaterals. These are excluded from zWEALTH minting.</source>
+        <translation>Låsta WEALTH eller huvudnod säkerheter. Dessa är uteslutna från zWEALTH minting.</translation>
     </message>
     <message>
         <source>Locked:</source>
@@ -2130,8 +2130,8 @@ Omogna: bekräftade men under 1 mint av samma valör efter den blev mintad</tran
         <translation>Obekräftade:</translation>
     </message>
     <message>
-        <source>Your current zTUP balance, unconfirmed and immature zTUP included.</source>
-        <translation>Ditt nuvarande zTUP saldo, obekräftade och omogna zTUP inräknade.</translation>
+        <source>Your current zWEALTH balance, unconfirmed and immature zWEALTH included.</source>
+        <translation>Ditt nuvarande zWEALTH saldo, obekräftade och omogna zWEALTH inräknade.</translation>
     </message>
     <message>
         <source>Recent transactions</source>
@@ -2142,10 +2142,10 @@ Omogna: bekräftade men under 1 mint av samma valör efter den blev mintad</tran
         <translation>osynkroniserad</translation>
     </message>
     <message>
-        <source>Current percentage of zTUP.
+        <source>Current percentage of zWEALTH.
 If AutoMint is enabled this percentage will settle around the configured AutoMint percentage (default = 10%).
 </source>
-        <translation>Nuvarande procent zTUP.
+        <translation>Nuvarande procent zWEALTH.
 Om AutoMint är tillåten så kommer denna procent sätta sig runt den konfigurerade AutoMint procenten (standard = 10%).
 </translation>
     </message>
@@ -2154,14 +2154,14 @@ Om AutoMint är tillåten så kommer denna procent sätta sig runt den konfigure
         <translation>AutoMint är för tillfället aktiverat och satt på</translation>
     </message>
     <message>
-        <source>To disable AutoMint add 'enablezeromint=0' in tenup.conf.</source>
-        <translation>För att inaktivera AutoMint, lägg till 'enablezeromint=0' i tenup.conf.</translation>
+        <source>To disable AutoMint add 'enablezeromint=0' in wealthsilo.conf.</source>
+        <translation>För att inaktivera AutoMint, lägg till 'enablezeromint=0' i wealthsilo.conf.</translation>
     </message>
     <message>
         <source>AutoMint is currently disabled.
-To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in tenup.conf</source>
+To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in wealthsilo.conf</source>
         <translation>AutoMint är för närvarande inaktiverat.
-För att aktivera AutoMint ändra 'enablezeromint=0' till 'enablezeromint=1' i tenup.conf</translation>
+För att aktivera AutoMint ändra 'enablezeromint=0' till 'enablezeromint=1' i wealthsilo.conf</translation>
     </message>
 </context>
 <context>
@@ -2187,8 +2187,8 @@ För att aktivera AutoMint ändra 'enablezeromint=0' till 'enablezeromint=1' i t
         <translation>Ogiltig betalningsadress %1</translation>
     </message>
     <message>
-        <source>Cannot start tenup: click-to-pay handler</source>
-        <translation>Kan ej starta tenup: klicka-för-att-betala hanterare</translation>
+        <source>Cannot start wealthsilo: click-to-pay handler</source>
+        <translation>Kan ej starta wealthsilo: klicka-för-att-betala hanterare</translation>
     </message>
     <message>
         <source>URI cannot be parsed! This can be caused by an invalid WealthSilo address or malformed URI parameters.</source>
@@ -2289,8 +2289,8 @@ För att aktivera AutoMint ändra 'enablezeromint=0' till 'enablezeromint=1' i t
         <translation>0</translation>
     </message>
     <message>
-        <source>zTUP</source>
-        <translation>zTUP</translation>
+        <source>zWEALTH</source>
+        <translation>zWEALTH</translation>
     </message>
     <message>
         <source>Available for minting are coins which are confirmed and not locked or Masternode collaterals.</source>
@@ -2301,8 +2301,8 @@ För att aktivera AutoMint ändra 'enablezeromint=0' till 'enablezeromint=1' i t
         <translation>Tillgängligt att Minta med:</translation>
     </message>
     <message>
-        <source>0.000 000 00 TUP</source>
-        <translation>0.000 000 00 TUP</translation>
+        <source>0.000 000 00 WEALTH</source>
+        <translation>0.000 000 00 WEALTH</translation>
     </message>
     <message>
         <source>Reset Zerocoin Wallet DB. Deletes transactions that did not make it into the blockchain.</source>
@@ -2341,16 +2341,16 @@ För att aktivera AutoMint ändra 'enablezeromint=0' till 'enablezeromint=1' i t
         <translation>SEKRETESS</translation>
     </message>
     <message>
-        <source>Enter an amount of TUP to convert to zTUP</source>
-        <translation>Mata in en mängd TUP att konvertera till zTUP</translation>
+        <source>Enter an amount of WEALTH to convert to zWEALTH</source>
+        <translation>Mata in en mängd WEALTH att konvertera till zWEALTH</translation>
     </message>
     <message>
-        <source>zTUP Control</source>
-        <translation>zTUP Kontroll</translation>
+        <source>zWEALTH Control</source>
+        <translation>zWEALTH Kontroll</translation>
     </message>
     <message>
-        <source>zTUP Selected:</source>
-        <translation>zTUP Valda:</translation>
+        <source>zWEALTH Selected:</source>
+        <translation>zWEALTH Valda:</translation>
     </message>
     <message>
         <source>Quantity Selected:</source>
@@ -2365,24 +2365,24 @@ För att aktivera AutoMint ändra 'enablezeromint=0' till 'enablezeromint=1' i t
         <translation>Spendera Zerocoin</translation>
     </message>
     <message>
-        <source>Available (mature and spendable) zTUP for spending</source>
-        <translation>Tillgängliga (mogna och spenderbara) zTUP att spendera</translation>
+        <source>Available (mature and spendable) zWEALTH for spending</source>
+        <translation>Tillgängliga (mogna och spenderbara) zWEALTH att spendera</translation>
     </message>
     <message>
         <source>Available Balance:</source>
         <translation>Tillgängligt Saldo:</translation>
     </message>
     <message>
-        <source>Available (mature and spendable) zTUP for spending
+        <source>Available (mature and spendable) zWEALTH for spending
 
-zTUP are mature when they have more than 20 confirmations AND more than 2 mints of the same denomination after them were minted</source>
-        <translation>Tillgängliga (mogna och spenderbara) zTUP att spendera
+zWEALTH are mature when they have more than 20 confirmations AND more than 2 mints of the same denomination after them were minted</source>
+        <translation>Tillgängliga (mogna och spenderbara) zWEALTH att spendera
 
-zTUP är mogna när de har över 20 bekräftelser OCH över 2 mints av samma valör efter de mintades.</translation>
+zWEALTH är mogna när de har över 20 bekräftelser OCH över 2 mints av samma valör efter de mintades.</translation>
     </message>
     <message>
-        <source>0 zTUP</source>
-        <translation>0 zTUP</translation>
+        <source>0 zWEALTH</source>
+        <translation>0 zWEALTH</translation>
     </message>
     <message>
         <source>Security Level for Zerocoin Transactions. More is better, but needs more time and resources.</source>
@@ -2445,8 +2445,8 @@ zTUP är mogna när de har över 20 bekräftelser OCH över 2 mints av samma val
         <translation>Zerocoin Stats:</translation>
     </message>
     <message>
-        <source>Total Balance including unconfirmed and immature zTUP</source>
-        <translation>Totalt Saldo, obekräftade och omogna zTUP inkluderade</translation>
+        <source>Total Balance including unconfirmed and immature zWEALTH</source>
+        <translation>Totalt Saldo, obekräftade och omogna zWEALTH inkluderade</translation>
     </message>
     <message>
         <source>Total Zerocoin  Balance:</source>
@@ -2467,24 +2467,24 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
 Omogna: bekräftade men under 1 mint av samma valör efter den blev mintad</translation>
     </message>
     <message>
-        <source>Show the current status of automatic zTUP minting.
+        <source>Show the current status of automatic zWEALTH minting.
 
 To change the status (restart required):
-- enable: add 'enablezeromint=1' to tenup.conf
-- disable: add 'enablezeromint=0' to tenup.conf
+- enable: add 'enablezeromint=1' to wealthsilo.conf
+- disable: add 'enablezeromint=0' to wealthsilo.conf
 
 To change the percentage (no restart required):
-- menu Settings-&gt;Options-&gt;Percentage of autominted zTUP
+- menu Settings-&gt;Options-&gt;Percentage of autominted zWEALTH
 
 </source>
-        <translation>Visa den nuvarande statusen av automatisk zTUP minting.
+        <translation>Visa den nuvarande statusen av automatisk zWEALTH minting.
 
 För att ändra statusen (omstart krävs):
--aktivera: lägg till 'enablezeromint=1' i tenup.conf
--inaktivera: lägg till 'enablezeromint=0' i tenup.conf
+-aktivera: lägg till 'enablezeromint=1' i wealthsilo.conf
+-inaktivera: lägg till 'enablezeromint=0' i wealthsilo.conf
 
 För att ändra procenten (ingen omstart krävs):
--meny Inställningar-&gt;Alternativ-&gt;Procent på autominted zTUP
+-meny Inställningar-&gt;Alternativ-&gt;Procent på autominted zWEALTH
 
 </translation>
     </message>
@@ -2661,12 +2661,12 @@ För att ändra procenten (ingen omstart krävs):
         <translation>Kopiera antal</translation>
     </message>
     <message>
-        <source>zTUP Spend #: </source>
-        <translation>zTUP spendering #:</translation>
+        <source>zWEALTH Spend #: </source>
+        <translation>zWEALTH spendering #:</translation>
     </message>
     <message>
-        <source>zTUP Mint</source>
-        <translation>zTUP Mint</translation>
+        <source>zWEALTH Mint</source>
+        <translation>zWEALTH Mint</translation>
     </message>
     <message>
         <source> &lt;b&gt;enabled&lt;/b&gt;.</source>
@@ -2681,12 +2681,12 @@ För att ändra procenten (ingen omstart krävs):
         <translation>Konfigurerat mål för procenten: &lt;b&gt;</translation>
     </message>
     <message>
-        <source>zTUP is currently disabled due to maintenance.</source>
-        <translation>zTUP är för nuvarande inaktiverat p.g.a. underhållning.</translation>
+        <source>zWEALTH is currently disabled due to maintenance.</source>
+        <translation>zWEALTH är för nuvarande inaktiverat p.g.a. underhållning.</translation>
     </message>
     <message>
-        <source>zTUP is currently undergoing maintenance.</source>
-        <translation>zTUP genomgår för tillfället underhåll.</translation>
+        <source>zWEALTH is currently undergoing maintenance.</source>
+        <translation>zWEALTH genomgår för tillfället underhåll.</translation>
     </message>
     <message>
         <source>Denom. with value &lt;b&gt;1&lt;/b&gt;:</source>
@@ -2773,8 +2773,8 @@ För att ändra procenten (ingen omstart krävs):
         <translation>Mintad med Framgång</translation>
     </message>
     <message>
-        <source> zTUP in </source>
-        <translation>zTUP i</translation>
+        <source> zWEALTH in </source>
+        <translation>zWEALTH i</translation>
     </message>
     <message>
         <source>Starting ResetMintZerocoin: rescanning complete blockchain, this will need up to 30 minutes depending on your hardware. 
@@ -2835,12 +2835,12 @@ Datorkraftskrävande, kan behöva flera minuter beroende på den valda säkerhet
 Var god dröjj...</translation>
     </message>
     <message>
-        <source>Version 1 zTUP require a security level of 100 to successfully spend.</source>
-        <translation>Version 1 zTUP kräver en säkerhetsnivå på 100 för att kunna spenderas med framgång.</translation>
+        <source>Version 1 zWEALTH require a security level of 100 to successfully spend.</source>
+        <translation>Version 1 zWEALTH kräver en säkerhetsnivå på 100 för att kunna spenderas med framgång.</translation>
     </message>
     <message>
-        <source>Failed to spend zTUP</source>
-        <translation>Misslyckades att spendera zTUP</translation>
+        <source>Failed to spend zWEALTH</source>
+        <translation>Misslyckades att spendera zWEALTH</translation>
     </message>
     <message>
         <source>Failed to fetch mint associated with serial hash</source>
@@ -2868,7 +2868,7 @@ Minta antingen högre valörer (så att färre inputs behövs) eller spendera mi
     </message>
     <message numerus="yes">
         <source>PrivacyDialog</source>
-        <comment>Enter an amount of TUP to convert to zTUP</comment>
+        <comment>Enter an amount of WEALTH to convert to zWEALTH</comment>
         <translation><numerusform>SekretessRuta</numerusform><numerusform>SekretessRuta</numerusform></translation>
     </message>
     <message>
@@ -3157,8 +3157,8 @@ Minta antingen högre valörer (så att färre inputs behövs) eller spendera mi
         <translation>Skräddarsydd Backup Sökväg:</translation>
     </message>
     <message>
-        <source>Custom zTUP Backup Path:</source>
-        <translation>Skräddarsydd zTUP Backup Sökväg:</translation>
+        <source>Custom zWEALTH Backup Path:</source>
+        <translation>Skräddarsydd zWEALTH Backup Sökväg:</translation>
     </message>
     <message>
         <source>Custom Backups Threshold:</source>
@@ -3561,8 +3561,8 @@ Minta antingen högre valörer (så att färre inputs behövs) eller spendera mi
         <translation>UTXO Storlek:</translation>
     </message>
     <message>
-        <source>0 TUP</source>
-        <translation>0 TUP</translation>
+        <source>0 WEALTH</source>
+        <translation>0 WEALTH</translation>
     </message>
     <message>
         <source>Transaction Fee:</source>
@@ -3613,12 +3613,12 @@ Minta antingen högre valörer (så att färre inputs behövs) eller spendera mi
         <translation>Mynt automatiskt valda</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uTUPs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uTUPs in fee,&lt;br /&gt;while "at least" pays 1000 uTUPs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Om 1000 uTUPs är den valda skräddarsydda avgiften och transaktionen är bara 250 bytes så kommer "per kilobyte" bara betala 250 uTUPs i avgift,&lt;br /&gt;medans "minst" betalar 1000 uTUPs. För transaktioner större än en kilobyte så betalar båda per kilobyte.</translation>
+        <source>If the custom fee is set to 1000 uWEALTHs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uWEALTHs in fee,&lt;br /&gt;while "at least" pays 1000 uWEALTHs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Om 1000 uWEALTHs är den valda skräddarsydda avgiften och transaktionen är bara 250 bytes så kommer "per kilobyte" bara betala 250 uWEALTHs i avgift,&lt;br /&gt;medans "minst" betalar 1000 uWEALTHs. För transaktioner större än en kilobyte så betalar båda per kilobyte.</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uTUPs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uTUPs in fee,&lt;br /&gt;while "total at least" pays 1000 uTUPs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Om 1000 uTUPs är den valda skräddarsydda avgiften och transaktionen är bara 250 bytes så kommer "per kilobyte" bara betala 250 uTUPs i avgift,&lt;br /&gt;medans "minst totalt" betalar 1000 uTUPs. För transaktioner större än en kilobyte så betalar båda per kilobyte.</translation>
+        <source>If the custom fee is set to 1000 uWEALTHs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uWEALTHs in fee,&lt;br /&gt;while "total at least" pays 1000 uWEALTHs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Om 1000 uWEALTHs är den valda skräddarsydda avgiften och transaktionen är bara 250 bytes så kommer "per kilobyte" bara betala 250 uWEALTHs i avgift,&lt;br /&gt;medans "minst totalt" betalar 1000 uWEALTHs. För transaktioner större än en kilobyte så betalar båda per kilobyte.</translation>
     </message>
     <message>
         <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for WealthSilo transactions than the network can process.</source>
@@ -3661,8 +3661,8 @@ Minta antingen högre valörer (så att färre inputs behövs) eller spendera mi
         <translation>Skicka till flera mottagare på en gång</translation>
     </message>
     <message>
-        <source>Anonymized TUP</source>
-        <translation>Anonymiserade TUP</translation>
+        <source>Anonymized WEALTH</source>
+        <translation>Anonymiserade WEALTH</translation>
     </message>
     <message>
         <source>Balance:</source>
@@ -4301,12 +4301,12 @@ Minta antingen högre valörer (så att färre inputs behövs) eller spendera mi
         <translation>Mottaget via Förvirring</translation>
     </message>
     <message>
-        <source>TUP Stake</source>
-        <translation>TUP stake</translation>
+        <source>WEALTH Stake</source>
+        <translation>WEALTH stake</translation>
     </message>
     <message>
-        <source>zTUP Stake</source>
-        <translation>zTUP Stake</translation>
+        <source>zWEALTH Stake</source>
+        <translation>zWEALTH Stake</translation>
     </message>
     <message>
         <source>Obfuscation Denominate</source>
@@ -4321,32 +4321,32 @@ Minta antingen högre valörer (så att färre inputs behövs) eller spendera mi
         <translation>Förvirring Gör Kollateral Inmatning</translation>
     </message>
     <message>
-        <source>Converted TUP to zTUP</source>
-        <translation>Konvertera TUP till zTUP</translation>
+        <source>Converted WEALTH to zWEALTH</source>
+        <translation>Konvertera WEALTH till zWEALTH</translation>
     </message>
     <message>
-        <source>Spent zTUP</source>
-        <translation>Spendera zTUP</translation>
+        <source>Spent zWEALTH</source>
+        <translation>Spendera zWEALTH</translation>
     </message>
     <message>
-        <source>Received TUP from zTUP</source>
-        <translation>Mottog TUP från zTUP</translation>
+        <source>Received WEALTH from zWEALTH</source>
+        <translation>Mottog WEALTH från zWEALTH</translation>
     </message>
     <message>
-        <source>Minted Change as zTUP from zTUP Spend</source>
-        <translation>Mintad Växel som zTUP från zTUP Spendera</translation>
+        <source>Minted Change as zWEALTH from zWEALTH Spend</source>
+        <translation>Mintad Växel som zWEALTH från zWEALTH Spendera</translation>
     </message>
     <message>
-        <source>Converted zTUP to TUP</source>
-        <translation>Convert zTUP to TUP</translation>
+        <source>Converted zWEALTH to WEALTH</source>
+        <translation>Convert zWEALTH to WEALTH</translation>
     </message>
     <message>
-        <source>Anonymous (zTUP Transaction)</source>
-        <translation>Anonym (zTUP Transaktion)</translation>
+        <source>Anonymous (zWEALTH Transaction)</source>
+        <translation>Anonym (zWEALTH Transaktion)</translation>
     </message>
     <message>
-        <source>Anonymous (zTUP Stake)</source>
-        <translation>Anonym (zTUP Stake)</translation>
+        <source>Anonymous (zWEALTH Stake)</source>
+        <translation>Anonym (zWEALTH Stake)</translation>
     </message>
     <message>
         <source>Sent to</source>
@@ -4552,12 +4552,12 @@ Minta antingen högre valörer (så att färre inputs behövs) eller spendera mi
         <translation>Exportering Lyckat</translation>
     </message>
     <message>
-        <source>Received TUP from zTUP</source>
-        <translation>Mottog TUP från zTUP</translation>
+        <source>Received WEALTH from zWEALTH</source>
+        <translation>Mottog WEALTH från zWEALTH</translation>
     </message>
     <message>
-        <source>Zerocoin Spend, Change in zTUP</source>
-        <translation>Zerocoin spendera, Växel i zTUP</translation>
+        <source>Zerocoin Spend, Change in zWEALTH</source>
+        <translation>Zerocoin spendera, Växel i zWEALTH</translation>
     </message>
     <message>
         <source>The transaction history was successfully saved to %1.</source>
@@ -4593,8 +4593,8 @@ Minta antingen högre valörer (så att färre inputs behövs) eller spendera mi
         <translation>Skicka Mynt</translation>
     </message>
     <message>
-        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 TUP.</source>
-        <translation>wiftX stödjer inte att skicka så höga värden än. Transaktioner är för nuvarande begränsade till %1 TUP.</translation>
+        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 WEALTH.</source>
+        <translation>wiftX stödjer inte att skicka så höga värden än. Transaktioner är för nuvarande begränsade till %1 WEALTH.</translation>
     </message>
 </context>
 <context>
@@ -4625,10 +4625,10 @@ Minta antingen högre valörer (så att färre inputs behövs) eller spendera mi
     </message>
 </context>
 <context>
-    <name>ZTupControlDialog</name>
+    <name>ZWealthControlDialog</name>
     <message>
-        <source>Select zTUP to Spend</source>
-        <translation>Välj zTUP att Spendera</translation>
+        <source>Select zWEALTH to Spend</source>
+        <translation>Välj zWEALTH att Spendera</translation>
     </message>
     <message>
         <source>Quantity</source>
@@ -4639,8 +4639,8 @@ Minta antingen högre valörer (så att färre inputs behövs) eller spendera mi
         <translation>0</translation>
     </message>
     <message>
-        <source>zTUP</source>
-        <translation>zTUP</translation>
+        <source>zWEALTH</source>
+        <translation>zWEALTH</translation>
     </message>
     <message>
         <source>Select/Deselect All</source>
@@ -4652,7 +4652,7 @@ Minta antingen högre valörer (så att färre inputs behövs) eller spendera mi
     </message>
 </context>
 <context>
-    <name>tenup-core</name>
+    <name>wealthsilo-core</name>
     <message>
         <source>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</source>
         <translation>(1 = behåll tx meta data t.ex. kontoägare och information om betalningsförfråga, 2 = släpp tx meta data)</translation>
@@ -4706,16 +4706,16 @@ Minta antingen högre valörer (så att färre inputs behövs) eller spendera mi
         <translation>Distribuerad under MIT mjukvarulicensen, se medföljande fil COPYING eller &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</translation>
     </message>
     <message>
-        <source>Enable automatic wallet backups triggered after each zTUP minting (0-1, default: %u)</source>
-        <translation>Aktivera automatisk plånboksbackup efter varje zTUP minting (0-1, standard: %u)</translation>
+        <source>Enable automatic wallet backups triggered after each zWEALTH minting (0-1, default: %u)</source>
+        <translation>Aktivera automatisk plånboksbackup efter varje zWEALTH minting (0-1, standard: %u)</translation>
     </message>
     <message>
-        <source>Enable or disable staking functionality for TUP inputs (0-1, default: %u)</source>
-        <translation>Aktivera eller avaktivera staking funktionalitet för TUP inmatningar (0-1, standard: %u)</translation>
+        <source>Enable or disable staking functionality for WEALTH inputs (0-1, default: %u)</source>
+        <translation>Aktivera eller avaktivera staking funktionalitet för WEALTH inmatningar (0-1, standard: %u)</translation>
     </message>
     <message>
-        <source>Enable or disable staking functionality for zTUP inputs (0-1, default: %u)</source>
-        <translation>Aktivera eller avaktivera staking funktionalitet för zTUP inmatningar (0-1, standard: %u)</translation>
+        <source>Enable or disable staking functionality for zWEALTH inputs (0-1, default: %u)</source>
+        <translation>Aktivera eller avaktivera staking funktionalitet för zWEALTH inmatningar (0-1, standard: %u)</translation>
     </message>
     <message>
         <source>Enable spork administration functionality with the appropriate private key.</source>
@@ -4750,12 +4750,12 @@ Minta antingen högre valörer (så att färre inputs behövs) eller spendera mi
         <translation>Exekvera kommando när den bästa block ändras (%s i cmd är utbytt mot block hash)</translation>
     </message>
     <message>
-        <source>Fees (in TUP/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>Avgifter (i TUP/Kb) mindre än detta anses vara noll avgift i vidarebefodring (standard: %s)</translation>
+        <source>Fees (in WEALTH/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>Avgifter (i WEALTH/Kb) mindre än detta anses vara noll avgift i vidarebefodring (standard: %s)</translation>
     </message>
     <message>
-        <source>Fees (in TUP/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>Avgifter (i TUP/Kb) mindre än detta anses vara noll avgift i transaktionsskapelse (standard: %s)</translation>
+        <source>Fees (in WEALTH/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>Avgifter (i WEALTH/Kb) mindre än detta anses vara noll avgift i transaktionsskapelse (standard: %s)</translation>
     </message>
     <message>
         <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</source>
@@ -4854,8 +4854,8 @@ Minta antingen högre valörer (så att färre inputs behövs) eller spendera mi
         <translation>Kan inte binda till %s på denna dator. WealthSilo Kärna körs förmodligen redan.</translation>
     </message>
     <message>
-        <source>Unable to locate enough funds for this transaction that are not equal 25000 TUP.</source>
-        <translation>Kan inte hitta tillräckliga pengar för denna transaktion som inte är 25000 TUP.</translation>
+        <source>Unable to locate enough funds for this transaction that are not equal 25000 WEALTH.</source>
+        <translation>Kan inte hitta tillräckliga pengar för denna transaktion som inte är 25000 WEALTH.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
@@ -5254,8 +5254,8 @@ Minta antingen högre valörer (så att färre inputs behövs) eller spendera mi
         <translation>Verifierar plånbok</translation>
     </message>
     <message>
-        <source>Version 1 zTUP require a security level of 100 to successfully spend.</source>
-        <translation>Version 1 zTUP kräver en säkerhetsnivå på 100 för att kunna spenderas med framgång.</translation>
+        <source>Version 1 zWEALTH require a security level of 100 to successfully spend.</source>
+        <translation>Version 1 zWEALTH kräver en säkerhetsnivå på 100 för att kunna spenderas med framgång.</translation>
     </message>
     <message>
         <source>Wallet is locked.</source>

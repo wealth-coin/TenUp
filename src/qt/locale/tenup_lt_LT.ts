@@ -176,16 +176,16 @@
         <translation>Patvirtinkite piniginės užšifravimą.</translation>
     </message>
     <message>
-        <source>WealthSilo will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your TUPs from being stolen by malware infecting your computer.</source>
-        <translation>Dabar WealthSilo išsijungs, kad būtų užbaigtas šifravimo procesas. Atminkite, kad jūsų piniginės užšifravimas negali visiškai apsaugoti jūsų TUP nuo kenkėjiškų programų, užkrėsto jūsų kompiuterio.</translation>
+        <source>WealthSilo will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your WEALTHs from being stolen by malware infecting your computer.</source>
+        <translation>Dabar WealthSilo išsijungs, kad būtų užbaigtas šifravimo procesas. Atminkite, kad jūsų piniginės užšifravimas negali visiškai apsaugoti jūsų WEALTH nuo kenkėjiškų programų, užkrėsto jūsų kompiuterio.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Ar tikrai norite užšifruoti savo piniginę?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR TUP&lt;/b&gt;!</source>
-        <translation>Įspėjimas: jei užšifruosite savo piniginę ir prarasite slaptafrazę, jūs &lt;b&gt;PRARASITE VISUS SAVO TUP&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR WEALTH&lt;/b&gt;!</source>
+        <translation>Įspėjimas: jei užšifruosite savo piniginę ir prarasite slaptafrazę, jūs &lt;b&gt;PRARASITE VISUS SAVO WEALTH&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -433,8 +433,8 @@
         <translation>Naršyti pavedimų istoriją</translation>
     </message>
     <message>
-        <source>Privacy Actions for zTUP</source>
-        <translation>zTUP Saugumo Veiksmai </translation>
+        <source>Privacy Actions for zWEALTH</source>
+        <translation>zWEALTH Saugumo Veiksmai </translation>
     </message>
     <message>
         <source>E&amp;xit</source>
@@ -653,8 +653,8 @@
         <translation>Siųsti monetas į WealthSilo adresą</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and tenup: URIs)</source>
-        <translation>Prašyti mokėjimų (sugeneruoja QR kodus ir tenup URI)</translation>
+        <source>Request payments (generates QR codes and wealthsilo: URIs)</source>
+        <translation>Prašyti mokėjimų (sugeneruoja QR kodus ir wealthsilo URI)</translation>
     </message>
     <message>
         <source>&amp;Privacy</source>
@@ -892,8 +892,8 @@ MultiSend: %1</translation>
         <translation>Teksto etiketė</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (tenup.conf).</source>
-        <translation>Ne visi pavedimai bus rodomi. Norėdami peržiūrėti visus pavedimus, reikia nustatyti txindex = 1 konfigūracijos faile (tenup.conf).</translation>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (wealthsilo.conf).</source>
+        <translation>Ne visi pavedimai bus rodomi. Norėdami peržiūrėti visus pavedimus, reikia nustatyti txindex = 1 konfigūracijos faile (wealthsilo.conf).</translation>
     </message>
 </context>
 <context>
@@ -1122,8 +1122,8 @@ MultiSend: %1</translation>
         <translation>Ši etiketė taps raudona, jei gavėjas gaus sumą mažesnę už %1</translation>
     </message>
     <message>
-        <source>Can vary +/- %1 utup per input.</source>
-        <translation>Gali skirtis +/- %1 utup kiekvienoje įvestyje.</translation>
+        <source>Can vary +/- %1 uwealth per input.</source>
+        <translation>Gali skirtis +/- %1 uwealth kiekvienoje įvestyje.</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -1647,8 +1647,8 @@ Patikrinkite adresą ir bandykite dar kartą.</translation>
         <translation>Adresas / Suma:</translation>
     </message>
     <message>
-        <source>Add destinations to send TUP to</source>
-        <translation>Pridėkite vietas, kurioms norite siųsti TUP</translation>
+        <source>Add destinations to send WEALTH to</source>
+        <translation>Pridėkite vietas, kurioms norite siųsti WEALTH</translation>
     </message>
     <message>
         <source>Add &amp;Destination</source>
@@ -1734,32 +1734,32 @@ Patikrinkite adresą ir bandykite dar kartą.</translation>
         <translation>Pasirinkite privatumo lygmenį.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 25000 TUP</source>
-        <translation>Naudokite 2 atskirus masternod'us, kad sumaišytumėte lėšas iki 10 000 TUP</translation>
+        <source>Use 2 separate masternodes to mix funds up to 25000 WEALTH</source>
+        <translation>Naudokite 2 atskirus masternod'us, kad sumaišytumėte lėšas iki 10 000 WEALTH</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 25000 TUP</source>
-        <translation>Naudokite 8 atskirus masternod'us, kad sumaišytumėte lėšas iki 10 000 TUP</translation>
+        <source>Use 8 separate masternodes to mix funds up to 25000 WEALTH</source>
+        <translation>Naudokite 8 atskirus masternod'us, kad sumaišytumėte lėšas iki 10 000 WEALTH</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>Naudokite 16 atskirų masternod'ų</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 TUP to anonymize 25000 TUP</source>
-        <translation>Ši parinktis yra greičiausia ir kainuos apie ~0.025 TUP, kad anonimizuotų 25000 TUP</translation>
+        <source>This option is the quickest and will cost about ~0.025 WEALTH to anonymize 25000 WEALTH</source>
+        <translation>Ši parinktis yra greičiausia ir kainuos apie ~0.025 WEALTH, kad anonimizuotų 25000 WEALTH</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 TUP to anonymize 25000 TUP</source>
-        <translation>Ši parinktis yra vidutiniškai greita ir kainuoja apie 0,05 TUP, kad anonimizuotų 25000 TUP</translation>
+        <source>This option is moderately fast and will cost about 0.05 WEALTH to anonymize 25000 WEALTH</source>
+        <translation>Ši parinktis yra vidutiniškai greita ir kainuoja apie 0,05 WEALTH, kad anonimizuotų 25000 WEALTH</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
         <translation>Tai yra lėčiausias ir saugiausias variantas. Maksimalus anonimiškumas kainuos.</translation>
     </message>
     <message>
-        <source>0.1 TUP per  10000 TUP you anonymize.</source>
-        <translation>0.1 TUP kas 1000 TUP kuriuos anonimizuosite.</translation>
+        <source>0.1 WEALTH per  10000 WEALTH you anonymize.</source>
+        <translation>0.1 WEALTH kas 1000 WEALTH kuriuos anonimizuosite.</translation>
     </message>
     </context>
 <context>
@@ -1833,29 +1833,29 @@ Patikrinkite adresą ir bandykite dar kartą.</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/tenup-project/tenup-project-translations</source>
+https://www.transifex.com/wealthsilo-project/wealthsilo-project-translations</source>
         <translation>Trūksta kalbos arba vertimas nebaigtas? Padėkite prisidėdami prie vertimų čia: 
-https://www.transifex.com/tenup-project/tenup-project-translations</translation>
+https://www.transifex.com/wealthsilo-project/wealthsilo-project-translations</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
         <translation>Įrašyti prievadą naudojant &amp;UPnP</translation>
     </message>
     <message>
-        <source>Enable zTUP Automint</source>
-        <translation>Įgalinti zTUP Automatinį nukaldinima</translation>
+        <source>Enable zWEALTH Automint</source>
+        <translation>Įgalinti zWEALTH Automatinį nukaldinima</translation>
     </message>
     <message>
-        <source>Percentage of incoming TUP which get automatically converted to zTUP via Zerocoin Protocol (min: 10%)</source>
-        <translation>Procentas gauto TUP, kuris automatiškai bus konvertuotas į zTUP naudojant Zerocoin Protokolą (min: 10%)</translation>
+        <source>Percentage of incoming WEALTH which get automatically converted to zWEALTH via Zerocoin Protocol (min: 10%)</source>
+        <translation>Procentas gauto WEALTH, kuris automatiškai bus konvertuotas į zWEALTH naudojant Zerocoin Protokolą (min: 10%)</translation>
     </message>
     <message>
-        <source>Percentage of autominted zTUP</source>
-        <translation>Automatiškai sukurtų zTUP procentas</translation>
+        <source>Percentage of autominted zWEALTH</source>
+        <translation>Automatiškai sukurtų zWEALTH procentas</translation>
     </message>
     <message>
-        <source>Preferred Automint zTUP Denomination</source>
-        <translation>Pageidautinas zTUP Automatinio Nukaldinimo Nominalas</translation>
+        <source>Preferred Automint zWEALTH Denomination</source>
+        <translation>Pageidautinas zWEALTH Automatinio Nukaldinimo Nominalas</translation>
     </message>
     <message>
         <source>Connect to the WealthSilo network through a SOCKS5 proxy.</source>
@@ -1965,8 +1965,8 @@ https://www.transifex.com/tenup-project/tenup-project-translations</translation>
         <translation>Bendras balansas, įskaitant visas nepasiekiamas monetas.</translation>
     </message>
     <message>
-        <source>TUP Balance</source>
-        <translation>TUP Balansas</translation>
+        <source>WEALTH Balance</source>
+        <translation>WEALTH Balansas</translation>
     </message>
     <message>
         <source>Pending:</source>
@@ -1993,8 +1993,8 @@ https://www.transifex.com/tenup-project/tenup-project-translations</translation>
         <translation>Jūsų dabartinis WealthSilo balansas, įskaitant nepatvirtintus ir nesubrendusius sandorius</translation>
     </message>
     <message>
-        <source>zTUP Balance</source>
-        <translation>zTUP Balansas</translation>
+        <source>zWEALTH Balance</source>
+        <translation>zWEALTH Balansas</translation>
     </message>
     <message>
         <source>The displayed information may be out of date. Your wallet automatically synchronizes with the WealthSilo network after a connection is established, but this process has not completed yet.</source>
@@ -2033,8 +2033,8 @@ https://www.transifex.com/tenup-project/tenup-project-translations</translation>
         <translation>Prienamas išleidimui:</translation>
     </message>
     <message>
-        <source>Locked TUP or Masternode collaterals. These are excluded from zTUP minting.</source>
-        <translation>Užrakinti TUP arba Masternode užstatai. Jie yra neįtraukti į zTUP kalimą.</translation>
+        <source>Locked WEALTH or Masternode collaterals. These are excluded from zWEALTH minting.</source>
+        <translation>Užrakinti WEALTH arba Masternode užstatai. Jie yra neįtraukti į zWEALTH kalimą.</translation>
     </message>
     <message>
         <source>Locked:</source>
@@ -2057,8 +2057,8 @@ https://www.transifex.com/tenup-project/tenup-project-translations</translation>
         <translation>AutoMint šiuo metu įgalintas ir nustatytas</translation>
     </message>
     <message>
-        <source>To disable AutoMint add 'enablezeromint=0' in tenup.conf.</source>
-        <translation>Norėdami išjungti Automatinį Kalimą pridėkite 'enablezeromint=0' tenup.conf faile.</translation>
+        <source>To disable AutoMint add 'enablezeromint=0' in wealthsilo.conf.</source>
+        <translation>Norėdami išjungti Automatinį Kalimą pridėkite 'enablezeromint=0' wealthsilo.conf faile.</translation>
     </message>
     </context>
 <context>
@@ -2086,12 +2086,12 @@ https://www.transifex.com/tenup-project/tenup-project-translations</translation>
         <translation>0</translation>
     </message>
     <message>
-        <source>zTUP</source>
-        <translation>zTUP</translation>
+        <source>zWEALTH</source>
+        <translation>zWEALTH</translation>
     </message>
     <message>
-        <source>0.000 000 00 TUP</source>
-        <translation>0.000 000 00 TUP</translation>
+        <source>0.000 000 00 WEALTH</source>
+        <translation>0.000 000 00 WEALTH</translation>
     </message>
     <message>
         <source>Quantity:</source>
@@ -2118,8 +2118,8 @@ https://www.transifex.com/tenup-project/tenup-project-translations</translation>
         <translation>Prieinamas Balansas: </translation>
     </message>
     <message>
-        <source>0 zTUP</source>
-        <translation>0 zTUP</translation>
+        <source>0 zWEALTH</source>
+        <translation>0 zWEALTH</translation>
     </message>
     <message>
         <source>Security Level:</source>
@@ -2539,8 +2539,8 @@ https://www.transifex.com/tenup-project/tenup-project-translations</translation>
         <translation>Grąža: </translation>
     </message>
     <message>
-        <source>0 TUP</source>
-        <translation>0 TUP</translation>
+        <source>0 WEALTH</source>
+        <translation>0 WEALTH</translation>
     </message>
     <message>
         <source>Transaction Fee:</source>
@@ -2979,18 +2979,18 @@ https://www.transifex.com/tenup-project/tenup-project-translations</translation>
     </message>
     </context>
 <context>
-    <name>ZTupControlDialog</name>
+    <name>ZWealthControlDialog</name>
     <message>
         <source>0</source>
         <translation>0</translation>
     </message>
     <message>
-        <source>zTUP</source>
-        <translation>zTUP</translation>
+        <source>zWEALTH</source>
+        <translation>zWEALTH</translation>
     </message>
     </context>
 <context>
-    <name>tenup-core</name>
+    <name>wealthsilo-core</name>
     <message>
         <source>(default: %s)</source>
         <translation>(numatytas: %s)</translation>

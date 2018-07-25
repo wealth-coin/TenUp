@@ -1,7 +1,7 @@
 // Copyright (c) 2010 Satoshi Nakamoto
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2015-2018 The PIVX developers
-// Copyright (c) 2015-2018 The WealthSilo developers
+// Copyright (c) 2018 The WealthSilo developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -259,11 +259,11 @@ extern UniValue importzerocoins(const UniValue& params, bool fHelp);
 extern UniValue exportzerocoins(const UniValue& params, bool fHelp);
 extern UniValue reconsiderzerocoins(const UniValue& params, bool fHelp);
 extern UniValue getspentzerocoinamount(const UniValue& params, bool fHelp);
-extern UniValue setztupseed(const UniValue& params, bool fHelp);
-extern UniValue getztupseed(const UniValue& params, bool fHelp);
+extern UniValue setzwealthseed(const UniValue& params, bool fHelp);
+extern UniValue getzwealthseed(const UniValue& params, bool fHelp);
 extern UniValue generatemintlist(const UniValue& params, bool fHelp);
-extern UniValue searchdztup(const UniValue& params, bool fHelp);
-extern UniValue dztupstate(const UniValue& params, bool fHelp);
+extern UniValue searchdzwealth(const UniValue& params, bool fHelp);
+extern UniValue dzwealthstate(const UniValue& params, bool fHelp);
 
 extern UniValue getrawtransaction(const UniValue& params, bool fHelp); // in rcprawtransaction.cpp
 extern UniValue listunspent(const UniValue& params, bool fHelp);

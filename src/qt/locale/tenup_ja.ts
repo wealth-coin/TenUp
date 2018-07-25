@@ -269,9 +269,9 @@
     </message>
     </context>
 <context>
-    <name>ZTupControlDialog</name>
+    <name>ZWealthControlDialog</name>
     </context>
 <context>
-    <name>tenup-core</name>
+    <name>wealthsilo-core</name>
     </context>
 </TS>

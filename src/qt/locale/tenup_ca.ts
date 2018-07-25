@@ -168,16 +168,16 @@
         <translation>Confirma l'encriptació del moneder</translation>
     </message>
     <message>
-        <source>WealthSilo will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your TUPs from being stolen by malware infecting your computer.</source>
-        <translation>WealthSilo es tancarà per finalitzar el procés d'encriptació. Recorda que encriptant el teu moneder no protegeix els teus TUP de ser robats si el teu ordinador està infectat amb programari maliciós.</translation>
+        <source>WealthSilo will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your WEALTHs from being stolen by malware infecting your computer.</source>
+        <translation>WealthSilo es tancarà per finalitzar el procés d'encriptació. Recorda que encriptant el teu moneder no protegeix els teus WEALTH de ser robats si el teu ordinador està infectat amb programari maliciós.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Estàs segur que vols encriptar el moneder?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR TUP&lt;/b&gt;!</source>
-        <translation>Avís: Si encripteu el vostre moneder i perdeu la contrasenya, &lt;b&gt;PERDREU TOTS ELS VOSTRES TUPS&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR WEALTH&lt;/b&gt;!</source>
+        <translation>Avís: Si encripteu el vostre moneder i perdeu la contrasenya, &lt;b&gt;PERDREU TOTS ELS VOSTRES WEALTHS&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -1148,24 +1148,24 @@
         <translation>Si us plau, selecciona un nivell de privacitat.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 25000 TUP</source>
-        <translation>Utilitza 2 masternodes diferents per mesclar fons de fins a 25000 TUP</translation>
+        <source>Use 2 separate masternodes to mix funds up to 25000 WEALTH</source>
+        <translation>Utilitza 2 masternodes diferents per mesclar fons de fins a 25000 WEALTH</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 25000 TUP</source>
-        <translation>Utilitza 8 masternodes diferents per mesclar fons de fins a 25000 TUP</translation>
+        <source>Use 8 separate masternodes to mix funds up to 25000 WEALTH</source>
+        <translation>Utilitza 8 masternodes diferents per mesclar fons de fins a 25000 WEALTH</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>Utilitza 16 masternodes diferents</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 TUP to anonymize 25000 TUP</source>
-        <translation>Aquesta opció és la més ràpida i té un cost d'uns ~0.025 TUP per anonimitzar 25000 TUP</translation>
+        <source>This option is the quickest and will cost about ~0.025 WEALTH to anonymize 25000 WEALTH</source>
+        <translation>Aquesta opció és la més ràpida i té un cost d'uns ~0.025 WEALTH per anonimitzar 25000 WEALTH</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 TUP to anonymize 25000 TUP</source>
-        <translation>Aquesta opció és moderadament ràpida i té un cost d'uns 0.05 TUP per anonimitzar 25000 TUP</translation>
+        <source>This option is moderately fast and will cost about 0.05 WEALTH to anonymize 25000 WEALTH</source>
+        <translation>Aquesta opció és moderadament ràpida i té un cost d'uns 0.05 WEALTH per anonimitzar 25000 WEALTH</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
@@ -1302,12 +1302,12 @@
         <translation>0</translation>
     </message>
     <message>
-        <source>zTUP</source>
-        <translation>zTUP</translation>
+        <source>zWEALTH</source>
+        <translation>zWEALTH</translation>
     </message>
     <message>
-        <source>0.000 000 00 TUP</source>
-        <translation>0.000 000 00 TUP</translation>
+        <source>0.000 000 00 WEALTH</source>
+        <translation>0.000 000 00 WEALTH</translation>
     </message>
     <message>
         <source>Reset</source>
@@ -1322,8 +1322,8 @@
         <translation>Import:</translation>
     </message>
     <message>
-        <source>0 zTUP</source>
-        <translation>0 zTUP</translation>
+        <source>0 zWEALTH</source>
+        <translation>0 zWEALTH</translation>
     </message>
     <message>
         <source>Alt+A</source>
@@ -1959,7 +1959,7 @@
     </message>
     </context>
 <context>
-    <name>ZTupControlDialog</name>
+    <name>ZWealthControlDialog</name>
     <message>
         <source>Quantity</source>
         <translation>Quantitat</translation>
@@ -1969,12 +1969,12 @@
         <translation>0</translation>
     </message>
     <message>
-        <source>zTUP</source>
-        <translation>zTUP</translation>
+        <source>zWEALTH</source>
+        <translation>zWEALTH</translation>
     </message>
     </context>
 <context>
-    <name>tenup-core</name>
+    <name>wealthsilo-core</name>
     <message>
         <source>Can't mix while sync in progress.</source>
         <translation>No es pot mesclar mentre s'està sincronitzant.</translation>

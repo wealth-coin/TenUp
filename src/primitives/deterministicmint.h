@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef TENUP_DETERMINISTICMINT_H
-#define TENUP_DETERMINISTICMINT_H
+#ifndef WEALTHSILO_DETERMINISTICMINT_H
+#define WEALTHSILO_DETERMINISTICMINT_H
 
 #include <libzerocoin/Denominations.h>
 #include <uint256.h>
@@ -65,4 +65,4 @@ public:
     };
 };
 
-#endif //TENUP_DETERMINISTICMINT_H
+#endif //WEALTHSILO_DETERMINISTICMINT_H

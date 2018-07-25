@@ -18,7 +18,7 @@ For example:
   ./github-merge.py 3077
 
 (in any git repository) will help you merge pull request #3077 for the
-tenup-coin/WealthSilo repository.
+wealthsilo-coin/WealthSilo repository.
 
 What it does:
 * Fetch master and the pull request.
@@ -38,7 +38,7 @@ Setup
 ---------
 Configuring the github-merge tool for the WealthSilo repository is done in the following way:
 
-    git config githubmerge.repository tenup-coin/WealthSilo
+    git config githubmerge.repository wealthsilo-coin/WealthSilo
     git config githubmerge.testcmd "make -j4 check" (adapt to whatever you want to use for testing)
     git config --global user.signingkey mykeyid (if you want to GPG sign)
 
@@ -93,10 +93,10 @@ If only supported symbols are used the return value will be 0 and the output wil
 
 If there are 'unsupported' symbols, the return value will be 1 a list like this will be printed:
 
-    .../64/test_tenup: symbol memcpy from unsupported version GLIBC_2.14
-    .../64/test_tenup: symbol __fdelt_chk from unsupported version GLIBC_2.15
-    .../64/test_tenup: symbol std::out_of_range::~out_of_range() from unsupported version GLIBCXX_3.4.15
-    .../64/test_tenup: symbol _ZNSt8__detail15_List_nod from unsupported version GLIBCXX_3.4.15
+    .../64/test_wealthsilo: symbol memcpy from unsupported version GLIBC_2.14
+    .../64/test_wealthsilo: symbol __fdelt_chk from unsupported version GLIBC_2.15
+    .../64/test_wealthsilo: symbol std::out_of_range::~out_of_range() from unsupported version GLIBCXX_3.4.15
+    .../64/test_wealthsilo: symbol _ZNSt8__detail15_List_nod from unsupported version GLIBCXX_3.4.15
 
 update-translations.py
 ======================

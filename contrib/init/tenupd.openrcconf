@@ -1,25 +1,25 @@
-# /etc/conf.d/tenupd: config file for /etc/init.d/tenupd
+# /etc/conf.d/wealthsilod: config file for /etc/init.d/wealthsilod
 
 # Config file location
-#BITCOIND_CONFIGFILE="/etc/tenup/tenup.conf"
+#BITCOIND_CONFIGFILE="/etc/wealthsilo/wealthsilo.conf"
 
 # What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
-#BITCOIND_PIDDIR="/var/run/tenupd"
+#BITCOIND_PIDDIR="/var/run/wealthsilod"
 
 # What filename to give the pidfile
-#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/tenupd.pid"
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/wealthsilod.pid"
 
-# Where to write tenupd data (be mindful that the blockchain is large)
-#BITCOIND_DATADIR="/var/lib/tenupd"
+# Where to write wealthsilod data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/wealthsilod"
 
-# User and group to own tenupd process
-#BITCOIND_USER="tenup"
-#BITCOIND_GROUP="tenup"
+# User and group to own wealthsilod process
+#BITCOIND_USER="wealthsilo"
+#BITCOIND_GROUP="wealthsilo"
 
-# Path to tenupd executable
-#BITCOIND_BIN="/usr/bin/tenupd"
+# Path to wealthsilod executable
+#BITCOIND_BIN="/usr/bin/wealthsilod"
 
-# Nice value to run tenupd under
+# Nice value to run wealthsilod under
 #BITCOIND_NICE=0
 
 # Additional options (avoid -conf and -datadir, use flags above)

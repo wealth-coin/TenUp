@@ -176,16 +176,16 @@
         <translation>Potvrdi šifriranje novčanika</translation>
     </message>
     <message>
-        <source>WealthSilo will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your TUPs from being stolen by malware infecting your computer.</source>
-        <translation>WealthSilo se sada zatvara kako bi dovršio proces šifriranja. Ne zaboravite da šifriranje vašeg novčanika ne može u potpunosti zaštititi vaše TUP od krađe zlonamjernog softvera koji zarazi vaše računalo.</translation>
+        <source>WealthSilo will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your WEALTHs from being stolen by malware infecting your computer.</source>
+        <translation>WealthSilo se sada zatvara kako bi dovršio proces šifriranja. Ne zaboravite da šifriranje vašeg novčanika ne može u potpunosti zaštititi vaše WEALTH od krađe zlonamjernog softvera koji zarazi vaše računalo.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Jeste li sigurni da želite šifrirati svoj novčanik?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR TUP&lt;/b&gt;!</source>
-        <translation>Upozorenje: Ako šifrirate svoj novčanik i izgubite zaporku, 1 izgubit ćete sve Vaše TUPove 1 !</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR WEALTH&lt;/b&gt;!</source>
+        <translation>Upozorenje: Ako šifrirate svoj novčanik i izgubite zaporku, 1 izgubit ćete sve Vaše WEALTHove 1 !</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -433,8 +433,8 @@
         <translation>Pregled povijesti transakcija</translation>
     </message>
     <message>
-        <source>Privacy Actions for zTUP</source>
-        <translation>Postavke privatnosti za zTUP</translation>
+        <source>Privacy Actions for zWEALTH</source>
+        <translation>Postavke privatnosti za zWEALTH</translation>
     </message>
     <message>
         <source>E&amp;xit</source>
@@ -653,8 +653,8 @@
         <translation>Pošaljite kovanice na WealthSilo adresu</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and tenup: URIs)</source>
-        <translation>Zahtjev za plaćanje (generira QR kodove i tenup: URI)</translation>
+        <source>Request payments (generates QR codes and wealthsilo: URIs)</source>
+        <translation>Zahtjev za plaćanje (generira QR kodove i wealthsilo: URI)</translation>
     </message>
     <message>
         <source>&amp;Privacy</source>
@@ -734,7 +734,7 @@
     </message>
     <message>
         <source>WealthSilo Core client</source>
-        <translation>TUPIX Core Klijent</translation>
+        <translation>WEALTHIX Core Klijent</translation>
     </message>
     <message numerus="yes">
         <source>%n active connection(s) to WealthSilo network</source>
@@ -892,8 +892,8 @@ Višestruko slanje: %1</translation>
         <translation>TextLabel</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (tenup.conf).</source>
-        <translation>Nisu prikazane sve transakcije. Za pregled svih transakcija morate postaviti txindex = 1 u konfiguracijskoj datoteci (tenup.conf).</translation>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (wealthsilo.conf).</source>
+        <translation>Nisu prikazane sve transakcije. Za pregled svih transakcija morate postaviti txindex = 1 u konfiguracijskoj datoteci (wealthsilo.conf).</translation>
     </message>
 </context>
 <context>
@@ -1130,8 +1130,8 @@ Višestruko slanje: %1</translation>
         <translation>Ova oznaka postaje crvena ako neki primatelj prima iznos manji od %1.</translation>
     </message>
     <message>
-        <source>Can vary +/- %1 utup per input.</source>
-        <translation>Može varirati +/- %1 utup po unosu.</translation>
+        <source>Can vary +/- %1 uwealth per input.</source>
+        <translation>Može varirati +/- %1 uwealth po unosu.</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -1679,8 +1679,8 @@ Budite strpljivi nakon što kliknete uvoz.</translation>
         <translation>Adresa / iznos:</translation>
     </message>
     <message>
-        <source>Add destinations to send TUP to</source>
-        <translation>Dodajte odredišta za slanje TUP
+        <source>Add destinations to send WEALTH to</source>
+        <translation>Dodajte odredišta za slanje WEALTH
 </translation>
     </message>
     <message>
@@ -1779,32 +1779,32 @@ Budite strpljivi nakon što kliknete uvoz.</translation>
         <translation>Odaberi razinu privatnosti.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 25000 TUP</source>
-        <translation>Koristite 2 odvojene masternode za miješanje sredstava do 25000 TUP</translation>
+        <source>Use 2 separate masternodes to mix funds up to 25000 WEALTH</source>
+        <translation>Koristite 2 odvojene masternode za miješanje sredstava do 25000 WEALTH</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 25000 TUP</source>
-        <translation>Koristite 8 zasebnih masternoda za miješanje sredstava do 25000 TUP</translation>
+        <source>Use 8 separate masternodes to mix funds up to 25000 WEALTH</source>
+        <translation>Koristite 8 zasebnih masternoda za miješanje sredstava do 25000 WEALTH</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>Koristite 16 zasebnih masternodova</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 TUP to anonymize 25000 TUP</source>
-        <translation>Ova je opcija najbrža i košta oko 0,025 TUP da anonimizira 25000 TUP</translation>
+        <source>This option is the quickest and will cost about ~0.025 WEALTH to anonymize 25000 WEALTH</source>
+        <translation>Ova je opcija najbrža i košta oko 0,025 WEALTH da anonimizira 25000 WEALTH</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 TUP to anonymize 25000 TUP</source>
-        <translation>Ova je opcija umjereno brza i košta oko 0,05 TUP da anonimizira 25000 TUP</translation>
+        <source>This option is moderately fast and will cost about 0.05 WEALTH to anonymize 25000 WEALTH</source>
+        <translation>Ova je opcija umjereno brza i košta oko 0,05 WEALTH da anonimizira 25000 WEALTH</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
         <translation>Ovo je najsporiji i najsigurniji izbor. Korištenje maksimalne anonimnosti košta</translation>
     </message>
     <message>
-        <source>0.1 TUP per  10000 TUP you anonymize.</source>
-        <translation>0.1 TUP po  10000 TUP za anonimizaciju.</translation>
+        <source>0.1 WEALTH per  10000 WEALTH you anonymize.</source>
+        <translation>0.1 WEALTH po  10000 WEALTH za anonimizaciju.</translation>
     </message>
     <message>
         <source>Obfuscation Configuration</source>
@@ -1938,9 +1938,9 @@ Budite strpljivi nakon što kliknete uvoz.</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/tenup-project/tenup-project-translations</source>
+https://www.transifex.com/wealthsilo-project/wealthsilo-project-translations</source>
         <translation>Jezik nedostaje ili prijevod nije potpun? Pomozite s prijevodima ovdje:
-https://www.transifex.com/tenup-project/tenup-project-translations</translation>
+https://www.transifex.com/wealthsilo-project/wealthsilo-project-translations</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -1948,28 +1948,28 @@ https://www.transifex.com/tenup-project/tenup-project-translations</translation>
 </translation>
     </message>
     <message>
-        <source>Enable automatic minting of TUP units to zTUP</source>
-        <translation>Omogućite automint TUP jedinica na zTUP</translation>
+        <source>Enable automatic minting of WEALTH units to zWEALTH</source>
+        <translation>Omogućite automint WEALTH jedinica na zWEALTH</translation>
     </message>
     <message>
-        <source>Enable zTUP Automint</source>
-        <translation>Omogući zTUP Automint</translation>
+        <source>Enable zWEALTH Automint</source>
+        <translation>Omogući zWEALTH Automint</translation>
     </message>
     <message>
-        <source>Percentage of incoming TUP which get automatically converted to zTUP via Zerocoin Protocol (min: 10%)</source>
-        <translation>Postotak dolaznih TUP koji se automatski pretvara u zTUP putem protokola Zerocoin (min: 10%)</translation>
+        <source>Percentage of incoming WEALTH which get automatically converted to zWEALTH via Zerocoin Protocol (min: 10%)</source>
+        <translation>Postotak dolaznih WEALTH koji se automatski pretvara u zWEALTH putem protokola Zerocoin (min: 10%)</translation>
     </message>
     <message>
-        <source>Percentage of autominted zTUP</source>
-        <translation>Postotak automatiziranog zTUP</translation>
+        <source>Percentage of autominted zWEALTH</source>
+        <translation>Postotak automatiziranog zWEALTH</translation>
     </message>
     <message>
-        <source>Wait with automatic conversion to Zerocoin until enough TUP for this denomination is available</source>
-        <translation>Pričekajte s automatskom pretvorbom u Zerocoin dok ne bude dostupno dovoljno TUP za apoen</translation>
+        <source>Wait with automatic conversion to Zerocoin until enough WEALTH for this denomination is available</source>
+        <translation>Pričekajte s automatskom pretvorbom u Zerocoin dok ne bude dostupno dovoljno WEALTH za apoen</translation>
     </message>
     <message>
-        <source>Preferred Automint zTUP Denomination</source>
-        <translation>Preferirana Automint zTUP denominacijad</translation>
+        <source>Preferred Automint zWEALTH Denomination</source>
+        <translation>Preferirana Automint zWEALTH denominacijad</translation>
     </message>
     <message>
         <source>Stake split threshold:</source>
@@ -2131,8 +2131,8 @@ https://www.transifex.com/tenup-project/tenup-project-translations</translation>
         <translation>Ukupni saldo, uključujući sve nedostupne kovanice.</translation>
     </message>
     <message>
-        <source>TUP Balance</source>
-        <translation>TUP Saldo</translation>
+        <source>WEALTH Balance</source>
+        <translation>WEALTH Saldo</translation>
     </message>
     <message>
         <source>Pending:</source>
@@ -2159,14 +2159,14 @@ https://www.transifex.com/tenup-project/tenup-project-translations</translation>
         <translation>Uključena je vaša trenutna bilanca WealthSilo, nepotvrđene i nezrele transakcije</translation>
     </message>
     <message>
-        <source>zTUP Balance</source>
-        <translation>zTUP Bilanca</translation>
+        <source>zWEALTH Balance</source>
+        <translation>zWEALTH Bilanca</translation>
     </message>
     <message>
         <source>Mature: more than 20 confirmation and more than 1 mint of the same denomination after it was minted.
-These zTUP are spendable.</source>
+These zWEALTH are spendable.</source>
         <translation>Mature: više od 20 potvrda i više od 1 mint od iste denominacije nakon što je mintan.
-Ti zTUPs se mogu potrošiti.</translation>
+Ti zWEALTHs se mogu potrošiti.</translation>
     </message>
     <message>
         <source>Unconfirmed: less than 20 confirmations
@@ -2219,8 +2219,8 @@ Nezreli: potvrđeno, ali manje od 1 minta iste denominacije nakon mintanja</tran
         <translation>Po potrošiti:</translation>
     </message>
     <message>
-        <source>Locked TUP or Masternode collaterals. These are excluded from zTUP minting.</source>
-        <translation>Zaključani TUP ili Masternode kolateral. Oni su isključeni iz zTUP kovanja.</translation>
+        <source>Locked WEALTH or Masternode collaterals. These are excluded from zWEALTH minting.</source>
+        <translation>Zaključani WEALTH ili Masternode kolateral. Oni su isključeni iz zWEALTH kovanja.</translation>
     </message>
     <message>
         <source>Locked:</source>
@@ -2231,8 +2231,8 @@ Nezreli: potvrđeno, ali manje od 1 minta iste denominacije nakon mintanja</tran
         <translation>Nepotvrđeno:</translation>
     </message>
     <message>
-        <source>Your current zTUP balance, unconfirmed and immature zTUP included.</source>
-        <translation>Vaša trenutačna zTUP bilanca, nepotvrđena i nezrela zTUP.</translation>
+        <source>Your current zWEALTH balance, unconfirmed and immature zWEALTH included.</source>
+        <translation>Vaša trenutačna zWEALTH bilanca, nepotvrđena i nezrela zWEALTH.</translation>
     </message>
     <message>
         <source>Recent transactions</source>
@@ -2243,10 +2243,10 @@ Nezreli: potvrđeno, ali manje od 1 minta iste denominacije nakon mintanja</tran
         <translation>nije sinkronizirano</translation>
     </message>
     <message>
-        <source>Current percentage of zTUP.
+        <source>Current percentage of zWEALTH.
 If AutoMint is enabled this percentage will settle around the configured AutoMint percentage (default = 10%).
 </source>
-        <translation>Trenutni postotak zTUP.
+        <translation>Trenutni postotak zWEALTH.
 Ako je omogućeno automatsko navođenje, ovaj postotak će se podmiriti oko konfiguriranog postotka automatskog navođenja (zadano = 10%).
 </translation>
     </message>
@@ -2255,14 +2255,14 @@ Ako je omogućeno automatsko navođenje, ovaj postotak će se podmiriti oko konf
         <translation>AutoMint je trenutno omogućen i podešen na</translation>
     </message>
     <message>
-        <source>To disable AutoMint add 'enablezeromint=0' in tenup.conf.</source>
-        <translation>Da biste onemogućili AutoMint, dodajte 'enablezeromint=0' u tenup.conf.</translation>
+        <source>To disable AutoMint add 'enablezeromint=0' in wealthsilo.conf.</source>
+        <translation>Da biste onemogućili AutoMint, dodajte 'enablezeromint=0' u wealthsilo.conf.</translation>
     </message>
     <message>
         <source>AutoMint is currently disabled.
-To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in tenup.conf</source>
+To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in wealthsilo.conf</source>
         <translation>AutoMint je trenutno onemogućen.
-Da biste omogućili, promjenite postavke AutoMint 'enablezeromint=0' na 'enablezeromint=1' u tenup.conf</translation>
+Da biste omogućili, promjenite postavke AutoMint 'enablezeromint=0' na 'enablezeromint=1' u wealthsilo.conf</translation>
     </message>
 </context>
 <context>
@@ -2288,8 +2288,8 @@ Da biste omogućili, promjenite postavke AutoMint 'enablezeromint=0' na 'enablez
         <translation>Nevažeća adresa za plaćanje %1</translation>
     </message>
     <message>
-        <source>Cannot start tenup: click-to-pay handler</source>
-        <translation>Ne može se pokrenuti tenup: clik-to-pay handler</translation>
+        <source>Cannot start wealthsilo: click-to-pay handler</source>
+        <translation>Ne može se pokrenuti wealthsilo: clik-to-pay handler</translation>
     </message>
     <message>
         <source>URI cannot be parsed! This can be caused by an invalid WealthSilo address or malformed URI parameters.</source>
@@ -2390,8 +2390,8 @@ Da biste omogućili, promjenite postavke AutoMint 'enablezeromint=0' na 'enablez
         <translation>0</translation>
     </message>
     <message>
-        <source>zTUP</source>
-        <translation>zTUP</translation>
+        <source>zWEALTH</source>
+        <translation>zWEALTH</translation>
     </message>
     <message>
         <source>Available for minting are coins which are confirmed and not locked or Masternode collaterals.</source>
@@ -2402,8 +2402,8 @@ Da biste omogućili, promjenite postavke AutoMint 'enablezeromint=0' na 'enablez
         <translation>Dostupno za Minting:</translation>
     </message>
     <message>
-        <source>0.000 000 00 TUP</source>
-        <translation>0.000 000 00 TUP</translation>
+        <source>0.000 000 00 WEALTH</source>
+        <translation>0.000 000 00 WEALTH</translation>
     </message>
     <message>
         <source>Reset Zerocoin Wallet DB. Deletes transactions that did not make it into the blockchain.</source>
@@ -2442,16 +2442,16 @@ Da biste omogućili, promjenite postavke AutoMint 'enablezeromint=0' na 'enablez
         <translation>PRIVATNOST</translation>
     </message>
     <message>
-        <source>Enter an amount of TUP to convert to zTUP</source>
-        <translation>Unesite iznos TUP za pretvorbu u zTUP</translation>
+        <source>Enter an amount of WEALTH to convert to zWEALTH</source>
+        <translation>Unesite iznos WEALTH za pretvorbu u zWEALTH</translation>
     </message>
     <message>
-        <source>zTUP Control</source>
-        <translation>Upravljanje zTUP</translation>
+        <source>zWEALTH Control</source>
+        <translation>Upravljanje zWEALTH</translation>
     </message>
     <message>
-        <source>zTUP Selected:</source>
-        <translation>zTUP Odabrani:</translation>
+        <source>zWEALTH Selected:</source>
+        <translation>zWEALTH Odabrani:</translation>
     </message>
     <message>
         <source>Quantity Selected:</source>
@@ -2466,24 +2466,24 @@ Da biste omogućili, promjenite postavke AutoMint 'enablezeromint=0' na 'enablez
         <translation>Potroši Zerocoin</translation>
     </message>
     <message>
-        <source>Available (mature and spendable) zTUP for spending</source>
-        <translation>Dostupni (zreli) zTUP za potrošnju</translation>
+        <source>Available (mature and spendable) zWEALTH for spending</source>
+        <translation>Dostupni (zreli) zWEALTH za potrošnju</translation>
     </message>
     <message>
         <source>Available Balance:</source>
         <translation>Dostupna Bilanca:</translation>
     </message>
     <message>
-        <source>Available (mature and spendable) zTUP for spending
+        <source>Available (mature and spendable) zWEALTH for spending
 
-zTUP are mature when they have more than 20 confirmations AND more than 2 mints of the same denomination after them were minted</source>
-        <translation>Dostupni (zreli) zTUP za potrošnju
+zWEALTH are mature when they have more than 20 confirmations AND more than 2 mints of the same denomination after them were minted</source>
+        <translation>Dostupni (zreli) zWEALTH za potrošnju
 
-zTUP su zreli kada imaju više od 20 potvrda I više od 2 mint od iste denominacije nakon što su bili mintani</translation>
+zWEALTH su zreli kada imaju više od 20 potvrda I više od 2 mint od iste denominacije nakon što su bili mintani</translation>
     </message>
     <message>
-        <source>0 zTUP</source>
-        <translation>0 zTUP</translation>
+        <source>0 zWEALTH</source>
+        <translation>0 zWEALTH</translation>
     </message>
     <message>
         <source>Security Level for Zerocoin Transactions. More is better, but needs more time and resources.</source>
@@ -2554,8 +2554,8 @@ zTUP su zreli kada imaju više od 20 potvrda I više od 2 mint od iste denominac
         <translation>Statistike Zerocoina:</translation>
     </message>
     <message>
-        <source>Total Balance including unconfirmed and immature zTUP</source>
-        <translation>Ukupni saldo uključujući nepotvrđeni i nedovršeni zTUP</translation>
+        <source>Total Balance including unconfirmed and immature zWEALTH</source>
+        <translation>Ukupni saldo uključujući nepotvrđeni i nedovršeni zWEALTH</translation>
     </message>
     <message>
         <source>Total Zerocoin  Balance:</source>
@@ -2576,24 +2576,24 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
 Nezreli: potvrđeno, ali manje od 1 minta iste denominacije nakon mintanja</translation>
     </message>
     <message>
-        <source>Show the current status of automatic zTUP minting.
+        <source>Show the current status of automatic zWEALTH minting.
 
 To change the status (restart required):
-- enable: add 'enablezeromint=1' to tenup.conf
-- disable: add 'enablezeromint=0' to tenup.conf
+- enable: add 'enablezeromint=1' to wealthsilo.conf
+- disable: add 'enablezeromint=0' to wealthsilo.conf
 
 To change the percentage (no restart required):
-- menu Settings-&gt;Options-&gt;Percentage of autominted zTUP
+- menu Settings-&gt;Options-&gt;Percentage of autominted zWEALTH
 
 </source>
-        <translation>Pokažite trenutačni status automatskog zTUP mintanja.
+        <translation>Pokažite trenutačni status automatskog zWEALTH mintanja.
 
 Da biste promijenili status (potrebno je ponovno pokretanje):
-- omogući: dodajte 'enablezeromint = 1' u tenup.conf
-- onemogućiti: dodajte 'enablezeromint = 0' na tenup.conf
+- omogući: dodajte 'enablezeromint = 1' u wealthsilo.conf
+- onemogućiti: dodajte 'enablezeromint = 0' na wealthsilo.conf
 
 Promjena postotka (nije potrebno ponovno pokretanje):
-- izbornik Postavke-&gt; Opcije-&gt; Postotak zTUP</translation>
+- izbornik Postavke-&gt; Opcije-&gt; Postotak zWEALTH</translation>
     </message>
     <message>
         <source>AutoMint Status</source>
@@ -2768,12 +2768,12 @@ Promjena postotka (nije potrebno ponovno pokretanje):
         <translation>Kopiraj iznos</translation>
     </message>
     <message>
-        <source>zTUP Spend #: </source>
-        <translation>zTUP utrošeno #: </translation>
+        <source>zWEALTH Spend #: </source>
+        <translation>zWEALTH utrošeno #: </translation>
     </message>
     <message>
-        <source>zTUP Mint</source>
-        <translation>zTUP Mint</translation>
+        <source>zWEALTH Mint</source>
+        <translation>zWEALTH Mint</translation>
     </message>
     <message>
         <source> &lt;b&gt;enabled&lt;/b&gt;.</source>
@@ -2788,12 +2788,12 @@ Promjena postotka (nije potrebno ponovno pokretanje):
         <translation> Konfigirani ciljani postotak: &lt;b&gt;</translation>
     </message>
     <message>
-        <source>zTUP is currently disabled due to maintenance.</source>
-        <translation>Zbog održavanja zTUP je trenutačno onemogućen.</translation>
+        <source>zWEALTH is currently disabled due to maintenance.</source>
+        <translation>Zbog održavanja zWEALTH je trenutačno onemogućen.</translation>
     </message>
     <message>
-        <source>zTUP is currently undergoing maintenance.</source>
-        <translation>Radovi u tijeku na zTUP.</translation>
+        <source>zWEALTH is currently undergoing maintenance.</source>
+        <translation>Radovi u tijeku na zWEALTH.</translation>
     </message>
     <message>
         <source>Denom. with value &lt;b&gt;1&lt;/b&gt;:</source>
@@ -2880,8 +2880,8 @@ Promjena postotka (nije potrebno ponovno pokretanje):
         <translation>Uspješno mintano</translation>
     </message>
     <message>
-        <source> zTUP in </source>
-        <translation> ulazni zTUP </translation>
+        <source> zWEALTH in </source>
+        <translation> ulazni zWEALTH </translation>
     </message>
     <message>
         <source> sec. Used denominations:
@@ -2952,12 +2952,12 @@ Zahtjevan izračun, možda će trebati nekoliko minuta ovisno o odabranoj razini
 Budite strpljivi ...</translation>
     </message>
     <message>
-        <source>Version 1 zTUP require a security level of 100 to successfully spend.</source>
-        <translation>Verzija 1 zTUP zahtjeva sigurnosnu razinu 100 da se uspješno utroši.</translation>
+        <source>Version 1 zWEALTH require a security level of 100 to successfully spend.</source>
+        <translation>Verzija 1 zWEALTH zahtjeva sigurnosnu razinu 100 da se uspješno utroši.</translation>
     </message>
     <message>
-        <source>Failed to spend zTUP</source>
-        <translation>Neuspjelo trošenje zTUP</translation>
+        <source>Failed to spend zWEALTH</source>
+        <translation>Neuspjelo trošenje zWEALTH</translation>
     </message>
     <message>
         <source>Failed to fetch mint associated with serial hash</source>
@@ -2984,7 +2984,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message numerus="yes">
         <source>PrivacyDialog</source>
-        <comment>Enter an amount of TUP to convert to zTUP</comment>
+        <comment>Enter an amount of WEALTH to convert to zWEALTH</comment>
         <translation><numerusform>PrivacyDialog</numerusform><numerusform>PrivacyDialog</numerusform><numerusform>PrivacyDialog</numerusform></translation>
     </message>
     <message>
@@ -3302,8 +3302,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Put prilagođenog sigurnosnog kopiranja:</translation>
     </message>
     <message>
-        <source>Custom zTUP Backup Path:</source>
-        <translation>Prilagođeni put zTUP sigurnosne kopije:</translation>
+        <source>Custom zWEALTH Backup Path:</source>
+        <translation>Prilagođeni put zWEALTH sigurnosne kopije:</translation>
     </message>
     <message>
         <source>Custom Backups Threshold:</source>
@@ -3747,8 +3747,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Veličina UTXO:</translation>
     </message>
     <message>
-        <source>0 TUP</source>
-        <translation>0 TUP</translation>
+        <source>0 WEALTH</source>
+        <translation>0 WEALTH</translation>
     </message>
     <message>
         <source>Transaction Fee:</source>
@@ -3805,12 +3805,12 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Kovanice se automatski odabiru</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uTUPs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uTUPs in fee,&lt;br /&gt;while "at least" pays 1000 uTUPs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Ako je prilagođena naknada postavljena na 1000 uTUP-ova, a transakcija je samo 250 bajta, tada "po kilobajtu" se plaća samo 250 uTUP-a, dok se "barem" plaća 1000 uTUP-ova. Za transakcije veće od kilobajta, oboje plaćaju po kilobajtu.</translation>
+        <source>If the custom fee is set to 1000 uWEALTHs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uWEALTHs in fee,&lt;br /&gt;while "at least" pays 1000 uWEALTHs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Ako je prilagođena naknada postavljena na 1000 uWEALTH-ova, a transakcija je samo 250 bajta, tada "po kilobajtu" se plaća samo 250 uWEALTH-a, dok se "barem" plaća 1000 uWEALTH-ova. Za transakcije veće od kilobajta, oboje plaćaju po kilobajtu.</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uTUPs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uTUPs in fee,&lt;br /&gt;while "total at least" pays 1000 uTUPs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Ako je prilagođena naknada postavljena na 1000 uTUP, a transakcija je samo 250 bajta, tada "po kilobajtu" plaća se samo 250 uTUP-ova, a "ukupno barem" plaća 1000 uTUP-ova. Za transakcije veće od kilobajta, oboje plaćaju po kilobajtu.</translation>
+        <source>If the custom fee is set to 1000 uWEALTHs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uWEALTHs in fee,&lt;br /&gt;while "total at least" pays 1000 uWEALTHs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Ako je prilagođena naknada postavljena na 1000 uWEALTH, a transakcija je samo 250 bajta, tada "po kilobajtu" plaća se samo 250 uWEALTH-ova, a "ukupno barem" plaća 1000 uWEALTH-ova. Za transakcije veće od kilobajta, oboje plaćaju po kilobajtu.</translation>
     </message>
     <message>
         <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for WealthSilo transactions than the network can process.</source>
@@ -3861,8 +3861,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Dodaj primatelja</translation>
     </message>
     <message>
-        <source>Anonymized TUP</source>
-        <translation>Anonimiziran TUP</translation>
+        <source>Anonymized WEALTH</source>
+        <translation>Anonimiziran WEALTH</translation>
     </message>
     <message>
         <source>Balance:</source>
@@ -4526,12 +4526,12 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Zaprimljeno preko Zametanja</translation>
     </message>
     <message>
-        <source>TUP Stake</source>
-        <translation>TUP Stake</translation>
+        <source>WEALTH Stake</source>
+        <translation>WEALTH Stake</translation>
     </message>
     <message>
-        <source>zTUP Stake</source>
-        <translation>zTUP Stake</translation>
+        <source>zWEALTH Stake</source>
+        <translation>zWEALTH Stake</translation>
     </message>
     <message>
         <source>Obfuscation Denominate</source>
@@ -4550,32 +4550,32 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Prikrivanje Stvara Denominacije</translation>
     </message>
     <message>
-        <source>Converted TUP to zTUP</source>
-        <translation>Pretvoreni TUP u zTUP</translation>
+        <source>Converted WEALTH to zWEALTH</source>
+        <translation>Pretvoreni WEALTH u zWEALTH</translation>
     </message>
     <message>
-        <source>Spent zTUP</source>
-        <translation>Utrošeni zTUP</translation>
+        <source>Spent zWEALTH</source>
+        <translation>Utrošeni zWEALTH</translation>
     </message>
     <message>
-        <source>Received TUP from zTUP</source>
-        <translation>Primljeni TUP od zTUP</translation>
+        <source>Received WEALTH from zWEALTH</source>
+        <translation>Primljeni WEALTH od zWEALTH</translation>
     </message>
     <message>
-        <source>Minted Change as zTUP from zTUP Spend</source>
-        <translation>Mintana razlika zTUP od zTUP Utroška</translation>
+        <source>Minted Change as zWEALTH from zWEALTH Spend</source>
+        <translation>Mintana razlika zWEALTH od zWEALTH Utroška</translation>
     </message>
     <message>
-        <source>Converted zTUP to TUP</source>
-        <translation>Pretvoreni zTUP u TUP</translation>
+        <source>Converted zWEALTH to WEALTH</source>
+        <translation>Pretvoreni zWEALTH u WEALTH</translation>
     </message>
     <message>
-        <source>Anonymous (zTUP Transaction)</source>
-        <translation>Anonimno (zTUP Transakcija)</translation>
+        <source>Anonymous (zWEALTH Transaction)</source>
+        <translation>Anonimno (zWEALTH Transakcija)</translation>
     </message>
     <message>
-        <source>Anonymous (zTUP Stake)</source>
-        <translation>Anonimno (zTUP Stake)</translation>
+        <source>Anonymous (zWEALTH Stake)</source>
+        <translation>Anonimno (zWEALTH Stake)</translation>
     </message>
     <message>
         <source>Sent to</source>
@@ -4785,12 +4785,12 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Izvoz uspješan</translation>
     </message>
     <message>
-        <source>Received TUP from zTUP</source>
-        <translation>Primljeni TUP od zTUP</translation>
+        <source>Received WEALTH from zWEALTH</source>
+        <translation>Primljeni WEALTH od zWEALTH</translation>
     </message>
     <message>
-        <source>Zerocoin Spend, Change in zTUP</source>
-        <translation>Zerocoin Utrošeno, Razlika (ostatak) u zTUP</translation>
+        <source>Zerocoin Spend, Change in zWEALTH</source>
+        <translation>Zerocoin Utrošeno, Razlika (ostatak) u zWEALTH</translation>
     </message>
     <message>
         <source>The transaction history was successfully saved to %1.</source>
@@ -4826,8 +4826,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Salji novac</translation>
     </message>
     <message>
-        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 TUP.</source>
-        <translation>SwiftX ne podržava slanje visokih vrijednosti. Transakcije su trenutačno ograničene na %1 TUP.</translation>
+        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 WEALTH.</source>
+        <translation>SwiftX ne podržava slanje visokih vrijednosti. Transakcije su trenutačno ograničene na %1 WEALTH.</translation>
     </message>
 </context>
 <context>
@@ -4858,10 +4858,10 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
 </context>
 <context>
-    <name>ZTupControlDialog</name>
+    <name>ZWealthlthlthControlDialog</name>
     <message>
-        <source>Select zTUP to Spend</source>
-        <translation>Odabrani zTUP za utrošiti</translation>
+        <source>Select zWEALTH to Spend</source>
+        <translation>Odabrani zWEALTH za utrošiti</translation>
     </message>
     <message>
         <source>Quantity</source>
@@ -4872,8 +4872,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>0</translation>
     </message>
     <message>
-        <source>zTUP</source>
-        <translation>zTUP</translation>
+        <source>zWEALTH</source>
+        <translation>zWEALTH</translation>
     </message>
     <message>
         <source>Select/Deselect All</source>
@@ -4885,7 +4885,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
 </context>
 <context>
-    <name>tenup-core</name>
+    <name>wealthsilo-core</name>
     <message>
         <source>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</source>
         <translation>(1 = zadržite metapodatke tx, npr. Vlasnika računa i podatke o zahtjevu za plaćanje, 2 = odbaci meta podataka tx)</translation>
@@ -4939,16 +4939,16 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Distribuirano pod MIT softverskom licencom, pogledajte priloženu datoteku COPYING ili &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</translation>
     </message>
     <message>
-        <source>Enable automatic wallet backups triggered after each zTUP minting (0-1, default: %u)</source>
-        <translation>Omogući automatsko sigurnosno kopiranje novčanika nakon svakog zTUP mintanja (0-1, default: %u)</translation>
+        <source>Enable automatic wallet backups triggered after each zWEALTH minting (0-1, default: %u)</source>
+        <translation>Omogući automatsko sigurnosno kopiranje novčanika nakon svakog zWEALTH mintanja (0-1, default: %u)</translation>
     </message>
     <message>
-        <source>Enable or disable staking functionality for TUP inputs (0-1, default: %u)</source>
-        <translation>Omogući ili onemogući staking funkcionalnosti za TUP unose (0-1, default: %u)</translation>
+        <source>Enable or disable staking functionality for WEALTH inputs (0-1, default: %u)</source>
+        <translation>Omogući ili onemogući staking funkcionalnosti za WEALTH unose (0-1, default: %u)</translation>
     </message>
     <message>
-        <source>Enable or disable staking functionality for zTUP inputs (0-1, default: %u)</source>
-        <translation>Omogući ili onemogući staking funkcionalnosti za zTUP unose (0-1, default: %u)</translation>
+        <source>Enable or disable staking functionality for zWEALTH inputs (0-1, default: %u)</source>
+        <translation>Omogući ili onemogući staking funkcionalnosti za zWEALTH unose (0-1, default: %u)</translation>
     </message>
     <message>
         <source>Enable spork administration functionality with the appropriate private key.</source>
@@ -4983,12 +4983,12 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Izvrši naredbu kada se promijeni najbolji blok (%s u cmd zamjenjuje se blokovskim raspršivanjem)</translation>
     </message>
     <message>
-        <source>Fees (in TUP/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>Naknade (u TUP / Kb) manje od toga smatraju se nulom naknadom za prosljeđivanje (zadano: %s)</translation>
+        <source>Fees (in WEALTH/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>Naknade (u WEALTH / Kb) manje od toga smatraju se nulom naknadom za prosljeđivanje (zadano: %s)</translation>
     </message>
     <message>
-        <source>Fees (in TUP/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>Naknade (u TUP / Kb) manje od toga smatraju se nulom naknadom za izradu transakcija (zadano: %s)</translation>
+        <source>Fees (in WEALTH/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>Naknade (u WEALTH / Kb) manje od toga smatraju se nulom naknadom za izradu transakcija (zadano: %s)</translation>
     </message>
     <message>
         <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</source>
@@ -5095,12 +5095,12 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Nije moguće locirati dovoljno sredstava s domenom Prikrivanja za tu transakciju.</translation>
     </message>
     <message>
-        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 25000 TUP.</source>
-        <translation>Nije moguće pronaći dovoljno prikrivenih sredstava koja nisu denominirana za ovu transakciju koja nisu jednaka 25000 TUP.</translation>
+        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 25000 WEALTH.</source>
+        <translation>Nije moguće pronaći dovoljno prikrivenih sredstava koja nisu denominirana za ovu transakciju koja nisu jednaka 25000 WEALTH.</translation>
     </message>
     <message>
-        <source>Unable to locate enough funds for this transaction that are not equal 25000 TUP.</source>
-        <translation>Nije moguće pronaći dovoljno sredstava za ovu transakciju koja nije jednaka 25000 TUP.</translation>
+        <source>Unable to locate enough funds for this transaction that are not equal 25000 WEALTH.</source>
+        <translation>Nije moguće pronaći dovoljno sredstava za ovu transakciju koja nije jednaka 25000 WEALTH.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
@@ -5412,8 +5412,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Greška čitanja bloka</translation>
     </message>
     <message>
-        <source>Fee (in TUP/kB) to add to transactions you send (default: %s)</source>
-        <translation>Naknada (u TUP / kB) za dodavanje transakcija koje šaljete (zadano: %s)</translation>
+        <source>Fee (in WEALTH/kB) to add to transactions you send (default: %s)</source>
+        <translation>Naknada (u WEALTH / kB) za dodavanje transakcija koje šaljete (zadano: %s)</translation>
     </message>
     <message>
         <source>Finalizing transaction.</source>
@@ -5544,8 +5544,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Postotak automatskog kovanog Zerocoina (1-100, zadano: %u)</translation>
     </message>
     <message>
-        <source>Reindex the TUP and zTUP money supply statistics</source>
-        <translation>Ponovno indeksirati statistiku TUP i zTUP ponude novca</translation>
+        <source>Reindex the WEALTH and zWEALTH money supply statistics</source>
+        <translation>Ponovno indeksirati statistiku WEALTH i zWEALTH ponude novca</translation>
     </message>
     <message>
         <source>Reindexing zerocoin database...</source>
@@ -5619,8 +5619,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Preferirana denominacija za automatski ovjereni Zerocoin (1/5/10/50/100/500/1000/5000), 0 bez preferencije. zadana vrijednost: %u)</translation>
     </message>
     <message>
-        <source>Specify custom backup path to add a copy of any automatic zTUP backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
-        <translation>Navedite put prilagođenog sigurnosnog kopiranja da biste dodali kopiju bilo koje automatske zTUP sigurnosne kopije. Ako je postavljeno kao dir, svaka sigurnosna kopija generira vremensku datoteku. Ako je postavljen kao datoteka, prepisat će na tu datoteku svaku kopiju. Ako je postavljen backuppath, dogodit će se 4 sigurnosne kopije</translation>
+        <source>Specify custom backup path to add a copy of any automatic zWEALTH backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
+        <translation>Navedite put prilagođenog sigurnosnog kopiranja da biste dodali kopiju bilo koje automatske zWEALTH sigurnosne kopije. Ako je postavljeno kao dir, svaka sigurnosna kopija generira vremensku datoteku. Ako je postavljen kao datoteka, prepisat će na tu datoteku svaku kopiju. Ako je postavljen backuppath, dogodit će se 4 sigurnosne kopije</translation>
     </message>
     <message>
         <source>Specify custom backup path to add a copy of any wallet backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup.</source>
@@ -6119,8 +6119,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Sinkronizacija sporka...</translation>
     </message>
     <message>
-        <source>Syncing zTUP wallet...</source>
-        <translation>Sinkronizacija zTUP novčanika...</translation>
+        <source>Syncing zWEALTH wallet...</source>
+        <translation>Sinkronizacija zWEALTH novčanika...</translation>
     </message>
     <message>
         <source>The coin spend has been used</source>
@@ -6267,8 +6267,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Korisničko ime za JSON-RPC veze</translation>
     </message>
     <message>
-        <source>Value is below the smallest available denomination (= 1) of zTUP</source>
-        <translation>Vrijednost je niža od najmanje dostupne denominacije (= 1) zTUP-a</translation>
+        <source>Value is below the smallest available denomination (= 1) of zWEALTH</source>
+        <translation>Vrijednost je niža od najmanje dostupne denominacije (= 1) zWEALTH-a</translation>
     </message>
     <message>
         <source>Value more than Obfuscation pool maximum allows.</source>
@@ -6283,8 +6283,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Provjera novčanika...</translation>
     </message>
     <message>
-        <source>Version 1 zTUP require a security level of 100 to successfully spend.</source>
-        <translation>Verzija 1 zTUP zahtjeva sigurnosnu razinu 100 da se uspješno utroši.</translation>
+        <source>Version 1 zWEALTH require a security level of 100 to successfully spend.</source>
+        <translation>Verzija 1 zWEALTH zahtjeva sigurnosnu razinu 100 da se uspješno utroši.</translation>
     </message>
     <message>
         <source>Wallet %s resides outside data directory %s</source>

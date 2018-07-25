@@ -3,17 +3,17 @@ Description=WealthSilo's distributed currency daemon
 After=network.target
 
 [Service]
-User=tenup
-Group=tenup
+User=wealthsilo
+Group=wealthsilo
 
 Type=forking
-PIDFile=/var/lib/tenupd/tenupd.pid
+PIDFile=/var/lib/wealthsilod/wealthsilod.pid
 
-ExecStart=/usr/bin/tenupd -daemon -pid=/var/lib/tenupd/tenupd.pid \
-          -conf=/etc/tenup/tenup.conf -datadir=/var/lib/tenupd
+ExecStart=/usr/bin/wealthsilod -daemon -pid=/var/lib/wealthsilod/wealthsilod.pid \
+          -conf=/etc/wealthsilo/wealthsilo.conf -datadir=/var/lib/wealthsilod
 
-ExecStop=-/usr/bin/tenup-cli -conf=/etc/tenup/tenup.conf \
-         -datadir=/var/lib/tenupd stop
+ExecStop=-/usr/bin/wealthsilo-cli -conf=/etc/wealthsilo/wealthsilo.conf \
+         -datadir=/var/lib/wealthsilod stop
 
 Restart=always
 PrivateTmp=true

@@ -29,7 +29,7 @@ BOOST_AUTO_TEST_CASE(zerocoin_spend_test)
 
     bool fFirstRun;
     cWallet.LoadWallet(fFirstRun);
-    cWallet.ztupTracker = unique_ptr<CzTUPTracker>(new CzTUPTracker(cWallet.strWalletFile));
+    cWallet.zwealthTracker = unique_ptr<CzWEALTHTracker>(new CzWEALTHTracker(cWallet.strWalletFile));
     CMutableTransaction tx;
     CWalletTx* wtx = new CWalletTx(&cWallet, tx);
     bool fMintChange=true;
@@ -42,7 +42,7 @@ BOOST_AUTO_TEST_CASE(zerocoin_spend_test)
     CZerocoinSpendReceipt receipt;
     cWallet.SpendZerocoin(nAmount, nSecurityLevel, *wtx, receipt, vMints, fMintChange, fMinimizeChange);
 
-    BOOST_CHECK_MESSAGE(receipt.GetStatus() == ZTUP_TRX_FUNDS_PROBLEMS, "Failed Invalid Amount Check");
+    BOOST_CHECK_MESSAGE(receipt.GetStatus() == ZWEALTH_TRX_FUNDS_PROBLEMS, "Failed Invalid Amount Check");
 
     nAmount = 1;
     CZerocoinSpendReceipt receipt2;
@@ -51,7 +51,7 @@ BOOST_AUTO_TEST_CASE(zerocoin_spend_test)
     // if using "wallet.dat", instead of "unlocked.dat" need this
     /// BOOST_CHECK_MESSAGE(vString == "Error: Wallet locked, unable to create transaction!"," Locked Wallet Check Failed");
 
-    BOOST_CHECK_MESSAGE(receipt2.GetStatus() == ZTUP_TRX_FUNDS_PROBLEMS, "Failed Invalid Amount Check");
+    BOOST_CHECK_MESSAGE(receipt2.GetStatus() == ZWEALTH_TRX_FUNDS_PROBLEMS, "Failed Invalid Amount Check");
 
 }
 

@@ -144,8 +144,8 @@
         <translation>Czy na pewno chcesz zakodować portfel?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR TUP&lt;/b&gt;!</source>
-        <translation>Ostrzeżenie: Jeżeli zakodujesz portfel i stracisz do niego hasło , UTRACISZ WSZYSTKIE TUP!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR WEALTH&lt;/b&gt;!</source>
+        <translation>Ostrzeżenie: Jeżeli zakodujesz portfel i stracisz do niego hasło , UTRACISZ WSZYSTKIE WEALTH!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -517,8 +517,8 @@
         <translation>Wyślij monety do adresu WealthSilo</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and tenup: URIs)</source>
-        <translation>Zarządaj płatności (generuje kod QR i tenup:URI)</translation>
+        <source>Request payments (generates QR codes and wealthsilo: URIs)</source>
+        <translation>Zarządaj płatności (generuje kod QR i wealthsilo:URI)</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -1219,9 +1219,9 @@ Proszę sprawdzić adres i spróbować ponownie</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/tenup-project/tenup-project-translations</source>
+https://www.transifex.com/wealthsilo-project/wealthsilo-project-translations</source>
         <translation>Brakuje języka bądź nieukończona pełnego tłumaczenia? Pomóż w tłumaczeniu tutaj:
-https://www.transifex.com/tenup-project/tenup-project-translations </translation>
+https://www.transifex.com/wealthsilo-project/wealthsilo-project-translations </translation>
     </message>
     <message>
         <source>Connect to the WealthSilo network through a SOCKS5 proxy.</source>
@@ -2021,14 +2021,14 @@ https://www.transifex.com/tenup-project/tenup-project-translations </translation
     </message>
     </context>
 <context>
-    <name>ZTupControlDialog</name>
+    <name>ZWealthControlDialog</name>
     <message>
         <source>0</source>
         <translation>0</translation>
     </message>
     </context>
 <context>
-    <name>tenup-core</name>
+    <name>wealthsilo-core</name>
     <message>
         <source>Error</source>
         <translation>Błąd</translation>

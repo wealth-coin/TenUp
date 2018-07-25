@@ -20,18 +20,18 @@ BitcoinUnits::BitcoinUnits(QObject* parent) : QAbstractListModel(parent),
 QList<BitcoinUnits::Unit> BitcoinUnits::availableUnits()
 {
     QList<BitcoinUnits::Unit> unitlist;
-    unitlist.append(TUP);
-    unitlist.append(mTUP);
-    unitlist.append(uTUP);
+    unitlist.append(WEALTH);
+    unitlist.append(mWEALTH);
+    unitlist.append(uWEALTH);
     return unitlist;
 }
 
 bool BitcoinUnits::valid(int unit)
 {
     switch (unit) {
-    case TUP:
-    case mTUP:
-    case uTUP:
+    case WEALTH:
+    case mWEALTH:
+    case uWEALTH:
         return true;
     default:
         return false;
@@ -41,12 +41,12 @@ bool BitcoinUnits::valid(int unit)
 QString BitcoinUnits::id(int unit)
 {
     switch (unit) {
-    case TUP:
-        return QString("tenup");
-    case mTUP:
-        return QString("mtenup");
-    case uTUP:
-        return QString::fromUtf8("utenup");
+    case WEALTH:
+        return QString("wealthsilo");
+    case mWEALTH:
+        return QString("mwealthsilo");
+    case uWEALTH:
+        return QString::fromUtf8("uwealthsilo");
     default:
         return QString("???");
     }
@@ -56,23 +56,23 @@ QString BitcoinUnits::name(int unit)
 {
     if (Params().NetworkID() == CBaseChainParams::MAIN) {
         switch (unit) {
-        case TUP:
-            return QString("TUP");
-        case mTUP:
-            return QString("mTUP");
-        case uTUP:
-            return QString::fromUtf8("μTUP");
+        case WEALTH:
+            return QString("WEALTH");
+        case mWEALTH:
+            return QString("mWEALTH");
+        case uWEALTH:
+            return QString::fromUtf8("μWEALTH");
         default:
             return QString("???");
         }
     } else {
         switch (unit) {
-        case TUP:
-            return QString("tTUP");
-        case mTUP:
-            return QString("mtTUP");
-        case uTUP:
-            return QString::fromUtf8("μtTUP");
+        case WEALTH:
+            return QString("tWEALTH");
+        case mWEALTH:
+            return QString("mtWEALTH");
+        case uWEALTH:
+            return QString::fromUtf8("μtWEALTH");
         default:
             return QString("???");
         }
@@ -83,23 +83,23 @@ QString BitcoinUnits::description(int unit)
 {
     if (Params().NetworkID() == CBaseChainParams::MAIN) {
         switch (unit) {
-        case TUP:
-            return QString("TUP");
-        case mTUP:
-            return QString("Milli-TUP (1 / 1" THIN_SP_UTF8 "000)");
-        case uTUP:
-            return QString("Micro-TUP (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+        case WEALTH:
+            return QString("WEALTH");
+        case mWEALTH:
+            return QString("Milli-WEALTH (1 / 1" THIN_SP_UTF8 "000)");
+        case uWEALTH:
+            return QString("Micro-WEALTH (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
         default:
             return QString("???");
         }
     } else {
         switch (unit) {
-        case TUP:
-            return QString("TestTUPs");
-        case mTUP:
-            return QString("Milli-TestTUP (1 / 1" THIN_SP_UTF8 "000)");
-        case uTUP:
-            return QString("Micro-TestTUP (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+        case WEALTH:
+            return QString("TestWEALTHs");
+        case mWEALTH:
+            return QString("Milli-TestWEALTH (1 / 1" THIN_SP_UTF8 "000)");
+        case uWEALTH:
+            return QString("Micro-TestWEALTH (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
         default:
             return QString("???");
         }
@@ -109,11 +109,11 @@ QString BitcoinUnits::description(int unit)
 qint64 BitcoinUnits::factor(int unit)
 {
     switch (unit) {
-    case TUP:
+    case WEALTH:
         return 100000000;
-    case mTUP:
+    case mWEALTH:
         return 100000;
-    case uTUP:
+    case uWEALTH:
         return 100;
     default:
         return 100000000;
@@ -123,11 +123,11 @@ qint64 BitcoinUnits::factor(int unit)
 int BitcoinUnits::decimals(int unit)
 {
     switch (unit) {
-    case TUP:
+    case WEALTH:
         return 8;
-    case mTUP:
+    case mWEALTH:
         return 5;
-    case uTUP:
+    case uWEALTH:
         return 2;
     default:
         return 0;

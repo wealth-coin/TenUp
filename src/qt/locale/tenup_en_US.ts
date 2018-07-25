@@ -176,16 +176,16 @@
         <translation>Confirm wallet encryption</translation>
     </message>
     <message>
-        <source>WealthSilo will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your TUPs from being stolen by malware infecting your computer.</source>
-        <translation>WealthSilo will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your TUPs from being stolen by malware infecting your computer.</translation>
+        <source>WealthSilo will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your WEALTHs from being stolen by malware infecting your computer.</source>
+        <translation>WealthSilo will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your WEALTHs from being stolen by malware infecting your computer.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Are you sure you wish to encrypt your wallet?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR TUP&lt;/b&gt;!</source>
-        <translation>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR TUP&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR WEALTH&lt;/b&gt;!</source>
+        <translation>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR WEALTH&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -610,8 +610,8 @@
         <translation>Send coins to a WealthSilo address</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and tenup: URIs)</source>
-        <translation>Request payments (generates QR codes and tenup: URIs)</translation>
+        <source>Request payments (generates QR codes and wealthsilo: URIs)</source>
+        <translation>Request payments (generates QR codes and wealthsilo: URIs)</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -837,8 +837,8 @@ Address: %4
         <translation>TextLabel</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (tenup.conf).</source>
-        <translation>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (tenup.conf).</translation>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (wealthsilo.conf).</source>
+        <translation>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (wealthsilo.conf).</translation>
     </message>
 </context>
 <context>
@@ -1544,32 +1544,32 @@ Please check the address and try again.</translation>
         <translation>Please select a privacy level.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 25000 TUP</source>
-        <translation>Use 2 separate masternodes to mix funds up to 25000 TUP</translation>
+        <source>Use 2 separate masternodes to mix funds up to 25000 WEALTH</source>
+        <translation>Use 2 separate masternodes to mix funds up to 25000 WEALTH</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 25000 TUP</source>
-        <translation>Use 8 separate masternodes to mix funds up to 25000 TUP</translation>
+        <source>Use 8 separate masternodes to mix funds up to 25000 WEALTH</source>
+        <translation>Use 8 separate masternodes to mix funds up to 25000 WEALTH</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>Use 16 separate masternodes</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 TUP to anonymize 25000 TUP</source>
-        <translation>This option is the quickest and will cost about ~0.025 TUP to anonymize 25000 TUP</translation>
+        <source>This option is the quickest and will cost about ~0.025 WEALTH to anonymize 25000 WEALTH</source>
+        <translation>This option is the quickest and will cost about ~0.025 WEALTH to anonymize 25000 WEALTH</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 TUP to anonymize 25000 TUP</source>
-        <translation>This option is moderately fast and will cost about 0.05 TUP to anonymize 25000 TUP</translation>
+        <source>This option is moderately fast and will cost about 0.05 WEALTH to anonymize 25000 WEALTH</source>
+        <translation>This option is moderately fast and will cost about 0.05 WEALTH to anonymize 25000 WEALTH</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
         <translation>This is the slowest and most secure option. Using maximum anonymity will cost</translation>
     </message>
     <message>
-        <source>0.1 TUP per  10000 TUP you anonymize.</source>
-        <translation>0.1 TUP per  10000 TUP you anonymize.</translation>
+        <source>0.1 WEALTH per  10000 WEALTH you anonymize.</source>
+        <translation>0.1 WEALTH per  10000 WEALTH you anonymize.</translation>
     </message>
     <message>
         <source>Obfuscation Configuration</source>
@@ -1719,9 +1719,9 @@ Please check the address and try again.</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/tenup-project/tenup-project-translations</source>
+https://www.transifex.com/wealthsilo-project/wealthsilo-project-translations</source>
         <translation>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/tenup-project/tenup-project-translations</translation>
+https://www.transifex.com/wealthsilo-project/wealthsilo-project-translations</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -1927,8 +1927,8 @@ https://www.transifex.com/tenup-project/tenup-project-translations</translation>
         <translation>Obfuscation Balance:</translation>
     </message>
     <message>
-        <source>0 TUP / 0 Rounds</source>
-        <translation>0 TUP / 0 Rounds</translation>
+        <source>0 WEALTH / 0 Rounds</source>
+        <translation>0 WEALTH / 0 Rounds</translation>
     </message>
     <message>
         <source>Enabled/Disabled</source>
@@ -2092,8 +2092,8 @@ https://www.transifex.com/tenup-project/tenup-project-translations</translation>
         <translation>Invalid payment address %1</translation>
     </message>
     <message>
-        <source>Cannot start tenup: click-to-pay handler</source>
-        <translation>Cannot start tenup: click-to-pay handler</translation>
+        <source>Cannot start wealthsilo: click-to-pay handler</source>
+        <translation>Cannot start wealthsilo: click-to-pay handler</translation>
     </message>
     <message>
         <source>URI cannot be parsed! This can be caused by an invalid WealthSilo address or malformed URI parameters.</source>
@@ -2792,8 +2792,8 @@ https://www.transifex.com/tenup-project/tenup-project-translations</translation>
         <translation>UTXO Size:</translation>
     </message>
     <message>
-        <source>0 TUP</source>
-        <translation>0 TUP</translation>
+        <source>0 WEALTH</source>
+        <translation>0 WEALTH</translation>
     </message>
     <message>
         <source>Transaction Fee:</source>
@@ -2840,12 +2840,12 @@ https://www.transifex.com/tenup-project/tenup-project-translations</translation>
         <translation>Confirmation time:</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uTUPs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uTUPs in fee,&lt;br /&gt;while "at least" pays 1000 uTUPs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>If the custom fee is set to 1000 uTUPs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uTUPs in fee,&lt;br /&gt;while "at least" pays 1000 uTUPs. For transactions bigger than a kilobyte both pay by kilobyte.</translation>
+        <source>If the custom fee is set to 1000 uWEALTHs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uWEALTHs in fee,&lt;br /&gt;while "at least" pays 1000 uWEALTHs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>If the custom fee is set to 1000 uWEALTHs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uWEALTHs in fee,&lt;br /&gt;while "at least" pays 1000 uWEALTHs. For transactions bigger than a kilobyte both pay by kilobyte.</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uTUPs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uTUPs in fee,&lt;br /&gt;while "total at least" pays 1000 uTUPs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>If the custom fee is set to 1000 uTUPs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uTUPs in fee,&lt;br /&gt;while "total at least" pays 1000 uTUPs. For transactions bigger than a kilobyte both pay by kilobyte.</translation>
+        <source>If the custom fee is set to 1000 uWEALTHs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uWEALTHs in fee,&lt;br /&gt;while "total at least" pays 1000 uWEALTHs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>If the custom fee is set to 1000 uWEALTHs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uWEALTHs in fee,&lt;br /&gt;while "total at least" pays 1000 uWEALTHs. For transactions bigger than a kilobyte both pay by kilobyte.</translation>
     </message>
     <message>
         <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for WealthSilo transactions than the network can process.</source>
@@ -3840,8 +3840,8 @@ https://www.transifex.com/tenup-project/tenup-project-translations</translation>
         <translation>Send Coins</translation>
     </message>
     <message>
-        <source>SwiftTX doesn't support sending values that high yet. Transactions are currently limited to %1 TUP.</source>
-        <translation>SwiftTX doesn't support sending values that high yet. Transactions are currently limited to %1 TUP.</translation>
+        <source>SwiftTX doesn't support sending values that high yet. Transactions are currently limited to %1 WEALTH.</source>
+        <translation>SwiftTX doesn't support sending values that high yet. Transactions are currently limited to %1 WEALTH.</translation>
     </message>
 </context>
 <context>
@@ -3884,7 +3884,7 @@ https://www.transifex.com/tenup-project/tenup-project-translations</translation>
     </message>
 </context>
 <context>
-    <name>tenup-core</name>
+    <name>wealthsilo-core</name>
     <message>
         <source>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</source>
         <translation>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</translation>
@@ -3974,12 +3974,12 @@ https://www.transifex.com/tenup-project/tenup-project-translations</translation>
         <translation>Execute command when the best block changes (%s in cmd is replaced by block hash)</translation>
     </message>
     <message>
-        <source>Fees (in TUP/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>Fees (in TUP/Kb) smaller than this are considered zero fee for relaying (default: %s)</translation>
+        <source>Fees (in WEALTH/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>Fees (in WEALTH/Kb) smaller than this are considered zero fee for relaying (default: %s)</translation>
     </message>
     <message>
-        <source>Fees (in TUP/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>Fees (in TUP/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</translation>
+        <source>Fees (in WEALTH/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>Fees (in WEALTH/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</translation>
     </message>
     <message>
         <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</source>
@@ -4082,10 +4082,10 @@ https://www.transifex.com/tenup-project/tenup-project-translations</translation>
         <translation>This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit &lt;https://www.openssl.org/&gt; and cryptographic software written by Eric Young and UPnP software written by Thomas Bernard.</translation>
     </message>
     <message>
-        <source>To use tenupd, or the -server option to tenup-qt, you must set an rpcpassword in the configuration file:
+        <source>To use wealthsilod, or the -server option to wealthsilo-qt, you must set an rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=tenuprpc
+rpcuser=wealthsilorpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
@@ -4093,10 +4093,10 @@ If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
 for example: alertnotify=echo %%s | mail -s "WealthSilo Alert" admin@foo.com
 </source>
-        <translation>To use tenupd, or the -server option to tenup-qt, you must set an rpcpassword in the configuration file:
+        <translation>To use wealthsilod, or the -server option to wealthsilo-qt, you must set an rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=tenuprpc
+rpcuser=wealthsilorpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
@@ -4114,12 +4114,12 @@ for example: alertnotify=echo %%s | mail -s "WealthSilo Alert" admin@foo.com
         <translation>Unable to locate enough Obfuscation denominated funds for this transaction.</translation>
     </message>
     <message>
-        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 25000 TUP.</source>
-        <translation>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 25000 TUP.</translation>
+        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 25000 WEALTH.</source>
+        <translation>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 25000 WEALTH.</translation>
     </message>
     <message>
-        <source>Unable to locate enough funds for this transaction that are not equal 25000 TUP.</source>
-        <translation>Unable to locate enough funds for this transaction that are not equal 25000 TUP.</translation>
+        <source>Unable to locate enough funds for this transaction that are not equal 25000 WEALTH.</source>
+        <translation>Unable to locate enough funds for this transaction that are not equal 25000 WEALTH.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
@@ -4406,8 +4406,8 @@ for example: alertnotify=echo %%s | mail -s "WealthSilo Alert" admin@foo.com
         <translation>Failed to read block</translation>
     </message>
     <message>
-        <source>Fee (in TUP/kB) to add to transactions you send (default: %s)</source>
-        <translation>Fee (in TUP/kB) to add to transactions you send (default: %s)</translation>
+        <source>Fee (in WEALTH/kB) to add to transactions you send (default: %s)</source>
+        <translation>Fee (in WEALTH/kB) to add to transactions you send (default: %s)</translation>
     </message>
     <message>
         <source>Finalizing transaction.</source>
@@ -4578,8 +4578,8 @@ for example: alertnotify=echo %%s | mail -s "WealthSilo Alert" admin@foo.com
         <translation>Enable staking functionality (0-1, default: %u)</translation>
     </message>
     <message>
-        <source>Keep N TUP anonymized (default: %u)</source>
-        <translation>Keep N TUP anonymized (default: %u)</translation>
+        <source>Keep N WEALTH anonymized (default: %u)</source>
+        <translation>Keep N WEALTH anonymized (default: %u)</translation>
     </message>
     <message>
         <source>Keep at most &lt;n&gt; unconnectable transactions in memory (default: %u)</source>

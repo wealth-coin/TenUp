@@ -78,7 +78,7 @@ HEADERS += src/activemasternode.h \
            src/crypter.h \
            src/obfuscation-relay.h \
            src/obfuscation.h \
-           src/tenup-config.h \
+           src/wealthsilo-config.h \
            src/db.h \
            src/eccryptoverify.h \
            src/ecwrapper.h \
@@ -131,7 +131,7 @@ HEADERS += src/activemasternode.h \
            src/wallet_ismine.h \
            src/walletdb.h \
            src/compat/sanity.h \
-           src/config/tenup-config.h \
+           src/config/wealthsilo-config.h \
            src/crypto/common.h \
            src/crypto/hmac_sha256.h \
            src/crypto/hmac_sha512.h \
@@ -332,7 +332,7 @@ HEADERS += src/activemasternode.h \
            src/secp256k1/src/java/org_bitcoin_NativeSecp256k1.h \
            src/crypto/aes_helper.c \
            src/qt/bitcoinamountfield.moc \
-           src/qt/tenup.moc \
+           src/qt/wealthsilo.moc \
            src/qt/intro.moc \
            src/qt/overviewpage.moc \
            src/qt/rpcconsole.moc \
@@ -373,9 +373,9 @@ SOURCES += src/activemasternode.cpp \
            src/crypter.cpp \
            src/obfuscation-relay.cpp \
            src/obfuscation.cpp \
-           src/tenup-cli.cpp \
-           src/tenup-tx.cpp \
-           src/tenup.cpp \
+           src/wealthsilo-cli.cpp \
+           src/wealthsilo-tx.cpp \
+           src/wealthsilo.cpp \
            src/db.cpp \
            src/eccryptoverify.cpp \
            src/ecwrapper.cpp \
@@ -470,8 +470,8 @@ SOURCES += src/activemasternode.cpp \
            src/qt/coincontroltreewidget.cpp \
            src/qt/csvmodelwriter.cpp \
            src/qt/obfuscationconfig.cpp \
-           src/qt/tenup.cpp \
-           src/qt/tenupstrings.cpp \
+           src/qt/wealthsilo.cpp \
+           src/qt/wealthsilostrings.cpp \
            src/qt/editaddressdialog.cpp \
            src/qt/guiutil.cpp \
            src/qt/intro.cpp \
@@ -549,7 +549,7 @@ SOURCES += src/activemasternode.cpp \
            src/test/sighash_tests.cpp \
            src/test/sigopcount_tests.cpp \
            src/test/skiplist_tests.cpp \
-           src/test/test_tenup.cpp \
+           src/test/test_wealthsilo.cpp \
            src/test/timedata_tests.cpp \
            src/test/transaction_tests.cpp \
            src/test/uint256_tests.cpp \
@@ -640,21 +640,21 @@ SOURCES += src/activemasternode.cpp \
            src/leveldb/helpers/memenv/memenv.cc \
            src/leveldb/helpers/memenv/memenv_test.cc \
            src/secp256k1/src/java/org_bitcoin_NativeSecp256k1.c
-RESOURCES += src/qt/tenup.qrc src/qt/tenup_locale.qrc
+RESOURCES += src/qt/wealthsilo.qrc src/qt/wealthsilo_locale.qrc
 
-TRANSLATIONS += src/qt/locale/tenup_bg.ts \
-                src/qt/locale/tenup_de.ts \
-                src/qt/locale/tenup_en.ts \
-                src/qt/locale/tenup_es.ts \
-                src/qt/locale/tenup_fi.ts \
-                src/qt/locale/tenup_fr.ts \
-                src/qt/locale/tenup_it.ts \
-                src/qt/locale/tenup_ja.ts \
-                src/qt/locale/tenup_pl.ts \
-                src/qt/locale/tenup_pt.ts \
-                src/qt/locale/tenup_ru.ts \
-                src/qt/locale/tenup_sk.ts \
-                src/qt/locale/tenup_sv.ts \
-                src/qt/locale/tenup_vi.ts \
-                src/qt/locale/tenup_zh_CN.ts \
-                src/qt/locale/tenup_zh_TW.ts
+TRANSLATIONS += src/qt/locale/wealthsilo_bg.ts \
+                src/qt/locale/wealthsilo_de.ts \
+                src/qt/locale/wealthsilo_en.ts \
+                src/qt/locale/wealthsilo_es.ts \
+                src/qt/locale/wealthsilo_fi.ts \
+                src/qt/locale/wealthsilo_fr.ts \
+                src/qt/locale/wealthsilo_it.ts \
+                src/qt/locale/wealthsilo_ja.ts \
+                src/qt/locale/wealthsilo_pl.ts \
+                src/qt/locale/wealthsilo_pt.ts \
+                src/qt/locale/wealthsilo_ru.ts \
+                src/qt/locale/wealthsilo_sk.ts \
+                src/qt/locale/wealthsilo_sv.ts \
+                src/qt/locale/wealthsilo_vi.ts \
+                src/qt/locale/wealthsilo_zh_CN.ts \
+                src/qt/locale/wealthsilo_zh_TW.ts

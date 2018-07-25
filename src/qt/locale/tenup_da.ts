@@ -176,7 +176,7 @@
         <translation>Bekræft, og tegnebogen krypteres.</translation>
     </message>
     <message>
-        <source>WealthSilo will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your TUPs from being stolen by malware infecting your computer.</source>
+        <source>WealthSilo will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your WEALTHs from being stolen by malware infecting your computer.</source>
         <translation>WealthSilo vil lukke ned for at færdiggøre kryptograferingsprocesserne. Husk at kryptering alene ikke sikrer mod tyveri af mønterne fra malware eller virus på computeren.</translation>
     </message>
     <message>
@@ -184,8 +184,8 @@
         <translation>Er du sikker på, at du vil kryptere din tegnebog?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR TUP&lt;/b&gt;!</source>
-        <translation>Advarsel! Hvis du krypterer din tegnebog og mister dit password vil du &lt;b&gt;MISTE ALLE DINE TUP&lt;/b&gt;. Passworded kan ikke genskabes.</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR WEALTH&lt;/b&gt;!</source>
+        <translation>Advarsel! Hvis du krypterer din tegnebog og mister dit password vil du &lt;b&gt;MISTE ALLE DINE WEALTH&lt;/b&gt;. Passworded kan ikke genskabes.</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -433,8 +433,8 @@
         <translation>Vis transaktionshistorik</translation>
     </message>
     <message>
-        <source>Privacy Actions for zTUP</source>
-        <translation>Beskyttelse af personlige oplysninger for zTUP</translation>
+        <source>Privacy Actions for zWEALTH</source>
+        <translation>Beskyttelse af personlige oplysninger for zWEALTH</translation>
     </message>
     <message>
         <source>E&amp;xit</source>
@@ -653,7 +653,7 @@
         <translation>Send mønter til en WealthSilo adresse</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and tenup: URIs)</source>
+        <source>Request payments (generates QR codes and wealthsilo: URIs)</source>
         <translation>Anmod om betaling (genrerer QR kode og WealthSilo URL)</translation>
     </message>
     <message>
@@ -892,8 +892,8 @@ Adresse: %4
         <translation>Tekstmærke</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (tenup.conf).</source>
-        <translation>Ikke alle transaktioner vil blive vist. For at vise alle transaktioner må De sætte "txindex=1" i konfigurationsfilen (tenup.conf).</translation>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (wealthsilo.conf).</source>
+        <translation>Ikke alle transaktioner vil blive vist. For at vise alle transaktioner må De sætte "txindex=1" i konfigurationsfilen (wealthsilo.conf).</translation>
     </message>
 </context>
 <context>
@@ -1130,7 +1130,7 @@ Adresse: %4
         <translation>Denne tekstmarkør bliver rød, hvis en modtageradresse modtager et beløb mindre end %1.</translation>
     </message>
     <message>
-        <source>Can vary +/- %1 utup per input.</source>
+        <source>Can vary +/- %1 uwealth per input.</source>
         <translation>Kan variere +/- %1 otup pr input.</translation>
     </message>
     <message>
@@ -1681,8 +1681,8 @@ Vær tålmodig efter at du har klikket på import.</translation>
         <translation>Adresse / Beløb:</translation>
     </message>
     <message>
-        <source>Add destinations to send TUP to</source>
-        <translation>Tilføj destinationer for at sende TUP til</translation>
+        <source>Add destinations to send WEALTH to</source>
+        <translation>Tilføj destinationer for at sende WEALTH til</translation>
     </message>
     <message>
         <source>Add &amp;Destination</source>
@@ -1780,32 +1780,32 @@ Vær tålmodig efter at du har klikket på import.</translation>
         <translation>Vælg tilsløringsniveau</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 25000 TUP</source>
-        <translation>Brug 2 separate masternoder for at tilsløre beløb op til 25000 TUP</translation>
+        <source>Use 2 separate masternodes to mix funds up to 25000 WEALTH</source>
+        <translation>Brug 2 separate masternoder for at tilsløre beløb op til 25000 WEALTH</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 25000 TUP</source>
-        <translation>Brug 8 separate masternoder for at tilsløre op til 25000 TUP</translation>
+        <source>Use 8 separate masternodes to mix funds up to 25000 WEALTH</source>
+        <translation>Brug 8 separate masternoder for at tilsløre op til 25000 WEALTH</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>Brug 16 separate masternoder</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 TUP to anonymize 25000 TUP</source>
-        <translation>Dette valg er det hurtigste og vil koste i omegnen af 0.025 TUP for at anonymiser 25000 TUP</translation>
+        <source>This option is the quickest and will cost about ~0.025 WEALTH to anonymize 25000 WEALTH</source>
+        <translation>Dette valg er det hurtigste og vil koste i omegnen af 0.025 WEALTH for at anonymiser 25000 WEALTH</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 TUP to anonymize 25000 TUP</source>
-        <translation>Dette valg er relativt hurtigt og vil koste i omegnen af 0.05 TUP for at anonymiser 25000 TUP</translation>
+        <source>This option is moderately fast and will cost about 0.05 WEALTH to anonymize 25000 WEALTH</source>
+        <translation>Dette valg er relativt hurtigt og vil koste i omegnen af 0.05 WEALTH for at anonymiser 25000 WEALTH</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
         <translation>Denne mulighed er den langsomste og det mest sikre valg. Valg af maksimal tilsløring vil koste</translation>
     </message>
     <message>
-        <source>0.1 TUP per  10000 TUP you anonymize.</source>
-        <translation>0.1 pr  10000 TUP for at tilsløre.</translation>
+        <source>0.1 WEALTH per  10000 WEALTH you anonymize.</source>
+        <translation>0.1 pr  10000 WEALTH for at tilsløre.</translation>
     </message>
     <message>
         <source>Obfuscation Configuration</source>
@@ -1939,37 +1939,37 @@ Vær tålmodig efter at du har klikket på import.</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/tenup-project/tenup-project-translations</source>
+https://www.transifex.com/wealthsilo-project/wealthsilo-project-translations</source>
         <translation>Det valgte sprog mangler, eller oversættelsen er mangelfuld. Hjælp ved at bidrage med oversættelser her:
-https://www.transifex.com/tenup-project/tenup-project-translations</translation>
+https://www.transifex.com/wealthsilo-project/wealthsilo-project-translations</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
         <translation>MAP port ved hjælp af UPnP</translation>
     </message>
     <message>
-        <source>Enable automatic minting of TUP units to zTUP</source>
-        <translation>Aktivér automatisk mintning af TUP-enheder til zTUP</translation>
+        <source>Enable automatic minting of WEALTH units to zWEALTH</source>
+        <translation>Aktivér automatisk mintning af WEALTH-enheder til zWEALTH</translation>
     </message>
     <message>
-        <source>Enable zTUP Automint</source>
-        <translation>Aktivér zTUP Automint</translation>
+        <source>Enable zWEALTH Automint</source>
+        <translation>Aktivér zWEALTH Automint</translation>
     </message>
     <message>
-        <source>Percentage of incoming TUP which get automatically converted to zTUP via Zerocoin Protocol (min: 10%)</source>
-        <translation>Procentdelen af indkommende TUP, som automatisk konverteres til zTUP via Zerocoin Protocol (min: 10%)</translation>
+        <source>Percentage of incoming WEALTH which get automatically converted to zWEALTH via Zerocoin Protocol (min: 10%)</source>
+        <translation>Procentdelen af indkommende WEALTH, som automatisk konverteres til zWEALTH via Zerocoin Protocol (min: 10%)</translation>
     </message>
     <message>
-        <source>Percentage of autominted zTUP</source>
-        <translation>Procentdel af automatiseret zTUP</translation>
+        <source>Percentage of autominted zWEALTH</source>
+        <translation>Procentdel af automatiseret zWEALTH</translation>
     </message>
     <message>
-        <source>Wait with automatic conversion to Zerocoin until enough TUP for this denomination is available</source>
-        <translation>Vent med automatisk konvertering til Zerocoin, indtil nok TUP til denne betegnelse er tilgængelig</translation>
+        <source>Wait with automatic conversion to Zerocoin until enough WEALTH for this denomination is available</source>
+        <translation>Vent med automatisk konvertering til Zerocoin, indtil nok WEALTH til denne betegnelse er tilgængelig</translation>
     </message>
     <message>
-        <source>Preferred Automint zTUP Denomination</source>
-        <translation>Foretrukket Automint zTUP Denomination</translation>
+        <source>Preferred Automint zWEALTH Denomination</source>
+        <translation>Foretrukket Automint zWEALTH Denomination</translation>
     </message>
     <message>
         <source>Stake split threshold:</source>
@@ -2131,8 +2131,8 @@ https://www.transifex.com/tenup-project/tenup-project-translations</translation>
         <translation>Samlet saldo, inklusive alle utilgængelige mønter.</translation>
     </message>
     <message>
-        <source>TUP Balance</source>
-        <translation>TUP Balance</translation>
+        <source>WEALTH Balance</source>
+        <translation>WEALTH Balance</translation>
     </message>
     <message>
         <source>Pending:</source>
@@ -2159,8 +2159,8 @@ https://www.transifex.com/tenup-project/tenup-project-translations</translation>
         <translation>Din nuværende WealthSilo-saldo, ubekræftede og umodne transaktioner inkluderet</translation>
     </message>
     <message>
-        <source>zTUP Balance</source>
-        <translation>zTUP-saldo</translation>
+        <source>zWEALTH Balance</source>
+        <translation>zWEALTH-saldo</translation>
     </message>
     <message>
         <source>The displayed information may be out of date. Your wallet automatically synchronizes with the WealthSilo network after a connection is established, but this process has not completed yet.</source>
@@ -2207,8 +2207,8 @@ https://www.transifex.com/tenup-project/tenup-project-translations</translation>
         <translation>Brugbare:</translation>
     </message>
     <message>
-        <source>Locked TUP or Masternode collaterals. These are excluded from zTUP minting.</source>
-        <translation>Låste TUP eller Masternode collaterals. Disse er udelukket fra zTUP-mintning.</translation>
+        <source>Locked WEALTH or Masternode collaterals. These are excluded from zWEALTH minting.</source>
+        <translation>Låste WEALTH eller Masternode collaterals. Disse er udelukket fra zWEALTH-mintning.</translation>
     </message>
     <message>
         <source>Locked:</source>
@@ -2219,8 +2219,8 @@ https://www.transifex.com/tenup-project/tenup-project-translations</translation>
         <translation>Ubekræftet:</translation>
     </message>
     <message>
-        <source>Your current zTUP balance, unconfirmed and immature zTUP included.</source>
-        <translation>Din nuværende zTUP-saldo, ubekræftede og umodne zTUP inkluderet.</translation>
+        <source>Your current zWEALTH balance, unconfirmed and immature zWEALTH included.</source>
+        <translation>Din nuværende zWEALTH-saldo, ubekræftede og umodne zWEALTH inkluderet.</translation>
     </message>
     <message>
         <source>Recent transactions</source>
@@ -2231,10 +2231,10 @@ https://www.transifex.com/tenup-project/tenup-project-translations</translation>
         <translation>Ude af synk</translation>
     </message>
     <message>
-        <source>Current percentage of zTUP.
+        <source>Current percentage of zWEALTH.
 If AutoMint is enabled this percentage will settle around the configured AutoMint percentage (default = 10%).
 </source>
-        <translation>Nuværende procentdel af zTUP
+        <translation>Nuværende procentdel af zWEALTH
 Hvis AutoMint er aktiveret, vil denne procentdel sætte sig omkring den konfigurerede AutoMint-procent (default = 10%)</translation>
     </message>
     <message>
@@ -2242,14 +2242,14 @@ Hvis AutoMint er aktiveret, vil denne procentdel sætte sig omkring den konfigur
         <translation>AutoMint er i øjeblikket aktiveret og indstillet til</translation>
     </message>
     <message>
-        <source>To disable AutoMint add 'enablezeromint=0' in tenup.conf.</source>
-        <translation>To disable AutoMint add 'enablezeromint=0' in tenup.conf.</translation>
+        <source>To disable AutoMint add 'enablezeromint=0' in wealthsilo.conf.</source>
+        <translation>To disable AutoMint add 'enablezeromint=0' in wealthsilo.conf.</translation>
     </message>
     <message>
         <source>AutoMint is currently disabled.
-To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in tenup.conf</source>
+To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in wealthsilo.conf</source>
         <translation>AutoMint er for øjeblikket deaktiveret
-For at aktivere AutoMint-ændring 'enablezeromint = 0' til 'enablezeromint = 1' i tenup.conf</translation>
+For at aktivere AutoMint-ændring 'enablezeromint = 0' til 'enablezeromint = 1' i wealthsilo.conf</translation>
     </message>
 </context>
 <context>
@@ -2275,7 +2275,7 @@ For at aktivere AutoMint-ændring 'enablezeromint = 0' til 'enablezeromint = 1' 
         <translation>Ugyldig betalingsadresse: %1</translation>
     </message>
     <message>
-        <source>Cannot start tenup: click-to-pay handler</source>
+        <source>Cannot start wealthsilo: click-to-pay handler</source>
         <translation>Kan ikke starte WealthSilo "klik for at betale" systemet</translation>
     </message>
     <message>
@@ -2377,8 +2377,8 @@ For at aktivere AutoMint-ændring 'enablezeromint = 0' til 'enablezeromint = 1' 
         <translation>0</translation>
     </message>
     <message>
-        <source>zTUP</source>
-        <translation>zTUP</translation>
+        <source>zWEALTH</source>
+        <translation>zWEALTH</translation>
     </message>
     <message>
         <source>Available for minting are coins which are confirmed and not locked or Masternode collaterals.</source>
@@ -2389,8 +2389,8 @@ For at aktivere AutoMint-ændring 'enablezeromint = 0' til 'enablezeromint = 1' 
         <translation>Til rådighed til Minting:</translation>
     </message>
     <message>
-        <source>0.000 000 00 TUP</source>
-        <translation>0.000 000 00 TUP</translation>
+        <source>0.000 000 00 WEALTH</source>
+        <translation>0.000 000 00 WEALTH</translation>
     </message>
     <message>
         <source>Reset Zerocoin Wallet DB. Deletes transactions that did not make it into the blockchain.</source>
@@ -2441,24 +2441,24 @@ For at aktivere AutoMint-ændring 'enablezeromint = 0' til 'enablezeromint = 1' 
         <translation>Tilbring Zerocoin</translation>
     </message>
     <message>
-        <source>Available (mature and spendable) zTUP for spending</source>
-        <translation>Tilgængelig (moden og brugt) zTUP for udgifter</translation>
+        <source>Available (mature and spendable) zWEALTH for spending</source>
+        <translation>Tilgængelig (moden og brugt) zWEALTH for udgifter</translation>
     </message>
     <message>
         <source>Available Balance:</source>
         <translation>Disponibel saldo:</translation>
     </message>
     <message>
-        <source>Available (mature and spendable) zTUP for spending
+        <source>Available (mature and spendable) zWEALTH for spending
 
-zTUP are mature when they have more than 20 confirmations AND more than 2 mints of the same denomination after them were minted</source>
-        <translation>Tilgængelig (moden og brugt) zTUP for spending
+zWEALTH are mature when they have more than 20 confirmations AND more than 2 mints of the same denomination after them were minted</source>
+        <translation>Tilgængelig (moden og brugt) zWEALTH for spending
 
-zTUP er modne, når de har mere end 20 bekræftelser OG mere end 2 minutter med samme betegnelse, efter at de blev præsenteret</translation>
+zWEALTH er modne, når de har mere end 20 bekræftelser OG mere end 2 minutter med samme betegnelse, efter at de blev præsenteret</translation>
     </message>
     <message>
-        <source>0 zTUP</source>
-        <translation>0 zTUP</translation>
+        <source>0 zWEALTH</source>
+        <translation>0 zWEALTH</translation>
     </message>
     <message>
         <source>Security Level for Zerocoin Transactions. More is better, but needs more time and resources.</source>
@@ -2529,8 +2529,8 @@ zTUP er modne, når de har mere end 20 bekræftelser OG mere end 2 minutter med 
         <translation>Zerocoin Stats:</translation>
     </message>
     <message>
-        <source>Total Balance including unconfirmed and immature zTUP</source>
-        <translation>Samlet saldo inklusive ubekræftede og umodne zTUP</translation>
+        <source>Total Balance including unconfirmed and immature zWEALTH</source>
+        <translation>Samlet saldo inklusive ubekræftede og umodne zWEALTH</translation>
     </message>
     <message>
         <source>Total Zerocoin  Balance:</source>
@@ -2545,24 +2545,24 @@ zTUP er modne, når de har mere end 20 bekræftelser OG mere end 2 minutter med 
         <translation>DENOM. med værdi 1:</translation>
     </message>
     <message>
-        <source>Show the current status of automatic zTUP minting.
+        <source>Show the current status of automatic zWEALTH minting.
 
 To change the status (restart required):
-- enable: add 'enablezeromint=1' to tenup.conf
-- disable: add 'enablezeromint=0' to tenup.conf
+- enable: add 'enablezeromint=1' to wealthsilo.conf
+- disable: add 'enablezeromint=0' to wealthsilo.conf
 
 To change the percentage (no restart required):
-- menu Settings-&gt;Options-&gt;Percentage of autominted zTUP
+- menu Settings-&gt;Options-&gt;Percentage of autominted zWEALTH
 
 </source>
-        <translation>Vis den aktuelle status for automatisk zTUP minting.øj
+        <translation>Vis den aktuelle status for automatisk zWEALTH minting.øj
 
 For at ændre status (genstart kræves):.
-- aktiver: tilføj 'enablezeromint = 1' til tenup.conf
-- deaktiver: tilføj 'enablezeromint = 0' til tenup.conf
+- aktiver: tilføj 'enablezeromint = 1' til wealthsilo.conf
+- deaktiver: tilføj 'enablezeromint = 0' til wealthsilo.conf
 
 For at ændre procentdelen (ingen genstart kræves):.
-- menu Indstillinger-&gt; Indstillinger-&gt; Procentdel af automatiseret zTUP
+- menu Indstillinger-&gt; Indstillinger-&gt; Procentdel af automatiseret zWEALTH
 </translation>
     </message>
     <message>
@@ -2750,12 +2750,12 @@ For at ændre procentdelen (ingen genstart kræves):.
         <translation>Konfigureret målprocent:&lt;b&gt;</translation>
     </message>
     <message>
-        <source>zTUP is currently disabled due to maintenance.</source>
-        <translation>zTUP er i øjeblikket deaktiveret på grund af vedligeholdelse.</translation>
+        <source>zWEALTH is currently disabled due to maintenance.</source>
+        <translation>zWEALTH er i øjeblikket deaktiveret på grund af vedligeholdelse.</translation>
     </message>
     <message>
-        <source>zTUP is currently undergoing maintenance.</source>
-        <translation>zTUP er i øjeblikket under opretholdelse.</translation>
+        <source>zWEALTH is currently undergoing maintenance.</source>
+        <translation>zWEALTH er i øjeblikket under opretholdelse.</translation>
     </message>
     <message>
         <source>Denom. with value &lt;b&gt;1&lt;/b&gt;:</source>
@@ -2842,8 +2842,8 @@ For at ændre procentdelen (ingen genstart kræves):.
         <translation>Mynt succesfuldt</translation>
     </message>
     <message>
-        <source> zTUP in </source>
-        <translation> zTUP i</translation>
+        <source> zWEALTH in </source>
+        <translation> zWEALTH i</translation>
     </message>
     <message>
         <source> sec. Used denominations:
@@ -3681,8 +3681,8 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <translation>UTXO størrelse:</translation>
     </message>
     <message>
-        <source>0 TUP</source>
-        <translation>0 TUP</translation>
+        <source>0 WEALTH</source>
+        <translation>0 WEALTH</translation>
     </message>
     <message>
         <source>Transaction Fee:</source>
@@ -3737,12 +3737,12 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <translation>Mønter vælges automatisk</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uTUPs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uTUPs in fee,&lt;br /&gt;while "at least" pays 1000 uTUPs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Hvis den brugerfastsatte gebyrbetaling er sat til 1000 uTUPs og transaktionen kun fylder 250 bytes, så vil "pr. kilobyte" kun udbetale 250 uTUP i gebyr, &lt;br /&gt; mens "mindst" udbetaler 1000 uTUPs. For transaktioner større end en kilobyte betales i begge tilfælde i forhold til antallet af kilobytes </translation>
+        <source>If the custom fee is set to 1000 uWEALTHs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uWEALTHs in fee,&lt;br /&gt;while "at least" pays 1000 uWEALTHs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Hvis den brugerfastsatte gebyrbetaling er sat til 1000 uWEALTHs og transaktionen kun fylder 250 bytes, så vil "pr. kilobyte" kun udbetale 250 uWEALTH i gebyr, &lt;br /&gt; mens "mindst" udbetaler 1000 uWEALTHs. For transaktioner større end en kilobyte betales i begge tilfælde i forhold til antallet af kilobytes </translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uTUPs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uTUPs in fee,&lt;br /&gt;while "total at least" pays 1000 uTUPs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Hvis den brugerfastsatte gebyrbetaling er sat til 1000 uTUPs og transaktionen kun fylder 250 bytes, så vil "pr. kilobyte" kun udbetale 250 uTUP i gebyr, &lt;br /&gt; mens "Total-mindst" udbetaler 1000 uTUPs. For transaktioner større end en kilobyte betales i begge tilfælde i forhold til antallet af kilobytes </translation>
+        <source>If the custom fee is set to 1000 uWEALTHs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uWEALTHs in fee,&lt;br /&gt;while "total at least" pays 1000 uWEALTHs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Hvis den brugerfastsatte gebyrbetaling er sat til 1000 uWEALTHs og transaktionen kun fylder 250 bytes, så vil "pr. kilobyte" kun udbetale 250 uWEALTH i gebyr, &lt;br /&gt; mens "Total-mindst" udbetaler 1000 uWEALTHs. For transaktioner større end en kilobyte betales i begge tilfælde i forhold til antallet af kilobytes </translation>
     </message>
     <message>
         <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for WealthSilo transactions than the network can process.</source>
@@ -3793,8 +3793,8 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <translation>Tilføj &amp;Modtager</translation>
     </message>
     <message>
-        <source>Anonymized TUP</source>
-        <translation>Tilsløret TUP</translation>
+        <source>Anonymized WEALTH</source>
+        <translation>Tilsløret WEALTH</translation>
     </message>
     <message>
         <source>Balance:</source>
@@ -4713,8 +4713,8 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <translation>Send mønter</translation>
     </message>
     <message>
-        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 TUP.</source>
-        <translation>SwiftTx understøtter ikke afsendelse af så store beløb endnu. Transaktioner er for tiden begrænsede til %1TUP.</translation>
+        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 WEALTH.</source>
+        <translation>SwiftTx understøtter ikke afsendelse af så store beløb endnu. Transaktioner er for tiden begrænsede til %1WEALTH.</translation>
     </message>
 </context>
 <context>
@@ -4745,7 +4745,7 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
     </message>
 </context>
 <context>
-    <name>ZTupControlDialog</name>
+    <name>ZWealthControlDialog</name>
     <message>
         <source>Quantity</source>
         <translation>Antal</translation>
@@ -4755,8 +4755,8 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <translation>0</translation>
     </message>
     <message>
-        <source>zTUP</source>
-        <translation>zTUP</translation>
+        <source>zWEALTH</source>
+        <translation>zWEALTH</translation>
     </message>
     <message>
         <source>Select/Deselect All</source>
@@ -4768,7 +4768,7 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
     </message>
 </context>
 <context>
-    <name>tenup-core</name>
+    <name>wealthsilo-core</name>
     <message>
         <source>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</source>
         <translation>(1 = beholdtx metadata. For eksempel information om kontoejer og betalngsanmodninger, 2 = drop TX metadata)</translation>
@@ -4851,12 +4851,12 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <translation>Udfør en kommando når den bedste blok ændres (%s in cmd erstattes med blok hashen)</translation>
     </message>
     <message>
-        <source>Fees (in TUP/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>Gebyrer (in TUP/kb) lavere end dette betragtes som et nul-gebyr for at videresende (default: %s)</translation>
+        <source>Fees (in WEALTH/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>Gebyrer (in WEALTH/kb) lavere end dette betragtes som et nul-gebyr for at videresende (default: %s)</translation>
     </message>
     <message>
-        <source>Fees (in TUP/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>Gebyrer (in TUP/kb) lavere end dette betragtes som et nul-gebyr for at oprette en transaktion (default: %s)</translation>
+        <source>Fees (in WEALTH/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>Gebyrer (in WEALTH/kb) lavere end dette betragtes som et nul-gebyr for at oprette en transaktion (default: %s)</translation>
     </message>
     <message>
         <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</source>
@@ -4963,12 +4963,12 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <translation>Det er ikke muligt at allokere tilstrækkeligt med tilsløret designeret indestående for at gennemføre denne transaktion.</translation>
     </message>
     <message>
-        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 25000 TUP.</source>
-        <translation>Det er ikke muligt at allokere tilstrækkeligt med tilsløret  ikke-designeret indestående for at gennemføre denne transaktion, der ikke ækvivalerer 25000 TUP.</translation>
+        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 25000 WEALTH.</source>
+        <translation>Det er ikke muligt at allokere tilstrækkeligt med tilsløret  ikke-designeret indestående for at gennemføre denne transaktion, der ikke ækvivalerer 25000 WEALTH.</translation>
     </message>
     <message>
-        <source>Unable to locate enough funds for this transaction that are not equal 25000 TUP.</source>
-        <translation>Det var ikke muligt at allokere tilstrækkelige midler til denne transaktion som er forskellig fra 25000 TUP.</translation>
+        <source>Unable to locate enough funds for this transaction that are not equal 25000 WEALTH.</source>
+        <translation>Det var ikke muligt at allokere tilstrækkelige midler til denne transaktion som er forskellig fra 25000 WEALTH.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
@@ -5279,8 +5279,8 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <translation>Læsning af blokken mislykkedes</translation>
     </message>
     <message>
-        <source>Fee (in TUP/kB) to add to transactions you send (default: %s)</source>
-        <translation>Gebyr (i TUP/kB) som skal tilføjes transaktionen der sendes (default: %s)</translation>
+        <source>Fee (in WEALTH/kB) to add to transactions you send (default: %s)</source>
+        <translation>Gebyr (i WEALTH/kB) som skal tilføjes transaktionen der sendes (default: %s)</translation>
     </message>
     <message>
         <source>Finalizing transaction.</source>
@@ -5411,8 +5411,8 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <translation>Procentdel af automatisk mintede Zerocoin (10-100, standard: %u)</translation>
     </message>
     <message>
-        <source>Reindex the TUP and zTUP money supply statistics</source>
-        <translation>Reindex TUP og zTUP pengemængde statistikker</translation>
+        <source>Reindex the WEALTH and zWEALTH money supply statistics</source>
+        <translation>Reindex WEALTH og zWEALTH pengemængde statistikker</translation>
     </message>
     <message>
         <source>SwiftX options:</source>

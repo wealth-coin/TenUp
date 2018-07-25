@@ -172,16 +172,16 @@
         <translation>Vahvista lompakon salaus</translation>
     </message>
     <message>
-        <source>WealthSilo will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your TUPs from being stolen by malware infecting your computer.</source>
-        <translation>WealthSilo sulkeutuu salausprosessin ajaksi. Muista, että lompakon salaus ei voi täysin suojella TUPien varkaudelta, jos tietokoneesi sisältää haittaohjelmia.</translation>
+        <source>WealthSilo will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your WEALTHs from being stolen by malware infecting your computer.</source>
+        <translation>WealthSilo sulkeutuu salausprosessin ajaksi. Muista, että lompakon salaus ei voi täysin suojella WEALTHien varkaudelta, jos tietokoneesi sisältää haittaohjelmia.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Oletko varma että tahdot salata lompakkosi?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR TUP&lt;/b&gt;!</source>
-        <translation>Varoitus: Jos salaat lompakkosi ja unohdat salausavaimesi, &lt;b&gt;menetät kaikki TUPisi&lt;/b&gt;</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR WEALTH&lt;/b&gt;!</source>
+        <translation>Varoitus: Jos salaat lompakkosi ja unohdat salausavaimesi, &lt;b&gt;menetät kaikki WEALTHisi&lt;/b&gt;</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -573,8 +573,8 @@
         <translation>Lähetä kolikkoja WealthSilo osoitteeseen</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and tenup: URIs)</source>
-        <translation>Pyydä maksuja (Generoi QR koodeja ja tenup: URIja)</translation>
+        <source>Request payments (generates QR codes and wealthsilo: URIs)</source>
+        <translation>Pyydä maksuja (Generoi QR koodeja ja wealthsilo: URIja)</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -1128,11 +1128,11 @@ Please check the address and try again.</source>
         <translation>Valitse yksityisyyden taso.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 25000 TUP</source>
+        <source>Use 2 separate masternodes to mix funds up to 25000 WEALTH</source>
         <translation>Käytä 2 erillistä masternodea sekoittaaksesi enintään 25000 WealthSilo</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 25000 TUP</source>
+        <source>Use 8 separate masternodes to mix funds up to 25000 WEALTH</source>
         <translation>Käytä 8 erillistä masternodea sekoittaaksesi enintään 25000 WealthSilo</translation>
     </message>
     <message>
@@ -1140,11 +1140,11 @@ Please check the address and try again.</source>
         <translation>Käytä 16 erillistä masternodea</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 TUP to anonymize 25000 TUP</source>
-        <translation>Tämä vaihtoehto on nopein ja maksaa noin ~0.025 TUP anonymoidaksesi 25000 WealthSilo</translation>
+        <source>This option is the quickest and will cost about ~0.025 WEALTH to anonymize 25000 WEALTH</source>
+        <translation>Tämä vaihtoehto on nopein ja maksaa noin ~0.025 WEALTH anonymoidaksesi 25000 WealthSilo</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 TUP to anonymize 25000 TUP</source>
+        <source>This option is moderately fast and will cost about 0.05 WEALTH to anonymize 25000 WEALTH</source>
         <translation>Tämä vaihtoehto on suhteellisen nopea ja maksaa 0.05 WealthSilo anonymoidaksesi 25000 WealthSilo</translation>
     </message>
     <message>
@@ -1152,7 +1152,7 @@ Please check the address and try again.</source>
         <translation>Tämä on hitain ja turvallisin vaihtoehto. Täydesti anonymisoiminen ei maksa mitään.</translation>
     </message>
     <message>
-        <source>0.1 TUP per  10000 TUP you anonymize.</source>
+        <source>0.1 WEALTH per  10000 WEALTH you anonymize.</source>
         <translation>0.1 per  10000 WealthSilo, jotka anonymisoit.</translation>
     </message>
     <message>
@@ -1887,8 +1887,8 @@ Please check the address and try again.</source>
         <translation>Muutos:</translation>
     </message>
     <message>
-        <source>0 TUP</source>
-        <translation>0 TUP</translation>
+        <source>0 WEALTH</source>
+        <translation>0 WEALTH</translation>
     </message>
     <message>
         <source>Choose...</source>
@@ -2511,14 +2511,14 @@ Please check the address and try again.</source>
     </message>
 </context>
 <context>
-    <name>ZTupControlDialog</name>
+    <name>ZWealthControlDialog</name>
     <message>
         <source>0</source>
         <translation>0</translation>
     </message>
     </context>
 <context>
-    <name>tenup-core</name>
+    <name>wealthsilo-core</name>
     <message>
         <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
         <translation>Varoitus: Verkko ei näytä olevan samaa mieltä! Jotkin mainaajat saattavat kokea ongelmia.</translation>
