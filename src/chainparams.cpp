@@ -125,7 +125,7 @@ public:
         nMinerThreads = 0;
         nTargetTimespan = 1 * 60; // WealthSilo: 1 day
         nTargetSpacing = 2 * 60;  // WealthSilo: 2 minute
-        nMaturity = 10;
+        nMaturity = 50;
         nMasternodeCountDrift = 20;
         nMaxMoneyOut = 600000 * COIN;
 
@@ -154,7 +154,7 @@ public:
          *     CTxOut(nValue=50.00000000, scriptPubKey=0xA9037BAC7050C479B121CF)
          *   vMerkleTree: e0028e
          */
-        const char* pszTimestamp = "Using Bitcoins / CryptoCurrency to help Refugees in Burma and Syria. - Feb 06 2017 -";
+        const char* pszTimestamp = "Wealth Silo Launched";
         CMutableTransaction txNew;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
