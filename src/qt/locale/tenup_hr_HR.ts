@@ -2912,8 +2912,8 @@ Please be patient...</source>
         <translation>Nije dodijeljena adresa "Plati", stvarajući lokalnu uplatu</translation>
     </message>
     <message>
-        <source>Invalid Tenup Address</source>
-        <translation>Nevažeća Tenup Adresa</translation>
+        <source>Invalid Wealthsilo Address</source>
+        <translation>Nevažeća Wealthsilo Adresa</translation>
     </message>
     <message>
         <source>Invalid Send Amount</source>

@@ -2906,7 +2906,7 @@ Bitte haben Sie etwas Geduld...</translation>
         <translation>Keine "Pay To"-Adresse zur Verfügung. Erstelle lokale Zahlung</translation>
     </message>
     <message>
-        <source>Invalid Tenup Address</source>
+        <source>Invalid Wealthsilo Address</source>
         <translation>Ungültige WealthSilo-Adresse </translation>
     </message>
     <message>

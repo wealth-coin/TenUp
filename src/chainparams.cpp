@@ -173,13 +173,12 @@ public:
         assert(hashGenesisBlock == uint256("0x00000a91661547d75e61d0f15fd97067c5d8763cf37ff2847d5a2dd55eba3fe9"));
         assert(genesis.hashMerkleRoot == uint256("0x01cd2cec7147282c3b54233a218b0a68b49e8233318fd253578eea68d0e5bafd"));
 
-        vSeeds.push_back(CDNSSeedData("seeder.wealthsilo.io", "seeder.wealthsilo.io"));
-        vSeeds.push_back(CDNSSeedData("168.235.109.113", "168.235.109.113"));           // Single node address
-        vSeeds.push_back(CDNSSeedData("168.235.78.242", "168.235.78.242"));           // Single node address
-        vSeeds.push_back(CDNSSeedData("176.56.236.202", "176.56.236.202"));           // Single node address
-        vSeeds.push_back(CDNSSeedData("107.161.18.110", "107.161.18.110"));           // Single node address
-        vSeeds.push_back(CDNSSeedData("168.235.71.241", "168.235.71.241"));           // Single node address
-        vSeeds.push_back(CDNSSeedData("168.235.94.180", "168.235.94.180"));
+        
+        vSeeds.push_back(CDNSSeedData("81.4.101.233", "81.4.101.233"));           // Single node address
+        vSeeds.push_back(CDNSSeedData("185.52.2.37", "185.52.2.37"));           // Single node address
+        vSeeds.push_back(CDNSSeedData("185.52.3.82", "185.52.3.82"));           // Single node address
+        vSeeds.push_back(CDNSSeedData("81.4.101.224", "81.4.101.224"));           // Single node address
+        vSeeds.push_back(CDNSSeedData("81.4.101.56", "81.4.101.56"));           // Single node address
         
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 65);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 10);

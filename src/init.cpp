@@ -1859,7 +1859,7 @@ bool AppInit2(boost::thread_group& threadGroup, CScheduler& scheduler)
     }
 
 // XX42 Remove/refactor code below. Until then provide safe defaults
-    nAnonymizeTenupAmount = 2;
+    nAnonymizeWealthsiloAmount = 2;
 
 //    nLiquidityProvider = GetArg("-liquidityprovider", 0); //0-100
 //    if (nLiquidityProvider != 0) {
@@ -1868,9 +1868,9 @@ bool AppInit2(boost::thread_group& threadGroup, CScheduler& scheduler)
 //        nZeromintPercentage = 99999;
 //    }
 //
-//    nAnonymizeTenupAmount = GetArg("-anonymizewealthsiloamount", 0);
-//    if (nAnonymizeTenupAmount > 999999) nAnonymizeTenupAmount = 999999;
-//    if (nAnonymizeTenupAmount < 2) nAnonymizeTenupAmount = 2;
+//    nAnonymizeWealthsiloAmount = GetArg("-anonymizewealthsiloamount", 0);
+//    if (nAnonymizeWealthsiloAmount > 999999) nAnonymizeWealthsiloAmount = 999999;
+//    if (nAnonymizeWealthsiloAmount < 2) nAnonymizeWealthsiloAmount = 2;
 
     fEnableSwiftTX = GetBoolArg("-enableswifttx", fEnableSwiftTX);
     nSwiftTXDepth = GetArg("-swifttxdepth", nSwiftTXDepth);
@@ -1884,7 +1884,7 @@ bool AppInit2(boost::thread_group& threadGroup, CScheduler& scheduler)
 
     LogPrintf("fLiteMode %d\n", fLiteMode);
     LogPrintf("nSwiftTXDepth %d\n", nSwiftTXDepth);
-    LogPrintf("Anonymize WealthSilo Amount %d\n", nAnonymizeTenupAmount);
+    LogPrintf("Anonymize WealthSilo Amount %d\n", nAnonymizeWealthsiloAmount);
     LogPrintf("Budget Mode %s\n", strBudgetMode.c_str());
 
     /* Denominations

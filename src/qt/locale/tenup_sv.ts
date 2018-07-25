@@ -2795,8 +2795,8 @@ Var god dröjj...</translation>
         <translation>Ingen 'Betala Till' adress inmatad, skapar lokal betalning</translation>
     </message>
     <message>
-        <source>Invalid Tenup Address</source>
-        <translation>Ogiltig Tenup Adress</translation>
+        <source>Invalid Wealthsilo Address</source>
+        <translation>Ogiltig Wealthsilo Adress</translation>
     </message>
     <message>
         <source>Invalid Send Amount</source>

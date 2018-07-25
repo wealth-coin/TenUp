@@ -14,7 +14,7 @@ static const int MODEL_UPDATE_DELAY = 1000;
 /* AskPassphraseDialog -- Maximum passphrase length */
 static const int MAX_PASSPHRASE_SIZE = 1024;
 
-/* Tenup GUI -- Size of icons in status bar */
+/* Wealthsilo GUI -- Size of icons in status bar */
 static const int STATUSBAR_ICONSIZE = 16;
 
 static const bool DEFAULT_SPLASHSCREEN = true;
@@ -53,7 +53,7 @@ static const int MAX_URI_LENGTH = 255;
 
 #define QAPP_ORG_NAME "WealthSilo"
 #define QAPP_ORG_DOMAIN "wealthsilo.io"
-#define QAPP_APP_NAME_DEFAULT "Tenup-Qt"
-#define QAPP_APP_NAME_TESTNET "Tenup-Qt-testnet"
+#define QAPP_APP_NAME_DEFAULT "Wealthsilo-Qt"
+#define QAPP_APP_NAME_TESTNET "Wealthsilo-Qt-testnet"
 
 #endif // BITCOIN_QT_GUICONSTANTS_H

@@ -2915,8 +2915,8 @@ Wees alsjeblieft geduldig...</translation>
         <translation>Geen 'Betaal aan' adres verstrekt, lokale betaling wordt gemaakt</translation>
     </message>
     <message>
-        <source>Invalid Tenup Address</source>
-        <translation>Ongeldig Tenup addres</translation>
+        <source>Invalid Wealthsilo Address</source>
+        <translation>Ongeldig Wealthsilo addres</translation>
     </message>
     <message>
         <source>Invalid Send Amount</source>

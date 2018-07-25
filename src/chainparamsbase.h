@@ -12,7 +12,7 @@
 
 /**
  * CBaseChainParams defines the base parameters (shared between wealthsilo-cli and wealthsilod)
- * of a given instance of the Tenup system.
+ * of a given instance of the Wealthsilo system.
  */
 class CBaseChainParams
 {

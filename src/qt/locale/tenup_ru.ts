@@ -2872,7 +2872,7 @@ Please be patient...</source>
         <translation>Не предоставляется адрес «Pay To», создающий местный платеж</translation>
     </message>
     <message>
-        <source>Invalid Tenup Address</source>
+        <source>Invalid Wealthsilo Address</source>
         <translation>неправильный WealthSilo адрес</translation>
     </message>
     <message>

@@ -3708,7 +3708,7 @@ Please be patient...</source>
     </message>
     <message>
         <location line="+4"/>
-        <source>Invalid Tenup Address</source>
+        <source>Invalid Wealthsilo Address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

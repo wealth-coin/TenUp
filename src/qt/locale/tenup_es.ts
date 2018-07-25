@@ -2877,8 +2877,8 @@ Por favor espere...</translation>
         <translation>No se especificó drección 'Pagar A', por lo que asumimos un pago local</translation>
     </message>
     <message>
-        <source>Invalid Tenup Address</source>
-        <translation>Dirección Tenup Inválida</translation>
+        <source>Invalid Wealthsilo Address</source>
+        <translation>Dirección Wealthsilo Inválida</translation>
     </message>
     <message>
         <source>Invalid Send Amount</source>

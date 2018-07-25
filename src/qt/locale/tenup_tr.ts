@@ -2220,7 +2220,7 @@ To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in wealthsilo
     </message>
     <message>
         <source>Cannot start wealthsilo: click-to-pay handler</source>
-        <translation>Tenup başlatılamıyor: tıkla ve ödeme işleyicisi</translation>
+        <translation>Wealthsilo başlatılamıyor: tıkla ve ödeme işleyicisi</translation>
     </message>
     <message>
         <source>URI cannot be parsed! This can be caused by an invalid WealthSilo address or malformed URI parameters.</source>
@@ -2691,8 +2691,8 @@ Lütfen sabırlı olun...</translation>
         <translation>Sağlanan 'Ödeme Yapmak İçin' adresi yok, yerel ödeme oluşturun</translation>
     </message>
     <message>
-        <source>Invalid Tenup Address</source>
-        <translation>Geçersiz Tenup Adresi</translation>
+        <source>Invalid Wealthsilo Address</source>
+        <translation>Geçersiz Wealthsilo Adresi</translation>
     </message>
     <message>
         <source>Invalid Send Amount</source>

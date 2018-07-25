@@ -22,7 +22,7 @@ Unpack the files into a directory, and then run wealthsilo-qt.exe.
 
 ### OSX
 
-Drag Tenup-Qt to your applications folder, and then run Tenup-Qt.
+Drag Wealthsilo-Qt to your applications folder, and then run Wealthsilo-Qt.
 
 ### Need Help?
 
@@ -42,7 +42,7 @@ The following are developer notes on how to build WealthSilo on your native plat
 
 Development
 ---------------------
-The Tenup repo's [root README](https://github.com/wealthsilo-coin/WealthSilo/blob/master/README.md) contains relevant information on the development process and automated testing.
+The Wealthsilo repo's [root README](https://github.com/wealthsilo-coin/WealthSilo/blob/master/README.md) contains relevant information on the development process and automated testing.
 
 - [Developer Notes](developer-notes.md)
 - [Multiwallet Qt Development](multiwallet-qt.md)

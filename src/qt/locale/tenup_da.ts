@@ -2876,7 +2876,7 @@ Vær tålmodig...</translation>
         <translation>Ingen 'Betal til' adresse, der er oprettet, skaber lokal betaling</translation>
     </message>
     <message>
-        <source>Invalid Tenup Address</source>
+        <source>Invalid Wealthsilo Address</source>
         <translation> Ugyldig WealthSilo adresse</translation>
     </message>
     <message>

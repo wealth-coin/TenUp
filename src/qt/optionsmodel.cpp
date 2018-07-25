@@ -90,10 +90,10 @@ void OptionsModel::Init()
         settings.setValue("nPreferredDenom", 0);
     nPreferredDenom = settings.value("nPreferredDenom", "0").toLongLong();
 
-    if (!settings.contains("nAnonymizeTenupAmount"))
-        settings.setValue("nAnonymizeTenupAmount", 1000);
+    if (!settings.contains("nAnonymizeWealthsiloAmount"))
+        settings.setValue("nAnonymizeWealthsiloAmount", 1000);
 
-    nAnonymizeTenupAmount = settings.value("nAnonymizeTenupAmount").toLongLong();
+    nAnonymizeWealthsiloAmount = settings.value("nAnonymizeWealthsiloAmount").toLongLong();
 
     if (!settings.contains("fShowMasternodesTab"))
         settings.setValue("fShowMasternodesTab", masternodeConfig.getCount());
@@ -167,8 +167,8 @@ void OptionsModel::Init()
         SoftSetArg("-zeromintpercentage", settings.value("nZeromintPercentage").toString().toStdString());
     if (settings.contains("nPreferredDenom"))
         SoftSetArg("-preferredDenom", settings.value("nPreferredDenom").toString().toStdString());
-    if (settings.contains("nAnonymizeTenupAmount"))
-        SoftSetArg("-anonymizewealthsiloamount", settings.value("nAnonymizeTenupAmount").toString().toStdString());
+    if (settings.contains("nAnonymizeWealthsiloAmount"))
+        SoftSetArg("-anonymizewealthsiloamount", settings.value("nAnonymizeWealthsiloAmount").toString().toStdString());
 
 
 
@@ -261,8 +261,8 @@ QVariant OptionsModel::data(const QModelIndex& index, int role) const
             return QVariant(nZeromintPercentage);
         case ZeromintPrefDenom:
             return QVariant(nPreferredDenom);
-        case AnonymizeTenupAmount:
-            return QVariant(nAnonymizeTenupAmount);
+        case AnonymizeWealthsiloAmount:
+            return QVariant(nAnonymizeWealthsiloAmount);
         case Listen:
             return settings.value("fListen");
         default:
@@ -391,10 +391,10 @@ bool OptionsModel::setData(const QModelIndex& index, const QVariant& value, int 
             emit hideZeroBalancesChanged(fHideZeroBalances);
             break;
 
-        case AnonymizeTenupAmount:
-            nAnonymizeTenupAmount = value.toInt();
-            settings.setValue("nAnonymizeTenupAmount", nAnonymizeTenupAmount);
-            emit anonymizeTenupAmountChanged(nAnonymizeTenupAmount);
+        case AnonymizeWealthsiloAmount:
+            nAnonymizeWealthsiloAmount = value.toInt();
+            settings.setValue("nAnonymizeWealthsiloAmount", nAnonymizeWealthsiloAmount);
+            emit anonymizeWealthsiloAmountChanged(nAnonymizeWealthsiloAmount);
             break;
         case CoinControlFeatures:
             fCoinControlFeatures = value.toBool();

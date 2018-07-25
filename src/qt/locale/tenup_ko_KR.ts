@@ -2899,7 +2899,7 @@ Please be patient...</source>
         <translation>주소를 입력하지 않아, 신규 주소를 생성합니다.</translation>
     </message>
     <message>
-        <source>Invalid Tenup Address</source>
+        <source>Invalid Wealthsilo Address</source>
         <translation>잘못된 WealthSilo 주소</translation>
     </message>
     <message>
