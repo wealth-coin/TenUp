@@ -54,7 +54,7 @@ static void convertSeed6(std::vector<CAddress>& vSeedsOut, const SeedSpec6* data
 // + Contains no strange transactions
 static Checkpoints::MapCheckpoints mapCheckpoints =
     boost::assign::map_list_of
-    (  0, uint256("00000a91661547d75e61d0f15fd97067c5d8763cf37ff2847d5a2dd55eba3fe9")); //gen block
+    (  0, uint256("00000a96267104b0d904027552cf071187c75dcf4e394a3022e084609c3612b9")); //gen block
 
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
@@ -167,11 +167,11 @@ public:
         genesis.nVersion = 1;
         genesis.nTime = 1522920605;
         genesis.nBits = 0x1e0ffff0;
-        genesis.nNonce = 620706;
+        genesis.nNonce = 1184724;
 
         hashGenesisBlock = genesis.GetHash();
-        assert(hashGenesisBlock == uint256("0x00000a91661547d75e61d0f15fd97067c5d8763cf37ff2847d5a2dd55eba3fe9"));
-        assert(genesis.hashMerkleRoot == uint256("0x01cd2cec7147282c3b54233a218b0a68b49e8233318fd253578eea68d0e5bafd"));
+        assert(hashGenesisBlock == uint256("0x00000a96267104b0d904027552cf071187c75dcf4e394a3022e084609c3612b9"));
+        assert(genesis.hashMerkleRoot == uint256("0x5c1bef01c54d2f5ebac7d3ced8d9ca6961e87afa04a671f4f82ab2512145859c"));
 
         
         vSeeds.push_back(CDNSSeedData("81.4.101.233", "81.4.101.233"));           // Single node address
@@ -203,7 +203,7 @@ public:
         strSporkKey = "04B433E6598390C992F4F022F20D3B4CBBE691652EE7C48243B81701CBDB7CC7D7BF0EE09E154E6FCBF2043D65AF4E9E97B89B5DBAF830D83B9B7F469A6C45A717";
         strSporkKeyOld = "04B433E6598390C992F4F022F20D3B4CBBE691652EE7C48243B81701CBDB7CC7D7BF0EE09E154E6FCBF2043D65AF4E9E97B89B5DBAF830D83B9B7F469A6C45A717";
         strObfuscationPoolDummyAddress = "D87q2gC9j6nNrnzCsg4aY6bHMLsT9nUhEw";
-        nStartMasternodePayments = 1528585200; //Wed, 25 Jun 2014 20:36:16 GMT
+        nStartMasternodePayments = 1532537672; //Wed, 25 Jun 2014 20:36:16 GMT
 
         /** Zerocoin */
         zerocoinModulus = "25195908475657893494027183240048398571429282126204032027777137836043662020707595556264018525880784"
