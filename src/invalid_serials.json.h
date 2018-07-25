@@ -4,8 +4,8 @@
 
 
 
-#ifndef TEUNP_INVALID_SERIALS_JSON_H
-#define TENUP_INVALID_SERIALS_JSON_H
+#ifndef WEALTHSILO_INVALID_SERIALS_JSON_H
+#define WEALTHSILO_INVALID_SERIALS_JSON_H
 
 #include <string>
 
@@ -1189,4 +1189,4 @@ std::string LoadInvalidSerials()
     return str;
 }
 
-#endif //TENUP_INVALID_SERIALS_JSON_H
+#endif //WEALTHSILO_INVALID_SERIALS_JSON_H

@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef TENUP_ACCUMULATORCHECKPOINTS_JSON_H
-#define TENUP_ACCUMULATORCHECKPOINTS_JSON_H
+#ifndef WEALTHSILO_ACCUMULATORCHECKPOINTS_JSON_H
+#define WEALTHSILO_ACCUMULATORCHECKPOINTS_JSON_H
 
 #include <string>
 std::string GetMainCheckpoints() {
@@ -475,4 +475,4 @@ std::string GetRegTestCheckpoints() {
     return strRegTestCheckpoints;
 }
 
-#endif //TENUP_ACCUMULATORCHECKPOINTS_JSON_H
+#endif //WEALTHSILO_ACCUMULATORCHECKPOINTS_JSON_H

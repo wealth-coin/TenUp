@@ -1,9 +1,9 @@
-/* src/config/tenup-config.h.  Generated from tenup-config.h.in by configure.  */
-/* src/config/tenup-config.h.in.  Generated from configure.ac by autoheader.  */
+/* src/config/wealth-config.h.  Generated from wealth-config.h.in by configure.  */
+/* src/config/wealth-config.h.in.  Generated from configure.ac by autoheader.  */
 
-#ifndef TUP_CONFIG_H
+#ifndef WEALTH_CONFIG_H
 
-#define TUP_CONFIG_H
+#define WEALTH_CONFIG_H
 
 /* Define if building universal (internal helper macro) */
 /* #undef AC_APPLE_UNIVERSAL_BUILD */
@@ -284,16 +284,16 @@
 #define LT_OBJDIR ".libs/"
 
 /* Define to the address where bug reports for this package should be sent. */
-#define PACKAGE_BUGREPORT "www.tenup.io"
+#define PACKAGE_BUGREPORT "www.wealth.io"
 
 /* Define to the full name of this package. */
-#define PACKAGE_NAME "Tenup Core"
+#define PACKAGE_NAME "Wealthsilo Core"
 
 /* Define to the full name and version of this package. */
-#define PACKAGE_STRING "Tenup Core 1.1.0"
+#define PACKAGE_STRING "Wealthsilo Core 1.1.0"
 
 /* Define to the one symbol short name of this package. */
-#define PACKAGE_TARNAME "tenup"
+#define PACKAGE_TARNAME "wealth"
 
 /* Define to the home page for this package. */
 #define PACKAGE_URL ""
@@ -362,4 +362,4 @@
 /* Define for large files, on AIX-style hosts. */
 /* #undef _LARGE_FILES */
 
-#endif //TUP_CONFIG_H
+#endif //WEALTH_CONFIG_H
