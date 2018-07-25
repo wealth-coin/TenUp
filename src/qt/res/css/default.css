@@ -29,20 +29,20 @@ WalletFrame {
     }
     
     QStatusBar {
-    background-color:#ffffff1f;
+    background-color:#ffffff;
     }
     
     .QFrame {
     background-color:transparent;
-    border:0px solid #ffffff1f;
+    border:0px solid #fff;
     }
     
     QMenuBar {
-    background-color:#ffffff1f;
+    background-color:#fff;
     }
     
     QMenuBar::item {
-    background-color:#ffffff1f;
+    background-color:#fff;
     color:#091f3a;
     }
     
@@ -303,7 +303,7 @@ WalletFrame {
     }
     
     QComboBox QListView {
-    background:#ffffff1f;
+    background:#fff;
     border:1px solid #091f3a;
     padding-right:1px;
     padding-left:1px;
@@ -319,7 +319,7 @@ WalletFrame {
     }
     
     QComboBox::item:alternate {
-    background:#ffffff1f;
+    background:#fff;
     }
     
     QComboBox::item:selected {
@@ -406,7 +406,7 @@ WalletFrame {
     QHeaderView::section { /* Table Header Sections */
     qproperty-alignment:center;
     background-color: #105314;
-    color:#ffffff1f;
+    color:#fff;
     min-height:25px;
     font-weight:bold;
     font-size:11px;
@@ -447,7 +447,7 @@ WalletFrame {
     
     QTableView::item:selected { /* Table Item Selected */
     background-color:#105314;
-    color:#ffffff1f;
+    color:#fff;
     }
     
     QTableWidget { /* Table Background */
@@ -645,7 +645,7 @@ WalletFrame {
     }
     
     QDialog .QTabWidget .QWidget {
-    background-color:#ffffff1f;
+    background-color:#fff;
     color:#091f3a;
     }
     
@@ -874,7 +874,7 @@ WalletFrame {
     
     /* Command Line Options Dialog */
     QDialog#HelpMessageDialog QScrollArea * {
-    background-color:#ffffff1f;
+    background-color:#fff;
     }
     
     QDialog#HelpMessageDialog QScrollBar:vertical, QDialog#HelpMessageDialog QScrollBar:horizontal {
@@ -1297,7 +1297,7 @@ WalletFrame {
     /**************************** SEND DIALOG ***********************************************/
     
     QDialog#SendCoinsDialog {
-    background-color:#ffffff1f;
+    background-color:#fff;
     }
     
     QDialog#SendCoinsDialog .QFrame#frameCoinControl { /* Coin Control Section */
@@ -1524,12 +1524,12 @@ WalletFrame {
     
     QDialog#CoinControlDialog .CoinControlTreeWidget#treeWidget::item:selected { /* Coin Control Item (selected) */
     background-color:#105314;
-    color:#ffffff1f;
+    color:#fff;
     }
     
     QDialog#CoinControlDialog .CoinControlTreeWidget#treeWidget::item:checked { /* Coin Control Item (checked) */
     background-color:#f7f7f7;
-    color:#ffffff1f;
+    color:#fff;
     }
     
     QDialog#CoinControlDialog .CoinControlTreeWidget#treeWidget::branch:selected { /* Coin Control Branch Icon */
@@ -1565,7 +1565,7 @@ WalletFrame {
     /**************************** RECEIVE COINS *********************************************/
     
     QWidget#ReceiveCoinsDialog {
-    background-color:#ffffff1f;
+    background-color:#fff;
     }
     
     QWidget#ReceiveCoinsDialog .QFrame#frame {
@@ -1691,7 +1691,7 @@ WalletFrame {
     
     QCalendarWidget QAbstractItemView { /* Calendar widget days */
     alternate-background-color:#dedbe5;
-    background-color:#ffffff1f;
+    background-color:#fff;
     }
     
     QCalendarWidget QAbstractItemView:enabled { /* Calendar widget weekdays in month */
