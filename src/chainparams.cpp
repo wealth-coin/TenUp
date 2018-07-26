@@ -127,7 +127,7 @@ public:
         nTargetSpacing = 2 * 60;  // WealthSilo: 2 minute
         nMaturity = 50;
         nMasternodeCountDrift = 20;
-        nMaxMoneyOut = 600000 * COIN;
+        nMaxMoneyOut = 1000000 * COIN;
 
         /** Height or Time Based Activations **/
         nLastPOWBlock = 200;
